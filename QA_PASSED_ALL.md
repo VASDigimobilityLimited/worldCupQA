@@ -11,7 +11,7 @@ These are the **ship-ready** questions. Each entry cites a source (full source U
 method, then intersected with `QA_PASSED.md`). Rows **231 onward** are appended by the
 ongoing loop (liveness run only on `QA_PASSED.md` rows). Cursor lives in `QA_TC06_LIVE.md`.
 
-Total passed-all so far: **686**  (rows 2–230: 132 · rows 231+: 554)
+Total passed-all so far: **1248**  (rows 2–230: 132 · new method [231+, all countries]: 1116 — Algeria 554 + Argentina 562)
 
 ---
 
@@ -3451,3 +3451,2813 @@ Total passed-all so far: **686**  (rows 2–230: 132 · rows 231+: 554)
 **Q:** Why was Algeria's 2019 AFCON victory significant for their history?
 **Answer:** Their second continental title
 **Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Algeria fact base. Source: https://en.wikipedia.org/wiki/Algeria_national_football_team
+
+### Row 1229 — Argentina (medium)
+**Q:** After Argentina won the 2022 World Cup, what FIFA ranking did they reach in 2023?
+**Answer:** Number 1
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1230 — Argentina (medium)
+**Q:** After Argentina's 2022 World Cup win, when did Emiliano Martínez win the Golden Glove?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1231 — Argentina (hard)
+**Q:** After the 2016 Copa América final, Argentine star Lionel Messi announced his retirement before which World Cup?
+**Answer:** The 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1232 — Argentina (easy)
+**Q:** After the 2016 Copa América loss, which Argentina player reversed his retirement due to fan support?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1233 — Argentina (easy)
+**Q:** After the 2018 World Cup, which Argentina forward retired from international football?
+**Answer:** Gonzalo Higuaín
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1234 — Argentina (easy)
+**Q:** After which 2016 final did Argentina's Messi announce his retirement?
+**Answer:** Copa América final
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1235 — Argentina (easy)
+**Q:** After which 2016 tournament did Argentina's Messi announce his retirement?
+**Answer:** Copa América final
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1236 — Argentina (easy)
+**Q:** After which 2021 tournament did Argentina's Messi first celebrate a major international trophy?
+**Answer:** Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1237 — Argentina (medium)
+**Q:** After which Copa América final loss did Lionel Messi announce his retirement from Argentina?
+**Answer:** 2016
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1238 — Argentina (medium)
+**Q:** After which tournament did Argentina's Messi announce a temporary international retirement?
+**Answer:** 2016 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1239 — Argentina (medium)
+**Q:** After winning the 2022 World Cup, Argentina reached which FIFA ranking in 2023?
+**Answer:** Number 1
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1240 — Argentina (easy)
+**Q:** Against which nation did Argentina lose consecutive Copa América finals in 2015 and 2016?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1241 — Argentina (easy)
+**Q:** Against which team did Argentina lose both the 2010 quarter-final and 2014 World Cup final?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1242 — Argentina (easy)
+**Q:** Against which team did Argentina win the 2022 Finalissima 3-0?
+**Answer:** Italy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1243 — Argentina (easy)
+**Q:** Argentina beat Brazil in 2021. Who did they beat in the 2024 Copa América final?
+**Answer:** Colombia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica_Final
+
+### Row 1247 — Argentina (easy)
+**Q:** Argentina beat which nation on penalties in the 2022 World Cup quarter-final?
+**Answer:** Netherlands
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1249 — Argentina (medium)
+**Q:** Argentina faced Iceland in their 2018 World Cup opener. What was their FIFA ranking then?
+**Answer:** 5th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1251 — Argentina (hard)
+**Q:** Argentina held the top FIFA ranking for most of which two years?
+**Answer:** 2023 and 2024
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1254 — Argentina (medium)
+**Q:** Argentina scored 15 goals in 7 matches at which World Cup?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1256 — Argentina (medium)
+**Q:** Argentina were 7th in 2014, but what was their FIFA ranking at the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1258 — Argentina (easy)
+**Q:** Argentina's 1-0 2021 Copa América final win over Brazil was decided by which scorer?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1260 — Argentina (easy)
+**Q:** Argentina's 2021 Copa América final win over Brazil ended with what scoreline?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1262 — Argentina (medium)
+**Q:** Argentina's 2022 final ended 3-3. Which final did they lose 1-0?
+**Answer:** The 2014 final
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 1263 — Argentina (medium)
+**Q:** Argentina's 2022 World Cup group stage saw which goalkeeper later win the Golden Glove?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1265 — Argentina (medium)
+**Q:** Argentina's 2022 World Cup win came after Messi celebrated his first major trophy in which year?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1266 — Argentina (medium)
+**Q:** Argentina's AFA is a founding member of which football confederation?
+**Answer:** CONMEBOL
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1267 — Argentina (medium)
+**Q:** At the 2014 FIFA World Cup, Argentina's FIFA ranking was which number?
+**Answer:** 7th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1269 — Argentina (easy)
+**Q:** At the 2018 FIFA World Cup, which Argentine club's Copa Libertadores final was moved to Madrid?
+**Answer:** River Plate
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1271 — Argentina (easy)
+**Q:** At the 2018 World Cup, which Argentina manager was sacked after the round of 16 exit?
+**Answer:** Jorge Sampaoli
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1272 — Argentina (easy)
+**Q:** At the 2019 Copa América, which team beat Argentina 2-0 in the semi-final?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1273 — Argentina (easy)
+**Q:** At the 2022 Finalissima, what was Argentina's winning scoreline against Italy?
+**Answer:** 3-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1274 — Argentina (easy)
+**Q:** At the 2022 Finalissima, which stadium hosted Argentina's 3-0 win?
+**Answer:** Wembley Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1275 — Argentina (medium)
+**Q:** At the 2022 World Cup in Qatar, how many goals did Argentina concede in their 7 matches?
+**Answer:** 8 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1283 — Argentina (easy)
+**Q:** At which 2018 World Cup stage was Argentina eliminated by France?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1284 — Argentina (medium)
+**Q:** At which Copa América did Argentina lose a quarter-final to Uruguay on penalties?
+**Answer:** 2011 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1285 — Argentina (medium)
+**Q:** At which FIFA World Cup was Argentina ranked 5th?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1286 — Argentina (easy)
+**Q:** At which stadium did Argentina win a 2022 final 3-0?
+**Answer:** Wembley Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1288 — Argentina (medium)
+**Q:** At which World Cup did Julián Álvarez emerge as Argentina's key forward?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1290 — Argentina (hard)
+**Q:** At which World Cup was Argentina's FIFA ranking 5th?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1291 — Argentina (hard)
+**Q:** At which World Cup was Argentina's FIFA ranking 7th?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1293 — Argentina (medium)
+**Q:** Before which World Cup tournament were Argentina ranked 3rd in FIFA's rankings?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1294 — Argentina (medium)
+**Q:** Before which World Cup was Argentina's Estadio Único Madre de Ciudades built?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1308 — Argentina (easy)
+**Q:** How long was Argentina's unbeaten run from July 2019 to December 2022?
+**Answer:** 36 matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1315 — Argentina (medium)
+**Q:** How many goals did Argentina concede in their 2022 World Cup campaign?
+**Answer:** 8 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1316 — Argentina (medium)
+**Q:** How many goals did Argentina score at the 2022 FIFA World Cup?
+**Answer:** 15 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1317 — Argentina (medium)
+**Q:** How many goals did Argentina score in the 2022 FIFA World Cup?
+**Answer:** 15 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1318 — Argentina (hard)
+**Q:** How many goals did Argentina's Sergio Agüero score to win the 2014-15 Premier League Golden Boot?
+**Answer:** 26 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1320 — Argentina (medium)
+**Q:** How many goals did France score against Argentina in the 2018 World Cup round of 16?
+**Answer:** Four
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1321 — Argentina (medium)
+**Q:** How many goals did Germany score against Argentina in the 2010 World Cup quarter-final?
+**Answer:** Four
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+
+### Row 1322 — Argentina (medium)
+**Q:** How many goals had Paulo Dybala scored for Argentina by the 2022 FIFA World Cup?
+**Answer:** 3 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1323 — Argentina (medium)
+**Q:** How many goals has Lionel Messi scored for Argentina?
+**Answer:** 116 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1324 — Argentina (medium)
+**Q:** How many major trophies did Argentina win under Lionel Scaloni?
+**Answer:** Three
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1326 — Argentina (medium)
+**Q:** How many matches was Argentina's unbeaten run before the 2022 World Cup?
+**Answer:** 36 matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1327 — Argentina (medium)
+**Q:** How many matches was Argentina's unbeaten run from 2019 to 2022?
+**Answer:** 36 matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1329 — Argentina (medium)
+**Q:** How many points did Argentina earn in 2022 World Cup CONMEBOL qualifying?
+**Answer:** 39 points
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1331 — Argentina (medium)
+**Q:** How many wins did Argentina record in 2022 World Cup qualifying?
+**Answer:** 11 wins
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1338 — Argentina (medium)
+**Q:** In 2022 World Cup qualifying, how many matches did Argentina win?
+**Answer:** 11 matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1343 — Argentina (medium)
+**Q:** In a 2018 World Cup group stage draw, which team saved Lionel Messi's penalty for Argentina?
+**Answer:** Iceland
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1344 — Argentina (easy)
+**Q:** In a 2022 World Cup qualifier, Argentina beat Uruguay by what scoreline in Buenos Aires?
+**Answer:** 3-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1346 — Argentina (medium)
+**Q:** In Argentina's 1-1 draw with Iceland in the 2018 World Cup group stage, who missed a penalty?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1349 — Argentina (medium)
+**Q:** In Argentina's 2022 World Cup qualifying, how many matches did they win?
+**Answer:** 11 matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1350 — Argentina (easy)
+**Q:** In Argentina's 2022 World Cup quarter-final, which defender scored against the Netherlands?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1351 — Argentina (easy)
+**Q:** In Argentina's 2022 World Cup semi-final, who dribbled past Joško Gvardiol before scoring?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1354 — Argentina (easy)
+**Q:** In the 2010 World Cup quarter-final, what was Germany's winning margin over Argentina?
+**Answer:** 4-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+
+### Row 1357 — Argentina (easy)
+**Q:** In the 2018 Copa Libertadores final, which Argentine club did NOT compete?
+**Answer:** Racing Club
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1358 — Argentina (easy)
+**Q:** In the 2022 World Cup semi-final, which Argentine player dribbled past Joško Gvardiol to score?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1359 — Argentina (easy)
+**Q:** In the 2022 World Cup, which team beat Argentina 2-1 in their opening match?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1363 — Argentina (easy)
+**Q:** In which 2021 tournament did Argentina use Scaloni's 4-3-3 with Messi in a free role?
+**Answer:** Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1364 — Argentina (easy)
+**Q:** In which 2022 World Cup match did Argentina's Gonzalo Montiel score the decisive penalty?
+**Answer:** Final against France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1366 — Argentina (medium)
+**Q:** In which consecutive Copa América finals did Argentina's rivalry with Chile intensify?
+**Answer:** 2015 and 2016
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1367 — Argentina (medium)
+**Q:** In which Copa América did Argentina win without losing a single match?
+**Answer:** 2021 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1370 — Argentina (medium)
+**Q:** In which month of 2018 was Lionel Scaloni appointed Argentina's head coach?
+**Answer:** Nov-18
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1371 — Argentina (hard)
+**Q:** In which season did Argentine Sergio Agüero win the Premier League Golden Boot?
+**Answer:** 2014-15
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1374 — Argentina (medium)
+**Q:** In which World Cup cycle did Argentina appoint Lionel Scaloni as head coach?
+**Answer:** 2018-2022 cycle
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1375 — Argentina (medium)
+**Q:** In which World Cup cycle did Argentina qualify via CONMEBOL as reigning champions?
+**Answer:** 2026 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1376 — Argentina (medium)
+**Q:** In which World Cup did Argentina draw 1-1 with Iceland in their opening match?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1379 — Argentina (medium)
+**Q:** In which World Cup did Argentina's Scaloni deploy a 4-3-3 with Messi in a free role?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1382 — Argentina (hard)
+**Q:** In which World Cup did Argentine Julián Álvarez score four goals?
+**Answer:** 2022 FIFA World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1383 — Argentina (medium)
+**Q:** In which World Cup did Lionel Messi dribble past Joško Gvardiol to score for Argentina?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1385 — Argentina (medium)
+**Q:** In which World Cup final did Ángel Di María score for Argentina?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1386 — Argentina (medium)
+**Q:** In which World Cup final did Argentina beat France on penalties?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1387 — Argentina (hard)
+**Q:** In which World Cup final did Argentina's Emiliano Martínez save Randal Kolo Muani's last-minute shot?
+**Answer:** 2022 World Cup final
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1388 — Argentina (medium)
+**Q:** In which World Cup final did Argentina's Gonzalo Montiel score the decisive penalty?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1389 — Argentina (medium)
+**Q:** In which World Cup final did Argentine manager Alejandro Sabella lead his team?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 1393 — Argentina (medium)
+**Q:** In which World Cup final did Kylian Mbappé score a hat-trick against Argentina?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+
+### Row 1394 — Argentina (hard)
+**Q:** In which World Cup group stage did Argentina draw 1-1 with Iceland?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1402 — Argentina (medium)
+**Q:** In which World Cup year did Messi dribble past Gvardiol for Argentina?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1403 — Argentina (medium)
+**Q:** In which World Cup year was Argentina eliminated by France in the round of 16?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1404 — Argentina (medium)
+**Q:** In which year did Argentina beat Chile 2-1 for Copa América third place?
+**Answer:** 2019
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+
+### Row 1405 — Argentina (medium)
+**Q:** In which year did Argentina beat France to win the World Cup?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1406 — Argentina (medium)
+**Q:** In which year did Argentina beat Uruguay 3-0 in a World Cup qualifier in Buenos Aires?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1407 — Argentina (medium)
+**Q:** In which year did Argentina finish third at the Copa América?
+**Answer:** 2019
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+
+### Row 1408 — Argentina (medium)
+**Q:** In which year did Argentina first reach the FIFA number 1 ranking?
+**Answer:** 2023
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1409 — Argentina (medium)
+**Q:** In which year did Argentina host the Copa América where they lost in the quarter-finals?
+**Answer:** 2011
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica
+
+### Row 1410 — Argentina (medium)
+**Q:** In which year did Argentina host the Copa América where Uruguay eliminated them?
+**Answer:** 2011
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica
+
+### Row 1411 — Argentina (medium)
+**Q:** In which year did Argentina lose the Copa América final to Chile on penalties?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2015_Copa_Am%C3%A9rica_Final
+
+### Row 1412 — Argentina (medium)
+**Q:** In which year did Argentina win the Copa América by beating Brazil in the final?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1413 — Argentina (medium)
+**Q:** In which year did Argentina win the Copa América in Brazil?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1416 — Argentina (medium)
+**Q:** In which year did Gerardo Martino's tenure as Argentina manager end?
+**Answer:** 2016
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1419 — Argentina (medium)
+**Q:** In which year did Lionel Messi win his first major trophy with Argentina?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1420 — Argentina (medium)
+**Q:** In which year did Lionel Scaloni become Argentina's head coach?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1422 — Argentina (medium)
+**Q:** In which year was Argentina manager Edgardo Bauza sacked?
+**Answer:** 2017
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1423 — Argentina (medium)
+**Q:** In which year was Argentine Lionel Messi Copa América Best Player?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1424 — Argentina (medium)
+**Q:** In which year was Edgardo Bauza sacked as Argentina's manager?
+**Answer:** 2017
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1425 — Argentina (medium)
+**Q:** In which year's Copa América final did Argentina's Di María score the winning goal at the Maracanã?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1426 — Argentina (medium)
+**Q:** In which year's World Cup did Argentina lose 1-0 to Germany in the final?
+**Answer:** 2014
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 1427 — Argentina (medium)
+**Q:** In which years did Argentina lose consecutive Copa América finals to Chile?
+**Answer:** 2015 and 2016
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2015_Copa_Am%C3%A9rica_Final
+
+### Row 1438 — Argentina (medium)
+**Q:** What was Argentina's FIFA ranking at the 2014 World Cup?
+**Answer:** 7th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1440 — Argentina (medium)
+**Q:** What was Argentina's FIFA ranking at the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1441 — Argentina (medium)
+**Q:** What was Argentina's FIFA ranking at the start of the 2018 World Cup?
+**Answer:** 5th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1442 — Argentina (medium)
+**Q:** What was Argentina's FIFA ranking at the start of the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1443 — Argentina (medium)
+**Q:** What was Argentina's FIFA ranking entering the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1445 — Argentina (easy)
+**Q:** What was Argentina's winning margin against Italy in the 2022 Finalissima?
+**Answer:** 3-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1446 — Argentina (easy)
+**Q:** What was Argentina's winning margin against Uruguay in their 2022 World Cup qualifier?
+**Answer:** 3-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1447 — Argentina (easy)
+**Q:** What was Argentina's winning margin over Brazil in the 2021 Copa América final?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1449 — Argentina (hard)
+**Q:** What was the penalty shootout score when Argentina lost the 2015 Copa América final?
+**Answer:** 4-1 to Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2015_Copa_Am%C3%A9rica_Final
+
+### Row 1450 — Argentina (hard)
+**Q:** What was the score after extra time in Argentina's 2022 quarter-final?
+**Answer:** 2-2 draw
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1453 — Argentina (medium)
+**Q:** What was the score when Argentina lost the 2019 Copa América semi-final?
+**Answer:** 2-0 to Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+
+### Row 1456 — Argentina (medium)
+**Q:** When did Argentina beat Brazil 1-0 in the Copa América final?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1457 — Argentina (medium)
+**Q:** When did Argentina beat Brazil in the Copa América final at the Maracanã?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1458 — Argentina (medium)
+**Q:** When did Argentina beat Italy 3-0 in the Finalissima?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1459 — Argentina (medium)
+**Q:** When did Argentina beat Uruguay 3-0 in a World Cup qualifier in Buenos Aires?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1460 — Argentina (medium)
+**Q:** When did Argentina concede only 8 goals in 7 World Cup matches?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1461 — Argentina (medium)
+**Q:** When did Argentina draw 1-1 with Iceland at the World Cup?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1463 — Argentina (hard)
+**Q:** When did Argentina hold the number 1 FIFA ranking for most of two years?
+**Answer:** 2023 and 2024
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1464 — Argentina (medium)
+**Q:** When did Argentina last beat Brazil in a Copa América final?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1465 — Argentina (medium)
+**Q:** When did Argentina lose 2-0 to Brazil in a Copa América semi-final?
+**Answer:** 2019
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+
+### Row 1466 — Argentina (hard)
+**Q:** When did Argentina lose a Copa América quarter-final penalty shootout to Uruguay?
+**Answer:** 2011
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica
+
+### Row 1467 — Argentina (easy)
+**Q:** When did Argentina qualify for the 2018 FIFA World Cup?
+**Answer:** On the final matchday
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1468 — Argentina (easy)
+**Q:** When did Argentina qualify for the 2018 World Cup with a Messi hat-trick?
+**Answer:** On the final matchday
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1469 — Argentina (medium)
+**Q:** When did Argentina score 15 goals in 7 World Cup matches?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1470 — Argentina (medium)
+**Q:** When did Argentina secure 2018 World Cup qualification after a tough campaign?
+**Answer:** On the final matchday
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1471 — Argentina (easy)
+**Q:** When did Argentina secure their 2018 World Cup spot?
+**Answer:** Final matchday
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1475 — Argentina (medium)
+**Q:** When did Argentina win the 2022 Finalissima against Italy?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_Finalissima
+
+### Row 1477 — Argentina (hard)
+**Q:** When did Argentina's coach Scaloni begin emphasising defensive solidity over individual brilliance?
+**Answer:** After 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1478 — Argentina (medium)
+**Q:** When did Argentina's Enzo Fernández move to Chelsea after the 2022 World Cup?
+**Answer:** Jan-23
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Enzo_Fern%C3%A1ndez
+
+### Row 1479 — Argentina (medium)
+**Q:** When did Argentina's Gonzalo Montiel score his World Cup-winning penalty?
+**Answer:** In 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1480 — Argentina (hard)
+**Q:** When did Argentina's Lionel Messi win his second World Cup Golden Ball?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1481 — Argentina (medium)
+**Q:** When did Argentina's massive victory parade in Buenos Aires happen after winning the 2022 World Cup?
+**Answer:** Dec-22
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1487 — Argentina (medium)
+**Q:** When did France knock Argentina out of the World Cup?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1488 — Argentina (medium)
+**Q:** When did Gerardo Martino manage the Argentina national team?
+**Answer:** 2014 to 2016
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1491 — Argentina (medium)
+**Q:** When did Saudi Arabia end Argentina's 36-match unbeaten run?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1492 — Argentina (medium)
+**Q:** When did Uruguay eliminate Argentina in the Copa América quarter-finals?
+**Answer:** 2011
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1494 — Argentina (medium)
+**Q:** When was Argentina's Estadio Único Madre de Ciudades built?
+**Answer:** 2021
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1495 — Argentina (medium)
+**Q:** When was Lautaro Martínez joint-top scorer for Argentina?
+**Answer:** 2024 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1497 — Argentina (medium)
+**Q:** When was Lionel Scaloni first appointed as Argentina's head coach, initially as interim?
+**Answer:** Nov-18
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1498 — Argentina (medium)
+**Q:** Where did Argentina finish in the 2022 World Cup CONMEBOL qualification?
+**Answer:** Second place
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1499 — Argentina (easy)
+**Q:** Where did Argentina finish in the 2022 World Cup CONMEBOL qualifiers?
+**Answer:** Second
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1500 — Argentina (easy)
+**Q:** Where did Argentina train before their 2022 World Cup campaign?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1501 — Argentina (easy)
+**Q:** Where did Argentina train for 2022 World Cup qualifiers?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1502 — Argentina (easy)
+**Q:** Where did Argentina train for the 2022 FIFA World Cup?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1503 — Argentina (easy)
+**Q:** Where did Argentina's 2022 World Cup squad train before the tournament?
+**Answer:** AFA complex, Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1505 — Argentina (easy)
+**Q:** Where is Argentina's national team training base for 2022 World Cup preparation?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1508 — Argentina (easy)
+**Q:** Where is Argentina's national team training base for the FIFA World Cup?
+**Answer:** AFA complex, Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1509 — Argentina (easy)
+**Q:** Where is Argentina's training base for World Cup squads?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1510 — Argentina (easy)
+**Q:** Where was Argentina's 2022 World Cup qualifying training base located?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1511 — Argentina (easy)
+**Q:** Where was Argentina's massive 2022 World Cup victory parade held?
+**Answer:** Buenos Aires
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1512 — Argentina (easy)
+**Q:** Where was Argentina's training base before their 2022 World Cup victory?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1513 — Argentina (easy)
+**Q:** Where was Argentina's training base for 2022 World Cup qualifiers?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1514 — Argentina (easy)
+**Q:** Which 2018 World Cup opponent did Argentina's Messi miss a penalty against?
+**Answer:** Iceland
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1515 — Argentina (easy)
+**Q:** Which 2022 Argentina player scored more World Cup goals than Ángel Di María?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1517 — Argentina (easy)
+**Q:** Which 2022 World Cup award winner was in Argentina's squad?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1523 — Argentina (easy)
+**Q:** Which 2022 World Cup quarter-final opponent did Argentina beat on penalties?
+**Answer:** Netherlands
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1526 — Argentina (easy)
+**Q:** Which Argentina 2022 World Cup assistant coach was a former defender?
+**Answer:** Roberto Ayala
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1527 — Argentina (easy)
+**Q:** Which Argentina assistant coached under Scaloni at the 2022 World Cup?
+**Answer:** Roberto Ayala
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1530 — Argentina (easy)
+**Q:** Which Argentina captain lifted the World Cup trophy at Lusail Stadium in 2022?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1531 — Argentina (easy)
+**Q:** Which Argentina captain lifted the World Cup trophy in 2022?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1532 — Argentina (easy)
+**Q:** Which Argentina centre-back became a key starter from 2021 onwards?
+**Answer:** Cristian Romero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1533 — Argentina (easy)
+**Q:** Which Argentina centre-back became key from 2021 onwards?
+**Answer:** Cristian Romero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1534 — Argentina (easy)
+**Q:** Which Argentina centre-back emerged in 2021 and featured in the 2022 World Cup triumph?
+**Answer:** Cristian Romero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1535 — Argentina (medium)
+**Q:** Which Argentina coach oversaw their troubled 2018 World Cup qualification campaign?
+**Answer:** Multiple coaches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1536 — Argentina (easy)
+**Q:** Which Argentina coach won the 2021 Copa América before the 2022 World Cup?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1537 — Argentina (easy)
+**Q:** Which Argentina defender earned over 100 caps between the 2014 and 2022 World Cups?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1538 — Argentina (easy)
+**Q:** Which Argentina defender earned over 100 caps by the 2022 FIFA World Cup?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1539 — Argentina (easy)
+**Q:** Which Argentina defender first won the World Cup in 2022?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1540 — Argentina (easy)
+**Q:** Which Argentina defender for Manchester United was in the 2022 World Cup-winning squad?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1541 — Argentina (easy)
+**Q:** Which Argentina defender from Manchester United was in the 2022 World Cup squad?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1542 — Argentina (easy)
+**Q:** Which Argentina defender partnered Cristian Romero centrally at the 2022 World Cup?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1543 — Argentina (easy)
+**Q:** Which Argentina defender partnered Nicolás Otamendi in the 2022 World Cup?
+**Answer:** Cristian Romero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1544 — Argentina (easy)
+**Q:** Which Argentina defender scored a 2018 World Cup winner versus Nigeria?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1545 — Argentina (medium)
+**Q:** Which Argentina defender scored a winning goal in the 2018 World Cup group stage?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1546 — Argentina (easy)
+**Q:** Which Argentina defender scored the winning goal against Nigeria at the 2018 World Cup?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1547 — Argentina (easy)
+**Q:** Which Argentina defender started at right-back in the 2022 World Cup final?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1549 — Argentina (easy)
+**Q:** Which Argentina defender was a 2022 World Cup assistant coach?
+**Answer:** Walter Samuel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1550 — Argentina (easy)
+**Q:** Which Argentina defender was on Scaloni's 2022 World Cup coaching staff?
+**Answer:** Walter Samuel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1551 — Argentina (easy)
+**Q:** Which Argentina defender was part of Scaloni's 2022 World Cup coaching staff?
+**Answer:** Walter Samuel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1552 — Argentina (easy)
+**Q:** Which Argentina defender was part of the 2022 World Cup-winning squad?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1553 — Argentina (easy)
+**Q:** Which Argentina defender with over 100 caps played in the 2022 World Cup?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1554 — Argentina (easy)
+**Q:** Which Argentina defender won the 2022 World Cup with Manchester United?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1555 — Argentina (easy)
+**Q:** Which Argentina fan groups are known for their passion at the 2014 World Cup?
+**Answer:** Barras bravas
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2014_FIFA_World_Cup
+
+### Row 1556 — Argentina (medium)
+**Q:** Which Argentina FIFA ranking preceded their 2023 number 1 spot after the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1557 — Argentina (easy)
+**Q:** Which Argentina fixture is the most-played international in South America?
+**Answer:** Argentina vs Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1558 — Argentina (easy)
+**Q:** Which Argentina forward emerged as a key partner to Messi at the 2022 World Cup?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1562 — Argentina (easy)
+**Q:** Which Argentina forward partnered Lionel Messi in attack at the 2022 World Cup?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1563 — Argentina (easy)
+**Q:** Which Argentina forward partnered Messi at the 2022 World Cup?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1564 — Argentina (easy)
+**Q:** Which Argentina forward partnered Messi up front at the 2022 World Cup?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1565 — Argentina (easy)
+**Q:** Which Argentina forward retired from football in 2021 due to a heart condition?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1568 — Argentina (easy)
+**Q:** Which Argentina forward was part of their 2014 World Cup squad?
+**Answer:** Ezequiel Lavezzi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2014_FIFA_World_Cup
+
+### Row 1569 — Argentina (easy)
+**Q:** Which Argentina forward was part of their squad at the 2014 World Cup in Brazil?
+**Answer:** Ezequiel Lavezzi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2014_FIFA_World_Cup
+
+### Row 1570 — Argentina (medium)
+**Q:** Which Argentina forward won the Premier League Golden Boot in the 2014-15 season?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1571 — Argentina (easy)
+**Q:** Which Argentina forward's emergence alongside Messi was key to their 2022 World Cup attack?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1572 — Argentina (easy)
+**Q:** Which Argentina goalkeeper made a last-minute extra-time save in the 2022 World Cup final?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1574 — Argentina (easy)
+**Q:** Which Argentina goalkeeper saved Randal Kolo Muani's shot in the 2022 World Cup final?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1575 — Argentina (easy)
+**Q:** Which Argentina goalkeeper saved three penalties at the 2022 FIFA World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1576 — Argentina (easy)
+**Q:** Which Argentina goalkeeper started as first-choice from 2021 through the 2022 World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1577 — Argentina (easy)
+**Q:** Which Argentina goalkeeper started every match at the 2022 FIFA World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1578 — Argentina (easy)
+**Q:** Which Argentina goalkeeper started his reign as first-choice before the 2022 World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1579 — Argentina (easy)
+**Q:** Which Argentina goalkeeper started their 2022 World Cup final win?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1580 — Argentina (easy)
+**Q:** Which Argentina goalkeeper was first-choice at the 2022 FIFA World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1581 — Argentina (easy)
+**Q:** Which Argentina goalkeeper was first-choice from the 2021 Copa América onwards?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1585 — Argentina (easy)
+**Q:** Which Argentina goalkeeper won the Golden Glove at the 2022 FIFA World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1586 — Argentina (easy)
+**Q:** Which Argentina goalkeeper won the Golden Glove at the 2024 Copa América?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1588 — Argentina (easy)
+**Q:** Which Argentina home stadium for 2022 qualifiers has a capacity near 54,000?
+**Answer:** La Bombonera
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1589 — Argentina (easy)
+**Q:** Which Argentina home stadium for World Cup qualifiers has a capacity near 54,000?
+**Answer:** La Bombonera
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1590 — Argentina (easy)
+**Q:** Which Argentina home stadium has a capacity near 54,000?
+**Answer:** La Bombonera
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1591 — Argentina (easy)
+**Q:** Which Argentina home venue had the largest capacity for 2022 World Cup qualifiers?
+**Answer:** Estadio Monumental
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1593 — Argentina (easy)
+**Q:** Which Argentina keeper won the Golden Glove at the 2024 Copa América?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1594 — Argentina (easy)
+**Q:** Which Argentina league was the foundation when they qualified for the 2010 World Cup?
+**Answer:** Primera División
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1595 — Argentina (easy)
+**Q:** Which Argentina left-back played at the 2022 FIFA World Cup?
+**Answer:** Marcos Acuña
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1598 — Argentina (easy)
+**Q:** Which Argentina left-back played in the 2022 FIFA World Cup in Qatar?
+**Answer:** Marcos Acuña
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1600 — Argentina (easy)
+**Q:** Which Argentina left-back started in the 2022 FIFA World Cup?
+**Answer:** Marcos Acuña
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1601 — Argentina (easy)
+**Q:** Which Argentina manager began his tenure as an interim coach in 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1602 — Argentina (easy)
+**Q:** Which Argentina manager celebrated animatedly on the bench at the 2010 World Cup?
+**Answer:** Diego Maradona
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1603 — Argentina (easy)
+**Q:** Which Argentina manager in 2022 valued team cohesion over individual brilliance?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1604 — Argentina (easy)
+**Q:** Which Argentina manager led them to the 2014 World Cup final?
+**Answer:** Alejandro Sabella
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1605 — Argentina (easy)
+**Q:** Which Argentina manager led them to the 2022 World Cup title?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1606 — Argentina (easy)
+**Q:** Which Argentina manager lost the 2015 and 2016 Copa América finals?
+**Answer:** Gerardo Martino
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1607 — Argentina (easy)
+**Q:** Which Argentina manager lost the 2015 Copa América final?
+**Answer:** Gerardo Martino
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1608 — Argentina (easy)
+**Q:** Which Argentina manager lost the 2016 Copa América Centenario final?
+**Answer:** Gerardo Martino
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1609 — Argentina (easy)
+**Q:** Which Argentina manager lost two consecutive Copa América finals in 2015 and 2016?
+**Answer:** Gerardo Martino
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1610 — Argentina (easy)
+**Q:** Which Argentina manager lost two consecutive Copa América finals?
+**Answer:** Gerardo Martino
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1612 — Argentina (easy)
+**Q:** Which Argentina manager oversaw the 4-0 quarter-final loss at the 2010 World Cup?
+**Answer:** Diego Maradona
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1614 — Argentina (easy)
+**Q:** Which Argentina manager reached the 2014 World Cup final?
+**Answer:** Alejandro Sabella
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1615 — Argentina (easy)
+**Q:** Which Argentina manager selected the squad for the 2018 FIFA World Cup?
+**Answer:** Jorge Sampaoli
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1616 — Argentina (easy)
+**Q:** Which Argentina manager took charge for the 2022 World Cup qualifiers in November 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1617 — Argentina (easy)
+**Q:** Which Argentina manager used a 4-3-3 formation with Messi in a free role at the 2022 World Cup?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1620 — Argentina (easy)
+**Q:** Which Argentina manager was appointed head coach in November 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1621 — Argentina (easy)
+**Q:** Which Argentina manager was appointed in November 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1622 — Argentina (easy)
+**Q:** Which Argentina manager was first appointed as interim in November 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1623 — Argentina (easy)
+**Q:** Which Argentina manager was first appointed on an interim basis in November 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1624 — Argentina (easy)
+**Q:** Which Argentina manager was in charge at the 2018 World Cup?
+**Answer:** Jorge Sampaoli
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1625 — Argentina (easy)
+**Q:** Which Argentina manager was sacked after the 2018 World Cup?
+**Answer:** Jorge Sampaoli
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1626 — Argentina (easy)
+**Q:** Which Argentina manager was sacked after their 2018 World Cup round of 16 exit?
+**Answer:** Jorge Sampaoli
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1627 — Argentina (easy)
+**Q:** Which Argentina manager was sacked during 2018 World Cup qualifying?
+**Answer:** Edgardo Bauza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1628 — Argentina (medium)
+**Q:** Which Argentina manager was sacked in 2017 after poor World Cup qualification results?
+**Answer:** Edgardo Bauza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1630 — Argentina (easy)
+**Q:** Which Argentina manager won the 2021 and 2024 Copa América and the 2022 World Cup?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1631 — Argentina (easy)
+**Q:** Which Argentina manager won the 2021 Copa América and 2024 Copa América?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1632 — Argentina (easy)
+**Q:** Which Argentina manager won the 2022 FIFA World Cup?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1633 — Argentina (easy)
+**Q:** Which Argentina manager won the 2022 World Cup and two Copa Américas?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1635 — Argentina (easy)
+**Q:** Which Argentina manager's 2022 World Cup success was built on defensive cohesion?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1636 — Argentina (easy)
+**Q:** Which Argentina manager's 2022 World Cup success was built on defensive solidity over individual brilliance?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Scaloni
+
+### Row 1639 — Argentina (easy)
+**Q:** Which Argentina midfielder started the 2022 World Cup final alongside De Paul?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1640 — Argentina (easy)
+**Q:** Which Argentina midfielder started the 2022 World Cup final?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1641 — Argentina (easy)
+**Q:** Which Argentina midfielder transferred to Benfica before the 2022 World Cup?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1642 — Argentina (easy)
+**Q:** Which Argentina midfielder was a key player in the 2022 World Cup-winning squad?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1644 — Argentina (easy)
+**Q:** Which Argentina midfielder was a key starter in their 2022 World Cup-winning team?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1645 — Argentina (easy)
+**Q:** Which Argentina midfielder was key in their 2021 Copa América and 2022 World Cup triumphs?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1646 — Argentina (easy)
+**Q:** Which Argentina midfielder was key in their 2022 World Cup win?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1647 — Argentina (easy)
+**Q:** Which Argentina midfielder was key in their 2022 World Cup-winning squad?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1649 — Argentina (easy)
+**Q:** Which Argentina midfielder was key to their 2022 World Cup win?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1650 — Argentina (easy)
+**Q:** Which Argentina midfielder was key to their 2022 World Cup-winning squad?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1652 — Argentina (easy)
+**Q:** Which Argentina midfielder's post-World Cup 2022 transfer to Chelsea broke the British record?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1653 — Argentina (easy)
+**Q:** Which Argentina midfielder's pre-2022 World Cup move to Benfica solidified his place in the squad?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1654 — Argentina (easy)
+**Q:** Which Argentina opponent ended their 2019 Copa América run in the semi-finals?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1655 — Argentina (easy)
+**Q:** Which Argentina opponent lost 3-0 in a 2022 World Cup qualifier in Buenos Aires?
+**Answer:** Uruguay
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1656 — Argentina (easy)
+**Q:** Which Argentina opponent lost a 1-0 final to them in 2021?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1657 — Argentina (easy)
+**Q:** Which Argentina player became captain in 2011?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1659 — Argentina (easy)
+**Q:** Which Argentina player both started the 2022 final and scored against Poland?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1660 — Argentina (easy)
+**Q:** Which Argentina player captained both the 2022 World Cup and 2024 Copa América?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1661 — Argentina (easy)
+**Q:** Which Argentina player celebrated emotionally after the 2021 Copa América win?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1662 — Argentina (easy)
+**Q:** Which Argentina player celebrated emotionally after winning the 2021 Copa América?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1664 — Argentina (easy)
+**Q:** Which Argentina player had 198 caps as of 2026?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1665 — Argentina (easy)
+**Q:** Which Argentina player had the most caps by 2026?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1667 — Argentina (easy)
+**Q:** Which Argentina player held the appearance record with 198 caps in 2026?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1670 — Argentina (easy)
+**Q:** Which Argentina player is their all-time top scorer and most-capped player?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1671 — Argentina (easy)
+**Q:** Which Argentina player led their 2022 World Cup qualifying in goals?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1672 — Argentina (easy)
+**Q:** Which Argentina player led them to an unbeaten 2021 Copa América win?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1674 — Argentina (easy)
+**Q:** Which Argentina player lifted the World Cup trophy in 2022?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1675 — Argentina (easy)
+**Q:** Which Argentina player missed a crucial penalty against Iceland in 2018?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1679 — Argentina (easy)
+**Q:** Which Argentina player missed a penalty against Iceland at the 2018 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1680 — Argentina (easy)
+**Q:** Which Argentina player missed a penalty at the 2018 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1681 — Argentina (easy)
+**Q:** Which Argentina player missed a penalty in the 2018 World Cup draw with Iceland?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1682 — Argentina (easy)
+**Q:** Which Argentina player missed a penalty in their 1-1 draw with Iceland at the 2018 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1683 — Argentina (easy)
+**Q:** Which Argentina player missed a penalty in their 2018 World Cup opener?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1684 — Argentina (easy)
+**Q:** Which Argentina player moved to Chelsea for £106.8m after the 2022 World Cup?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1685 — Argentina (easy)
+**Q:** Which Argentina player partnered Cristian Romero in central defence at the 2022 World Cup?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1687 — Argentina (easy)
+**Q:** Which Argentina player reached 198 caps after the 2022 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1688 — Argentina (easy)
+**Q:** Which Argentina player reached 198 caps by 2026?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1689 — Argentina (easy)
+**Q:** Which Argentina player reached his cap record before the 2026 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1690 — Argentina (easy)
+**Q:** Which Argentina player rescued their troubled 2018 qualifying campaign with a hat-trick?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1691 — Argentina (easy)
+**Q:** Which Argentina player retired from international football in 2018?
+**Answer:** Gonzalo Higuaín
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1692 — Argentina (easy)
+**Q:** Which Argentina player retired internationally after the 2016 Copa América final?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1693 — Argentina (easy)
+**Q:** Which Argentina player reversed his 2016 international retirement decision?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1694 — Argentina (easy)
+**Q:** Which Argentina player reversed his 2016 retirement before the 2018 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1696 — Argentina (easy)
+**Q:** Which Argentina player scored a brace in the 2022 World Cup semi-final?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1698 — Argentina (easy)
+**Q:** Which Argentina player scored a hat-trick in a 2018 World Cup qualifier against Ecuador?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1699 — Argentina (medium)
+**Q:** Which Argentina player scored a hat-trick to secure 2018 World Cup qualification?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1700 — Argentina (easy)
+**Q:** Which Argentina player scored a winning World Cup goal in 2018?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1701 — Argentina (easy)
+**Q:** Which Argentina player scored a World Cup goal in 2022 versus Poland?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1702 — Argentina (easy)
+**Q:** Which Argentina player scored against Poland at the 2022 World Cup?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1703 — Argentina (medium)
+**Q:** Which Argentina player scored against Poland in the 2022 World Cup group stage?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1704 — Argentina (easy)
+**Q:** Which Argentina player scored against the Netherlands in the 2022 World Cup quarter-final?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1705 — Argentina (easy)
+**Q:** Which Argentina player scored from offside against Mexico in the 2010 World Cup?
+**Answer:** Carlos Tévez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2010_FIFA_World_Cup
+
+### Row 1706 — Argentina (easy)
+**Q:** Which Argentina player scored from offside in the 2010 World Cup round of 16?
+**Answer:** Carlos Tévez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2010_FIFA_World_Cup
+
+### Row 1707 — Argentina (easy)
+**Q:** Which Argentina player scored from offside in their 2010 World Cup win over Mexico?
+**Answer:** Carlos Tévez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2010_FIFA_World_Cup
+
+### Row 1708 — Argentina (easy)
+**Q:** Which Argentina player scored in both the 2021 and 2024 Copa América?
+**Answer:** Lautaro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1709 — Argentina (easy)
+**Q:** Which Argentina player scored in both the 2021 Copa América and 2022 World Cup finals?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1711 — Argentina (easy)
+**Q:** Which Argentina player scored in the 2022 FIFA World Cup final?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1712 — Argentina (easy)
+**Q:** Which Argentina player scored in the 2022 World Cup final against France?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1715 — Argentina (medium)
+**Q:** Which Argentina player scored in the 2022 World Cup group stage?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1721 — Argentina (easy)
+**Q:** Which Argentina player scored in their 4-3 loss to France at the 2018 World Cup?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1723 — Argentina (easy)
+**Q:** Which Argentina player scored past Joško Gvardiol in the 2022 World Cup semi-final?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1724 — Argentina (easy)
+**Q:** Which Argentina player scored regularly in 2026 World Cup qualifying?
+**Answer:** Lautaro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1725 — Argentina (easy)
+**Q:** Which Argentina player scored the 2018 World Cup winner against Nigeria?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1727 — Argentina (easy)
+**Q:** Which Argentina player scored the 2022 World Cup final's winning penalty?
+**Answer:** Gonzalo Montiel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1728 — Argentina (easy)
+**Q:** Which Argentina player scored the decisive 2022 World Cup final penalty?
+**Answer:** Gonzalo Montiel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1729 — Argentina (easy)
+**Q:** Which Argentina player scored the decisive penalty in the 2022 World Cup final shootout?
+**Answer:** Gonzalo Montiel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1730 — Argentina (easy)
+**Q:** Which Argentina player scored the winner at the 2021 Copa América final?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1731 — Argentina (easy)
+**Q:** Which Argentina player scored the winner in the 2021 Copa América final in Brazil?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1733 — Argentina (medium)
+**Q:** Which Argentina player scored the winning 2018 World Cup group stage goal against Nigeria?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1736 — Argentina (easy)
+**Q:** Which Argentina player scored the winning goal in the 2021 Copa América final?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica_Final
+
+### Row 1739 — Argentina (easy)
+**Q:** Which Argentina player scored twice in the 2022 World Cup semi-final win over Croatia?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1740 — Argentina (easy)
+**Q:** Which Argentina player scored twice in the 2022 World Cup semi-final?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1741 — Argentina (easy)
+**Q:** Which Argentina player started at right-back in the 2022 World Cup?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1742 — Argentina (medium)
+**Q:** Which Argentina player started at right-back in their 2022 World Cup group stage?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1743 — Argentina (easy)
+**Q:** Which Argentina player started in midfield for the 2022 World Cup final?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1744 — Argentina (easy)
+**Q:** Which Argentina player started the 2022 World Cup final after scoring against Poland?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1745 — Argentina (easy)
+**Q:** Which Argentina player topped their 2022 World Cup qualifying scoring?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1746 — Argentina (easy)
+**Q:** Which Argentina player was animated on the bench in the 2010 World Cup?
+**Answer:** Diego Maradona
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1747 — Argentina (easy)
+**Q:** Which Argentina player was captain at the 2022 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1751 — Argentina (easy)
+**Q:** Which Argentina player was in their 2022 FIFA World Cup squad?
+**Answer:** Paulo Dybala
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1752 — Argentina (easy)
+**Q:** Which Argentina player was joint-top scorer at the 2024 Copa América?
+**Answer:** Lautaro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1754 — Argentina (easy)
+**Q:** Which Argentina player was named Best Player of the 2021 Copa América?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1756 — Argentina (easy)
+**Q:** Which Argentina player was part of the squad at Lusail Stadium for the 2022 World Cup final?
+**Answer:** Paulo Dybala
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1758 — Argentina (easy)
+**Q:** Which Argentina player was the 2021 Copa América's best player?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1759 — Argentina (easy)
+**Q:** Which Argentina player was the 2021 Copa América's best with 4 goals and 5 assists?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1760 — Argentina (easy)
+**Q:** Which Argentina player was the 2022 World Cup qualifying top scorer?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1763 — Argentina (easy)
+**Q:** Which Argentina player was the key playmaker in their 2014 FIFA World Cup squad?
+**Answer:** Ever Banega
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2014_FIFA_World_Cup
+
+### Row 1764 — Argentina (easy)
+**Q:** Which Argentina player was the left-back at the 2022 FIFA World Cup?
+**Answer:** Marcos Acuña
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1765 — Argentina (easy)
+**Q:** Which Argentina player was the starting right-back at the 2022 World Cup?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1767 — Argentina (easy)
+**Q:** Which Argentina player was top scorer in 2022 qualifying, but not in 2026 qualifying?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1770 — Argentina (easy)
+**Q:** Which Argentina player was top scorer in their 2022 World Cup qualifying campaign?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1771 — Argentina (easy)
+**Q:** Which Argentina player was top scorer in their perfect 2022 World Cup home qualifiers?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1772 — Argentina (medium)
+**Q:** Which Argentina player won 8 Ballon d'Or awards?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1773 — Argentina (easy)
+**Q:** Which Argentina player won Best Player at the 2021 Copa América?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1774 — Argentina (medium)
+**Q:** Which Argentina player won eight Ballon d'Or awards from 2008-2026?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1775 — Argentina (medium)
+**Q:** Which Argentina player won his first Ballon d'Or after the 2008-2026 era began?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1777 — Argentina (easy)
+**Q:** Which Argentina player won Olympic gold in 2008 and the 2022 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1778 — Argentina (medium)
+**Q:** Which Argentina player won the 2014 World Cup Golden Ball award?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1781 — Argentina (easy)
+**Q:** Which Argentina player won the 2021 Copa América Best Player award?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1783 — Argentina (medium)
+**Q:** Which Argentina player won the 2022 World Cup Golden Ball?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1785 — Argentina (easy)
+**Q:** Which Argentina player won the 2024 Copa América Golden Glove?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1786 — Argentina (medium)
+**Q:** Which Argentina player won the Golden Ball at the 2014 FIFA World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1787 — Argentina (medium)
+**Q:** Which Argentina player won the Golden Ball at the 2022 FIFA World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1789 — Argentina (easy)
+**Q:** Which Argentina player won the Golden Glove award at the 2022 World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1790 — Argentina (medium)
+**Q:** Which Argentina player won the Premier League Golden Boot in 2014-15?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1791 — Argentina (easy)
+**Q:** Which Argentina player won the Young Player Award at the 2022 FIFA World Cup?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1792 — Argentina (easy)
+**Q:** Which Argentina player's 2014 World Cup team was ranked 7th by FIFA?
+**Answer:** Lionel Messi's team
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1793 — Argentina (easy)
+**Q:** Which Argentina player's 2017 hat-trick secured their 2018 World Cup place?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1794 — Argentina (medium)
+**Q:** Which Argentina player's 2018 hat-trick secured their World Cup qualification?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1796 — Argentina (easy)
+**Q:** Which Argentina player's 2023 transfer set a British record fee?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1797 — Argentina (easy)
+**Q:** Which Argentina player's captaincy began in 2011, making him their longest-serving World Cup captain?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1798 — Argentina (easy)
+**Q:** Which Argentina player's goals led to 11 wins in 2022 World Cup qualifying?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1799 — Argentina (medium)
+**Q:** Which Argentina player's hat-trick secured 2018 World Cup qualification against Ecuador?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1802 — Argentina (medium)
+**Q:** Which Argentina player's hat-trick secured their 2018 World Cup qualification on the final matchday?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1803 — Argentina (medium)
+**Q:** Which Argentina player's performances earned him the 2022 World Cup Golden Ball?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1804 — Argentina (easy)
+**Q:** Which Argentina player's performances ensured their unbeaten 2021 Copa América victory?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1805 — Argentina (easy)
+**Q:** Which Argentina player's tournament performance ensured their unbeaten 2021 Copa América win?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1806 — Argentina (easy)
+**Q:** Which Argentina players scored in the 2022 World Cup semi-final?
+**Answer:** Messi and Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1809 — Argentina (easy)
+**Q:** Which Argentina rival failed to qualify for a 2010-2022 World Cup?
+**Answer:** Italy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1810 — Argentina (easy)
+**Q:** Which Argentina rival has faced them in the most-played South American international fixture?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1811 — Argentina (easy)
+**Q:** Which Argentina rival won consecutive Copa América finals in 2015 and 2016?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1812 — Argentina (easy)
+**Q:** Which Argentina rival's final-day 2018 qualifier featured a Messi hat-trick?
+**Answer:** Ecuador
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1813 — Argentina (easy)
+**Q:** Which Argentina rivalry is South America's most-played international fixture?
+**Answer:** Argentina vs Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1814 — Argentina (hard)
+**Q:** Which Argentina squad conceded only 8 goals in 7 World Cup 2022 matches?
+**Answer:** 2022 World Cup squad
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1815 — Argentina (hard)
+**Q:** Which Argentina squad held FIFA's top ranking for most of 2023-2024?
+**Answer:** 2022 World Cup winners
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1816 — Argentina (easy)
+**Q:** Which Argentina squad prepared at Ezeiza for the 2022 FIFA World Cup?
+**Answer:** The AFA complex
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1818 — Argentina (easy)
+**Q:** Which Argentina stadium had the largest capacity for 2022 World Cup qualifiers?
+**Answer:** Estadio Monumental
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1819 — Argentina (easy)
+**Q:** Which Argentina stadium has a capacity of approximately 57,000?
+**Answer:** Estadio Mario Alberto Kempes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1820 — Argentina (easy)
+**Q:** Which Argentina stadium has an approximate capacity of 57,000?
+**Answer:** Estadio Mario Alberto Kempes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1821 — Argentina (easy)
+**Q:** Which Argentina stadium has the largest capacity for 2022 qualifiers?
+**Answer:** Estadio Monumental
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1823 — Argentina (easy)
+**Q:** Which Argentina stadium hosted 2022 World Cup qualifiers but wasn't the primary venue?
+**Answer:** Estadio Mario Alberto Kempes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1826 — Argentina (easy)
+**Q:** Which Argentina stadium hosted a 2022 World Cup qualifier due to its 57,000 capacity?
+**Answer:** Estadio Mario Alberto Kempes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1828 — Argentina (easy)
+**Q:** Which Argentina stadium in Córdoba has a capacity near 57,000?
+**Answer:** Estadio Mario Alberto Kempes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1829 — Argentina (easy)
+**Q:** Which Argentina stadium used for 2022 qualifiers holds approximately 57,000?
+**Answer:** Estadio Mario Alberto Kempes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1832 — Argentina (easy)
+**Q:** Which Argentina stadium, capacity ~84,567, is their primary home venue?
+**Answer:** Estadio Monumental
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1833 — Argentina (easy)
+**Q:** Which Argentina stadium, with a capacity near 85,000, is their primary home venue?
+**Answer:** Estadio Monumental
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1834 — Argentina (easy)
+**Q:** Which Argentina star reversed his 2016 retirement before the 2018 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1839 — Argentina (easy)
+**Q:** Which Argentina striker retired before the 2022 FIFA World Cup?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1840 — Argentina (easy)
+**Q:** Which Argentina striker retired from football in 2021?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1841 — Argentina (easy)
+**Q:** Which Argentina striker retired from international football in 2018?
+**Answer:** Gonzalo Higuaín
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1844 — Argentina (medium)
+**Q:** Which Argentina striker won the Premier League Golden Boot in 2014-15, the year after Argentina reached the World Cup final?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1845 — Argentina (medium)
+**Q:** Which Argentina striker won the Premier League Golden Boot in 2014-15?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1846 — Argentina (easy)
+**Q:** Which Argentina supporter groups are known for their passion?
+**Answer:** Barras bravas
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1847 — Argentina (hard)
+**Q:** Which Argentina team scored 15 goals in 7 matches at the 2022 World Cup?
+**Answer:** 2022 World Cup squad
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1848 — Argentina (medium)
+**Q:** Which Argentina team went unbeaten throughout the 2021 Copa América?
+**Answer:** The 2021 champions
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1850 — Argentina (easy)
+**Q:** Which Argentina training base hosted their 2022 World Cup rivalry match preparations?
+**Answer:** AFA complex in Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1851 — Argentina (easy)
+**Q:** Which Argentina training complex hosted their 2022 World Cup preparations?
+**Answer:** AFA complex Ezeiza
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1852 — Argentina (easy)
+**Q:** Which Argentina World Cup knockout loss occurred in 2018?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1853 — Argentina (medium)
+**Q:** Which Argentina World Cup qualifying campaign required a final-matchday Messi hat-trick to qualify?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1854 — Argentina (easy)
+**Q:** Which Argentine 2022 World Cup-winning defender plays for Manchester United?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1856 — Argentina (easy)
+**Q:** Which Argentine club won the 2018 Copa Libertadores final played in Madrid?
+**Answer:** River Plate
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1858 — Argentina (easy)
+**Q:** Which Argentine defender had over 100 caps by the 2022 World Cup?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1859 — Argentina (easy)
+**Q:** Which Argentine defender partnered Cristian Romero in central defence at the 2022 World Cup?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1860 — Argentina (easy)
+**Q:** Which Argentine defender scored the 2018 World Cup winner vs Nigeria?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1861 — Argentina (easy)
+**Q:** Which Argentine defender scored the winner against Nigeria at the 2018 World Cup?
+**Answer:** Marcos Rojo
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 1863 — Argentina (easy)
+**Q:** Which Argentine defender was part of the 2022 World Cup-winning squad?
+**Answer:** Lisandro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1864 — Argentina (easy)
+**Q:** Which Argentine defender with over 100 caps started the 2022 World Cup final?
+**Answer:** Nicolás Otamendi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1865 — Argentina (easy)
+**Q:** Which Argentine domestic league is the top tier of the nation's football structure?
+**Answer:** Primera División
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1867 — Argentina (easy)
+**Q:** Which Argentine forward partnered Messi in the 2022 World Cup attack?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1868 — Argentina (easy)
+**Q:** Which Argentine goalkeeper started every match at the 2022 World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1869 — Argentina (easy)
+**Q:** Which Argentine goalkeeper won the 2024 Copa América Golden Glove award?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1871 — Argentina (easy)
+**Q:** Which Argentine goalkeeper won the Golden Glove at the 2022 FIFA World Cup?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1874 — Argentina (easy)
+**Q:** Which Argentine league is the top domestic competition for Argentina's World Cup players?
+**Answer:** Primera División
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1875 — Argentina (easy)
+**Q:** Which Argentine league is the top tier of the country's football structure?
+**Answer:** Primera División
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1876 — Argentina (easy)
+**Q:** Which Argentine league's clubs supply players for World Cup qualifiers?
+**Answer:** Primera División
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1877 — Argentina (easy)
+**Q:** Which Argentine left-back did Lionel Scaloni select for the 2022 World Cup?
+**Answer:** Marcos Acuña
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1880 — Argentina (easy)
+**Q:** Which Argentine manager reached the 2014 World Cup final?
+**Answer:** Alejandro Sabella
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1881 — Argentina (easy)
+**Q:** Which Argentine manager was appointed in November 2018, initially as interim?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1882 — Argentina (easy)
+**Q:** Which Argentine midfielder joined Chelsea after the 2022 FIFA World Cup?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1883 — Argentina (easy)
+**Q:** Which Argentine midfielder started the 2022 World Cup final alongside Rodrigo De Paul?
+**Answer:** Alexis Mac Allister
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1886 — Argentina (easy)
+**Q:** Which Argentine midfielder was in the 2022 World Cup winning squad?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1887 — Argentina (easy)
+**Q:** Which Argentine midfielder was key in the 2021 Copa América and 2022 World Cup?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1888 — Argentina (easy)
+**Q:** Which Argentine midfielder was key in their 2022 World Cup-winning squad?
+**Answer:** Rodrigo De Paul
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1889 — Argentina (easy)
+**Q:** Which Argentine midfielder won the Young Player Award at the 2022 World Cup?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1890 — Argentina (easy)
+**Q:** Which Argentine midfielder's £106.8m Chelsea move followed his 2022 World Cup success?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1891 — Argentina (easy)
+**Q:** Which Argentine midfielder's 2022 World Cup form led to a £106.8m Chelsea move?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1892 — Argentina (easy)
+**Q:** Which Argentine organization structures football around the Primera División?
+**Answer:** AFA
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1894 — Argentina (easy)
+**Q:** Which Argentine player became national team captain in 2011?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1897 — Argentina (easy)
+**Q:** Which Argentine player had the most international caps as of 2026?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1898 — Argentina (medium)
+**Q:** Which Argentine player has won 8 Ballon d'Or awards?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1899 — Argentina (medium)
+**Q:** Which Argentine player has won the most Ballon d'Or awards since 2008?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1902 — Argentina (easy)
+**Q:** Which Argentine player is both the all-time top scorer and most-capped?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1906 — Argentina (easy)
+**Q:** Which Argentine player scored in the 2022 World Cup final?
+**Answer:** Ángel Di María
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1908 — Argentina (easy)
+**Q:** Which Argentine player scored the winning penalty in the 2022 World Cup final?
+**Answer:** Gonzalo Montiel
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1909 — Argentina (easy)
+**Q:** Which Argentine player scored twice against Croatia in the 2022 World Cup semi-final?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1910 — Argentina (easy)
+**Q:** Which Argentine player scored two goals in the 2022 World Cup semi-final?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1912 — Argentina (easy)
+**Q:** Which Argentine player was named Best Player of the 2021 Copa América?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1913 — Argentina (easy)
+**Q:** Which Argentine player was the Best Player at the 2021 Copa América?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1915 — Argentina (medium)
+**Q:** Which Argentine player won the 2014-15 Premier League Golden Boot with 26 goals?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1916 — Argentina (easy)
+**Q:** Which Argentine player won the 2021 Copa América Best Player award?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1918 — Argentina (medium)
+**Q:** Which Argentine player won the 2022 World Cup Golden Ball?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1920 — Argentina (medium)
+**Q:** Which Argentine player won the Golden Ball at the 2014 FIFA World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1921 — Argentina (medium)
+**Q:** Which Argentine player won the Golden Ball award at the 2022 FIFA World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1923 — Argentina (medium)
+**Q:** Which Argentine player won the Premier League Golden Boot in the 2014-15 season?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1924 — Argentina (easy)
+**Q:** Which Argentine player won the Young Player Award at the 2022 FIFA World Cup?
+**Answer:** Enzo Fernández
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1925 — Argentina (medium)
+**Q:** Which Argentine player's 2014 World Cup performance earned him the Golden Ball?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1929 — Argentina (easy)
+**Q:** Which Argentine right-back started every match at the 2022 World Cup?
+**Answer:** Nahuel Molina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1931 — Argentina (easy)
+**Q:** Which Argentine scored a brace in the 2022 World Cup semi-final?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1932 — Argentina (easy)
+**Q:** Which Argentine scored an offside goal versus Mexico at the 2010 World Cup?
+**Answer:** Carlos Tévez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1933 — Argentina (easy)
+**Q:** Which Argentine scored in every 2022 World Cup knockout round?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1934 — Argentina (easy)
+**Q:** Which Argentine star plays a free role in Scaloni's 4-3-3 system?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1935 — Argentina (medium)
+**Q:** Which Argentine star scored a hat-trick to clinch 2018 World Cup qualification?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1936 — Argentina (medium)
+**Q:** Which Argentine star's eight Ballon d'Or wins from 2008-2026 anchored their World Cup success?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1939 — Argentina (easy)
+**Q:** Which Argentine was a key playmaker in the 2014 World Cup squad?
+**Answer:** Ever Banega
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 1941 — Argentina (medium)
+**Q:** Which Argentine won Golden Ball awards at two World Cups?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1942 — Argentina (medium)
+**Q:** Which Argentine won the 2014-15 Premier League Golden Boot?
+**Answer:** Sergio Agüero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+
+### Row 1943 — Argentina (easy)
+**Q:** Which Argentine won the 2022 World Cup Golden Glove?
+**Answer:** Emiliano Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Emiliano_Mart%C3%ADnez
+
+### Row 1944 — Argentina (medium)
+**Q:** Which Argentine won the Golden Ball at both the 2014 and 2022 World Cups?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1945 — Argentina (medium)
+**Q:** Which Argentine won the Golden Ball at the 2014 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1946 — Argentina (medium)
+**Q:** Which Argentine won the World Cup Golden Ball in 2014?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1948 — Argentina (medium)
+**Q:** Which Argentine's Ballon d'Or wins included the year of the 2010 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 1949 — Argentina (easy)
+**Q:** Which Asian team beat Argentina in the 2022 World Cup opening match?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1958 — Argentina (easy)
+**Q:** Which CONMEBOL rival did Argentina beat 3-0 in a 2022 World Cup qualifier in Buenos Aires?
+**Answer:** Uruguay
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1960 — Argentina (easy)
+**Q:** Which CONMEBOL team finished ahead of Argentina in 2022 World Cup qualifying?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 1965 — Argentina (medium)
+**Q:** Which Copa América final did Argentina lose under Gerardo Martino?
+**Answer:** 2015 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1967 — Argentina (easy)
+**Q:** Which Croatia defender did Argentina's Messi dribble past for his 2022 World Cup semi-final goal?
+**Answer:** Joško Gvardiol
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1969 — Argentina (easy)
+**Q:** Which European champions did Argentina defeat 3-0 in the 2022 Finalissima?
+**Answer:** Italy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1970 — Argentina (medium)
+**Q:** Which FIFA ranking did Argentina hold at the 2014 World Cup?
+**Answer:** 7th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1971 — Argentina (medium)
+**Q:** Which FIFA ranking did Argentina hold at the 2018 World Cup?
+**Answer:** 5th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1972 — Argentina (medium)
+**Q:** Which FIFA ranking did Argentina hold at the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1973 — Argentina (medium)
+**Q:** Which FIFA ranking did Argentina hold before the 2022 World Cup?
+**Answer:** 3rd
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+
+### Row 1974 — Argentina (easy)
+**Q:** Which formation did Argentina use in their 2022 World Cup-winning campaign?
+**Answer:** 4-3-3 formation
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1975 — Argentina (easy)
+**Q:** Which formation did Argentina use under Scaloni at the 2022 World Cup?
+**Answer:** 4-3-3 formation
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1977 — Argentina (easy)
+**Q:** Which host nation did Argentina beat in the 2021 Copa América final?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1979 — Argentina (easy)
+**Q:** Which is Argentina's most-played international fixture in South America?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1980 — Argentina (easy)
+**Q:** Which major international trophy did Argentina win in 2021, giving Messi his first?
+**Answer:** Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1981 — Argentina (medium)
+**Q:** Which major tournament did Lionel Messi first win with Argentina?
+**Answer:** 2021 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1982 — Argentina (easy)
+**Q:** Which manager was initially appointed as Argentina's interim head coach in November 2018?
+**Answer:** Lionel Scaloni
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1983 — Argentina (easy)
+**Q:** Which nation beat Argentina 2-1 in their 2022 World Cup opener?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1986 — Argentina (easy)
+**Q:** Which nation beat Argentina in both the 2010 and 2014 FIFA World Cup?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1989 — Argentina (easy)
+**Q:** Which nation did Argentina beat 3-0 in the 2022 Finalissima?
+**Answer:** Italy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1992 — Argentina (easy)
+**Q:** Which nation did Argentina beat in the 2022 World Cup semi-final where Messi dribbled past Gvardiol?
+**Answer:** Croatia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1993 — Argentina (easy)
+**Q:** Which nation did Argentina beat in the 2024 Copa América final?
+**Answer:** Colombia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1994 — Argentina (easy)
+**Q:** Which nation did Argentina beat on penalties in the 2022 FIFA World Cup final?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1995 — Argentina (easy)
+**Q:** Which nation did Argentina defeat in the 2024 Copa América final?
+**Answer:** Colombia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1996 — Argentina (easy)
+**Q:** Which nation did Argentina lose to in the 2015 Copa América final?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 1998 — Argentina (easy)
+**Q:** Which nation eliminated Argentina on penalties in the 2011 Copa América quarter-finals?
+**Answer:** Uruguay
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2000 — Argentina (easy)
+**Q:** Which nation finished ahead of Argentina in 2022 World Cup qualifying?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+
+### Row 2003 — Argentina (easy)
+**Q:** Which nation has Argentina faced most often in South America?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2005 — Argentina (medium)
+**Q:** Which nation inflicted Argentina's only 2022 World Cup group stage defeat?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2007 — Argentina (easy)
+**Q:** Which nation lost to Argentina in the 2022 World Cup final?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2028 — Argentina (easy)
+**Q:** Which player scored a hat-trick for France against Argentina in the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+
+### Row 2029 — Argentina (easy)
+**Q:** Which player scored a World Cup final hat-trick against Argentina but lost?
+**Answer:** Kylian Mbappé
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+
+### Row 2030 — Argentina (easy)
+**Q:** Which player scored Germany's extra-time winner against Argentina in the 2014 World Cup final?
+**Answer:** Mario Götze
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2031 — Argentina (hard)
+**Q:** Which player scored in Argentina's 2022 World Cup quarter-final penalty shootout?
+**Answer:** Lautaro Martínez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2033 — Argentina (easy)
+**Q:** Which player scored twice for France against Argentina in the 2018 World Cup?
+**Answer:** Kylian Mbappé
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+
+### Row 2034 — Argentina (easy)
+**Q:** Which player was offside for Argentina's goal against Mexico in 2010?
+**Answer:** Carlos Tévez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2010_FIFA_World_Cup
+
+### Row 2035 — Argentina (easy)
+**Q:** Which player's goals helped Argentina top their 2022 World Cup group?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 2036 — Argentina (easy)
+**Q:** Which rival did Argentina beat 1-0 in the 2021 Copa América final?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2038 — Argentina (easy)
+**Q:** Which rival did Argentina beat 2-1 in the 2019 Copa América third-place match?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2040 — Argentina (easy)
+**Q:** Which round did Argentina reach at the 2018 FIFA World Cup under Jorge Sampaoli?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2041 — Argentina (easy)
+**Q:** Which scoreline did Argentina achieve against Brazil in the 2021 Copa América final?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2044 — Argentina (easy)
+**Q:** Which stadium hosted Argentina's 2021 Copa América final win?
+**Answer:** Maracanã
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2048 — Argentina (easy)
+**Q:** Which stage did Argentina reach as host of the 2011 Copa América?
+**Answer:** Quarter-finals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2049 — Argentina (easy)
+**Q:** Which stage did Argentina reach at the 2014 FIFA World Cup?
+**Answer:** The final
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2050 — Argentina (easy)
+**Q:** Which team beat Argentina 1-0 in the 2014 World Cup final?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2056 — Argentina (easy)
+**Q:** Which team beat Argentina in both the 2010 quarter-final and 2014 final?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2057 — Argentina (easy)
+**Q:** Which team beat Argentina in the 2014 World Cup final?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2058 — Argentina (easy)
+**Q:** Which team beat Argentina in the 2015 and 2016 Copa América finals?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2059 — Argentina (easy)
+**Q:** Which team beat Argentina in the 2015 Copa América final?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2060 — Argentina (easy)
+**Q:** Which team beat Argentina in the 2018 World Cup round of 16?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2061 — Argentina (easy)
+**Q:** Which team beat Argentina in the 2019 Copa América semi-final?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2062 — Argentina (easy)
+**Q:** Which team beat Argentina in their 2022 World Cup opener?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2063 — Argentina (easy)
+**Q:** Which team beat Argentina on penalties in the 2016 Copa América final?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2067 — Argentina (easy)
+**Q:** Which team did Argentina beat 2-1 for third place at the 2019 Copa América?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2069 — Argentina (easy)
+**Q:** Which team did Argentina beat 3-0 in the 2022 Finalissima?
+**Answer:** Italy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2070 — Argentina (medium)
+**Q:** Which team did Argentina beat in the 2010 World Cup knockout stage?
+**Answer:** Mexico
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2073 — Argentina (easy)
+**Q:** Which team did Argentina beat in the 2022 FIFA World Cup final?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2075 — Argentina (easy)
+**Q:** Which team did Argentina beat in the 2024 Copa América final?
+**Answer:** Colombia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2076 — Argentina (easy)
+**Q:** Which team did Argentina beat on penalties in the 2022 World Cup quarter-final?
+**Answer:** Netherlands
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2077 — Argentina (easy)
+**Q:** Which team did Argentina beat to finish third at the 2019 Copa América?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2078 — Argentina (easy)
+**Q:** Which team did Argentina defeat in the 2022 World Cup final?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2079 — Argentina (easy)
+**Q:** Which team did Argentina draw 1-1 with in their 2018 World Cup opener?
+**Answer:** Iceland
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2080 — Argentina (easy)
+**Q:** Which team did Argentina lose consecutive Copa América finals to in 2015 and 2016?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2081 — Argentina (easy)
+**Q:** Which team did Argentina lose to in the 2016 Copa América Centenario final?
+**Answer:** Chile
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2083 — Argentina (easy)
+**Q:** Which team eliminated Argentina 4-0 in the 2010 World Cup quarter-finals?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2085 — Argentina (easy)
+**Q:** Which team eliminated Argentina in the 2018 World Cup round of 16?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2086 — Argentina (easy)
+**Q:** Which team eliminated Argentina in the 2019 Copa América semi-final?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2087 — Argentina (easy)
+**Q:** Which team eliminated host Argentina in the 2011 Copa América quarter-finals?
+**Answer:** Uruguay
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2088 — Argentina (easy)
+**Q:** Which team ended Argentina's 36-match unbeaten run at the 2022 FIFA World Cup?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2090 — Argentina (easy)
+**Q:** Which team finished above Argentina in 2022 FIFA World Cup CONMEBOL qualifying?
+**Answer:** Brazil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2094 — Argentina (easy)
+**Q:** Which team knocked Argentina out in the 2018 World Cup round of 16?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2095 — Argentina (easy)
+**Q:** Which team lost to Argentina on penalties in the 2022 World Cup quarter-final?
+**Answer:** Netherlands
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2099 — Argentina (easy)
+**Q:** Which team scored the extra-time winner against Argentina in the 2014 World Cup final?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2103 — Argentina (easy)
+**Q:** Which Tottenham defender partnered Otamendi for Argentina at the 2022 World Cup?
+**Answer:** Cristian Romero
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2104 — Argentina (medium)
+**Q:** Which trophy did Argentina win first under Lionel Scaloni?
+**Answer:** 2021 Copa América
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2105 — Argentina (medium)
+**Q:** Which trophy did Lionel Scaloni NOT win as Argentina's manager?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2106 — Argentina (easy)
+**Q:** Which two Argentina players scored in their 2022 World Cup semi-final win?
+**Answer:** Messi and Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2113 — Argentina (easy)
+**Q:** Which two Argentine players scored in the 2022 World Cup semi-final win over Croatia?
+**Answer:** Messi and Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2114 — Argentina (easy)
+**Q:** Which two Argentines scored in the 2022 World Cup semi-final win over Croatia?
+**Answer:** Messi and Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2117 — Argentina (medium)
+**Q:** Which two years did Argentina lose Copa América finals to Chile?
+**Answer:** 2015 and 2016
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2120 — Argentina (medium)
+**Q:** Which World Cup did Argentina qualify for as reigning champions?
+**Answer:** 2026 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2123 — Argentina (hard)
+**Q:** Which World Cup final did Argentina lose to Germany 1-0 in extra time?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2125 — Argentina (medium)
+**Q:** Which year did Argentina beat Italy 3-0 in the Finalissima?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2126 — Argentina (medium)
+**Q:** Which year did Argentina lose the Copa América semi-final to Brazil?
+**Answer:** 2019
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2127 — Argentina (medium)
+**Q:** Which year did Argentina reach FIFA number 1 after the 2022 World Cup?
+**Answer:** 2023
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2128 — Argentina (easy)
+**Q:** Who captained Argentina at the 2022 FIFA World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 2129 — Argentina (easy)
+**Q:** Who managed Argentina at the 2010 FIFA World Cup?
+**Answer:** Diego Maradona
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2130 — Argentina (easy)
+**Q:** Who managed Argentina when they lost the 2015 Copa América final?
+**Answer:** Gerardo Martino
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2134 — Argentina (easy)
+**Q:** Who scored a hat-trick against Argentina in the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+
+### Row 2135 — Argentina (easy)
+**Q:** Who scored Argentina's offside goal in the 2010 World Cup?
+**Answer:** Carlos Tévez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2010_FIFA_World_Cup
+
+### Row 2137 — Argentina (easy)
+**Q:** Who scored the winning goal in the 2014 World Cup final against Argentina?
+**Answer:** Mario Götze
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+
+### Row 2139 — Argentina (easy)
+**Q:** Who scored twice for Argentina in the 2022 World Cup semi-final?
+**Answer:** Julián Álvarez
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+
+### Row 2140 — Argentina (easy)
+**Q:** Who was Argentina's top scorer in 2022 World Cup qualifying?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Lionel_Messi
+
+### Row 2142 — Argentina (hard)
+**Q:** Why did Argentina begin 2026 World Cup qualifying as champions?
+**Answer:** Won 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2143 — Argentina (easy)
+**Q:** Why did Argentina choose Estadio Mario Alberto Kempes for a 2022 qualifier instead of a smaller stadium?
+**Answer:** Larger capacity than others
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2144 — Argentina (easy)
+**Q:** Why did Argentina finish second in 2022 World Cup CONMEBOL qualifying?
+**Answer:** Brazil finished first
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2148 — Argentina (easy)
+**Q:** Why did Argentina host a 2022 World Cup qualifier at La Bombonera?
+**Answer:** Multiple venues were used
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2150 — Argentina (easy)
+**Q:** Why did Argentina qualify for the 2026 FIFA World Cup?
+**Answer:** CONMEBOL qualification campaign
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2154 — Argentina (easy)
+**Q:** Why did Argentina use multiple stadiums for 2022 World Cup qualifiers?
+**Answer:** Played matches across country
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team
+
+### Row 2155 — Argentina (easy)
+**Q:** Why did Argentina use several stadiums for 2022 World Cup qualifiers?
+**Answer:** Played matches across country
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Argentina fact base. Source: https://en.wikipedia.org/wiki/Argentina_national_football_team

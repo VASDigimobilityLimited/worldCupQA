@@ -89,7 +89,8 @@ Verdicts route into two files:
 - **`QA_FAILED_LIVENESS_PASSED_OTHERS.md`** — passed mechanical but **failed liveness**
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
-**✅ Algeria is fully complete** (rows 2–1228). All other 37 countries are **not started** (§4).
+**✅ Algeria is fully complete** (rows 2–1228). **✅ Argentina is also complete** (rows 1229–2160).
+The other 36 countries are **not started** (§4). Next up: **Australia** (rows 2161–3241).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -100,9 +101,11 @@ Verdicts route into two files:
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **Rows 231+ (new method) — `QA_PASSED_ALL.md`:** **554** ship-ready.
-- **Rows 231+ (new method) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **176** dangerous.
-- **Algeria total ship-ready (both methods):** 686.
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **1116** ship-ready
+  (Algeria 554 + Argentina 562).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **286** dangerous
+  (Algeria 176 + Argentina 110).
+- **Total ship-ready so far (both methods):** 1248.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
 
@@ -112,8 +115,8 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Country | CSV rows | total | QA_PASSED | Status / last verified row |
 |---------|----------|------:|----------:|----------------------------|
 | Algeria | 2–1228 | 1227 | 907 | ✅ **COMPLETE** (row 1228) |
-| Argentina | 1229–2160 | 932 | 672 | ⬜ not started |
-| Australia | 2161–3241 | 1081 | 835 | ⬜ not started |
+| Argentina | 1229–2160 | 932 | 672 | ✅ **COMPLETE** (row 2160) — 562 PASS / 110 FAIL |
+| Australia | 2161–3241 | 1081 | 835 | 🔵 **in progress** — resume at row 2161 |
 | Austria | 3242–4282 | 1041 | 761 | ⬜ not started |
 | Belgium | 4283–6096 | 1814 | 1327 | ⬜ not started |
 | Brazil | 6097–8182 | 2086 | 1564 | ⬜ not started |
