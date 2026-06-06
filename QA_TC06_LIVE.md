@@ -10,7 +10,7 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Last verified row: 1228**  (ALGERIA COMPLETE — resume at row 1229 = Argentina, next country)
+**Last verified row: 2160**  (✅ ARGENTINA COMPLETE — next sequential country: Australia, resume at row 2161)
 **BRAZIL in progress (rows 6097–8182), separate contributor — Brazil sub-cursor at bottom of file.**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
@@ -618,6 +618,173 @@ final, beat Senegal/Egypt, failed 2018/2022) plus recurring-error clusters.
 - Next country: **Argentina** (rows 1229–2160). (The CSV is alphabetical by country.)
 
 ---
+
+# ARGENTINA (rows 1229–2160) — NEW METHOD (only QA_PASSED.md rows)
+
+Fact base (verified this session): WCs won 1978/1986/**2022**; 2022 final beat France 3-3
+(4-2 pens), Emi Martínez Golden Glove, Messi Golden Ball, base camp **Qatar University**;
+2014 final lost 1-0 to Germany; 2018 R16 lost 4-3 to France (Sampaoli sacked); 2010 QF lost
+4-0 Germany; **Copa 2021** beat Brazil 1-0 (Di María, Maracanã) = Messi's 1st major; **Copa 2024**
+beat Colombia 1-0 a.e.t.; 2015 & 2016 Copa finals lost to Chile (Messi retired/un-retired after
+2016); 2022 Finalissima beat Italy 3-0 (Wembley); FIFA ranking 7th@2014, 5th@2018, 3rd@2022,
+#1 from Apr 2023; Messi 13 WC goals incl. 2006; 2008 Olympic gold = Messi+Di María+Agüero.
+
+## Batch rows 1229–1300 (Argentina) — 57 candidates → 42 PASS · 15 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1244,1246,1259,1277 | ❌ FAIL | corrupted answer (02-Jan=2-1, 04-Feb=4-2, 02-Feb=2-2) |
+| 1248 | ❌ FAIL | unverified "10th in early 2018" (were 5th by June) |
+| 1264 | ❌ FAIL | unverified squad count (13 leagues) |
+| 1268,1278 | ❌ FAIL | non-unique — Di María & Agüero also won 2008 Olympic gold |
+| 1276 | ❌ FAIL | false — Argentina never played Brazil at 2024 Copa |
+| 1279 | ❌ FAIL | explanation: 13 WC goals "across 2014/18/22" = 12 (omits 2006) |
+| 1281 | ❌ FAIL | non-unique — Lisandro Martínez also partnered Otamendi |
+| 1296 | ❌ FAIL | self-referential + unverified (>100 in top-5 leagues) |
+| 1298 | ❌ FAIL | false — drew 0-0 home vs Brazil; didn't win every home QCG |
+| 1299 | ❌ FAIL | unverified (Monumental "multiple times") |
+| 1300 | ❌ FAIL | wrong — 2022 base camp was Qatar University, not Ezeiza |
+| (other 42) | ✅ PASS | rankings 7th/5th/3rd, 2021 Copa, Finalissima, 2022 final, etc. |
+
+**Running totals (new method, all countries): 596 PASS-ALL · 191 FAIL-LIVENESS.**
+**Argentina so far: 42 PASS · 15 FAIL (rows 1229–1300).**
+
+## Batch rows 1301–1390 (Argentina) — 59 candidates → 42 PASS · 17 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1341,1342 | ❌ FAIL | false — Argentina UNBEATEN in 2022 qualifying (no 2-0 loss to Brazil) |
+| 1352 | ❌ FAIL | corrupted answer 04/03/2003 = "4-3-3" |
+| 1355,1361 | ❌ FAIL | "four goals in 23 min" false (Germany scored 3',67',74',89') |
+| 1369 | ❌ FAIL | 2022 final MOTM was Messi, not Di María |
+| 1373 | ❌ FAIL | non-unique — Argentina also topped groups 1998 & 2006 |
+| 1378 | ❌ FAIL | non-unique — Messi won Golden Ball 2014 AND 2022 |
+| 1335 | ❌ FAIL | non-unique — Monumental bigger than all 4 options |
+| 1332,1333 | ❌ FAIL | Messi WC goals "across 2014-22" = 12, not 13 (omits 2006) |
+| 1302,1303,1313 | ❌ FAIL | unverified "13 leagues" squad count (cf. 1264) |
+| 1334 | ❌ FAIL | combined 2018+2022 qualifying goals ~46, not "over 50" |
+| 1336,1339 | ❌ FAIL | unsupported venue claims (rotated venues; not Monumental-primary) |
+| (other 42) | ✅ PASS | Messi 116 goals, 8 conceded/15 scored 2022, Agüero 26 GB, Montiel/Emi final, etc. |
+
+**Running totals (new method, all countries): 638 PASS-ALL · 208 FAIL-LIVENESS.**
+**Argentina so far: 84 PASS · 32 FAIL (rows 1229–1390).**
+
+## Batch rows 1391–1480 (Argentina) — 71 candidates → 54 PASS · 17 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1444,1448,1452 | ❌ FAIL | corrupted answer (03-Mar=3-3, 03-Jan=3-1, 02-Jan=2-1) |
+| 1451,1455 | ❌ FAIL | false — no Argentina-Brazil match at 2024 Copa |
+| 1397,1473 | ❌ FAIL | 2022 qualifying record wrong (unbeaten 11-6-0; didn't win all home) |
+| 1415 | ❌ FAIL | Uruguay won 2023 U-20 WC, not Argentina (hosts, R16 exit) |
+| 1476 | ❌ FAIL | 2014 Fair Play Award went to Colombia, not Argentina |
+| 1414,1395 | ❌ FAIL | non-unique (Emi GG 2021&2024; Messi top scorer 2018 too) |
+| 1428,1429,1431 | ❌ FAIL | unverified "10th early 2018" (cf. 1248) |
+| 1396,1472 | ❌ FAIL | unverified Monumental 2022-qualifier usage (cf. 1299/1339) |
+| 1417 | ❌ FAIL | Messi most-capped ≈2021, not 2022 |
+| (other 54) | ✅ PASS | rankings 7/5/3, Copa 2021/2019/2011/2015, Finalissima, 2018 qual, etc. |
+
+**Running totals (new method, all countries): 692 PASS-ALL · 225 FAIL-LIVENESS.**
+**Argentina so far: 138 PASS · 49 FAIL (rows 1229–1480).**
+
+## Batch rows 1481–1570 (Argentina) — 72 candidates → 62 PASS · 10 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1483,1504 | ❌ FAIL | 2023 U-20 WC won by Uruguay, not Argentina (cf. 1415) |
+| 1484,1496 | ❌ FAIL | non-unique (Emi GG 2021&2024; Messi top scorer 2018 too) |
+| 1521 | ❌ FAIL | non-unique — Argentina also didn't lose to Mexico |
+| 1548 | ❌ FAIL | non-unique — Otamendi & Molina also started 2022 final |
+| 1566 | ❌ FAIL | Agüero scored 41 goals, not 42 |
+| 1529 | ❌ FAIL | combined 2018+2022 qual goals ~46, not over 50 (cf. 1334) |
+| 1486 | ❌ FAIL | unverified Monumental 2022-qualifier claim (cf. 1299/1396) |
+| 1482 | ❌ FAIL | vague answer + self-referential explanation |
+| (other 62) | ✅ PASS | Ezeiza base (correct), Messi captain, Romero/Otamendi/Lisandro/Molina, Rojo 2018, Agüero retirement, etc. |
+
+**Running totals (new method, all countries): 754 PASS-ALL · 235 FAIL-LIVENESS.**
+**Argentina so far: 200 PASS · 59 FAIL (rows 1229–1570).**
+
+## Batch rows 1571–1670 (Argentina) — 79 candidates → 75 PASS · 4 FAIL
+
+Mostly unambiguous "who" questions (Emi Martínez GK, Scaloni/Sampaoli/Sabella/Martino/Maradona
+managers, De Paul/Mac Allister/Enzo midfielders, Messi). **75 PASS · 4 FAIL.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1666,1668 | ❌ FAIL | Messi passed Mascherano in 2021 (29 Jun), not 2022 (cf. 1417) |
+| 1658 | ❌ FAIL | "116 goals before 2022 WC" — 116 is his 2026 total (~91 before 2022) |
+| 1613 | ❌ FAIL | built on unverified "10th in early 2018" premise (cf. 1248) |
+| (other 75) | ✅ PASS | Emi 2022 GG/saves, 198 caps, La Bombonera ~54k, Scaloni Nov-2018, etc. |
+
+**Running totals (new method, all countries): 829 PASS-ALL · 239 FAIL-LIVENESS.**
+**Argentina so far: 275 PASS · 63 FAIL (rows 1229–1670).**
+
+## Batch rows 1671–1780 (Argentina) — 83 candidates → 74 PASS · 9 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1748,1749,1750 | ❌ FAIL | non-unique 2008 Olympic gold (Messi+Agüero+Di María) |
+| 1718,1720 | ❌ FAIL | Pavón didn't score vs France 2018 (Di María/Mercado/Agüero did) |
+| 1686 | ❌ FAIL | non-unique — Lisandro also partnered Otamendi (cf. 1281) |
+| 1755 | ❌ FAIL | 2022 final MOTM was Messi, not Di María (cf. 1369) |
+| 1695 | ❌ FAIL | 13 WC goals "across 2014/18/22" = 12 (cf. 1332/1333) |
+| 1722 | ❌ FAIL | explanation says Agüero 42 goals (it's 41) |
+| (other 74) | ✅ PASS | Messi penalties/captain/Ballon d'Or, Di María 2021&2022 finals, Montiel, Tévez offside 2010, etc. |
+
+**Running totals (new method, all countries): 903 PASS-ALL · 248 FAIL-LIVENESS.**
+**Argentina so far: 349 PASS · 72 FAIL (rows 1229–1780).**
+
+## Batch rows 1781–1900 (Argentina) — 96 candidates → 83 PASS · 13 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1835,1836,1893 | ❌ FAIL | non-unique (2008 gold; Di María also every-WC 2010-22) |
+| 1884 | ❌ FAIL | non-unique — De Paul also key 2021 Copa + 2022 WC |
+| 1873,1900 | ❌ FAIL | Mascherano record passed 2021 not 2022 (cf. 1417) |
+| 1795 | ❌ FAIL | 2022 final MOTM was Messi, not Di María |
+| 1807 | ❌ FAIL | France-2018 scorers were Di María/Mercado/Agüero, not Pavón |
+| 1808 | ❌ FAIL | 2018 qualifying had ~19 goals (<25); combined ~46 (<50) |
+| 1849 | ❌ FAIL | 2014 Fair Play Award went to Colombia |
+| 1822,1827,1830 | ❌ FAIL | Monumental claims (before-Bombonera false; "multiple" unsupported) |
+| (other 83) | ✅ PASS | Messi GB/Ballon d'Or, Emi GG, Enzo Young Player, capacities, Primera/AFA, etc. |
+
+**Running totals (new method, all countries): 986 PASS-ALL · 261 FAIL-LIVENESS.**
+**Argentina so far: 432 PASS · 85 FAIL (rows 1229–1900).**
+
+## Batch rows 1901–2010 (Argentina) — 69 candidates → 60 PASS · 9 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 1963,1985,2002 | ❌ FAIL | false — Argentina unbeaten in 2022 qualifying (no Brazil defeat) |
+| 1904,1950 | ❌ FAIL | 2014 Fair Play Award was Colombia's (cf. 1476/1849) |
+| 1905,1930 | ❌ FAIL | Messi 13 WC goals "across 2014-22" = 12 (omits 2006) |
+| 1901 | ❌ FAIL | Mascherano record stood until 2021, not 2022 |
+| 1966 | ❌ FAIL | non-unique — Argentina also lost 2007 & 2015 finals |
+| (other 60) | ✅ PASS | rankings 7/5/3, Messi 2x Golden Ball, Montiel, Saudi upset, Finalissima, 2024 final, etc. |
+
+**Running totals (new method, all countries): 1046 PASS-ALL · 270 FAIL-LIVENESS.**
+**Argentina so far: 492 PASS · 94 FAIL (rows 1229–2010).**
+
+## Batch rows 2011–2160 (Argentina) — FINAL — 86 candidates → 70 PASS · 16 FAIL
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 2054,2093,2149 | ❌ FAIL | false Brazil "2022 qualifying defeat" (Argentina unbeaten) |
+| 2042,2043,2045,2047,2124 | ❌ FAIL | Monumental "multiple 2022 qualifiers" unsupported |
+| 2096,2097 | ❌ FAIL | "four goals in 23 minutes" false (Germany 2010) |
+| 2037 | ❌ FAIL | no Argentina-Brazil 2024 Copa match |
+| 2121 | ❌ FAIL | 2014 Fair Play Award was Colombia's |
+| 2110 | ❌ FAIL | fabricated assistant "Matelán" (real: Ayala/Samuel/Aimar) |
+| 2082 | ❌ FAIL | non-unique — Poland/Australia also didn't beat Argentina in a group game |
+| 2152 | ❌ FAIL | combined qualifying goals ~46, not over 50 |
+| 2160 | ❌ FAIL | built on unverified "10th early 2018" premise |
+| (other 70) | ✅ PASS | Mbappé hat-trick, Götze 2014, Tévez offside, Lautaro QF penalty, 2024 final, etc. |
+
+**Running totals (new method, all countries): 1116 PASS-ALL · 286 FAIL-LIVENESS.**
+
+# ✅ ARGENTINA COMPLETE (rows 1229–2160)
+- New method (QA_PASSED.md pool only): **562 ship-ready** + **110 failed-liveness** = 672 (matches QA_PASSED count).
+- Next country: **Australia** (rows 2161–3241).
 
 # ===== BRAZIL (rows 6097–8182) — NEW METHOD (only QA_PASSED.md rows) =====
 Separate contributor, started 2026-06-06. Country range 6097–8182 (2086 rows total;

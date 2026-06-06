@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **249** (Algeria 1228: 176 · Brazil 6097–6760 so far: 73)
+Total failed-liveness-passed-others so far: **359** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–6760 so far: 73)
 
 ---
 
@@ -725,6 +725,504 @@ All answer a "why did the squad change / look different after 2019" question wit
 editorializing, and Belmadi remained manager throughout (so the "new manager" framing elsewhere is wrong too).
 **Source:** none located (narrative claim).
 **Remedy:** Replace with concrete, sourceable facts (named retirements/debutants), or drop.
+
+---
+
+# ARGENTINA (rows 1229–2160)
+
+## Rows 1229–1300 (Argentina)
+
+### Rows 1244, 1246, 1259, 1277 — FAIL: corrupted answer (spreadsheet date-mangling)
+The `answer` cell is an Excel date-conversion of a scoreline (the explanation has the real score):
+- **1244 / 1259:** `02-Jan` = **"2-1"** (Argentina 2-1 Chile, 2019 Copa third-place match)
+- **1246:** `04-Feb` = **"4-2"** (Argentina beat France 4-2 on penalties, 2022 final)
+- **1277:** `02-Feb` = **"2-2"** (Argentina 2-2 Netherlands a.e.t., 2022 quarter-final)
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore the real scoreline strings; sweep the whole dataset for `DD-Mon` answers.
+
+### Rows 1268, 1278 — FAIL: non-unique answer (2008 Olympic gold)
+Both ask which Argentine (at the 2014 / 2022 WC) had won **2008 Olympic gold → Messi**, but
+**Ángel Di María** *and* **Sergio Agüero** (listed distractors) were also in the gold-winning
+2008 squad. (At 2022, Di María was in the squad too, so still non-unique.)
+**Source:** https://en.wikipedia.org/wiki/Football_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament
+**Remedy:** Use a discriminator unique to Messi, or drop.
+
+### Row 1276 — FAIL: false premise (no such match)
+**Q:** …Which team did Argentina beat 1-0 in the **2024 Copa América group stage**? **A:** Brazil
+**Why it fails:** Argentina (Group A) and Brazil (Group D) were in **different groups** and did
+**not** meet at the 2024 Copa América at all (Brazil went out in the quarter-finals to Uruguay).
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Drop — the match never happened.
+
+### Row 1279 — FAIL: wrong explanation (goal breakdown)
+**Q:** …which Argentine had 13 total World Cup goals? **A:** Messi
+**Why it fails:** The total (13) is right, but the explanation says they came "across the **2014,
+2018, and 2022** tournaments" — those three sum to **12** (4+1+7). Messi's 13th is his **2006**
+goal vs Serbia & Montenegro.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Fix the breakdown (include the 2006 goal), or drop the enumeration.
+
+### Row 1281 — FAIL: non-unique / overstated
+**Q:** …who partnered Otamendi in central defence [at 2022]? **A:** Cristian Romero ("throughout the campaign")
+**Why it fails:** **Lisandro Martínez** (a distractor) also started at CB next to Otamendi (vs
+Mexico and Poland after the Saudi loss); Romero was not the partner "throughout." Two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop "throughout," or make the answer unique to one match.
+
+### Row 1300 — FAIL: wrong fact
+**Q:** For the 2022 World Cup, which facility was Argentina's main training base? **A:** AFA complex in Ezeiza
+**Why it fails:** Argentina's 2022 World Cup base camp was **Qatar University** in Doha (hotel +
+training in one place). Ezeiza is their permanent home base in Argentina, not their tournament base
+— and "University of Qatar" is even offered as a distractor.
+**Source:** https://www.gulf-times.com/story/714557/Argentina-to-stay-and-train-at-Qatar-University-during-World-Cup
+**Remedy:** Change the answer to the Qatar University base.
+
+### Row 1298 — FAIL: false (did not win every home qualifier)
+**Q:** During which World Cup qualifiers did Argentina win **every home match**? **A:** 2022 qualifiers
+**Why it fails:** Argentina **drew 0-0 at home vs Brazil** (San Juan, 16 Nov 2021) during 2022
+CONMEBOL qualifying — so they did not win every home match (they were unbeaten, not all-winning).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Reword to "unbeaten in qualifying," or drop.
+
+### Rows 1248, 1299, 1264, 1296 — FAIL: unverified / unsupported claims
+- **1248:** "Argentina fell to **10th** in early 2018 under Sampaoli" — unconfirmed and implausible
+  (they were ranked **5th** by June 2018 with few intervening matches; no source supports a 10th-place dip).
+- **1299:** "used **Estadio Monumental multiple times** during 2022 qualifying" — unsupported; the
+  Monumental was under renovation and Argentina used provincial venues (San Juan, Santiago del Estero) for many qualifiers.
+- **1264:** "2022 squad featured players from **thirteen** different leagues" — unverifiable exact count.
+- **1296:** "**over 100** Argentine players in Europe's top-five leagues" — explanation is self-referential
+  ("The reference fact states…") and the count is unverified.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking , https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Verify each figure against a source, or drop. UNVERIFIED → FAIL.
+
+---
+
+## Rows 1301–1390 (Argentina)
+
+### Rows 1341, 1342 — FAIL: false (Argentina were unbeaten in 2022 qualifying)
+Both claim Argentina's "only defeat" in 2022 CONMEBOL qualifying was a **2-0 loss to Brazil**.
+Argentina went **unbeaten** through the entire 2022 qualifying campaign (11 W, 6 D, **0 L** — part of
+their 36-match unbeaten run). There was no 2-0 loss to Brazil; the two Brazil games were an abandoned
+match and a 0-0 draw.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — Argentina had no defeats in 2022 qualifying.
+
+### Row 1352 — FAIL: corrupted answer (formation → date)
+**Q:** …what primary formation number did Scaloni use? **A:** `04/03/2003`
+**Why it fails:** `04/03/2003` is a spreadsheet date-mangling of **"4-3-3"** (the explanation says
+4-3-3). The rendered answer is unusable.
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore the answer to **"4-3-3"** (add `4-3-3`-style formations to the date-corruption sweep).
+
+### Rows 1355, 1361 — FAIL: false detail ("four goals in 23 minutes")
+Both say Germany scored **four goals in 23 minutes** vs Argentina (2010 QF). Germany's four goals
+came at **3', 67', 74', 89'** — spanning 86 minutes (and the last three span ~22 min, i.e. *three*
+goals, not four). The "four goals in 23 minutes" claim is false.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Drop the "four in 23 minutes" detail (true score was 4-0).
+
+### Row 1369 — FAIL: wrong (Man of the Match)
+**Q:** In which World Cup final was **Ángel Di María** named Man of the Match? **A:** 2022
+**Why it fails:** The 2022 final's official Player of the Match was **Lionel Messi**, not Di María
+(Messi won 5 POTM awards at the tournament, including the final). Di María scored but didn't win it.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Drop — Di María was not named MOTM of any World Cup final.
+
+### Row 1378 — FAIL: non-unique answer
+**Q:** In which World Cup did Messi win the **Golden Ball**? **A:** 2014 FIFA World Cup
+**Why it fails:** Messi won the World Cup Golden Ball in **both 2014 and 2022**, and **2022** is a
+listed distractor — so two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Make the answer unique (e.g. add a distinguishing clue), or drop.
+
+### Row 1373 — FAIL: non-unique answer
+**Q:** In which two World Cups did Argentina top their group? **A:** 2022 and 2014
+**Why it fails:** Argentina also topped their groups in **1998 (Group H) and 2006 (Group C)** — and
+"1998 and 2006" is a listed option — so the answer isn't unique. (They topped 2010's group too.)
+**Source:** https://en.wikipedia.org/wiki/Argentina_national_football_team
+**Remedy:** Replace the distractor pairs so only one is fully correct, or drop.
+
+### Row 1335 — FAIL: non-unique answer
+**Q:** Estadio Monumental had a larger capacity than which other Argentine stadium? **A:** Estadio Único Madre
+**Why it fails:** The Monumental (~84,000) is larger than **all four** options — Único Madre (~30k),
+Bombonera (~54k), Kempes (~57k) and Amalfitani (~49k) — so every choice is "correct."
+**Source:** https://en.wikipedia.org/wiki/Estadio_Monumental_(Buenos_Aires)
+**Remedy:** Use one stadium that is actually *larger* than the Monumental (none in Argentina is), or rewrite.
+
+### Rows 1332, 1333 — FAIL: wrong WC-goal breakdown
+Both ask how many WC goals Messi scored "**from 2014 to 2022**" / "in **2014, 2018, 2022** combined"
+and answer **13**. Those three tournaments sum to **12** (4+1+7); Messi's 13th WC goal was in **2006**.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Either answer **12** for 2014–2022, or include 2006 to reach 13.
+
+### Rows 1302, 1303, 1313 — FAIL: unverifiable squad-league count
+All assert Argentina's 2022 squad came from "**13** different club leagues" (same unverified claim as
+row 1264). No authoritative source confirms the exact figure.
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Verify the exact count against the official squad list, or drop. UNVERIFIED → FAIL.
+
+### Row 1334 — FAIL: wrong figure
+**Q:** In 2018 and 2022 qualifying, Argentina scored over how many combined goals? **A:** 50
+**Why it fails:** Argentina scored ~**27** in 2022 CONMEBOL qualifying and ~**19** in 2018 — about
+**46** combined, not "over 50."
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Recompute the combined total (~46), or drop.
+
+### Rows 1336, 1339 — FAIL: unsupported venue claims
+- **1336:** "won **every home match in Buenos Aires**" in 2022 qualifying — unverified narrowing (and
+  the broad version, row 1298, is false; Argentina rotated venues and drew at home in San Juan).
+- **1339:** "Estadio Monumental was their **primary home venue** for 2022 qualifying" — Argentina rotated
+  venues (opener at La Bombonera; a Venezuela qualifier was moved **off** the Monumental), so "primary" isn't supported.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Verify the venue breakdown, or drop. UNVERIFIED → FAIL.
+
+---
+
+## Rows 1391–1480 (Argentina)
+
+### Rows 1444, 1448, 1452 — FAIL: corrupted answer (date-mangling)
+- **1444:** `03-Mar` = **"3-3"** (2022 final after extra time)
+- **1448:** `03-Jan` = **"3-1"** (beat Ecuador to qualify for 2018)
+- **1452:** `02-Jan` = **"2-1"** (beat Chile, 2019 Copa third place)
+**Source:** https://en.wikipedia.org/wiki/Argentina_national_football_team
+**Remedy:** Restore the real scorelines; part of the dataset-wide `DD-Mon` corruption.
+
+### Rows 1451, 1455 — FAIL: false premise (no Argentina–Brazil 2024 Copa match)
+Both assert Argentina beat Brazil 1-0 in the **2024 Copa América group stage**. They were in
+different groups and never met at the 2024 Copa (cf. row 1276).
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Drop — the match never happened.
+
+### Rows 1473, 1397 — FAIL: false (2022 qualifying record)
+- **1473:** "won **all** home qualifiers for the 2022 World Cup" — false; Argentina drew 0-0 at home
+  vs Brazil (San Juan). (cf. row 1298.)
+- **1397:** "2022 qualifying record **11 W, 5 D, 1 L**" — false; Argentina were **unbeaten**: 11 W,
+  **6 D, 0 L** (39 pts).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Correct to unbeaten (11-6-0); they did not win every home match.
+
+### Row 1415 — FAIL: wrong (2023 U-20 World Cup)
+**Q:** In which year did Argentina's U-20 team win the FIFA U-20 World Cup? **A:** 2023
+**Why it fails:** **Uruguay** won the 2023 U-20 World Cup (beat Italy 1-0). Argentina **hosted** it
+but were eliminated in the round of 16 (lost to Nigeria). Argentina's last U-20 title was 2007.
+**Source:** https://en.wikipedia.org/wiki/2023_FIFA_U-20_World_Cup
+**Remedy:** Drop, or change to a year Argentina actually won (e.g. 2007).
+
+### Row 1476 — FAIL: wrong (2014 Fair Play Award)
+**Q:** When did Argentina win the FIFA Fair Play Award at the World Cup? **A:** 2014
+**Why it fails:** The 2014 World Cup FIFA Fair Play Award went to **Colombia**, not Argentina.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Drop — Argentina did not win the 2014 Fair Play Award.
+
+### Rows 1414, 1395 — FAIL: non-unique answer
+- **1414:** "year Emiliano Martínez won the Copa América **Golden Glove** → 2024" — he also won it in
+  **2021** (a listed distractor), so two options are correct.
+- **1395:** "qualifying campaign in which Messi was Argentina's **top scorer** → 2022" — Messi was also
+  Argentina's top scorer in **2018** qualifying (7 goals incl. the decisive Ecuador hat-trick), a listed option.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Make the answer unique, or drop.
+
+### Rows 1428, 1429, 1431 — FAIL: unverified ranking ("10th in early 2018")
+All claim Argentina fell to **10th** in the FIFA rankings in early 2018 under Sampaoli (cf. row 1248).
+Unconfirmed and implausible — they were **5th** by June 2018 with few intervening matches; no source
+supports a 10th-place dip.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Verify the exact low, or drop. UNVERIFIED → FAIL.
+
+### Rows 1396, 1472 — FAIL: unverified venue claim (Monumental in 2022 qualifying)
+Both say Estadio Monumental hosted **multiple** of Argentina's 2022 qualifiers (cf. rows 1299/1339).
+Argentina rotated venues (opener at La Bombonera; a Venezuela qualifier was moved **off** the Monumental,
+which was undergoing renovation); the "multiple matches at the Monumental" claim is unsupported.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Verify the venue list, or drop. UNVERIFIED → FAIL.
+
+### Row 1417 — FAIL: unverified / likely-wrong year
+**Q:** In which year did Messi surpass Mascherano as Argentina's most-capped player? **A:** 2022
+**Why it fails:** Messi passed Mascherano's 147-cap record around **2021** (he already had ~158 caps by
+the end of 2021, and ~169 by the 2022 World Cup), so "2022" is not supported.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Verify the exact date (≈2021), or drop. UNVERIFIED → FAIL.
+
+---
+
+## Rows 1481–1570 (Argentina)
+
+### Rows 1483, 1504 — FAIL: wrong (2023 U-20 World Cup)
+Both say Argentina's U-20 team **won** the 2023 FIFA U-20 World Cup "on home soil." **Uruguay** won
+it; Argentina hosted but went out in the round of 16 (cf. row 1415).
+**Source:** https://en.wikipedia.org/wiki/2023_FIFA_U-20_World_Cup
+**Remedy:** Drop, or use Argentina's actual last U-20 title (2007).
+
+### Rows 1484, 1496 — FAIL: non-unique answer
+- **1484:** "year Emiliano Martínez won the Copa América Golden Glove → 2024" — he also won it in
+  **2021** (a listed option). (cf. row 1414.)
+- **1496:** "qualifying campaign in which Messi was Argentina's top scorer → 2022" — also true of
+  **2018** qualifying (a listed option). (cf. row 1395.)
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Make the answer unique, or drop.
+
+### Row 1521 — FAIL: non-unique answer
+**Q:** Which 2022 World Cup group stage opponent did Argentina NOT lose to? **A:** Poland
+**Why it fails:** Argentina lost only to Saudi Arabia in the group; they did **not** lose to **Mexico**
+either (a listed option), so two answers are valid. (Australia, also listed, was a round-of-16 opponent,
+not a group opponent.)
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Leave only one not-lost-to group opponent among the options.
+
+### Row 1548 — FAIL: non-unique answer
+**Q:** Which Argentina defender started in the 2022 World Cup final? **A:** Cristian Romero
+**Why it fails:** Argentina's final back four was Molina, Romero, **Otamendi**, Tagliafico — so
+**Nicolás Otamendi** and **Nahuel Molina** (both listed options) also started. Only Lisandro Martínez (the 4th option) didn't.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Use defenders who did *not* start as the distractors.
+
+### Row 1566 — FAIL: wrong figure
+**Q:** Which Argentina forward scored **42 goals in 101 appearances** before retiring in 2021? **A:** Sergio Agüero
+**Why it fails:** Agüero scored **41** goals (not 42) in his 101 Argentina caps.
+**Source:** https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+**Remedy:** Correct to **41** goals.
+
+### Row 1529 — FAIL: wrong figure
+**Q:** Which Argentina campaign scored **over 50 goals** in 2018 & 2022 qualifiers combined? **A:** World Cup qualifying
+**Why it fails:** Argentina scored ~27 (2022) + ~19 (2018) ≈ **46** combined — not over 50 (cf. row 1334).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Recompute (~46), or drop.
+
+### Row 1486 — FAIL: unverified venue claim
+**Q:** When did Estadio Monumental host Argentina's 2022 World Cup qualifiers? **A:** 2022 qualifying matches
+**Why it fails:** Same unsupported "Monumental hosted multiple 2022 qualifiers" claim as rows
+1299/1339/1396/1472 — Argentina rotated venues and the Monumental was under renovation.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Verify the venue list, or drop. UNVERIFIED → FAIL.
+
+### Row 1482 — FAIL: vague/unverifiable + self-referential
+**Q:** When did Argentina's rivalry with Brazil become South America's most-played international fixture? **A:** Before 2022
+**Why it fails:** "Before 2022" is not a meaningful answer to "when did it become the most-played," and
+the explanation is self-referential ("The fact states…"). No verifiable milestone is given.
+**Source:** https://en.wikipedia.org/wiki/Argentina%E2%80%93Brazil_football_rivalry
+**Remedy:** Drop, or replace with a concrete, sourceable date.
+
+---
+
+## Rows 1571–1670 (Argentina)
+
+### Rows 1666, 1668 — FAIL: wrong year (Messi passed Mascherano in 2021)
+Both say Messi surpassed Mascherano's caps record "**in 2022**." Messi broke the 147-cap record on
+**29 June 2021** (his 148th cap, vs Bolivia at the 2021 Copa América). The answer (Mascherano) is
+right but the year is wrong. (cf. row 1417.)
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Change "2022" to **2021**.
+
+### Row 1658 — FAIL: wrong explanation (goal total / timing)
+**Q:** Which Argentina player became their all-time top scorer before the 2022 World Cup? **A:** Messi
+**Why it fails:** Messi is correctly the answer, but the explanation says he "had already scored **116
+goals** … before the 2022 tournament" — 116 is his **2026** total. Before the 2022 World Cup he had ~91.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Fix the figure (~91 before 2022; 116 as of 2026).
+
+### Row 1613 — FAIL: built on unverified premise
+**Q:** Which Argentina manager oversaw their drop to **10th** in the FIFA rankings in early 2018? **A:** Jorge Sampaoli
+**Why it fails:** Sampaoli was indeed the manager, but the premise (a drop to **10th** in early 2018) is
+the same unverified/implausible claim failed at rows 1248/1428/1429/1431 (Argentina were 5th by June 2018).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Verify the ranking premise, or rewrite without the "10th" figure.
+
+---
+
+## Rows 1671–1780 (Argentina)
+
+### Rows 1748, 1749, 1750 — FAIL: non-unique (2008 Olympic gold)
+All ask which player was in Argentina's 2008 Olympic gold squad → Messi, but **Sergio Agüero** and
+**Ángel Di María** (listed options) were also in that squad. Only Higuaín (4th option) wasn't. (cf. 1268/1278.)
+**Source:** https://en.wikipedia.org/wiki/Football_at_the_2008_Summer_Olympics_%E2%80%93_Men%27s_tournament
+**Remedy:** Use distractors who were NOT in the 2008 squad.
+
+### Rows 1718, 1720 — FAIL: wrong scorer
+Both say **Cristián Pavón** scored in Argentina's 4-3 round-of-16 loss to France (2018). Argentina's
+three scorers were **Di María, Gabriel Mercado, and Sergio Agüero** — not Pavón.
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to a real scorer (Di María / Mercado / Agüero); cf. correct row 1721 (Agüero).
+
+### Row 1686 — FAIL: non-unique answer
+**Q:** Which Argentina player partnered Otamendi in central defence at the 2022 World Cup? **A:** Cristian Romero
+**Why it fails:** **Lisandro Martínez** (a listed option) also partnered Otamendi (he started at CB vs
+Mexico and Poland after the Saudi loss). Two valid answers. (cf. row 1281.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Use defenders who never partnered Otamendi as distractors.
+
+### Row 1755 — FAIL: wrong (Man of the Match)
+**Q:** Which Argentina player was named Man of the Match in the 2022 World Cup final? **A:** Ángel Di María
+**Why it fails:** The 2022 final's Player of the Match was **Messi**, not Di María (cf. row 1369).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to Messi, or drop.
+
+### Row 1695 — FAIL: wrong goal breakdown
+**Q:** Which Argentina player scored 13 World Cup goals across 2014, 2018, and 2022? **A:** Messi
+**Why it fails:** Messi is the player with 13 WC goals, but those three tournaments total **12** (4+1+7);
+his 13th was in **2006** (cf. rows 1332/1333).
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Either say "12 across 2014–2022" or include 2006.
+
+### Row 1722 — FAIL: wrong figure in explanation
+**Q:** Which Argentina player scored more than 40 international goals? **A:** Sergio Agüero
+**Why it fails:** Agüero is the only 40+ scorer among the options (so the answer is right), but the
+explanation states he scored "**42** goals" — he scored **41** (cf. row 1566).
+**Source:** https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero
+**Remedy:** Correct the explanation to 41 goals.
+
+---
+
+## Rows 1781–1900 (Argentina)
+
+### Rows 1835, 1836, 1893 — FAIL: non-unique answer
+- **1835, 1836:** "which star was in the 2008 Olympic gold squad → Messi" — Agüero & Di María (options) were too.
+- **1893:** "appeared in every World Cup 2010–2022 → Messi" — **Di María** (an option) also played 2010, 2014, 2018 and 2022.
+**Source:** https://en.wikipedia.org/wiki/%C3%81ngel_Di_Mar%C3%ADa
+**Remedy:** Use distractors who don't satisfy the criterion.
+
+### Row 1884 — FAIL: non-unique answer
+**Q:** Which Argentine midfielder was key in both the 2021 Copa América and 2022 World Cup? **A:** Leandro Paredes
+**Why it fails:** **Rodrigo De Paul** (a listed option, and the dataset's own answer in rows 1645/1887)
+was also key in both — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Make the discriminator unique, or drop.
+
+### Rows 1873, 1900 — FAIL: wrong year (Mascherano record)
+Both say Messi surpassed Mascherano's caps record "**in 2022**" — it was **29 June 2021** (cf. rows 1417/1666/1668).
+The answer (Mascherano) is right; the year is wrong.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Change 2022 → 2021.
+
+### Row 1795 — FAIL: wrong (Man of the Match)
+**Q:** …Di María's 2022 final performance earned him Man of the Match? **A:** Di María
+**Why it fails:** Messi was the 2022 final's Player of the Match, not Di María (cf. 1369/1755).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to Messi, or drop.
+
+### Row 1807 — FAIL: wrong scorers
+**Q:** Which Argentina players scored in their 4-3 2018 loss to France? **A:** Pavón, Agüero, Mercado
+**Why it fails:** The scorers were **Di María, Mercado, Agüero** — **Pavón did not score** (cf. 1718/1720).
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2018_FIFA_World_Cup
+**Remedy:** Replace Pavón with Di María.
+
+### Row 1808 — FAIL: wrong figures
+**Q:** Which Argentina qualifying campaign had over 25 goals: 2018 or 2022? **A:** Both (E: "over 50 combined")
+**Why it fails:** 2022 had ~27 (over 25 ✓) but **2018 had ~19** (under 25); the combined total is ~46, not
+over 50 (cf. rows 1334/1529).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Only 2022 cleared 25 goals; fix the figures.
+
+### Row 1849 — FAIL: wrong (2014 Fair Play Award)
+**Q:** Which Argentina team won the FIFA Fair Play Award in 2014? **A:** Argentina national team
+**Why it fails:** **Colombia** won the 2014 World Cup Fair Play Award, not Argentina (cf. row 1476).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Drop — Argentina did not win it.
+
+### Rows 1822, 1827, 1830 — FAIL: unsupported Monumental claims
+- **1822:** "Monumental hosted 2022 qualifiers **before La Bombonera**" — false; Argentina's **opening**
+  2022 qualifier (vs Ecuador) was at **La Bombonera**.
+- **1827, 1830:** "Monumental hosted **multiple** 2022 qualifiers" — unsupported; several Argentina home
+  qualifiers were relocated **away** from the Monumental (Venezuela moved off it; Colombia to Kempes), it
+  was under renovation, and only the Uruguay game is clearly confirmed there (cf. rows 1299/1396/1472/1486).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Verify the Monumental's actual 2022-qualifier matches, or drop the "multiple/first" claims.
+
+---
+
+## Rows 1901–2010 (Argentina)
+
+### Rows 1963, 1985, 2002 — FAIL: false (Argentina unbeaten in 2022 qualifying)
+All claim Argentina's "only 2022 World Cup qualifying defeat" was a **2-0 loss to Brazil** (one cites
+"Nov 2019"). Argentina were **unbeaten** in 2022 CONMEBOL qualifying (0 losses), and Nov 2019 predates
+the campaign (it began Oct 2020); the Nov 2019 Brazil match was a **friendly** (lost 1-0). (cf. 1341/1342.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — Argentina had no qualifying defeat. (Brazil did finish *ahead* of them, as rows 1960/2000 correctly say.)
+
+### Rows 1904, 1950 — FAIL: wrong (2014 Fair Play Award)
+Both credit Argentina with the **FIFA Fair Play Award at the 2014 World Cup**. It went to **Colombia**.
+(Argentina's 2014 award was Messi's Golden Ball.) (cf. rows 1476/1849.)
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Change the award to the Golden Ball, or drop.
+
+### Rows 1905, 1930 — FAIL: wrong goal breakdown
+Both say Messi scored **13** World Cup goals "across 2014, 2018, 2022." Those three total **12** (4+1+7);
+the 13th was 2006. (cf. 1332/1333/1695.)
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Say 12 for 2014–2022, or include 2006.
+
+### Row 1901 — FAIL: wrong year
+**Q:** Which Argentine held the national caps record until 2022? **A:** Mascherano
+**Why it fails:** Messi passed Mascherano on **29 June 2021**, so the record stood "until 2021," not 2022
+(answer Mascherano is right). (cf. 1417/1666/1668/1873/1900.)
+**Source:** https://en.wikipedia.org/wiki/Lionel_Messi
+**Remedy:** Change 2022 → 2021.
+
+### Row 1966 — FAIL: non-unique answer
+**Q:** Which Copa América final did Argentina NOT win? **A:** 2016 Copa América
+**Why it fails:** Argentina also lost the **2007** final (to Brazil) and the **2015** final (to Chile) —
+both listed options — so three answers are valid.
+**Source:** https://en.wikipedia.org/wiki/Argentina_national_football_team
+**Remedy:** Leave only one not-won final among the options.
+
+---
+
+## Rows 2011–2160 (Argentina) — FINAL ARGENTINA BATCH
+
+### Rows 2054, 2093, 2149 — FAIL: false (Argentina unbeaten in 2022 qualifying)
+Repeat of the false "Argentina lost 2-0 to Brazil in 2022 qualifying (Nov 2019)" claim. Argentina were
+**unbeaten** in 2022 CONMEBOL qualifying; Nov 2019 predates the campaign and was a friendly (lost 1-0).
+(cf. 1341/1342/1963/1985/2002.) 2149 is a "why did they lose" question built on the non-event.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — no qualifying defeat.
+
+### Rows 2042, 2043, 2045, 2047, 2124 — FAIL: unsupported "Monumental hosted multiple 2022 qualifiers"
+Same overstated/unverified claim as 1299/1396/1472/1486/1827/1830 — Argentina rotated venues and several
+home qualifiers were moved away from the Monumental (which was under renovation).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Verify the Monumental's actual 2022-qualifier matches, or drop "multiple/primary."
+
+### Rows 2096, 2097 — FAIL: false ("four goals in 23 minutes")
+Germany's four 2010 QF goals came at 3', 67', 74', 89' (86-minute span), not "four in 23 minutes"
+(cf. 1355/1361). Answer (Germany) is right; the timing detail is false.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Drop the "23 minutes" detail.
+
+### Row 2037 — FAIL: false premise (no Argentina–Brazil 2024 Copa match)
+"Argentina beat Brazil 1-0 in the 2024 Copa América group stage" — they were in different groups and
+never met (cf. 1276/1451/1455).
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Drop.
+
+### Row 2121 — FAIL: wrong (2014 Fair Play Award)
+"Argentina won the FIFA Fair Play Award at the 2014 World Cup" — it went to **Colombia** (cf. 1476/1849/1904/1950).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Drop.
+
+### Row 2110 — FAIL: fabricated name
+**Q:** Which two Argentine legends assisted Scaloni at the 2022 World Cup? **A:** Matelán and Ayala
+**Why it fails:** Scaloni's assistants were **Roberto Ayala, Walter Samuel, Pablo Aimar** (and Diego
+Placente). There is no "Aníbal Matelán" on the staff — the name is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Lionel_Scaloni
+**Remedy:** Replace with a real assistant (Samuel / Aimar).
+
+### Rows 2082 — FAIL: non-unique answer
+**Q:** Which team did NOT beat Argentina in a 2022 World Cup group match? **A:** Mexico
+**Why it fails:** Argentina lost only to Saudi Arabia in the group; **Poland** (and Australia, a R16
+opponent) also did not beat them in a group match — multiple valid options (cf. 1521).
+**Source:** https://en.wikipedia.org/wiki/Argentina_at_the_2022_FIFA_World_Cup
+**Remedy:** Leave only one not-beaten-by group opponent among the options.
+
+### Row 2152 — FAIL: wrong figure
+"Argentina scored **over 50 goals** in 2018 & 2022 qualifiers combined" — it was ~46 (cf. 1334/1529/1808).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Recompute (~46).
+
+### Row 2160 — FAIL: built on unverified premise
+**Q:** Why was Argentina ranked 5th for the 2018 World Cup? **A:** Poor qualifying results (E: "including a drop to **10th** in early 2018")
+**Why it fails:** Rests on the unverified "10th in early 2018" claim (cf. 1248/1428/1429/1431/1613); and a
+"poor campaign" wouldn't explain a high 5th-place ranking.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the "10th" premise.
 
 ---
 
