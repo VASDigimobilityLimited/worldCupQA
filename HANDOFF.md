@@ -90,9 +90,9 @@ Verdicts route into two files:
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
 **✅ Algeria is fully complete** (rows 2–1228). **✅ Argentina is also complete** (rows 1229–2160).
-**🟨 Brazil is IN PROGRESS** (separate contributor): rows 6097–8182, verified through **row 6760**,
-resume at **6761** — its sub-cursor + per-batch tables live at the bottom of `QA_TC06_LIVE.md`.
-The remaining countries are **not started** (§4). Next sequential country: **Australia** (rows 2161–3241).
+**✅ Brazil is complete** (rows 6097–8182): 1346 ship-ready / 218 dangerous — per-batch tables +
+recurring-defect summary at the bottom of `QA_TC06_LIVE.md`. **🔵 Australia is in progress** (rows
+2161–3241). The remaining countries are **not started** (§4).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -103,14 +103,14 @@ The remaining countries are **not started** (§4). Next sequential country: **Au
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **1570** ship-ready
-  (Algeria 554 + Argentina 562 + Brazil 454 so far).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **359** dangerous
-  (Algeria 176 + Argentina 110 + Brazil 73 so far).
-- **Total ship-ready so far (both methods):** 1702 (132 backfill rows 2–230 + 1570 new method).
-- **Brazil is IN PROGRESS** (separate contributor): verified through **row 6760**, resume at 6761
-  (last Brazil CSV row = 8182). Brazil sub-cursor + per-batch tables live at the bottom of
-  `QA_TC06_LIVE.md`.
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **2462** ship-ready
+  (Algeria 554 + Argentina 562 + Brazil 1346).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **504** dangerous
+  (Algeria 176 + Argentina 110 + Brazil 218).
+- **Total ship-ready so far (both methods):** 2594 (132 backfill rows 2–230 + 2462 new method).
+- **✅ Brazil is COMPLETE** (rows 6097–8182): 1346 ship-ready / 218 dangerous = 1564 candidates
+  (the full Brazil `QA_PASSED.md` pool; on-disk verified, no duplicates). Per-batch tables +
+  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
 
@@ -124,7 +124,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Australia | 2161–3241 | 1081 | 835 | 🔵 **in progress** — resume at row 2161 |
 | Austria | 3242–4282 | 1041 | 761 | ⬜ not started |
 | Belgium | 4283–6096 | 1814 | 1327 | ⬜ not started |
-| Brazil | 6097–8182 | 2086 | 1564 | 🟨 **IN PROGRESS** — verified to row 6760 (454 pass-all / 73 fail-liveness so far) |
+| Brazil | 6097–8182 | 2086 | 1564 | ✅ **COMPLETE** (row 8182) — 1346 PASS / 218 FAIL |
 | Cabo Verde | 8183–9573 | 1391 | 696 | ⬜ not started |
 | Cameroon | 9574–10745 | 1172 | 738 | ⬜ not started |
 | Canada | 10746–12428 | 1683 | 1003 | ⬜ not started |

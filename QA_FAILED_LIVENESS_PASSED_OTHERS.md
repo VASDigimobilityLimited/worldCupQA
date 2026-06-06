@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **359** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–6760 so far: 73)
+Total failed-liveness-passed-others so far: **504** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218)
 
 ---
 
@@ -1736,3 +1736,1018 @@ opponent) also did not beat them in a group match — multiple valid options (cf
 **Why it fails:** False premise: Mexico was NOT a 2018 group-stage opponent of Brazil (their group was Switzerland/Costa Rica/Serbia). They met only in the R16. The explanation also repeats the false 0-0 group draw.
 **Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
 **Remedy:** Reword: Mexico was an R16 opponent, not a group opponent.
+
+### Row 6779 — Brazil (easy) — FAIL
+**Q:** Which Brazil defender did NOT start as a first-choice centre-back at the 2022 World Cup?
+**Answer:** David Luiz
+**Why it fails:** Non-unique negative: besides David Luiz (not even in the squad), Éder Militão also did not start as a first-choice CENTRE-back in 2022 — he started at right-back. Two options satisfy 'did not start as first-choice CB'.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 6810 — Brazil (easy) — FAIL
+**Q:** Which Brazil manager oversaw the 2026 World Cup qualifiers?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: three of the four options (Dorival Júnior, Carlo Ancelotti AND Fernando Diniz) all oversaw parts of the 2026 qualification campaign, so there is no single correct answer.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — multiple correct options (the campaign used 3 managers).
+
+### Row 6815 — Brazil (medium) — FAIL
+**Q:** Which Brazil manager oversaw their 2026 World Cup qualification campaign?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Fernando Diniz, Dorival Júnior AND Carlo Ancelotti all oversaw parts of the 2026 qualification campaign — three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — multiple correct options.
+
+### Row 6887 — Brazil (easy) — FAIL
+**Q:** Which Brazil player equaled Pelé's goal record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar EQUALED Pelé's 77 against Croatia (Dec 2022). On 8 Sep 2023 v Bolivia he scored his 78th & 79th to SURPASS it — he did not 'equal with a 77th' there.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed', or move 'equal' to the 2022 Croatia game.
+
+### Row 6888 — Brazil (easy) — FAIL
+**Q:** Which Brazil player equalled Pelé's goal record in a 5-1 2023 World Cup qualifier win?
+**Answer:** Neymar
+**Why it fails:** False: in the Bolivia match Neymar surpassed (78th/79th), not equaled (77th) — he equaled v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6889 — Brazil (easy) — FAIL
+**Q:** Which Brazil player equalled Pelé's goalscoring record in a 5-1 win over Bolivia in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed (not equaled) Pelé v Bolivia — he equaled at 77 v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6890 — Brazil (easy) — FAIL
+**Q:** Which Brazil player equalled Pelé's record against Bolivia in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed Pelé v Bolivia (78th/79th); he equaled at 77 v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6891 — Brazil (easy) — FAIL
+**Q:** Which Brazil player equalled Pelé's scoring record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed Pelé v Bolivia; the 'equal at 77' came v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6899 — Brazil (easy) — FAIL
+**Q:** Which Brazil player in the 2022 World Cup squad was based at Al-Hilal?
+**Answer:** Neymar
+**Why it fails:** Misleading premise: at the 2022 World Cup Neymar was based at PSG, NOT Al-Hilal (he joined Al-Hilal in 2023). No 2022 squad member was at Al-Hilal during the tournament.
+**Source:** https://en.wikipedia.org/wiki/Neymar
+**Remedy:** Drop, or reword to 'later joined Al-Hilal'.
+
+### Row 6900 — Brazil (easy) — FAIL
+**Q:** Which Brazil player is central to their 2026 World Cup cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique/subjective: Vinícius Jr. (an option) is at least as central to Brazil's 2026 cycle as Rodrygo, so 'Rodrygo' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — subjective and non-unique.
+
+### Row 6907 — Brazil (easy) — FAIL
+**Q:** Which Brazil player scored against Cameroon at the 2022 World Cup?
+**Answer:** Raphinha
+**Why it fails:** False: Brazil LOST 0-1 to Cameroon at 2022 and scored NO goal — Raphinha did not score against Cameroon (Aboubakar scored Cameroon's winner).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — Brazil did not score v Cameroon.
+
+### Row 6911 — Brazil (easy) — FAIL
+**Q:** Which Brazil player scored at the 2019 Copa América?
+**Answer:** Gabriel Jesus
+**Why it fails:** Non-unique: besides Gabriel Jesus, both Philippe Coutinho and Richarlison (two of the other options) also scored at the 2019 Copa América.
+**Source:** https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+**Remedy:** Drop — multiple option-players scored.
+
+### Row 6912 — Brazil (easy) — FAIL
+**Q:** Which Brazil player scored his 77th goal, equalling Pelé's record, against Bolivia in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar's 77th (equaling Pelé) came v Croatia in 2022; v Bolivia (8 Sep 2023) he scored his 78th & 79th to surpass it.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6923 — Brazil (easy) — FAIL
+**Q:** Which Brazil player tied Pelé's goal record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar tied Pelé's record (77) v Croatia in 2022, not v Bolivia in Sept 2023 (where he surpassed it with 78th/79th).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6940 — Brazil (hard) — FAIL
+**Q:** Which Brazil squad first had players from six different nations' clubs?
+**Answer:** 2022 World Cup squad
+**Why it fails:** Explanation wrong: the 2022 squad's six countries were England, Spain, France, Italy, Mexico (Dani Alves/Pumas) and Brazil — NOT Germany.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Replace 'Germany' with 'Mexico'.
+
+### Row 6944 — Brazil (medium) — FAIL
+**Q:** Which Brazil squad scored at a rate of 3 goals per match at the 2022 World Cup?
+**Answer:** The 2022 squad
+**Why it fails:** False premise: the '3 goals/match' rests on the false 15-goal figure — Brazil scored 8 in 5 matches (~1.6/match).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Recompute from 8 goals.
+
+### Row 6955 — Brazil (easy) — FAIL
+**Q:** Which Brazil star matched Pelé's 77-goal record in a 5-1 2023 win over Bolivia?
+**Answer:** Neymar
+**Why it fails:** False: Neymar matched Pelé's 77 v Croatia in 2022, not in the 2023 Bolivia match (where he surpassed it with his 78th/79th).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed', or move 'matched' to the 2022 Croatia game.
+
+### Row 6956 — Brazil (easy) — FAIL
+**Q:** Which Brazil star scored his 77th international goal in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar's 77th goal came v Croatia (Dec 2022). In September 2023 he scored his 78th & 79th, not his 77th.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Change to 78th/79th (surpassed), Sept 2023.
+
+### Row 6960 — Brazil (easy) — FAIL
+**Q:** Which Brazil training centre is in Teresópolis, Rio de Janeiro state?
+**Answer:** CBF Training Centre
+**Why it fails:** Non-unique/TC-16: the distractor 'Granja Comary Centre' is the SAME place as the answer 'CBF Training Centre' (the explanation says so).
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Replace 'Granja Comary' with a genuinely different distractor.
+
+### Row 6961 — Brazil (medium) — FAIL
+**Q:** Which Brazil winger scored at the 2022 World Cup group stage?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha did NOT score at the 2022 World Cup — South Korea was the R16 (not group stage) and Brazil scored nothing v Cameroon; Raphinha had 0 goals at the tournament.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — Raphinha did not score at 2022.
+
+### Row 6966 — Brazil (easy) — FAIL
+**Q:** Which Brazilian 2014 World Cup stadium had a larger capacity than Arena Castelão?
+**Answer:** Maracanã Stadium
+**Why it fails:** Non-unique: more than one option exceeds Arena Castelão (~63,903) — the Maracanã (~74k) AND the Estádio Nacional in Brasília (~69k) are both larger.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_venues
+**Remedy:** Drop — multiple larger venues among the options.
+
+### Row 6973 — Brazil (easy) — FAIL
+**Q:** Which Brazilian 2022 squad trait stemmed from their players' clubs?
+**Answer:** Six different nations' leagues
+**Why it fails:** Explanation wrong: the six leagues were England, Spain, France, Italy, Mexico and Brazil — NOT Germany.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Replace 'Germany' with 'Mexico'.
+
+### Row 6974 — Brazil (easy) — FAIL
+**Q:** Which Brazilian 2022 World Cup player was based in the English Premier League?
+**Answer:** Gabriel Martinelli
+**Why it fails:** Non-unique: besides Gabriel Martinelli (Arsenal), Casemiro (Manchester United, an option) was also EPL-based at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple EPL-based options.
+
+### Row 6976 — Brazil (easy) — FAIL
+**Q:** Which Brazilian 2022 World Cup squad member played for Liverpool?
+**Answer:** Alisson
+**Why it fails:** Non-unique: both Alisson AND Fabinho (an option) were Liverpool players in Brazil's 2022 squad.
+**Source:** https://www.liverpoolfc.com/news/alisson-becker-and-fabinho-named-brazils-world-cup-squad
+**Remedy:** Drop — two Liverpool players among the options.
+
+### Row 6993 — Brazil (easy) — FAIL
+**Q:** Which Brazilian centre-back has over 90 caps and played at both the 2018 and 2022 World Cups?
+**Answer:** Marquinhos
+**Why it fails:** Non-unique: Thiago Silva (an option) also has well over 90 caps and played at both the 2018 and 2022 World Cups.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Drop — Thiago Silva equally satisfies the description.
+
+### Row 6995 — Brazil (easy) — FAIL
+**Q:** Which Brazilian centre-back partnered Thiago Silva at the 2018 and 2022 FIFA World Cups?
+**Answer:** Marquinhos
+**Why it fails:** Wrong for 2018: Thiago Silva's first-choice centre-back partner at the 2018 World Cup was Miranda (an option here), not Marquinhos (who featured at right-back/as backup). Marquinhos was his partner only in 2022.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** For 2018 the answer is Miranda; restrict the question to 2022.
+
+### Row 6996 — Brazil (easy) — FAIL
+**Q:** Which Brazilian centre-back partnered Thiago Silva at the 2018 World Cup?
+**Answer:** Marquinhos
+**Why it fails:** Wrong: at the 2018 World Cup Thiago Silva's centre-back partner was Miranda (an option), not Marquinhos.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change answer to Miranda for 2018.
+
+### Row 6999 — Brazil (easy) — FAIL
+**Q:** Which Brazilian centre-back played at both the 2018 and 2022 World Cups?
+**Answer:** Marquinhos
+**Why it fails:** Non-unique: Thiago Silva (an option) is also a centre-back who played at both the 2018 and 2022 World Cups.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Drop — Thiago Silva equally satisfies the description.
+
+### Row 7000 — Brazil (easy) — FAIL
+**Q:** Which Brazilian city did NOT host a 2014 FIFA World Cup match?
+**Answer:** Brasília
+**Why it fails:** False: Brasília DID host 2014 World Cup matches — the Estádio Nacional Mané Garrincha staged 7 games (incl. a quarter-final and the third-place playoff). All four listed cities hosted.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_venues
+**Remedy:** Drop — Brasília was a host city.
+
+### Row 7001 — Brazil (easy) — FAIL
+**Q:** Which Brazilian city hosted their 2-0 win over Uruguay in 2022 World Cup qualifiers?
+**Answer:** Manaus
+**Why it fails:** Wrong score: Brazil beat Uruguay 4-1 in Manaus (Oct 2021); the 2-0 win was away in Montevideo (Nov 2020).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change the Manaus score to 4-1.
+
+### Row 7003 — Brazil (easy) — FAIL
+**Q:** Which Brazilian city was NOT a host for the 2014 FIFA World Cup?
+**Answer:** Porto Alegre
+**Why it fails:** False: Porto Alegre WAS a 2014 host city (Estádio Beira-Rio). All four listed cities hosted matches.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_venues
+**Remedy:** Drop — Porto Alegre was a host city.
+
+### Row 7092 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender had over 115 caps and captained Brazil at multiple World Cups?
+**Answer:** Thiago Silva
+**Why it fails:** Wrong number: Thiago Silva has 113 caps, not 'over 115'. (He's still the most-capped option, but the stated criterion is false.)
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to 'over 110 caps' (he has 113).
+
+### Row 7093 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender had over 115 caps by 2023?
+**Answer:** Thiago Silva
+**Why it fails:** Wrong number: Thiago Silva has 113 caps, not over 115.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to 'over 110 caps' (113).
+
+### Row 7094 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender had over 90 caps and played at the 2018 and 2022 World Cups?
+**Answer:** Marquinhos
+**Why it fails:** Non-unique: Thiago Silva (an option) also has 90+ caps and played at both the 2018 and 2022 World Cups, so 'Marquinhos' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Drop — Thiago Silva equally satisfies the description.
+
+### Row 7095 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender has earned over 115 caps?
+**Answer:** Thiago Silva
+**Why it fails:** Wrong number: Thiago Silva has 113 caps, not over 115.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to 'over 110 caps' (113).
+
+### Row 7118 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender scored against Colombia in the 2014 World Cup quarter-final?
+**Answer:** Thiago Silva
+**Why it fails:** Non-unique: in the 2-1 win over Colombia (2014 QF) BOTH Thiago Silva (7') and David Luiz (69', an option) scored. 'Which defender scored' has two correct answers.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2014_FIFA_World_Cup
+**Remedy:** Add a discriminator (e.g. 'opening goal' → Thiago Silva, or 'free kick' → David Luiz).
+
+### Row 7131 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender was NOT part of Brazil's first-choice centre-back partnership at the 2022 World Cup?
+**Answer:** Dani Alves
+**Why it fails:** Non-unique negative: besides Dani Alves (a right-back), Éder Militão (an option) was also NOT part of the first-choice CB pair (Thiago Silva & Marquinhos) — he played right-back. Two options fit.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 7136 — Brazil (medium) — FAIL
+**Q:** Which Brazilian defender, with over 115 caps, captained the team at the 2022 World Cup group stage?
+**Answer:** Thiago Silva
+**Why it fails:** Wrong number: Thiago Silva has 113 caps, not 'over 115' (stated in the question stem).
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to 'over 110 caps' (113).
+
+### Row 7137 — Brazil (easy) — FAIL
+**Q:** Which Brazilian defender, with over 115 caps, captained them at the 2018 and 2022 World Cups?
+**Answer:** Thiago Silva
+**Why it fails:** Wrong number: Thiago Silva has 113 caps, not over 115.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to 'over 110 caps' (113).
+
+### Row 7144 — Brazil (medium) — FAIL
+**Q:** Which Brazilian did NOT win the Confederations Cup Golden Ball in 2013?
+**Answer:** Thiago Silva
+**Why it fails:** Non-unique negative: three of the four options (Thiago Silva, Fred, Julio Cesar) did NOT win the 2013 Golden Ball (only Neymar did), so 'did not win' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/2013_FIFA_Confederations_Cup
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 7145 — Brazil (easy) — FAIL
+**Q:** Which Brazilian equalled Pelé's goal record against Bolivia in 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar equaled Pelé's 77 v Croatia (2022); v Bolivia (Sept 2023) he scored his 78th & 79th to surpass it.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7153 — Brazil (easy) — FAIL
+**Q:** Which Brazilian forward equalled Pelé's goal record in a 2023 World Cup qualifier?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed (not equaled) Pelé v Bolivia in Sept 2023 (78th/79th); he equaled at 77 v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7155 — Brazil (easy) — FAIL
+**Q:** Which Brazilian forward scored at the 2019 Copa América?
+**Answer:** Gabriel Jesus
+**Why it fails:** Non-unique: all four option-players (Gabriel Jesus, Richarlison, Coutinho, Firmino) scored at the 2019 Copa América.
+**Source:** https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+**Remedy:** Drop — multiple option-players scored.
+
+### Row 7157 — Brazil (easy) — FAIL
+**Q:** Which Brazilian forward was a 2022 World Cup squad member and is key for 2026 qualifying?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also in the 2022 squad and is a key player for the 2026 cycle, so 'Rodrygo' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7161 — Brazil (easy) — FAIL
+**Q:** Which Brazilian forward was in the 2022 World Cup squad?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Rodrygo, Gabriel Martinelli AND Vinícius Jr. (three of the four options) were all in the 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players were in the squad.
+
+### Row 7162 — Brazil (easy) — FAIL
+**Q:** Which Brazilian forward was part of the 2022 World Cup squad?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Rodrygo, Martinelli AND Vinícius Jr. were all in the 2022 squad.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players were in the squad.
+
+### Row 7164 — Brazil (medium) — FAIL
+**Q:** Which Brazilian goalkeeper played in their 2022 World Cup group stage match against Cameroon?
+**Answer:** Alisson
+**Why it fails:** False: Ederson (not Alisson) started in goal v Cameroon at 2022 — Tite made nine changes and rested Alisson.
+**Source:** https://www.90min.com/posts/cameroon-vs-brazil-world-cup-team-news-lineups-prediction-02-12-22
+**Remedy:** Change answer to Ederson.
+
+### Row 7187 — Brazil (easy) — FAIL
+**Q:** Which Brazilian is a key player for the 2026 World Cup cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique/subjective: Vinícius Jr. (an option) is at least as much a key 2026 player as Rodrygo.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7195 — Brazil (easy) — FAIL
+**Q:** Which Brazilian manager coached during the 2026 World Cup qualifying campaign?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Carlo Ancelotti (an option) also coached during the 2026 qualifying campaign (he took over in May 2025).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — Ancelotti also qualifies.
+
+### Row 7196 — Brazil (easy) — FAIL
+**Q:** Which Brazilian manager coached in the 2026 World Cup qualifiers?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Ancelotti (an option) also coached in the 2026 qualifiers.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — Ancelotti also qualifies.
+
+### Row 7197 — Brazil (medium) — FAIL
+**Q:** Which Brazilian manager faced Mexico in both the 2018 World Cup group stage and round of 16?
+**Answer:** Tite
+**Why it fails:** False premise: Brazil did NOT face Mexico in the 2018 group stage (Mexico was not in their group). They met only in the R16.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group meeting.
+
+### Row 7206 — Brazil (easy) — FAIL
+**Q:** Which Brazilian manager oversaw part of the 2026 World Cup qualifying campaign?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Fernando Diniz, Dorival Júnior AND Carlo Ancelotti all oversaw parts of the 2026 campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — multiple correct options.
+
+### Row 7209 — Brazil (medium) — FAIL
+**Q:** Which Brazilian manager oversaw the 2026 World Cup qualification campaign in 2024-2025?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Fernando Diniz and Carlo Ancelotti (options) also oversaw parts of the 2026 campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — multiple correct options.
+
+### Row 7212 — Brazil (medium) — FAIL
+**Q:** Which Brazilian manager oversaw their 2026 World Cup qualification campaign?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Carlo Ancelotti (an option) also oversaw the 2026 qualification campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — Ancelotti also qualifies.
+
+### Row 7248 — Brazil (easy) — FAIL
+**Q:** Which Brazilian manager's tenure was part of the 2026 World Cup qualifying campaign?
+**Answer:** Dorival Júnior
+**Why it fails:** Non-unique: Carlo Ancelotti (an option) was also part of the 2026 qualifying campaign (from May 2025).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — Ancelotti also qualifies.
+
+### Row 7258 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder retired in 2023 after starting at the 2018 World Cup?
+**Answer:** Fred
+**Why it fails:** False: Fred did NOT start at the 2018 World Cup — he was a fringe squad player (midfield trio: Casemiro/Paulinho/Coutinho). He became a starter in 2022, not 2018.
+**Source:** https://en.wikipedia.org/wiki/Fred_(footballer,_born_1993)
+**Remedy:** Change to 'started at the 2022 World Cup'.
+
+### Row 7262 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started against Belgium in the 2018 World Cup quarter-final?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start the 2018 QF v Belgium — Fernandinho replaced the suspended Casemiro (and scored the own goal). Fred was a fringe 2018 player.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** The 2018 QF starter was Fernandinho; reword.
+
+### Row 7263 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started at the 2018 World Cup and retired in 2023?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start at the 2018 World Cup (fringe player). He started in 2022.
+**Source:** https://en.wikipedia.org/wiki/Fred_(footballer,_born_1993)
+**Remedy:** Change to 'started at the 2022 World Cup'.
+
+### Row 7264 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started at the 2018 World Cup and was in the 2022 squad?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start at the 2018 World Cup (he was a fringe squad player).
+**Source:** https://en.wikipedia.org/wiki/Fred_(footballer,_born_1993)
+**Remedy:** Change to 2022; also non-unique (Casemiro fits 'started 2018 + 2022 squad' better).
+
+### Row 7265 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started at the 2018 World Cup?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start at the 2018 World Cup; the starters were Casemiro/Paulinho/Coutinho.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to 2022.
+
+### Row 7266 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started for Brazil in the 2018 World Cup?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start at the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to 2022.
+
+### Row 7268 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started in 2018 but was only a squad player in 2022?
+**Answer:** Fred
+**Why it fails:** Reversed: Fred was a fringe/bench player in 2018 and a STARTER in 2022 — not 'started 2018, bench 2022'.
+**Source:** https://en.wikipedia.org/wiki/Fred_(footballer,_born_1993)
+**Remedy:** Reverse the years.
+
+### Row 7269 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started in midfield at the 2018 FIFA World Cup?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start in midfield at the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to 2022.
+
+### Row 7271 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started in the 2018 World Cup quarter-final?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start the 2018 QF (Fernandinho replaced the suspended Casemiro).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Reword — Fred was not a 2018 starter.
+
+### Row 7272 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started in the 2018 World Cup?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start at the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to 2022.
+
+### Row 7273 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started in the 2018 World Cup's midfield?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start in the 2018 midfield (Casemiro/Paulinho/Coutinho did).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to 2022.
+
+### Row 7274 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started matches at the 2018 FIFA World Cup?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start matches at the 2018 World Cup (the explanation's claim is wrong); Casemiro and Paulinho were the 2018 midfield starters.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Change to 2022.
+
+### Row 7275 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder started matches at the 2018 World Cup but retired before 2026?
+**Answer:** Fred
+**Why it fails:** False: Fred did not start at the 2018 World Cup (fringe player).
+**Source:** https://en.wikipedia.org/wiki/Fred_(footballer,_born_1993)
+**Remedy:** Change to 2022.
+
+### Row 7276 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder was in both the 2018 and 2022 World Cup squads?
+**Answer:** Fred
+**Why it fails:** Non-unique: Gabriel Jesus (an option) was also in both the 2018 and 2022 squads.
+**Source:** https://en.wikipedia.org/wiki/Gabriel_Jesus
+**Remedy:** Drop — multiple option-players were in both squads.
+
+### Row 7284 — Brazil (easy) — FAIL
+**Q:** Which Brazilian midfielder was part of the 2022 World Cup squad?
+**Answer:** Fred
+**Why it fails:** Non-unique: Casemiro and Lucas Paquetá (options) were also in the 2022 squad.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players were in the squad.
+
+### Row 7319 — Brazil (medium) — FAIL
+**Q:** Which Brazilian player did NOT score in the 2013 Confederations Cup final?
+**Answer:** Thiago Silva
+**Why it fails:** Non-unique negative: both Thiago Silva AND Oscar (options) did NOT score in the 2013 final (only Fred x2 and Neymar did).
+**Source:** https://en.wikipedia.org/wiki/2013_FIFA_Confederations_Cup_final
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 7328 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equaled Pelé's goal record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar equaled Pelé's 77 v Croatia (2022); v Bolivia (Sept 2023) he surpassed it (78th/79th).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7329 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equaled Pelé's national scoring record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar equaled Pelé v Croatia (2022), not v Bolivia (where he surpassed it).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7331 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equalled Pelé's goal record against Bolivia in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed (not equaled) Pelé v Bolivia in Sept 2023.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7333 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equalled Pelé's goal record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar equaled Pelé v Croatia (2022), not in Sept 2023.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7334 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equalled Pelé's goals record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed Pelé v Bolivia (Sept 2023); he equaled at 77 v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7335 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equalled Pelé's goalscoring record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed Pelé v Bolivia (Sept 2023); equaled v Croatia 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7336 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equalled Pelé's national team scoring record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar matched Pelé v Croatia (2022); v Bolivia he surpassed it.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7337 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player equalled Pelé's scoring record in a 2023 World Cup qualifier against Bolivia?
+**Answer:** Neymar
+**Why it fails:** False: Neymar surpassed (not matched) Pelé in the Bolivia qualifier (78th/79th).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7361 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player is a key part of the 2026 World Cup cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also in the 2022 squad and is a key 2026 player.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7365 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player matched Pelé's international goal record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar matched Pelé's 77 v Croatia (2022), not v Bolivia (Sept 2023, where he surpassed it).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7380 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored 4 goals at the 2022 FIFA World Cup?
+**Answer:** Richarlison
+**Why it fails:** Wrong number: Richarlison scored 3 goals at the 2022 World Cup (2 v Serbia, 1 v South Korea), not 4.
+**Source:** https://en.wikipedia.org/wiki/Richarlison
+**Remedy:** Change to 3 goals.
+
+### Row 7393 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored a hat-trick at the 2022 World Cup?
+**Answer:** No Brazilian player
+**Why it fails:** Answer 'no Brazilian scored a hat-trick' is correct, but the explanation repeats the false 15-goal figure (Brazil scored 8 at 2022).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Fix the explanation: 8 goals, not 15.
+
+### Row 7406 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored at the 2019 Copa América and played in the 2018 World Cup?
+**Answer:** Gabriel Jesus
+**Why it fails:** Non-unique: Philippe Coutinho (an option) also scored at the 2019 Copa AND played at the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+**Remedy:** Drop — non-unique.
+
+### Row 7409 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored at the 2019 Copa América?
+**Answer:** Gabriel Jesus
+**Why it fails:** Non-unique: Richarlison and Coutinho (options) also scored at the 2019 Copa América.
+**Source:** https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica
+**Remedy:** Drop — non-unique.
+
+### Row 7412 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored four goals at the 2022 FIFA World Cup?
+**Answer:** Richarlison
+**Why it fails:** Wrong number: Richarlison scored 3 at the 2022 World Cup, not 4.
+**Source:** https://en.wikipedia.org/wiki/Richarlison
+**Remedy:** Change to 3.
+
+### Row 7414 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored his 77th international goal against Bolivia in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar's 77th goal came v Croatia (2022). Against Bolivia (Sept 2023) he scored his 78th & 79th.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Change to 78th/79th (surpassed).
+
+### Row 7418 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored in both the 2014 7-1 loss and a 2014 World Cup quarter-final win?
+**Answer:** David Luiz
+**Why it fails:** False: David Luiz did NOT score in the 7-1 loss to Germany — Oscar scored Brazil's only goal. (David Luiz did score the QF free kick v Colombia.)
+**Source:** https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)
+**Remedy:** Drop — David Luiz didn't score in the 7-1.
+
+### Row 7426 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player scored in their 2022 World Cup round of 16 win?
+**Answer:** Vinícius Jr.
+**Why it fails:** Non-unique: Richarlison (an option) also scored in the 4-1 R16 win over South Korea (2022).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players scored.
+
+### Row 7427 — Brazil (medium) — FAIL
+**Q:** Which Brazilian player scored in two 2022 World Cup group stage matches?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha scored 0 at the 2022 World Cup — South Korea was the R16 (not group) and Brazil scored nothing v Cameroon.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — Raphinha didn't score at 2022.
+
+### Row 7457 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player was a 2022 squad member and key for the 2026 cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also a 2022 squad member and key for 2026.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7468 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player was in the 2022 squad and is key for the 2026 cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also in the 2022 squad and is key for 2026.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7470 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player was in the 2022 World Cup squad?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Neymar and Casemiro (options) were also in the 2022 squad.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players were in the squad.
+
+### Row 7477 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player was part of the 2022 FIFA World Cup squad?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Gabriel Jesus and Richarlison (options) were also in the 2022 squad.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players were in the squad.
+
+### Row 7479 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player was selected for the 2022 FIFA World Cup squad?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Gabriel Jesus and Fred (options) were also in the 2022 squad.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — multiple option-players were in the squad.
+
+### Row 7486 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player was the youngest to score in a World Cup qualifier?
+**Answer:** Endrick
+**Why it fails:** False: Endrick's age-17 goals were friendlies (England/Spain Mar 2024, Mexico Jun 2024), NOT a World Cup qualifier.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Reword to 'friendly', or drop.
+
+### Row 7500 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player won the Bronze Ball at the 2014 FIFA World Cup?
+**Answer:** Neymar
+**Why it fails:** False: Neymar did NOT win the 2014 Bronze Ball — Arjen Robben won it (Golden Messi, Silver Müller). Neymar was injured before the knockouts.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — false award claim.
+
+### Row 7506 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player, in the 2022 World Cup squad, is a key figure for the 2026 cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also in the 2022 squad and a key 2026 figure.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7507 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player, part of the 2022 squad, is a key player for the 2026 cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also a 2022 squad member and key for 2026.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7508 — Brazil (medium) — FAIL
+**Q:** Which Brazilian player, ranked highly in FIFA's Ballon d'Or voting in 2015, later won the Bronze Ball at the 2014 World Cup?
+**Answer:** Neymar
+**Why it fails:** False: Neymar did NOT win the 2014 Bronze Ball (Robben did). The Ballon d'Or 2015 part is true, but the award claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop the Bronze Ball claim.
+
+### Row 7513 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player's 2014 World Cup performance earned the Bronze Ball?
+**Answer:** Neymar
+**Why it fails:** False: Neymar did not win the 2014 Bronze Ball (Robben did).
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — false award claim.
+
+### Row 7518 — Brazil (easy) — FAIL
+**Q:** Which Brazilian player's 2022 World Cup debut preceded his key role for the 2026 cycle?
+**Answer:** Rodrygo
+**Why it fails:** Non-unique: Vinícius Jr. (an option) was also a 2022 debutant-era squad member and key for 2026.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Drop — non-unique.
+
+### Row 7552 — Brazil (medium) — FAIL
+**Q:** Which Brazilian scored in both the 2013 Confederations Cup and 2014 World Cup quarter-finals?
+**Answer:** David Luiz
+**Why it fails:** Unverified/false: David Luiz scored the 2014 QF free kick, but there is no record of him scoring in the 2013 Confederations Cup (he was a defender; the explanation only says he was 'part of the squad'). So 'scored in both' is not supported.
+**Source:** https://en.wikipedia.org/wiki/David_Luiz
+**Remedy:** Drop — the 2013 scoring claim is unsupported.
+
+### Row 7566 — Brazil (medium) — FAIL
+**Q:** Which Brazilian squad scored 15 goals in the 2022 World Cup?
+**Answer:** Brazil in 2022
+**Why it fails:** Wrong number: Brazil scored 8 goals at the 2022 World Cup, not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change to 8 goals.
+
+### Row 7579 — Brazil (easy) — FAIL
+**Q:** Which Brazilian stadium had a larger capacity than Arena Corinthians at the 2014 World Cup?
+**Answer:** Maracanã Stadium
+**Why it fails:** Non-unique: more than one option exceeds Arena Corinthians (~49,205) — Maracanã (~73k), Estádio Nacional (~70k) and Mineirão (~58k) are all larger.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_venues
+**Remedy:** Drop — multiple larger venues among the options.
+
+### Row 7614 — Brazil (easy) — FAIL
+**Q:** Which Brazilian star equalled Pelé's 77-goal record in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar matched Pelé's 77 v Croatia (2022), not v Bolivia in Sept 2023 (where he surpassed it with 78th/79th).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7620 — Brazil (easy) — FAIL
+**Q:** Which Brazilian star matched Pelé's goal tally in September 2023?
+**Answer:** Neymar
+**Why it fails:** False: Neymar matched Pelé v Croatia (2022); v Bolivia (Sept 2023) he surpassed it (78th/79th), not 'matched with his 77th'.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7638 — Brazil (easy) — FAIL
+**Q:** Which Brazilian star won the 2014 World Cup Bronze Ball award?
+**Answer:** Neymar
+**Why it fails:** False: Neymar did NOT win the 2014 Bronze Ball — Arjen Robben won it (Neymar was injured before the knockouts).
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — false award claim.
+
+### Row 7645 — Brazil (easy) — FAIL
+**Q:** Which Brazilian star's 2014 World Cup stats earned him the Bronze Ball?
+**Answer:** Neymar
+**Why it fails:** False: Neymar did not win the 2014 Bronze Ball (Robben did).
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — false award claim.
+
+### Row 7650 — Brazil (medium) — FAIL
+**Q:** Which Brazilian team scored 15 goals in 5 matches at the 2022 World Cup?
+**Answer:** Brazil 2022 squad
+**Why it fails:** Wrong number: Brazil scored 8 goals (not 15) in 5 matches at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change to 8 goals.
+
+### Row 7652 — Brazil (easy) — FAIL
+**Q:** Which Brazilian teen scored youngest in a World Cup qualifier?
+**Answer:** Endrick
+**Why it fails:** False: Endrick's age-17 goals were friendlies, not a World Cup qualifier.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Reword to 'friendly', or drop.
+
+### Row 7657 — Brazil (easy) — FAIL
+**Q:** Which Brazilian teenager scored in a 2026 World Cup qualifier at age 17?
+**Answer:** Endrick
+**Why it fails:** False: Endrick's age-17 goals were friendlies, not a 2026 WC qualifier.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Reword to 'friendly', or drop.
+
+### Row 7666 — Brazil (easy) — FAIL
+**Q:** Which Brazilian training centre in Teresópolis was used for 2014 World Cup preparation?
+**Answer:** CBF Training Centre
+**Why it fails:** Non-unique/TC-16: the distractor 'Granja Comary' is the SAME venue as the answer 'CBF Training Centre'.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Replace 'Granja Comary' with a different distractor.
+
+### Row 7669 — Brazil (easy) — FAIL
+**Q:** Which Brazilian was 17 when scoring in a 2026 World Cup qualifier?
+**Answer:** Endrick
+**Why it fails:** False: Endrick's age-17 goals were friendlies, not a 2026 WC qualifier.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Reword to 'friendly', or drop.
+
+### Row 7676 — Brazil (easy) — FAIL
+**Q:** Which Brazilian was captain and talisman for the 2018 and 2022 World Cups?
+**Answer:** Neymar
+**Why it fails:** False: Thiago Silva (not Neymar) was Brazil's CAPTAIN at the 2018 and 2022 World Cups. Neymar was the talisman, not the official captain.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change answer to Thiago Silva, or reword to 'talisman' only.
+
+### Row 7687 — Brazil (easy) — FAIL
+**Q:** Which Brazilian winger scored against both South Korea and Cameroon at the 2022 World Cup?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha scored 0 at the 2022 WC — South Korea was the R16 (not group) and Brazil scored nothing v Cameroon.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — Raphinha didn't score at 2022.
+
+### Row 7690 — Brazil (medium) — FAIL
+**Q:** Which Brazilian winger scored goals in the 2022 World Cup group stage?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha did not score in the 2022 group stage (he scored 0 at the tournament).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop.
+
+### Row 7691 — Brazil (medium) — FAIL
+**Q:** Which Brazilian winger scored in the 2022 World Cup group stage against Cameroon?
+**Answer:** Raphinha
+**Why it fails:** False: Brazil scored nothing v Cameroon (lost 0-1); Raphinha did not score.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop.
+
+### Row 7692 — Brazil (medium) — FAIL
+**Q:** Which Brazilian winger scored in the 2022 World Cup group stage against South Korea and Cameroon?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha scored 0 at 2022; South Korea was R16, not group.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop.
+
+### Row 7693 — Brazil (medium) — FAIL
+**Q:** Which Brazilian winger scored in two group stage matches at the 2022 FIFA World Cup?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha did not score in any 2022 group match (0 goals at the tournament).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop.
+
+### Row 7694 — Brazil (medium) — FAIL
+**Q:** Which Brazilian winger was in the 2022 World Cup squad and scored two group stage goals?
+**Answer:** Raphinha
+**Why it fails:** False: Raphinha scored 0 group-stage goals at 2022.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop.
+
+### Row 7704 — Brazil (medium) — FAIL
+**Q:** Which Brazilian won the Bronze Ball in 2014, having won the Golden Ball in 2013?
+**Answer:** Neymar
+**Why it fails:** False: Neymar did not win the 2014 Bronze Ball (Robben did). He did win the 2013 Golden Ball, but not the 2014 award.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop the Bronze Ball claim.
+
+### Row 7742 — Brazil (easy) — FAIL
+**Q:** Which CONMEBOL rival did Brazil beat 2-0 in Manaus during 2022 World Cup qualifying?
+**Answer:** Uruguay
+**Why it fails:** Wrong score: Brazil beat Uruguay 4-1 in Manaus (Oct 2021); the 2-0 was away in Montevideo.
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change the Manaus score to 4-1.
+
+### Row 7746 — Brazil (easy) — FAIL
+**Q:** Which CONMEBOL team did Brazil beat 2-0 in 2022 World Cup qualifying?
+**Answer:** Uruguay
+**Why it fails:** Wrong score: the Manaus qualifier v Uruguay was 4-1, not 2-0.
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change the Manaus score to 4-1.
+
+### Row 7756 — Brazil (easy) — FAIL
+**Q:** Which country's clubs had more Copa Libertadores titles than Brazil's in 2023?
+**Answer:** No country
+**Why it fails:** False: as of 2023 Argentina (25 titles) had MORE Copa Libertadores than Brazil (23) — so 'no country had more' is wrong (and the '24' figure is also wrong).
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Drop — Argentina led Brazil in 2023.
+
+### Row 7757 — Brazil (easy) — FAIL
+**Q:** Which country's clubs had won 24 Copa Libertadores before Brazil's 2022 World Cup campaign?
+**Answer:** Brazil
+**Why it fails:** False: Brazilian clubs had ~21-22 Libertadores titles before the 2022 World Cup (23rd came with Fluminense in 2023), not 24.
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Correct the count.
+
+### Row 7789 — Brazil (easy) — FAIL
+**Q:** Which league did NOT supply players to Brazil's 2022 World Cup squad?
+**Answer:** Portugal
+**Why it fails:** Non-unique negative: besides Portugal, GERMANY (an option) also did NOT supply a 2022-squad player — no Brazil 2022 player was Bundesliga-based. Two options fit 'did not supply'.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — Germany also supplied none.
+
+### Row 7790 — Brazil (easy) — FAIL
+**Q:** Which league was NOT represented by a player in Brazil's 2022 World Cup squad?
+**Answer:** Netherlands Eredivisie
+**Why it fails:** Non-unique negative: besides the Netherlands, the German Bundesliga (an option) also had no Brazil 2022-squad player.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Drop — Bundesliga also unrepresented.
+
+### Row 7872 — Brazil (easy) — FAIL
+**Q:** Which nation did Brazil beat 2-0 in 2022 World Cup qualifiers to maintain dominance?
+**Answer:** Uruguay
+**Why it fails:** Wrong score: Brazil beat Uruguay 4-1 in Manaus (Oct 2021); the 2-0 was away in Montevideo.
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change the Manaus score to 4-1.
+
+### Row 7886 — Brazil (medium) — FAIL
+**Q:** Which nation did Brazil draw with in the 2018 World Cup group stage?
+**Answer:** Mexico
+**Why it fails:** False premise: Brazil did NOT draw with Mexico in the 2018 group stage (Mexico was not in their group). Their only group draw was 1-1 v Switzerland.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Change to Switzerland (1-1).
+
+### Row 7887 — Brazil (easy) — FAIL
+**Q:** Which nation did Brazil eliminate in a 2011 Copa América quarter-final?
+**Answer:** Paraguay
+**Why it fails:** Contradictory/false: Brazil did NOT eliminate Paraguay in 2011 — Paraguay eliminated Brazil on penalties (the explanation says so). The question's framing is reversed.
+**Source:** https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica
+**Remedy:** Reword: Paraguay eliminated Brazil.
+
+### Row 7894 — Brazil (easy) — FAIL
+**Q:** Which nation did Brazil's Neymar face when he equalled Pelé's goal record in September 2023?
+**Answer:** Bolivia
+**Why it fails:** False: Neymar EQUALED Pelé's 77 v Croatia (2022), not v Bolivia. Against Bolivia (Sept 2023) he scored his 78th & 79th to SURPASS it. (Bolivia is the right nation, but the 'equalled/77th' framing is wrong.)
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 7896 — Brazil (easy) — FAIL
+**Q:** Which nation did NOT score 5 goals in under 30 minutes against Brazil at a World Cup?
+**Answer:** Netherlands
+**Why it fails:** Non-unique negative: only Germany scored 5 in <30 min v Brazil (2014). The Netherlands, Belgium AND Croatia (all options) did NOT — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 7938 — Brazil (easy) — FAIL
+**Q:** Which nation was Brazil playing when Neymar equalled Pelé's goal record in September 2023?
+**Answer:** Bolivia
+**Why it fails:** False: Neymar EQUALED Pelé's 77 v Croatia (2022), not v Bolivia. Bolivia is the right Sept-2023 opponent, but there he SURPASSED it (78th/79th).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 8005 — Brazil (easy) — FAIL
+**Q:** Which team did Brazil beat 2-0 in Manaus during 2022 World Cup qualifying?
+**Answer:** Uruguay
+**Why it fails:** Wrong score: Brazil beat Uruguay 4-1 in Manaus (Oct 2021); the 2-0 was away in Montevideo.
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change the Manaus score to 4-1.
+
+### Row 8023 — Brazil (easy) — FAIL
+**Q:** Which team did Brazil NOT face in a 2022 World Cup knockout match?
+**Answer:** Germany
+**Why it fails:** Non-unique: Brazil faced only South Korea (R16) and Croatia (QF) in the 2022 KO, so they did NOT face Germany AND did not face Argentina (both options).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — two options (Germany, Argentina) were not faced.
+
+### Row 8025 — Brazil (medium) — FAIL
+**Q:** Which team drew 0-0 with Brazil in the 2018 World Cup group stage?
+**Answer:** Mexico
+**Why it fails:** False: Brazil did NOT draw 0-0 with Mexico in the 2018 group stage (Mexico was not in their group). Their group draw was 1-1 v Switzerland.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Change to Switzerland (1-1).
+
+### Row 8100 — Brazil (medium) — FAIL
+**Q:** Which World Cup cycles was Neymar Brazil's captain?
+**Answer:** 2018 and 2022
+**Why it fails:** False: Thiago Silva (not Neymar) was Brazil's CAPTAIN for the 2018 and 2022 cycles. Neymar was the talisman, not captain.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to Thiago Silva, or reword to 'talisman'.
+
+### Row 8102 — Brazil (medium) — FAIL
+**Q:** Which World Cup did Brazil first draw 0-0 with Mexico in?
+**Answer:** 2018 World Cup
+**Why it fails:** False premise: Brazil never drew 0-0 with Mexico at a World Cup — Mexico was not in their 2018 group; they met only in the R16.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group game.
+
+### Row 8129 — Brazil (easy) — FAIL
+**Q:** Who was Brazil's captain and talisman at the 2018 and 2022 World Cups?
+**Answer:** Neymar
+**Why it fails:** False: Thiago Silva (not Neymar) was Brazil's captain at 2018 and 2022. Neymar was the talisman.
+**Source:** https://en.wikipedia.org/wiki/Thiago_Silva
+**Remedy:** Change to Thiago Silva, or reword to 'talisman'.
+
+### Row 8148 — Brazil (easy) — FAIL
+**Q:** Why did Brazil maintain dominance over Uruguay in 2022 World Cup qualifying?
+**Answer:** Beat Uruguay 2-0
+**Why it fails:** Wrong score: Brazil beat Uruguay 4-1 in Manaus (Oct 2021); the 2-0 was away in Montevideo.
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change the Manaus score to 4-1.
+
+### Row 8152 — Brazil (easy) — FAIL
+**Q:** Why did Brazil score 15 goals at the 2022 World Cup?
+**Answer:** Played 5 matches
+**Why it fails:** False premise: Brazil scored 8 goals (not 15) in 5 matches at 2022.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Correct the goal count to 8.
+
+### Row 8165 — Brazil (easy) — FAIL
+**Q:** Why did Brazil's Neymar win the 2014 World Cup Bronze Ball?
+**Answer:** Scored four goals
+**Why it fails:** False premise: Neymar did NOT win the 2014 Bronze Ball (Robben did); he was injured before the knockouts. He did score 4 goals.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop the Bronze Ball claim.
+
+### Row 8167 — Brazil (easy) — FAIL
+**Q:** Why did Brazilian Neymar win the 2014 World Cup Bronze Ball?
+**Answer:** Scored four tournament goals
+**Why it fails:** False premise: Neymar did not win the 2014 Bronze Ball (Robben did).
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop the Bronze Ball claim.
+
+### Row 8169 — Brazil (medium) — FAIL
+**Q:** Why do Brazilian clubs lead Copa Libertadores titles as of 2023?
+**Answer:** They have 24 titles
+**Why it fails:** False: Brazilian clubs had 23 Copa Libertadores titles in 2023, not 24 — and they did NOT lead, as Argentina had 25.
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Correct the count and the 'lead' claim.

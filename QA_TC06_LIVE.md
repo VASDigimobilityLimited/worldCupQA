@@ -11,7 +11,7 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
   (conservative; a competitive quiz must not ship unverified facts).
 
 **Last verified row: 2160**  (✅ ARGENTINA COMPLETE — next sequential country: Australia, resume at row 2161)
-**BRAZIL in progress (rows 6097–8182), separate contributor — Brazil sub-cursor at bottom of file.**
+**✅ BRAZIL COMPLETE (rows 6097–8182): 1346 ship-ready · 218 dangerous (full per-batch tables at bottom of file).**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -910,5 +910,160 @@ Mostly duplicates (Neymar record / Tite / Olympic gold / managers / venues).
 | 6746 | ❌ FAIL | non-unique: Maracanã & Arena Corinthians also > Mineirão capacity |
 | 6752 | ❌ FAIL | Mexico was an R16 opponent, not a 2018 group opponent |
 
-**Brazil running totals (rows 6097+): 454 PASS-ALL · 73 FAIL-LIVENESS.**
-**Brazil sub-cursor: last verified row 6760 — resume at 6761.**
+## Batch rows 6761–6880 (Brazil) — 89 candidates — **86 PASS · 3 FAIL**
+Almost entirely manager-identity duplicates (Tite/Dunga/Scolari/Mano Menezes/Diniz/Dorival).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (86 rows) | ✅ PASS | manager/squad/result duplicates vs fact base |
+| 6779 | ❌ FAIL | non-unique negative (Militão also not a first-choice CB in 2022) |
+| 6810,6815 | ❌ FAIL | non-unique: Diniz, Dorival & Ancelotti all oversaw 2026 qualifying |
+
+## Batch rows 6881–7000 (Brazil) — 98 candidates — **72 PASS · 26 FAIL** (heavy-defect)
+New verified: Marquinhos was NOT Thiago Silva's 2018 CB partner (Miranda was); Brasília DID host
+2014 (7 games); Fabinho & Casemiro make "Liverpool/EPL" rows non-unique; Brazil scored 0 v Cameroon;
+Raphinha scored 0 at 2022; multiple 2019-Copa scorers among options.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (72 rows) | ✅ PASS | Neymar-record (surpassed) / Marquinhos pen / stadiums / squad duplicates |
+| 6887,6888,6889,6890,6891,6912,6923,6955,6956 | ❌ FAIL | "Neymar equaled/77th v Bolivia" (he surpassed; equaled v Croatia 2022) |
+| 6940,6973 | ❌ FAIL | 2022 squad 6th league = Mexico, not Germany (explanation) |
+| 6944 | ❌ FAIL | "3 goals/match" from false 15-goal premise (8 goals) |
+| 6960 | ❌ FAIL | distractor "Granja Comary" = answer "CBF Training Centre" |
+| 6907,6961 | ❌ FAIL | Brazil scored 0 v Cameroon; Raphinha scored 0 at 2022 |
+| 6966 | ❌ FAIL | non-unique: Maracanã & Estádio Nacional also > Castelão |
+| 6974,6976 | ❌ FAIL | non-unique league (Casemiro EPL; Fabinho Liverpool) |
+| 6993,6999 | ❌ FAIL | non-unique CB (Thiago Silva also fits) |
+| 6995,6996 | ❌ FAIL | 2018 CB partner was Miranda, not Marquinhos |
+| 6900,6911 | ❌ FAIL | non-unique (Vinícius for 2026; multiple 2019-Copa scorers) |
+| 6899 | ❌ FAIL | Neymar was at PSG in 2022, not Al-Hilal (joined 2023) |
+| 7000 | ❌ FAIL | Brasília DID host 2014 matches (false) |
+
+## Batch rows 7001–7120 (Brazil) — 91 candidates — **84 PASS · 7 FAIL**
+Mostly club-history (Santos/Neymar, Corinthians 2012, Flamengo 2019/2022, Palmeiras 2020/21) and
+defender duplicates. Verified: Thiago Silva has 113 caps (not "over 115").
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (84 rows) | ✅ PASS | club-history & defender duplicates vs fact base |
+| 7001 | ❌ FAIL | Manaus v Uruguay was 4-1 (2-0 was Montevideo) |
+| 7003 | ❌ FAIL | Porto Alegre WAS a 2014 host (false) |
+| 7092,7093,7095 | ❌ FAIL | Thiago Silva has 113 caps, not "over 115" |
+| 7094 | ❌ FAIL | non-unique (Thiago Silva also 90+ caps, both WCs) |
+| 7118 | ❌ FAIL | both Thiago Silva & David Luiz scored v Colombia (2014 QF) |
+
+## Batch rows 7121–7240 (Brazil) — 96 candidates — **78 PASS · 18 FAIL**
+Heavy manager/GK/defender duplicates. Verified Ederson (not Alisson) played v Cameroon 2022.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (78 rows) | ✅ PASS | Tite/Alisson/Thiago Silva/Casemiro duplicates vs fact base |
+| 7131,7144 | ❌ FAIL | non-unique negatives (Militão also not CB; 3 didn't win Golden Ball) |
+| 7136,7137 | ❌ FAIL | Thiago Silva has 113 caps, not "over 115" |
+| 7145,7153 | ❌ FAIL | Neymar equaled Pelé v Croatia, not v Bolivia |
+| 7155 | ❌ FAIL | all 4 options scored at 2019 Copa (non-unique) |
+| 7157,7161,7162,7187 | ❌ FAIL | non-unique (Vinícius/Martinelli also 2022 squad / 2026 key) |
+| 7164 | ❌ FAIL | Ederson, not Alisson, played v Cameroon 2022 |
+| 7195,7196,7206,7209,7212 | ❌ FAIL | non-unique 2026 manager (Ancelotti/Diniz also) |
+| 7197 | ❌ FAIL | Brazil didn't face Mexico in the 2018 group (false premise) |
+
+## Batch rows 7241–7360 (Brazil) — 98 candidates — **73 PASS · 25 FAIL**
+Big NEW defect: dataset claims "Fred started in midfield at the 2018 World Cup" — FALSE. Fred was a
+fringe player in 2018 (starters: Casemiro/Paulinho/Coutinho; Fernandinho replaced suspended Casemiro
+in the QF) and only became a STARTER in 2022. The dataset reversed his two World Cups.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (73 rows) | ✅ PASS | Casemiro/Neymar-record(surpassed)/Dani Alves/Thiago Silva duplicates |
+| 7258,7262,7263,7264,7265,7266,7268,7269,7271,7272,7273,7274,7275 | ❌ FAIL | "Fred started 2018" — false (he started 2022) |
+| 7276,7284 | ❌ FAIL | non-unique Fred (Gabriel Jesus/Casemiro/Paquetá also in squads) |
+| 7328,7329,7331,7333,7334,7335,7336,7337 | ❌ FAIL | "Neymar equaled v Bolivia" (he surpassed; equaled v Croatia 2022) |
+| 7248 | ❌ FAIL | non-unique 2026 manager (Ancelotti also) |
+| 7319 | ❌ FAIL | non-unique negative (Thiago Silva & Oscar both didn't score 2013 final) |
+
+## Batch rows 7361–7480 (Brazil) — 98 candidates — **82 PASS · 16 FAIL**
+Player-identity duplicates. Recurring fails: "Richarlison 4 goals at 2022" (he scored 3), non-unique
+"in 2022 squad"/"2026 key" (Vinícius/Jesus/Casemiro also fit), Neymar-equaled-v-Bolivia.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (82 rows) | ✅ PASS | scorer/Olympic/record/award duplicates vs fact base |
+| 7380,7412 | ❌ FAIL | Richarlison scored 3 at 2022, not 4 |
+| 7365,7414 | ❌ FAIL | Neymar's 77th was v Croatia; v Bolivia he surpassed |
+| 7406,7409 | ❌ FAIL | non-unique 2019-Copa scorer (Coutinho/Richarlison also) |
+| 7426 | ❌ FAIL | non-unique 2022 R16 scorer (Richarlison also) |
+| 7427 | ❌ FAIL | Raphinha scored 0 at 2022 (false) |
+| 7418 | ❌ FAIL | David Luiz didn't score in the 7-1 (Oscar did) |
+| 7361,7457,7468,7470,7477,7479 | ❌ FAIL | non-unique 2022-squad/2026-key (Vinícius/Jesus/Casemiro/Fred) |
+| 7393 | ❌ FAIL | answer right (no hat-trick) but explanation repeats false 15-goal figure |
+
+## Batch rows 7481–7620 (Brazil) — 107 candidates — **95 PASS · 12 FAIL**
+Mostly stadium-capacity and player-award duplicates (clean).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (95 rows) | ✅ PASS | stadium/award/scorer duplicates vs fact base |
+| 7500,7508,7513 | ❌ FAIL | Neymar didn't win 2014 Bronze Ball (Robben) |
+| 7486 | ❌ FAIL | Endrick's age-17 goals were friendlies, not a WC qualifier |
+| 7506,7507,7518 | ❌ FAIL | non-unique 2022-squad/2026-key (Vinícius also) |
+| 7552 | ❌ FAIL | no record of David Luiz scoring in the 2013 Confederations Cup |
+| 7566 | ❌ FAIL | 8 goals at 2022 WC, not 15 |
+| 7579 | ❌ FAIL | non-unique: Maracanã/Estádio Nacional/Mineirão all > Arena Corinthians |
+| 7614,7620 | ❌ FAIL | Neymar equaled Pelé v Croatia, not v Bolivia |
+
+## Batch rows 7621–7760 (Brazil) — 81 candidates — **62 PASS · 19 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (62 rows) | ✅ PASS | Neymar injury/Santos / Endrick call-up / Granja Comary / Tite / Zúñiga |
+| 7687,7690,7691,7692,7693,7694 | ❌ FAIL | Raphinha scored 0 at 2022 (not v South Korea/Cameroon) |
+| 7638,7645,7704 | ❌ FAIL | Neymar didn't win 2014 Bronze Ball (Robben) |
+| 7652,7657,7669 | ❌ FAIL | Endrick's age-17 goals were friendlies, not WC qualifiers |
+| 7676 | ❌ FAIL | Thiago Silva (not Neymar) captained 2018 & 2022 |
+| 7742,7746 | ❌ FAIL | Manaus v Uruguay was 4-1 (2-0 was Montevideo) |
+| 7650 | ❌ FAIL | 8 goals at 2022 WC, not 15 |
+| 7666 | ❌ FAIL | distractor "Granja Comary" = answer "CBF Training Centre" |
+| 7756,7757 | ❌ FAIL | Libertadores count: Argentina (25) led Brazil (23) in 2023 |
+
+## Batch rows 7761–7900 (Brazil) — 108 candidates — **101 PASS · 7 FAIL**
+Very clean (manager / 2014-hosts / opponent duplicates).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (101 rows) | ✅ PASS | manager/qualification/opponent duplicates vs fact base |
+| 7789,7790 | ❌ FAIL | non-unique "league not represented" (Germany also absent) |
+| 7872 | ❌ FAIL | Manaus v Uruguay was 4-1 (2-0 was Montevideo) |
+| 7886 | ❌ FAIL | Brazil didn't draw Mexico in 2018 group (false premise) |
+| 7887 | ❌ FAIL | Paraguay eliminated Brazil in 2011, not vice-versa |
+| 7894 | ❌ FAIL | Neymar equaled Pelé v Croatia, not v Bolivia |
+| 7896 | ❌ FAIL | non-unique negative (3 nations didn't score 5 in <30 min) |
+
+## Batch rows 7901–8040 (Brazil) — 67 candidates — **63 PASS · 4 FAIL**
+Very clean (opponent / elimination / stadium duplicates). Confirmed 2018 Mexico R16 win was at Samara Arena.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (63 rows) | ✅ PASS | elimination/opponent/stadium duplicates vs fact base |
+| 7938 | ❌ FAIL | Neymar equaled Pelé v Croatia, not v Bolivia |
+| 8005 | ❌ FAIL | Manaus v Uruguay was 4-1 (2-0 was Montevideo) |
+| 8023 | ❌ FAIL | non-unique: Brazil faced neither Germany nor Argentina in 2022 KO |
+| 8025 | ❌ FAIL | Brazil didn't draw Mexico in 2018 group (false premise) |
+
+## Batch rows 8041–8182 (Brazil) — 104 candidates — **96 PASS · 8 FAIL** — FINAL BRAZIL BATCH
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (96 rows) | ✅ PASS | manager/squad/result/why duplicates vs fact base |
+| 8100,8129 | ❌ FAIL | Thiago Silva (not Neymar) captained 2018 & 2022 |
+| 8102 | ❌ FAIL | Brazil didn't draw Mexico in 2018 group (false premise) |
+| 8148 | ❌ FAIL | Manaus v Uruguay was 4-1 (2-0 was Montevideo) |
+| 8152 | ❌ FAIL | 8 goals at 2022 WC, not 15 |
+| 8165,8167 | ❌ FAIL | Neymar didn't win 2014 Bronze Ball (Robben) |
+| 8169 | ❌ FAIL | Brazilian clubs had 23 Libertadores in 2023 (Argentina led with 25) |
+
+# ✅ BRAZIL COMPLETE (rows 6097–8182)
+- 1564 candidates in QA_PASSED.md checked: **1346 ship-ready** (QA_PASSED_ALL.md) + **218 dangerous**
+  (QA_FAILED_LIVENESS_PASSED_OTHERS.md). 1346+218 = 1564 ✓ (on-disk verified, no dups).
+- **Top recurring Brazil defect patterns** (for a dataset sweep):
+  1. "Brazil scored **15** goals at 2022 WC" → actually **8**.
+  2. "Neymar **equaled** Pelé v Bolivia (77th)" → he equaled v **Croatia 2022**; v Bolivia he **surpassed** (78th/79th).
+  3. "beat Uruguay **2-0 in Manaus**" → Manaus was **4-1**; the 2-0 was away in Montevideo.
+  4. "**0-0 v Mexico** in the 2018 group" → never happened (Mexico met only in the R16).
+  5. Neymar **2014 Bronze Ball** → Robben won it (Neymar injured, no 2014 award).
+  6. "**Richarlison 4 goals** at 2022" → 3; "**Raphinha scored** v S.Korea/Cameroon" → he scored 0.
+  7. "**Fred started** in midfield at 2018" → reversed; Fred started in **2022**, fringe in 2018.
+  8. Brazilian clubs "**24** Libertadores / led in 2023" → **23**, and Argentina led with **25**.
+  9. **Thiago Silva** (not Neymar) captained 2018 & 2022.
+  10. Excel score corruption (04-Jan=4-1, 02-Jan=2-1, 07-Jan=7-1, 01-Jul=7-1).
+  11. Non-unique "in 2022 squad / 2026 key / 2026 manager / over-90-caps" rows (Vinícius/Jesus/Casemiro/Ancelotti/Thiago Silva).
+- Next sequential country: **Australia** (rows 2161–3241).
