@@ -103,6 +103,12 @@ Verdicts route into two files:
 - **Rows 231+ (new method) — `QA_PASSED_ALL.md`:** **554** ship-ready.
 - **Rows 231+ (new method) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **176** dangerous.
 - **Algeria total ship-ready (both methods):** 686.
+- **Brazil (rows 6097–6760 so far, new method) — `QA_PASSED_ALL.md`:** **454** ship-ready.
+- **Brazil (rows 6097–6760 so far, new method) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **73** dangerous.
+- **Grand totals to date — `QA_PASSED_ALL.md`: 1140 · `QA_FAILED_LIVENESS_PASSED_OTHERS.md`: 249.**
+- **Brazil is IN PROGRESS** (separate contributor): verified through **row 6760**, resume at 6761
+  (last Brazil CSV row = 8182). Brazil sub-cursor + per-batch tables live at the bottom of
+  `QA_TC06_LIVE.md`.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
 
@@ -116,7 +122,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Australia | 2161–3241 | 1081 | 835 | ⬜ not started |
 | Austria | 3242–4282 | 1041 | 761 | ⬜ not started |
 | Belgium | 4283–6096 | 1814 | 1327 | ⬜ not started |
-| Brazil | 6097–8182 | 2086 | 1564 | ⬜ not started |
+| Brazil | 6097–8182 | 2086 | 1564 | 🟨 **IN PROGRESS** — verified to row 6760 (454 pass-all / 73 fail-liveness so far) |
 | Cabo Verde | 8183–9573 | 1391 | 696 | ⬜ not started |
 | Cameroon | 9574–10745 | 1172 | 738 | ⬜ not started |
 | Canada | 10746–12428 | 1683 | 1003 | ⬜ not started |

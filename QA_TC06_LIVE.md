@@ -11,6 +11,7 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
   (conservative; a competitive quiz must not ship unverified facts).
 
 **Last verified row: 1228**  (ALGERIA COMPLETE — resume at row 1229 = Argentina, next country)
+**BRAZIL in progress (rows 6097–8182), separate contributor — Brazil sub-cursor at bottom of file.**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -615,3 +616,132 @@ final, beat Senegal/Egypt, failed 2018/2022) plus recurring-error clusters.
 - Rows 231–1228 (new method, QA_PASSED.md pool only): **554 ship-ready** (QA_PASSED_ALL.md)
   + **176 dangerous** (QA_FAILED_LIVENESS_PASSED_OTHERS.md); ~268 rows skipped (in QA_FAILED.md).
 - Next country: **Argentina** (rows 1229–2160). (The CSV is alphabetical by country.)
+
+---
+
+# ===== BRAZIL (rows 6097–8182) — NEW METHOD (only QA_PASSED.md rows) =====
+Separate contributor, started 2026-06-06. Country range 6097–8182 (2086 rows total;
+1564 in QA_PASSED.md). Liveness run only on QA_PASSED.md rows; PASS → QA_PASSED_ALL.md,
+FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
+
+## Brazil fact base (web-verified, reused across batches)
+- **2010 WC:** Group G winners (NKorea 2-1, Ivory Coast 3-1, Portugal 0-0); R16 beat Chile 3-0;
+  **QF lost 2-1 to Netherlands** (Robinho 10'; Sneijder x2). Dunga left after.
+- **2014 WC (hosts):** **SF lost 1-7 to Germany** at Mineirão, Belo Horizonte (5 goals in 29 min,
+  Oscar consolation); **3rd-place lost 0-3 to Netherlands** → finished 4th. **Scolari** was coach,
+  resigned 15 Jul; **Dunga rehired**. Neymar (injury) & Thiago Silva (suspension) missed the SF.
+- **2018 WC:** Group E winners — **1-1 Switzerland**, 2-0 Costa Rica, 2-0 Serbia (NO Mexico in group,
+  NO 0-0 draw). **R16 beat Mexico 2-0**; **QF lost 2-1 to Belgium**.
+- **2022 WC:** Group G winners — 2-0 Serbia (Richarlison bicycle kick), 1-0 Switzerland, **0-1 Cameroon**;
+  **R16 beat South Korea 4-1**; **QF lost to Croatia on penalties** (1-1 a.e.t., 4-2 pens). **Brazil scored
+  8 goals total** (NOT 15). FIFA No.1 ranked. **Tite resigned immediately after** the Croatia loss.
+  Neymar EQUALED Pelé's 77 with his goal v Croatia. Thiago Silva captained at age 38. Dani Alves (44
+  titles) most decorated.
+- **Copa América:** 2019 WON (SF beat Argentina 2-0 at Mineirão; final beat Peru 3-1 at Maracanã;
+  Neymar injured pre-tournament; Alisson best GK). 2021 final **LOST 1-0 to Argentina** at Maracanã
+  (Di María). 2016 Centenario **group exit → Dunga sacked, Tite hired**. 2024 **QF lost to Uruguay on pens**.
+- **Neymar record:** equaled Pelé (77) v Croatia (2022 WC); **surpassed v Bolivia 8 Sep 2023** (78th & 79th,
+  5-1 win) to become Brazil's all-time top scorer.
+- **Misc:** 2016 Olympic gold (beat Germany on pens, Maracanã, first men's gold). 2013 Confederations Cup
+  final beat Spain 3-0 (Fred x2). 2012 Club World Cup Corinthians 1-0 Chelsea (Guerrero). Flamengo 2019
+  Libertadores (Jorge Jesus); Palmeiras 2020 & 2021. **Brazilian clubs: 23 Libertadores titles as of 2023**
+  (Fluminense 2023 = 23rd; 24th in 2024, 25th in 2025). Endrick's age-17 goals were all friendlies
+  (England/Spain Mar 2024, Mexico Jun 2024), not WC qualifiers.
+
+## Batch rows 6097–6160 (Brazil) — 52 candidates — **40 PASS · 12 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 6098,6099,6103,6106,6111,6112,6113,6114,6115,6117 | ✅ PASS | manager exits (Tite 2022 / Dunga 2010 & 2016) |
+| 6100,6105,6110,6116,6118,6121,6123,6124,6125,6127,6128,6129,6130,6131,6133,6134,6136,6137,6138,6141,6142,6144,6145,6151,6154,6155,6158,6159,6160,6101 | ✅ PASS | results/records verified against fact base |
+| 6097 | ❌ FAIL | next Argentina meeting was Nov 2019 friendly, not 2021 Copa final |
+| 6102 | ❌ FAIL | non-unique negative (Santos also didn't "spark resurgence") |
+| 6108 | ❌ FAIL | explanation wrong (equaled Pelé v Croatia; 78&79 same Bolivia match) |
+| 6119,6120 | ❌ FAIL | false premise — no 0-0 Brazil-Mexico 2018 group game |
+| 6122 | ❌ FAIL | Neymar equaled Pelé v Croatia, not Bolivia |
+| 6126 | ❌ FAIL | Brazilian clubs had 23 Libertadores titles as of 2023, not 24 |
+| 6147,6150 | ❌ FAIL | Brazil scored 8 goals at 2022 WC, not 15 |
+| 6148 | ❌ FAIL | non-unique stadium (multiple 2022 WCQ venues) |
+| 6149 | ❌ FAIL | "04-Jan" = corrupted "4-1" (Excel date mangling) |
+| 6157 | ❌ FAIL | Endrick's age-17 goals were friendlies, not a WC qualifier |
+
+## Batch rows 6161–6280 (Brazil) — 101 candidates — **89 PASS · 12 FAIL**
+New facts verified: Brazil ranked FIFA No.1 entering BOTH 2010 and 2022 WCs (but Germany were
+also No.1 entering 2018 → 6256 non-unique); Thiago Silva in FIFA's 2014 Dream Team; Brazil's
+2018 CONMEBOL record = 12W-5D-1L/41pts (one loss to Chile); 2022 qualifying 45 pts, 2010 33 pts;
+Casemiro anchored 2018 & 2022; Neymar 4 goals at 2014 before injury; 2011 Copa QF lost to Paraguay
+on pens; Di María scored the 2021 Copa final winner; Firmino scored 2nd v Mexico (2018 R16).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (89 rows) | ✅ PASS | results/records/managers/qualification verified vs fact base |
+| 6197 | ❌ FAIL | "3 goals/match" rests on false 15-goal premise (8 goals at 2022) |
+| 6212 | ❌ FAIL | non-unique negative (fell to 22nd, not any listed rank) |
+| 6242 | ❌ FAIL | "02-Jan" = corrupted "2-1" (Belgium) |
+| 6243 | ❌ FAIL | distractor "Granja Comary" = answer "CBF Training Centre" (same venue) |
+| 6244 | ❌ FAIL | ambiguous: reached QF in all four 2010-22; "Four" also defensible |
+| 6246,6247,6248 | ❌ FAIL | false 15-goal premise (Brazil scored 8 at 2022) |
+| 6256 | ❌ FAIL | non-unique: Germany also entered 2018 as FIFA No.1 |
+| 6265,6271 | ❌ FAIL | false "0-0 v Mexico 2018 group" (never played in group) |
+| 6277 | ❌ FAIL | 2018 record was 12-5-1, not "0 defeats" |
+
+## Batch rows 6281–6400 (Brazil) — 88 candidates — **77 PASS · 11 FAIL**
+New facts: Neymar scored 8 goals in 2022 CONMEBOL qualifying (joint 2nd top scorer) → those rows PASS;
+Richarlison scored 3 (not 4) at 2022 WC; Brazil 4-1 Uruguay in Manaus (2-0 was away in Montevideo);
+2014 Bronze Ball = Robben (not Neymar); 2022 squad's 6 leagues incl. Mexico (Dani Alves/Pumas), NOT
+Germany; Everton Cebolinha 2019 Copa top scorer (3); three managers in 2026 qualifying (Diniz/Dorival/
+Ancelotti); Neymar's Ballon d'Or podiums were 2015 & 2017 (but 9 nominations total).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (77 rows) | ✅ PASS | qualification points / managers / records verified vs fact base |
+| 6305 | ❌ FAIL | non-unique Ballon d'Or years (9 nominations) |
+| 6316 | ❌ FAIL | Neymar didn't win 2014 Bronze Ball (Robben did) |
+| 6320,6353 | ❌ FAIL | Brazilian clubs had 23 Libertadores titles as of 2023, not 24 |
+| 6325,6339 | ❌ FAIL | 2022 squad's 6th league was Mexico, not Germany (explanation wrong) |
+| 6357,6358 | ❌ FAIL | Brazil scored 8 goals at 2022 WC, not 15 |
+| 6363 | ❌ FAIL | Richarlison scored 3 at 2022 WC, not 4 |
+| 6391 | ❌ FAIL | Manaus v Uruguay was 4-1; the 2-0 was in Montevideo |
+| 6392 | ❌ FAIL | Neymar equaled Pelé v Croatia; v Bolivia he surpassed (78th/79th) |
+
+## Batch rows 6401–6520 (Brazil) — 102 candidates — **89 PASS · 13 FAIL**
+Verified: Richarlison's bicycle kick was a Puskás nominee; Dani Alves = 2019 Copa Best Player;
+Brazil finished 2nd (not 1st) in their 2024 Copa group (Colombia won it).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (89 rows) | ✅ PASS | mostly duplicate WC-result/record questions vs fact base |
+| 6412 | ❌ FAIL | only ~22 of the 26-man squad were Europe-based, not 26 |
+| 6413 | ❌ FAIL | 6th country was Mexico, not Germany (explanation) |
+| 6422 | ❌ FAIL | "02-Jan" = corrupted "2-1" (Belgium) |
+| 6428,6429 | ❌ FAIL | Manaus v Uruguay was 4-1; 2-0 was in Montevideo |
+| 6441 | ❌ FAIL | Brazil first faced Mexico in R16, not the 2018 group |
+| 6450 | ❌ FAIL | Brazil finished 2nd in their 2024 Copa group, didn't win it |
+| 6456 | ❌ FAIL | Neymar equaled Pelé in 2022, not 2023 (false premise) |
+| 6468 | ❌ FAIL | 8 goals at 2022 WC, not 15 |
+| 6480,6486 | ❌ FAIL | Neymar didn't win 2014 Bronze Ball (Robben) |
+| 6503,6504 | ❌ FAIL | no 0-0 v Mexico in 2018 group (false premise) |
+
+## Batch rows 6521–6640 (Brazil) — 89 candidates — **72 PASS · 17 FAIL**
+Verified: Ancelotti (May 2025) first long-term non-Brazilian manager; Dorival Júnior 2024; Endrick's
+first call-up was Nov 2023 (NOT 2024); Neymar ~€88m to Barça 2013; Flamengo 2022 Libertadores under
+Dorival Júnior. Heavy recurring-error cluster this batch.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (72 rows) | ✅ PASS | manager/date/result duplicates vs fact base |
+| 6522,6523,6597,6622,6623 | ❌ FAIL | "2-0 v Uruguay in Manaus" false (Manaus 4-1; 2-0 was Montevideo) |
+| 6538,6586 | ❌ FAIL | 8 goals at 2022 WC, not 15 (and the 3/match derived from it) |
+| 6556,6557 | ❌ FAIL | Endrick's first call-up was 2023, not 2024 |
+| 6568,6569 | ❌ FAIL | non-unique Ballon d'Or years (9 nominations) |
+| 6598,6604,6607,6610,6612 | ❌ FAIL | corrupted score cells (01-Jul/04-Jan/07-Jan/02-Jan) |
+| 6625 | ❌ FAIL | no 0-0 v Mexico in 2018 group (false premise) |
+
+## Batch rows 6641–6760 (Brazil) — 95 candidates — **87 PASS · 8 FAIL**
+Mostly duplicates (Neymar record / Tite / Olympic gold / managers / venues).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (87 rows) | ✅ PASS | duplicates verified vs fact base |
+| 6648 | ❌ FAIL | 8 goals at 2022 WC, not 15 |
+| 6675,6703,6704,6705 | ❌ FAIL | Neymar equaled Pelé v Croatia (2022); v Bolivia he surpassed |
+| 6689 | ❌ FAIL | Richarlison scored 3 at 2022 WC, not 4 |
+| 6746 | ❌ FAIL | non-unique: Maracanã & Arena Corinthians also > Mineirão capacity |
+| 6752 | ❌ FAIL | Mexico was an R16 opponent, not a 2018 group opponent |
+
+**Brazil running totals (rows 6097+): 454 PASS-ALL · 73 FAIL-LIVENESS.**
+**Brazil sub-cursor: last verified row 6760 — resume at 6761.**

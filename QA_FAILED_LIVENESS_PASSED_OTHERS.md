@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **176** (last verified row 1228 — ALGERIA COMPLETE)
+Total failed-liveness-passed-others so far: **249** (Algeria 1228: 176 · Brazil 6097–6760 so far: 73)
 
 ---
 
@@ -727,3 +727,514 @@ editorializing, and Belmadi remained manager throughout (so the "new manager" fr
 **Remedy:** Replace with concrete, sourceable facts (named retirements/debutants), or drop.
 
 ---
+
+### Row 6097 — Brazil (hard) — FAIL
+**Q:** After beating Argentina in the 2019 Copa América, when did Brazil next face them?
+**Answer:** 2021 Copa América final
+**Why it fails:** After the 2019 Copa semi-final (Brazil 2-0 Argentina), Brazil's NEXT meeting with Argentina was a friendly in Riyadh on 15 Nov 2019 (Argentina 1-0, Messi), not the 2021 Copa final. The answer ignores the intervening friendly.
+**Source:** https://en.wikipedia.org/wiki/2019_Supercl%C3%A1sico_de_las_Am%C3%A9ricas
+**Remedy:** Reword to 'next competitive meeting' (2021 Copa final) or change answer to the Nov 2019 friendly.
+
+### Row 6102 — Brazil (easy) — FAIL
+**Q:** After Brazil's 2019 Copa Libertadores win, which club did NOT spark a resurgence?
+**Answer:** Corinthians
+**Why it fails:** Non-unique: among the options, Santos also did NOT spark a post-2019 resurgence (no Libertadores since 2011), so 'Corinthians' is not the unique answer; Palmeiras (2020/21) and Flamengo (2019) both did.
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 6108 — Brazil (easy) — FAIL
+**Q:** After scoring in Brazil's 5-1 win over Bolivia in September 2023, which player then surpassed Pelé's goal record?
+**Answer:** Neymar
+**Why it fails:** Explanation is wrong: Neymar EQUALED Pelé's 77 against Croatia at the 2022 World Cup, not against Bolivia; and he scored his 78th AND 79th in the SAME 5-1 Bolivia match (8 Sep 2023), not 'days later'.
+**Source:** https://www.aljazeera.com/sports/2023/9/9/i-have-no-words-neymar-breaks-peles-brazil-goal-scoring-record
+**Remedy:** Keep answer Neymar; rewrite explanation: 'Neymar scored twice against Bolivia on 8 Sep 2023 to pass Pelé's 77 and become Brazil's all-time top scorer.'
+
+### Row 6119 — Brazil (medium) — FAIL
+**Q:** Against which nation did Brazil draw 0-0 in the 2018 World Cup group stage?
+**Answer:** Mexico
+**Why it fails:** False premise: Brazil did NOT draw 0-0 with Mexico in the 2018 group stage (Mexico was not in Brazil's group). Brazil's only 2018 group draw was 1-1 v Switzerland; they beat Mexico 2-0 in the Round of 16.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Change answer to Switzerland and the score to 1-1, or drop.
+
+### Row 6120 — Brazil (easy) — FAIL
+**Q:** Against which nation did Brazil record a 0-0 draw and a 2-0 win at the 2018 World Cup?
+**Answer:** Mexico
+**Why it fails:** False premise: Brazil played Mexico only once at the 2018 World Cup (R16, won 2-0). There was no 0-0 group-stage draw with Mexico.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — conflates a non-existent group game with the R16 win.
+
+### Row 6122 — Brazil (easy) — FAIL
+**Q:** Against which nation did Neymar equal Pelé's Brazil scoring record in September 2023?
+**Answer:** Bolivia
+**Why it fails:** Wrong: Neymar EQUALED Pelé's record (77) against Croatia at the 2022 World Cup, not against Bolivia. Against Bolivia (Sep 2023) he SURPASSED it with his 78th and 79th goals. The explanation's '77th vs Bolivia' is false.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Change answer to Croatia (and year 2022), or reframe the question to 'surpassed' → Bolivia.
+
+### Row 6126 — Brazil (medium) — FAIL
+**Q:** As of 2023, how many Copa Libertadores titles have Brazilian clubs won?
+**Answer:** 24 titles
+**Why it fails:** Wrong count: as of 2023 Brazilian clubs had won 23 Copa Libertadores titles (Fluminense's 2023 win was the 23rd). The figure '24' is reached only in 2024 (Botafogo); Brazil tied Argentina at 25 in 2025.
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Change answer to 23 titles (as of 2023).
+
+### Row 6147 — Brazil (medium) — FAIL
+**Q:** At the 2022 World Cup in Qatar, Brazil scored how many total goals?
+**Answer:** 15 goals
+**Why it fails:** Wrong number: Brazil scored 8 goals at the 2022 World Cup (2 v Serbia, 1 v Switzerland, 0 v Cameroon, 4 v South Korea, 1 v Croatia), not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change answer to 8 goals.
+
+### Row 6148 — Brazil (easy) — FAIL
+**Q:** At the 2022 World Cup qualifiers, Brazil hosted matches at which stadium?
+**Answer:** Arena Corinthians
+**Why it fails:** Non-unique/ambiguous: Brazil hosted 2022 World Cup qualifiers at several stadiums (the explanation itself says 'multiple venues'), so 'Arena Corinthians' is not a uniquely correct single answer.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Anchor to a specific qualifier match/date, or drop.
+
+### Row 6149 — Brazil (easy) — FAIL
+**Q:** At the 2022 World Cup, Brazil beat South Korea by what score in the round of 16?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer: '04-Jan' is an Excel-mangled '4-1'. Brazil beat South Korea 4-1 (as the explanation correctly states); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Fix the answer cell to '4-1' and flag a dataset-wide date-corruption sweep.
+
+### Row 6150 — Brazil (medium) — FAIL
+**Q:** At the 2022 World Cup, Brazil scored how many total goals?
+**Answer:** 15 goals
+**Why it fails:** Wrong number: Brazil scored 8 goals at the 2022 World Cup, not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change answer to 8 goals.
+
+### Row 6157 — Brazil (easy) — FAIL
+**Q:** At what age did Brazilian Endrick score in a World Cup qualifier?
+**Answer:** 17 years old
+**Why it fails:** False premise: Endrick's goals at age 17 were all friendlies (England and Spain, Mar 2024; Mexico, Jun 2024). He played 2026 WC qualifiers at 17 but did not score in one.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Reword to 'friendly' (his England goal at 17), or drop.
+
+### Row 6197 — Brazil (medium) — FAIL
+**Q:** Brazil averaged how many goals per match at the 2022 World Cup?
+**Answer:** 3 goals
+**Why it fails:** False premise: Brazil scored 8 goals in 5 matches at 2022 (~1.6/match), not 15 → not 3 goals/match.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Recompute: 8 goals in 5 matches ≈ 1.6/match; reword or drop.
+
+### Row 6212 — Brazil (medium) — FAIL
+**Q:** Brazil dropped to 22nd in FIFA rankings in 2012. Which ranking did they NOT fall to?
+**Answer:** 15th
+**Why it fails:** Non-unique negative: Brazil fell to 22nd in 2012, so they did NOT fall to 15th — but they also did not fall to 18th, 20th or 25th. No unique answer.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men's_World_Ranking
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 6242 — Brazil (easy) — FAIL
+**Q:** Brazil lost to Belgium by what scoreline in the 2018 World Cup quarter-finals?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is an Excel-mangled '2-1'. Brazil lost 2-1 to Belgium (as the explanation states); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Fix the answer cell to '2-1' and flag a date-corruption sweep.
+
+### Row 6243 — Brazil (easy) — FAIL
+**Q:** Brazil prepared for the 2014 World Cup at which national team training centre in Teresópolis?
+**Answer:** CBF Training Centre
+**Why it fails:** Non-unique/TC-16: the distractor 'Granja Comary' is the SAME venue as the answer 'CBF Training Centre' (the explanation says so), so two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Replace 'Granja Comary' with a genuinely different distractor, or drop.
+
+### Row 6244 — Brazil (medium) — FAIL
+**Q:** Brazil reached the quarter-finals in how many World Cups from 2010 to 2022?
+**Answer:** Three
+**Why it fails:** Ambiguous/non-unique: Brazil REACHED the quarter-finals in all four 2010-2022 World Cups (in 2014 they advanced to the SF), so 'reached the QF' = four, not three. The intended count (eliminated AT the QF) is three, but the wording supports the 'Four' distractor too.
+**Source:** https://en.wikipedia.org/wiki/Brazil_national_football_team
+**Remedy:** Reword to 'eliminated in the quarter-finals' (as in row 6255).
+
+### Row 6246 — Brazil (medium) — FAIL
+**Q:** Brazil scored 15 goals in 5 matches at which FIFA World Cup?
+**Answer:** 2022 World Cup
+**Why it fails:** False premise: Brazil scored 8 goals at the 2022 World Cup, not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop or correct the goal count to 8.
+
+### Row 6247 — Brazil (hard) — FAIL
+**Q:** Brazil scored 15 goals in 5 matches at which World Cup?
+**Answer:** The 2022 World Cup
+**Why it fails:** False premise: Brazil scored 8 goals at the 2022 World Cup, not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop or correct the goal count to 8.
+
+### Row 6248 — Brazil (medium) — FAIL
+**Q:** Brazil scored 15 goals in how many matches at the 2022 World Cup?
+**Answer:** 5 matches
+**Why it fails:** False premise: the question asserts Brazil scored 15 goals at 2022 (the asked-for '5 matches' is right, but they scored 8, not 15).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Drop — built on the false 15-goal figure.
+
+### Row 6256 — Brazil (hard) — FAIL
+**Q:** Brazil were FIFA's top-ranked team entering the 2022 World Cup. Which other nation also entered a World Cup as FIFA's #1?
+**Answer:** Brazil in 2010
+**Why it fails:** Non-unique: Germany also entered a World Cup (2018) ranked FIFA No.1, so the 'Germany in 2018' option is equally correct. Also self-referential (answer is Brazil again).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men's_World_Ranking
+**Remedy:** Drop — multiple correct options.
+
+### Row 6265 — Brazil (easy) — FAIL
+**Q:** Brazil's 2-0 win over Mexico in 2018 was in which World Cup stage?
+**Answer:** Round of 16
+**Why it fails:** Explanation is false: it claims Brazil drew Mexico 0-0 in the 2018 group stage, but Brazil never played Mexico in the group (only the R16, won 2-0). The R16 answer is right; the explanation tail is wrong.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Remove the false '0-0 group stage draw' clause.
+
+### Row 6271 — Brazil (medium) — FAIL
+**Q:** Brazil's 2018 World Cup knockout win over Mexico followed what group stage result?
+**Answer:** A 0-0 draw
+**Why it fails:** False premise: Brazil's R16 win over Mexico did NOT follow a 0-0 group draw — they never met Mexico in the 2018 group stage.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group game.
+
+### Row 6277 — Brazil (medium) — FAIL
+**Q:** Brazil's 2018 World Cup qualifying record under Tite was 12 wins, 5 draws, and how many defeats?
+**Answer:** 0 defeats
+**Why it fails:** Wrong record: Brazil's 2018 CONMEBOL campaign was 12W-5D-1L (41 pts) — one defeat (to Chile), not zero. The 12W/5D figures are the full-campaign totals, which include that loss.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change answer to 1 defeat.
+
+### Row 6305 — Brazil (hard) — FAIL
+**Q:** Brazil's main creative force Neymar was nominated for the Ballon d'Or in which years?
+**Answer:** 2015 and 2017
+**Why it fails:** Non-unique: Neymar received nine Ballon d'Or nominations (not just 2015 & 2017); his two PODIUM finishes were 2015 and 2017, but he was also nominated in 2014, 2016 and 2018, so the 'nominated in which years' framing has multiple correct options.
+**Source:** https://en.wikipedia.org/wiki/Neymar
+**Remedy:** Reword to 'finished 3rd in the Ballon d'Or' (2015 and 2017), or drop.
+
+### Row 6316 — Brazil (medium) — FAIL
+**Q:** Brazil's Neymar won the Bronze Ball in 2014 after scoring how many goals?
+**Answer:** Four goals
+**Why it fails:** False premise: Neymar did NOT win the 2014 World Cup Bronze Ball — that went to Arjen Robben (Golden Messi, Silver Müller). Neymar was injured before the semis. The '4 goals' is right, but he won no 2014 award.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop the Bronze Ball claim; reword to his 4 goals before injury.
+
+### Row 6320 — Brazil (medium) — FAIL
+**Q:** Brazilian clubs had won the most Copa Libertadores titles of any country by 2023. How many?
+**Answer:** 24 titles
+**Why it fails:** Wrong count: Brazilian clubs had 23 Copa Libertadores titles as of 2023 (Fluminense's 2023 win = the 23rd), not 24.
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Change answer to 23 titles.
+
+### Row 6325 — Brazil (medium) — FAIL
+**Q:** For Brazil's 2022 World Cup squad, how many different nations' club leagues were represented?
+**Answer:** Six nations
+**Why it fails:** Explanation wrong: the 2022 squad's sixth league was Mexico (Dani Alves at Pumas), NOT Germany — no 2022 Brazil player was Bundesliga-based. The count 'six' (England, Spain, France, Italy, Mexico, Brazil) is right, but the explanation lists Germany falsely.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Replace 'Germany' with 'Mexico' in the explanation.
+
+### Row 6339 — Brazil (medium) — FAIL
+**Q:** From how many different national leagues were Brazil's 2022 World Cup squad players drawn?
+**Answer:** Six
+**Why it fails:** Explanation wrong: the sixth league was Mexico (Dani Alves/Pumas), not Germany. The count 'six' is correct but the listed nations are wrong.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Replace 'Germany' with 'Mexico'.
+
+### Row 6353 — Brazil (medium) — FAIL
+**Q:** How many Copa Libertadores titles had Brazilian clubs won as of 2023?
+**Answer:** 24 titles
+**Why it fails:** Wrong count: Brazilian clubs had 23 Copa Libertadores titles as of 2023, not 24.
+**Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
+**Remedy:** Change answer to 23 titles.
+
+### Row 6357 — Brazil (medium) — FAIL
+**Q:** How many goals did Brazil score at the 2022 FIFA World Cup?
+**Answer:** 15 goals
+**Why it fails:** Wrong number: Brazil scored 8 goals at the 2022 World Cup, not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change answer to 8 goals.
+
+### Row 6358 — Brazil (medium) — FAIL
+**Q:** How many goals did Brazil score in total at the 2022 World Cup?
+**Answer:** 15 goals
+**Why it fails:** Wrong number: Brazil scored 8 goals at the 2022 World Cup, not 15.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change answer to 8 goals.
+
+### Row 6363 — Brazil (medium) — FAIL
+**Q:** How many goals did Brazil's Richarlison score at the 2022 FIFA World Cup?
+**Answer:** 4
+**Why it fails:** Wrong number: Richarlison scored 3 goals at the 2022 World Cup (2 v Serbia, 1 v South Korea), not 4.
+**Source:** https://en.wikipedia.org/wiki/Richarlison
+**Remedy:** Change answer to 3.
+
+### Row 6391 — Brazil (easy) — FAIL
+**Q:** In a 2022 World Cup qualifier, Brazil beat which South American rival 2-0 in Manaus?
+**Answer:** Uruguay
+**Why it fails:** Wrong score/venue: Brazil beat Uruguay 4-1 in Manaus (Oct 2021). The 2-0 win was away in Montevideo (Nov 2020), not Manaus.
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change answer/score to 4-1, or move the 2-0 to Montevideo.
+
+### Row 6392 — Brazil (easy) — FAIL
+**Q:** In a 2023 Brazil 5-1 win over Bolivia, which player scored his 77th goal to equal Pelé's record?
+**Answer:** Neymar
+**Why it fails:** False premise: Neymar EQUALED Pelé's 77 against Croatia (2022 WC). In the 2023 Bolivia 5-1 he scored his 78th and 79th to SURPASS the record — he did not score 'his 77th to equal Pelé' in that match.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed Pelé' or move the 'equal' to the Croatia game.
+
+### Row 6412 — Brazil (medium) — FAIL
+**Q:** In Brazil's 2022 World Cup squad, how many players were based in European leagues?
+**Answer:** 26 players
+**Why it fails:** Wrong number: of Brazil's 26-man 2022 squad, ~22 were European-league based — three were Brazil-based (Weverton, Pedro, Everton Ribeiro) and Dani Alves was in Mexico. Not all 26 were in Europe.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Change answer to ~22, or reword to total squad size.
+
+### Row 6413 — Brazil (medium) — FAIL
+**Q:** In Brazil's 2022 World Cup squad, players' clubs were based in how many different countries?
+**Answer:** Six countries
+**Why it fails:** Explanation wrong: the six countries were England, Spain, France, Italy, Mexico (Dani Alves/Pumas) and Brazil — NOT Germany. The count 'six' is right but the listed nations are wrong.
+**Source:** https://en.wikipedia.org/wiki/Template:Brazil_squad_2022_FIFA_World_Cup
+**Remedy:** Replace 'Germany' with 'Mexico'.
+
+### Row 6422 — Brazil (easy) — FAIL
+**Q:** In the 2018 World Cup quarter-final, what score did Brazil lose by to Belgium?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is a mangled '2-1'. Brazil lost 2-1 to Belgium (as the explanation states); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Fix answer to '2-1'.
+
+### Row 6428 — Brazil (easy) — FAIL
+**Q:** In the 2022 World Cup qualifiers, Brazil beat which CONMEBOL rival 2-0 in Manaus?
+**Answer:** Uruguay
+**Why it fails:** Wrong score/venue: Brazil beat Uruguay 4-1 in Manaus (Oct 2021). The 2-0 win was away in Montevideo (Nov 2020).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change score to 4-1, or relocate the 2-0 to Montevideo.
+
+### Row 6429 — Brazil (easy) — FAIL
+**Q:** In the 2022 World Cup qualifiers, which team did Brazil beat 2-0 in Manaus?
+**Answer:** Uruguay
+**Why it fails:** Wrong score: the Manaus qualifier v Uruguay was 4-1, not 2-0 (the 2-0 was in Montevideo).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change score to 4-1.
+
+### Row 6441 — Brazil (easy) — FAIL
+**Q:** In which 2018 World Cup stage did Brazil first face Mexico?
+**Answer:** Group stage
+**Why it fails:** False premise: Brazil did NOT first face Mexico in the 2018 group stage — Mexico was not in Brazil's group. They met only in the R16 (Brazil won 2-0).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group meeting.
+
+### Row 6450 — Brazil (medium) — FAIL
+**Q:** In which Copa América did Brazil win their group but lose to Uruguay on penalties?
+**Answer:** 2024 Copa América
+**Why it fails:** False premise: Brazil did NOT win their 2024 Copa group — they finished 2nd in Group D behind Colombia (5 pts vs 7). They did lose to Uruguay on pens in the QF, but the group claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Reword to 'finished second in their group', or drop the group claim.
+
+### Row 6456 — Brazil (medium) — FAIL
+**Q:** In which month of 2023 did Neymar equal Pelé's Brazil goal record?
+**Answer:** Sep-23
+**Why it fails:** False premise: Neymar EQUALED Pelé's record in 2022 (v Croatia), not 2023 — so 'which month of 2023 did he equal it' is invalid; v Bolivia in Sept 2023 he surpassed it (78th/79th, not a 77th). (Answer 'Sep-23' also date-mangled.)
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed' → September 2023, or move 'equal' to 2022.
+
+### Row 6468 — Brazil (medium) — FAIL
+**Q:** In which World Cup did Brazil score 15 goals across 5 matches?
+**Answer:** 2022 World Cup
+**Why it fails:** Wrong number: Brazil scored 8 goals (not 15) in 5 matches at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change to 8 goals.
+
+### Row 6480 — Brazil (medium) — FAIL
+**Q:** In which World Cup did Brazil's Neymar win the Bronze Ball award?
+**Answer:** 2014 World Cup
+**Why it fails:** False premise: Neymar did NOT win the 2014 Bronze Ball — Arjen Robben won it. Neymar was injured before the knockouts and won no 2014 award.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — false award claim.
+
+### Row 6486 — Brazil (hard) — FAIL
+**Q:** In which World Cup did Brazilian Neymar win the Bronze Ball?
+**Answer:** 2014 FIFA World Cup
+**Why it fails:** False premise: Neymar did not win the 2014 Bronze Ball (Robben did).
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — false award claim.
+
+### Row 6503 — Brazil (hard) — FAIL
+**Q:** In which World Cup year did Brazil draw with Mexico in the group stage?
+**Answer:** 2018
+**Why it fails:** False premise: Brazil did NOT draw Mexico in the 2018 group stage (Mexico was not in their group). They met only in the R16.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group game.
+
+### Row 6504 — Brazil (medium) — FAIL
+**Q:** In which World Cup year did Brazil first draw 0-0 with Mexico before later beating them?
+**Answer:** 2018
+**Why it fails:** False premise: there was no 0-0 group draw with Mexico in 2018 — Brazil played Mexico only once (R16, won 2-0).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group game.
+
+### Row 6522 — Brazil (medium) — FAIL
+**Q:** In which year did Brazil beat Uruguay 2-0 in a World Cup qualifier in Manaus?
+**Answer:** 2022
+**Why it fails:** False premise: there was no Brazil 2-0 win over Uruguay in Manaus. Manaus (Oct 2021) was 4-1; the 2-0 was away in Montevideo (Nov 2020).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Correct the score to 4-1 (Manaus) or move the 2-0 to Montevideo.
+
+### Row 6523 — Brazil (medium) — FAIL
+**Q:** In which year did Brazil beat Uruguay 2-0 in World Cup qualifying?
+**Answer:** 2022
+**Why it fails:** False premise: the Manaus qualifier v Uruguay was 4-1, not 2-0 (the 2-0 was in Montevideo).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Correct the score/venue.
+
+### Row 6538 — Brazil (medium) — FAIL
+**Q:** In which year did Brazil score 15 goals in 5 World Cup matches?
+**Answer:** 2022
+**Why it fails:** Wrong number: Brazil scored 8 goals (not 15) in 5 matches at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change to 8 goals.
+
+### Row 6556 — Brazil (medium) — FAIL
+**Q:** In which year did Endrick first join Brazil's senior World Cup squad?
+**Answer:** 2024
+**Why it fails:** Wrong year: Endrick's first senior call-up was November 2023 (debut 16 Nov 2023 v Colombia), not 2024.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Change answer to 2023.
+
+### Row 6557 — Brazil (medium) — FAIL
+**Q:** In which year did Endrick receive his first Brazil senior call-up?
+**Answer:** 2024
+**Why it fails:** Wrong year: Endrick's first senior call-up was November 2023, not 2024.
+**Source:** https://en.wikipedia.org/wiki/Endrick_(footballer,_born_2006)
+**Remedy:** Change answer to 2023.
+
+### Row 6568 — Brazil (hard) — FAIL
+**Q:** In which years was Brazil's Neymar nominated for the Ballon d'Or?
+**Answer:** 2015 and 2017
+**Why it fails:** Non-unique: Neymar had nine Ballon d'Or nominations (incl. 2014, 2016, 2018), not just 2015 & 2017 — multiple option pairs are true. His PODIUM (3rd) finishes were 2015 and 2017.
+**Source:** https://en.wikipedia.org/wiki/Neymar
+**Remedy:** Reword to '3rd-place finishes', or drop.
+
+### Row 6569 — Brazil (hard) — FAIL
+**Q:** In which years was Brazilian star Neymar nominated for the Ballon d'Or?
+**Answer:** 2015 and 2017
+**Why it fails:** Non-unique: Neymar had nine Ballon d'Or nominations, so 'nominated in 2015 and 2017' is not the unique answer (he was also nominated in 2014, 2016, 2018).
+**Source:** https://en.wikipedia.org/wiki/Neymar
+**Remedy:** Reword to '3rd-place finishes', or drop.
+
+### Row 6586 — Brazil (easy) — FAIL
+**Q:** What was Brazil's average goals per match at the 2022 FIFA World Cup?
+**Answer:** 3 goals
+**Why it fails:** False premise: the '3 goals/match' figure rests on a false 15-goal total — Brazil scored 8 goals in 5 matches at 2022 (~1.6/match).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Recompute from 8 goals.
+
+### Row 6597 — Brazil (easy) — FAIL
+**Q:** What was Brazil's scoreline against Uruguay in the 2022 World Cup qualifier in Manaus?
+**Answer:** 2-0
+**Why it fails:** Wrong score: the Manaus qualifier v Uruguay was 4-1, not 2-0 (the 2-0 was away in Montevideo).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Change score to 4-1.
+
+### Row 6598 — Brazil (easy) — FAIL
+**Q:** What was Brazil's scoreline in their 2014 World Cup semi-final loss to Germany?
+**Answer:** 01-Jul
+**Why it fails:** Corrupted answer: '01-Jul' is an Excel-mangled scoreline. Brazil lost 7-1 to Germany (per the explanation); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)
+**Remedy:** Fix answer to '7-1' (loss).
+
+### Row 6604 — Brazil (easy) — FAIL
+**Q:** What was Brazil's winning score against South Korea in the 2022 World Cup round of 16?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer: '04-Jan' is a mangled '4-1'. Brazil beat South Korea 4-1 (per the explanation); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Fix answer to '4-1'.
+
+### Row 6607 — Brazil (medium) — FAIL
+**Q:** What was the exact score when Brazil lost to Germany in the 2014 World Cup semi-final?
+**Answer:** 07-Jan
+**Why it fails:** Corrupted answer: '07-Jan' is a mangled '7-1'. Brazil lost 7-1 to Germany (per the explanation).
+**Source:** https://en.wikipedia.org/wiki/Brazil_v_Germany_(2014_FIFA_World_Cup)
+**Remedy:** Fix answer to '7-1'.
+
+### Row 6610 — Brazil (easy) — FAIL
+**Q:** What was the final score when Brazil beat South Korea in the 2022 World Cup round of 16?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer: '04-Jan' is a mangled '4-1'. Brazil beat South Korea 4-1 (per the explanation).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Fix answer to '4-1'.
+
+### Row 6612 — Brazil (easy) — FAIL
+**Q:** What was the final score when Brazil lost to Belgium in the 2018 World Cup quarter-final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is a mangled '2-1'. Brazil lost 2-1 to Belgium (per the explanation).
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2018_FIFA_World_Cup
+**Remedy:** Fix answer to '2-1'.
+
+### Row 6622 — Brazil (medium) — FAIL
+**Q:** When did Brazil beat Uruguay 2-0 in a World Cup qualifier?
+**Answer:** 2022
+**Why it fails:** Explanation wrong: Brazil's 2-0 win over Uruguay was in Montevideo (Nov 2020), not Manaus (Manaus was 4-1).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Correct the venue to Montevideo, or the score to 4-1 for Manaus.
+
+### Row 6623 — Brazil (medium) — FAIL
+**Q:** When did Brazil beat Uruguay 2-0 in World Cup qualifiers in Manaus?
+**Answer:** 2022
+**Why it fails:** False premise: the Manaus qualifier v Uruguay was 4-1, not 2-0 (the 2-0 was in Montevideo).
+**Source:** https://www.espn.com/soccer/report/_/gameId/561042
+**Remedy:** Correct the score/venue.
+
+### Row 6625 — Brazil (medium) — FAIL
+**Q:** When did Brazil draw 0-0 with Mexico at the World Cup?
+**Answer:** 2018 group stage
+**Why it fails:** False premise: Brazil never drew 0-0 with Mexico at a World Cup — Mexico was not in their 2018 group; they met only in the R16 (Brazil won 2-0).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Drop — non-existent group game.
+
+### Row 6648 — Brazil (medium) — FAIL
+**Q:** When did Brazil score 15 goals in five World Cup matches?
+**Answer:** 2022 World Cup
+**Why it fails:** Wrong number: Brazil scored 8 goals (not 15) in 5 matches at 2022.
+**Source:** https://en.wikipedia.org/wiki/Brazil_at_the_2022_FIFA_World_Cup
+**Remedy:** Change to 8 goals.
+
+### Row 6675 — Brazil (medium) — FAIL
+**Q:** When did Brazil's Neymar equal Pelé's national team goal record in 2023?
+**Answer:** 08-Sep-23
+**Why it fails:** False: Neymar EQUALED Pelé's 77 against Croatia (Dec 2022), not in 2023. The 8 Sep 2023 Bolivia match was where he SURPASSED it (78th/79th), not equaled with a 77th.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed', or move the 'equal' to the 2022 Croatia game.
+
+### Row 6689 — Brazil (medium) — FAIL
+**Q:** When did Brazilian forward Richarlison score 4 World Cup goals?
+**Answer:** 2022
+**Why it fails:** Wrong number: Richarlison scored 3 World Cup goals at 2022 (2 v Serbia, 1 v South Korea), not 4 — the premise is false.
+**Source:** https://en.wikipedia.org/wiki/Richarlison
+**Remedy:** Change to 3 goals.
+
+### Row 6703 — Brazil (medium) — FAIL
+**Q:** When did Neymar equal Pelé's Brazil scoring record in a 5-1 win over Bolivia?
+**Answer:** 08-Sep-23
+**Why it fails:** False: Neymar did NOT equal Pelé's record in the Bolivia match — he scored his 78th and 79th there to SURPASS it (he equaled at 77 v Croatia in 2022).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed', or move 'equal' to the 2022 Croatia game.
+
+### Row 6704 — Brazil (medium) — FAIL
+**Q:** When did Neymar equal Pelé's Brazil scoring record in a World Cup qualifier?
+**Answer:** 08-Sep-23
+**Why it fails:** False: in the Bolivia qualifier Neymar surpassed (not equaled) Pelé — his 78th/79th. He equaled at 77 v Croatia in 2022.
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Reframe to 'surpassed'.
+
+### Row 6705 — Brazil (medium) — FAIL
+**Q:** When did Neymar first equal Pelé's Brazilian scoring record?
+**Answer:** 08-Sep-23
+**Why it fails:** False: Neymar FIRST equaled Pelé's record v Croatia (Dec 2022), not on 8 Sep 2023 (when he surpassed it).
+**Source:** https://www.foxsports.com/stories/soccer/world-cup-2022-neymar-ties-peles-all-time-record-for-goals-scored
+**Remedy:** Change to the 2022 Croatia game for 'equal'.
+
+### Row 6746 — Brazil (easy) — FAIL
+**Q:** Which 2014 Brazil World Cup stadium had a larger capacity than Mineirão?
+**Answer:** Arena Castelão
+**Why it fails:** Non-unique: more than one option had a larger 2014 capacity than the Mineirão (~58k) — the Maracanã (~74k) and Arena Corinthians (~62k) also exceed it, so 'Arena Castelão' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Drop — multiple larger venues among the options.
+
+### Row 6752 — Brazil (medium) — FAIL
+**Q:** Which 2018 World Cup group stage opponent did Brazil later beat 2-0 in the round of 16?
+**Answer:** Mexico
+**Why it fails:** False premise: Mexico was NOT a 2018 group-stage opponent of Brazil (their group was Switzerland/Costa Rica/Serbia). They met only in the R16. The explanation also repeats the false 0-0 group draw.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Reword: Mexico was an R16 opponent, not a group opponent.
