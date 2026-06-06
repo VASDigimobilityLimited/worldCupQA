@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **359** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–6760 so far: 73)
+Total failed-liveness-passed-others so far: **480** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Australia 121 [✅ COMPLETE through row 3241] · Brazil 6097–6760 so far: 73)
 
 ---
 
@@ -1736,3 +1736,520 @@ opponent) also did not beat them in a group match — multiple valid options (cf
 **Why it fails:** False premise: Mexico was NOT a 2018 group-stage opponent of Brazil (their group was Switzerland/Costa Rica/Serbia). They met only in the R16. The explanation also repeats the false 0-0 group draw.
 **Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
 **Remedy:** Reword: Mexico was an R16 opponent, not a group opponent.
+
+## Australia (rows 2161–3241) — batch 2161–2240
+
+### Row 2235 — FAIL: spreadsheet date-corruption
+**Q:** Australia's 2015 Asian Cup final win over South Korea was by what score? **A:** `02-Jan`
+**Why it fails:** `02-Jan` is a corrupted "2-1" (Australia won 2-1 AET).
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_Final
+**Remedy:** Restore answer to "2-1".
+
+### Row 2238 — FAIL: wrong year / false premise
+**Q:** Australia's 2018 playoff win over Honduras followed which other AFC playoff success? **A:** 2010 vs Uruguay (E: "also qualified for 2010 via intercontinental playoff vs Uruguay")
+**Why it fails:** Australia's Uruguay intercontinental playoff was for **2006** (Nov 2005, won on penalties), not 2010. They qualified for **2010 directly via AFC** — no playoff.
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** Change to "2006 vs Uruguay".
+
+### Row 2168 — FAIL: wrong date for ranking
+**Q:** After which FIFA World Cup did Australia reach 14th? **A:** After 2022 World Cup (E: "highest FIFA ranking 14th in April 2023")
+**Why it fails:** Australia's all-time-high 14th ranking was **September 2009**, not after the 2022 WC. They peaked around 25th–27th after 2022.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Remove the false 2022/April-2023 attribution.
+
+### Row 2228 — FAIL: non-unique answer
+**Q:** Australia qualified for 2010 via AFC. Which later tournament required an intercontinental playoff? **A:** 2022 World Cup **Options:** 2022 | 2014 | 2018 | 2026
+**Why it fails:** Both **2018** (vs Honduras) and **2022** (vs Peru) required intercontinental playoffs, and 2018 is an option → two correct answers.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Remove the 2018 distractor.
+
+### Row 2216 — FAIL: undercount (stale + wrong)
+**Q:** Australia in 2015 is one of how many AFC Asian Cup host nations to win the tournament? **A:** Four **Options:** Four | Two | Three | Five
+**Why it fails:** Host nations that won at home: South Korea (1960), Israel (1964), Iran (1968 & 1976), **Kuwait (1980)**, Australia (2015) = **5 even at 2015**; Qatar (2023) makes **6 now**. "Four" omits Kuwait.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Correct the count (≥5).
+
+### Row 2175 — FAIL: wrong (understated) stage
+**Q:** At the 2011 Asian Cup, Australia reached which tournament stage? **A:** Semi-finals
+**Why it fails:** Australia reached the **final** of the 2011 Asian Cup (lost 1-0 AET to Japan), not the semi-finals — "semi-finals" is not their furthest stage.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup
+**Remedy:** Change to "final / runners-up".
+
+### Row 2230 — FAIL: non-unique answer
+**Q:** Australia reached the 2011 Asian Cup semi-finals. Which AFC nation did the same? **A:** South Korea **Options:** South Korea | Japan | Iran | Saudi Arabia
+**Why it fails:** The 2011 semi-finalists were Japan, Australia, **South Korea AND Uzbekistan** — so both South Korea *and* Japan (both options) "did the same", giving two correct answers.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup
+**Remedy:** Remove the Japan distractor (or re-scope).
+
+### Rows 2170 vs 2196 — FAIL: wrong "first R16" (2196)
+**Q (2196):** At which World Cup did Australia first reach the round of 16? **A:** 2022 World Cup
+**Why it fails:** Australia first reached the R16 in **2006** (lost to Italy). 2022 was their *second* R16 — and their first **as an AFC nation** (which is the correct framing used by row 2170, kept as PASS). Unqualified "first R16 = 2022" is false.
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup
+**Remedy:** Add the "as an AFC member" qualifier or change to 2006.
+
+### Row 2227 — FAIL: AFC-join year ≠ first qualifier
+**Q:** Australia played their first AFC World Cup qualifier in which year? **A:** 2006 **Options:** 2006 | 2002 | 2010 | 2014
+**Why it fails:** Australia *joined* the AFC in 2006 but played their first AFC **World Cup qualifier** in **2008** (2010 campaign, 3rd round, Feb 2008). No option matches the true year; "2006" conflates membership with qualifying.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Fix to the actual qualifier year (2008) and option set.
+
+### Row 2164 — FAIL: self-referential / incoherent
+**Q:** After Australia's 2022 World Cup, which nation saw a similar football interest surge? **A:** Australia (E: "Australia's own 2022 success uniquely boosted domestic interest")
+**Why it fails:** The question asks which *other* nation saw a *similar* surge; answering "Australia" is self-referential (the explanation even says "Australia's own"). No valid comparator.
+**Source:** n/a (malformed question)
+**Remedy:** Rewrite to name a genuine comparator nation, or drop.
+
+---
+
+## Australia — batch 2241–2320
+
+### Rows 2307, 2315, 2317 — FAIL: spreadsheet date-corruption
+- **2307:** 2010 vs Ghana scoreline `01-Jan` → "1-1".
+- **2315:** 2015 Asian Cup final vs South Korea `02-Jan` → "2-1".
+- **2317:** 2022 R16 vs Argentina `02-Jan` → "2-1".
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Restore real scorelines.
+
+### Rows 2270, 2272, 2273 — FAIL: non-unique answer (direct AFC qualification)
+**2270** opts 2026|2010|2014|2022; **2272** opts 2010|2006|2014|2026; **2273** opts 2026|2010|2014|2018.
+**Why they fail:** Australia qualified **directly via AFC for 2010, 2014 and 2026** — so each question has ≥2 correct options (e.g. 2010 & 2014 & 2026 are all "direct AFC qualification").
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Re-scope so only one answer is correct.
+
+### Rows 2259, 2261, 2303 — FAIL: wrong date for the 14th ranking
+**2259** ("reached 14th during 2022 qualifying"), **2261** ("first reached 14th during 2006 cycle"), **2303** ("Australia's 14th was *in 2022*, higher than South Korea's 17th *in 2022*").
+**Why they fail:** Australia's all-time-high 14th was **September 2009** (the 2010 cycle). South Korea's best ranking (17th) was **December 1998**, not 2022.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Attribute the 14th to 2009 / 2010-cycle; fix the SK comparison.
+
+### Row 2260 — FAIL: wrong cycle for the scoring record
+**Q:** During which World Cup cycle did Australia's Tim Cahill become their all-time top scorer? **A:** 2018 qualification cycle
+**Why it fails:** Cahill became Australia's all-time top scorer on **5 March 2014** (vs Ecuador), surpassing Damian Mori's 29 — i.e. the **2014** cycle, not 2018.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Tim_Cahill
+**Remedy:** Change to the 2014 cycle.
+
+### Row 2289 — FAIL: stale undercount
+**Q:** How many FIFA World Cups has Australia qualified for since joining AFC in 2006? **A:** Four (2010,2014,2018,2022)
+**Why it fails:** Australia has since also qualified for **2026** → **five** AFC-era World Cups, not four.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Update to five.
+
+### Row 2255 — FAIL: non-unique / wrong framing
+**Q:** Australia's six straight World Cups (2006-2026) matches which other AFC nation's streak? **A:** South Korea
+**Why it fails:** **Japan** also qualified for all of 2006–2026, so the answer is non-unique; and South Korea's actual streak (every WC since 1986) is far longer than six, so it does not "match".
+**Source:** https://en.wikipedia.org/wiki/Japan_national_football_team
+**Remedy:** Remove ambiguity; no AFC side has a streak of *exactly* six.
+
+### Row 2250 — FAIL: false premise ("2006 debut")
+**Q:** Which World Cup followed Australia's 2006 debut? **A:** 2010 (E: "Australia's first World Cup was in 2006")
+**Why it fails:** Australia's World Cup **debut was 1974** (West Germany); 2006 was their second appearance. The "2006 debut" premise is false.
+**Source:** https://en.wikipedia.org/wiki/1974_FIFA_World_Cup
+**Remedy:** Drop "debut" (or change year to 1974).
+
+### Row 2314 — FAIL: answer contradicts the facts (and its own explanation)
+**Q:** In the 2010 World Cup, which two nations did Australia lose to? **A:** Germany and Ghana
+**Why it fails:** Australia **lost only to Germany (4-0)**; they **drew 1-1 with Ghana** (and beat Serbia 2-1). The explanation itself says "drew 1-1 with Ghana", contradicting the answer.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Only Germany; the Ghana match was a draw.
+
+### Row 2296 — FAIL: unverifiable precise figure
+**Q:** How many players from Australia's 2022 World Cup squad returned for the 2023 Asian Cup? **A:** 10 players
+**Why it fails:** The exact "10" cannot be verified from reliable sources; precise unverifiable counts are treated as FAIL (conservative).
+**Source:** n/a (unverifiable)
+**Remedy:** Verify against both squad lists or drop the precise number.
+
+---
+
+## Australia — batch 2321–2400
+
+### Rows 2328, 2334 — FAIL: wrong venue / wrong cycle (AAMI Park)
+**2328:** "Which 2022 WC qualifier did Australia host at Melbourne Rectangular Stadium? vs Saudi Arabia" — the 2022-cycle Australia v Saudi Arabia match (11 Nov 2021, 0-0) was at **CommBank Stadium, Sydney**, not AAMI Park.
+**2334:** "First hosted a qualifier at AAMI Park in the 2018 cycle" — Australia's first WC qualifier at AAMI Park was **February 2012 (the 2014 cycle)**, vs Saudi Arabia.
+**Source:** https://www.socceroos.com.au/news/our-previous-matches-aami-park
+**Remedy:** Fix venue (2328 = Sydney) and cycle (2334 = 2014).
+
+### Row 2360 — FAIL: wrong competition (friendly, not a qualifier)
+**Q:** In which year did Australia host a 2018 World Cup qualifier at AAMI Park? **A:** 2016 (E: "vs Greece at AAMI Park, June 2016")
+**Why it fails:** The June 2016 Australia–Greece matches were **friendlies**, not 2018 World Cup qualifiers. The explanation's premise is false.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Replace with a genuine 2018-cycle qualifier (and correct year/opponent).
+
+### Row 2340 — FAIL: player did not score
+**Q:** In which World Cup did Australia's Ajdin Hrustic score? **A:** 2022 World Cup
+**Why it fails:** Hrustic did **not** score at the 2022 World Cup finals. Australia's finals scorers were Duke (vs Tunisia), Leckie (vs Denmark), Goodwin (vs France) + an own goal vs Argentina. (Hrustic's notable goal was vs UAE in the June-2022 *qualifying* playoff, not the finals.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false scoring claim.
+
+### Row 2342 — FAIL: first WC goal ≠ first international goal
+**Q:** In which World Cup did Tim Cahill score his first international goal? **A:** 2006 World Cup
+**Why it fails:** Cahill's **first international goal was 31 May 2004 vs Tahiti** (2004 OFC Nations Cup). 2006 was his first **World Cup** goal, not his first international goal.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Tim_Cahill
+**Remedy:** Change "international goal" to "World Cup goal".
+
+### Rows 2376, 2377, 2381 — FAIL: stale undercount (now five)
+All three answer "**Four**" WC qualifications since the 2006 AFC move (2010/2014/2018/2022). Australia has since also qualified for **2026** → **five**.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Update to five.
+
+### Row 2394 — FAIL: unverifiable precise figure
+**Q:** What was Australia's average squad age at the 2022 World Cup? **A:** 26.8 years old
+**Why it fails:** The precise "26.8" cannot be confirmed from reliable sources; conservative grading treats unverifiable precise stats as FAIL.
+**Source:** n/a (unverifiable)
+**Remedy:** Verify against the official squad list or drop the precise figure.
+
+---
+
+## Australia — batch 2401–2480
+
+### Rows 2408, 2410, 2411, 2413 — FAIL: spreadsheet date-corruption
+- **2408 / 2411:** 2015 Asian Cup final vs South Korea `02-Jan` → "2-1".
+- **2410:** 2022 opener loss to France `04-Jan` → "4-1".
+- **2413:** 2022 R16 loss to Argentina `02-Jan` → "2-1".
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Restore real scorelines.
+
+### Rows 2429, 2432 — FAIL: wrong venue (AAMI Park / COVID relocations)
+- **2429:** "Hosted a 2022 qualifier vs China at AAMI Park, Sep-2021" — the Sept-2021 window was played abroad; the Socceroos were **"763 days away from home" until Nov-2021** (first home game back was vs Saudi Arabia in Sydney). The China game was not at AAMI Park.
+- **2432:** "Hosted Japan at AAMI Park during the 2022 cycle" — the 2022-cycle home match vs Japan (24 Mar 2022, Japan won 2-0) was in **Sydney**, not AAMI Park.
+**Source:** https://www.espn.com/soccer/report?gameId=611253
+**Remedy:** Correct the venues.
+
+### Row 2426 — FAIL: not their first WC meeting
+**Q:** When did Australia first play Chile at a FIFA World Cup? **A:** 2014
+**Why it fails:** Australia first met Chile at the **1974 World Cup** (0-0 draw, group stage), not 2014.
+**Source:** https://en.wikipedia.org/wiki/1974_FIFA_World_Cup
+**Remedy:** Change to 1974.
+
+### Row 2443 — FAIL: wrong year (qualified in 2013)
+**Q:** When did Australia qualify for the 2014 World Cup through AFC qualification? **A:** 2014
+**Why it fails:** Australia secured 2014 qualification on **18 June 2013** (1-0 vs Iraq). (Cf. row 2442, which correctly says 2013.)
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Change to 2013.
+
+### Row 2451 — FAIL: wrong year (qualified in 2025)
+**Q:** When did Australia qualify for the 2026 World Cup via AFC qualification? **A:** 2026 **Options:** 2026 | 2022 | 2018 | 2014
+**Why it fails:** Australia secured 2026 qualification on **10 June 2025** (2-1 away at Saudi Arabia) — their first direct qualification since 2014. The answer year (and option set) is wrong; 2025 isn't even offered.
+**Source:** https://www.espn.com/soccer/report/_/gameId/710521
+**Remedy:** Change to 2025 and fix the options.
+
+### Rows 2452, 2467, 2471 — FAIL: non-unique answer
+**Q:** When did Australia reach the Asian Cup semi-finals? **A:** 2011 **Options:** 2011 | 2007 | 2015 | 2019
+**Why they fail:** Australia reached the semi-finals in **both 2011 and 2015** (they won the 2015 edition, so passed through the SF), and 2015 is an option → two correct answers.
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup
+**Remedy:** Re-scope (e.g. "before 2015", as row 2435 correctly does).
+
+---
+
+## Australia — batch 2481–2560
+
+### Row 2488 — FAIL: wrong (understated) finish
+**Q:** Where did Australia finish in the 2011 Asian Cup? **A:** Semi-finals
+**Why it fails:** Australia finished **runners-up** (reached the final, lost 1-0 AET to Japan), not the semi-finals.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup
+**Remedy:** Change to "final / runners-up".
+
+### Rows 2498, 2513 — FAIL: wrong about Mathew Leckie
+- **2498:** "Which 2022 player is NOT in the 2026 squad? Leckie (retired after 2022)" — Leckie **never retired** ("I'll never retire from the national team") and **is named in Australia's 2026 World Cup squad** (his 4th WC). Premise false.
+- **2513:** "Which A-League club did Leckie play for? Melbourne Victory" — Leckie played for **Melbourne City** (joined 2021), not Melbourne Victory.
+**Source:** https://en.wikipedia.org/wiki/Mathew_Leckie
+**Remedy:** 2498 = pick a player who actually left (e.g. a retiree); 2513 = Melbourne City.
+
+### Row 2508 — FAIL: wrong player (2015 squad)
+**Q:** Which 2022 World Cup scorer for Australia also won the 2015 Asian Cup? **A:** Craig Goodwin
+**Why it fails:** Goodwin (debut July 2013, barely capped by 2015, not at the 2014 WC) was **not** in the 2015 Asian Cup-winning squad. The 2022 scorer who *did* win the 2015 Asian Cup is **Mathew Leckie** (he assisted the winning goal in the 2015 final).
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_squads
+**Remedy:** Change answer to Mathew Leckie.
+
+### Rows 2518, 2555 — FAIL: non-unique / "only other" false
+- **2518:** "Which AFC nation also reached the 2022 R16 like Australia? Japan (the only other)" — **three** AFC sides reached the 2022 R16: Japan, **South Korea** and Australia. So "only other" is false and the answer is non-unique.
+- **2555:** "Which AFC team matched Australia's R16 feat in 2010? South Korea" (opts incl Japan) — **both** South Korea and Japan reached the 2010 R16 → non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Re-scope so only one AFC side qualifies.
+
+### Row 2536 — FAIL: wrong year / wrong host
+**Q:** Which AFC nation, like Australia in 2015, last won the Asian Cup as host? **A:** Qatar (E: "Qatar won the 2019 Asian Cup as host")
+**Why it fails:** The **2019** Asian Cup was hosted by the **UAE** — Qatar won it *away*. Qatar's host-and-win was the **2023** edition (played Jan 2024). The explanation is false.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup
+**Remedy:** Fix to "Qatar, 2023".
+
+### Row 2538 — FAIL: garbled / false premise
+**Q:** Which AFC nation's 2022 World Cup qualifier was NOT hosted at Stadium Australia? **A:** Saudi Arabia (E: "Stadium Australia hosted qualifiers for Japan, South Korea and UAE, but not Saudi Arabia")
+**Why it fails:** **South Korea and the UAE were not in Australia's 2022 qualifying group** (Group B: Australia, Japan, Saudi Arabia, China, Oman, Vietnam), so the explanation's premise is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Rewrite around the actual Group B opponents.
+
+---
+
+## Australia — batch 2561–2640
+
+### Rows 2626, 2627, 2628 — FAIL: player did not score (Hrustic, 2022 finals)
+All three say Ajdin Hrustic scored at the 2022 World Cup. He did **not** score at the finals (Australia's scorers: Duke, Leckie, Goodwin + an own goal). Cf. row 2340.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false scoring claim.
+
+### Row 2591 — FAIL: wrong timing / false premise
+**Q:** Which Australia manager left his post before their 2018 World Cup qualifying campaign? **A:** Ange Postecoglou (E: "resigned in late 2017, before the final phase of 2018 qualification")
+**Why it fails:** Postecoglou coached the **entire** 2018 qualifying campaign (incl. the Nov-2017 intercontinental playoff vs Honduras) and resigned **after** Australia had qualified — not before. (Van Marwijk then took the finals.)
+**Source:** https://en.wikipedia.org/wiki/Ange_Postecoglou
+**Remedy:** Rephrase to "left before the 2018 finals", or name a manager who actually left earlier.
+
+### Row 2609 — FAIL: wrong manager (2014 qualification)
+**Q:** Which Australia manager was in charge when they qualified for the 2014 World Cup? **A:** Ange Postecoglou
+**Why it fails:** Australia secured 2014 qualification on **18 June 2013 under Holger Osieck**. Postecoglou was appointed in **October 2013**, after qualification. (Cf. row 2597, which correctly credits Osieck.)
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Change answer to Holger Osieck.
+
+### Row 2637 — FAIL: wrong opponent/venue for debut
+**Q:** Which Australia player debuted for the Socceroos at the 2018 World Cup in Melbourne? **A:** Daniel Arzani (E: "debuted vs Hungary at AAMI Park in 2018")
+**Why it fails:** Arzani debuted on **1 June 2018 vs the Czech Republic** (as a sub, at a neutral pre-WC venue in Austria). His first goal — not debut — came vs Hungary, in **Budapest**, not AAMI Park / Melbourne.
+**Source:** https://en.wikipedia.org/wiki/Daniel_Arzani
+**Remedy:** Fix the opponent (Czech Republic) and venue.
+
+---
+
+## Australia — batch 2641–2720
+
+### Rows 2652, 2662, 2673, 2697 — FAIL: that goal was an own goal, not Goodwin
+All four credit Craig Goodwin with scoring against Argentina in the 2022 R16. Goodwin's shot deflected in off **Enzo Fernández and is officially an own goal** (77'). Goodwin's only 2022 goal was vs France. (2662 also wrongly says he scored in both the group stage and R16.)
+**Source:** https://www.espn.com/soccer/report/_/gameId/633836
+**Remedy:** Australia's R16 goal = Enzo Fernández own goal; Goodwin scored only vs France.
+
+### Rows 2646, 2655 — FAIL: player did not score (Hrustic)
+Both say Ajdin Hrustic scored at the 2022 World Cup; he did not (cf. 2340, 2626-2628).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false scoring claim.
+
+### Row 2666 — FAIL: wrong player (2015 squad)
+**Q:** Which Australia player scored in the 2022 World Cup and also won the 2015 Asian Cup? **A:** Craig Goodwin
+**Why it fails:** Goodwin was not in the 2015 Asian Cup-winning squad; the correct answer is **Mathew Leckie** (cf. 2508).
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_squads
+**Remedy:** Change to Mathew Leckie.
+
+### Row 2679 — FAIL: wrong/overstated qualifying goal
+**Q:** Which Australia player scored the decisive goal in their 2010 World Cup qualifier? **A:** Josh Kennedy (E: "vs Uzbekistan, secured 2010 qualification")
+**Why it fails:** Kennedy's *decisive* qualification goal was the header vs **Iraq on 18 June 2013** (for 2014). His April-2009 goal vs Uzbekistan did not secure 2010 qualification (clinched later).
+**Source:** https://en.wikipedia.org/wiki/Joshua_Kennedy
+**Remedy:** Either change to the 2014 vs Iraq goal, or drop "decisive/secured".
+
+### Row 2683 — FAIL: impossible venue
+**Q:** Which Australia player scored the first World Cup goal at Stadium Australia? **A:** Tim Cahill (E: "3-1 win over Japan at the 2006 World Cup")
+**Why it fails:** The **2006 World Cup was in Germany** (Cahill's goals vs Japan were in Kaiserslautern), not Stadium Australia (Sydney). The men's WC has never been played there.
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup
+**Remedy:** Remove the false venue premise.
+
+### Row 2696 — FAIL: saved, did not score
+**Q:** Which Australia player scored the winning penalty against Peru in the 2022 playoff? **A:** Andrew Redmayne
+**Why it fails:** Redmayne (the "grey wiggle") **saved** Alex Valera's penalty to win the shootout — he did not score the winning penalty.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** Change to "saved the decisive penalty".
+
+---
+
+## Australia — batch 2721–2800
+
+### Rows 2765, 2767, 2768, 2756 — FAIL: Hrustic scoring claim
+- **2765 / 2767:** "Hrustic scored at the 2022 World Cup" — he did not (cf. 2340, 2626-2628, 2646/2655).
+- **2768:** "Hrustic scored at the 2022 WC and the 2023 Asian Cup" — false (no 2022 finals goal).
+- **2756:** answer "Aaron Mooy didn't score" is fine, but the explanation claims "unlike **Hrustic, Irvine** and Leckie" — Hrustic and Irvine did **not** score at the 2022 WC; only Leckie did.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false scoring claims.
+
+### Row 2721 — FAIL: fabricated squad member
+**Q:** Which A-League club had a player in the 2022 World Cup squad? **A:** Western Sydney Wanderers (E: "WSW goalkeeper Lawrence Thomas")
+**Why it fails:** Lawrence Thomas was **not** in Australia's 2022 squad (GKs were Ryan, Redmayne, Vukovic). No WSW player was in the squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Use an A-League club that actually had a 2022 squad player (e.g. Central Coast Mariners — Kuol/Cummings).
+
+### Row 2746 — FAIL: not his first-choice debut
+**Q:** Which goalkeeper debuted as first-choice at the 2018 World Cup? **A:** Mat Ryan
+**Why it fails:** Ryan was already Australia's first-choice keeper at the **2014 World Cup** (started all three games). 2018 was not his first-choice debut.
+**Source:** https://en.wikipedia.org/wiki/Mathew_Ryan
+**Remedy:** Change to 2014, or drop "debuted".
+
+### Rows 2779, 2782 — FAIL: false premise (Irvine in 2018)
+Both say Jackson Irvine was in the 2022 squad "but not in 2018". **Irvine was named in Australia's 2018 World Cup squad** in Russia.
+**Source:** https://en.wikipedia.org/wiki/Jackson_Irvine
+**Remedy:** Remove the "not in 2018" contrast.
+
+### Row 2798 — FAIL: wrong debut venue
+**Q:** Which player debuted for the Socceroos at AAMI Park before the 2018 World Cup? **A:** Daniel Arzani
+**Why it fails:** Arzani debuted vs the **Czech Republic** at a neutral venue (Austria), not AAMI Park (cf. 2637).
+**Source:** https://en.wikipedia.org/wiki/Daniel_Arzani
+**Remedy:** Fix the venue/opponent.
+
+### Row 2800 — FAIL: 2004 is not a World Cup year
+**Q:** Which Australian player debuted internationally in a World Cup year? **A:** Tim Cahill (E: "debuted in 2004, a World Cup qualifying year")
+**Why it fails:** Cahill debuted in **2004**, which is **not** a World Cup year (the WCs were 2002 and 2006). The explanation quietly swaps in "qualifying year", contradicting the question.
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Use a player who debuted in an actual WC year (2002/2006/…), or rephrase.
+
+---
+
+## Australia — batch 2801–2880
+
+### Rows 2835, 2864 — FAIL: own goal, not Goodwin
+Both credit Goodwin with scoring vs Argentina in the 2022 R16; that goal was an **Enzo Fernández own goal** (cf. 2652/2662/2673/2697).
+**Source:** https://www.espn.com/soccer/report/_/gameId/633836
+**Remedy:** Australia's R16 goal = own goal.
+
+### Rows 2852, 2853 — FAIL: wrong tournament count for Cahill
+- **2852:** explanation says Cahill's 5 WC goals came "across 2006, 2010, 2014 **and 2018**" — he scored **0 in 2018**.
+- **2853:** "five World Cup goals in **four tournaments**" — Cahill scored in **three** (2006, 2010, 2014).
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Three tournaments (2006/2010/2014).
+
+### Row 2806 — FAIL: wrong figure (Viduka)
+**Q:** Which Australian player scored more World Cup goals than Mark Viduka? **A:** Tim Cahill (E: "Cahill 5, Viduka 2")
+**Why it fails:** Mark Viduka scored **0** World Cup goals (no goals at the 2006 WC). The comparison still holds, but the stated "2" is false.
+**Source:** https://en.wikipedia.org/wiki/Mark_Viduka
+**Remedy:** Viduka = 0 WC goals.
+
+### Row 2825 — FAIL: saved, did not score
+**Q:** Which Australian player scored a crucial penalty against Peru in the 2022 playoff? **A:** Mathew Leckie (E: "scored the decisive penalty")
+**Why it fails:** The decisive act was goalkeeper **Andrew Redmayne saving** Alex Valera's penalty (cf. 2696). Leckie did not score the decisive penalty.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** Redmayne, and he *saved* the decisive penalty.
+
+---
+
+## Australia — batch 2881–2960 (venue cluster)
+
+### Rows 2932, 2933, 2940, 2941, 2945, 2946 — FAIL: Peru playoff was in Qatar
+All claim the 2022 intercontinental playoff vs Peru was at an Australian stadium (Melbourne Rectangular / Stadium Australia). The single-leg AFC–CONMEBOL playoff was played on **13 June 2022 at Ahmad bin Ali Stadium, Al Rayyan, QATAR** (neutral venue) — not in Australia.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** Venue = Ahmad bin Ali Stadium, Qatar (or drop the "in Australia" premise).
+
+### Rows 2934, 2948, 2950 — FAIL: wrong Australian venue (Saudi/Japan, 2022 cycle)
+- **2934:** Saudi Arabia 2022 qualifier (11 Nov 2021) was at **CommBank Stadium, Sydney**, not AAMI Park.
+- **2948 / 2950:** the 2022-cycle home match vs Japan (24 Mar 2022) was at **Stadium Australia, Sydney**, not AAMI Park.
+**Source:** https://www.espn.com/soccer/report?gameId=611253
+**Remedy:** Fix venues (Sydney, not AAMI Park).
+
+### Row 2928 — FAIL: wrong venue (2015 Asian Cup QF)
+**Q:** Which stadium hosted a 2015 Asian Cup quarter-final? **A:** Melbourne Rectangular Stadium (E: "Australia vs China QF")
+**Why it fails:** The Australia–China QF (22 Jan 2015) was at **Brisbane Stadium** (~52,000), not AAMI Park.
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup
+**Remedy:** Brisbane Stadium.
+
+### Row 2929 — FAIL: wrong venue (2017 Saudi qualifier)
+**Q:** Which stadium hosted a 2017 World Cup qualifier? **A:** AAMI Park (E: "vs Saudi Arabia in 2017")
+**Why it fails:** Australia 3-2 Saudi Arabia (8 June 2017) was at **Adelaide Oval**, not AAMI Park.
+**Source:** https://www.espn.com/soccer/match/_/gameId/463999
+**Remedy:** Adelaide Oval.
+
+### Row 2953 — FAIL: 2023 Asian Cup was in Qatar
+**Q:** Which Australian stadium hosts Socceroos matches for the 2023 Asian Cup? **A:** AAMI Park
+**Why it fails:** The 2023 AFC Asian Cup (played Jan 2024) was hosted entirely by **Qatar**; no Australian stadium hosted those matches.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup
+**Remedy:** Remove the false premise.
+
+---
+
+## Australia — batch 2961–3040
+
+### Row 3011 — FAIL: wrong manager (2026 qualification)
+**Q:** Which manager led Australia's 2026 World Cup qualification? **A:** Graham Arnold (E: "Arnold secured qualification for 2026")
+**Why it fails:** Arnold **resigned in Sept 2024** mid-campaign; **Tony Popovic** took over and *secured* 2026 qualification (2-1 at Saudi Arabia, 10 June 2025).
+**Source:** https://www.espn.com/soccer/report/_/gameId/710521
+**Remedy:** Tony Popovic secured 2026 qualification.
+
+### Row 3016 — FAIL: false premise (2014 qualification succeeded)
+**Q:** Which manager led Australia's unsuccessful qualifying campaign for the 2014 World Cup? **A:** Holger Osieck (E: "the failed 2014 World Cup qualification attempt")
+**Why it fails:** Australia **successfully qualified** for the 2014 World Cup under Osieck (clinched 18 June 2013 vs Iraq). It was not unsuccessful/failed.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Remove "unsuccessful/failed".
+
+### Row 2971 — FAIL: false premise ("2006 debut")
+**Q:** Which Australian tournament win came after their 2006 World Cup debut? **A:** 2015 Asian Cup (E: "their first World Cup appearance in 2006")
+**Why it fails:** Australia's World Cup **debut was 1974**, not 2006 (cf. 2250). The answer (2015) is fine, but the "2006 debut/first appearance" premise is false.
+**Source:** https://en.wikipedia.org/wiki/1974_FIFA_World_Cup
+**Remedy:** Drop "debut/first appearance".
+
+### Row 2992 — FAIL: wrong timing (OFC / 2006)
+**Q:** Which confederation did Australia leave before their 2006 World Cup qualification? **A:** OFC
+**Why it fails:** Australia qualified for the 2006 World Cup **as an OFC member** (OFC route + Nov-2005 playoff vs Uruguay) and only joined the AFC in **January 2006** — i.e. *after* qualifying. They did not leave OFC before 2006 qualification. (Cf. row 2993, which correctly says they represented OFC in 2006 qualifying.)
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Fix the timing (left OFC after 2006 qualification).
+
+---
+
+## Australia — batch 3042–3140
+
+### Rows 3093, 3095 — FAIL: Peru playoff was in Qatar
+Both place the 2022 Peru playoff at "Stadium Australia, Sydney". It was at **Ahmad bin Ali Stadium, Al Rayyan, Qatar** (cf. 2932/2933/etc.; rows 3092 & 3098 get this right).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** Qatar venue.
+
+### Row 3096 — FAIL: wrong venue (Saudi 2022)
+**Q:** Which stadium hosted Australia's 2022 qualifier vs Saudi Arabia? **A:** Melbourne Rectangular Stadium
+**Why it fails:** That match (11 Nov 2021) was at **CommBank Stadium, Sydney**, not AAMI Park.
+**Source:** https://www.austadiums.com/sport/event/25664
+**Remedy:** CommBank Stadium, Sydney.
+
+### Rows 3083, 3100 — FAIL: wrong (understated) stage
+Both ask which round/stage Australia *reached* at the 2011 Asian Cup, answering "semi-finals". They reached the **final** (runners-up) — the SF was not their furthest stage (cf. 2175/2488).
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup
+**Remedy:** Final / runners-up.
+
+### Row 3049 — FAIL: wrong first opponent
+**Q:** Which nation did Australia face first in their six consecutive World Cup runs? **A:** Brazil (E: "2006, first group match vs Brazil")
+**Why it fails:** Australia's first 2006 group match was vs **Japan** (3-1 win, 12 June 2006). Brazil was their second match.
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup
+**Remedy:** Japan.
+
+### Row 3081 — FAIL: non-unique answer
+**Q:** Which other World Cup did Australia also qualify for through AFC qualification? **A:** 2014 **Options:** 2014 | 2018 | 2022 | 2010
+**Why it fails:** Both **2010 and 2014** were direct AFC qualifications (2018/2022 needed intercontinental playoffs), and 2010 is an option → two correct answers.
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Remove the 2010 option.
+
+### Row 3097 — FAIL: no AFC qualifier in 2006
+**Q:** Which stadium hosted Australia's first AFC World Cup qualifier in 2006? **A:** Sydney Football Stadium
+**Why it fails:** Australia's first AFC World Cup **qualifier was in 2008** (2010 campaign); there was no AFC WC qualifier in 2006 (cf. 2227). The premise is false.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Fix to the actual 2008 qualifier/venue.
+
+### Row 3124 — FAIL: false premise (South Korea)
+**Q:** Which team did Australia beat in the 2022 World Cup group stage? **A:** Denmark (E: "Argentina, France, and **South Korea** all defeated Australia")
+**Why it fails:** South Korea was **not** an Australia opponent at the 2022 WC (group D: France, Tunisia, Denmark; then Argentina in R16). The answer "Denmark" is correct, but the explanation is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the South Korea claim.
+
+---
+
+## Australia — batch 3141–3241 (AUSTRALIA COMPLETE)
+
+### Rows 3161, 3162, 3163 — FAIL: non-unique (direct AFC qualification)
+**3161** (ans 2026, opts incl 2010 & 2014), **3162** (ans 2010, opts incl 2014), **3163** (ans 2014, opts incl 2026). Australia qualified **directly via AFC for 2010, 2014 and 2026** — each of these has ≥2 correct options. (Row 3164, scoped "before 2014", is fine.)
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** Re-scope so exactly one answer is correct.
+
+### Rows 3213, 3239 — FAIL: 2006 was an OFC qualification
+Both claim Australia qualified for the 2006 World Cup *via the AFC*. They qualified through the **OFC** (+ Nov-2005 playoff vs Uruguay) and only joined the AFC in January 2006 (cf. 2993).
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** 2006 = OFC route.
+
+### Rows 3155, 3156 — FAIL: drew Ghana, didn't lose
+Both say Australia *lost to / was defeated by* "Germany and Ghana" in 2010. Australia **drew 1-1 with Ghana** (lost only to Germany 4-0; beat Serbia 2-1). (Cf. 2314; note row 3152 "eliminated by" with an accurate explanation is kept as PASS.)
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Only Germany was a loss.
+
+### Row 3150 — FAIL: Peru playoff was in Qatar
+**Q:** Which two nations contested a 2022 qualifier at Stadium Australia? **A:** Australia and Peru
+**Why it fails:** The Australia–Peru playoff was at **Ahmad bin Ali Stadium, Qatar**, not Stadium Australia.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC%E2%80%93CONMEBOL_play-off)
+**Remedy:** Qatar venue.
+
+### Row 3159 — FAIL: non-unique "best finish"
+**Q:** Which was Australia's best World Cup finish: 2006, 2010, 2014, or 2022? **A:** 2022
+**Why it fails:** Australia reached the round of 16 in **both 2006 and 2022** (joint best), and 2006 is an option → two correct answers.
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup
+**Remedy:** Remove the 2006 option, or accept "2006 & 2022".
+
+### Row 3178 — FAIL: wrong year (qualified 2017)
+**Q:** Which year did Australia qualify for the 2018 World Cup via an intercontinental playoff? **A:** 2018
+**Why it fails:** Australia beat Honduras in the playoff in **November 2017** (cf. 2444/2445, correctly 2017).
+**Source:** https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+**Remedy:** 2017.
+
+---

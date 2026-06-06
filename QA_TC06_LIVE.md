@@ -10,8 +10,8 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Last verified row: 2160**  (✅ ARGENTINA COMPLETE — next sequential country: Australia, resume at row 2161)
-**BRAZIL in progress (rows 6097–8182), separate contributor — Brazil sub-cursor at bottom of file.**
+**Last verified row: 3241**  (✅ AUSTRALIA COMPLETE — next sequential country: Austria, resume at row 3242)
+**BRAZIL in progress (rows 6097–8182), separate contributor — verified to 6760, resume 6761. Brazil sub-cursor at bottom of file.**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -912,3 +912,18 @@ Mostly duplicates (Neymar record / Tite / Olympic gold / managers / venues).
 
 **Brazil running totals (rows 6097+): 454 PASS-ALL · 73 FAIL-LIVENESS.**
 **Brazil sub-cursor: last verified row 6760 — resume at 6761.**
+
+- **Australia batch 2161–2240** (61 candidates): 51 PASS / 10 FAIL. FAIL: 2164 (self-ref), 2168 (14th was Sept-2009 not Apr-2023), 2175 & 2230 (2011 Asian Cup = final not semis), 2196 (first R16 was 2006), 2216 (host-winners ≥5: omits Kuwait 1980/Qatar 2023), 2227 (first AFC qualifier 2008 not 2006), 2228 (non-unique: 2018 & 2022 both intercontinental playoffs), 2235 (`02-Jan`=2-1), 2238 (Uruguay playoff was 2006 not 2010).
+- **Australia batch 2241–2320** (69 candidates): 54 PASS / 15 FAIL. FAIL: 2250 (2006 not WC debut; 1974), 2255 (non-unique; Japan also 2006–2026), 2259/2261/2303 (14th was Sep-2009 / SK 17th was 1998), 2260 (Cahill record 5-Mar-2014 not 2018 cycle), 2270/2272/2273 (non-unique direct-AFC: 2010/2014/2026), 2289 (now 5 WCs incl 2026), 2296 (unverifiable '10 players'), 2307 (`01-Jan`=1-1), 2314 (drew Ghana not lost), 2315/2317 (`02-Jan`=2-1).
+- **Australia batch 2321–2400** (66 candidates): 57 PASS / 9 FAIL. FAIL: 2328 (2022 Saudi qualifier was CommBank Sydney not AAMI Park), 2334 (first AAMI Park WCQ was Feb-2012/2014-cycle), 2340 (Hrustic didn't score at 2022 finals), 2342 (Cahill first intl goal 2004 vs Tahiti), 2360 (Greece Jun-2016 was a friendly), 2376/2377/2381 (now 5 WCs incl 2026), 2394 (unverifiable '26.8 yrs').
+- **Australia batch 2401–2480** (64 candidates): 52 PASS / 12 FAIL. FAIL: 2408/2410/2411/2413 (date corruption), 2426 (first Chile WC was 1974), 2429 & 2432 (AAMI Park venue — games were abroad/Sydney), 2443 (2014 WC secured in 2013), 2451 (qualified Jun-2025 not 2026), 2452/2467/2471 (non-unique: SF in 2011 & 2015). Also corrected the reason on row 2230 (non-unique, not false-premise).
+- **Australia batch 2481–2560** (38 candidates): 30 PASS / 8 FAIL. FAIL: 2488 (2011=final not SF), 2498 (Leckie in 2026 squad, never retired), 2508 (Goodwin not in 2015 squad; ans=Leckie), 2513 (Leckie=Melbourne City), 2518 (SK also reached 2022 R16), 2536 (Qatar host-win was 2023 not 2019/UAE), 2538 (SK/UAE not 2022 opponents), 2555 (Japan also reached 2010 R16).
+- **Australia batch 2561–2640** (71 candidates): 65 PASS / 6 FAIL. FAIL: 2591 (Postecoglou resigned after completing 2018 qualifying), 2609 (Osieck not Postecoglou won 2014 qual), 2626/2627/2628 (Hrustic didn't score at 2022 finals), 2637 (Arzani debuted vs Czech Rep abroad, not Hungary/AAMI Park).
+- **Australia batch 2641–2720** (69 candidates): 59 PASS / 10 FAIL. FAIL: 2646/2655 (Hrustic didn't score), 2652/2662/2673/2697 (Argentina goal = Enzo Fernández OG not Goodwin), 2666 (Goodwin not in 2015 squad), 2679 (Kennedy decisive goal was 2014 vs Iraq), 2683 (2006 WC in Germany not Stadium Australia), 2696 (Redmayne saved decisive pen, didn't score).
+- **Australia batch 2721–2800** (59 candidates): 49 PASS / 10 FAIL. FAIL: 2721 (Lawrence Thomas/WSW not in 2022 squad), 2746 (Ryan was 1st-choice at 2014), 2756/2765/2767/2768 (Hrustic didn't score), 2779/2782 (Irvine WAS in 2018 squad), 2798 (Arzani not AAMI Park), 2800 (2004 not a WC year).
+- **Australia batch 2801–2880** (65 candidates): 59 PASS / 6 FAIL. FAIL: 2806 (Viduka scored 0 WC goals not 2), 2825 (Leckie didn't score decisive Peru pen — Redmayne saved), 2835/2864 (Argentina goal = own goal), 2852/2853 (Cahill scored in 3 tournaments not 4; none in 2018).
+- **Australia batch 2881–2960** (73 candidates): 61 PASS / 12 FAIL (all venue errors). FAIL: 2932/2933/2940/2941/2945/2946 (Peru playoff was in QATAR not Australia), 2934 (Saudi 2021=Sydney), 2948/2950 (Japan 2022=Sydney), 2928 (2015 QF vs China=Brisbane), 2929 (2017 Saudi=Adelaide), 2953 (2023 Asian Cup=Qatar).
+- **Australia batch 2961–3040** (61 candidates): 57 PASS / 4 FAIL. FAIL: 2971 (2006 not WC debut), 2992 (qualified for 2006 via OFC, left after), 3011 (Popovic not Arnold secured 2026), 3016 (2014 qualification was successful not failed).
+- **Australia batch 3042–3140** (63 candidates): 54 PASS / 9 FAIL. FAIL: 3049 (first 2006 match=Japan not Brazil), 3081 (non-unique: 2010 & 2014 both direct AFC), 3083/3100 (2011 furthest=final not SF), 3093/3095 (Peru playoff in Qatar), 3096 (Saudi 2022=Sydney), 3097 (no AFC qualifier in 2006), 3124 (SK didn't play Aus in 2022).
+- **Australia batch 3141–3241** (76 candidates): 66 PASS / 10 FAIL. FAIL: 3150 (Peru playoff in Qatar), 3155/3156 (drew Ghana not lost), 3159 (2006 also R16 → non-unique best), 3161/3162/3163 (non-unique direct-AFC), 3178 (qualified 2017 not 2018), 3213/3239 (2006 was OFC not AFC).
+- **✅ AUSTRALIA COMPLETE (rows 2161–3241): 714 PASS / 121 FAIL of 835 QA_PASSED candidates.** Next country: Austria (3242).

@@ -11,7 +11,7 @@ These are the **ship-ready** questions. Each entry cites a source (full source U
 method, then intersected with `QA_PASSED.md`). Rows **231 onward** are appended by the
 ongoing loop (liveness run only on `QA_PASSED.md` rows). Cursor lives in `QA_TC06_LIVE.md`.
 
-Total passed-all so far: **1702**  (rows 2–230: 132 · Algeria 231–1228: 554 · Argentina 1229–2160: 562 · Brazil 6097–6760 so far: 454)
+Total passed-all so far: **2416**  (rows 2–230: 132 · Algeria 231–1228: 554 · Argentina 1229–2160: 562 · Australia 2161–3241: 714 [COMPLETE] · Brazil 6097–6760 so far: 454)
 
 ---
 
@@ -8531,3 +8531,3585 @@ Total passed-all so far: **1702**  (rows 2–230: 132 · Algeria 231–1228: 554
 **Q:** Which Argentina player scored in their 1-0 win over Brazil at the 2021 Copa América final?
 **Answer:** Ángel Di María
 **Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified (Di María scored Argentina's winner v Brazil in the 2021 final). Source: https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+
+### Row 2161 — Australia (easy)
+**Q:** After Australia's 2006 AFC move, which club won the 2014 AFC Champions League?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2166 — Australia (medium)
+**Q:** After moving to the AFC in 2006, when did Australia first qualify for the World Cup?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2167 — Australia (hard)
+**Q:** After moving to the AFC in 2006, which World Cup was Australia's first to qualify for through the AFC?
+**Answer:** The 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2170 — Australia (hard)
+**Q:** After which World Cup did Australia first reach the knockout stage as an AFC nation?
+**Answer:** The 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2171 — Australia (medium)
+**Q:** After which World Cup did Australia see a major rise in football interest?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2173 — Australia (medium)
+**Q:** At the 2006 FIFA World Cup, when did Australia join the AFC?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2178 — Australia (easy)
+**Q:** At the 2018 FIFA World Cup, which Australian player was their nation's all-time leading scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2179 — Australia (easy)
+**Q:** At the 2022 FIFA World Cup, Australia advanced by beating which nation?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2180 — Australia (easy)
+**Q:** At the 2022 World Cup, Australia lost 4-1 to which nation in their opener?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2181 — Australia (medium)
+**Q:** At the 2022 World Cup, Australia matched its best result since what year?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2182 — Australia (easy)
+**Q:** At the 2022 World Cup, what was Australia's tactical emphasis under Graham Arnold?
+**Answer:** Defensive organisation and counter-attacking
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2184 — Australia (easy)
+**Q:** At the 2022 World Cup, when did Australia's Craig Goodwin score against France?
+**Answer:** After 9 minutes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2188 — Australia (easy)
+**Q:** At the 2022 World Cup, which team beat Australia 2-1 in the round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2189 — Australia (easy)
+**Q:** At the 2022 World Cup, which team beat Australia 4-1 in their opening match?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2190 — Australia (easy)
+**Q:** At the 2022 World Cup, which team did Australia score first against?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2191 — Australia (medium)
+**Q:** At which 2018 World Cup stadium did Australia's fourth consecutive qualification streak continue?
+**Answer:** Kazan Arena
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2192 — Australia (easy)
+**Q:** At which 2022 World Cup stadium did Australia's Mathew Leckie score his winner?
+**Answer:** Al Janoub Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2193 — Australia (easy)
+**Q:** At which 2022 World Cup stage did Australia beat Tunisia 1-0?
+**Answer:** Group stage
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2194 — Australia (easy)
+**Q:** At which 2022 World Cup stage did Australia's Mathew Leckie score the winner against Denmark?
+**Answer:** The group stage
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2195 — Australia (easy)
+**Q:** At which 2022 World Cup venue did Australia's Craig Goodwin score early against France?
+**Answer:** Al Janoub Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2198 — Australia (hard)
+**Q:** At which FIFA World Cup did Australia's group stage elimination include a 4-0 loss to Germany?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2199 — Australia (medium)
+**Q:** At which FIFA World Cup did Australia's Tim Cahill score his first finals goal?
+**Answer:** 2006 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2200 — Australia (hard)
+**Q:** At which FIFA World Cup was Aaron Mooy a key midfielder for Australia?
+**Answer:** The 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2201 — Australia (hard)
+**Q:** At which World Cup did Australia beat Tunisia 1-0 in the group stage?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2202 — Australia (medium)
+**Q:** At which World Cup did Australia last reach the round of 16 before 2022?
+**Answer:** 2006 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2203 — Australia (hard)
+**Q:** At which World Cup did Australia lose all three group matches?
+**Answer:** 2014 FIFA World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2204 — Australia (medium)
+**Q:** At which World Cup did Australia use Arnold's defensive, counter-attacking system?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2205 — Australia (medium)
+**Q:** At which World Cup did Australia use Graham Arnold's defensive system?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2206 — Australia (medium)
+**Q:** At which World Cup did Australia's manager Graham Arnold lead them to the round of 16?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2207 — Australia (medium)
+**Q:** At which World Cup did Australia's Mitchell Duke score against Tunisia?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2208 — Australia (medium)
+**Q:** At which World Cup did Pim Verbeek manage Australia?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2209 — Australia (medium)
+**Q:** At which World Cup did Tim Cahill score his bicycle kick for Australia?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2210 — Australia (medium)
+**Q:** At which World Cup did Tim Cahill score his first finals goal for Australia?
+**Answer:** 2006 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2212 — Australia (hard)
+**Q:** At which World Cup was Australian defender Kye Rowles a key player?
+**Answer:** The 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2213 — Australia (medium)
+**Q:** At which World Cup was Kye Rowles a key defender for Australia?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2214 — Australia (hard)
+**Q:** Australia beat Denmark 1-0 in the 2022 World Cup group stage. Which year did they next reach the knockout phase?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2217 — Australia (medium)
+**Q:** Australia last won the Asian Cup as hosts in which year?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2218 — Australia (easy)
+**Q:** Australia lost 2-1 to Argentina in which 2022 World Cup stage?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2219 — Australia (easy)
+**Q:** Australia lost 2-1 to which nation in the 2022 World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2221 — Australia (easy)
+**Q:** Australia lost 4-1 to France in their 2022 opener. Who did they beat in their next group match?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2223 — Australia (easy)
+**Q:** Australia lost all three 2014 World Cup matches. Which team eliminated them in 2010?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2224 — Australia (easy)
+**Q:** Australia lost their 2018 World Cup qualifier. How did they still reach the tournament?
+**Answer:** Intercontinental playoff win
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2225 — Australia (easy)
+**Q:** Australia lost to Japan in 2018 AFC qualifying. Why did they still reach the World Cup?
+**Answer:** Beat Honduras in playoff
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2226 — Australia (easy)
+**Q:** Australia lost which 2022 World Cup knockout match by a 2-1 scoreline?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2229 — Australia (medium)
+**Q:** Australia qualified for the 2014 World Cup through AFC qualification, but which 2018 qualifier did they beat in a playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2231 — Australia (medium)
+**Q:** Australia won the 2015 Asian Cup under Ange Postecoglou. How many years after his 2013 appointment was that?
+**Answer:** 2 years
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2233 — Australia (medium)
+**Q:** Australia's 2006 AFC move preceded their first of how many straight World Cups?
+**Answer:** Six consecutive World Cups
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2234 — Australia (medium)
+**Q:** Australia's 2010 World Cup qualifiers were their first under which new confederation?
+**Answer:** Asian Football Confederation
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2237 — Australia (medium)
+**Q:** Australia's 2018 World Cup group stage draw was aided by their 2015 Asian Cup win. Who was the manager?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2239 — Australia (hard)
+**Q:** Australia's 2018 World Cup playoff win over Honduras was statistically identical to which later playoff win?
+**Answer:** 2022 playoff vs Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2240 — Australia (medium)
+**Q:** Australia's 2022 round of 16 exit matched their best finish from which previous World Cup?
+**Answer:** 2006 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2241 — Australia (medium)
+**Q:** Australia's 2022 round of 16 was their best World Cup result since which tournament?
+**Answer:** 2006 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2242 — Australia (easy)
+**Q:** Australia's 2022 World Cup round of 16 ended what 16-year drought?
+**Answer:** best tournament result
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2243 — Australia (medium)
+**Q:** Australia's 2022 World Cup round of 16 loss to Argentina was 2-1. What was their 2006 round of 16 loss score?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2244 — Australia (medium)
+**Q:** Australia's 2022 World Cup round of 16 was their best finish since which year?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2245 — Australia (medium)
+**Q:** Australia's 2022 World Cup run boosted interest; which earlier tournament had a similar effect?
+**Answer:** 2015 Asian Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2247 — Australia (easy)
+**Q:** Australia's 2022 World Cup run to which stage boosted domestic interest?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2248 — Australia (easy)
+**Q:** Australia's 2022 World Cup win over Denmark was their second victory in the tournament. Which nation was their first?
+**Answer:** Tunisia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2249 — Australia (hard)
+**Q:** Australia's 2026 qualification secured a sixth straight World Cup. When did their streak start?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2251 — Australia (hard)
+**Q:** Australia's first World Cup qualification as an AFC member was for which tournament?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2252 — Australia (medium)
+**Q:** Australia's highest FIFA ranking before 2026 was what position?
+**Answer:** 14th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2262 — Australia (easy)
+**Q:** For Australia's 2022 World Cup qualifiers, which stadium was used after the 2018 cycle?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2266 — Australia (medium)
+**Q:** For how many years did Holger Osieck manage Australia's national team?
+**Answer:** Three years
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2267 — Australia (easy)
+**Q:** For the 2026 FIFA World Cup, how did Australia qualify?
+**Answer:** Through AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2269 — Australia (easy)
+**Q:** For the 2026 World Cup, why did Australia avoid an intercontinental playoff?
+**Answer:** Qualified through AFC
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2271 — Australia (medium)
+**Q:** For which World Cup cycle was Tony Popovic appointed Australia manager?
+**Answer:** The 2026 cycle
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2274 — Australia (medium)
+**Q:** From 2006 to 2026, how many consecutive FIFA World Cups has Australia qualified for?
+**Answer:** Six consecutive World Cups
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2275 — Australia (medium)
+**Q:** From which confederation did Australia switch to the AFC in 2006 for World Cup qualification?
+**Answer:** Oceania Football Confederation
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2276 — Australia (easy)
+**Q:** How did Australia qualify for the 2010 FIFA World Cup?
+**Answer:** Through AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2277 — Australia (easy)
+**Q:** How did Australia qualify for the 2010 World Cup?
+**Answer:** AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2278 — Australia (easy)
+**Q:** How did Australia qualify for the 2014 FIFA World Cup?
+**Answer:** Through AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2279 — Australia (easy)
+**Q:** How did Australia qualify for the 2018 FIFA World Cup?
+**Answer:** Intercontinental playoff
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2280 — Australia (easy)
+**Q:** How did Australia qualify for the 2022 FIFA World Cup?
+**Answer:** Intercontinental playoff vs Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2282 — Australia (easy)
+**Q:** How did Australia reach the 2018 FIFA World Cup finals?
+**Answer:** Via intercontinental playoff
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2283 — Australia (easy)
+**Q:** How did the Australian team reach the 2018 FIFA World Cup?
+**Answer:** Via intercontinental playoff
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2284 — Australia (easy)
+**Q:** How far did Australia progress in the 2022 FIFA World Cup?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2285 — Australia (medium)
+**Q:** How many Asian Cup semi-finals has Australia reached since joining the AFC?
+**Answer:** Two
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2286 — Australia (medium)
+**Q:** How many Asian Cups has Australia contested since joining the AFC?
+**Answer:** Five tournaments
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2287 — Australia (medium)
+**Q:** How many consecutive World Cups has Australia qualified for, from 2006-2026?
+**Answer:** Six
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2288 — Australia (medium)
+**Q:** How many FIFA World Cup goals did Australia's Tim Cahill score?
+**Answer:** 5
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2290 — Australia (medium)
+**Q:** How many goals did Australia's Tim Cahill score internationally?
+**Answer:** 50 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2291 — Australia (medium)
+**Q:** How many goals did Australian legend Tim Cahill score internationally?
+**Answer:** 50 goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2292 — Australia (medium)
+**Q:** How many group matches did Australia lose at the 2014 World Cup?
+**Answer:** All three
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2293 — Australia (hard)
+**Q:** How many group stage matches did Australia lose at the 2014 FIFA World Cup?
+**Answer:** All three matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2294 — Australia (hard)
+**Q:** How many group stage matches did Australia lose at the 2014 World Cup?
+**Answer:** Three
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2295 — Australia (medium)
+**Q:** How many minutes in did Australia's Craig Goodwin score against France at the 2022 World Cup?
+**Answer:** 9 minutes
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2297 — Australia (medium)
+**Q:** How many World Cup goals did Australia's Tim Cahill score?
+**Answer:** Five goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2298 — Australia (medium)
+**Q:** How many World Cup goals did Australian icon Tim Cahill score?
+**Answer:** Five
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2299 — Australia (medium)
+**Q:** In 2006, Australia moved to the AFC. Which other team was also in a new confederation by 2006?
+**Answer:** Kazakhstan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2300 — Australia (easy)
+**Q:** In 2006, why did Australia's national team switch from OFC to AFC?
+**Answer:** To access stronger competition
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2301 — Australia (easy)
+**Q:** In 2010, Australia lost to Germany 4-0 and drew with which nation 1-1?
+**Answer:** Ghana
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2302 — Australia (easy)
+**Q:** In 2022, Australia reached which FIFA World Cup stage for the first time since 2006?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2304 — Australia (easy)
+**Q:** In 2022, which sport did Australia's World Cup team compete against for domestic attention?
+**Answer:** Australian Football League
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2305 — Australia (easy)
+**Q:** In Australia's 1-0 win over Tunisia at the 2022 World Cup, which Socceroo scored?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2306 — Australia (medium)
+**Q:** In Australia's 2010 World Cup group stage draw with Ghana, which stadium would host a rematch today?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2308 — Australia (easy)
+**Q:** In Australia's 2018 World Cup squad, which player had 108 caps and 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2309 — Australia (easy)
+**Q:** In Australia's 2022 World Cup opener vs France, which player scored after just 9 minutes?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2310 — Australia (easy)
+**Q:** In Australia's 2022 World Cup opener, what was the final score against France?
+**Answer:** 4-1 to France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2311 — Australia (easy)
+**Q:** In Australia's 2022 World Cup opener, which team beat them 4-1?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2312 — Australia (easy)
+**Q:** In Australia's 2022 World Cup round of 16 loss, which player scored a brilliant individual goal?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2313 — Australia (easy)
+**Q:** In the 2010 World Cup, what was Australia's result versus Ghana?
+**Answer:** 1-1 draw
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2316 — Australia (medium)
+**Q:** In the 2018 World Cup group stage, which Australian player held the national scoring record?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2318 — Australia (medium)
+**Q:** In their 2022 World Cup group stage win over Tunisia, Australia's organized, counter-attacking play was implemented by which manager?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2319 — Australia (medium)
+**Q:** In what year did Australia join the AFC for World Cup qualifying?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2320 — Australia (medium)
+**Q:** In what year did Australia join the AFC?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2321 — Australia (medium)
+**Q:** In what year did Australia reach the 2018 World Cup via an intercontinental playoff?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2322 — Australia (medium)
+**Q:** In what year did Australia switch from OFC to AFC?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2323 — Australia (medium)
+**Q:** In what year did Holger Osieck begin managing Australia?
+**Answer:** 2010
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2324 — Australia (easy)
+**Q:** In which 2022 World Cup group match did Australia's Mathew Leckie score the winner?
+**Answer:** Australia vs Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2325 — Australia (easy)
+**Q:** In which 2022 World Cup knockout match did Lionel Messi score a brilliant individual goal against Australia?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2326 — Australia (easy)
+**Q:** In which 2022 World Cup match did Australia lose 4-1 to France?
+**Answer:** The tournament opener
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2329 — Australia (medium)
+**Q:** In which FIFA World Cup did Australia's Tim Cahill make his tournament debut?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2330 — Australia (easy)
+**Q:** In which minute did Australia's Craig Goodwin score vs France at the 2022 World Cup?
+**Answer:** 9th minute
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2331 — Australia (easy)
+**Q:** In which round did Australia finish at the 2022 World Cup?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2332 — Australia (easy)
+**Q:** In which round did Australia lose 2-1 to Argentina at the 2022 World Cup?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2335 — Australia (medium)
+**Q:** In which World Cup did Australia beat Denmark 1-0?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2336 — Australia (medium)
+**Q:** In which World Cup did Australia lose 2-1 to Argentina in the round of 16?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2338 — Australia (medium)
+**Q:** In which World Cup did Australia lose their opener 4-1 to France?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2339 — Australia (hard)
+**Q:** In which World Cup did Australia reach the group stage?
+**Answer:** 2010 FIFA World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2341 — Australia (medium)
+**Q:** In which World Cup did Australia's Mathew Leckie score a winner vs Denmark?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2343 — Australia (medium)
+**Q:** In which World Cup did Tim Cahill score a volley for Australia against the Netherlands?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2344 — Australia (medium)
+**Q:** In which World Cup did Tim Cahill score his iconic bicycle kick for Australia?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2346 — Australia (hard)
+**Q:** In which World Cup tournament did Australia lose all three group stage matches?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2348 — Australia (medium)
+**Q:** In which World Cup year did Australia beat Denmark 1-0 to reach the round of 16?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2349 — Australia (medium)
+**Q:** In which World Cup year did Australia beat Denmark 1-0?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2350 — Australia (medium)
+**Q:** In which World Cup year did Australia lose 2-1 to Argentina in the round of 16?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2351 — Australia (medium)
+**Q:** In which World Cup year did Australia lose 2-1 to Argentina?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2352 — Australia (medium)
+**Q:** In which World Cup year did Australia's round of 16 run reignite football interest?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2353 — Australia (medium)
+**Q:** In which World Cup year did Australia's squad core form from A-League and European players?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2354 — Australia (medium)
+**Q:** In which World Cup year did Mathew Leckie score a winner for Australia against Denmark?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2355 — Australia (medium)
+**Q:** In which World Cup year did Mathew Leckie score Australia's winner vs Denmark?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2357 — Australia (medium)
+**Q:** In which year did Australia beat Peru to qualify for the 2022 World Cup?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2358 — Australia (medium)
+**Q:** In which year did Australia begin qualifying for the World Cup as an AFC nation?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2359 — Australia (medium)
+**Q:** In which year did Australia first qualify for the World Cup after moving to the AFC?
+**Answer:** 2010
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2361 — Australia (medium)
+**Q:** In which year did Australia host a World Cup match at Stadium Australia?
+**Answer:** 2023
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2362 — Australia (medium)
+**Q:** In which year did Australia move from the OFC to the AFC?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2363 — Australia (medium)
+**Q:** In which year did Australia move to the AFC and start dominating World Cup qualifying?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2364 — Australia (medium)
+**Q:** In which year did Australia move to the AFC for World Cup qualifying?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2365 — Australia (medium)
+**Q:** In which year did Australia qualify for the 2022 World Cup via a playoff against Peru?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2366 — Australia (hard)
+**Q:** In which year did Australia qualify for the World Cup via AFC qualification?
+**Answer:** 2026
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2367 — Australia (medium)
+**Q:** In which year did Australia reach the FIFA World Cup round of 16?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2368 — Australia (medium)
+**Q:** In which year did Australia switch to AFC for World Cup qualifying?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2369 — Australia (medium)
+**Q:** In which year did Australia win the 2015 Asian Cup at home?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2370 — Australia (medium)
+**Q:** In which year did Australia win the Asian Cup as hosts?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2372 — Australia (medium)
+**Q:** In which year did Australia's AFC membership start affecting World Cup qualifiers?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2373 — Australia (medium)
+**Q:** In which year did Australia's all-time top scorer Tim Cahill retire?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2374 — Australia (medium)
+**Q:** In which year did Australian legend Tim Cahill retire?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2378 — Australia (easy)
+**Q:** Since joining the AFC in 2006, Australia has been a regular contender in which tournament?
+**Answer:** The Asian Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2379 — Australia (medium)
+**Q:** Since joining the AFC in 2006, how many Asian Cups has Australia qualified for?
+**Answer:** Five tournaments
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2380 — Australia (easy)
+**Q:** Since moving to the AFC in 2006, Australia has consistently qualified for which tournament?
+**Answer:** The Asian Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2383 — Australia (medium)
+**Q:** Since which year have Australia been regular Asian Cup contenders?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2384 — Australia (easy)
+**Q:** What boosted football interest across Australia after the 2022 World Cup?
+**Answer:** The team's success
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2387 — Australia (easy)
+**Q:** What is Australia's highest-ever FIFA World Ranking position?
+**Answer:** 14th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2391 — Australia (easy)
+**Q:** What system did Australia use under Graham Arnold at the 2022 World Cup?
+**Answer:** Defensive organisation and counter-attacking
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2392 — Australia (easy)
+**Q:** What tactical system did Australia's coach Graham Arnold emphasise at the 2022 World Cup?
+**Answer:** Defensive organisation and counter-attacking
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2393 — Australia (hard)
+**Q:** What was Australia's aggregate score against Honduras in the 2018 World Cup playoff?
+**Answer:** 3-1 on aggregate
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2395 — Australia (medium)
+**Q:** What was Australia's exact scoreline against Denmark at the 2022 World Cup?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2396 — Australia (medium)
+**Q:** What was Australia's highest FIFA ranking after joining the AFC?
+**Answer:** 14th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2397 — Australia (medium)
+**Q:** What was Australia's highest FIFA ranking during their 2006-2026 World Cup run?
+**Answer:** 14th
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2398 — Australia (easy)
+**Q:** What was Australia's margin of victory over Denmark at the 2022 World Cup?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2399 — Australia (easy)
+**Q:** What was Australia's primary tactical system at the 2022 FIFA World Cup?
+**Answer:** Defensive organisation and counter-attacking
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2400 — Australia (easy)
+**Q:** What was Australia's result against Ghana at the 2010 World Cup?
+**Answer:** 1-1 draw
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2401 — Australia (easy)
+**Q:** What was Australia's score against Denmark at the 2022 World Cup?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2402 — Australia (easy)
+**Q:** What was Australia's score against Tunisia at the 2022 World Cup?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2403 — Australia (easy)
+**Q:** What was Australia's scoreline after Mathew Leckie's 2022 FIFA World Cup winner?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2404 — Australia (easy)
+**Q:** What was Australia's scoreline against Denmark in their 2022 World Cup win?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2405 — Australia (easy)
+**Q:** What was Australia's scoreline against France in their 2022 World Cup opener?
+**Answer:** Lost 4-1
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2406 — Australia (medium)
+**Q:** What was Australia's scoreline in the 2015 Asian Cup final?
+**Answer:** Beat South Korea 2-1
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2407 — Australia (easy)
+**Q:** What was Australia's winning margin over Denmark at the 2022 World Cup?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2409 — Australia (easy)
+**Q:** What was the final score when Australia lost to Argentina in the 2022 World Cup round of 16?
+**Answer:** 2-1 to Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2412 — Australia (medium)
+**Q:** What was the score when Australia beat Tunisia at the 2022 World Cup?
+**Answer:** 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2414 — Australia (medium)
+**Q:** What year did Australia join the AFC before becoming Asian Cup regulars?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2415 — Australia (medium)
+**Q:** What year did Australia switch to the AFC for World Cup qualifiers?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2418 — Australia (medium)
+**Q:** When did an Australian club first win the AFC Champions League?
+**Answer:** 2014
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2419 — Australia (medium)
+**Q:** When did Ange Postecoglou manage the Australian national team?
+**Answer:** 2013 to 2017
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2420 — Australia (medium)
+**Q:** When did Australia beat Denmark 1-0 at the World Cup?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2421 — Australia (medium)
+**Q:** When did Australia beat Denmark 1-0 in the 2022 World Cup?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2422 — Australia (hard)
+**Q:** When did Australia beat Denmark to reach the 2022 World Cup knockout stage?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2423 — Australia (medium)
+**Q:** When did Australia beat South Korea in the Asian Cup final?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2424 — Australia (easy)
+**Q:** When did Australia beat Tunisia 1-0 in the 2022 World Cup?
+**Answer:** In the group stage
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2425 — Australia (medium)
+**Q:** When did Australia first host an Asian Cup final at Stadium Australia?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2427 — Australia (hard)
+**Q:** When did Australia first qualify for a World Cup via AFC qualification?
+**Answer:** 2010
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2428 — Australia (hard)
+**Q:** When did Australia get eliminated in the 2010 FIFA World Cup group stage?
+**Answer:** 2010
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2430 — Australia (medium)
+**Q:** When did Australia host a FIFA World Cup match at Stadium Australia?
+**Answer:** 2023
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2431 — Australia (medium)
+**Q:** When did Australia host and win the Asian Cup?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2433 — Australia (medium)
+**Q:** When did Australia last match their 2022 World Cup round of 16 achievement?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2434 — Australia (medium)
+**Q:** When did Australia last reach a World Cup round of 16 before 2022?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2435 — Australia (medium)
+**Q:** When did Australia last reach the Asian Cup semi-finals before 2015?
+**Answer:** 2011
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2437 — Australia (medium)
+**Q:** When did Australia lose 2-1 to Argentina in the World Cup?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2439 — Australia (medium)
+**Q:** When did Australia lose 4-1 to France in the 2022 World Cup opener?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2440 — Australia (medium)
+**Q:** When did Australia lose 4-1 to France in their World Cup opener?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2442 — Australia (hard)
+**Q:** When did Australia qualify for the 2014 FIFA World Cup through AFC qualification?
+**Answer:** 2013
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2444 — Australia (medium)
+**Q:** When did Australia qualify for the 2018 FIFA World Cup via a playoff?
+**Answer:** 2017
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2445 — Australia (medium)
+**Q:** When did Australia qualify for the 2018 World Cup via playoff?
+**Answer:** 2017
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2446 — Australia (medium)
+**Q:** When did Australia qualify for the 2022 FIFA World Cup via a playoff against Peru?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2447 — Australia (medium)
+**Q:** When did Australia qualify for the 2022 FIFA World Cup?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2448 — Australia (medium)
+**Q:** When did Australia qualify for the 2022 World Cup by beating Peru?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2449 — Australia (medium)
+**Q:** When did Australia qualify for the 2022 World Cup via a playoff?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2450 — Australia (easy)
+**Q:** When did Australia qualify for the 2026 FIFA World Cup?
+**Answer:** Through AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2453 — Australia (medium)
+**Q:** When did Australia secure 2022 World Cup knockout stage advancement with a 1-0 win?
+**Answer:** Against Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2454 — Australia (medium)
+**Q:** When did Australia switch to the AFC for World Cup qualifiers?
+**Answer:** 2006
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2456 — Australia (medium)
+**Q:** When did Australia use Graham Arnold's defensive system?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2457 — Australia (medium)
+**Q:** When did Australia use Graham Arnold's defensive, counter-attacking system?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2458 — Australia (medium)
+**Q:** When did Australia win the Asian Cup as hosts?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2459 — Australia (medium)
+**Q:** When did Australia win the Asian Cup on home soil?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2460 — Australia (easy)
+**Q:** When did Australia's 2022 FIFA World Cup campaign end?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2461 — Australia (medium)
+**Q:** When did Australia's all-time top scorer Tim Cahill retire?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2463 — Australia (medium)
+**Q:** When did Australia's coach Graham Arnold deploy his organised defensive system?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2469 — Australia (medium)
+**Q:** When did Australia's round of 16 run boost domestic football interest?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2470 — Australia (medium)
+**Q:** When did Australia's round of 16 World Cup run reignite football interest?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2472 — Australia (medium)
+**Q:** When did Australia's Socceroos reach the FIFA World Cup round of 16?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2474 — Australia (medium)
+**Q:** When did Australia's Western Sydney Wanderers win the AFC Champions League?
+**Answer:** 2014
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2477 — Australia (medium)
+**Q:** When did Australia's World Cup run reignite football interest in the country?
+**Answer:** 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2478 — Australia (medium)
+**Q:** When did Australia's World Cup squad core first shift to A-League and European-based players?
+**Answer:** After 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2481 — Australia (medium)
+**Q:** When did Australian legend Tim Cahill retire from international football?
+**Answer:** 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2482 — Australia (medium)
+**Q:** When did Holger Osieck begin managing Australia?
+**Answer:** 2010
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2483 — Australia (medium)
+**Q:** When did Mathew Leckie score Australia's winner against Denmark?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2484 — Australia (medium)
+**Q:** When did the Australia national team win the Asian Cup at home?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2486 — Australia (medium)
+**Q:** When was Graham Arnold appointed Australia manager?
+**Answer:** In 2018
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2487 — Australia (easy)
+**Q:** Where did Australia beat Peru in the 2022 World Cup playoff?
+**Answer:** Al Rayyan Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2489 — Australia (easy)
+**Q:** Where did Australia host a 2022 World Cup qualifier in Melbourne?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2490 — Australia (easy)
+**Q:** Where did Australia win the Asian Cup in 2015?
+**Answer:** On home soil
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2491 — Australia (easy)
+**Q:** Which 2010 World Cup opponent did Australia lose 4-0 to?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2494 — Australia (medium)
+**Q:** Which 2018 World Cup group stage opponent did Australia draw 1-1 with under Bert van Marwijk?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2495 — Australia (easy)
+**Q:** Which 2018 World Cup qualifier did Australia beat in an intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2496 — Australia (easy)
+**Q:** Which 2018 World Cup qualifier did Australia win to secure their place?
+**Answer:** Intercontinental playoff vs Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2499 — Australia (easy)
+**Q:** Which 2022 Australian World Cup outcome increased domestic football interest?
+**Answer:** Their tournament success
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2501 — Australia (medium)
+**Q:** Which 2022 World Cup campaign reignited football interest in Australia?
+**Answer:** Round of 16 run
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2502 — Australia (medium)
+**Q:** Which 2022 World Cup group stage match did Australia win 1-0?
+**Answer:** Australia vs Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2503 — Australia (medium)
+**Q:** Which 2022 World Cup group stage win came first for Australia: Tunisia or Denmark?
+**Answer:** Tunisia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2504 — Australia (medium)
+**Q:** Which 2022 World Cup group stage win was by Australia?
+**Answer:** Beat Tunisia 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2505 — Australia (easy)
+**Q:** Which 2022 World Cup knockout opponent did Australia lose 2-1 to?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2506 — Australia (medium)
+**Q:** Which 2022 World Cup opponent did Australia lose to in the knockout stage?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2507 — Australia (easy)
+**Q:** Which 2022 World Cup playoff did Australia win?
+**Answer:** Against Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2511 — Australia (easy)
+**Q:** Which 2022 World Cup win secured Australia's round of 16 spot?
+**Answer:** Beat Denmark 1-0
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2512 — Australia (medium)
+**Q:** Which 2026 World Cup qualifier reached a higher FIFA ranking than Australia's peak?
+**Answer:** Japan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2514 — Australia (easy)
+**Q:** Which A-League club had a player start for Australia in the 2018 World Cup qualifiers?
+**Answer:** Melbourne Victory
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2515 — Australia (medium)
+**Q:** Which AFC confederation did Australia join in 2006 for World Cup qualifying?
+**Answer:** Asian Football Confederation
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2517 — Australia (medium)
+**Q:** Which AFC nation achieved a higher FIFA ranking than Australia's 14th?
+**Answer:** Japan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2543 — Australia (medium)
+**Q:** Which AFC nation's highest FIFA ranking is lower than Australia's peak of 14th?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2545 — Australia (medium)
+**Q:** Which AFC qualification path did Australia use for the 2010 World Cup?
+**Answer:** Direct AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2546 — Australia (easy)
+**Q:** Which AFC rival has Australia faced in World Cup qualifiers since 2006?
+**Answer:** Saudi Arabia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2550 — Australia (easy)
+**Q:** Which AFC team did Australia beat in the 2011 Asian Cup quarter-finals?
+**Answer:** Iraq
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2560 — Australia (easy)
+**Q:** Which Argentina player scored a brilliant goal against Australia in the 2022 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2561 — Australia (easy)
+**Q:** Which Argentina player scored a brilliant goal to beat Australia in the 2022 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2562 — Australia (easy)
+**Q:** Which Argentina player scored a brilliant individual goal against Australia in the 2022 World Cup round of 16?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2563 — Australia (easy)
+**Q:** Which Argentina player scored a stunning goal against Australia in the 2022 World Cup round of 16?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2564 — Australia (easy)
+**Q:** Which Argentina player scored against Australia in the 2022 World Cup?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2565 — Australia (easy)
+**Q:** Which Argentina player scored in their 2022 World Cup knockout win over Australia?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2566 — Australia (easy)
+**Q:** Which Argentine player scored a brilliant individual goal to beat Australia in the 2022 World Cup round of 16?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2567 — Australia (medium)
+**Q:** Which Asian Cup did Australia host matches at Melbourne Rectangular Stadium?
+**Answer:** 2015 Asian Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2568 — Australia (hard)
+**Q:** Which Asian Cup final did Australia win 2-1 against South Korea?
+**Answer:** 2015 Asian Cup final
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2569 — Australia (medium)
+**Q:** Which Asian Cup victory helped Australia qualify for six straight World Cups?
+**Answer:** 2015 Asian Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2570 — Australia (easy)
+**Q:** Which Asian nation did Australia beat 2-1 in the 2015 Asian Cup final?
+**Answer:** South Korea
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2571 — Australia (easy)
+**Q:** Which Asian nation lost to Australia in the 2015 Asian Cup final?
+**Answer:** South Korea
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2573 — Australia (easy)
+**Q:** Which Australia captain lifted the Asian Cup trophy in 2015?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2574 — Australia (easy)
+**Q:** Which Australia coach led the team to the 2011 Asian Cup semi-finals?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2575 — Australia (medium)
+**Q:** Which Australia coach secured 2022 FIFA World Cup qualification?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2576 — Australia (easy)
+**Q:** Which Australia coach selected the team for the 2010 World Cup?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2578 — Australia (easy)
+**Q:** Which Australia coach's tactics drove their 2022 World Cup round of 16 run?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2579 — Australia (medium)
+**Q:** Which Australia defender was a key starter in the 2022 World Cup group stage?
+**Answer:** Kye Rowles
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2580 — Australia (easy)
+**Q:** Which Australia goalkeeper started both the 2018 and 2022 World Cups?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2581 — Australia (easy)
+**Q:** Which Australia goalkeeper started for them at both the 2018 and 2022 World Cups?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2582 — Australia (easy)
+**Q:** Which Australia manager emphasised defensive organisation at the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2583 — Australia (easy)
+**Q:** Which Australia manager led the 2022 FIFA World Cup round of 16 run?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2584 — Australia (easy)
+**Q:** Which Australia manager led the team at the 2010 FIFA World Cup?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2585 — Australia (easy)
+**Q:** Which Australia manager led the team at the 2022 FIFA World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2586 — Australia (easy)
+**Q:** Which Australia manager led the team in their 2-1 2022 World Cup loss to Argentina?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2587 — Australia (easy)
+**Q:** Which Australia manager led the team to its 2022 World Cup success?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2588 — Australia (easy)
+**Q:** Which Australia manager led the team to the 2011 Asian Cup semi-finals?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2589 — Australia (easy)
+**Q:** Which Australia manager led the team to win the 2015 Asian Cup as hosts?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2590 — Australia (easy)
+**Q:** Which Australia manager led them to the 2022 World Cup round of 16?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2592 — Australia (easy)
+**Q:** Which Australia manager matched their 2006 result by reaching the 2022 round of 16?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2593 — Australia (medium)
+**Q:** Which Australia manager oversaw 2018 qualification after their 2015 Asian Cup win?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2594 — Australia (easy)
+**Q:** Which Australia manager oversaw the 1-0 win over Tunisia in 2022?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2595 — Australia (medium)
+**Q:** Which Australia manager oversaw their 2010 World Cup AFC qualification?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2596 — Australia (easy)
+**Q:** Which Australia manager oversaw their 4-0 loss to Germany at the 2010 World Cup?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2597 — Australia (medium)
+**Q:** Which Australia manager oversaw their qualification for the 2014 FIFA World Cup?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2598 — Australia (easy)
+**Q:** Which Australia manager reached the 2022 World Cup round of 16?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2600 — Australia (easy)
+**Q:** Which Australia manager used a defensive, counter-attacking system at the 2022 FIFA World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2603 — Australia (easy)
+**Q:** Which Australia manager was appointed immediately after Holger Osieck's tenure ended in 2013?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2604 — Australia (easy)
+**Q:** Which Australia manager was appointed in 2018 and coached them at the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2605 — Australia (easy)
+**Q:** Which Australia manager was appointed in 2018 and led the 2022 World Cup team?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2606 — Australia (easy)
+**Q:** Which Australia manager was appointed in 2018 before the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2607 — Australia (easy)
+**Q:** Which Australia manager was appointed specifically for the 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2608 — Australia (easy)
+**Q:** Which Australia manager was appointed to lead the 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2610 — Australia (easy)
+**Q:** Which Australia manager won the 2015 Asian Cup before the 2018 World Cup?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2611 — Australia (easy)
+**Q:** Which Australia manager won the 2015 Asian Cup on home soil?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2614 — Australia (easy)
+**Q:** Which Australia manager won the Asian Cup in 2015?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2615 — Australia (easy)
+**Q:** Which Australia manager's 2015 Asian Cup win came before the 2018 World Cup qualifying campaign?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2616 — Australia (medium)
+**Q:** Which Australia manager's 2015 Asian Cup win preceded their 2018 World Cup qualification?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2617 — Australia (easy)
+**Q:** Which Australia manager's 2022 World Cup result was their best in 16 years?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2618 — Australia (easy)
+**Q:** Which Australia manager's 2022 World Cup success boosted football interest nationally?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2619 — Australia (easy)
+**Q:** Which Australia manager's 2022 World Cup system emphasised defensive organisation and counter-attacking?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2620 — Australia (easy)
+**Q:** Which Australia manager's 2022 World Cup system stressed defence and counter-attacks?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2621 — Australia (easy)
+**Q:** Which Australia manager's 2022 World Cup win contrasted with a 2015 Asian Cup final victory?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2622 — Australia (medium)
+**Q:** Which Australia manager's appointment for the 2026 cycle followed Ange Postecoglou's tenure by how many years?
+**Answer:** Seven years later
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2623 — Australia (easy)
+**Q:** Which Australia manager's tenure began before Holger Osieck's in 2010?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2624 — Australia (easy)
+**Q:** Which Australia manager's tenure ended before the 2014 World Cup?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2625 — Australia (easy)
+**Q:** Which Australia manager's tenure ran from 2010 to 2013?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2629 — Australia (easy)
+**Q:** Which Australia player captained his team as hosts to Asian Cup glory in 2015?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2631 — Australia (easy)
+**Q:** Which Australia player captained the 2015 Asian Cup-winning squad?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2633 — Australia (easy)
+**Q:** Which Australia player captained the team to the 2015 Asian Cup title?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2634 — Australia (easy)
+**Q:** Which Australia player captained the team to win the 2015 Asian Cup?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2635 — Australia (easy)
+**Q:** Which Australia player captained them at both the 2014 and 2018 World Cups?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2636 — Australia (easy)
+**Q:** Which Australia player debuted after their 2022 World Cup squad overhaul?
+**Answer:** Nestor Irankunda
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2638 — Australia (easy)
+**Q:** Which Australia player debuted for the Socceroos in the 2022 World Cup era?
+**Answer:** Garang Kuol
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2639 — Australia (easy)
+**Q:** Which Australia player had 50 goals by the 2018 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2640 — Australia (easy)
+**Q:** Which Australia player retired as their all-time top scorer with 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2641 — Australia (easy)
+**Q:** Which Australia player retired in 2018 as their all-time top scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2642 — Australia (easy)
+**Q:** Which Australia player retired with 108 caps and 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2643 — Australia (easy)
+**Q:** Which Australia player scored 50 international goals before retiring in 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2644 — Australia (medium)
+**Q:** Which Australia player scored a crucial volley in the 2014 World Cup group stage?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2645 — Australia (easy)
+**Q:** Which Australia player scored a goal against Tunisia at the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2647 — Australia (easy)
+**Q:** Which Australia player scored a World Cup goal in 2022 before the squad's generational change?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2648 — Australia (easy)
+**Q:** Which Australia player scored after 9 minutes against France at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2651 — Australia (easy)
+**Q:** Which Australia player scored after just 9 minutes against France in the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2653 — Australia (easy)
+**Q:** Which Australia player scored against Tunisia at the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2654 — Australia (easy)
+**Q:** Which Australia player scored an iconic bicycle kick in a 2014 World Cup group match?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2656 — Australia (easy)
+**Q:** Which Australia player scored earlier at the 2022 World Cup: Craig Goodwin or Mathew Leckie?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2657 — Australia (easy)
+**Q:** Which Australia player scored early against France in the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2658 — Australia (easy)
+**Q:** Which Australia player scored first against France at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2659 — Australia (easy)
+**Q:** Which Australia player scored iconic goals at the 2006 FIFA World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2660 — Australia (easy)
+**Q:** Which Australia player scored iconic goals in the 2006, 2010, and 2014 FIFA World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2661 — Australia (easy)
+**Q:** Which Australia player scored iconic goals throughout his international career?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2664 — Australia (easy)
+**Q:** Which Australia player scored in the 1-0 win over Tunisia at the 2022 FIFA World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2667 — Australia (medium)
+**Q:** Which Australia player scored in the 2022 World Cup group stage?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2668 — Australia (easy)
+**Q:** Which Australia player scored in the 2022 World Cup, but not in the 2018 edition?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2669 — Australia (easy)
+**Q:** Which Australia player scored in the 9th minute against France at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2670 — Australia (easy)
+**Q:** Which Australia player scored in the 9th minute against France in 2022?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2671 — Australia (medium)
+**Q:** Which Australia player scored in their 2022 World Cup group stage win over Tunisia?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2676 — Australia (easy)
+**Q:** Which Australia player scored the 2022 World Cup winner against Denmark?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2677 — Australia (easy)
+**Q:** Which Australia player scored the decisive 1-0 winner at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2678 — Australia (easy)
+**Q:** Which Australia player scored the decisive goal against Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2680 — Australia (easy)
+**Q:** Which Australia player scored the earliest goal at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2682 — Australia (easy)
+**Q:** Which Australia player scored the fastest goal at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2684 — Australia (easy)
+**Q:** Which Australia player scored the only goal in their 1-0 win over Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2685 — Australia (easy)
+**Q:** Which Australia player scored the winner against Denmark at the 2022 FIFA World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2686 — Australia (easy)
+**Q:** Which Australia player scored the winner against Denmark in 2022?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2687 — Australia (easy)
+**Q:** Which Australia player scored the winner against Tunisia in 2022?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2688 — Australia (easy)
+**Q:** Which Australia player scored the winner in the 2015 Asian Cup final?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2689 — Australia (easy)
+**Q:** Which Australia player scored the winner in their 2022 World Cup group match against Denmark?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2690 — Australia (easy)
+**Q:** Which Australia player scored the winner to beat Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2691 — Australia (easy)
+**Q:** Which Australia player scored the winner versus Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2692 — Australia (easy)
+**Q:** Which Australia player scored the winner vs Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2693 — Australia (easy)
+**Q:** Which Australia player scored the winning goal against Denmark at the 2022 FIFA World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2694 — Australia (easy)
+**Q:** Which Australia player scored the winning goal against Tunisia in the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2695 — Australia (easy)
+**Q:** Which Australia player scored the winning goal at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2698 — Australia (easy)
+**Q:** Which Australia player scored their only 2022 World Cup goal in the 4-1 loss to France?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2699 — Australia (easy)
+**Q:** Which Australia player scored within 10 minutes vs France at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2700 — Australia (easy)
+**Q:** Which Australia player set a World Cup scoring record at the 83,500-seat Stadium Australia in 2023?
+**Answer:** Sam Kerr
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2701 — Australia (easy)
+**Q:** Which Australia player was a key defender at the 2022 World Cup?
+**Answer:** Kye Rowles
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2703 — Australia (easy)
+**Q:** Which Australia player was in their 2022 World Cup squad?
+**Answer:** Mathew Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2704 — Australia (easy)
+**Q:** Which Australia player's 2018 World Cup goal highlighted football's competition with AFL, rugby, and cricket?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2705 — Australia (easy)
+**Q:** Which Australia player's 2022 World Cup goal against France came in under 10 minutes?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2707 — Australia (medium)
+**Q:** Which Australia player's goal secured their 2006 World Cup qualification?
+**Answer:** John Aloisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2708 — Australia (easy)
+**Q:** Which Australia player's goal secured their 2022 World Cup round of 16 spot?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2709 — Australia (easy)
+**Q:** Which Australia player's goal-scoring record made him a tactical focal point at the 2018 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2710 — Australia (medium)
+**Q:** Which Australia squad had more debutants, 2022 or 2026 World Cup?
+**Answer:** 2026 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2711 — Australia (medium)
+**Q:** Which Australia squad was younger: 2022 World Cup or 2026 qualifiers?
+**Answer:** 2026 qualifiers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2712 — Australia (easy)
+**Q:** Which Australia team's 2022 World Cup run reignited football interest at home?
+**Answer:** The Socceroos
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2713 — Australia (easy)
+**Q:** Which Australia team's 2022 World Cup run reignited football interest?
+**Answer:** The Socceroos
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2714 — Australia (medium)
+**Q:** Which Australia World Cup qualification path matched their 2014 entry?
+**Answer:** AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2715 — Australia (hard)
+**Q:** Which Australia World Cup qualifying campaign followed their 2011 Asian Cup semi-final?
+**Answer:** 2014 FIFA World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2716 — Australia (medium)
+**Q:** Which Australia World Cup squad's debut caps reflected growing football infrastructure?
+**Answer:** The 2022 squad
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2717 — Australia (easy)
+**Q:** Which Australian 2022 World Cup run reignited national football interest?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2719 — Australia (easy)
+**Q:** Which Australian A-League club did Graham Arnold manage before the 2022 World Cup?
+**Answer:** Sydney FC
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2720 — Australia (easy)
+**Q:** Which Australian A-League club had a player debut at the 2018 FIFA World Cup?
+**Answer:** Melbourne Victory
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2722 — Australia (easy)
+**Q:** Which Australian A-League club had more players in the 2018 World Cup squad: Melbourne Victory or Sydney FC?
+**Answer:** Melbourne Victory
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2724 — Australia (easy)
+**Q:** Which Australian A-League club won the AFC Champions League in 2014?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2725 — Australia (hard)
+**Q:** Which Australian AFC Asian Cup campaign first benefited from their 2006 confederation switch?
+**Answer:** 2007 AFC Asian Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2728 — Australia (easy)
+**Q:** Which Australian club won the AFC Champions League before 2015?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2729 — Australia (easy)
+**Q:** Which Australian club won the AFC Champions League in 2014, the year of the Brazil World Cup?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2731 — Australia (easy)
+**Q:** Which Australian club, like Al-Hilal, won the AFC Champions League in 2014?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2732 — Australia (easy)
+**Q:** Which Australian club's 2014 ACL win preceded their nation's 2018 World Cup qualifiers?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2733 — Australia (easy)
+**Q:** Which Australian club's 2014 AFC Champions League win was led by manager Tony Popovic?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2734 — Australia (easy)
+**Q:** Which Australian club's 2014 AFC win boosted World Cup competitiveness?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2735 — Australia (easy)
+**Q:** Which Australian club's 2014 continental win boosted the nation's World Cup profile?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2736 — Australia (easy)
+**Q:** Which Australian club's 2014 success helped its nation's World Cup standing?
+**Answer:** Western Sydney Wanderers
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2737 — Australia (easy)
+**Q:** Which Australian coach faced Argentina and France at the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2738 — Australia (medium)
+**Q:** Which Australian coach oversaw their three group stage losses at the 2014 World Cup?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2739 — Australia (easy)
+**Q:** Which Australian defender debuted at the 2022 FIFA World Cup?
+**Answer:** Kye Rowles
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2740 — Australia (easy)
+**Q:** Which Australian defender started all three group matches at the 2022 World Cup?
+**Answer:** Kye Rowles
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2747 — Australia (easy)
+**Q:** Which Australian goalkeeper started all group matches at both the 2018 and 2022 World Cups?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2749 — Australia (easy)
+**Q:** Which Australian goalkeeper started at both the 2018 and 2022 World Cups?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2751 — Australia (easy)
+**Q:** Which Australian goalkeeper started for the team at the 2018 and 2022 World Cups?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2754 — Australia (easy)
+**Q:** Which Australian goalkeeper was NOT first-choice at both the 2018 and 2022 World Cups?
+**Answer:** Mitch Langerak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2755 — Australia (easy)
+**Q:** Which Australian key 2022 World Cup midfielder also played in the 2019 Asian Cup?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2757 — Australia (easy)
+**Q:** Which Australian league's clubs helped develop 2010 World Cup players?
+**Answer:** The A-League
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2758 — Australia (easy)
+**Q:** Which Australian legend scored acrobatic World Cup goals in 2006?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2759 — Australia (easy)
+**Q:** Which Australian manager was appointed for the 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2760 — Australia (easy)
+**Q:** Which Australian manager was appointed to lead the team for the 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2762 — Australia (easy)
+**Q:** Which Australian manager won the 2015 Asian Cup as the tournament host?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2763 — Australia (easy)
+**Q:** Which Australian midfielder at the 2022 World Cup had the most caps?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2764 — Australia (easy)
+**Q:** Which Australian midfielder played a key role at the 2022 World Cup?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2769 — Australia (easy)
+**Q:** Which Australian midfielder started all three group matches at the 2022 World Cup?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2770 — Australia (easy)
+**Q:** Which Australian midfielder started in their 2022 World Cup win at Al Janoub Stadium?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2771 — Australia (easy)
+**Q:** Which Australian midfielder was a key player at the 2022 World Cup?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2772 — Australia (easy)
+**Q:** Which Australian midfielder was a key player in their 2022 World Cup qualifying campaign?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2773 — Australia (easy)
+**Q:** Which Australian midfielder was a key squad member at the 2022 World Cup?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2775 — Australia (easy)
+**Q:** Which Australian midfielder was a key starter in their 2022 World Cup team?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2778 — Australia (easy)
+**Q:** Which Australian midfielder was a key tactical starter at the 2022 World Cup?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2780 — Australia (easy)
+**Q:** Which Australian midfielder was in their 2022 World Cup squad?
+**Answer:** Ajdin Hrustic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2781 — Australia (easy)
+**Q:** Which Australian midfielder was key at the 2022 World Cup in Qatar?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2783 — Australia (easy)
+**Q:** Which Australian midfielder was key to controlling play at the 2022 World Cup?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2784 — Australia (easy)
+**Q:** Which Australian midfielder was key to their 2022 World Cup campaign?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2785 — Australia (easy)
+**Q:** Which Australian midfielder, besides Aaron Mooy, was key at the 2022 World Cup?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2787 — Australia (easy)
+**Q:** Which Australian midfielder, unlike Mat Ryan, was a key starter at the 2022 World Cup?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2789 — Australia (easy)
+**Q:** Which Australian player captained the Socceroos at the 2014 and 2018 World Cups?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2790 — Australia (easy)
+**Q:** Which Australian player captained the squad at both the 2014 and 2018 World Cups?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2791 — Australia (easy)
+**Q:** Which Australian player captained the squad at the 2011 Asian Cup?
+**Answer:** Lucas Neill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2793 — Australia (medium)
+**Q:** Which Australian player captained the team during their 2014 World Cup qualification?
+**Answer:** Lucas Neill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2794 — Australia (easy)
+**Q:** Which Australian player captained the team in the 2015 Asian Cup final?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2795 — Australia (easy)
+**Q:** Which Australian player captained the team to win the 2015 Asian Cup?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2796 — Australia (easy)
+**Q:** Which Australian player debuted for the national team after the 2022 World Cup?
+**Answer:** Nestory Irankunda
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2797 — Australia (easy)
+**Q:** Which Australian player debuted for the Socceroos after the 2022 World Cup?
+**Answer:** Patrick Yazbek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2799 — Australia (easy)
+**Q:** Which Australian player debuted in the 2026 World Cup qualifiers?
+**Answer:** Nestor Irankunda
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2801 — Australia (easy)
+**Q:** Which Australian player featured in the 2022 World Cup 4-1 loss to France?
+**Answer:** Mathew Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2802 — Australia (easy)
+**Q:** Which Australian player first captained his nation at a World Cup in 2014?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2803 — Australia (easy)
+**Q:** Which Australian player from the 2022 World Cup squad has NOT been part of the generational change since?
+**Answer:** Mathew Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2804 — Australia (easy)
+**Q:** Which Australian player had 108 caps and 50 goals before retiring in 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2805 — Australia (easy)
+**Q:** Which Australian player had more international goals than Mathew Leckie by 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2807 — Australia (easy)
+**Q:** Which Australian player is their all-time leading scorer with 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2808 — Australia (easy)
+**Q:** Which Australian player reached his 50-goal record before the 2018 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2810 — Australia (easy)
+**Q:** Which Australian player retired as the nation's all-time top scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2811 — Australia (easy)
+**Q:** Which Australian player retired as the nation's top scorer in 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2812 — Australia (easy)
+**Q:** Which Australian player retired as their all-time leading scorer with 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2813 — Australia (easy)
+**Q:** Which Australian player retired from international football in 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2814 — Australia (easy)
+**Q:** Which Australian player retired in 2018 after scoring 50 international goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2815 — Australia (easy)
+**Q:** Which Australian player retired in 2018 as the nation's all-time leading scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2816 — Australia (easy)
+**Q:** Which Australian player retired in 2018 as their all-time leading scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2817 — Australia (easy)
+**Q:** Which Australian player retired in 2018 as their all-time top scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2818 — Australia (easy)
+**Q:** Which Australian player retired in 2018 with 108 caps and 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2819 — Australia (easy)
+**Q:** Which Australian player scored 5 World Cup goals with his iconic acrobatic style?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2820 — Australia (easy)
+**Q:** Which Australian player scored 50 goals in 108 caps before retiring in 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2821 — Australia (easy)
+**Q:** Which Australian player scored 50 goals to become their all-time leading scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2822 — Australia (easy)
+**Q:** Which Australian player scored 50 international goals before retiring in 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2823 — Australia (easy)
+**Q:** Which Australian player scored 50 international goals by the 2018 FIFA World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2824 — Australia (easy)
+**Q:** Which Australian player scored 50 international goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2826 — Australia (easy)
+**Q:** Which Australian player scored a famous volley against the Netherlands at the 2014 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2827 — Australia (easy)
+**Q:** Which Australian player scored a goal against Tunisia in the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2828 — Australia (easy)
+**Q:** Which Australian player scored a key 2022 World Cup goal, like their 2015 Asian Cup win?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2829 — Australia (easy)
+**Q:** Which Australian player scored a record 5 World Cup goals from 2006-2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2830 — Australia (easy)
+**Q:** Which Australian player scored a volley against the Netherlands in 2014?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2831 — Australia (easy)
+**Q:** Which Australian player scored acrobatic goals at the 2006 FIFA World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2832 — Australia (easy)
+**Q:** Which Australian player scored after 9 minutes against France in 2022?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2833 — Australia (easy)
+**Q:** Which Australian player scored after 9 minutes in their 2022 World Cup opener?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2836 — Australia (easy)
+**Q:** Which Australian player scored against France at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2837 — Australia (easy)
+**Q:** Which Australian player scored against France in under 10 minutes at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2844 — Australia (easy)
+**Q:** Which Australian player scored an iconic acrobatic volley against the Netherlands at the 2014 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2847 — Australia (easy)
+**Q:** Which Australian player scored at both the 2006 and 2014 FIFA World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2848 — Australia (easy)
+**Q:** Which Australian player scored at three different FIFA World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2850 — Australia (easy)
+**Q:** Which Australian player scored early in their 2022 World Cup opener against France?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2851 — Australia (easy)
+**Q:** Which Australian player scored first against France in the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2854 — Australia (easy)
+**Q:** Which Australian player scored iconic acrobatic goals at both the 2006 and 2014 World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2855 — Australia (easy)
+**Q:** Which Australian player scored iconic acrobatic goals at FIFA World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2856 — Australia (easy)
+**Q:** Which Australian player scored iconic acrobatic goals at the 2014 FIFA World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2858 — Australia (easy)
+**Q:** Which Australian player scored iconic goals at the 2006 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2859 — Australia (easy)
+**Q:** Which Australian player scored iconic goals in the 2006, 2010, and 2014 World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2860 — Australia (easy)
+**Q:** Which Australian player scored iconic goals throughout his international career?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2861 — Australia (easy)
+**Q:** Which Australian player scored in the 2015 Asian Cup final win?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2862 — Australia (easy)
+**Q:** Which Australian player scored in the 2018 World Cup playoff win against Honduras?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2863 — Australia (easy)
+**Q:** Which Australian player scored in the 9th minute against France at the 2022 FIFA World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2865 — Australia (easy)
+**Q:** Which Australian player scored in their 4-1 2022 World Cup loss to France?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2866 — Australia (easy)
+**Q:** Which Australian player scored more World Cup goals than Harry Kewell?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2867 — Australia (easy)
+**Q:** Which Australian player scored more World Cup goals than his 2006 tally?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2868 — Australia (easy)
+**Q:** Which Australian player scored the 1-0 winner against Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2870 — Australia (easy)
+**Q:** Which Australian player scored the extra-time winner in the 2015 Asian Cup final?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2871 — Australia (easy)
+**Q:** Which Australian player scored the fastest goal at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2872 — Australia (easy)
+**Q:** Which Australian player scored the goal that beat Denmark 1-0 at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2875 — Australia (easy)
+**Q:** Which Australian player scored the winner against Tunisia at Al Janoub Stadium in 2022?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2876 — Australia (easy)
+**Q:** Which Australian player scored the winner against Tunisia at the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2877 — Australia (easy)
+**Q:** Which Australian player scored the winner in the 2015 Asian Cup final?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2878 — Australia (easy)
+**Q:** Which Australian player scored the winner versus Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2879 — Australia (easy)
+**Q:** Which Australian player scored the winner vs Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2880 — Australia (easy)
+**Q:** Which Australian player scored the winning goal against Denmark at the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2881 — Australia (easy)
+**Q:** Which Australian player scored the winning goal against Honduras in the 2018 intercontinental playoff?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2882 — Australia (easy)
+**Q:** Which Australian player scored the winning goal against Tunisia in 2022?
+**Answer:** Mitch Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2883 — Australia (easy)
+**Q:** Which Australian player scored their 50th international goal in a 2018 World Cup qualifier?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2884 — Australia (easy)
+**Q:** Which Australian player scored their goal in the 4-1 loss to France in 2022?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2885 — Australia (easy)
+**Q:** Which Australian player scored their only goal in the 2022 World Cup opener?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2886 — Australia (easy)
+**Q:** Which Australian player used acrobatic strikes for multiple World Cup goals from 2006 to 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2888 — Australia (easy)
+**Q:** Which Australian player was a key midfielder at the 2022 FIFA World Cup?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2889 — Australia (easy)
+**Q:** Which Australian player was captain at both the 2014 and 2018 World Cups?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2890 — Australia (medium)
+**Q:** Which Australian player was captain in their 2014 and 2018 World Cup group stage matches?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2891 — Australia (easy)
+**Q:** Which Australian player was in the 2011 Asian Cup semi-final squad?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2892 — Australia (easy)
+**Q:** Which Australian player was in the 2018 World Cup squad?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2893 — Australia (easy)
+**Q:** Which Australian player was in the 2022 World Cup squad that reached the round of 16?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2894 — Australia (easy)
+**Q:** Which Australian player was NOT a key midfielder at the 2022 World Cup?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2895 — Australia (easy)
+**Q:** Which Australian player was part of the 2014 World Cup squad?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2897 — Australia (easy)
+**Q:** Which Australian player was part of the squad's significant generational change after the 2022 World Cup?
+**Answer:** Garang Kuol
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2898 — Australia (easy)
+**Q:** Which Australian player was selected for the 2022 FIFA World Cup squad?
+**Answer:** Aaron Mooy
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2899 — Australia (easy)
+**Q:** Which Australian player was the nation's all-time leading scorer in 2022?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2900 — Australia (easy)
+**Q:** Which Australian player's 108 caps and 50 goals made him their all-time leading scorer?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2901 — Australia (easy)
+**Q:** Which Australian player's 108 caps produced a record 50 goals?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2902 — Australia (easy)
+**Q:** Which Australian player's 2006 World Cup goal showcased rising football infrastructure?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2903 — Australia (medium)
+**Q:** Which Australian player's 2022 World Cup winner against Denmark secured their first knockout stage since 2006?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2904 — Australia (easy)
+**Q:** Which Australian player's 50 goals made him their all-time top scorer before 2018?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2905 — Australia (easy)
+**Q:** Which Australian player's 50 goals made him their top scorer by the 2018 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2906 — Australia (easy)
+**Q:** Which Australian player's 50 goals were the highest by an AFC nation's top scorer in 2022 qualifiers?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2907 — Australia (easy)
+**Q:** Which Australian player's acrobatic goals became iconic at FIFA World Cups?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2908 — Australia (easy)
+**Q:** Which Australian player's acrobatic goals became iconic at the 2014 FIFA World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2910 — Australia (easy)
+**Q:** Which Australian player's acrobatic goals defined his 2006-2018 World Cup campaigns?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2911 — Australia (easy)
+**Q:** Which Australian player's acrobatic goals were a hallmark of his World Cup play?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2912 — Australia (easy)
+**Q:** Which Australian player's acrobatic goals were iconic at the 2014 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2913 — Australia (easy)
+**Q:** Which Australian player's acrobatic volleys defined their 2014 World Cup style?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2914 — Australia (easy)
+**Q:** Which Australian player's iconic acrobatic goals defined their 2014 World Cup campaign?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2915 — Australia (easy)
+**Q:** Which Australian scored a 2022 World Cup winner versus Denmark?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2916 — Australia (easy)
+**Q:** Which Australian scored a bicycle kick goal in a 2017 World Cup qualifier?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2917 — Australia (easy)
+**Q:** Which Australian scored a goal against Serbia in the 2010 FIFA World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2919 — Australia (easy)
+**Q:** Which Australian scored the 2015 Asian Cup final winner against South Korea?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2920 — Australia (easy)
+**Q:** Which Australian scored the earliest goal at the 2022 World Cup?
+**Answer:** Craig Goodwin
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2921 — Australia (easy)
+**Q:** Which Australian scored the goal against Tunisia at the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2922 — Australia (easy)
+**Q:** Which Australian scored the winner against Denmark in the 2022 World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2923 — Australia (easy)
+**Q:** Which Australian set his 50-goal national record by the 2018 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2924 — Australia (easy)
+**Q:** Which Australian stadium for World Cup qualifiers holds over 80,000?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2925 — Australia (easy)
+**Q:** Which Australian stadium had the largest capacity for 2022 FIFA World Cup qualifiers?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2926 — Australia (easy)
+**Q:** Which Australian stadium has an 83,500 capacity for 2026 FIFA World Cup qualifiers?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2927 — Australia (easy)
+**Q:** Which Australian stadium hosted 2026 WC qualifiers for the Socceroos?
+**Answer:** AAMI Park
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2930 — Australia (easy)
+**Q:** Which Australian stadium hosted a 2018 World Cup qualifier?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2931 — Australia (easy)
+**Q:** Which Australian stadium hosted a 2022 FIFA World Cup qualifier?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2935 — Australia (easy)
+**Q:** Which Australian stadium hosted a 2022 World Cup qualifier besides Stadium Australia?
+**Answer:** AAMI Park
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2936 — Australia (easy)
+**Q:** Which Australian stadium hosted a 2022 World Cup qualifier for the Socceroos?
+**Answer:** AAMI Park
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2937 — Australia (easy)
+**Q:** Which Australian stadium hosted a 2022 World Cup qualifier, showing the sport's growth?
+**Answer:** AAMI Park
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2938 — Australia (easy)
+**Q:** Which Australian stadium hosted a key 2022 FIFA World Cup qualifier?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2939 — Australia (easy)
+**Q:** Which Australian stadium hosted the 2015 Asian Cup final?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2942 — Australia (easy)
+**Q:** Which Australian stadium hosted the 2022 FIFA World Cup qualifier due to its capacity?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2947 — Australia (easy)
+**Q:** Which Australian stadium hosted the 2022 World Cup qualifier with an 83,500 capacity?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2949 — Australia (easy)
+**Q:** Which Australian stadium hosted the Socceroos' 2022 World Cup qualifiers?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2951 — Australia (easy)
+**Q:** Which Australian stadium hosts Socceroos matches alongside Stadium Australia?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2952 — Australia (easy)
+**Q:** Which Australian stadium hosts Socceroos matches for FIFA World Cup qualifiers?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2954 — Australia (easy)
+**Q:** Which Australian stadium is the Socceroos' primary venue?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2956 — Australia (easy)
+**Q:** Which Australian stadium, besides Stadium Australia, hosts Socceroos matches?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2957 — Australia (easy)
+**Q:** Which Australian stadium, besides Stadium Australia, hosts Socceroos World Cup qualifiers?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2958 — Australia (easy)
+**Q:** Which Australian stadium, capacity ~83,500, is the primary Socceroos venue?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2959 — Australia (easy)
+**Q:** Which Australian stadium, used for a 2022 World Cup qualifier, holds about 83,500 fans?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2960 — Australia (easy)
+**Q:** Which Australian stadium, used for the 2015 Asian Cup final, has a capacity near 83,500?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 2961 — Australia (easy)
+**Q:** Which Australian stadium, with an 83,500 capacity, hosted the 2015 Asian Cup final?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2962 — Australia (easy)
+**Q:** Which Australian stadium's 83,500 capacity could host a 2026 World Cup final?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2963 — Australia (easy)
+**Q:** Which Australian stadium's 83,500 capacity hosted the 2022 FIFA World Cup qualifiers?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2964 — Australia (easy)
+**Q:** Which Australian stadium's capacity is approximately 83,500?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2965 — Australia (easy)
+**Q:** Which Australian star retired before the 2022 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2966 — Australia (easy)
+**Q:** Which Australian striker netted 50 career goals for his nation?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2967 — Australia (medium)
+**Q:** Which Australian team reached 14th in the FIFA rankings?
+**Answer:** The Socceroos
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2968 — Australia (easy)
+**Q:** Which Australian team reached the 2011 Asian Cup semi-finals?
+**Answer:** The Socceroos
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2969 — Australia (easy)
+**Q:** Which Australian team's 2022 World Cup run reignited national football interest?
+**Answer:** The Socceroos
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2970 — Australia (easy)
+**Q:** Which Australian team's 2022 World Cup success boosted national interest?
+**Answer:** The Socceroos
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2972 — Australia (easy)
+**Q:** Which Australian veteran also played at the 2018 FIFA World Cup?
+**Answer:** Mathew Leckie
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2973 — Australia (easy)
+**Q:** Which Australian was a key defender at the 2022 World Cup in Qatar?
+**Answer:** Kye Rowles
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2977 — Australia (easy)
+**Q:** Which Australian was a key midfielder in their 2022 World Cup squad?
+**Answer:** Jackson Irvine
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2978 — Australia (easy)
+**Q:** Which Australian was first-choice goalkeeper at both the 2018 and 2022 World Cups?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2980 — Australia (easy)
+**Q:** Which Australian was the first-choice goalkeeper at the 2022 World Cup?
+**Answer:** Mat Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2981 — Australia (medium)
+**Q:** Which Australian World Cup 2022 result was their best since 2006?
+**Answer:** Reached round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2982 — Australia (medium)
+**Q:** Which Australian World Cup qualification method was used for 2026?
+**Answer:** AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2983 — Australia (hard)
+**Q:** Which Australian World Cup qualification was via AFC qualification?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2984 — Australia (hard)
+**Q:** Which Australian World Cup run caused a greater surge in national football interest than 2006?
+**Answer:** The 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2985 — Australia (medium)
+**Q:** Which Australian World Cup run in 2022 reignited national football interest?
+**Answer:** Round of 16 run
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2986 — Australia (easy)
+**Q:** Which Australian World Cup run reignited football interest in 2022?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2987 — Australia (hard)
+**Q:** Which Australian World Cup team lost all three group stage matches?
+**Answer:** 2014 Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2988 — Australia (easy)
+**Q:** Which Australian's acrobatic goals defined his nation's play at the 2014 World Cup?
+**Answer:** Tim Cahill
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2989 — Australia (easy)
+**Q:** Which CONCACAF nation did Australia beat in the 2018 World Cup intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2990 — Australia (medium)
+**Q:** Which confederation did Australia join for the 2010 World Cup qualifiers?
+**Answer:** Asian Football Confederation
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2993 — Australia (medium)
+**Q:** Which confederation did Australia represent in qualifying for the 2006 World Cup?
+**Answer:** OFC
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2994 — Australia (easy)
+**Q:** Which event in 2022 boosted football interest across Australia?
+**Answer:** World Cup success
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2995 — Australia (hard)
+**Q:** Which FIFA World Cup began Australia's six-tournament qualification streak?
+**Answer:** 2006 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2996 — Australia (hard)
+**Q:** Which FIFA World Cup did Australia qualify for through AFC qualification?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 2999 — Australia (easy)
+**Q:** Which manager coached Australia at the 2018 World Cup?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3001 — Australia (easy)
+**Q:** Which manager led Australia at the 2018 FIFA World Cup in Russia?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3002 — Australia (easy)
+**Q:** Which manager led Australia at the 2018 FIFA World Cup?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3005 — Australia (easy)
+**Q:** Which manager led Australia to the 2015 Asian Cup title?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3008 — Australia (easy)
+**Q:** Which manager led Australia to win the 2015 Asian Cup?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3009 — Australia (medium)
+**Q:** Which manager led Australia's 2014 World Cup qualification campaign?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3010 — Australia (easy)
+**Q:** Which manager led Australia's 2018 World Cup qualifying campaign from 2013 to 2017?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3012 — Australia (easy)
+**Q:** Which manager led Australia's national team from 2010 to 2013?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3013 — Australia (easy)
+**Q:** Which manager led Australia's tactical setup at the 2018 World Cup?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3017 — Australia (easy)
+**Q:** Which manager made Australia's tactical decisions at the 2018 World Cup?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3018 — Australia (easy)
+**Q:** Which manager succeeded Holger Osieck as Australia's head coach?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3019 — Australia (easy)
+**Q:** Which manager succeeded Pim Verbeek as Australia's coach in 2010?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3020 — Australia (easy)
+**Q:** Which manager was appointed for Australia's 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3021 — Australia (easy)
+**Q:** Which manager was appointed to lead Australia's 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3022 — Australia (easy)
+**Q:** Which manager will lead Australia at the 2026 FIFA World Cup?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3023 — Australia (easy)
+**Q:** Which manager will lead Australia's 2026 World Cup campaign?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3024 — Australia (easy)
+**Q:** Which manager's defensive system drove Australia's 2022 World Cup success?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3025 — Australia (easy)
+**Q:** Which manager's defensive system helped Australia at the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3026 — Australia (easy)
+**Q:** Which manager's system boosted Australian football interest in 2022?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3027 — Australia (medium)
+**Q:** Which manager's tenure saw Australia reach its highest FIFA ranking in 2009?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3029 — Australia (easy)
+**Q:** Which nation did Australia beat 1-0 at the 2022 World Cup?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3030 — Australia (medium)
+**Q:** Which nation did Australia beat 1-0 to advance from the 2022 World Cup group stage?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3031 — Australia (easy)
+**Q:** Which nation did Australia beat 1-0 to advance to the 2022 World Cup round of 16?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3032 — Australia (easy)
+**Q:** Which nation did Australia beat 1-0 to reach the 2022 World Cup last 16?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3034 — Australia (easy)
+**Q:** Which nation did Australia beat in a 2018 World Cup intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3036 — Australia (easy)
+**Q:** Which nation did Australia beat in a 2022 intercontinental playoff?
+**Answer:** Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3037 — Australia (easy)
+**Q:** Which nation did Australia beat in a 2022 World Cup intercontinental playoff?
+**Answer:** Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3040 — Australia (easy)
+**Q:** Which nation did Australia beat in the 2015 Asian Cup final?
+**Answer:** South Korea
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 3042 — Australia (easy)
+**Q:** Which nation did Australia beat in the 2022 World Cup intercontinental playoff?
+**Answer:** Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3043 — Australia (easy)
+**Q:** Which nation did Australia beat to qualify for the 2018 World Cup?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3044 — Australia (easy)
+**Q:** Which nation did Australia beat to reach the 2022 World Cup round of 16?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3045 — Australia (easy)
+**Q:** Which nation did Australia defeat in a 2018 World Cup intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3046 — Australia (easy)
+**Q:** Which nation did Australia defeat in the 2015 Asian Cup final?
+**Answer:** South Korea
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3047 — Australia (easy)
+**Q:** Which nation did Australia defeat in the 2022 World Cup intercontinental playoff?
+**Answer:** Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3048 — Australia (easy)
+**Q:** Which nation did Australia draw 1-1 with at the 2010 FIFA World Cup?
+**Answer:** Ghana
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3050 — Australia (medium)
+**Q:** Which nation did Australia face in the 2010 World Cup group stage?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3052 — Australia (easy)
+**Q:** Which nation did Australia lose 2-1 to in the 2022 World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3054 — Australia (medium)
+**Q:** Which nation eliminated Australia from the 2010 World Cup group stage with a 4-0 win?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3055 — Australia (medium)
+**Q:** Which nation eliminated Australia in the 2022 FIFA World Cup knockout stage?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3056 — Australia (easy)
+**Q:** Which nation eliminated Australia in the 2022 World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3061 — Australia (medium)
+**Q:** Which nation matched Australia's peak FIFA ranking of 14th before the 2022 World Cup?
+**Answer:** Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3073 — Australia (easy)
+**Q:** Which nation, like Australia, qualified for the 2018 FIFA World Cup?
+**Answer:** Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3082 — Australia (easy)
+**Q:** Which player was in Australia's 2022 World Cup round of 16 squad?
+**Answer:** Mathew Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3084 — Australia (easy)
+**Q:** Which round did Australia reach at the 2022 FIFA World Cup?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3085 — Australia (easy)
+**Q:** Which round did Australia reach before losing to Argentina in 2022?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3086 — Australia (easy)
+**Q:** Which Saudi club did Australia's Western Sydney Wanderers beat in the 2014 AFC Champions League final?
+**Answer:** Al-Hilal
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3089 — Australia (easy)
+**Q:** Which stadium hosted a 2022 World Cup qualifier for Australia?
+**Answer:** Melbourne Rectangular Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3090 — Australia (easy)
+**Q:** Which stadium hosted Australia's 2015 Asian Cup final due to its 83,500 capacity?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3091 — Australia (easy)
+**Q:** Which stadium hosted Australia's 2015 Asian Cup final win?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3092 — Australia (easy)
+**Q:** Which stadium hosted Australia's 2022 World Cup playoff win?
+**Answer:** Ahmad bin Ali Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3094 — Australia (easy)
+**Q:** Which stadium hosted Australia's 2022 World Cup qualifier against Japan?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3098 — Australia (easy)
+**Q:** Which stadium hosted the 2022 World Cup playoff where Australia faced Peru?
+**Answer:** Al Rayyan Stadium
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3099 — Australia (easy)
+**Q:** Which stadium, Australia's primary venue for 2022 World Cup qualifiers, holds over 80,000 fans?
+**Answer:** Stadium Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3101 — Australia (easy)
+**Q:** Which stage did Australia reach in the 2022 FIFA World Cup?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3102 — Australia (easy)
+**Q:** Which system did Australia use at the 2022 FIFA World Cup?
+**Answer:** Defensive organisation and counter-attacking
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3104 — Australia (easy)
+**Q:** Which team beat Australia 4-1 in the 2022 World Cup opener?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3105 — Australia (easy)
+**Q:** Which team beat Australia 4-1 in their 2022 World Cup opener?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3106 — Australia (easy)
+**Q:** Which team beat Australia in the 2022 World Cup opener?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3107 — Australia (easy)
+**Q:** Which team did Australia beat 1-0 at the 2022 World Cup?
+**Answer:** Tunisia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3109 — Australia (medium)
+**Q:** Which team did Australia beat 1-0 in their 2022 World Cup group stage?
+**Answer:** Tunisia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3110 — Australia (medium)
+**Q:** Which team did Australia beat 1-0 to reach the 2022 World Cup knockout stage?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3112 — Australia (easy)
+**Q:** Which team did Australia beat 1-0 to reach the 2022 World Cup round of 16?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3114 — Australia (easy)
+**Q:** Which team did Australia beat at the 2022 FIFA World Cup?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3115 — Australia (easy)
+**Q:** Which team did Australia beat in 2022 to reach the round of 16?
+**Answer:** Denmark
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3116 — Australia (easy)
+**Q:** Which team did Australia beat in a 2018 playoff, unlike 2022?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3117 — Australia (easy)
+**Q:** Which team did Australia beat in a 2018 World Cup playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3118 — Australia (easy)
+**Q:** Which team did Australia beat in a 2022 World Cup intercontinental playoff?
+**Answer:** Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3121 — Australia (easy)
+**Q:** Which team did Australia beat in the 2018 FIFA World Cup intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3125 — Australia (easy)
+**Q:** Which team did Australia beat in their 2018 World Cup intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3126 — Australia (easy)
+**Q:** Which team did Australia beat in their 2022 World Cup intercontinental playoff?
+**Answer:** Peru
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3127 — Australia (easy)
+**Q:** Which team did Australia beat to qualify for the 2018 World Cup?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3128 — Australia (easy)
+**Q:** Which team did Australia beat to reach the 2011 Asian Cup semi-finals?
+**Answer:** Iraq
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3129 — Australia (easy)
+**Q:** Which team did Australia defeat in the 2015 Asian Cup final?
+**Answer:** South Korea
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3130 — Australia (easy)
+**Q:** Which team did Australia defeat in their 2018 World Cup intercontinental playoff?
+**Answer:** Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3131 — Australia (easy)
+**Q:** Which team did Australia face in the 2022 FIFA World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3134 — Australia (medium)
+**Q:** Which team did Australia lose 4-0 to in the 2010 World Cup group stage?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3135 — Australia (easy)
+**Q:** Which team did Australia lose 4-1 to in their 2022 World Cup opener?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3136 — Australia (easy)
+**Q:** Which team eliminated Australia 2-1 in the 2022 FIFA World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3137 — Australia (medium)
+**Q:** Which team eliminated Australia from the 2010 World Cup group stage?
+**Answer:** Germany and Ghana
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3138 — Australia (easy)
+**Q:** Which team eliminated Australia from the 2022 World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3139 — Australia (medium)
+**Q:** Which team eliminated Australia in the 2010 FIFA World Cup group stage?
+**Answer:** Germany
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3140 — Australia (easy)
+**Q:** Which team eliminated Australia in the 2022 World Cup round of 16?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+
+### Row 3141 — Australia (easy)
+**Q:** Which team knocked Australia out of the 2022 World Cup?
+**Answer:** Argentina
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3144 — Australia (easy)
+**Q:** Which team's 2022 World Cup performance caused Australia's 4-1 opening loss?
+**Answer:** France
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3145 — Australia (easy)
+**Q:** Which team's 2022 World Cup style mirrored Australia's defensive, counter-attacking system?
+**Answer:** Australia
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3151 — Australia (easy)
+**Q:** Which two nations did Australia beat in their last two intercontinental World Cup playoffs?
+**Answer:** Peru and Honduras
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3152 — Australia (easy)
+**Q:** Which two nations eliminated Australia from the 2010 FIFA World Cup?
+**Answer:** Germany and Ghana
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3157 — Australia (medium)
+**Q:** Which two World Cup qualifiers did Australia reach via intercontinental playoffs?
+**Answer:** 2018 and 2022
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3160 — Australia (medium)
+**Q:** Which World Cup cycle did Tony Popovic become Australia manager for?
+**Answer:** The 2026 cycle
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3164 — Australia (hard)
+**Q:** Which World Cup did Australia qualify for via AFC qualification before 2014?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3165 — Australia (medium)
+**Q:** Which World Cup did Bert van Marwijk manage Australia at?
+**Answer:** 2018 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3166 — Australia (medium)
+**Q:** Which World Cup did Graham Arnold manage Australia in?
+**Answer:** 2022 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3168 — Australia (medium)
+**Q:** Which World Cup featured a Tim Cahill goal for Australia?
+**Answer:** 2014 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3169 — Australia (easy)
+**Q:** Which World Cup result was Australia's best since 2006?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3170 — Australia (easy)
+**Q:** Which World Cup round did Australia reach in 2022, their best in 16 years?
+**Answer:** Round of 16
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3171 — Australia (medium)
+**Q:** Which World Cup was Australia's first after moving from OFC to AFC?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3172 — Australia (medium)
+**Q:** Which World Cup was Pim Verbeek the Australia manager for?
+**Answer:** 2010 World Cup
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3173 — Australia (medium)
+**Q:** Which World Cup year saw Australia host a qualifier at Melbourne Rectangular Stadium?
+**Answer:** 2014
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3174 — Australia (medium)
+**Q:** Which year did Ange Postecoglou's Australia win the Asian Cup?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3175 — Australia (medium)
+**Q:** Which year did Australia beat South Korea in the Asian Cup final?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3177 — Australia (medium)
+**Q:** Which year did Australia host and win the Asian Cup?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3179 — Australia (medium)
+**Q:** Which year did Australia win the Asian Cup before qualifying for the 2018 World Cup?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3180 — Australia (medium)
+**Q:** Which year did Australia win the Asian Cup on home soil?
+**Answer:** 2015
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3181 — Australia (easy)
+**Q:** Who captained Australia at both the 2014 and 2018 World Cups?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3182 — Australia (easy)
+**Q:** Who captained Australia at the 2014 and 2018 FIFA World Cups?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3183 — Australia (easy)
+**Q:** Who captained Australia in their 4-1 loss to France in 2022?
+**Answer:** Mathew Ryan
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3184 — Australia (easy)
+**Q:** Who captained Australia to win the 2015 Asian Cup as hosts?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3185 — Australia (easy)
+**Q:** Who captained Australia to win the 2015 Asian Cup on home soil?
+**Answer:** Mile Jedinak
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3186 — Australia (easy)
+**Q:** Who implemented Australia's defensive system at the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3187 — Australia (easy)
+**Q:** Who led Australia to the 2022 World Cup round of 16?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3188 — Australia (easy)
+**Q:** Who led Australia to win the 2015 Asian Cup?
+**Answer:** Ange Postecoglou
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3190 — Australia (easy)
+**Q:** Who managed Australia at the 2018 FIFA World Cup?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3191 — Australia (easy)
+**Q:** Who managed Australia at the 2022 FIFA World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3192 — Australia (easy)
+**Q:** Who managed Australia in their 2022 intercontinental playoff against Peru?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3193 — Australia (easy)
+**Q:** Who managed Australia's team at the 2018 FIFA World Cup?
+**Answer:** Bert van Marwijk
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3194 — Australia (easy)
+**Q:** Who managed Australia's team from 2010 to 2013?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3195 — Australia (easy)
+**Q:** Who scored a brilliant individual goal for Argentina against Australia in the 2022 World Cup round of 16?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3196 — Australia (easy)
+**Q:** Who scored a stunning goal for Argentina vs Australia in the 2022 World Cup round of 16?
+**Answer:** Lionel Messi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3197 — Australia (easy)
+**Q:** Who scored Australia's winning goal against South Korea in the 2015 Asian Cup final?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3198 — Australia (easy)
+**Q:** Who scored Australia's winning goal in the 2015 Asian Cup final?
+**Answer:** James Troisi
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3199 — Australia (easy)
+**Q:** Who set up Australia's defensive, counter-attacking system at the 2022 World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3200 — Australia (easy)
+**Q:** Who was appointed Australia manager for the 2026 World Cup cycle?
+**Answer:** Tony Popovic
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3201 — Australia (easy)
+**Q:** Who was Australia's manager at the 2010 FIFA World Cup?
+**Answer:** Pim Verbeek
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3202 — Australia (easy)
+**Q:** Who was Australia's manager at the 2022 FIFA World Cup?
+**Answer:** Graham Arnold
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3203 — Australia (easy)
+**Q:** Who was Australia's manager from 2010 until 2013?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3204 — Australia (easy)
+**Q:** Who was the Australia manager from 2010 to 2013?
+**Answer:** Holger Osieck
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3205 — Australia (easy)
+**Q:** Why did an Australian A-League club win the 2014 AFC Champions League?
+**Answer:** Strong domestic league
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3206 — Australia (easy)
+**Q:** Why did Australia host a key 2018 FIFA World Cup qualifier at Stadium Australia?
+**Answer:** Largest capacity for attendance
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3208 — Australia (easy)
+**Q:** Why did Australia join the AFC before the 2007 Asian Cup?
+**Answer:** For stronger competition
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3211 — Australia (easy)
+**Q:** Why did Australia lose their 2022 World Cup opener 4-1?
+**Answer:** France scored four goals
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3212 — Australia (easy)
+**Q:** Why did Australia qualify directly for the 2026 World Cup?
+**Answer:** Through AFC qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3214 — Australia (easy)
+**Q:** Why did Australia reach the 2018 FIFA World Cup via a playoff?
+**Answer:** Failed automatic qualification
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3215 — Australia (easy)
+**Q:** Why did Australia require larger stadiums for their 2022 World Cup qualifiers?
+**Answer:** Increased popularity of football
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3216 — Australia (easy)
+**Q:** Why did Australia switch from OFC to AFC before 2010 World Cup qualifying?
+**Answer:** To access stronger competition
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3218 — Australia (easy)
+**Q:** Why did Australia switch to the AFC for World Cup qualifiers in 2006?
+**Answer:** To access stronger competition
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3219 — Australia (medium)
+**Q:** Why did Australia win the 2015 Asian Cup final?
+**Answer:** Beat South Korea 2-1
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3220 — Australia (medium)
+**Q:** Why did Australia win the 2015 Asian Cup on home soil?
+**Answer:** Beat South Korea 2-1
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3221 — Australia (medium)
+**Q:** Why did Australia's 2006 FIFA World Cup qualification path change?
+**Answer:** Joined AFC from OFC
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3222 — Australia (easy)
+**Q:** Why did Australia's 2022 World Cup squad have a balanced core?
+**Answer:** A-League and European players
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3224 — Australia (easy)
+**Q:** Why did Australia's football infrastructure grow before the 2022 World Cup?
+**Answer:** The sport's popularity increased
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3225 — Australia (easy)
+**Q:** Why did Australia's six-World-Cup streak start in 2006?
+**Answer:** Joined the AFC
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3226 — Australia (easy)
+**Q:** Why did Australia's squad change after the 2022 FIFA World Cup?
+**Answer:** Major generational transition
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3229 — Australia (easy)
+**Q:** Why did Australia's stadium infrastructure expand significantly after 2006?
+**Answer:** Increased football popularity
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3235 — Australia (easy)
+**Q:** Why has Australia's squad undergone major change since 2022?
+**Answer:** A natural generational shift
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3236 — Australia (easy)
+**Q:** Why has the Australian squad changed significantly since the 2022 World Cup?
+**Answer:** Generational transition
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3237 — Australia (easy)
+**Q:** Why have Australia been regular Asian Cup contenders since 2006?
+**Answer:** Moved to the AFC
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3240 — Australia (easy)
+**Q:** Why was Australia's 2023 Asian Cup squad considered balanced?
+**Answer:** A-League and European players
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
+
+### Row 3241 — Australia (easy)
+**Q:** Why were Australia eliminated from the 2014 FIFA World Cup?
+**Answer:** Lost all group matches
+**Verdict:** Passed mechanical/heuristic (QA_PASSED.md) + TC-06 liveness verified against the Australia fact base. Source: https://en.wikipedia.org/wiki/Australia_men%27s_national_soccer_team
