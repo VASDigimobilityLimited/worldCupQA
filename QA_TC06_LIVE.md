@@ -10,7 +10,7 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Last verified row: 810**  (resume from row 811)
+**Last verified row: 1228**  (ALGERIA COMPLETE — resume at row 1229 = Argentina, next country)
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -568,3 +568,50 @@ plus a club-history cluster and false-premise rows. One web check (Slimani WCQ g
 | False explanation (caps/venue/group goals) | ❌ FAIL | 735,739,767,805 |
 
 **Running totals (new method, rows 231+):** 344 PASS-ALL · 119 FAIL-LIVENESS.
+
+---
+
+## Batch rows 811–920 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+92 candidates — mostly Mahrez/Slimani/Bounedjah duplicates (correct) plus a dense false-premise
+and temporal-contradiction cluster. **Result: 71 PASS · 21 FAIL.**
+
+| Cluster | Verdict | Rows |
+|---------|:-------:|------|
+| Mahrez / Slimani / Bounedjah correct duplicates | ✅ PASS | 812–814,817,820,823,825,826,831–839,841–851,856,858–867,869–878(in range),882,884–886,888–891,893,894,897,899–904,906–914,916–918,920 |
+| 2018/2022 WC false premise (squad/played/captain) | ❌ FAIL | 815,821,852,854,857,880,883 |
+| Slimani "top scorer" wrong timing | ❌ FAIL | 818,822,892,895,896,915 |
+| Temporal contradiction (2016 PL before 2014) | ❌ FAIL | 879,887,919 |
+| Mahrez didn't score 2014 / 2014 WCQ | ❌ FAIL | 811,868 |
+| Algeria didn't top 2018 group | ❌ FAIL | 840 |
+| Squad-age narrative / non-unique | ❌ FAIL | 855,905 |
+
+**Running totals (new method, rows 231+):** 415 PASS-ALL · 140 FAIL-LIVENESS.
+
+---
+
+## Batch rows 921–1228 (Algeria) — NEW METHOD — FINAL ALGERIA BATCH
+
+175 candidates — mostly correct duplicates (Halilhodžić 2014, Belmadi 2019, Bounedjah 2019
+final, beat Senegal/Egypt, failed 2018/2022) plus recurring-error clusters.
+**Result: 139 PASS · 36 FAIL.**
+
+| Cluster | Verdict | Count |
+|---------|:-------:|------:|
+| Correct duplicates (managers / scorers / results / qualification) | ✅ PASS | 139 |
+| "intercontinental playoff" mislabel (2010 Egypt) | ❌ FAIL | 935,1013,1017,1020,1024,1094,1097,1144,1218 |
+| Self-referential ("like Algeria… → Algeria") | ❌ FAIL | 954,966,1037,1042,1053,1058 |
+| "via CAF" non-unique / false "directly" | ❌ FAIL | 929,930,1139,1142,1143 |
+| Other non-unique | ❌ FAIL | 1052,1067,1043,1107,956,1054 |
+| Wrong fact (Egypt 2nd AFCON) | ❌ FAIL | 955 |
+| 2022 WC false premise | ❌ FAIL | 922,927,1147 |
+| False contrast (Uruguay/Algeria playoff) | ❌ FAIL | 1039 |
+| Squad-rebuild narrative | ❌ FAIL | 1219,1221,1222,1223,1224 |
+
+**Running totals (new method, rows 231+): 554 PASS-ALL · 176 FAIL-LIVENESS.**
+
+# ✅ ALGERIA COMPLETE (rows 2–1228)
+- Rows 2–230 (old method): 181 PASS / 48 FAIL (in QA_TC06_PASSED/FAILED.md)
+- Rows 231–1228 (new method, QA_PASSED.md pool only): **554 ship-ready** (QA_PASSED_ALL.md)
+  + **176 dangerous** (QA_FAILED_LIVENESS_PASSED_OTHERS.md); ~268 rows skipped (in QA_FAILED.md).
+- Next country: **Argentina** (rows 1229–2160). (The CSV is alphabetical by country.)

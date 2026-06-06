@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **119** (last verified row 810)
+Total failed-liveness-passed-others so far: **176** (last verified row 1228 — ALGERIA COMPLETE)
 
 ---
 
@@ -603,5 +603,127 @@ explanation says he scored "**Algeria's only two goals in the 2014 group stage**
 **six** in the group stage (1 v Belgium, 4 v South Korea, 1 v Russia).
 **Source:** https://en.wikipedia.org/wiki/Algeria_at_the_2014_FIFA_World_Cup
 **Remedy:** Fix the explanation (Algeria scored 6 group-stage goals; Slimani got 2 of them).
+
+---
+
+## Rows 811–920 (Algeria)
+
+### Rows 815, 821, 852, 857, 880, 883, 854 — FAIL: 2018/2022 World Cup false premise
+Each places an Algerian **at the 2018 or 2022 World Cup** (which Algeria did **not** reach):
+- **815, 821:** Slimani "all-time top scorer **at the 2022 World Cup** / during the 2022 tournament"
+- **852:** Mahrez "in the **2018 World Cup squad**"; **880:** Mahrez "**played at the 2018 World Cup**"
+- **883:** Mahrez "earned his **2018 World Cup call-up**"; **857:** Mahrez "captain **at the 2022 World Cup**"
+- **854:** Bounedjah "**playing at the 2014 World Cup's** Estádio Beira-Rio" — he didn't play in 2014 (debuted ~2018)
+**Source:** https://en.wikipedia.org/wiki/Algeria_national_football_team
+**Remedy:** Re-anchor to qualifying campaigns / 2014 / 2019, or drop.
+
+### Rows 818, 822, 892, 895, 896, 915 — FAIL: Slimani "top scorer" wrong timing
+All claim Slimani was the all-time top scorer **at the 2014 WC** (818, 915) or **became** top scorer
+**during 2014 / 2018 qualifying** (822, 892, 895, 896). He passed Tasfaout's record on **8 Oct 2021**
+(a 2022 qualifier); at the 2014 WC the record-holder was still Tasfaout.
+**Source:** https://en.wikipedia.org/wiki/Islam_Slimani
+**Remedy:** Use "during 2022 qualifying (Oct 2021)" or a present-tense appositive instead.
+
+### Rows 879, 887, 919 — FAIL: temporal contradiction
+All have the 2016 Premier League win **preceding** a 2014 event:
+- **879:** "won PL 2016, **before** his 2014 World Cup debut"
+- **887:** "2016 PL win **preceded** the 2014 World Cup qualification"
+- **919:** "in the 2014 squad **after winning the 2016** Premier League"
+The 2016 title came **after** 2014 — the explanations themselves say "later/after," contradicting the questions.
+**Source:** https://en.wikipedia.org/wiki/Riyad_Mahrez
+**Remedy:** Drop the impossible ordering.
+
+### Row 811 — FAIL: false (Mahrez didn't score in 2014)
+**Q:** …key to 2019 AFCON **and also scored at the 2014 World Cup**? **A:** Mahrez (E: "scored against South Korea")
+**Why it fails:** Mahrez scored **0** goals at the 2014 World Cup; Algeria's South Korea scorers were
+Slimani, Halliche, Djabou and Brahimi.
+**Source:** https://en.wikipedia.org/wiki/Algeria_at_the_2014_FIFA_World_Cup
+**Remedy:** Drop the "scored at 2014" clause (or change the player).
+
+### Row 840 — FAIL: false (Algeria did not top the 2018 group)
+**Q:** …2016 PL win preceded his **2018 World Cup qualification group top spot**? **A:** Mahrez
+**Why it fails:** Algeria finished **bottom** of their 2018 qualifying group (Group B; Nigeria topped it,
+Algeria last with 1 point) — they did not top it.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop — the premise is false.
+
+### Row 868 — FAIL: false (Mahrez played no 2014 qualifiers)
+**Q:** …star attacker **scored in the 2014 World Cup qualifiers**? **A:** Mahrez
+**Why it fails:** Mahrez debuted for Algeria in 2014, **after** qualification ended (Nov 2013), so he
+played in none of the 2014 qualifiers (same defect as row 620). The intended scorer is Slimani.
+**Source:** https://en.wikipedia.org/wiki/Riyad_Mahrez
+**Remedy:** Change the answer to Slimani, or drop.
+
+### Rows 855, 905 — FAIL: unverifiable narrative / non-unique
+- **855:** "which squad was younger, 2014 or 2026 qualifiers? → 2026" — unsourced squad-age/rebuild claim.
+- **905:** "which striker missed the 2018 and 2022 World Cups? → Slimani" — the **whole team** missed both,
+  so all options (Mahrez, Feghouli, Brahimi) are equally valid → non-unique.
+**Source:** https://en.wikipedia.org/wiki/Algeria_national_football_team
+**Remedy:** Replace with verifiable/uniquely-answerable facts, or drop.
+
+---
+
+## Rows 921–1228 (Algeria)
+
+### Rows 935, 1013, 1017, 1020, 1024, 1094, 1097, 1144, 1218 — FAIL: "intercontinental playoff" mislabel
+All describe Algeria's **2010 qualification play-off vs Egypt** (Omdurman, 18 Nov 2009) as an
+"**intercontinental** playoff" (in the question and/or explanation). It was an intra-**CAF** play-off
+(the CAF third-round decider), not intercontinental. Answers ("Egypt" / "2010") are correct; the label is the defect.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_%E2%80%93_CAF_Third_Round
+**Remedy:** Replace "intercontinental playoff" with "CAF play-off vs Egypt."
+
+### Rows 954, 966, 1037, 1042, 1053, 1058 — FAIL: self-referential answer
+Each asks "which CAF/other nation, **like Algeria**, …" but the keyed answer is **Algeria itself**
+(954/966 "nearly beat Germany 2014", 1037/1058 "best result = R16", 1042/1053 "qualified for 2026 via CAF").
+A "which other nation like X" question cannot be answered "X."
+**Source:** https://en.wikipedia.org/wiki/Algeria_national_football_team
+**Remedy:** Supply a genuine other nation, or rephrase to drop "like Algeria."
+
+### Rows 929, 930, 1139, 1142, 1143 — FAIL: "qualified via CAF" non-unique / false "directly"
+Algeria — being a CAF nation — reached **2010, 2014 and 2026 all through CAF**. So:
+- **929, 930:** "achieved/secured through CAF (→ 2014)" with **2010** as a distractor — 2010 was also CAF → non-unique.
+- **1139:** "two World Cups via CAF → 2014 and 2026" — but **2010** was also via CAF → distractor "2010 and 2014" equally valid.
+- **1143:** "qualified through CAF → 2026" with 2010/2014 distractors (both also CAF) → non-unique.
+- **1142:** "qualified **directly through CAF, not a playoff** → 2014" — **false**: 2014 was a CAF **play-off** vs Burkina Faso; the only direct qualification was **2026**.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_%E2%80%93_CAF_Third_Round
+**Remedy:** Use a unique discriminator ("not a play-off" → 2026, as row 631 does), or drop.
+
+### Rows 1052, 1067, 1043, 1107, 956, 1054 — FAIL: non-unique answer
+- **1052:** "like Algeria, qualified via CAF for 2014 → Nigeria" — **Ghana** and **Cameroon** (distractors) also qualified for 2014 via CAF.
+- **1067:** "like Algeria, eliminated in the 2010 group stage → South Africa" — **Nigeria** and **Ivory Coast** also group-exited in 2010 (only Ghana advanced).
+- **1043:** "reached the 2010 QF, unlike Algeria → Germany" — **Spain** (distractor) won 2010, so also reached the QF.
+- **1107:** "did NOT face in the 2014 **knockout** stage → Argentina" — **Russia** and **South Korea** (distractors) were group opponents, so also not faced in the knockout.
+- **956:** "unlike Algeria, qualified for **both** 2018 and 2022 → Tunisia" — **Morocco** (distractor) also qualified for both.
+- **1054:** "like Algeria, won AFCON in both the 1990s and 2010s → Egypt" — **Nigeria** (1994, 2013) and **Ivory Coast** (1992, 2015) also did.
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** Replace the over-broad distractors so only one option fits.
+
+### Row 955 — FAIL: wrong fact
+**Q:** Which CAF nation, like Algeria in 2019, also won its second AFCON title? **A:** Egypt (E: "Egypt won its second in 1998")
+**Why it fails:** 1998 was Egypt's **fourth** AFCON title (after 1957, 1959, 1986); their second was **1959**.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** Pick a nation whose *second* title is the hook, or fix the Egypt fact.
+
+### Rows 922, 927, 1147 — FAIL: 2022 World Cup false premise
+- **922:** "winger with 90+ caps in their **2022 World Cup squad** → Mahrez" — no 2022 WC squad (Algeria didn't qualify).
+- **927:** "Algerian **World Cup 2022 player** also won the 2016 PL → Mahrez" — there were no Algerian 2022 WC players.
+- **1147:** "won the AFCON before qualifying → 2019 (E: 'then **qualified for the 2022 World Cup**')" — Algeria **failed** to qualify for 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Re-anchor to qualifying / 2014 / 2026.
+
+### Row 1039 — FAIL: false contrast
+**Q:** Which nation qualified for the 2014 WC via a playoff, **unlike Algeria**? **A:** Uruguay
+**Why it fails:** Uruguay's was an **intercontinental** play-off, but Algeria **also** qualified via a
+play-off (the CAF play-off vs Burkina Faso) — so "unlike Algeria" is false; the explanation's "Algeria
+qualified directly" repeats the recurring error.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_%E2%80%93_CAF_Third_Round
+**Remedy:** Reword to "intercontinental play-off, unlike Algeria's CAF play-off," or drop.
+
+### Rows 1219, 1221, 1222, 1223, 1224 — FAIL: unverifiable "squad rebuild" narrative
+All answer a "why did the squad change / look different after 2019" question with "**a squad rebuild**"
+(1219 is also circular: "because of their AFCON triumph"). The "post-2019 rebuild" is unsourced
+editorializing, and Belmadi remained manager throughout (so the "new manager" framing elsewhere is wrong too).
+**Source:** none located (narrative claim).
+**Remedy:** Replace with concrete, sourceable facts (named retirements/debutants), or drop.
 
 ---
