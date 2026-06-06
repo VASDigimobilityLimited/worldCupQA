@@ -10,7 +10,7 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Last verified row: 230**  (resume from row 231)
+**Last verified row: 810**  (resume from row 811)
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -371,3 +371,200 @@ v Senegal on 13 Oct 2015** (not a 2022 qualifier v Zambia). Sources per row in p
 | 228 | ✅ PASS | advanced past group only in 2014 |
 | 229 | ✅ PASS | finished last in group in 2010 |
 | 230 | ✅ PASS | lost 2-1 to Germany, 2014 |
+
+---
+
+## Batch rows 231–275 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+44 candidates (rows 231–275 present in QA_PASSED.md; 259 was not in the passed pool, skipped).
+Adjudicated against the established Algeria fact base — no new searches required.
+**Result: 37 PASS → QA_PASSED_ALL.md · 7 FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 231,232,233,234,240,241,248,272 | ✅ PASS | 2014 R16 / 2-1 loss to Germany |
+| 235 | ✅ PASS | Slimani scored key goals at 2014 WC |
+| 236,237,266 | ✅ PASS | Mahrez WC/senior debut 2014 |
+| 238 | ✅ PASS | eliminated Group C, 2010 |
+| 239 | ✅ PASS | Slimani top scorer in 2022 WCQ cycle (8 Oct 2021) |
+| 242 | ❌ FAIL | "intercontinental playoff" — was a CAF play-off vs Egypt |
+| 243 | ❌ FAIL | record-breaker was 37th goal (passed Tasfaout 36), not 41st |
+| 244 | ❌ FAIL | wrong answer — Mahrez WC debut 2014, not 2018 |
+| 245 | ❌ FAIL | "intercontinental playoff" — CAF play-off vs Egypt (2009) |
+| 246 | ❌ FAIL | wrong answer — qualified 2026 in Oct **2025**; 2025 not an option |
+| 247 | ❌ FAIL | false premise — 2014 squad Europe-based, not "MC Alger/Ligue 1" |
+| 249,250,251,252,253,254,255,256,257,258,260 | ✅ PASS | 2019 AFCON (1-0 v Senegal, Belmadi) |
+| 261,262 | ✅ PASS | Bounedjah 2nd-minute final goal, 2019 |
+| 263,269,270 | ✅ PASS | Mahrez key to 2019 AFCON |
+| 264,265,271 | ✅ PASS | Mahrez 2016 Premier League |
+| 267,268 | ✅ PASS | Belmadi appointed 2018 |
+| 273 | ✅ PASS | qualified 2014 via CAF |
+| 274 | ✅ PASS | Halilhodžić, 2014 knockout stage |
+| 275 | ❌ FAIL | explanation "directly" — 2014 via CAF play-off vs Burkina Faso; misleading 2010 framing |
+
+**Running totals (new method, rows 231+):** 37 PASS-ALL · 7 FAIL-LIVENESS.
+
+---
+
+## Batch rows 276–320 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+30 candidates (rows in QA_PASSED.md within 276–320). All scoreline/result questions covered
+by the Algeria fact base — no new searches. **Result: 29 PASS · 1 FAIL.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 279,289,291,292,299,301,302,303,304,305,310,311,316,320 | ✅ PASS | 2019 AFCON final, Algeria 1-0 Senegal |
+| 280,281,282,283,284,285,318 | ✅ PASS | best-ever WC result = Round of 16 (2014) |
+| 287,294,297,307,308,309,315 | ✅ PASS | 2014 R16, lost 2-1 to Germany (a.e.t.) |
+| 319 | ✅ PASS | Belmadi appointed 2018 (distractors have stray &nbsp;) |
+| 314 | ❌ FAIL | answer "02-Jan" = corrupted "2-1" scoreline (Excel date mangling) |
+
+**Running totals (new method, rows 231+):** 66 PASS-ALL · 8 FAIL-LIVENESS.
+
+---
+
+## Batch rows 321–385 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+56 candidates. Mostly fact-base coverage; one web check (Benrahma WCQ debut → 2021, confirmed).
+**Result: 48 PASS · 8 FAIL.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 321,322,342,344,345,346,347,348,350,351,352,354,356,362,364,371,372,376,377,383 | ✅ PASS | 2019 AFCON (1-0 v Senegal; Bounedjah 2'; Mahrez) |
+| 332,334,335,340,341,359,360,366,368,378,384,385 | ✅ PASS | 2014 R16 / 2-1 to Germany / Slimani goals / Halilhodžić |
+| 324,379,381,382 | ✅ PASS | 2010 group-stage exit |
+| 326,327,328,329,380 | ✅ PASS | 2021 AFCON group-stage exit as holders |
+| 330,331,333 | ✅ PASS | failed to qualify 2018 & 2022 |
+| 337 | ✅ PASS | 2014 qualification secured 2013 (correct) |
+| 353,373 | ✅ PASS | Belmadi appointed 2018 |
+| 370 | ✅ PASS | Benrahma WC-qualifying debut 2021 (verified) |
+| 336,338 | ❌ FAIL | "qualify for 2014 WC → 2014"; sealed Nov 2013 (cf. row 337) |
+| 339,363 | ❌ FAIL | "qualify for 2026 WC → 2026"; sealed Oct 2025 |
+| 358 | ❌ FAIL | record broken *during* 2022 qualifiers (8 Oct 2021), not before |
+| 365,367,369 | ❌ FAIL | unverifiable "squad rebuild" narrative |
+
+**Running totals (new method, rows 231+):** 114 PASS-ALL · 16 FAIL-LIVENESS.
+
+---
+
+## Batch rows 386–460 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+48 candidates. High fail rate — this range is mostly a flawed generated "Which Algeria
+attacker…" template. **Result: 31 PASS · 17 FAIL.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 387,419,420,421,429,437,449,451,452,453,458,459 | ✅ PASS | 2019 AFCON (beat Senegal 1-0; Bounedjah; Mahrez capt.; Belmadi) |
+| 389,390,391,415 | ✅ PASS | 2021 AFCON group exit as holders |
+| 392 | ✅ PASS | 2010 group-stage exit |
+| 394,395,397,398,401,427,454,455,456,460 | ✅ PASS | 2014 R16 / Germany / Halilhodžić |
+| 445,446,450,457 | ✅ PASS | Mahrez (Man City/2022 WCQ star) / Belmadi |
+| 430,434,441,442,447 | ❌ FAIL | false premise — Algeria not at 2022 WC (no squad, didn't play) |
+| 433,438,439,440,443 | ❌ FAIL | non-unique — "key modern attacker" fits Mahrez ≥ Benrahma |
+| 435,436 | ❌ FAIL | non-unique — Slimani also fits the caps/goals description |
+| 428,448 | ❌ FAIL | non-unique — multiple Algeria players satisfy |
+| 396 | ❌ FAIL | non-unique (France also not faced) + wrong explanation |
+| 417 | ❌ FAIL | wrong answer — Halilhodžić DID manage Ivory Coast |
+| 423 | ❌ FAIL | self-referential answer ("Algeria matched Algeria") |
+
+**Running totals (new method, rows 231+):** 145 PASS-ALL · 33 FAIL-LIVENESS.
+
+---
+
+## Batch rows 461–540 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+63 candidates — mostly coach/player-identity questions. Four web checks (2023 AFCON scorers,
+Chetti debut, Guedioura retirement). **Result: 55 PASS · 8 FAIL.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 461,470–472,474,475,478,480,483–485,487,488,490,492–500,502–506 | ✅ PASS | Belmadi (2018 appt / 2019 AFCON / 2022 WCQ) |
+| 476,477,479,481,482,486,489,491 | ✅ PASS | Halilhodžić (2014 WC) |
+| 464,465,517,519,521,522,530 | ✅ PASS | Slimani (all-time top scorer / 2014 goals) |
+| 466,468,509,510,514,516,524 | ✅ PASS | Mahrez (PL 2016 / Man City / 2019 captain) |
+| 463,534,535 | ✅ PASS | 2014 R16 (Djabou's 120'+1' goal) |
+| 473 | ✅ PASS | Leekens during failed 2018 qualifying |
+| 526 | ✅ PASS | Ghoulam debut 2013 (2014 WCQ) |
+| 462 | ❌ FAIL | Chetti debut was Arab Cup (Dec 2021), not the 2021 AFCON |
+| 507 | ❌ FAIL | false premise — Halilhodžić has no AFCON win |
+| 508 | ❌ FAIL | Slimani became top scorer Oct 2021, not "during 2019 AFCON" |
+| 512 | ❌ FAIL | Bennacer was the 2019 AFCON star, not a post-rebuild emergence |
+| 513 | ❌ FAIL | Djabou did NOT force ET (0-0 at 90'); his goal was 120'+1', 2-1 |
+| 515 | ❌ FAIL | non-unique — Bennacer/Belaïli also fit |
+| 527 | ❌ FAIL | Guedioura's last cap was Mar 2022, not a 2019 retirement |
+| 540 | ❌ FAIL | non-unique — Bounedjah scored at the 2023 AFCON |
+
+**Running totals (new method, rows 231+):** 200 PASS-ALL · 41 FAIL-LIVENESS.
+
+---
+
+## Batch rows 541–620 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+63 candidates — many near-duplicate scorer questions plus a false-premise cluster.
+**Result: 47 PASS · 16 FAIL.**
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 541–543,548,553,556,560,562,563,566,567,570,571,575,576,600–605,612 | ✅ PASS | Bounedjah 2nd-min winner, 2019 AFCON final |
+| 546,572,573 | ✅ PASS | Djabou's 120'+1' goal in the 2-1 loss (correctly framed) |
+| 549,552,588,606–609 | ✅ PASS | Slimani key 2014 goals / all-time top scorer |
+| 578–585,591,596–598,619 | ✅ PASS | Mahrez (captain 2019 / PL 2016 / 2022 WCQ star) |
+| 587 | ✅ PASS | Aouar NOT in 2019 squad (joined 2023) |
+| 616 | ✅ PASS | post-2019 rebuild → 2026 cycle (only temporally-valid option) |
+| 545,577 | ❌ FAIL | non-unique — Feghouli/Brahimi/Slimani also qualify |
+| 547,561 | ❌ FAIL | wrong scorer (Djabou / Bougherra, not Slimani) |
+| 558,565 | ❌ FAIL | false "Djabou equalizer" — no 2-2, goal was 120'+1' |
+| 574 | ❌ FAIL | false premise — Algeria lost to Cameroon, didn't reach 2022 |
+| 589 | ❌ FAIL | Slimani wasn't top scorer in 2014 (became so in 2021) |
+| 599 | ❌ FAIL | Algeria didn't face Tunisia in 2018 qualifying |
+| 610 | ❌ FAIL | Madjer retired ~1992, not 2009 |
+| 611 | ❌ FAIL | Atal WAS in the 2019 AFCON-winning squad |
+| 620 | ❌ FAIL | Mahrez played no 2014 qualifiers (debuted after) |
+| 613,615,617,618 | ❌ FAIL | unverifiable squad-rebuild / squad-age narrative |
+
+**Running totals (new method, rows 231+):** 247 PASS-ALL · 57 FAIL-LIVENESS.
+
+---
+
+## Batch rows 621–710 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+73 candidates — a badly-flawed stretch (fabricated club histories, Benrahma template,
+2022-WC false premises, non-unique club/caps questions). **Result: 32 PASS · 41 FAIL.**
+
+| Cluster | Verdict | Rows |
+|---------|:-------:|------|
+| Mahrez (2019/2022 WCQ/PL/captain/ManCity/debut) | ✅ PASS | 621,622,624,649,651,654,655,657,665,675,677,681,682,683,686,696,698,703,641 |
+| Slimani 2014 / top scorer | ✅ PASS | 625,633,635,695 |
+| Misc correct | ✅ PASS | 627,631,632,634,638,653,687,689,694 |
+| Fabricated club history (Mahrez/Brahimi/Slimani "USM Alger") | ❌ FAIL | 693,704,705,706,707 |
+| Benrahma "key modern attacker" non-unique | ❌ FAIL | 644,645,646,647,648,663,666,670,672,674,701 |
+| "2022 World Cup squad/finals" false premise | ❌ FAIL | 628,636,637,658,664,680,684 |
+| Non-unique "over 90 caps" | ❌ FAIL | 639,642,702 |
+| Non-unique scorer / <40 goals | ❌ FAIL | 626,659,660,661 |
+| Broken/non-unique club questions | ❌ FAIL | 688,690,692 |
+| Other (nickname/debut/role/comparison/narrative) | ❌ FAIL | 623,629,630,656,662,699,708,710 |
+
+**Running totals (new method, rows 231+):** 279 PASS-ALL · 98 FAIL-LIVENESS.
+
+---
+
+## Batch rows 711–810 (Algeria) — NEW METHOD (only QA_PASSED.md rows)
+
+86 candidates — mostly Slimani "all-time top scorer" + Bounedjah "2019 final" duplicates (correct),
+plus a club-history cluster and false-premise rows. One web check (Slimani WCQ goal tallies).
+**Result: 65 PASS · 21 FAIL.**
+
+| Cluster | Verdict | Rows |
+|---------|:-------:|------|
+| Slimani all-time top scorer / 2014 goals | ✅ PASS | 725,727,728,736,737,741–744,746–750,752,753,758,761,765,776,779,799,803,804,806,807 |
+| Bounedjah 2019 AFCON final | ✅ PASS | 763,769,772,773,775,781–787,789–795,797,800,801 |
+| Mahrez (captain/PL/star) | ✅ PASS | 729,730,738,756,757,802,809,810 |
+| Belmadi / Djabou / misc | ✅ PASS | 711,719,721–724,734,766,798 |
+| Fabricated/false club facts | ❌ FAIL | 712,713,714,715,717 |
+| Wrong debut facts | ❌ FAIL | 731,732,733 |
+| Non-unique | ❌ FAIL | 759,770,778 |
+| False premise / timing | ❌ FAIL | 718,720,726,760 |
+| Unverified goal stats | ❌ FAIL | 762,764 |
+| False explanation (caps/venue/group goals) | ❌ FAIL | 735,739,767,805 |
+
+**Running totals (new method, rows 231+):** 344 PASS-ALL · 119 FAIL-LIVENESS.
