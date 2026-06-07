@@ -927,3 +927,154 @@ Mostly duplicates (Neymar record / Tite / Olympic gold / managers / venues).
 - **Australia batch 3042–3140** (63 candidates): 54 PASS / 9 FAIL. FAIL: 3049 (first 2006 match=Japan not Brazil), 3081 (non-unique: 2010 & 2014 both direct AFC), 3083/3100 (2011 furthest=final not SF), 3093/3095 (Peru playoff in Qatar), 3096 (Saudi 2022=Sydney), 3097 (no AFC qualifier in 2006), 3124 (SK didn't play Aus in 2022).
 - **Australia batch 3141–3241** (76 candidates): 66 PASS / 10 FAIL. FAIL: 3150 (Peru playoff in Qatar), 3155/3156 (drew Ghana not lost), 3159 (2006 also R16 → non-unique best), 3161/3162/3163 (non-unique direct-AFC), 3178 (qualified 2017 not 2018), 3213/3239 (2006 was OFC not AFC).
 - **✅ AUSTRALIA COMPLETE (rows 2161–3241): 714 PASS / 121 FAIL of 835 QA_PASSED candidates.** Next country: Austria (3242).
+
+---
+
+## Côte d'Ivoire (rows 16572–17486) — separate contributor (azibabari)
+
+Liveness run on the **542** Côte d'Ivoire rows present in `QA_PASSED.md`. Fact base: 3 World Cups
+(2006/2010/2014, all group-stage exits; **missed 2018 & 2022**; **qualified for 2026** as CAF Group F
+winners, unbeaten 8W-2D, 25–0 GD); **3 AFCON titles** (1992, 2015 v Ghana 9–8 pens, **2023 as hosts**
+v Nigeria 2–1 after nearly exiting the group stage — Gasset sacked mid-tournament, Emerse Faé took over;
+Kessié 62' + Haller 81'); Drogba record scorer **65 goals** (last WC goal 2010, none in 2014); Yaya Touré
+**101 caps** (debuted at 2006 WC); Pépé 53 caps; Adingra **2023 Best Young Player**.
+
+**Recurring CIV defect clusters:** (1) **fake "2022 World Cup" questions** — CIV did not qualify, so any
+"2022 World Cup squad/match/finals" framing is a false premise (≈25 fails); (2) **mangled score cells**
+(`02-Jan`=2-1, `09-Aug`=9-8); (3) **non-unique** "scored in 2023 final" (Kessié also scored), CAF-qual
+year (2010/2014/2026 all CAF), multiple 2010 CAF co-qualifiers (Ghana/Nigeria/Cameroon/Algeria); (4)
+**Drogba 2014 goal** false premise (he scored none in 2014); (5) self-referential 2023-champion/host rows.
+
+| Batch (rows) | Candidates | PASS | FAIL |
+|--------------|-----------:|-----:|-----:|
+| 16573–16698 | 90 | 76 | 14 |
+| 16699–16882 | 95 | 83 | 12 |
+| 16883–17017 | 95 | 82 | 13 |
+| 17018–17151 | 95 | 81 | 14 |
+| 17152–17358 | 95 | 80 | 15 |
+| 17363–17485 | 72 | 61 | 11 |
+| **TOTAL** | **542** | **463** | **79** |
+
+**✅ CÔTE D'IVOIRE COMPLETE (rows 16572–17486): 463 PASS / 79 FAIL of 542 QA_PASSED candidates.**
+
+---
+
+## Croatia (rows 17487–19101) — separate contributor (azibabari)
+
+Liveness run on the **1188** Croatia rows in `QA_PASSED.md`. Fact base: WC 1998 (3rd), 2002/2006/2014
+(group), **2018 runners-up** (lost final 4-2 to France; Modrić Golden Ball + 2018 Ballon d'Or; Mandžukić
+OG+goal & SF winner v England 2-1 AET; Perišić scored once in the final; beat Denmark & Russia on pens),
+**2022 third place** (beat Morocco 2-1; beat Japan & Brazil on pens, Livaković heroics; lost SF 3-0 to
+Argentina; Gvardiol scored 3rd-place); **missed 2010** (3rd in group — NO playoff); **qualified 2026 by
+winning the group** (2022 also a direct group win; only 2014/2018 were playoffs — Iceland, Greece, both won).
+Euros best = QF 1996/2008; **Euro 2024 group exit W0-D2-L1** (lost Spain 0-3, drew Albania 2-2 & Italy 1-1).
+**Lost the 2022-23 Nations League FINAL to Spain on pens** (beat Netherlands only in the semi). Modrić
+most-capped (196 by 2026, ~160 in 2022, ~120 in 2018), b. Sept 1985 (37 at 2022 WC, 40 at 2026). Dalić
+manager since Oct 2017; Čačić (Euro 2016), Kovač (2013-15/2014 WC), Bilić (Euro 2008/2010 quals).
+
+**Recurring Croatia defect clusters (154 fails):**
+1. **False 2023 Nations League "win"** (~35 rows) — Croatia LOST the final to Spain; the Netherlands was the SEMI. Any "won the NL / beat the Netherlands in the final" is wrong.
+2. **Fabricated 2010 playoff loss to Ukraine** (~13 rows) — Croatia missed 2010 by finishing 3rd in their group; there was no playoff.
+3. **Euro 2024 errors** (~11 rows) — "beat Albania" / "lost to Spain AND Italy" are false: only loss was Spain; Albania & Italy were draws.
+4. **"Lost to Cameroon" in 2014** (~7 rows) — Croatia beat Cameroon 4-0; they lost only to Brazil & Mexico.
+5. **Gvardiol = 2022 Best Young Player** (~7 rows) — that award went to Enzo Fernández.
+6. **Modrić age/caps** — 37 (not 39) at 2022 WC, 40 at 2026; ~160 caps (not 175+) by 2022.
+7. **Date/formation corruption** — `02-Jan`=2-1, `04-Feb`=4-2, `09-Aug`=9-8, `03-Jan`=3-1, `04/03/2003`=4-3-3.
+8. **"Only team to win all 3 groups in 2018"** — Belgium & Uruguay also did.
+9. **Misc** — Perišić "scored twice" in 2018 final (once), Croatia "won the final" (lost), self-referential and non-unique items.
+
+| Batch (rows) | PASS | FAIL |
+|--------------|-----:|-----:|
+| 17487–17609 | 83 | 17 |
+| 17611–17750 | 102 | 8 |
+| 17752–17894 | 92 | 18 |
+| 17895–18028 | 95 | 15 |
+| 18030–18164 | 100 | 10 |
+| 18165–18326 | 101 | 9 |
+| 18327–18465 | 98 | 12 |
+| 18466–18626 | 103 | 7 |
+| 18627–18782 | 93 | 17 |
+| 18783–18964 | 90 | 20 |
+| 18965–19100 | 67 | 21 |
+| **TOTAL** | **1034** | **154** |
+
+**✅ CROATIA COMPLETE (rows 17487–19101): 1034 PASS / 154 FAIL of 1188 QA_PASSED candidates.**
+
+---
+
+## Denmark (rows 19102–20581) — separate contributor (azibabari)
+
+Liveness run on the **1041** Denmark rows in `QA_PASSED.md`. Fact base: WC 2010 (group exit), 2018 (R16,
+lost Croatia on pens; mgr Hareide; 5 group pts), 2022 (group exit, 0 wins/1 pt; lost Australia 1-0 & France
+2-1, drew Tunisia; mgr Hjulmand); **missed 2006, 2014, and — crucially — 2026** (lost the UEFA playoff final
+to Czechia 2-2, 3-1 pens, 31 Mar 2026). Euro 1992 champions; **Euro 2020 semi-final** (Eriksen cardiac
+arrest v Finland; beat Russia 4-1 / Wales 4-0 / Czechia 2-1; lost England 2-1 AET; Kjær's heroics → 2021
+Ballon d'Or nom, 18th); Euro 2024 R16 (lost Germany 2-0). Top scorers Tomasson & Poul Nielsen 52 (joint);
+Eriksen ~41 (5th). Managers: **Riemer (2024–, leads 2026 cycle)**, Hjulmand (2020–24), Hareide (2016–20),
+Morten Olsen (2000–15). Home venue **Parken Stadium, Copenhagen**; **DBU HQ is in BRØNDBY** (not Copenhagen).
+Højlund **now plays for Napoli/Serie A** (permanent 3 Jun 2026), not Manchester United.
+
+**Recurring Denmark defect clusters (182 fails):**
+1. **DBU HQ "in Copenhagen"** (~40) — it's in **Brøndby** (often even offered as a distractor).
+2. **"Telia Parken" distractor** (~35) — that IS Parken Stadium (2014-2020 sponsor name) → non-unique.
+3. **"Hjulmand leads/manages the 2026 cycle"** (~35) — he resigned July 2024; **Brian Riemer** leads 2026.
+4. **"Eriksen is 2nd-highest scorer"** (~25) — he's **5th** (~41 goals; Tomasson & Nielsen lead on 52).
+5. **"Denmark qualified for 2026"** (~12) — FALSE; they lost the playoff to Czechia. (Squad-composition "2026 cycle" facts were PASSED as the qualifying squad is real.)
+6. **"40+ goals" non-unique** when Tomasson (52) is a distractor.
+7. **"peak/highest FIFA ranking 10th"** — Denmark's all-time peak is **6th** (1996); 10th was only a 2022 high (rows scoped to "in 2022" passed).
+8. **Højlund "plays for Manchester United"** — he moved to **Napoli (Serie A)**; also flips "Serie A not represented" rows.
+9. **Date corruption** (`02-Jan`=2-1, `04-Jan`=4-1, `01-Jan`=1-1) and **wrong cap stats** (Kjær ~115 not 130+ in 2022; Poulsen ~35 not 70 in 2018).
+10. **Misc** — self-referential ("which nation… → Denmark") and non-unique items.
+
+| Batch (rows) | PASS | FAIL |
+|--------------|-----:|-----:|
+| 19102–19240 | 89 | 11 |
+| 19241–19397 | 90 | 25 (+1 corr. to 19145) |
+| 19398–19535 | 101 | 14 |
+| 19536–19697 | 82 | 38 |
+| 19698–19854 | 104 | 16 |
+| 19857–20021 | 93 | 27 |
+| 20022–20175 | 100 | 20 (+4 corr. to earlier) |
+| 20176–20380 | 109 | 11 |
+| 20381–20580 | 95 | 16 |
+| **TOTAL** | **859** | **182** |
+
+**✅ DENMARK COMPLETE (rows 19102–20581): 859 PASS / 182 FAIL of 1041 QA_PASSED candidates.**
+
+---
+
+## DR Congo (rows 20582–21579) — separate contributor (azibabari)
+
+Liveness run on the **586** DR Congo rows in `QA_PASSED.md`. Fact base: DR Congo (Léopards; formerly
+**Zaire**). Only prior WC was **1974 as Zaire** (lost all 3, 0 goals; Mwepu Ilunga's free-kick incident).
+**QUALIFIED for 2026** — first under the name DR Congo, first in 52 years — via the **intercontinental
+playoff** (beat Nigeria in the CAF playoff Nov 2025, then Jamaica 1-0 AET, 31 Mar 2026; Tuanzebe scored)
+under **Sébastien Desabre**; did NOT qualify 2006/2010/2014/2018/2022. **2 AFCON titles** (1968 v Ghana,
+1974 v Zambia). **2015 AFCON semis** (mgr Florent Ibenge); **2023 AFCON 4th** — reached the SEMIS (lost SF
+1-0 to Ivory Coast, then 3rd-place to South Africa on pens), mgr **Desabre** (not Ibenge). Top scorer
+Mbokani (22), Bakambu (21, 40+ caps), captain Mbemba (107 caps, **now Lille** — was Marseille), Wissa
+(**now Newcastle** — was Brentford), Silas (Stuttgart/Bundesliga). Home: Stade des Martyrs, Kinshasa
+(~80,000). TP Mazembe: 2010 Club World Cup final + CAF Champions League 2009/2010/2015.
+
+**Recurring DR Congo defect clusters (127 fails):**
+1. **2023 AFCON = "quarter-finals"** — they reached the **SEMI-finals** (4th place). Many rows assert QF.
+2. **Self-referential** "which nation/team/who, like DR Congo, …? → DR Congo" (~30 rows).
+3. **2018/2022 World Cup false premises** — DR Congo were not at those finals ("at the 2018/2022 WC, who…").
+4. **Outdated clubs** — Wissa now at **Newcastle** (not Brentford), Mbemba now at **Lille** (not Marseille). Present-tense club claims fail; "Premier League player" and past-tense "played for X in 2023/2024" pass.
+5. **Outdated "never qualified under current name"** — DR Congo HAVE now qualified (2026).
+6. **Misc** — Desabre (not Ibenge) managed the 2023 AFCON; Bundesliga IS represented (Silas/Stuttgart); DR Congo don't "consistently struggle" at AFCON (2 titles, recent semis); TP Mazembe's 3 *modern* CAF CL titles (2009/2010/2015) treated as defensible; non-unique items.
+
+**NOTE — what was PASSED (not failed):** squad-composition "2026 cycle/qualifying/squad" facts (the
+qualifying squad is real), and the "first WC under the current name = 2026 / first in 52 years" framing
+(accurate — 1974 was as Zaire). Only explicit *finals participation in 2018/2022* and *outdated* facts failed.
+
+| Batch (rows) | PASS | FAIL |
+|--------------|-----:|-----:|
+| 20582–20761 | 78 | 22 (+2 later un-failed: TP Mazembe count) |
+| 20762–21008 | 88 | 32 |
+| 21009–21164 | 104 | 16 |
+| 21165–21376 | 94 | 26 |
+| 21377–21576 | 95 | 31 |
+| **TOTAL** | **459** | **127** |
+
+**✅ DR CONGO COMPLETE (rows 20582–21579): 459 PASS / 127 FAIL of 586 QA_PASSED candidates.**

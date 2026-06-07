@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **480** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Australia 121 [✅ COMPLETE through row 3241] · Brazil 6097–6760 so far: 73)
+Total failed-liveness-passed-others so far: **1022** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Australia 121 [✅ COMPLETE through row 3241] · Brazil 6097–6760 so far: 73 · Côte d'Ivoire 16572–17486: 79 [✅ COMPLETE] · Croatia 17487–19101: 154 [✅ COMPLETE] · Denmark 19102–20581: 182 [✅ COMPLETE] · DR Congo 20582–21579: 127 [✅ COMPLETE])
 
 ---
 
@@ -2253,3 +2253,3811 @@ Both say Australia *lost to / was defeated by* "Germany and Ghana" in 2010. Aust
 **Remedy:** 2017.
 
 ---
+
+## Rows 16572–17486 (Côte d'Ivoire) — 79 FAIL-liveness
+
+### Row 16587 — Côte d'Ivoire (medium) — FAIL: false premise (not at 2018 WC)
+**Q:** At the 2018 World Cup, when had Côte d'Ivoire last won the AFCON? **A:** 2015
+**Options:** 2015 | 2012 | 2017 | 2019
+**Why it fails:** Côte d'Ivoire did not qualify for the 2018 World Cup, so 'At the 2018 World Cup' asserts a tournament appearance that never happened. (Answer 2015 is itself correct as their last AFCON win before 2018.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to a real edition, e.g. 'As of 2018, when had Côte d'Ivoire last won the AFCON?' → 2015.
+
+### Row 16614 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** Côte d'Ivoire's 2023 AFCON final win over Nigeria was by what scoreline? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer cell '02-Jan' is an Excel-mangled '2-1'. CIV beat Nigeria 2-1 in the 2023 final.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16617 — Côte d'Ivoire (medium) — FAIL: non-unique (stadium predates 2022 WC too)
+**Q:** Côte d'Ivoire's 60,000-seat Stade Alassane Ouattara was built before which World Cup? **A:** 2026 World Cup
+**Options:** 2026 World Cup | 2022 World Cup | 2018 World Cup | 2014 World Cup
+**Why it fails:** Stade Alassane Ouattara opened 3 Oct 2020, i.e. before BOTH the 2022 and 2026 World Cups — so distractor '2022 World Cup' is also a correct answer.
+**Source:** https://en.wikipedia.org/wiki/Alassane_Ouattara_Stadium
+**Remedy:** Reword to 'built for which 2023 tournament?' → 2023 AFCON, or drop the 2022 option.
+
+### Row 16627 — Côte d'Ivoire (hard) — FAIL: non-unique (CAF qual also 2010/2014)
+**Q:** For which FIFA World Cup did Côte d'Ivoire qualify through CAF qualification? **A:** The 2026 World Cup
+**Options:** The 2026 World Cup | The 2010 World Cup | The 2014 World Cup | The 2018 World Cup
+**Why it fails:** Côte d'Ivoire qualified via CAF for 2006, 2010, 2014 AND 2026; options 2010 and 2014 are therefore also correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Make it specific, e.g. 'For which World Cup did CIV first qualify via CAF?' → 2006 (not an option here).
+
+### Row 16645 — Côte d'Ivoire (medium) — FAIL: wrong — first WC was 2006
+**Q:** How many World Cups did Côte d'Ivoire qualify for via CAF by 2010? **A:** One
+**Options:** One | Two | Three | Four
+**Why it fails:** CIV's first World Cup was 2006 (qualified Oct 2005), not 2010. By 2010 they had qualified for two World Cups (2006 and 2010), not one; the explanation falsely calls 2010 their first.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Answer: Two. Or reword to 'How many WCs had CIV qualified for by 2006?' → One.
+
+### Row 16648 — Côte d'Ivoire (medium) — FAIL: wrong/non-unique — not CAF's largest
+**Q:** In 2023, which Côte d'Ivoire stadium built for the AFCON is that confederation's largest? **A:** Stade Alassane Ouattara
+**Options:** Stade Alassane Ouattara | Stade Félix Houphouët-Boigny | Cairo International Stadium | Stade Olympique de Radès
+**Why it fails:** Stade Alassane Ouattara (60,000) is the largest stadium in Côte d'Ivoire, but NOT the largest in CAF — Cairo International Stadium (~75,000), which is itself a listed option, is larger.
+**Source:** https://en.wikipedia.org/wiki/Alassane_Ouattara_Stadium
+**Remedy:** Reword to 'Côte d'Ivoire's largest stadium' and drop the CAF-largest claim, or remove the Cairo option.
+
+### Row 16649 — Côte d'Ivoire (hard) — FAIL: false premise (not at 2022 WC)
+**Q:** In a 2022 World Cup group stage match, Côte d'Ivoire's 2015 AFCON victory preceded it by how many years? **A:** 7 years
+**Options:** 7 years | 8 years | 6 years | 9 years
+**Why it fails:** CIV failed to qualify for the 2022 World Cup, so 'In a 2022 World Cup group stage match' references a match that never happened.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Drop — built on a non-existent 2022 appearance.
+
+### Row 16650 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** In Côte d'Ivoire's 2022 World Cup squad, which player was the key striker? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Franck Kessié | Simon Adingra | Wilfried Zaha
+**Why it fails:** CIV did not qualify for the 2022 World Cup, so there was no '2022 World Cup squad'. (Haller is correctly their key striker otherwise.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON squad or the 2026 World Cup squad.
+
+### Row 16654 — Côte d'Ivoire (hard) — FAIL: date corruption (09-Aug = 9-8)
+**Q:** In the 2015 AFCON final, Côte d'Ivoire beat Ghana in a penalty shootout by what score? **A:** 09-Aug
+**Options:** 09-Aug | 7-6 | 5-4 | 6-5
+**Why it fails:** Answer cell '09-Aug' is a mangled '9-8'. CIV beat Ghana 9-8 on penalties in the 2015 AFCON final.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_Africa_Cup_of_Nations
+**Remedy:** Restore answer to '9-8'.
+
+### Row 16659 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** In the 2023 AFCON final, what was Côte d'Ivoire's winning scoreline? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-2 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16660 — Côte d'Ivoire (medium) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** In the 2023 AFCON final, what was the exact score Côte d'Ivoire beat Nigeria by? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-2 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16661 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** In the 2023 AFCON final, what was the final score when Côte d'Ivoire beat Nigeria? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16695 — Côte d'Ivoire (hard) — FAIL: non-unique (also out in groups 2010 & 2006)
+**Q:** In which year were Côte d'Ivoire eliminated in the World Cup group stage? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** CIV were eliminated in the group stage in 2006, 2010 AND 2014; option 2010 is therefore also correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Remove the 2010 option, or ask 'last WC group-stage exit' → 2014.
+
+### Row 16698 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What scoreline did Côte d'Ivoire achieve in the 2023 AFCON final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-2 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16699 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What scoreline did Côte d'Ivoire beat Nigeria by in the 2023 AFCON final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16700 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was Côte d'Ivoire's winning score against Nigeria in the 2023 AFCON final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-2 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16702 — Côte d'Ivoire (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was the final score when Côte d'Ivoire won the 2023 AFCON final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (2023 final v Nigeria).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Restore answer to '2-1'.
+
+### Row 16738 — Côte d'Ivoire (easy) — FAIL: non-unique time reference
+**Q:** When did Ivorian Didier Drogba set his 65-goal national record? **A:** Upon his retirement
+**Options:** Upon his retirement | After the 2014 WC | Before the -2010 WC | During the 2015 AFCON
+**Why it fails:** Answer 'Upon his retirement' and distractor 'After the 2014 WC' denote the same moment — Drogba retired right after the 2014 World Cup — so two options are equally correct.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Didier_Drogba
+**Remedy:** Drop the 'After the 2014 WC' option, or ask a concrete fact (e.g. how many goals → 65).
+
+### Row 16761 — Côte d'Ivoire (easy) — FAIL: broken — no shared 2010/2014 opponent
+**Q:** Which 2014 World Cup opponent did Côte d'Ivoire also face in 2010? **A:** Portugal
+**Options:** Portugal | Colombia | Greece | North Korea
+**Why it fails:** CIV's 2010 opponents (Brazil, Portugal, North Korea) and 2014 opponents (Colombia, Greece, Japan) have NO overlap, so no option can be a '2014 opponent also faced in 2010'. The answer Portugal was a 2010 opponent only — the explanation even admits 'not in 2014'.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Drop — the premise (a shared opponent) is false.
+
+### Row 16764 — Côte d'Ivoire (hard) — FAIL: false premise (no 2022 WC squad)
+**Q:** Which 2022 Côte d'Ivoire squad had many players from top European leagues? **A:** 2022 World Cup squad
+**Options:** 2022 World Cup squad | 2021 Africa Cup squad | 2023 Africa Cup squad | 2014 World Cup squad
+**Why it fails:** CIV failed to qualify for the 2022 World Cup, so there was no '2022 World Cup squad'.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON squad.
+
+### Row 16783 — Côte d'Ivoire (medium) — FAIL: self-referential answer
+**Q:** Which 2023 AFCON winner, like Côte d'Ivoire, nearly exited in the group stage? **A:** Côte d'Ivoire
+**Options:** Côte d'Ivoire | Nigeria | Senegal | Algeria
+**Why it fails:** The 2023 AFCON winner that nearly exited the group stage IS Côte d'Ivoire, so the question's answer is its own subject.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Drop — self-referential. Ask instead which stage they nearly exited (group stage).
+
+### Row 16832 — Côte d'Ivoire (easy) — FAIL: non-unique (multiple 2010 CAF qualifiers)
+**Q:** Which CAF nation qualified for the 2010 World Cup alongside Côte d'Ivoire? **A:** Ghana
+**Options:** Ghana | Nigeria | Cameroon | Senegal
+**Why it fails:** Ghana, Nigeria AND Cameroon all qualified for the 2010 World Cup alongside CIV — three of the four options are correct (only Senegal didn't).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Keep one CAF qualifier and replace the others with non-qualifiers, or ask for the host (South Africa).
+
+### Row 16840 — Côte d'Ivoire (medium) — FAIL: non-unique (all options qualified for 2010)
+**Q:** Which CAF team qualified for the 2010 FIFA World Cup through the same continental qualification as Côte d'Ivoire? **A:** Ghana
+**Options:** Ghana | Nigeria | Cameroon | Algeria
+**Why it fails:** Ghana, Nigeria, Cameroon AND Algeria all qualified for the 2010 World Cup — every option is correct.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Replace three options with nations that missed 2010.
+
+### Row 16846 — Côte d'Ivoire (easy) — FAIL: non-unique (all options missed 2018 & 2022)
+**Q:** Which Côte d'Ivoire captain missed the 2018 and 2022 World Cups? **A:** Didier Drogba
+**Options:** Didier Drogba | Yaya Touré | Salomon Kalou | Kolo Touré
+**Why it fails:** CIV failed to qualify for both 2018 and 2022, so Drogba, Yaya Touré, Kalou and Kolo Touré all 'missed' them; several (Drogba, Yaya, Kolo) also captained the side, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Ask a specific, unique fact (e.g. captain at the 2010/2014 WC → Drogba).
+
+### Row 16863 — Côte d'Ivoire (easy) — FAIL: false premise (no 2014 WC goal)
+**Q:** Which Côte d'Ivoire legend scored his final World Cup goal in 2014? **A:** Didier Drogba
+**Options:** Didier Drogba | Yaya Touré | Salomon Kalou | Gervinho
+**Why it fails:** Drogba did NOT score at the 2014 World Cup (CIV's goals came from Bony and Gervinho). His final World Cup goal was in 2010 v Brazil.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Didier_Drogba
+**Remedy:** Answer: 2010. Or reword to 'final World Cup appearance in 2014'.
+
+### Row 16867 — Côte d'Ivoire (easy) — FAIL: non-unique (two managers had no WC)
+**Q:** Which Côte d'Ivoire manager did not lead them at a FIFA World Cup? **A:** Emerse Faé
+**Options:** Emerse Faé | Patrice Beaumelle | Henri Michel | Sabri Lamouchi
+**Why it fails:** Both Emerse Faé and Patrice Beaumelle managed CIV without ever leading them at a World Cup; meanwhile Henri Michel (2006) and Lamouchi (2014) did. Two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team
+**Remedy:** Replace Beaumelle with a manager who did coach at a WC (e.g. Henri Michel is fine; swap in another WC coach).
+
+### Row 16888 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire midfielder provided key quality at the 2022 FIFA World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. (Kessié was indeed a key CIV midfielder, but not at a 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16890 — Côte d'Ivoire (medium) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire midfielder provided key quality in their 2022 World Cup group stage? **A:** Franck Kessié
+**Options:** Franck Kessié | Seko Fofana | Serge Aurier | Maxwel Cornet
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. (Kessié was indeed a key CIV midfielder, but not at a 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16892 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire midfielder was a key figure at the 2022 FIFA World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Wilfried Zaha | Serge Aurier | Nicolas Pépé
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. (Kessié was indeed a key CIV midfielder, but not at a 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16899 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire midfielder was a key quality provider at the 2022 World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. (Kessié was indeed a key CIV midfielder, but not at a 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16900 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire midfielder was a key squad selection for the 2022 FIFA World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. (Kessié was indeed a key CIV midfielder, but not at a 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16907 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire midfielder was key in their 2022 World Cup squad? **A:** Franck Kessié
+**Options:** Franck Kessié | Wilfred Ndidi | Thomas Partey | Mohamed Elneny
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. Also the distractors (Ndidi, Partey, Elneny) are non-Ivorian (TC-03).
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16912 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire player at the 2022 World Cup was not a midfielder? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Serge Aurier | Franck Kessié | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. Haller is correctly a striker among midfielders, but the 2022 framing is invalid.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16945 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** Which Côte d'Ivoire player in the 2022 World Cup squad was from a top European league? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Sadio Mané | Mohamed Salah | Riyad Mahrez
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. Distractors Mané/Salah/Mahrez are also non-Ivorian.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON squad; replace non-Ivorian distractors.
+
+### Row 16947 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** Which Côte d'Ivoire player in their 2022 World Cup squad was based in a top European league? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Jean Michaël Seri | Max Gradel
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. The explanation's Dortmund detail can't rescue a non-existent 2022 squad.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON squad.
+
+### Row 16950 — Côte d'Ivoire (easy) — FAIL: non-unique (all options missed 2018 & 2022)
+**Q:** Which Côte d'Ivoire player missed the 2018 and 2022 FIFA World Cups? **A:** Didier Drogba
+**Options:** Didier Drogba | Salomon Kalou | Yaya Touré | Wilfried Zaha
+**Why it fails:** CIV failed to qualify for both 2018 and 2022, so Drogba, Kalou, Yaya Touré and Zaha all missed them — every option is correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Ask a unique fact, e.g. captain at the 2010/2014 WC (Drogba).
+
+### Row 16952 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire player provided midfield quality at the 2022 FIFA World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup match/squad/campaign for them. (Kessié was indeed a key CIV midfielder, but not at a 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 16954 — Côte d'Ivoire (easy) — FAIL: invalid edition / false premise (no 2023 men's WC)
+**Q:** Which Côte d'Ivoire player provides midfield quality at the 2023 World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** There is no 2023 men's FIFA World Cup (2023 was the Women's edition), and CIV anyway weren't at a 2022/2023 men's WC.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup.
+
+### Row 16973 — Côte d'Ivoire (easy) — FAIL: non-unique (two CIV players scored in the 2023 final)
+**Q:** Which Côte d'Ivoire player scored in their 2023 AFCON final win? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Nicolas Pépé | Franck Kessié | Max Gradel
+**Why it fails:** Both Sébastien Haller (81') AND Franck Kessié (62') scored in CIV's 2-1 win in the 2023 final; Kessié is a listed option, so two answers are correct.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Ask who scored the WINNING goal (Haller), or drop the Kessié option.
+
+### Row 17023 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire player's midfield quality was key for their 2022 World Cup squad? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Yaya Touré
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17053 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire striker featured in their 2022 World Cup squad? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Didier Drogba | Yaya Touré | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17071 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire striker was their key attacker at the 2022 FIFA World Cup? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Nicolas Pépé | Max Gradel
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17072 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire striker was their key attacking figure for the 2022 World Cup? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Nicolas Pépé | Jean-Philippe Krasso
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17073 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Côte d'Ivoire striker was their key attacking threat at the 2022 FIFA World Cup? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Nicolas Pépé | Maxwel Cornet
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17075 — Côte d'Ivoire (hard) — FAIL: non-unique / self-referential
+**Q:** Which Côte d'Ivoire team nearly exited in the 2023 AFCON group stage? **A:** The 2023 champions
+**Options:** The 2023 champions | The 2015 champions | The 2012 runners-up | The 2023 hosts
+**Why it fails:** CIV were BOTH the 2023 AFCON champions AND the 2023 hosts, and both descriptions refer to the same side that nearly exited the group stage — so 'The 2023 champions' and 'The 2023 hosts' are both correct.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Drop one of the two CIV descriptors.
+
+### Row 17078 — Côte d'Ivoire (easy) — FAIL: false premise (40 caps 'for the 2022 WC')
+**Q:** Which Côte d'Ivoire winger had over 40 caps for the 2022 World Cup? **A:** Nicolas Pépé
+**Options:** Nicolas Pépé | Simon Adingra | Franck Kessié | Sébastien Haller
+**Why it fails:** Pépé does have 40+ caps (53), but 'for the 2022 World Cup' anchors to a tournament CIV did not reach.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor: '...by the 2023 AFCON' or 'in 2022 World Cup qualifying'.
+
+### Row 17112 — Côte d'Ivoire (easy) — FAIL: non-unique (several Ivorian Ligue 1 clubs)
+**Q:** Which Ivorian club features in the country's top domestic Ligue 1? **A:** ASEC Mimosas
+**Options:** ASEC Mimosas | Africa Sports | Stade d'Abidjan | SC Gagnoa
+**Why it fails:** ASEC Mimosas, Africa Sports, Stade d'Abidjan and SC Gagnoa are ALL Ivorian Ligue 1 clubs, so 'which features in Ligue 1' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team
+**Remedy:** Ask 'most Ligue 1 titles' (ASEC Mimosas) to make it unique.
+
+### Row 17113 — Côte d'Ivoire (easy) — FAIL: non-unique (several Ivorian Ligue 1 clubs)
+**Q:** Which Ivorian club features in the top domestic Ligue 1? **A:** ASEC Mimosas
+**Options:** ASEC Mimosas | Africa Sports | Stade d'Abidjan | SC Gagnoa
+**Why it fails:** All four options are Ivorian Ligue 1 clubs, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_national_football_team
+**Remedy:** Ask 'most Ligue 1 titles' (ASEC Mimosas).
+
+### Row 17128 — Côte d'Ivoire (easy) — FAIL: wrong — Gasset selected the 2023 squad
+**Q:** Which Ivorian manager selected the squad for the 2023 AFCON as hosts? **A:** Emerse Faé
+**Options:** Emerse Faé | Sven-Göran Eriksson | Sabri Lamouchi | Patrice Beaumelle
+**Why it fails:** The AFCON-2023 squad was named by Jean-Louis Gasset; Emerse Faé was his assistant and only took charge after matchday 3 (Gasset sacked). Faé did not select the squad, and Gasset isn't even an option.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Reword to 'managed CIV to the 2023 AFCON title' (Faé), or add Gasset as the squad-selector answer.
+
+### Row 17134 — Côte d'Ivoire (easy) — FAIL: non-unique (Henri Michel also pre-2014)
+**Q:** Which Ivorian manager's World Cup appearance came before Sabri Lamouchi's in 2014? **A:** Sven-Göran Eriksson
+**Options:** Sven-Göran Eriksson | Henri Michel | Patrice Beaumelle | Hervé Renard
+**Why it fails:** Both Sven-Göran Eriksson (2010) AND Henri Michel (2006) coached CIV at a World Cup before Lamouchi (2014); Henri Michel is a listed option.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Remove the Henri Michel option, or specify the 2010 edition.
+
+### Row 17142 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Ivorian midfielder was a key player at the 2022 FIFA World Cup? **A:** Franck Kessié
+**Options:** Franck Kessié | Thomas Partey | Ismaël Bennacer | André-Frank Zambo Anguissa
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17145 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Ivorian midfielder was included for his quality in the 2022 World Cup squad? **A:** Franck Kessié
+**Options:** Franck Kessié | Seko Fofana | Ibrahim Sangaré | Jean Michaël Seri
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17149 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Ivorian midfielder was key in their 2022 World Cup squad? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup (or to the real 2022 qualifying campaign).
+
+### Row 17152 — Côte d'Ivoire (easy) — FAIL: wrong — Yaya's first WC was 2006
+**Q:** Which Ivorian midfielder's first FIFA World Cup was in 2010? **A:** Yaya Touré
+**Options:** Yaya Touré | Franck Kessié | Nicolas Pépé | Sébastien Haller
+**Why it fails:** Yaya Touré's first World Cup was 2006 (he was in CIV's debut squad), not 2010, so the explanation is false.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Answer: 2006. Or ask who was key 'at the 2010 WC' without the 'first' claim.
+
+### Row 17165 — Côte d'Ivoire (easy) — FAIL: non-unique (Kessié also scored 2023 final)
+**Q:** Which Ivorian player scored in the 2023 AFCON final against Nigeria? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Nicolas Pépé | Franck Kessié | Wilfried Zaha
+**Why it fails:** Both Haller (81') and Kessié (62') scored in the 2023 final; Kessié is a listed option.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Ask for the winning goal (Haller) or drop the Kessié option.
+
+### Row 17169 — Côte d'Ivoire (easy) — FAIL: non-unique (Kessié also scored 2023 final)
+**Q:** Which Ivorian player scored in the 2023 Africa Cup of Nations final? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Nicolas Pépé | Franck Kessié | Wilfried Zaha
+**Why it fails:** Both Haller and Kessié scored in the 2-1 final; Kessié is a listed option.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Ask for the winning goal (Haller) or drop the Kessié option.
+
+### Row 17213 — Côte d'Ivoire (easy) — FAIL: false premise (no 2014 WC goal)
+**Q:** Which Ivorian striker cried after scoring at the 2014 FIFA World Cup? **A:** Didier Drogba
+**Options:** Didier Drogba | Salomon Kalou | Yaya Touré | Gervinho
+**Why it fails:** Drogba did NOT score at the 2014 World Cup, so he couldn't have 'cried after scoring' there. CIV's 2014 goals came from Bony and Gervinho.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Didier_Drogba
+**Remedy:** Drop the 'after scoring' clause, or re-anchor to 2010 (he scored v Brazil).
+
+### Row 17216 — Côte d'Ivoire (easy) — FAIL: false premise (final WC goal was 2010)
+**Q:** Which Ivorian striker scored his final World Cup goal in 2014? **A:** Didier Drogba
+**Options:** Didier Drogba | Wilfried Zaha | Salomon Kalou | Gervinho
+**Why it fails:** Drogba's final World Cup goal was in 2010 (v Brazil); he didn't score at the 2014 World Cup.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Didier_Drogba
+**Remedy:** Answer: 2010.
+
+### Row 17221 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Ivorian striker was the key attacker for the 2022 FIFA World Cup squad? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Nicolas Pépé | Jean-Philippe Krasso
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup.
+
+### Row 17222 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Ivorian striker was the key forward at the 2022 FIFA World Cup? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Nicolas Pépé | Maxwel Cornet
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup.
+
+### Row 17225 — Côte d'Ivoire (easy) — FAIL: false anchor (CIV not at 2022 WC)
+**Q:** Which Ivorian winger had over 40 caps by the 2022 World Cup? **A:** Nicolas Pépé
+**Options:** Nicolas Pépé | Wilfried Zaha | Maxwel Cornet | Jérémie Boga
+**Why it fails:** Pépé does have 40+ caps (53), but 'by the 2022 World Cup' anchors an Ivorian fact to a tournament CIV didn't reach.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor: '...by the 2023 AFCON' or 'in 2022 World Cup qualifying'.
+
+### Row 17229 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which Ivorian winger was a key starter for Côte d'Ivoire at the 2022 FIFA World Cup? **A:** Nicolas Pépé
+**Options:** Nicolas Pépé | Simon Adingra | Sébastien Haller | Franck Kessié
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup.
+
+### Row 17242 — Côte d'Ivoire (easy) — FAIL: non-unique (Kessié also scored 2023 final)
+**Q:** Which Ivory Coast player scored in the 2023 AFCON final? **A:** Sébastien Haller
+**Options:** Sébastien Haller | Wilfried Zaha | Franck Kessié | Nicolas Pépé
+**Why it fails:** Both Haller and Kessié scored in the 2-1 final; Kessié is a listed option.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Ask for the winning goal (Haller) or drop the Kessié option.
+
+### Row 17246 — Côte d'Ivoire (easy) — FAIL: non-unique (3 managers didn't coach 2010)
+**Q:** Which manager did not coach Côte d'Ivoire at the 2010 World Cup? **A:** Sabri Lamouchi
+**Options:** Sabri Lamouchi | Sven-Göran Eriksson | Vahid Halilhodžić | Hervé Renard
+**Why it fails:** Only Eriksson coached CIV at the 2010 WC, so Lamouchi, Halilhodžić AND Renard all 'did not' — three correct answers to a negatively-framed question.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Ask positively: who DID coach at 2010 (Eriksson).
+
+### Row 17248 — Côte d'Ivoire (easy) — FAIL: non-unique (none of the 4 led AFCON as hosts)
+**Q:** Which manager did NOT lead Côte d'Ivoire to an AFCON title as hosts? **A:** Sabri Lamouchi
+**Options:** Sabri Lamouchi | Hervé Renard | François Zahoui | Patrice Beaumelle
+**Why it fails:** Only Emerse Faé led CIV to an AFCON title as hosts; all four options (Lamouchi, Renard, Zahoui, Beaumelle) 'did not', so every option is correct.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_final
+**Remedy:** Ask positively: who DID (Faé).
+
+### Row 17333 — Côte d'Ivoire (easy) — FAIL: wrong — Zambia were 2012 champions
+**Q:** Which nation, like Côte d'Ivoire in 2012, were AFCON runners-up on penalties? **A:** Zambia
+**Options:** Zambia | Nigeria | Ghana | Egypt
+**Why it fails:** Zambia WON the 2012 AFCON final on penalties; they were not runners-up like CIV. The answer contradicts the premise (it should name a different nation that finished runner-up on penalties).
+**Source:** https://en.wikipedia.org/wiki/2012_Africa_Cup_of_Nations_Final
+**Remedy:** Drop — Zambia were champions; pick an actual penalty-shootout runner-up, or rephrase to 'who beat CIV on penalties' (Zambia).
+
+### Row 17334 — Côte d'Ivoire (easy) — FAIL: non-unique (Chile also missed 2018 & 2022)
+**Q:** Which nation, like Côte d'Ivoire, missed the 2018 and 2022 World Cups? **A:** Italy
+**Options:** Italy | Netherlands | Chile | Ghana
+**Why it fails:** Both Italy AND Chile failed to qualify for the 2018 and 2022 World Cups; Chile is a listed option, so two answers are correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Replace Chile with a nation that made one of those tournaments.
+
+### Row 17351 — Côte d'Ivoire (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which player provided midfield quality for Côte d'Ivoire's 2022 World Cup squad? **A:** Franck Kessié
+**Options:** Franck Kessié | Serge Aurier | Maxwel Cornet | Jean Michaël Seri
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad/match for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup.
+
+### Row 17375 — Côte d'Ivoire (easy) — FAIL: non-unique (two teams not lost to)
+**Q:** Which team did Côte d'Ivoire not lose to at the 2014 World Cup? **A:** Japan
+**Options:** Japan | Colombia | Greece | Costa Rica
+**Why it fails:** CIV beat Japan and never played Costa Rica, so they 'did not lose to' BOTH — two correct options.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Replace Costa Rica with another team CIV lost to, or restrict to actual group opponents.
+
+### Row 17376 — Côte d'Ivoire (medium) — FAIL: non-unique (two teams not lost to)
+**Q:** Which team did Côte d'Ivoire not lose to in the 2014 World Cup group stage? **A:** Japan
+**Options:** Japan | Colombia | Greece | Uruguay
+**Why it fails:** CIV beat Japan and never played Uruguay (Uruguay wasn't in Group C), so both are teams they 'did not lose to'.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Replace Uruguay with a team CIV actually lost to.
+
+### Row 17401 — Côte d'Ivoire (medium) — FAIL: flawed/non-unique (three CAF quals after 2008)
+**Q:** Which two World Cups did Côte d'Ivoire qualify for through CAF after 2008? **A:** 2014 and 2026
+**Options:** 2014 and 2026 | 2010 and 2014 | 2010 and 2026 | 2018 and 2022
+**Why it fails:** CIV qualified via CAF for 2010, 2014 AND 2026 after 2008 — three, not two — so the distractor '2010 and 2014' is also a correct pair and the answer arbitrarily omits 2010.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Ask for all qualifications, or fix the time anchor.
+
+### Row 17406 — Côte d'Ivoire (hard) — FAIL: non-unique (CAF qual also 2010/2014)
+**Q:** Which World Cup did Côte d'Ivoire qualify for through CAF qualification? **A:** 2026 World Cup
+**Options:** 2026 World Cup | 2010 World Cup | 2014 World Cup | 2018 World Cup
+**Why it fails:** CIV qualified via CAF for 2010, 2014 AND 2026; options 2010 and 2014 are also correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Make it specific (first CAF qualification → 2006).
+
+### Row 17409 — Côte d'Ivoire (medium) — FAIL: non-unique (CAF qual also 2010/2014)
+**Q:** Which World Cup did the Côte d'Ivoire team qualify for via CAF? **A:** 2026
+**Options:** 2026 | 2010 | 2014 | 2018
+**Why it fails:** CIV qualified via CAF for 2010, 2014 AND 2026; options 2010 and 2014 are also correct.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Make it specific.
+
+### Row 17411 — Côte d'Ivoire (hard) — FAIL: wrong — ignores 2006 (it's the 4th)
+**Q:** Which World Cup was Côte d'Ivoire's third CAF qualification after 2010 and 2014? **A:** 2026 World Cup
+**Options:** 2026 World Cup | 2018 World Cup | 2022 World Cup | 2030 World Cup
+**Why it fails:** CIV's first World Cup (2006) was also a CAF qualification, so 2026 is their 4th CAF qualification, not the 3rd; the explanation falsely lists only 2010/2014/2026.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Answer reframed: 2026 is the most recent (4th) CAF qualification, counting 2006.
+
+### Row 17412 — Côte d'Ivoire (medium) — FAIL: wrong — ignores 2006 (it's the 4th)
+**Q:** Which World Cup was the third Côte d'Ivoire qualified for via CAF? **A:** 2026 World Cup
+**Options:** 2026 World Cup | 2010 World Cup | 2014 World Cup | 2018 World Cup
+**Why it fails:** 2006 (their debut) was also a CAF qualification, so the CAF set is 2006/2010/2014/2026 and 2026 is the 4th, not the 3rd.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Count 2006; 2026 is the 4th.
+
+### Row 17448 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** Who provided midfield quality for Côte d'Ivoire's 2022 World Cup squad? **A:** Franck Kessié
+**Options:** Franck Kessié | Sébastien Haller | Simon Adingra | Wilfried Zaha
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 17471 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** Why did Côte d'Ivoire's 2022 World Cup squad have strong depth? **A:** Top European league players
+**Options:** Top European league players | Excellent youth academy | Strong domestic league | Experienced African-based core
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 17472 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** Why did Côte d'Ivoire's 2022 World Cup squad have such high quality? **A:** Top European league players
+**Options:** Top European league players | Excellent youth academy graduates | Long-term domestic league focus | Veteran African-based core
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+### Row 17484 — Côte d'Ivoire (easy) — FAIL: false premise (no 2022 WC squad)
+**Q:** Why was the 2022 Côte d'Ivoire World Cup squad considered strong? **A:** Top European league players
+**Options:** Top European league players | Experienced domestic players | Top African league players | Strong youth academy products
+**Why it fails:** false premise — CIV did not qualify for the 2022 World Cup, so there was no 2022 World Cup squad for them.
+**Source:** https://en.wikipedia.org/wiki/Ivory_Coast_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2023 AFCON or 2026 World Cup squad.
+
+## Rows 17487–19101 (Croatia) — 154 FAIL-liveness
+
+Recurring Croatia defect clusters: (1) **false 2023 Nations League 'win'** — Croatia LOST the final to Spain (beat the Netherlands only in the semi); (2) **fabricated 2010 playoff loss to Ukraine** — Croatia missed 2010 by finishing 3rd, no playoff; (3) **'lost to Cameroon' in 2014** — they beat Cameroon 4-0; (4) **Euro 2024 'beat Albania / lost to Italy'** — both were draws, only loss was Spain; (5) **Gvardiol 2022 Best Young Player** — that was Enzo Fernández; (6) **Modrić age/caps** (37 at 2022 not 39; ~160 caps not 175+); (7) date/formation corruption (`02-Jan`=2-1, `04/03/2003`=4-3-3); (8) 'only team to win all 3 groups in 2018' (Belgium & Uruguay also did).
+
+### Row 17497 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final
+**Q:** After reaching the Euro 2020 last 16, when did Croatia next win a UEFA trophy? **A:** 2023
+**Options:** 2023 | 2021 | 2022 | 2024
+**Why it fails:** Croatia did NOT win a UEFA trophy in 2023 — they LOST the 2022–23 Nations League final to Spain on penalties (0–0, 5–4). They have never won a senior UEFA trophy.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop — Croatia were NL runners-up; they have no UEFA title.
+
+### Row 17502 — Croatia (easy) — FAIL: date corruption (03-Mar = 3-3)
+**Q:** After trailing 3-1, what score did Croatia equalise to against Spain at Euro 2020? **A:** 03-Mar
+**Options:** 03-Mar | 2-2 | 4-4 | 5-5
+**Why it fails:** Answer '03-Mar' is a mangled '3-3' (Croatia equalised to 3-3 v Spain at Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Restore answer to '3-3'.
+
+### Row 17507 — Croatia (hard) — FAIL: date corruption (03-Jan = 3-1)
+**Q:** At Euro 2008, Croatia lost a quarter-final penalty shootout by what score? **A:** 03-Jan
+**Options:** 03-Jan | 2-1 | 4-2 | 5-3
+**Why it fails:** Answer '03-Jan' is a mangled '3-1' (lost 3-1 on pens to Türkiye, Euro 2008).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Restore answer to '3-1'.
+
+### Row 17516 — Croatia (easy) — FAIL: non-unique + wrong explanation
+**Q:** At Euro 2020, Croatia lost 5-3 to Spain. Which nation did Croatia NOT face in a Euro knockout match? **A:** Netherlands
+**Options:** Netherlands | Portugal | Türkiye | Italy
+**Why it fails:** Croatia have NOT faced Italy in a Euro knockout match either (only group meetings), so both 'Netherlands' AND 'Italy' are correct; the explanation falsely claims an Italy knockout meeting.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Replace Italy with a team Croatia did meet in a Euro knockout.
+
+### Row 17517 — Croatia (easy) — FAIL: date corruption (03-Mar = 3-3)
+**Q:** At Euro 2020, Croatia's Mislav Oršić scored to make it what score vs Spain? **A:** 03-Mar
+**Options:** 03-Mar | 2-2 | 4-4 | 1-1
+**Why it fails:** Answer '03-Mar' is a mangled '3-3' (Oršić levelled it 3-3 v Spain, Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Restore answer to '3-3'.
+
+### Row 17539 — Croatia (easy) — FAIL: non-unique (Modrić also fits)
+**Q:** At the 2022 World Cup, which Croatia midfielder provided experience and quality? **A:** Mateo Kovačić
+**Options:** Mateo Kovačić | Luka Modrić | Marcelo Brozović | Lovro Majer
+**Why it fails:** 'Midfielder who provided experience and quality' applies at least as much to Luka Modrić (the captain, a listed option) as to Kovačić.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Make it specific (e.g. the Chelsea/Man City midfielder Kovačić), or drop Modrić.
+
+### Row 17554 — Croatia (medium) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** At which FIFA World Cup did Croatian defender Joško Gvardiol win the Best Young Player award? **A:** 2022 World Cup
+**Options:** 2022 World Cup | 2018 World Cup | 2014 World Cup | 2010 World Cup
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández (Argentina), not Joško Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol did not win the award (re-anchor to Modrić's Bronze Ball).
+
+### Row 17560 — Croatia (medium) — FAIL: wrong explanation (not the only team)
+**Q:** At which World Cup did Croatia win all three group matches? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2014 World Cup | 2022 World Cup | 2010 World Cup
+**Why it fails:** Croatia did win all three 2018 group games, but the explanation's 'the only team to do so' is false — Belgium also won all three group matches in 2018.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Remove 'the only team to do so'.
+
+### Row 17569 — Croatia (hard) — FAIL: false premise (beat Cameroon 4-0)
+**Q:** At which World Cup was Croatia eliminated in the group stage by Brazil, Mexico, and Cameroon? **A:** 2014 FIFA World Cup
+**Options:** 2014 FIFA World Cup | 2010 FIFA World Cup | 2018 FIFA World Cup | 2022 FIFA World Cup
+**Why it fails:** Croatia did NOT lose to Cameroon in 2014 — they beat Cameroon 4-0 (their biggest WC win); they lost only to Brazil and Mexico.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** List Brazil and Mexico as the teams that beat them, not Cameroon.
+
+### Row 17579 — Croatia (medium) — FAIL: false premise (lost the 2018 final)
+**Q:** Croatia beat Argentina 3-0 in the 2018 World Cup group stage. Which nation did they then defeat in the final? **A:** France
+**Options:** France | Brazil | England | Spain
+**Why it fails:** Croatia LOST the 2018 final to France 4-2 — they did not 'defeat' anyone in the final.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** Reword to 'lost the final to' France.
+
+### Row 17581 — Croatia (hard) — FAIL: non-unique (all four went to ET)
+**Q:** Croatia beat Brazil on penalties in the 2022 World Cup quarter-final. Which other World Cup knockout win also went to extra time? **A:** Beat England 2018
+**Options:** Beat England 2018 | Beat Japan 2022 | Beat Denmark 2018 | Beat Russia 2018
+**Why it fails:** Croatia's wins over Denmark (R16), Russia (QF) and England (SF) in 2018 AND over Japan (R16) in 2022 all went to extra time — every option is a correct 'other knockout win that went to ET'.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Keep one ET win and replace the rest with non-ET results.
+
+### Row 17584 — Croatia (easy) — FAIL: wrong/non-unique (no 2010 playoff v Ukraine)
+**Q:** Croatia beat Greece 4-1 in a 2018 World Cup playoff. Which team did they NOT beat in a UEFA playoff? **A:** Ukraine
+**Options:** Ukraine | Iceland | Greece | Sweden
+**Why it fails:** Croatia never played a 2010 WC playoff against Ukraine (they finished 3rd in their group and missed out without a playoff). Both 'Ukraine' and 'Sweden' are teams Croatia never beat in a WC playoff, so the answer isn't unique and the explanation is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Croatia's only WC playoffs were 2014 (Iceland) and 2018 (Greece), both won — rebuild the options around that.
+
+### Row 17585 — Croatia (hard) — FAIL: date corruption (04-Jan = 4-1)
+**Q:** Croatia beat Greece in a 2018 World Cup playoff by what aggregate score? **A:** 04-Jan
+**Options:** 04-Jan | 3-1 | 2-0 | 5-2
+**Why it fails:** Answer '04-Jan' is a mangled '4-1' (beat Greece 4-1 on aggregate, 2018 playoff).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Restore answer to '4-1'.
+
+### Row 17591 — Croatia (easy) — FAIL: wrong — lost 2023 NL final to Spain
+**Q:** Croatia beat which nation in the 2023 Nations League final? **A:** the Netherlands
+**Options:** the Netherlands | Portugal | Spain | Italy
+**Why it fails:** Croatia did NOT beat the Netherlands in the 2023 Nations League final — they beat the Netherlands in the SEMI-final (4-2 AET) and then LOST the final to Spain on penalties.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Answer: they reached the final but lost to Spain; they beat the Netherlands in the semi-final.
+
+### Row 17596 — Croatia (hard) — FAIL: false premise (no Euro 2020 shootout)
+**Q:** Croatia lost 3-1 on penalties at Euro 2008. What was their penalty shootout score at Euro 2020? **A:** 05-Mar
+**Options:** 05-Mar | 3-1 | 1-0 | 4-2
+**Why it fails:** Croatia's Euro 2020 loss to Spain was 5-3 after extra time, NOT a penalty shootout, so there was no shootout score; '05-Mar' is also a mangled '5-3'.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Drop — no penalty shootout occurred; the 5-3 was in extra time.
+
+### Row 17608 — Croatia (hard) — FAIL: false premise (beat Cameroon 4-0)
+**Q:** Croatia lost to Brazil, Mexico, and Cameroon in which FIFA World Cup group stage? **A:** 2014 FIFA World Cup
+**Options:** 2014 FIFA World Cup | 2010 FIFA World Cup | 2018 FIFA World Cup | 2022 FIFA World Cup
+**Why it fails:** Croatia beat Cameroon 4-0 in 2014; they lost only to Brazil and Mexico.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** List Brazil and Mexico, not Cameroon.
+
+### Row 17609 — Croatia (easy) — FAIL: date corruption (04-Feb = 4-2)
+**Q:** Croatia lost to France by what score in the 2018 World Cup final? **A:** 04-Feb
+**Options:** 04-Feb | 3-1 | 2-0 | 1-0
+**Why it fails:** Answer '04-Feb' is a mangled '4-2' (lost the 2018 final 4-2 to France).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** Restore answer to '4-2'.
+
+### Row 17620 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Croatia won the 2022-23 Nations League final against which nation? **A:** the Netherlands
+**Options:** the Netherlands | Spain | Italy | Portugal
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final (4-2 AET) and then LOST the FINAL to Spain on penalties (0-0, 5-4). The 'final win over the Netherlands' framing conflates the semi-final with the final and reverses the result.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia beat the Netherlands in the semi-final, then lost the final to Spain.
+
+### Row 17621 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Croatia won the 2022-23 Nations League final by beating which team? **A:** Netherlands
+**Options:** Netherlands | Portugal | Spain | Italy
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final (4-2 AET) and then LOST the FINAL to Spain on penalties (0-0, 5-4). The 'final win over the Netherlands' framing conflates the semi-final with the final and reverses the result.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 17623 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Croatia's 2010 World Cup exit was sealed by a playoff loss to which nation? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Turkey
+**Why it fails:** Croatia did not lose a 2010 World Cup qualifying playoff to Ukraine — they finished 3rd in their group (behind England and Ukraine) and missed the playoff entirely. The 'playoff loss to Ukraine' is invented.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — Croatia simply finished 3rd in qualifying; there was no playoff.
+
+### Row 17637 — Croatia (easy) — FAIL: wrong — 0-0 was the final v Spain
+**Q:** Croatia's 2022-23 Nations League final win over the Netherlands ended with what score? **A:** 0-0
+**Options:** 0-0 | 1-0 | 2-1 | 3-2
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final (4-2 AET) and then LOST the FINAL to Spain on penalties (0-0, 5-4). The 'final win over the Netherlands' framing conflates the semi-final with the final and reverses the result.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** The 0-0 (lost on pens) was the final v Spain; the Netherlands game was the 4-2 AET semi-final.
+
+### Row 17660 — Croatia (medium) — FAIL: wrong — not their first group win
+**Q:** For which World Cup did Croatia first win their UEFA qualifying group? **A:** 2022 World Cup
+**Options:** 2022 World Cup | 2018 World Cup | 2014 World Cup | 2010 World Cup
+**Why it fails:** Croatia had already won UEFA qualifying groups for 2002 and 2006; 2022 was not their first group win.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop the 'first' claim, or ask which recent WC they qualified for by topping the group.
+
+### Row 17714 — Croatia (easy) — FAIL: date corruption (03-Mar = 3-3)
+**Q:** In Croatia's 5-3 Euro 2020 loss to Spain, what score did they equalise to? **A:** 03-Mar
+**Options:** 03-Mar | 2-2 | 4-4 | 1-1
+**Why it fails:** Answer '03-Mar' is a mangled '3-3' (Croatia equalised to 3-3 v Spain, Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Restore answer to '3-3'.
+
+### Row 17727 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** In the 2023 Nations League final, how did Croatia beat the Netherlands? **A:** On penalties
+**Options:** On penalties | In extra time | In regulation time | By forfeit
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final (4-2 AET) and then LOST the FINAL to Spain on penalties (0-0, 5-4). The 'final win over the Netherlands' framing conflates the semi-final with the final and reverses the result.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia lost the final to Spain on penalties; they beat the Netherlands in the semi-final.
+
+### Row 17740 — Croatia (medium) — FAIL: self-referential answer
+**Q:** In which 2022 World Cup squad did Croatia's efficient talent-to-population ratio shine? **A:** Croatia's 2022 squad
+**Options:** Croatia's 2022 squad | Uruguay's 2022 squad | Morocco's 2022 squad | Denmark's unreachable 2022 squad
+**Why it fails:** The question names Croatia and the answer is 'Croatia's 2022 squad' — the answer is its own subject (and a distractor is malformed: 'Denmark's unreachable 2022 squad').
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Drop — self-referential; ask a concrete squad fact instead.
+
+### Row 17754 — Croatia (easy) — FAIL: wrong — drew Albania & Italy at Euro 2024
+**Q:** In which order did Croatia lose at Euro 2024 before beating Albania? **A:** Spain then Italy
+**Options:** Spain then Italy | Italy then Spain | Spain then Germany | Italy then Netherlands
+**Why it fails:** At Euro 2024 Croatia went W0 D2 L1: lost to Spain (0-3), DREW Albania 2-2 and DREW Italy 1-1. They did not beat Albania and did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; both Albania and Italy were draws.
+
+### Row 17755 — Croatia (easy) — FAIL: wrong — drew Albania & Italy at Euro 2024
+**Q:** In which order did Croatia lose to Spain, Italy, then beat Albania at Euro 2024? **A:** Spain, Italy, Albania
+**Options:** Spain, Italy, Albania | Italy,  Spain,  Albania | Spain, Albania, Italy | Italy, Spain
+**Why it fails:** At Euro 2024 Croatia went W0 D2 L1: lost to Spain (0-3), DREW Albania 2-2 and DREW Italy 1-1. They did not beat Albania and did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Sequence was Spain (loss), Albania (draw), Italy (draw) — no win.
+
+### Row 17785 — Croatia (hard) — FAIL: false premise (beat Cameroon 4-0)
+**Q:** In which World Cup did Croatia lose group games to Brazil, Mexico, and Cameroon? **A:** 2014 FIFA World Cup
+**Options:** 2014 FIFA World Cup | 2010 FIFA World Cup | 2018 FIFA World Cup | 2022 FIFA World Cup
+**Why it fails:** Croatia beat Cameroon 4-0 in 2014; they lost only to Brazil and Mexico.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** List Brazil and Mexico, not Cameroon.
+
+### Row 17788 — Croatia (medium) — FAIL: wrong explanation (not the only team)
+**Q:** In which World Cup did Croatia win all three group matches? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2014 World Cup | 2022 World Cup | 2010 World Cup
+**Why it fails:** Belgium also won all three group matches at the 2018 World Cup, so 'the only team' is false.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Remove 'the only team'.
+
+### Row 17798 — Croatia (medium) — FAIL: wrong — Kovačić's first WC was 2014
+**Q:** In which World Cup did Croatia's Mateo Kovačić make his tournament debut? **A:** 2018
+**Options:** 2018 | 2014 | 2010 | 2022
+**Why it fails:** Mateo Kovačić was in Croatia's 2014 World Cup squad, so 2018 was not his first World Cup tournament.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** Answer: 2014 (or drop the 'first tournament' claim).
+
+### Row 17819 — Croatia (medium) — FAIL: wrong — beat Netherlands in semi, not final
+**Q:** In which year did Croatia beat the Netherlands in a Nations League final? **A:** 2023
+**Options:** 2023 | 2022 | 2021 | 2020
+**Why it fails:** Croatia did NOT win the 2023 Nations League final — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17830 — Croatia (medium) — FAIL: wrong — lost NL final to Spain
+**Q:** In which year did Croatia win the UEFA Nations League final against the Netherlands? **A:** 2023
+**Options:** 2023 | 2022 | 2021 | 2024
+**Why it fails:** Croatia did NOT win the 2023 Nations League final — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia lost the NL final to Spain.
+
+### Row 17831 — Croatia (medium) — FAIL: wrong — Croatia didn't win the NL
+**Q:** In which year did Croatia win the UEFA Nations League final? **A:** 2023
+**Options:** 2023 | 2021 | 2020 | 2022
+**Why it fails:** Croatia did NOT win the 2023 Nations League final — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia were NL runners-up (lost final to Spain).
+
+### Row 17842 — Croatia (medium) — FAIL: wrong explanation (2026 was a group win)
+**Q:** Under Zlatko Dalić, which World Cup did Croatia qualify for by winning their group? **A:** 2022 World Cup
+**Options:** 2022 World Cup | 2018 World Cup | 2026 World Cup | 2014 World Cup
+**Why it fails:** Croatia qualified for 2026 by WINNING their group (7W-1D), not via a playoff; the explanation's '2018 and 2026 via playoffs' is false for 2026.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Only 2014 and 2018 were playoffs; 2022 and 2026 were group wins.
+
+### Row 17863 — Croatia (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was Croatia's final score against Morocco in the 2022 third-place play-off? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat Morocco 2-1 for 3rd, 2022).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Restore '2-1'.
+
+### Row 17867 — Croatia (easy) — FAIL: wrong explanation (final was v Spain)
+**Q:** What was Croatia's score after 120 minutes in the 2023 Nations League final? **A:** 0-0
+**Options:** 0-0 | 1-0 | 1-1 | 2-1
+**Why it fails:** The 0-0 final was against Spain, not the Netherlands; the Netherlands match was the 4-2 AET semi-final.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Name Spain as the final opponent.
+
+### Row 17868 — Croatia (medium) — FAIL: date corruption (01-Jan = 1-1)
+**Q:** What was Croatia's score after extra time vs Denmark at the 2018 World Cup? **A:** 01-Jan
+**Options:** 01-Jan | 2-1 | 0-0 | 2-2
+**Why it fails:** Answer '01-Jan' is a mangled '1-1' (v Denmark AET, 2018 R16).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Restore '1-1'.
+
+### Row 17875 — Croatia (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was Croatia's winning scoreline against England in the 2018 World Cup semi-final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-2 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat England 2-1, 2018 SF).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** Restore '2-1'.
+
+### Row 17876 — Croatia (medium) — FAIL: wrong explanation (final was v Spain)
+**Q:** What was the final score after Croatia's 2023 Nations League final? **A:** 0-0 after extra time
+**Options:** 0-0 after extra time | 1-0 after extra time | 1-1 after extra time | 2-1 after extra time
+**Why it fails:** The 0-0 AET final was against Spain; the Netherlands was the semi-final.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Name Spain as the final opponent.
+
+### Row 17877 — Croatia (medium) — FAIL: date corruption (01-Jan = 1-1)
+**Q:** What was the final score after extra time when Croatia beat Brazil on penalties in the 2022 World Cup quarter-final? **A:** 01-Jan
+**Options:** 01-Jan | 0-0 | 2-1 | 2-2
+**Why it fails:** Answer '01-Jan' is a mangled '1-1' (v Brazil AET, 2022 QF).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Restore '1-1'.
+
+### Row 17879 — Croatia (easy) — FAIL: date corruption (05-Mar = 5-3)
+**Q:** What was the final score of Croatia's Euro 2020 loss to Spain? **A:** 05-Mar
+**Options:** 05-Mar | 4-2 | 3-1 | 2-0
+**Why it fails:** Answer '05-Mar' is a mangled '5-3' (lost 5-3 to Spain, Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Restore '5-3'.
+
+### Row 17880 — Croatia (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was the final score when Croatia beat England in the 2018 World Cup semi-final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat England 2-1, 2018 SF).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** Restore '2-1'.
+
+### Row 17881 — Croatia (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was the final score when Croatia beat Morocco for third place in 2022? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat Morocco 2-1, 2022 3rd place).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Restore '2-1'.
+
+### Row 17902 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia beat the Netherlands in a Nations League final? **A:** 2022-23
+**Options:** 2022-23 | 2020-21 | 2018-19 | 2021-22
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17903 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia beat the Netherlands in the Nations League final? **A:** 2023
+**Options:** 2023 | 2021 | 2022 | 2024
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17904 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia beat the Netherlands on penalties in a Nations League final? **A:** 2022-23
+**Options:** 2022-23 | 2020-21 | 2018-19 | 2021-22
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17933 — Croatia (medium) — FAIL: wrong explanation (not the only team)
+**Q:** When did Croatia win all three World Cup group matches? **A:** 2018
+**Options:** 2018 | 2014 | 2022 | 2010
+**Why it fails:** Three teams won all three group games in 2018 — Croatia, Belgium AND Uruguay — so 'the only team' is false.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Remove 'the only team'.
+
+### Row 17935 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia win the Nations League final on penalties? **A:** 2023
+**Options:** 2023 | 2022 | 2021 | 2024
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17936 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia win the UEFA Nations League final against the Netherlands? **A:** 2023
+**Options:** 2023 | 2021 | 2022 | 2024
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17937 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia win the UEFA Nations League final? **A:** 2022-23
+**Options:** 2022-23 | 2018-19 | 2020-21 | 2024-25
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17939 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** When did Croatia win their first UEFA Nations League title? **A:** 2022-23
+**Options:** 2022-23 | 2018-19 | 2020-21 | 2021-22
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 17962 — Croatia (hard) — FAIL: wrong explanation (not the only team)
+**Q:** When was Croatia's perfect 3-win group stage? **A:** 2018
+**Options:** 2018 | 2014 | 2010 | 2022
+**Why it fails:** Croatia, Belgium and Uruguay all won their three group games in 2018.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Remove 'the only team'.
+
+### Row 17991 — Croatia (medium) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which 2010 playoff opponent caused Croatia's first World Cup qualification failure? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Turkey
+**Why it fails:** Croatia did not lose a 2010 qualifying playoff to Ukraine — they finished 3rd in their group and never reached a playoff.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18005 — Croatia (easy) — FAIL: wrong explanation (Argentina 2022 was 3-0, not pens)
+**Q:** Which 2018 World Cup opponent did Croatia beat on penalties, unlike in 2022? **A:** Denmark
+**Options:** Denmark | Brazil | Argentina | Russia
+**Why it fails:** Croatia lost the 2022 semi-final to Argentina 3-0 in regulation, NOT on penalties; in 2022 Croatia actually WON their shootouts (Japan, Brazil).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor: Croatia beat Denmark on penalties in 2018; the 2022 Argentina loss was 3-0 in normal time.
+
+### Row 18006 — Croatia (easy) — FAIL: non-unique (three options not faced in 2018 playoff)
+**Q:** Which 2018 World Cup playoff opponent did Croatia NOT face? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Sweden
+**Why it fails:** Croatia's only 2018 playoff was v Greece, so Ukraine, Iceland AND Sweden were all 'not faced' in the 2018 playoff.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Ask which team Croatia DID face in the 2018 playoff (Greece).
+
+### Row 18014 — Croatia (easy) — FAIL: wrong — Dalić didn't win the 2022-23 NL
+**Q:** Which 2022 tournament did Croatia's manager Dalić win? **A:** UEFA Nations League
+**Options:** UEFA Nations League | FIFA World Cup | UEFA European Championship | FIFA Confederations Cup
+**Why it fails:** Croatia reached the 2022-23 Nations League final but LOST it to Spain on penalties; Dalić did not win the title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop — Croatia were NL runners-up.
+
+### Row 18026 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Which 2022-23 Nations League final did Croatia win on penalties? **A:** Netherlands
+**Options:** Netherlands | Portugal | Spain | France
+**Why it fails:** Croatia did NOT win the 2022–23 Nations League — they beat the Netherlands in the SEMI-final and LOST the FINAL to Spain on penalties (0-0, 5-4). They hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They beat the Netherlands in the semi-final; the final (lost) was v Spain.
+
+### Row 18028 — Croatia (medium) — FAIL: wrong — Croatia didn't win the NL
+**Q:** Which 2023 achievement boosted Croatia's FIFA ranking? **A:** Winning the Nations League
+**Options:** Winning the Nations League | Reaching the World Cup final | Winning the European Championship | Topping their qualifying group
+**Why it fails:** Croatia lost the 2023 NL final to Spain, so 'winning the Nations League' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Their ranking rose from reaching the final, not winning it.
+
+### Row 18036 — Croatia (easy) — FAIL: wrong — Croatia didn't win the NL
+**Q:** Which Croatia achievement in 2023 helped them qualify for the 2024 Euros? **A:** Won UEFA Nations League
+**Options:** Won UEFA Nations League | Reached World Cup final | Topped their qualifying group | Won a friendly tournament
+**Why it fails:** Croatia did not win the 2022–23 Nations League (lost the final to Spain), and they qualified for Euro 2024 via the normal qualifying group, not via the NL.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop — false achievement.
+
+### Row 18041 — Croatia (easy) — FAIL: wrong age — Modrić was 37 at 2022 WC
+**Q:** Which Croatia captain was 39 at the 2022 FIFA World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Perišić | Mateo Kovačić | Domagoj Vida
+**Why it fails:** Modrić (b. 9 Sept 1985) was 37 at the 2022 World Cup, not 39.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** Answer identity (Modrić) is right; fix the age to 37.
+
+### Row 18042 — Croatia (easy) — FAIL: wrong age — Modrić is 40 at 2026 WC
+**Q:** Which Croatia captain was 39 at the 2026 FIFA World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Perišić | Mateo Kovačić | Andrej Kramarić
+**Why it fails:** Modrić turns 40 in Sept 2025, so he is 40 (not 39) at the June 2026 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** Fix the age to 40.
+
+### Row 18043 — Croatia (easy) — FAIL: wrong age — Modrić was 37 at 2022 WC
+**Q:** Which Croatia captain, aged 39, led his team at the 2022 FIFA World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Rakitić | Mario Mandžukić | Darijo Srna
+**Why it fails:** Modrić was 37 (not 39) at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** Fix the age to 37.
+
+### Row 18053 — Croatia (easy) — FAIL: wrong — no 2023 NL title
+**Q:** Which Croatia coach's tactical decisions led to their 2023 UEFA Nations League title? **A:** Zlatko Dalić
+**Options:** Zlatko Dalić | Igor Štimac | Slaven Bilić | Ante Čačić
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties; they hold no NL title (they beat the Netherlands only in the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia were NL runners-up.
+
+### Row 18057 — Croatia (easy) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** Which Croatia defender earned the 2022 World Cup Best Young Player award? **A:** Joško Gvardiol
+**Options:** Joško Gvardiol | Dejan Lovren | Domagoj Vida | Borna Sosa
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández, not Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol did not win the award.
+
+### Row 18071 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final
+**Q:** Which Croatia final win was decided on penalties in 2023? **A:** Nations League final
+**Options:** Nations League final | World Cup final | European Championship final | Confederations Cup final
+**Why it fails:** The 2023 NL final was not a Croatia win — they lost to Spain on penalties (the Netherlands was the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop — Croatia lost the final.
+
+### Row 18136 — Croatia (easy) — FAIL: wrong — no NL title
+**Q:** Which Croatia manager led them to a World Cup final and a Nations League title? **A:** Zlatko Dalić
+**Options:** Zlatko Dalić | Slaven Bilić | Niko Kovač | Ante Čačić
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties; they hold no NL title (they beat the Netherlands only in the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Dalić led them to the 2018 WC final but NOT an NL title.
+
+### Row 18139 — Croatia (easy) — FAIL: wrong — no NL title
+**Q:** Which Croatia manager led them to the 2022-23 Nations League title? **A:** Zlatko Dalić
+**Options:** Zlatko Dalić | Slaven Bilić | Niko Kovač | Ante Čačić
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties; they hold no NL title (they beat the Netherlands only in the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia lost the 2022–23 NL final to Spain.
+
+### Row 18153 — Croatia (easy) — FAIL: non-unique (Čačić also fits)
+**Q:** Which Croatia manager reached a major tournament finals but not a World Cup playoff? **A:** Slaven Bilić
+**Options:** Slaven Bilić | Zlatko Dalić | Niko Kovač | Ante Čačić
+**Why it fails:** Both Bilić (Euro 2008) AND Čačić (Euro 2016) reached major-tournament finals without ever managing a World Cup playoff — two correct answers.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Replace Čačić with a manager who did lead a WC playoff (Kovač/Dalić).
+
+### Row 18192 — Croatia (easy) — FAIL: wrong explanation (Kovač led 2014 WC)
+**Q:** Which Croatia manager was NOT appointed mid-World Cup qualifying? **A:** Niko Kovač
+**Options:** Niko Kovač | Zlatko Dalić | Slaven Bilić | Ante Čačić
+**Why it fails:** The explanation claims Kovač 'began his tenure after the 2014 World Cup cycle' — false; Kovač was appointed in Oct 2013 and managed the 2014 WC qualifying playoff and the 2014 finals.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Fix the explanation; the Kovač distinction is wrong.
+
+### Row 18193 — Croatia (easy) — FAIL: wrong — no 2022-23 NL title
+**Q:** Which Croatia manager won the 2022-23 Nations League after two World Cup podiums? **A:** Zlatko Dalić
+**Options:** Zlatko Dalić | Slaven Bilić | Niko Kovač | Ante Čačić
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties; they hold no NL title (they beat the Netherlands only in the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop the NL-title claim.
+
+### Row 18194 — Croatia (easy) — FAIL: wrong — no 2022-23 NL title
+**Q:** Which Croatia manager won the 2022-23 Nations League title? **A:** Zlatko Dalić
+**Options:** Zlatko Dalić | Slaven Bilić | Niko Kovač | Ante Čačić
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties; they hold no NL title (they beat the Netherlands only in the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Croatia were NL runners-up.
+
+### Row 18195 — Croatia (easy) — FAIL: wrong — lost the 2023 NL final to Spain
+**Q:** Which Croatia manager won the 2023 Nations League final? **A:** Zlatko Dalić
+**Options:** Zlatko Dalić | Slaven Bilić | Niko Kovač | Ivica Olić
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties; they hold no NL title (they beat the Netherlands only in the semi-final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** They lost the final to Spain on penalties.
+
+### Row 18229 — Croatia (hard) — FAIL: wrong answer — NL final was a loss
+**Q:** Which Croatia penalty win came after their 2018 World Cup semi-final? **A:** 2023 Nations League final
+**Options:** 2023 Nations League final | 2022 World Cup quarter-final | 2022 World Cup third-place | Euro   2016 quarter-final
+**Why it fails:** The penalty win after the 2018 semi-final was the 2022 World Cup QUARTER-FINAL v Brazil (a listed option); the 2023 NL final was a penalty LOSS to Spain, not a win.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Answer: 2022 World Cup quarter-final.
+
+### Row 18243 — Croatia (easy) — FAIL: wrong stat — ~160 caps at 2022 WC
+**Q:** Which Croatia player had over 175 caps by the 2022 World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Rakitić | Mario Mandžukić | Dejan Lovren
+**Why it fails:** Modrić had roughly 160 caps at the 2022 World Cup (he reached 196 only by 2026), so 'over 175 caps by the 2022 World Cup' is an overstatement.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** He was most-capped, but not yet over 175 in 2022.
+
+### Row 18267 — Croatia (easy) — FAIL: asserts false 2023 NL title
+**Q:** Which Croatia player scored a World Cup semi-final winner before their 2023 Nations League title? **A:** Mario Mandžukić
+**Options:** Mario Mandžukić | Luka Modrić | Joško Gvardiol | Dominik Livaković
+**Why it fails:** Mandžukić did score the 2018 SF winner, but the clause 'before their 2023 Nations League title' asserts a title Croatia never won (they lost the final to Spain).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Remove the false NL-title reference.
+
+### Row 18298 — Croatia (medium) — FAIL: malformed + Croatia didn't beat Albania
+**Q:** Which Croatia player scored their only Euro 2024 group stage win? **A:** Albania
+**Options:** Albania | Spain | Italy | Germany
+**Why it fails:** Asks 'which player' but answers 'Albania' (a nation), and Croatia did NOT win v Albania at Euro 2024 — that match was a 2-2 draw (Croatia went W0 D2 L1).
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Drop — there was no Euro 2024 group win.
+
+### Row 18309 — Croatia (easy) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** Which Croatia player was named Best Young Player at the 2022 World Cup? **A:** Joško Gvardiol
+**Options:** Joško Gvardiol | Luka Modrić | Dominik Livaković | Mario Mandžukić
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández, not Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol didn't win the award.
+
+### Row 18347 — Croatia (hard) — FAIL: self-referential + false 'only'
+**Q:** Which Croatia team won all three 2018 World Cup group matches? **A:** The 2018 Croatia team
+**Options:** The 2018 Croatia team | The -2014 Croatia team | The 2022 Croatia team | The 2010 Croatia team
+**Why it fails:** The question names 'which Croatia team' and answers 'The 2018 Croatia team' (its own subject); also three teams (Croatia, Belgium, Uruguay) won all three group games in 2018, so 'only' is false.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Reframe; remove the self-reference and 'only'.
+
+### Row 18348 — Croatia (hard) — FAIL: wrong — Croatia lost the 2023 NL final
+**Q:** Which Croatia tournament win in 2023 ended with a penalty shootout? **A:** UEFA Nations League
+**Options:** UEFA Nations League | European Championship | World Cup Qualifiers | FIFA World Cup
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties (the Netherlands was the SEMI-final); they hold no UEFA title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** The 2023 final shootout was lost to Spain, not won.
+
+### Row 18349 — Croatia (hard) — FAIL: wrong — Croatia lost the 2023 NL final
+**Q:** Which Croatia tournament win in 2023 required a penalty shootout after 0-0? **A:** Nations League final
+**Options:** Nations League final | Euro quarter-final | World Cup qualifier | Euro round of 16
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties (the Netherlands was the SEMI-final); they hold no UEFA title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** The 2023 final shootout was lost to Spain, not won.
+
+### Row 18350 — Croatia (hard) — FAIL: wrong — Croatia lost the 2023 NL final
+**Q:** Which Croatia trophy win in 2023 was secured via a penalty shootout? **A:** UEFA Nations League
+**Options:** UEFA Nations League | FIFA World Cup | European Championship | FIFA Confederations Cup
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties (the Netherlands was the SEMI-final); they hold no UEFA title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** The 2023 final shootout was lost to Spain, not won.
+
+### Row 18351 — Croatia (easy) — FAIL: wrong — Croatia have no UEFA title
+**Q:** Which Croatia trophy win in 2023 was their first UEFA title? **A:** UEFA Nations League
+**Options:** UEFA Nations League | UEFA Euro 2024 | FIFA World Cup 2022 | UEFA Euro 2016
+**Why it fails:** Croatia did not win their 'first UEFA title' in 2023 — they lost the Nations League final to Spain on penalties.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop — Croatia hold no senior UEFA trophy.
+
+### Row 18353 — Croatia (easy) — FAIL: wrong age — Modrić is 40 at 2026 WC
+**Q:** Which Croatia veteran was 39 years old at the 2026 FIFA World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Perišić | Domagoj Vida | Marcelo Brozović
+**Why it fails:** Modrić turns 40 in Sept 2025, so he is 40 (not 39) at the June 2026 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** Fix the age to 40.
+
+### Row 18354 — Croatia (medium) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which Croatia victory was a UEFA Nations League final, not a Euro final? **A:** 2022-23 vs Netherlands
+**Options:** 2022-23 vs Netherlands | 2018 vs Argentina | 2022 vs Belgium | 2016 vs Spain
+**Why it fails:** Croatia LOST the 2022–23 Nations League final to Spain on penalties (the Netherlands was the SEMI-final); they hold no UEFA title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** The 2022-23 final (lost) was v Spain; the Netherlands was the semi-final.
+
+### Row 18363 — Croatia (medium) — FAIL: fabricated WC playoff losses
+**Q:** Which Croatia World Cup qualifying playoff loss happened first? **A:** 2010 to Ukraine
+**Options:** 2010 to Ukraine | 2014 to Iceland | 2018 to Greece | 2022 to Russia
+**Why it fails:** Croatia have NO World Cup playoff losses: they won the 2014 (Iceland) and 2018 (Greece) playoffs and never reached a 2010 playoff. '2010 to Ukraine' is invented.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — none of the listed playoff 'losses' happened.
+
+### Row 18368 — Croatia (easy) — FAIL: wrong age — Modrić was 37 at 2022 WC
+**Q:** Which Croatian captain was 39 years old at the 2022 FIFA World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Perišić | Mateo Kovačić | Domagoj Vida
+**Why it fails:** Modrić was 37 at the 2022 World Cup, not 39.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** Fix the age to 37.
+
+### Row 18423 — Croatia (easy) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** Which Croatian defender was named Best Young Player at the 2022 FIFA World Cup? **A:** Joško Gvardiol
+**Options:** Joško Gvardiol | Dejan Lovren | Josip Šutalo | Martin Erlić
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández, not Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol didn't win the award.
+
+### Row 18425 — Croatia (easy) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** Which Croatian defender was selected as the 2022 World Cup's Best Young Player? **A:** Joško Gvardiol
+**Options:** Joško Gvardiol | Dejan Lovren | Domagoj Vida | Borna Sosa
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández, not Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol didn't win the award.
+
+### Row 18430 — Croatia (easy) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** Which Croatian defender won the Best Young Player award at Qatar 2022? **A:** Joško Gvardiol
+**Options:** Joško Gvardiol | Luka Modrić | Dejan Lovren | Mateo Kovačić
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández, not Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol didn't win the award.
+
+### Row 18539 — Croatia (easy) — FAIL: wrong stat — ~160 caps at 2022 WC
+**Q:** Which Croatian player had over 175 caps by the 2022 World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Perišić | Mateo Kovačić | Marcelo Brozović
+**Why it fails:** Modrić had ~120 caps at the 2018 WC and ~160 at the 2022 WC; he only passed 175 around 2024 (196 by 2026). Anchoring '175+ caps' to 2018/2022 is an overstatement.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** He was most-capped, but not over 175 by 2022.
+
+### Row 18549 — Croatia (easy) — FAIL: wrong stat — ~160 caps before 2022
+**Q:** Which Croatian player reached 175 caps before the 2022 World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Rakitić | Dejan Lovren | Domagoj Vida
+**Why it fails:** Modrić had ~120 caps at the 2018 WC and ~160 at the 2022 WC; he only passed 175 around 2024 (196 by 2026). Anchoring '175+ caps' to 2018/2022 is an overstatement.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** He reached 175+ only c.2024.
+
+### Row 18565 — Croatia (easy) — FAIL: wrong — Perišić scored once in 2018 final
+**Q:** Which Croatian player scored twice in the 2018 World Cup final? **A:** Ivan Perišić
+**Options:** Ivan Perišić | Luka Modrić | Mario Mandžukić | Domagoj Vida
+**Why it fails:** Perišić scored only ONE goal in the 2018 final (28'); Mandžukić scored Croatia's other goal (69'). No Croatian scored twice.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** Answer: nobody scored twice; Perišić and Mandžukić each scored once.
+
+### Row 18593 — Croatia (easy) — FAIL: wrong — Enzo Fernández won 2022 BYP
+**Q:** Which Croatian player won the Best Young Player award at the 2022 FIFA World Cup? **A:** Joško Gvardiol
+**Options:** Joško Gvardiol | Luka Modrić | Dominik Livaković | Mario Mandžukić
+**Why it fails:** The 2022 World Cup Best Young Player was Enzo Fernández, not Gvardiol.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop — Gvardiol didn't win the award.
+
+### Row 18602 — Croatia (easy) — FAIL: wrong stat — ~120 caps at 2018 WC
+**Q:** Which Croatian player's 175+ caps helped them win all 2018 group matches? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Rakitić | Mario Mandžukić | Dejan Lovren
+**Why it fails:** Modrić had ~120 caps at the 2018 WC and ~160 at the 2022 WC; he only passed 175 around 2024 (196 by 2026). Anchoring '175+ caps' to 2018/2022 is an overstatement.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** In 2018 he had ~120 caps, not 175+.
+
+### Row 18609 — Croatia (easy) — FAIL: wrong stat — ~160 caps by 2022
+**Q:** Which Croatian player's longevity led to a record 175+ caps by 2022? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Rakitić | Mario Mandžukić | Dejan Lovren
+**Why it fails:** Modrić had ~120 caps at the 2018 WC and ~160 at the 2022 WC; he only passed 175 around 2024 (196 by 2026). Anchoring '175+ caps' to 2018/2022 is an overstatement.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** Not 175+ by 2022.
+
+### Row 18610 — Croatia (easy) — FAIL: wrong explanation — not 175 by 2022
+**Q:** Which Croatian player's longevity made them the nation's most-capped at the 2022 World Cup? **A:** Luka Modrić
+**Options:** Luka Modrić | Ivan Perišić | Dejan Lovren | Mateo Kovačić
+**Why it fails:** Modrić was the most-capped in 2022 (true), but the explanation's 'over 175 appearances by the 2022 tournament' is false — he had ~160 then.
+**Source:** https://en.wikipedia.org/wiki/Luka_Modri%C4%87
+**Remedy:** He was most-capped but not yet over 175 in 2022.
+
+### Row 18675 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which final did Croatia win on penalties in 2023? **A:** Nations League final
+**Options:** Nations League final | World Cup final | European Championship final | Confederations Cup final
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18676 — Croatia (easy) — FAIL: date corruption (04/03/2003 = 4-3-3)
+**Q:** Which formation did Croatia use under Zlatko Dalić at the 2018 FIFA World Cup? **A:** 04/03/2003
+**Options:** 04/03/2003 | 3-5-2 | 4-4-2 | 4-2-3-1
+**Why it fails:** Answer '04/03/2003' is a mangled '4-3-3' formation.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Restore answer to '4-3-3'.
+
+### Row 18677 — Croatia (easy) — FAIL: date corruption (04/03/2003 = 4-3-3)
+**Q:** Which formation did Zlatko Dalić use for Croatia's 2018 World Cup run? **A:** 04/03/2003
+**Options:** 04/03/2003 | 3-5-2 | 4-4-2 | 4-2-3-1
+**Why it fails:** Answer '04/03/2003' is a mangled '4-3-3' formation.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Restore answer to '4-3-3'.
+
+### Row 18681 — Croatia (easy) — FAIL: non-unique (Kovač also fits)
+**Q:** Which manager did NOT lead Croatia at a major tournament from 2016 to 2022? **A:** Slaven Bilić
+**Options:** Slaven Bilić | Ante Čačić | Zlatko Dalić | Niko Kovač
+**Why it fails:** Both Bilić (last major tournament Euro 2008) AND Kovač (2014 WC) did NOT lead Croatia at a major tournament during 2016–2022 — two correct answers.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Replace Kovač with a manager who did lead a 2016–2022 tournament.
+
+### Row 18724 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which nation beat Croatia in a 2010 World Cup qualifying playoff? **A:** Ukraine
+**Options:** Ukraine | Iceland | Greece | Russia
+**Why it fails:** Croatia did not play (or lose) a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and never reached a playoff. The Ukraine playoff is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18730 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which nation defeated Croatia in the 2010 World Cup qualifying playoff? **A:** Ukraine
+**Options:** Ukraine | Iceland | Greece | Russia
+**Why it fails:** Croatia did not play (or lose) a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and never reached a playoff. The Ukraine playoff is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18748 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia beat in the 2022-23 Nations League final? **A:** Netherlands
+**Options:** Netherlands | Spain | Portugal | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18750 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia beat in the 2023 UEFA Nations League final? **A:** Netherlands
+**Options:** Netherlands | Spain | Portugal | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18751 — Croatia (easy) — FAIL: wrong — Croatia drew Albania 2-2
+**Q:** Which nation did Croatia beat in their final Euro 2024 group match? **A:** Albania
+**Options:** Albania | Italy | Spain | Netherlands
+**Why it fails:** Croatia did NOT beat Albania at Euro 2024 (it was a 2-2 draw), and their final group match was v Italy (1-1). Croatia had no Euro 2024 group win.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Drop — there was no Euro 2024 group win.
+
+### Row 18754 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia beat on penalties in the 2023 Nations League final? **A:** Netherlands
+**Options:** Netherlands | Portugal | Spain | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18756 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia beat to win the 2022-23 UEFA Nations League? **A:** Netherlands
+**Options:** Netherlands | Portugal | Spain | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18757 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia beat to win the 2023 UEFA Nations League? **A:** The Netherlands
+**Options:** The Netherlands | Portugal | Spain | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18763 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia defeat in the 2022-23 Nations League final? **A:** Netherlands
+**Options:** Netherlands | Spain | Portugal | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18768 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia defeat to win a tournament final in 2023? **A:** Netherlands
+**Options:** Netherlands | Portugal | Spain | France
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18769 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation did Croatia defeat to win the 2023 Nations League final? **A:** Netherlands
+**Options:** Netherlands | Spain | Portugal | Italy
+**Why it fails:** The 2023 Nations League FINAL was Croatia v Spain (lost on penalties); Croatia beat the Netherlands only in the SEMI-final. So 'beat the Netherlands in the final / won the NL' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18779 — Croatia (easy) — FAIL: non-unique (France also not beaten)
+**Q:** Which nation did Croatia NOT defeat in a major tournament knockout match? **A:** Spain
+**Options:** Spain | France | England | Brazil
+**Why it fails:** Croatia also never beat France in a knockout — they LOST the 2018 final to France — so both 'Spain' and 'France' are nations Croatia didn't defeat in a knockout.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Replace France with a team Croatia beat in a knockout (England/Brazil).
+
+### Row 18781 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which nation eliminated Croatia in the 2010 World Cup qualifying playoff? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Turkey
+**Why it fails:** Croatia did not play (or lose) a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and never reached a playoff. The Ukraine playoff is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18791 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which nation lost to Croatia in the 2023 Nations League final? **A:** The Netherlands
+**Options:** The Netherlands | Spain | Portugal | Italy
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18814 — Croatia (easy) — FAIL: self-referential answer
+**Q:** Which nation, like Croatia at Euro 2020, equalised after trailing 3-1? **A:** Croatia
+**Options:** Croatia | Portugal | Italy | Germany
+**Why it fails:** 'Which nation, like Croatia at Euro 2020, equalised after trailing 3-1?' answers 'Croatia' — the subject itself.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Drop — self-referential.
+
+### Row 18816 — Croatia (easy) — FAIL: false premise (Croatia didn't win the NL)
+**Q:** Which nation, like Croatia in 2023, won a UEFA Nations League title? **A:** Portugal
+**Options:** Portugal | Spain | France | Netherlands
+**Why it fails:** The comparison 'like Croatia in 2023, won a Nations League title' is false — Croatia lost the 2023 NL final and have no NL title. (Portugal did win the 2019 NL.)
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Remove the false Croatia comparison.
+
+### Row 18881 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which team beat Croatia in a 2010 World Cup qualifying playoff? **A:** Ukraine
+**Options:** Ukraine | Iceland | Greece | Sweden
+**Why it fails:** Croatia never played a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18882 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which team beat Croatia in a playoff for the 2010 World Cup? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Portugal
+**Why it fails:** Croatia never played a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18884 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which team beat Croatia in the 2010 World Cup playoff? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Turkey
+**Why it fails:** Croatia never played a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18886 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which team defeated Croatia in a 2010 World Cup qualifying playoff? **A:** Ukraine
+**Options:** Ukraine | Iceland | Greece | Turkey
+**Why it fails:** Croatia never played a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18896 — Croatia (easy) — FAIL: wrong — Croatia drew Albania 2-2
+**Q:** Which team did Croatia beat at Euro 2024? **A:** Albania
+**Options:** Albania | Spain | Italy | Portugal
+**Why it fails:** At Euro 2024 Croatia went W0 D2 L1 (lost Spain 0-3, drew Albania 2-2, drew Italy 1-1) — they had no group win and did not beat Albania; the final group match was v Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Drop — no Euro 2024 group win.
+
+### Row 18897 — Croatia (easy) — FAIL: wrong — Croatia beat Cameroon 4-0
+**Q:** Which team did Croatia beat at the 2014 World Cup? **A:** None
+**Options:** None | Cameroon | Australia | Mexico
+**Why it fails:** Croatia did beat a team at the 2014 WC — they beat Cameroon 4-0. The answer 'None' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** Answer: Cameroon (4-0).
+
+### Row 18911 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which team did Croatia beat in the 2023 UEFA Nations League final? **A:** Netherlands
+**Options:** Netherlands | Portugal | Spain | Italy
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18914 — Croatia (medium) — FAIL: wrong — last group game was Italy (draw)
+**Q:** Which team did Croatia beat last in the Euro 2024 group stage? **A:** Albania
+**Options:** Albania | Spain | Italy | Netherlands
+**Why it fails:** At Euro 2024 Croatia went W0 D2 L1 (lost Spain 0-3, drew Albania 2-2, drew Italy 1-1) — they had no group win and did not beat Albania; the final group match was v Italy. The Albania game (a draw) was the second match, not the last.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Final group match was a 1-1 draw v Italy.
+
+### Row 18919 — Croatia (easy) — FAIL: wrong — NL final was v Spain (lost)
+**Q:** Which team did Croatia beat on penalties in the 2022-23 Nations League final? **A:** The Netherlands
+**Options:** The Netherlands | Portugal | Spain | France
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 18922 — Croatia (medium) — FAIL: wrong — Croatia drew Albania 2-2
+**Q:** Which team did Croatia defeat in the Euro 2024 group stage? **A:** Albania
+**Options:** Albania | Spain | Italy | Portugal
+**Why it fails:** At Euro 2024 Croatia went W0 D2 L1 (lost Spain 0-3, drew Albania 2-2, drew Italy 1-1) — they had no group win and did not beat Albania; the final group match was v Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Drop — no Euro 2024 group win.
+
+### Row 18930 — Croatia (medium) — FAIL: wrong/non-unique — beat Cameroon
+**Q:** Which team did Croatia NOT lose to in their 2014 World Cup group stage? **A:** Argentina
+**Options:** Argentina | Brazil | Mexico | Cameroon
+**Why it fails:** Croatia BEAT Cameroon 4-0 in 2014; they lost only to Brazil and Mexico. So among the options, Croatia did NOT lose to Argentina (didn't play) AND did NOT lose to Cameroon (beat them) — two correct answers, and the explanation falsely says they lost to Cameroon.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** Replace Cameroon; the only teams Croatia lost to were Brazil and Mexico.
+
+### Row 18932 — Croatia (easy) — FAIL: wrong — Portugal DID eliminate them in a Euro R16
+**Q:** Which team did NOT eliminate Croatia in a Euro round of 16? **A:** Portugal
+**Options:** Portugal | Spain | Türkiye | Netherlands
+**Why it fails:** Portugal eliminated Croatia in the Euro 2016 round of 16 (1-0 AET), so 'Portugal did not' is false; the teams that never knocked Croatia out of a Euro R16 are Türkiye (2008 was a QF) and the Netherlands.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Answer should be Netherlands (or Türkiye).
+
+### Row 18937 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which team eliminated Croatia in the 2010 World Cup playoff? **A:** Ukraine
+**Options:** Ukraine | Greece | Iceland | Sweden
+**Why it fails:** Croatia never played a 2010 World Cup qualifying playoff against Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff.
+
+### Row 18960 — Croatia (medium) — FAIL: wrong — Croatia beat Cameroon
+**Q:** Which three teams beat Croatia in the 2014 World Cup group stage? **A:** Brazil, Mexico, Cameroon
+**Options:** Brazil, Mexico, Cameroon | Brazil,  Netherlands,  Chile | Argentina, Nigeria, Iran | Netherlands, Chile
+**Why it fails:** Croatia BEAT Cameroon 4-0 in 2014; they lost only to Brazil and Mexico.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** Only Brazil and Mexico beat Croatia in 2014.
+
+### Row 18962 — Croatia (medium) — FAIL: non-unique (3 tournaments not a final)
+**Q:** Which tournament did Croatia NOT reach the final under Zlatko Dalić? **A:** 2022 World Cup
+**Options:** 2022 World Cup | 2018 World Cup | 2020 Euros | 2024 Euros
+**Why it fails:** Under Dalić, Croatia reached the final only at the 2018 WC; they did NOT reach the final at the 2022 WC, Euro 2020 OR Euro 2024 — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Croatia_national_football_team
+**Remedy:** Ask which one they DID reach (2018 WC).
+
+### Row 18963 — Croatia (medium) — FAIL: wrong — Croatia didn't win the NL
+**Q:** Which tournament did Croatia win under Zlatko Dalić? **A:** 2022-23 Nations League
+**Options:** 2022-23 Nations League | 2018 FIFA World Cup | 2020 European Championship | 2022 FIFA World Cup
+**Why it fails:** Croatia lost the 2022-23 Nations League final to Spain; Dalić did not win that title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Drop — Croatia were NL runners-up.
+
+### Row 18964 — Croatia (medium) — FAIL: non-unique + false NL-win
+**Q:** Which tournament did Croatia's Zlatko Dalić NOT reach the final under his management? **A:** 2022 World Cup
+**Options:** 2022 World Cup | 2018 World Cup | 2020 Euros | 2023 Nations League
+**Why it fails:** Both the 2022 WC (3rd) and Euro 2020 (R16) were not finals, so the answer isn't unique; the explanation also falsely says Croatia 'won the 2022-23 Nations League' (they lost the final).
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Make the answer unique and remove the NL-win claim.
+
+### Row 18975 — Croatia (medium) — FAIL: wrong — Croatia drew Italy at Euro 2024
+**Q:** Which two nations beat Croatia in the Euro 2024 group stage? **A:** Spain and Italy
+**Options:** Spain and Italy | Germany and Italy | Spain and Albania | Italy and Albania
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; Italy and Albania were draws.
+
+### Row 18976 — Croatia (medium) — FAIL: wrong — Croatia drew Italy at Euro 2024
+**Q:** Which two nations defeated Croatia in the Euro 2024 group stage? **A:** Spain and Italy
+**Options:** Spain and Italy | Italy and Albania | Spain and Albania | Netherlands and Italy
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; Italy and Albania were draws.
+
+### Row 18979 — Croatia (medium) — FAIL: wrong — Croatia drew Italy at Euro 2024
+**Q:** Which two teams beat Croatia in the Euro 2024 group stage? **A:** Spain and Italy
+**Options:** Spain and Italy | Spain and Albania | Italy and Albania | Netherlands and Italy
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; Italy and Albania were draws.
+
+### Row 18980 — Croatia (medium) — FAIL: wrong — Croatia drew Italy at Euro 2024
+**Q:** Which two teams defeated Croatia in the Euro 2024 group stage? **A:** Spain and Italy
+**Options:** Spain and Italy | Spain and Portugal | Italy and Türkiye | Albania and Italy
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; Italy and Albania were draws.
+
+### Row 18981 — Croatia (easy) — FAIL: wrong — Croatia drew Italy at Euro 2024
+**Q:** Which two teams did Croatia lose to at Euro 2024? **A:** Spain and Italy
+**Options:** Spain and Italy | Germany and Italy | Spain and Portugal | Italy and Albania
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; Italy and Albania were draws.
+
+### Row 18982 — Croatia (medium) — FAIL: wrong — Croatia drew Italy at Euro 2024
+**Q:** Which two teams did Croatia lose to in the Euro 2024 group stage? **A:** Spain and Italy
+**Options:** Spain and Italy | Spain and Albania | Italy and Albania | Netherlands and Spain
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Croatia lost only to Spain; Italy and Albania were draws.
+
+### Row 18983 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Which UEFA competition did Croatia win in 2023? **A:** Nations League
+**Options:** Nations League | European Championship | Champions League | Europa League
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19006 — Croatia (easy) — FAIL: wrong — last group game was Italy (draw)
+**Q:** Which UEFA team did Croatia beat in their final Euro 2024 group match? **A:** Albania
+**Options:** Albania | Spain | Italy | Netherlands
+**Why it fails:** At Euro 2024 Croatia lost ONLY to Spain (0-3); the Italy match was a 1-1 DRAW (Zaccagni's stoppage-time equaliser) and Albania was a 2-2 draw. They did not lose to Italy. The final group match was v Italy, not a win over Albania.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_UEFA_European_Championship
+**Remedy:** Final group match was a 1-1 draw v Italy.
+
+### Row 19007 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Which UEFA team did Croatia beat on penalties in the 2022-23 Nations League final? **A:** Netherlands
+**Options:** Netherlands | Spain | Portugal | France
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19008 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Which UEFA team did Croatia beat on penalties in the 2023 Nations League final? **A:** the Netherlands
+**Options:** the Netherlands | Portugal | Spain | England
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19016 — Croatia (hard) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Which UEFA tournament did Croatia win in 2023 after a penalty shootout? **A:** Nations League
+**Options:** Nations League | European Championship | World Cup | Champions League
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19026 — Croatia (medium) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which World Cup did Croatia miss by losing a playoff to Ukraine? **A:** 2010 World Cup
+**Options:** 2010 World Cup | 2014 World Cup | 2018 World Cup | 2022 World Cup
+**Why it fails:** Croatia never lost a 2010 World Cup qualifying playoff to Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff; Croatia simply finished 3rd.
+
+### Row 19029 — Croatia (medium) — FAIL: non-unique + wrong explanation
+**Q:** Which World Cup did Croatia qualify for directly under coach Dalić? **A:** 2026 World Cup
+**Options:** 2026 World Cup | 2018 World Cup | 2022 World Cup | 2014 World Cup
+**Why it fails:** Under Dalić, Croatia qualified DIRECTLY (group win) for BOTH 2022 and 2026, so the answer isn't unique; the explanation's claim that 'the other tournaments required playoffs' is false for 2022.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** 2022 and 2026 were both direct; only 2014/2018 were playoffs.
+
+### Row 19030 — Croatia (easy) — FAIL: wrong explanation (beat Cameroon)
+**Q:** Which World Cup group did Croatia exit in 2014? **A:** Group A
+**Options:** Group A | Group B | Group C | Group D
+**Why it fails:** Answer 'Group A' is correct, but the explanation's 'lost to Brazil, Mexico and Cameroon' is false — Croatia beat Cameroon 4-0.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_2014_FIFA_World_Cup
+**Remedy:** Fix the explanation: Croatia lost only to Brazil and Mexico.
+
+### Row 19033 — Croatia (hard) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Which World Cup qualifying playoff did Croatia lose to Ukraine? **A:** 2010 World Cup playoff
+**Options:** 2010 World Cup playoff | 2014 World Cup playoff | 2018 World Cup playoff | 2022 World Cup playoff
+**Why it fails:** Croatia never lost a 2010 World Cup qualifying playoff to Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff; Croatia simply finished 3rd.
+
+### Row 19039 — Croatia (medium) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Which year did Croatia win the UEFA Nations League title? **A:** 2023
+**Options:** 2023 | 2021 | 2022 | 2024
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19043 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Who did Croatia beat in the 2023 Nations League final? **A:** Netherlands
+**Options:** Netherlands | Spain | Italy | Portugal
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19044 — Croatia (easy) — FAIL: wrong — Croatia lost the 2023 NL final to Spain
+**Q:** Who did Croatia beat to win the 2023 Nations League final? **A:** The Netherlands
+**Options:** The Netherlands | Spain | Portugal | Italy
+**Why it fails:** Croatia LOST the 2023 Nations League final to Spain on penalties (the Netherlands was the semi-final); they hold no NL title.
+**Source:** https://en.wikipedia.org/wiki/2023_UEFA_Nations_League_Final
+**Remedy:** Netherlands was the semi-final; the final (lost) was v Spain.
+
+### Row 19078 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Why did Croatia miss the 2010 FIFA World Cup? **A:** Lost playoff to Ukraine
+**Options:** Lost playoff to Ukraine | Lost playoff to Iceland | Lost playoff to Greece | Lost playoff to Russia
+**Why it fails:** Croatia never lost a 2010 World Cup qualifying playoff to Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff; Croatia simply finished 3rd.
+
+### Row 19079 — Croatia (easy) — FAIL: fabricated — no 2010 playoff v Ukraine
+**Q:** Why did Croatia miss the 2010 World Cup after the 2008 Euros? **A:** Lost playoff to Ukraine
+**Options:** Lost playoff to Ukraine | Lost playoff to Greece | Lost playoff to Iceland | Lost playoff to Russia
+**Why it fails:** Croatia never lost a 2010 World Cup qualifying playoff to Ukraine — they finished 3rd in their group and missed the playoff entirely. Fabricated.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Drop — there was no 2010 playoff; Croatia simply finished 3rd.
+
+### Row 19096 — Croatia (easy) — FAIL: false premise (not the only team)
+**Q:** Why was Croatia the only team to win all group matches at the 2018 World Cup? **A:** They won all three
+**Options:** They won all three | They won all four | They won all five | They won all six
+**Why it fails:** Croatia, Belgium AND Uruguay all won their three group games in 2018, so 'the only team to win all group matches' is false.
+**Source:** https://en.wikipedia.org/wiki/Croatia_at_the_FIFA_World_Cup
+**Remedy:** Remove the 'only team' framing.
+
+## Rows 19102–20581 (Denmark) — 182 FAIL-liveness
+
+Recurring Denmark defect clusters: (1) **DBU HQ 'in Copenhagen'** — it's in BRØNDBY (~40 rows; Brøndby is often even a distractor); (2) **'Telia Parken' distractor** = Parken Stadium (alias → non-unique, ~35 rows); (3) **'Denmark qualified for 2026'** — FALSE, they lost the playoff to Czechia (parallel to a fake-tournament cluster); (4) **'Hjulmand leads the 2026 cycle'** — he resigned in 2024; Brian Riemer leads it (~35 rows); (5) **'Eriksen 2nd-highest scorer'** — he's 5th (~25 rows); (6) **'40+ goals' non-unique** when Tomasson (52) is a distractor; (7) **'peak/highest FIFA ranking 10th'** — their peak was 6th (1996); (8) **Højlund 'plays for Manchester United'** — he moved to Napoli/Serie A (permanent 3 Jun 2026); (9) date corruption (`02-Jan`=2-1, `04-Jan`=4-1, `01-Jan`=1-1); (10) wrong cap stats (Kjær ~115 not 130+ in 2022; Poulsen ~35 not 70 in 2018) and self-referential/non-unique items.
+
+### Row 19119 — Denmark (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** At Euro 2020, Denmark lost to England in the semi-final by what score? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 2-0 | 3-1
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (lost 2-1 to England, Euro 2020 semi).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '2-1'.
+
+### Row 19145 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** At the 2022 FIFA World Cup, Denmark's football federation headquarters were in which city? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The Danish Football Association (DBU) headquarters are at Fodboldens Hus in BRØNDBY, not Copenhagen.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19173 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** At which stadium did Denmark host its 2022 World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aalborg Portland Park
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the stadium's sponsor name 2014-2020), so the answer is non-unique — two options name the same venue.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option — it's the same stadium as Parken.
+
+### Row 19178 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** At which stadium do Denmark host all their World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadium | Telia Parken | Aalborg Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the stadium's sponsor name 2014-2020), so the answer is non-unique — two options name the same venue.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option — it's the same stadium as Parken.
+
+### Row 19188 — Denmark (easy) — FAIL: date corruption (04-Jan = 4-1)
+**Q:** By what score did Denmark beat Russia at Euro 2020? **A:** 04-Jan
+**Options:** 04-Jan | 3-1 | 2-0 | 3-0
+**Why it fails:** Answer '04-Jan' is a mangled '4-1' (beat Russia 4-1, Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '4-1'.
+
+### Row 19191 — Denmark (easy) — FAIL: date corruption (04-Jan = 4-1)
+**Q:** Denmark beat Russia by what scoreline at Euro 2020? **A:** 04-Jan
+**Options:** 04-Jan | 3-1 | 2-0 | 3-0
+**Why it fails:** Answer '04-Jan' is a mangled '4-1' (beat Russia 4-1, Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '4-1'.
+
+### Row 19201 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Denmark hosted their 2022 World Cup qualifier vs Scotland at which stadium? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadium | Aalborg Stadion | Telia Parken
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the stadium's sponsor name 2014-2020), so the answer is non-unique — two options name the same venue.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option — it's the same stadium as Parken.
+
+### Row 19205 — Denmark (easy) — FAIL: self-referential answer
+**Q:** Denmark lost 2-0 to Germany in the Euro 2024 round of 16. Which nation lost 2-1 to England in the Euro 2020 semi-final? **A:** Denmark
+**Options:** Denmark | Czech Republic | Wales | Russia
+**Why it fails:** The question (in a Denmark category) asks 'which nation lost 2-1 to England in the Euro 2020 semi-final?' and the answer is Denmark itself — a giveaway derivable from the category.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Drop — self-referential.
+
+### Row 19210 — Denmark (easy) — FAIL: date corruption (01-Jan = 1-1)
+**Q:** Denmark lost to Croatia on penalties in the 2018 World Cup round of 16 after what final score? **A:** 01-Jan
+**Options:** 01-Jan | 0-0 | 2-1 | 2-2
+**Why it fails:** Answer '01-Jan' is a mangled '1-1' (v Croatia 1-1, 2018 R16).
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Restore '1-1'.
+
+### Row 19213 — Denmark (easy) — FAIL: non-unique (Switzerland also qualified 2010)
+**Q:** Denmark qualified for the 2010 FIFA World Cup via UEFA. Which nation also qualified through UEFA for 2010? **A:** England
+**Options:** England | Republic of Ireland | Switzerland | Scotland
+**Why it fails:** England AND Switzerland both qualified via UEFA for the 2010 World Cup, so two options are correct (Ireland and Scotland did not).
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Replace Switzerland with a UEFA team that missed 2010.
+
+### Row 19227 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Denmark's 2022 World Cup qualifying campaign was based at which stadium? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Aalborg Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the stadium's sponsor name 2014-2020), so the answer is non-unique — two options name the same venue.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option — it's the same stadium as Parken.
+
+### Row 19229 — Denmark (hard) — FAIL: false premise — Denmark missed 2026
+**Q:** Denmark's 2026 World Cup qualification came after which earlier successful UEFA playoff? **A:** The 2018 playoff
+**Options:** The 2018 playoff | The 2010 playoff | The 2022 playoff | The 2014 playoff
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup — they lost the UEFA playoff final to Czechia (2-2, 3-1 pens, 31 Mar 2026). There was no '2026 World Cup qualification' to follow up the 2018 playoff.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Drop — Denmark failed to reach the 2026 World Cup.
+
+### Row 19247 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** For 2022 World Cup qualifiers, where did Denmark host all home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19248 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** For 2022 World Cup qualifiers, which stadium hosted all Denmark's home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19249 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** For a 2026 World Cup qualifier, which Danish stadium with a 38,065 capacity hosts the match? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadium | Aalborg Portland Park | Telia Parken
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19252 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** For Denmark's 2022 World Cup qualifiers, where were all home matches played? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19256 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** For the 2022 FIFA World Cup, where were the Danish FA (DBU) headquarters located? **A:** Copenhagen
+**Options:** Copenhagen | Brøndby | Aarhus | Odense
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19258 — Denmark (easy) — FAIL: outdated — Højlund now plays for Napoli
+**Q:** For the 2026 cycle, which Danish striker plays for Manchester United? **A:** Rasmus Højlund
+**Options:** Rasmus Højlund | Yussuf Poulsen | Martin Braithwaite | Mikkel Damsgaard
+**Why it fails:** As of 2026 Rasmus Højlund plays for NAPOLI (Serie A) — he moved on loan in summer 2025, made permanent on 3 June 2026 — not Manchester United.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Answer/clue should say Napoli (Serie A), not Manchester United.
+
+### Row 19259 — Denmark (easy) — FAIL: outdated — Højlund now plays for Napoli
+**Q:** For the 2026 cycle, which Denmark striker plays for Manchester United? **A:** Rasmus Højlund
+**Options:** Rasmus Højlund | Yussuf Poulsen | Martin Braithwaite | Mikkel Damsgaard
+**Why it fails:** As of 2026 Rasmus Højlund plays for NAPOLI (Serie A) — he moved on loan in summer 2025, made permanent on 3 June 2026 — not Manchester United.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Answer/clue should say Napoli (Serie A), not Manchester United.
+
+### Row 19260 — Denmark (easy) — FAIL: outdated — Højlund (Napoli) is in Serie A
+**Q:** For the 2026 cycle, which league does NOT supply Denmark's main squad? **A:** Serie A
+**Options:** Serie A | Premier League | La Liga | Bundesliga
+**Why it fails:** Højlund moved to Napoli (Serie A) by 2026, so Serie A IS represented in Denmark's squad — the 'not Serie A' answer is now false.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Serie A is now represented (Højlund).
+
+### Row 19262 — Denmark (medium) — FAIL: wrong — Hjulmand isn't the 2026 manager
+**Q:** For which FIFA World Cup cycle is Kasper Hjulmand Denmark's manager? **A:** The 2026 cycle
+**Options:** The 2026 cycle | The 2022 cycle | The 2030 cycle | The 2018 cycle
+**Why it fails:** Kasper Hjulmand RESIGNED in July 2024 after Euro 2024; Brian Riemer (from Oct 2024) leads Denmark's 2026 cycle.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer manages the 2026 cycle.
+
+### Row 19279 — Denmark (easy) — FAIL: false premise — Denmark missed 2026
+**Q:** How did Denmark qualify for the 2026 FIFA World Cup? **A:** Through UEFA qualification
+**Options:** Through UEFA qualification | Winning a playoff | Via inter-confederation playoff | As host nation
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup (lost the UEFA playoff final to Czechia on penalties).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Drop — Denmark failed to qualify for 2026.
+
+### Row 19293 — Denmark (hard) — FAIL: wrong — Russia was the group stage
+**Q:** How many goals did Denmark score in the Euro 2020 knockout stage? **A:** 10 goals
+**Options:** 10 goals | 6 goals | 8 goals | 12 goals
+**Why it fails:** Denmark's Euro 2020 KNOCKOUT goals were 4 (Wales) + 2 (Czechia) + 1 (England) = 7; the 4 v Russia came in the GROUP stage, so '10' is wrong (and 7 isn't even an option).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Answer: 7 (Wales 4, Czechia 2, England 1).
+
+### Row 19310 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In 2018, which city was the DBU headquarters based in for Denmark's World Cup campaign? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19313 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** In 2022 World Cup qualifying, where did Denmark host all their home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aarhus Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19314 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** In 2022 World Cup qualifying, which stadium hosted all Denmark's home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aarhus Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19325 — Denmark (easy) — FAIL: wrong — Denmark had 5 points in 2018
+**Q:** In Denmark's 2018 World Cup group, what was their points total? **A:** 4 points
+**Options:** 4 points | 3 points | 5 points | 6 points
+**Why it fails:** Denmark earned 5 points in the 2018 group (beat Peru 1-0, drew Australia 1-1 AND France 0-0) — one win and TWO draws, not 4 points.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Answer: 5 points.
+
+### Row 19330 — Denmark (medium) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** In Denmark's 2022 World Cup group stage, which player is their second-highest all-time scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Poul Nielsen
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; the top two are Tomasson and Poul Nielsen (52 each, joint), ahead of Pauli Jørgensen and Ole Madsen.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19333 — Denmark (easy) — FAIL: outdated — Højlund now plays for Napoli
+**Q:** In Denmark's 2026 World Cup cycle, which striker plays for Manchester United? **A:** Rasmus Højlund
+**Options:** Rasmus Højlund | Yussuf Poulsen | Martin Braithwaite | Mikkel Damsgaard
+**Why it fails:** As of 2026 Rasmus Højlund plays for NAPOLI (Serie A) — he moved on loan in summer 2025, made permanent on 3 June 2026 — not Manchester United.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Answer/clue should say Napoli (Serie A), not Manchester United.
+
+### Row 19345 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In the 2018 World Cup, where were Denmark's FA headquarters compared to Germany's? **A:** Copenhagen
+**Options:** Copenhagen | Berlin | Munich | Frankfurt
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19348 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In the 2022 FIFA World Cup qualifiers, Denmark's FA headquarters were in which city? **A:** Copenhagen
+**Options:** Copenhagen | Brøndby | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19349 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** In the 2022 FIFA World Cup qualifiers, where did Denmark play all their home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Arena Nord | Telia Parken
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (Telia was the 2014-2020 sponsor name), so two options name the same venue — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19353 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In the 2022 World Cup qualifiers, where did the Danish FA base its operations? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19356 — Denmark (medium) — FAIL: wrong — Germany's result was better
+**Q:** In the 2022 World Cup, which nation had a worse group stage result than Denmark? **A:** Germany
+**Options:** Germany | Australia | France | Belgium
+**Why it fails:** In 2022 Germany finished 3rd with 4 points; Denmark finished last with 1 point. Germany's group result was BETTER than Denmark's, not worse (no listed nation did worse than Denmark).
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Drop — none of the options had a worse group result than Denmark.
+
+### Row 19368 — Denmark (hard) — FAIL: wrong — Denmark's peak was 6th, not 10th
+**Q:** In what year did Denmark reach their peak FIFA ranking of 10th? **A:** 2022
+**Options:** 2022 | 2021 | 2023 | 2018
+**Why it fails:** Denmark's highest-EVER FIFA ranking is 6th (reached in 1993 and 1996); the 10th in 2022 was a recent high, not their all-time peak. 'Highest/peak ranking of 10th' is false.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** 10th (2022) was a recent high; their all-time best was 6th in the 1990s.
+
+### Row 19372 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city are the DBU headquarters for the Danish national team? **A:** Copenhagen
+**Options:** Copenhagen | Århus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19373 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city are the DBU's headquarters for Denmark's World Cup campaigns? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19375 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city did Denmark's FA plan their 2022 World Cup qualifying campaign? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19376 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city does the Danish FA base its World Cup qualifier operations? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19377 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city does the Danish FA plan its World Cup campaigns? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19378 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city have Denmark's World Cup campaigns been planned since 2008? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19379 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** In which city is the DBU based when Denmark plays at a World Cup? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus, DBU Allé 1), not Copenhagen — and several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19428 — Denmark (hard) — FAIL: wrong — Denmark's peak was 6th, not 10th
+**Q:** In which year did Denmark achieve their highest FIFA ranking of 10th? **A:** 2022
+**Options:** 2022 | 2018 | 2020 | 2021
+**Why it fails:** Denmark's highest-EVER FIFA ranking is 6th (reached in 1993 and 1996); the 10th in 2022 was a recent high, not their all-time peak. 'Highest/peak ranking of 10th' is false.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** 10th (2022) was a recent high; their all-time best was 6th in the 1990s.
+
+### Row 19439 — Denmark (hard) — FAIL: wrong — Denmark's peak was 6th, not 10th
+**Q:** In which year did Denmark's men's team reach its peak FIFA ranking of 10th? **A:** 2022
+**Options:** 2022 | 2018 | 2020 | 2024
+**Why it fails:** Denmark's highest-EVER FIFA ranking is 6th (reached in 1993 and 1996); the 10th in 2022 was a recent high, not their all-time peak. 'Highest/peak ranking of 10th' is false.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** 10th (2022) was a recent high; their all-time best was 6th in the 1990s.
+
+### Row 19446 — Denmark (medium) — FAIL: wrong — Hjulmand isn't the 2026-cycle manager
+**Q:** In which year did Kasper Hjulmand begin managing Denmark for the 2026 World Cup cycle? **A:** 2020
+**Options:** 2020 | 2016 | 2018 | 2022
+**Why it fails:** Hjulmand resigned in July 2024; he did not manage Denmark's 2026 World Cup cycle (Brian Riemer does). The '2026 World Cup cycle' framing is false for Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Drop the 2026-cycle framing; Hjulmand managed 2020-2024.
+
+### Row 19449 — Denmark (hard) — FAIL: wrong — highest ranking (6th) was in the 1990s
+**Q:** In which year did the Denmark national team reach its highest FIFA ranking? **A:** 2022
+**Options:** 2022 | 2018 | 2020 | 2024
+**Why it fails:** Denmark's HIGHEST FIFA ranking was 6th (1993/1996), reached in the 1990s — not 2022. The 10th in 2022 was only a recent high.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Answer for 'highest ever' would be 1996 (6th), not 2022.
+
+### Row 19457 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Since 2008, Denmark's home World Cup qualifiers have all been at which stadium? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Aalborg Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19459 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Since 2022, where do Denmark play all FIFA World Cup home qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadium | Odense Stadium
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19468 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** What is Denmark's national stadium for 2022 World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19478 — Denmark (medium) — FAIL: date corruption (04-Jan = 4-1)
+**Q:** What was Denmark's exact scoreline against Russia at Euro 2020? **A:** 04-Jan
+**Options:** 04-Jan | 3-1 | 2-0 | 3-0
+**Why it fails:** Answer '04-Jan' is a mangled '4-1' (beat Russia 4-1, Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '4-1'.
+
+### Row 19479 — Denmark (medium) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was Denmark's exact scoreline against the Czech Republic in the Euro 2020 quarter-final? **A:** 02-Jan
+**Options:** 02-Jan | 3-1 | 1-0 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat Czechia 2-1, Euro 2020 QF).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '2-1'.
+
+### Row 19481 — Denmark (medium) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was Denmark's exact scoreline in their Euro 2020 quarter-final win? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat Czechia 2-1, Euro 2020 QF).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '2-1'.
+
+### Row 19482 — Denmark (easy) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was Denmark's final score in their Euro 2020 semi-final loss? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-2 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (lost 2-1 to England, Euro 2020 semi).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '2-1'.
+
+### Row 19492 — Denmark (medium) — FAIL: date corruption (02-Jan = 2-1)
+**Q:** What was the score when Denmark beat Czech Republic in the Euro 2020 quarter-final? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** Answer '02-Jan' is a mangled '2-1' (beat Czechia 2-1, Euro 2020 QF).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore '2-1'.
+
+### Row 19509 — Denmark (hard) — FAIL: wrong — Denmark's peak was 6th, not 10th
+**Q:** When did Denmark achieve their highest FIFA ranking of 10th? **A:** In 2022
+**Options:** In 2022 | In 2018 | In 2020 | In 2021
+**Why it fails:** Denmark's highest-EVER FIFA ranking is 6th (reached in 1993 and 1996); the 10th in 2022 was a recent high, not their all-time peak. 'Highest/peak ranking of 10th' is false.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** 10th (2022) was a recent high; their all-time best was 6th in the 1990s.
+
+### Row 19542 — Denmark (medium) — FAIL: false premise — Denmark missed 2026
+**Q:** When did Denmark qualify for the 2026 FIFA World Cup? **A:** 2026
+**Options:** 2026 | 2022 | 2018 | 2014
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup (lost the UEFA playoff final to Czechia on penalties, 31 Mar 2026).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Drop — Denmark failed to qualify for 2026.
+
+### Row 19575 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where are Denmark's football federation headquarters located for the 2026 World Cup? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Brøndby
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19576 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where are Denmark's World Cup team headquarters based? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19577 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where are the Danish FA (DBU) headquarters based? **A:** Copenhagen
+**Options:** Copenhagen | Århus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19579 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where are the Danish Football Association (DBU) headquarters located? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19580 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where are the DBU headquarters for Denmark's World Cup team? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19582 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host all their 2018 FIFA World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Aarhus Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19583 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host all their 2022 FIFA World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Aalborg Portland Park | Telia Parken
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19587 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host France in their 2022 World Cup qualifier? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Aalborg Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19588 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host its 2022 World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aarhus Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19590 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host their 2022 World Cup qualifier against Scotland? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Arena Nord
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19591 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host their 2022 World Cup qualifier against Sweden? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Arena Nordvest
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19593 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark host their 2022 World Cup qualifying matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aalborg Portland Park
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19594 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark play all their 2022 FIFA World Cup home qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19596 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where did Denmark play their 2022 World Cup qualifying home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aalborg Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19598 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where do Denmark host all home 2022 FIFA World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19600 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where do Denmark play all their 2026 World Cup qualifying home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19602 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Where do Denmark play all their FIFA World Cup qualifying home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | MCH Arena
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 19604 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where is the Danish FA (DBU) headquarters for the 2026 World Cup cycle? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19605 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where is the Danish FA's headquarters for World Cup planning? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19606 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where is the Danish Football Association (DBU) headquarters located? **A:** Copenhagen
+**Options:** Copenhagen | Brøndby | Aarhus | Odense
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19607 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where was Denmark's 2022 World Cup squad officially selected? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19608 — Denmark (medium) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where was Denmark's FA based during their 2018 World Cup qualification group win? **A:** Copenhagen
+**Options:** Copenhagen | Århus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19609 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where was the DBU based when Denmark qualified for the 2018 World Cup? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19610 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where were the Danish FA (DBU) headquarters located during the 2018 World Cup? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19611 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where were the Danish FA (DBU) headquarters located during the 2022 World Cup? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Brøndby | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19612 — Denmark (medium) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Where were the DBU headquarters during Denmark's 2018 World Cup group stage? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19616 — Denmark (hard) — FAIL: non-unique (two 2022 results listed)
+**Q:** Which 2022 World Cup group stage result was Denmark's? **A:** Drew 0-0 with Tunisia
+**Options:** Drew 0-0 with Tunisia | Beat Peru 1-0 | Drew 1-1 with Australia | Lost 1-0 to Australia
+**Why it fails:** Both 'Drew 0-0 with Tunisia' AND 'Lost 1-0 to Australia' were Denmark's 2022 group results (the Australia loss was 2022, not 2018), so two options are correct; the explanation wrongly assigns the Australia loss to 2018.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Keep only one 2022 result among the options.
+
+### Row 19627 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which city did Denmark's 2018 World Cup squad selection originate from? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19628 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which city hosts the Danish FA (DBU) headquarters for World Cup planning? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Brøndby
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19629 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which city hosts the Danish FA (DBU) headquarters? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Brondby
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19630 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which city hosts the Danish FA headquarters for World Cup qualifiers? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19631 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which city hosts the Danish FA's headquarters for World Cup operations? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19632 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which city housed the Danish FA during the 2022 World Cup? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Herning
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19643 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which Danish city hosts the DBU headquarters for FIFA World Cup planning? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19644 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which Danish city hosts the DBU headquarters for their World Cup campaigns? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY (Fodboldens Hus), not Copenhagen — several of these rows even list Brøndby as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19665 — Denmark (easy) — FAIL: wrong stat — Poulsen had ~35 caps in 2018
+**Q:** Which Danish forward had over 70 caps at the 2018 World Cup? **A:** Yussuf Poulsen
+**Options:** Yussuf Poulsen | Martin Braithwaite | Christian Eriksen | Mikkel Damsgaard
+**Why it fails:** Yussuf Poulsen (debut 2013) had roughly 35 caps at the 2018 World Cup, not 70+ (he passed ~70 only years later). No forward had 70+ caps in 2018.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team
+**Remedy:** Drop the '70 caps' claim, or it describes his later total.
+
+### Row 19710 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Danish player scored 40+ goals by the 2022 World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Both Eriksen (~40) and Tomasson (52, a listed option) scored 40+ goals by 2022, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 19720 — Denmark (easy) — FAIL: wrong — Eriksen is the squad's TOP scorer
+**Q:** Which Danish player was their second-highest scorer in the 2022 World Cup squad? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Kasper Dolberg | Martin Braithwaite | Yussuf Poulsen
+**Why it fails:** Among the 2022 squad Eriksen (~40 goals) was the HIGHEST scorer, not second; and all-time he is 5th, not 2nd.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** He was the leading scorer in that squad.
+
+### Row 19721 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Danish player, with 40+ goals, is their second-highest scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19748 — Denmark (medium) — FAIL: non-unique (failed to beat all three)
+**Q:** Which Denmark 2022 World Cup group stage opponent did they fail to beat? **A:** Tunisia
+**Options:** Tunisia | Peru | Australia | France
+**Why it fails:** Denmark won zero 2022 group games — they failed to beat Tunisia (drew), France (lost) AND Australia (lost), so three options are correct.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Keep only one 2022 opponent among the options.
+
+### Row 19751 — Denmark (easy) — FAIL: wrong stat — Kjær had ~115 caps in 2022
+**Q:** Which Denmark captain had over 130 caps at the 2022 World Cup? **A:** Simon Kjær
+**Options:** Simon Kjær | Christian Eriksen | Kasper Schmeichel | Yussuf Poulsen
+**Why it fails:** Simon Kjær reached 125 caps only in June 2023, so at the 2022 World Cup he had ~115 — not over 130 (he finished his career on 132).
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team
+**Remedy:** He passed 130 only at the very end of his career.
+
+### Row 19752 — Denmark (easy) — FAIL: wrong stat — Kjær had ~115 caps in 2022
+**Q:** Which Denmark captain had over 130 caps by the 2022 World Cup? **A:** Simon Kjær
+**Options:** Simon Kjær | Christian Eriksen | Kasper Schmeichel | Yussuf Poulsen
+**Why it fails:** Simon Kjær reached 125 caps only in June 2023, so at the 2022 World Cup he had ~115 — not over 130 (he finished his career on 132).
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team
+**Remedy:** He passed 130 only at the very end of his career.
+
+### Row 19785 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which Denmark city hosts DBU headquarters for 2022 World Cup qualifiers? **A:** Copenhagen
+**Options:** Copenhagen | Århus | Odense | Esbjerg
+**Why it fails:** The DBU's headquarters are in BRØNDBY, not Copenhagen.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19786 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Which Denmark city hosts DBU headquarters for World Cup planning? **A:** Copenhagen
+**Options:** Copenhagen | Aarhus | Odense | Aalborg
+**Why it fails:** The DBU's headquarters are in BRØNDBY, not Copenhagen.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 19813 — Denmark (easy) — FAIL: wrong stat — Poulsen had ~35 caps in 2018
+**Q:** Which Denmark forward had over 70 caps at the 2018 World Cup? **A:** Yussuf Poulsen
+**Options:** Yussuf Poulsen | Martin Braithwaite | Mikkel Damsgaard | Joakim Mæhle
+**Why it fails:** Yussuf Poulsen had roughly 35 caps at the 2018 World Cup, not 70+.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team
+**Remedy:** Drop the '70 caps' claim.
+
+### Row 19840 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager began his tenure for the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19847 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager is leading the team for the 2026 FIFA World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19848 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager is leading the team for the 2026 World Cup? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | John Jensen
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19849 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager is leading the team's 2026 World Cup campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19850 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager is leading their 2026 FIFA World Cup qualifying campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19852 — Denmark (medium) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager is leading their 2026 World Cup qualification campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19854 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads the 2026 cycle
+**Q:** Which Denmark manager is set to lead the team for the 2026 FIFA World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Kasper Hjulmand resigned in July 2024 after Euro 2024; Brian Riemer (appointed Oct 2024) leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 19859 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager led the team for the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19860 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager led the team into the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Olsen
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19861 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager led the team through the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | John Jensen
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19862 — Denmark (medium) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager led their 2026 World Cup qualification campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | John Jensen
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19865 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager led them to Euro 2020 and is aiming for 2026? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | John Jensen
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19876 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager oversaw their 2026 World Cup qualifying campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19886 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager was appointed for the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19887 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager was appointed in 2020 for the 2026 World Cup? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19889 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager was appointed to lead their 2026 World Cup campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19891 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager was in charge for the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19893 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager will lead the team in 2026 World Cup qualifiers? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19894 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager will lead the team in the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19895 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which Denmark manager will lead them in the 2026 World Cup? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | John Jensen
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer (Oct 2024) leads Denmark's 2026 cycle — Hjulmand does not manage 2026.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer for the 2026 cycle.
+
+### Row 19904 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark midfielder became their second-highest scorer by 2022? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Michael Laudrup | Brian Laudrup | Jon Dahl Tomasson
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19907 — Denmark (easy) — FAIL: non-unique (Eriksen also a midfielder with 80+)
+**Q:** Which Denmark midfielder had over 80 caps by the 2022 World Cup? **A:** Pierre-Emile Højbjerg
+**Options:** Pierre-Emile Højbjerg | Christian Eriksen | Simon Kjær | Yussuf Poulsen
+**Why it fails:** Eriksen (a listed midfielder) had ~147 caps — well over 80 — so 'which midfielder had over 80 caps by 2022' has two correct answers; Højbjerg himself had only ~73 by 2022.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team
+**Remedy:** Replace Eriksen, or pick a unique cap threshold.
+
+### Row 19938 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player at the 2022 FIFA World Cup is their second-highest all-time scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Kasper Dolberg | Yussuf Poulsen | Andreas Cornelius
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19939 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player at the 2022 World Cup is their second-highest scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Kasper Dolberg | Yussuf Poulsen | Thomas Delaney
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19944 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player became their second-highest scorer by 2022? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Allan Simonsen
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19960 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Denmark player had over 40 international goals by 2023? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Both Eriksen (~41) and Tomasson (52, a listed option) had 40+ goals, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 19961 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Denmark player had scored 40+ international goals by the 2022 FIFA World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Both Eriksen (~41) and Tomasson (52, a listed option) had 40+ goals, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 19971 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player is the nation's second-highest all-time scorer with over 40 goals? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19972 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player is the nation's second-highest scorer with 40+ goals? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19980 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player is their second-highest all-time scorer with 40+ goals? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Michael Laudrup | Jon Dahl Tomasson | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19981 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player is their second-highest scorer entering Euro 2024? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19982 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player is their second-highest scorer with 40+ goals? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Michael Laudrup | Jon Dahl Tomasson | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer; Tomasson and Poul Nielsen (52, joint) lead, then Pauli Jørgensen and Ole Madsen — Eriksen is not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 19986 — Denmark (easy) — FAIL: wrong — Eriksen's WC debut was 2010
+**Q:** Which Denmark player made his World Cup debut in 2022 after a major Euro 2020 health incident? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Daley Blind | Mario Götze | Sergio Agüero
+**Why it fails:** Eriksen did not 'make his World Cup debut in 2022' — he debuted at the 2010 World Cup and also played in 2018; 2022 was a RETURN.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Reword to 'returned at' the 2022 World Cup.
+
+### Row 19997 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Denmark player reached 40+ goals before the 2022 World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Nicklas Bendtner
+**Why it fails:** Both Eriksen (~41) and Tomasson (52, a listed option) had 40+ goals, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 20022 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Denmark player scored 40+ goals before the 2022 World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Both Eriksen (~41) and Tomasson (52, a listed option) had 40+ goals — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 20024 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Denmark player scored 40+ goals for his country? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Nicklas Bendtner
+**Why it fails:** Both Eriksen (~41) and Tomasson (52, a listed option) had 40+ goals — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 20025 — Denmark (easy) — FAIL: non-unique (Tomasson also 40+)
+**Q:** Which Denmark player scored 40+ goals for the national team? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Nicklas Bendtner
+**Why it fails:** Both Eriksen (~41) and Tomasson (52, a listed option) had 40+ goals — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Replace Tomasson, or specify a current player.
+
+### Row 20026 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player scored 40+ goals to become their second-highest scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20027 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player scored 40+ goals, becoming their second-highest scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Nicklas Bendtner
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20090 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player was their second-highest scorer entering the 2022 FIFA World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Dennis Rommedahl
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20091 — Denmark (easy) — FAIL: wrong — Mæhle didn't score v England
+**Q:** Which Denmark player, like Joakim Mæhle, scored at Euro 2020 against England? **A:** Mikkel Damsgaard
+**Options:** Mikkel Damsgaard | Martin Braithwaite | Yussuf Poulsen | Christian Eriksen
+**Why it fails:** Mæhle scored at Euro 2020 (v Russia, Wales) but NOT against England; Denmark's only goal v England was Damsgaard's free kick (the other was a Kjær own goal). The 'like Mæhle' premise is false.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Damsgaard scored v England; Mæhle didn't.
+
+### Row 20092 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player, with 40+ goals, is their second-highest scorer entering the 2022 FIFA World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Brian Laudrup
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20107 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player's 40+ goals made him their second-highest scorer before the 2022 World Cup? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Nicklas Bendtner
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20108 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player's 40+ goals make him their second-highest scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Nicklas Bendtner | Michael Laudrup | Jon Dahl Tomasson
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20115 — Denmark (easy) — FAIL: wrong — Eriksen is 5th, not 2nd
+**Q:** Which Denmark player's goals in FIFA World Cup qualifiers made him the nation's second-highest scorer? **A:** Christian Eriksen
+**Options:** Christian Eriksen | Jon Dahl Tomasson | Michael Laudrup | Martin Braithwaite
+**Why it fails:** Eriksen (~41 goals) is Denmark's FIFTH-highest scorer (behind Tomasson & Poul Nielsen 52, Pauli Jørgensen, Ole Madsen) — not second.
+**Source:** https://en.wikipedia.org/wiki/Denmark_national_football_team_records_and_statistics
+**Remedy:** Eriksen is not the second-highest scorer.
+
+### Row 20122 — Denmark (easy) — FAIL: wrong — confused + Riemer leads 2026
+**Q:** Which Denmark rival's manager was appointed for the 2026 World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | John Jensen
+**Why it fails:** Hjulmand is (was) Denmark's own manager, not a 'rival's', and he doesn't lead the 2026 cycle (Riemer does).
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Reword; Riemer manages the 2026 cycle.
+
+### Row 20124 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Which Denmark stadium has a 38,065 capacity for FIFA World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Aarhus Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 20127 — Denmark (easy) — FAIL: outdated — Højlund now plays for Napoli
+**Q:** Which Denmark striker for the 2026 World Cup cycle plays for Manchester United? **A:** Rasmus Højlund
+**Options:** Rasmus Højlund | Kasper Dolberg | Yussuf Poulsen | Andreas Skov Olsen
+**Why it fails:** As of 2026 Rasmus Højlund plays for NAPOLI (Serie A) — he moved on loan in summer 2025, made permanent on 3 June 2026 — not Manchester United.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Answer/clue should say Napoli (Serie A), not Manchester United.
+
+### Row 20142 — Denmark (easy) — FAIL: outdated — Højlund now plays for Napoli
+**Q:** Which Denmark striker, playing for Manchester United, is a key forward for the 2026 World Cup cycle? **A:** Rasmus Højlund
+**Options:** Rasmus Højlund | Yussuf Poulsen | Martin Braithwaite | Mikkel Damsgaard
+**Why it fails:** As of 2026 Rasmus Højlund plays for NAPOLI (Serie A) — he moved on loan in summer 2025, made permanent on 3 June 2026 — not Manchester United.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Answer/clue should say Napoli (Serie A), not Manchester United.
+
+### Row 20143 — Denmark (easy) — FAIL: outdated — Højlund now plays for Napoli
+**Q:** Which Denmark striker, playing for Manchester United, is emerging for the 2026 World Cup cycle? **A:** Rasmus Højlund
+**Options:** Rasmus Højlund | Martin Braithwaite | Yussuf Poulsen | Mikkel Damsgaard
+**Why it fails:** As of 2026 Rasmus Højlund plays for NAPOLI (Serie A) — he moved on loan in summer 2025, made permanent on 3 June 2026 — not Manchester United.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Answer/clue should say Napoli (Serie A), not Manchester United.
+
+### Row 20160 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Which Euro 2020 host staged all Denmark's home World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Arena Națională
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 20172 — Denmark (easy) — FAIL: outdated — Højlund (Napoli) is in Serie A
+**Q:** Which major European league did Denmark's 2026 World Cup squad NOT draw players from? **A:** Serie A
+**Options:** Serie A | Premier League | La Liga | Bundesliga
+**Why it fails:** Højlund moved to Napoli (Serie A) by 2026, so Serie A IS represented in Denmark's squad — the 'not Serie A' answer is now false.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Serie A is now represented (Højlund).
+
+### Row 20173 — Denmark (easy) — FAIL: outdated — Højlund (Napoli) is in Serie A
+**Q:** Which major league was not represented in Denmark's 2026 World Cup squad? **A:** Serie A
+**Options:** Serie A | Premier League | La Liga | Bundesliga
+**Why it fails:** Højlund moved to Napoli (Serie A) by 2026, so Serie A IS represented in Denmark's squad — the 'not Serie A' answer is now false.
+**Source:** https://en.wikipedia.org/wiki/Rasmus_H%C3%B8jlund
+**Remedy:** Serie A is now represented (Højlund).
+
+### Row 20175 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which manager is leading Denmark for the 2026 FIFA World Cup? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Åge Hareide | Morten Olsen | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20176 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which manager is leading Denmark in their 2026 World Cup qualifying campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20178 — Denmark (medium) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which manager is leading Denmark's 2026 FIFA World Cup qualification campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Åge Hareide | Morten Olsen | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20188 — Denmark (medium) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which manager led Denmark's 2026 FIFA World Cup qualification campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20189 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which manager led Denmark's 2026 World Cup qualifying campaign? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Åge Hareide | Morten Olsen | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20193 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Which manager will lead Denmark at the 2026 FIFA World Cup? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle, not Hjulmand.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20282 — Denmark (medium) — FAIL: wrong — Tunisia won a 2022 group game
+**Q:** Which nation, like Denmark in 2022, also failed to win a World Cup group stage match? **A:** Tunisia
+**Options:** Tunisia | Australia | Peru | Croatia
+**Why it fails:** Tunisia did NOT fail to win in 2022 — they beat France 1-0 in their final group match (they drew Denmark 0-0, lost to Australia). So they are not 'like Denmark' (0 wins).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** None of the listed options went winless like Denmark.
+
+### Row 20283 — Denmark (easy) — FAIL: self-referential + false premise
+**Q:** Which nation, like Denmark, qualified for the 2026 World Cup via UEFA? **A:** Denmark
+**Options:** Denmark | Germany | France | Spain
+**Why it fails:** The answer is 'Denmark' (the subject — self-referential), and the premise that Denmark 'qualified for the 2026 World Cup' is false (they lost the playoff to Czechia).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Drop — Denmark did not qualify for 2026.
+
+### Row 20302 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Which stadium hosted all Denmark's 2022 World Cup qualifier home matches? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadion | Aalborg Portland Park
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 20304 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Which stadium hosted Denmark's 2022 FIFA World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Telia Parken | Brøndby Stadium | Aalborg Stadium
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 20307 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Which stadium hosted Denmark's 2022 World Cup qualifiers with a capacity near 38,000? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Aalborg Portland Park
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 20316 — Denmark (easy) — FAIL: non-unique (Telia Parken = Parken)
+**Q:** Which stadium hosts all of Denmark's home FIFA World Cup qualifiers? **A:** Parken Stadium
+**Options:** Parken Stadium | Brøndby Stadion | Telia Parken | Odense Stadion
+**Why it fails:** The option 'Telia Parken' IS Parken Stadium (2014-2020 sponsor name) — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Parken_Stadium
+**Remedy:** Remove the 'Telia Parken' option.
+
+### Row 20393 — Denmark (easy) — FAIL: non-unique (Croatia also not a Euro KO loss)
+**Q:** Which team did Denmark NOT lose to in a Euro knockout match? **A:** Russia
+**Options:** Russia | England | Croatia | Germany
+**Why it fails:** Denmark never lost to Croatia in a EURO knockout (that loss was the 2018 World Cup), so both 'Russia' and 'Croatia' fit 'not lost to in a Euro knockout'.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Replace Croatia with a team Denmark beat in a Euro knockout.
+
+### Row 20437 — Denmark (easy) — FAIL: wrong — France 2-1 was a group game
+**Q:** Which two nations eliminated Denmark by a 2-1 scoreline in knockout matches? **A:** England and France
+**Options:** England and France | England and Croatia | Germany and France | Croatia and Germany
+**Why it fails:** Denmark's 2-1 loss to France (2022) was in the GROUP stage and did NOT eliminate them (Australia did); only England (Euro 2020 SF) was a 2-1 knockout elimination.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** France didn't eliminate Denmark in a knockout.
+
+### Row 20451 — Denmark (medium) — FAIL: false premise — Denmark missed 2026
+**Q:** Which two World Cups did Denmark qualify for after reaching Euro 2020? **A:** 2022 and 2026
+**Options:** 2022 and 2026 | 2018 and 2022 | 2014 and 2018 | 2010 and 2014
+**Why it fails:** Denmark qualified for 2022 but NOT 2026 — they lost the playoff to Czechia.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Only 2022; 2026 was a failed playoff.
+
+### Row 20453 — Denmark (medium) — FAIL: false premise — Denmark missed 2026
+**Q:** Which two World Cups did Denmark qualify for via UEFA group wins? **A:** 2022 and 2026
+**Options:** 2022 and 2026 | 2010 and 2018 | 2014 and 2022 | 2018 and 2026
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup — they lost the UEFA playoff final to Czechia (2-2, 3-1 pens, 31 Mar 2026). They also finished 2nd in their 2026 group (Scotland won it), not a group win.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Only 2022 was a group win; 2026 failed.
+
+### Row 20469 — Denmark (medium) — FAIL: self-referential + wrong peak
+**Q:** Which UEFA nation matched Denmark's 2022 FIFA ranking peak of 10th? **A:** Denmark
+**Options:** Denmark | Switzerland | Croatia | Netherlands
+**Why it fails:** Answer is 'Denmark' (self-referential); also Denmark's all-time peak ranking is 6th (1996), not 10th — the 10th was only a 2022 high.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop; 10th wasn't Denmark's peak.
+
+### Row 20484 — Denmark (easy) — FAIL: non-unique (Switzerland also qualified 2010)
+**Q:** Which UEFA nation, like Denmark, qualified for the 2010 FIFA World Cup? **A:** Netherlands
+**Options:** Netherlands | Switzerland | Republic of Ireland | Sweden
+**Why it fails:** Both the Netherlands AND Switzerland qualified for the 2010 World Cup, so two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Replace Switzerland with a UEFA team that missed 2010.
+
+### Row 20485 — Denmark (easy) — FAIL: self-referential answer
+**Q:** Which UEFA nation, like Denmark, won its 2022 World Cup qualifying group? **A:** Denmark
+**Options:** Denmark | Germany | England | Spain
+**Why it fails:** 'Which UEFA nation, like Denmark, won its 2022 qualifying group?' answers 'Denmark' — the subject itself.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Name a different group winner.
+
+### Row 20489 — Denmark (easy) — FAIL: self-referential + wrong (DBU in Brøndby)
+**Q:** Which UEFA nation's FA headquarters are in Copenhagen, like Denmark's DBU? **A:** Denmark
+**Options:** Denmark | Sweden | Norway | Finland
+**Why it fails:** Answer is 'Denmark' (self-referential), and the premise that the DBU HQ is in Copenhagen is false — it's in Brøndby.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Drop; DBU HQ is in Brøndby.
+
+### Row 20501 — Denmark (easy) — FAIL: non-unique (Switzerland also qualified 2014)
+**Q:** Which UEFA team qualified for the 2014 World Cup, unlike Denmark? **A:** Netherlands
+**Options:** Netherlands | Sweden | Switzerland | Turkey
+**Why it fails:** Both the Netherlands AND Switzerland qualified for the 2014 World Cup, so two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Replace Switzerland with a team that missed 2014.
+
+### Row 20508 — Denmark (hard) — FAIL: false premise — Denmark missed 2026
+**Q:** Which World Cup did Denmark qualify for after the 2022 tournament? **A:** The 2026 World Cup
+**Options:** The 2026 World Cup | The 2018 World Cup | The 2014 World Cup | The 2010 World Cup
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup — they lost the UEFA playoff final to Czechia (2-2, 3-1 pens, 31 Mar 2026).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Denmark did not qualify for the WC after 2022.
+
+### Row 20529 — Denmark (medium) — FAIL: false premise — Denmark missed 2026
+**Q:** Which year did Denmark qualify for the 2026 FIFA World Cup? **A:** 2026
+**Options:** 2026 | 2022 | 2018 | 2014
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup — they lost the UEFA playoff final to Czechia (2-2, 3-1 pens, 31 Mar 2026).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Drop — no 2026 qualification.
+
+### Row 20530 — Denmark (medium) — FAIL: non-unique (qualified 2010, 2018 & 2022)
+**Q:** Which year did Denmark qualify for the World Cup? **A:** 2010
+**Options:** 2010 | 2014 | 2018 | 2022
+**Why it fails:** Denmark qualified for the 2010, 2018 AND 2022 World Cups, so three of the four year options are correct.
+**Source:** https://en.wikipedia.org/wiki/Denmark_at_the_FIFA_World_Cup
+**Remedy:** Ask which year they did NOT qualify (2014), or make it specific.
+
+### Row 20535 — Denmark (easy) — FAIL: wrong — Riemer (not Hjulmand) leads 2026
+**Q:** Who is Denmark's manager for the 2026 FIFA World Cup cycle? **A:** Kasper Hjulmand
+**Options:** Kasper Hjulmand | Morten Olsen | Åge Hareide | Lars Lagerbäck
+**Why it fails:** Hjulmand resigned in July 2024; Brian Riemer leads Denmark's 2026 cycle.
+**Source:** https://en.wikipedia.org/wiki/Kasper_Hjulmand
+**Remedy:** Answer: Brian Riemer.
+
+### Row 20571 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Why did Denmark's 2022 World Cup squad hold a key pre-tournament meeting in Copenhagen? **A:** DBU headquarters are there
+**Options:** DBU headquarters are there | Team hotel was there | Stadium training there | Sponsor event there
+**Why it fails:** The DBU's headquarters are in BRØNDBY, not Copenhagen.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 20574 — Denmark (easy) — FAIL: wrong — DBU HQ is in Brøndby
+**Q:** Why did Denmark's coach hold a key 2022 World Cup tactical briefing in Copenhagen? **A:** DBU headquarters are there
+**Options:** DBU headquarters are there | Aarhus stadium hosted it | Parken Stadium is there | National team trained there
+**Why it fails:** The DBU's headquarters are in BRØNDBY, not Copenhagen.
+**Source:** https://en.wikipedia.org/wiki/Danish_Football_Association
+**Remedy:** Answer: Brøndby.
+
+### Row 20576 — Denmark (easy) — FAIL: false premise — Denmark missed 2026
+**Q:** Why did Denmark's national team qualify for the 2026 FIFA World Cup? **A:** UEFA qualification campaign
+**Options:** UEFA qualification campaign | UEFA Nations League | UEFA inter-confederation playoff | UEFA final tournament
+**Why it fails:** Denmark did NOT qualify for the 2026 World Cup — they lost the UEFA playoff final to Czechia (2-2, 3-1 pens, 31 Mar 2026).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_C
+**Remedy:** Drop — Denmark failed to qualify for 2026.
+
+## Rows 20582–21579 (DR Congo) — 127 FAIL-liveness
+
+Recurring DR Congo defect clusters: (1) **2023 AFCON = 'quarter-finals'** — they actually reached the **SEMI-finals** (4th place); (2) **self-referential** 'which nation/team, like DR Congo, …? → DR Congo' (~30); (3) **2018/2022 World Cup false premises** — DR Congo were not at those finals; (4) **outdated clubs** — Wissa now at Newcastle (not Brentford), Mbemba now at Lille (not Marseille); (5) **outdated 'never qualified under current name'** — DR Congo HAVE now qualified (2026); (6) qualified via the **intercontinental playoff**, not directly through CAF; (7) misc — Desabre (not Ibenge) managed the 2023 AFCON; Bundesliga IS represented (Silas/Stuttgart); DR Congo don't 'consistently struggle' at AFCON (2 titles); non-unique items. **NOTE:** squad-composition '2026 cycle/squad' facts and the 'first WC under current name = 2026 / first in 52 years' framing were PASSED as correct.
+
+### Row 20590 — DR Congo (easy) — FAIL: false premise (not at 2018 WC)
+**Q:** At 2018 World Cup, who played for DR Congo? **A:** Ligue 1 players
+**Options:** Ligue 1 players | La Liga players | Bundesliga players | Serie A players
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2018 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad or 2026 qualifying.
+
+### Row 20592 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** At 2022 World Cup, which DR Congo key defender? **A:** Arthur Masuaku
+**Options:** Arthur Masuaku | Cédric Bakambu | Chancel Mbemba | Yoane Wissa
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2022 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20593 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** At 2022 World Cup, which DR Congo player? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2022 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20594 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** At 2022 World Cup, which league did DR Congo's squad not feature? **A:** Bundesliga
+**Options:** Bundesliga | Ligue 1 | Premier League | Serie A
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2022 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20595 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** At 2022 World Cup, which league has DR Congo players? **A:** Ligue 1
+**Options:** Ligue 1 | Bundesliga | Serie A | La Liga
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2022 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20598 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** At 2022 World Cup, who leads DR Congo's attack? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2022 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20602 — DR Congo (easy) — FAIL: false premise (not at 2018 WC)
+**Q:** At the 2018 World Cup, who provides defensive experience for DR Congo? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Yoane Wissa | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2018 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad or 2026 qualifying.
+
+### Row 20607 — DR Congo (easy) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** At the 2023 AFCON, which stage did DR Congo reach? **A:** The quarter-finals
+**Options:** The quarter-finals | The semi-finals | The group stage | The final
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place — lost the SF 1-0 to Ivory Coast, then the 3rd-place playoff to South Africa on pens), NOT the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th place).
+
+### Row 20620 — DR Congo (hard) — FAIL: non-unique (failed all of 2010-2022)
+**Q:** Before 2026, which World Cup did DR Congo fail to qualify for? **A:** The 2022 World Cup
+**Options:** The 2022 World Cup | The 2018 World Cup | The 2014 World Cup | The 2010 World Cup
+**Why it fails:** DR Congo failed to qualify for 2010, 2014, 2018 AND 2022 — all four options are correct.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Make it specific (e.g. the most recent miss before 2026 → 2022).
+
+### Row 20640 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** DR Congo qualified for the 2026 World Cup. Which nation also qualified for their first World Cup under a new name in 2026? **A:** DR Congo
+**Options:** DR Congo | Ivory Coast | Nigeria | Senegal
+**Why it fails:** 'Which nation also qualified for their first WC under a new name in 2026?' answers 'DR Congo' — the subject itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Drop — self-referential.
+
+### Row 20657 — DR Congo (medium) — FAIL: wrong/non-unique — 2023 was the SEMIS
+**Q:** DR Congo reached AFCON quarter-finals in what year? **A:** 2023
+**Options:** 2023 | 2015 | 2019 | 2021
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place — lost the SF 1-0 to Ivory Coast, then the 3rd-place playoff to South Africa on pens), NOT the quarter-finals. They reached the QF in both 2015 and 2023 en route to the semis.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** 2023 result was the semi-finals.
+
+### Row 20660 — DR Congo (medium) — FAIL: wrong — 2023 was also a semi-final
+**Q:** DR Congo reached the 2023 AFCON quarter-finals, but in which year did they last reach the semi-finals? **A:** 2015
+**Options:** 2015 | 2019 | 2021 | 2017
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place — lost the SF 1-0 to Ivory Coast, then the 3rd-place playoff to South Africa on pens), NOT the quarter-finals. So '2015 was the last semi before a 2023 QF run' is false — 2023 was itself a semi.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Both 2015 and 2023 were semi-final runs.
+
+### Row 20665 — DR Congo (easy) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** DR Congo reached which AFCON stage in 2023? **A:** Quarter finals
+**Options:** Quarter finals | Semi finals | Group stage | Finals
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place — lost the SF 1-0 to Ivory Coast, then the 3rd-place playoff to South Africa on pens), NOT the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th place).
+
+### Row 20666 — DR Congo (easy) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** DR Congo reached which round of the 2023 AFCON? **A:** Quarter-finals
+**Options:** Quarter-finals | Round of 16 | Semi-finals | Final
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place — lost the SF 1-0 to Ivory Coast, then the 3rd-place playoff to South Africa on pens), NOT the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th place).
+
+### Row 20673 — DR Congo (medium) — FAIL: wrong — 2023 was a semi-final too
+**Q:** DR Congo's 2015 AFCON semi-final finish was better than their result at which 2023 tournament? **A:** 2023 AFCON quarter-finals
+**Options:** 2023 AFCON quarter-finals | 2023 AFCON final | 2023 AFCON group stage | 2023 AFCON third place
+**Why it fails:** 2015 (semi/3rd) was NOT a stage further than 2023: DR Congo also reached the SEMI-FINALS in 2023 (4th).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Both were semi-final finishes.
+
+### Row 20678 — DR Congo (medium) — FAIL: wrong — 2023 was a semi, matching 2015
+**Q:** DR Congo's 2023 AFCON quarter-final matched their best run since which prior tournament? **A:** 2015 AFCON
+**Options:** 2015 AFCON | 2017 AFCON | 2019 AFCON | 2021 AFCON
+**Why it fails:** DR Congo's 2023 run reached the SEMI-FINALS (not QF), matching — not falling short of — their 2015 semi.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** 2023 equalled the 2015 semi-final run.
+
+### Row 20718 — DR Congo (easy) — FAIL: wrong — qualified via intercontinental playoff
+**Q:** How did DR Congo qualify for the 2026 FIFA World Cup? **A:** Through CAF qualification
+**Options:** Through CAF qualification | Via intercontinental playoff | As a host nation | Via a wildcard entry
+**Why it fails:** DR Congo did NOT qualify 'through CAF qualification' directly — they finished 2nd in CAF Group B, won the CAF playoff (v Nigeria), then won the FIFA INTERCONTINENTAL playoff (v Jamaica) to qualify. The listed distractor 'Via intercontinental playoff' is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Answer: via the intercontinental playoff.
+
+### Row 20726 — DR Congo (medium) — FAIL: outdated — DR Congo qualified for 2026
+**Q:** How many FIFA World Cups has DR Congo qualified for under its current name? **A:** Zero
+**Options:** Zero | One | Two | Three
+**Why it fails:** As of 2026 DR Congo HAVE qualified for a World Cup under their current name — they reached the 2026 finals (via the intercontinental playoff). 'Never/zero under current name' is now false.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Answer: once (2026).
+
+### Row 20728 — DR Congo (medium) — FAIL: outdated — DR Congo qualified for 2026
+**Q:** How many times have DR Congo qualified for a FIFA World Cup under their current name? **A:** Zero times
+**Options:** Zero times | One time | Two times | Three times
+**Why it fails:** As of 2026 DR Congo HAVE qualified for a World Cup under their current name — they reached the 2026 finals (via the intercontinental playoff). 'Never/zero under current name' is now false.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Answer: once (2026).
+
+### Row 20747 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** In a 2022 World Cup group, which DR Congo attacker was a key Premier League forward? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Mohamed Salah | Sadio Mané | Riyad Mahrez
+**Why it fails:** false premise — DR Congo did NOT qualify for the 2022 World Cup, so there was no DR Congo squad/match there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20749 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** In a 2026 World Cup qualifier, which DR Congo centre-back anchored the defense for Marseille? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Issa Diop | Willy Boly | Axel Disasi
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; he no longer plays for Marseille.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille.
+
+### Row 20750 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** In DR Congo's 2026 qualifier, which key attacker plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Cédric Bakambu | Gaël Kakuta
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); he no longer plays for Brentford.
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle (still the Premier League).
+
+### Row 20767 — DR Congo (medium) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** In which year did DR Congo reach the AFCON quarter-finals? **A:** 2023
+**Options:** 2023 | 2015 | 2019 | 2021
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th).
+
+### Row 20773 — DR Congo (medium) — FAIL: outdated — DR Congo qualified for 2026
+**Q:** Under their current name, how many FIFA World Cups have DR Congo qualified for? **A:** Zero
+**Options:** Zero | One | Two | Three
+**Why it fails:** DR Congo HAVE now qualified for a World Cup under their current name — they reached the 2026 finals (intercontinental playoff). 'Zero under current name' is false.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Answer: once (2026).
+
+### Row 20798 — DR Congo (medium) — FAIL: wrong — DR Congo are long-standing AFCON regulars
+**Q:** When did DR Congo become regular AFCON participants? **A:** After 2006
+**Options:** After 2006 | Before 2006 | After 2010 | After 2014
+**Why it fails:** DR Congo have been AFCON regulars since the 1960s-70s (champions 1968 & 1974), not 'after 2006'.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Answer: well before 2006.
+
+### Row 20809 — DR Congo (medium) — FAIL: wrong — DR Congo also reached the 2023 semis
+**Q:** When did DR Congo last reach the AFCON semi-finals? **A:** 2015
+**Options:** 2015 | 2013 | 2017 | 2019
+**Why it fails:** DR Congo's LAST AFCON semi-final was 2023 (4th place), not 2015 — they reached the semis in both 2015 and 2023.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: 2023 (also 2015).
+
+### Row 20810 — DR Congo (medium) — FAIL: non-unique (AFCON regular — many years)
+**Q:** When did DR Congo play AFCON matches? **A:** At 2019
+**Options:** At 2019 | At 2006 | At 2010 | At 2012
+**Why it fails:** DR Congo played AFCON matches in 2006 AND 2019 (among the options), so the answer isn't unique (they're regular participants).
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Specify a unique year/fact.
+
+### Row 20811 — DR Congo (medium) — FAIL: non-unique (N-African rivals across many AFCONs)
+**Q:** When did DR Congo play North African rivals at AFCON? **A:** 2019 AFCON
+**Options:** 2019 AFCON | 2015 AFCON | 2013 AFCON | 2017 AFCON
+**Why it fails:** DR Congo played North-African opponents at several AFCONs (e.g. Tunisia 2015, Morocco 2017, Egypt 2019, Morocco 2023), so a single year isn't unique.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Specify a unique fact, not a year.
+
+### Row 20812 — DR Congo (medium) — FAIL: non-unique (N-African rivals across many AFCONs)
+**Q:** When did DR Congo play North African rivals? **A:** At 2019
+**Options:** At 2019 | At 2015 | At 2021 | At 2023
+**Why it fails:** DR Congo played North-African opponents at several AFCONs (e.g. Tunisia 2015, Morocco 2017, Egypt 2019, Morocco 2023), so a single year isn't unique.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Specify a unique fact, not a year.
+
+### Row 20824 — DR Congo (medium) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** When did DR Congo reach the 2023 AFCON quarter-finals? **A:** 2023
+**Options:** 2023 | 2022 | 2024 | 2021
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th).
+
+### Row 20836 — DR Congo (medium) — FAIL: wrong — Stade des Martyrs didn't host the 2015 AFCON
+**Q:** When did DR Congo's Stade des Martyrs host AFCON? **A:** 2015 AFCON
+**Options:** 2015 AFCON | 2017 AFCON | 2019 AFCON | 2021 AFCON
+**Why it fails:** The 2015 AFCON was hosted by Equatorial Guinea, not DR Congo; Stade des Martyrs did not host it.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Drop — DR Congo didn't host the 2015 AFCON.
+
+### Row 20875 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which 2026 World Cup qualifier, like DR Congo, ended a 50+ year wait? **A:** DR Congo
+**Options:** DR Congo | Egypt | Ghana | Nigeria
+**Why it fails:** The answer is the subject (DR Congo / TP Mazembe) itself — self-referential. 'Which nation, like DR Congo, …?' → DR Congo.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 20893 — DR Congo (medium) — FAIL: self-referential answer
+**Q:** Which African nation's 2026 World Cup qualification ended a 50+ year wait, like DR Congo's? **A:** DR Congo
+**Options:** DR Congo | Morocco | Senegal | Nigeria
+**Why it fails:** The answer is the subject (DR Congo / TP Mazembe) itself — self-referential. 'Which nation, like DR Congo, …?' → DR Congo.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 20899 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which African team reached 2010 FIFA Club World Cup final like DR Congo's TP Mazembe? **A:** TP Mazembe
+**Options:** TP Mazembe | Al Ahly | Espérance | Wydad
+**Why it fails:** 'Which African team reached the 2010 Club World Cup final like DR Congo's TP Mazembe?' answers 'TP Mazembe' — the subject.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Name a different club, or drop.
+
+### Row 20934 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which CAF nation, like DR Congo, failed to qualify for multiple World Cups? **A:** DR Congo
+**Options:** DR Congo | Egypt | Nigeria | Cameroon
+**Why it fails:** The answer is the subject (DR Congo / TP Mazembe) itself — self-referential. 'Which nation, like DR Congo, …?' → DR Congo.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 20957 — DR Congo (easy) — FAIL: false premise (no 2023 WC)
+**Q:** Which defender provided DR Congo's 2023 World Cup squad with defensive experience? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Arthur Masuaku | Gédéon Kalulu | Brian Bayeye
+**Why it fails:** There is no 2023 men's World Cup and DR Congo were not at one; '2023 World Cup squad' is invalid (re-anchor to the 2026 squad).
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 World Cup squad.
+
+### Row 20958 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo 2026 WC defender has over 60 caps and plays for Marseille? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Arthur Masuaku | Silas Katompa
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille, not Marseille.
+
+### Row 20963 — DR Congo (medium) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** Which DR Congo achievement in 2023 mirrored their historic 2026 World Cup qualification? **A:** Reaching AFCON quarter-finals
+**Options:** Reaching AFCON quarter-finals | Winning AFCON bronze medal | Qualifying for AFCON semi-finals | Winning a World Cup qualifier
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th).
+
+### Row 20966 — DR Congo (hard) — FAIL: wrong — 2023 AFCON was the SEMIS, not QF
+**Q:** Which DR Congo AFCON run preceded their historic 2026 World Cup qualification? **A:** 2023 quarter-finals
+**Options:** 2023 quarter-finals | 2015 semi-finals | 2022 group stage | 2019 round of 16
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th).
+
+### Row 20968 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker for 2026 World Cup qualifying plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Gaël Kakuta | Dieumerci Mbokani
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20970 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker from Brentford was a key player for their 2026 World Cup squad? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Cédric Bakambu | Gaël Kakuta
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20971 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker from Brentford was a key squad selection for the 2026 FIFA World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Meschack Elia | Cédric Bakambu | Gradel Diangana
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20972 — DR Congo (easy) — FAIL: outdated club + false premise (no 2022 WC)
+**Q:** Which DR Congo attacker from Brentford was in the 2022 World Cup squad? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Dieumerci Mbokani | Benik Afobe
+**Why it fails:** Wissa now plays for Newcastle (not Brentford), AND DR Congo did not play at the 2022 World Cup (no '2022 World Cup squad').
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad; Wissa is at Newcastle.
+
+### Row 20980 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker is key for Brentford in the 2026 World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Dieumerci Mbokani | Benik Afobe
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20982 — DR Congo (easy) — FAIL: outdated club + false premise (no 2022 WC)
+**Q:** Which DR Congo attacker played for Brentford during the 2022 World Cup? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cedric Bakambu | Dieumerci Mbokani | Benik Afobe
+**Why it fails:** Wissa now plays for Newcastle (not Brentford), AND DR Congo did not play at the 2022 World Cup (no '2022 World Cup squad').
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad; Wissa is at Newcastle.
+
+### Row 20983 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker plays for Brentford and is a key figure for the 2026 World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Dieumerci Mbokani | Benik Afobe
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20985 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker plays for Brentford in the 2026 World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Cédric Bakambu | Gaël Kakuta
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20986 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker plays for Brentford in the Premier League? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Michy Batshuayi | Bryan Mbeumo | Maxwel Cornet
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 20990 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo attacker, a Brentford forward, is a key player for the 2026 World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Dieumerci Mbokani | Benik Afobe
+**Why it fails:** Yoane Wissa moved from Brentford to Newcastle United (2025); 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21000 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo centre-back has over 60 caps and plays for Marseille? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Arthur Masuaku | Marcel Tisserand | Christian Luyindama
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille, not Marseille.
+
+### Row 21002 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo centre-back plays for Marseille for the 2026 World Cup cycle? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Yoane Wissa | Arthur Masuaku
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille, not Marseille.
+
+### Row 21003 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo centre-back started the 2026 World Cup qualifier for Marseille? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Arthur Masuaku | Silas Katompa
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille, not Marseille.
+
+### Row 21006 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo centre-back with over 60 caps plays for Marseille in the 2026 World Cup cycle? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Arthur Masuaku | Silas Katompa
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille, not Marseille.
+
+### Row 21007 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo centre-back with over 60 caps plays for Marseille? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Arthur Masuaku | Silas Katompa
+**Why it fails:** Chancel Mbemba moved from Marseille to Lille in 2025; 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille, not Marseille.
+
+### Row 21009 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo centre-back, playing for Marseille, aims for the 2026 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Arthur Masuaku | Silas Katompa
+**Why it fails:** Chancel Mbemba moved to Lille in 2025; the present-tense 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille (he was at Marseille until 2025).
+
+### Row 21041 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which DR Congo defender debuted at 2022 World Cup? **A:** Arthur Masuaku
+**Options:** Arthur Masuaku | Cédric Bakambu | Chancel Mbemba | Yoane Wissa
+**Why it fails:** DR Congo did not play at the 2022 World Cup, so no defender 'debuted at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad.
+
+### Row 21051 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo defender plays for Marseille in 2026? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Arthur Masuaku | Cédric Bakambu | Silas Katompa
+**Why it fails:** Chancel Mbemba moved to Lille in 2025; the present-tense 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille (he was at Marseille until 2025).
+
+### Row 21054 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which DR Congo defender provided experience at the 2022 FIFA World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Yoane Wissa | Dieumerci Mbokani | Cédric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup, so there was no DR Congo squad/debut/player there.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad (Mbemba did provide experience there).
+
+### Row 21080 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo defender, with over 60 caps, plays for Marseille? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Arthur Masuaku | Dylan Batubinsika | Christian Luyindama
+**Why it fails:** Chancel Mbemba moved to Lille in 2025; the present-tense 'plays for Marseille' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille (he was at Marseille until 2025).
+
+### Row 21104 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo forward for the 2026 cycle plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Arthur Masuaku
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21119 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo forward plays for Brentford in the 2026 World Cup cycle? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Silas Katompa
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21127 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo forward, key for 2026 World Cup cycle, plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Arthur Masuaku
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21128 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo forward, playing for Brentford, is key for 2026 World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Arthur Masuaku
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21129 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo forward, playing for Brentford, was key for the 2026 World Cup cycle? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Silas Katompa
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21130 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo forward's 2026 World Cup cycle preparation is with Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Silas Katompa
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21133 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo key attacker in 2026 World Cup qualifying plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Dieumerci Mbokani | Benik Afobe
+**Why it fails:** Yoane Wissa moved to Newcastle United in 2025; the present-tense 'plays for Brentford' is outdated (he's still a Premier League player, now at Newcastle).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle, not Brentford.
+
+### Row 21150 — DR Congo (easy) — FAIL: false premise (not at 2022 WC) + outdated club
+**Q:** Which DR Congo player at 2022 World Cup plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Christian Eriksen | Bryan Mbeumo | Romain Faivre
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup, so there was no DR Congo squad/debut/player there. (Wissa is also now at Newcastle, not Brentford.)
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON; Wissa is at Newcastle.
+
+### Row 21152 — DR Congo (easy) — FAIL: false premise (not at 2022 WC) + outdated club
+**Q:** Which DR Congo player at the 2022 World Cup came from England's Premier League? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Cédric Bakambu | Gaël Kakuta
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup, so there was no DR Congo squad/debut/player there. (Wissa is also now at Newcastle, not Brentford.)
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON; Wissa is at Newcastle.
+
+### Row 21153 — DR Congo (easy) — FAIL: false premise (not at 2022 WC) + outdated club
+**Q:** Which DR Congo player at the 2022 World Cup did NOT play in Ligue 1? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Cédric Bakambu | Gaël Kakuta
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup, so there was no DR Congo squad/debut/player there. (Wissa is also now at Newcastle, not Brentford.)
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON; Wissa is at Newcastle.
+
+### Row 21154 — DR Congo (easy) — FAIL: false premise (not at 2022 WC) + outdated club
+**Q:** Which DR Congo player at the 2022 World Cup played for a Premier League club? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Cédric Bakambu | Gaël Kakuta
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup, so there was no DR Congo squad/debut/player there. (Wissa is also now at Newcastle, not Brentford.)
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON; Wissa is at Newcastle.
+
+### Row 21166 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo player from Brentford is a key attacker in their 2026 World Cup qualifiers? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Gaël Kakuta | Dieumerci Mbokani
+**Why it fails:** Wissa moved from Brentford to Newcastle (2025); the present-tense Brentford reference is outdated (he's still in the Premier League).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle.
+
+### Row 21170 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo player in their 2026 squad plays for Brentford? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Gaël Kakuta | Chancel Mbemba
+**Why it fails:** Wissa moved from Brentford to Newcastle (2025); the present-tense Brentford reference is outdated (he's still in the Premier League).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle.
+
+### Row 21179 — DR Congo (easy) — FAIL: false premise (not at 2018 WC)
+**Q:** Which DR Congo player played at 2018 World Cup? **A:** Cédric Bakambu
+**Options:** Cédric Bakambu | Chancel Mbemba | Yoane Wissa | Arthur Masuaku
+**Why it fails:** DR Congo did not play at the 2018 World Cup, so Bakambu didn't 'play at the 2018 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor; Bakambu's first WC will be 2026.
+
+### Row 21180 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo player played for Marseille in 2026? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Yoane Wissa | Arthur Masuaku
+**Why it fails:** Mbemba moved to Lille in 2025; 'plays for Marseille in 2026' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille.
+
+### Row 21181 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Which DR Congo player plays for Brentford in 2026? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Arthur Masuaku
+**Why it fails:** Wissa moved from Brentford to Newcastle (2025); the present-tense Brentford reference is outdated (he's still in the Premier League).
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle.
+
+### Row 21182 — DR Congo (easy) — FAIL: outdated — Mbemba now at Lille
+**Q:** Which DR Congo player plays for Marseille in 2026? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Yoane Wissa | Arthur Masuaku
+**Why it fails:** Mbemba moved to Lille in 2025; 'plays for Marseille in 2026' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Chancel_Mbemba
+**Remedy:** Mbemba plays for Lille.
+
+### Row 21183 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which DR Congo player plays in Premier League at 2022 World Cup? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21204 — DR Congo (hard) — FAIL: self-referential / confused
+**Q:** Which DR Congo squad featured players from an AFCON regular that missed the 2022 World Cup? **A:** DR Congo 2026 qualifiers
+**Options:** DR Congo 2026 qualifiers | DR Congo 2022 qualifiers | DR Congo 2018 qualifiers | DR Congo 2014 qualifiers
+**Why it fails:** The 'AFCON regular that missed the 2022 World Cup' IS DR Congo, so the answer ('DR Congo 2026 qualifiers') is self-referential.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Reword to avoid the self-reference.
+
+### Row 21207 — DR Congo (medium) — FAIL: non-unique (all those squads failed)
+**Q:** Which DR Congo squad has never qualified for the FIFA World Cup? **A:** The 2022 squad
+**Options:** The 2022 squad | The 2018 squad | The 2014 squad | The 2010 squad
+**Why it fails:** DR Congo's 2010, 2014, 2018 AND 2022 squads all failed to qualify, so every option is correct.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Make it specific.
+
+### Row 21250 — DR Congo (medium) — FAIL: wrong — 2023 was a semi-final
+**Q:** Which DR Congo team matched its 2023 AFCON quarter-final run in the 2010s? **A:** 2015 AFCON semi-finalists
+**Options:** 2015 AFCON semi-finalists | 2013 AFCON quarter-finalists | 2017 AFCON quarter-finalists | 2019 AFCON quarter-finalists
+**Why it fails:** DR Congo also reached the SEMIS in 2023, so it didn't merely 'match a 2015 QF' — both were semi-final runs.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Both 2015 and 2023 were semis.
+
+### Row 21251 — DR Congo (medium) — FAIL: wrong — both 2015 and 2023 were semis
+**Q:** Which DR Congo team progressed further in AFCON, their 2015 or 2023 side? **A:** The 2015 team
+**Options:** The 2015 team | The 2023 team | They progressed equally | The 2013 team
+**Why it fails:** DR Congo reached the semi-finals in BOTH 2015 and 2023, so 2015 did not progress further than 2023.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** They went equally far (both semis).
+
+### Row 21252 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which DR Congo team qualified for its first FIFA World Cup in 2026? **A:** DR Congo
+**Options:** DR Congo | Zambia | Uganda | Tanzania
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21254 — DR Congo (easy) — FAIL: self-referential + 2023 was the semis
+**Q:** Which DR Congo team reached the 2023 AFCON quarter-finals? **A:** DR Congo
+**Options:** DR Congo | Côte d'Ivoire | Morocco | Senegal
+**Why it fails:** Answer 'DR Congo' is self-referential, and DR Congo reached the 2023 AFCON SEMI-finals (4th), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Name another QF team and fix the stage.
+
+### Row 21272 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which league does DR Congo's Yoane Wissa play in at 2022 World Cup? **A:** Premier League
+**Options:** Premier League | Bundesliga | Serie A | La Liga
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21280 — DR Congo (easy) — FAIL: wrong — Bundesliga IS represented
+**Q:** Which league was not represented in DR Congo's 2026 World Cup qualifying squad? **A:** Bundesliga
+**Options:** Bundesliga | Ligue 1 | Premier League | La Liga
+**Why it fails:** Silas Katompa plays for VfB Stuttgart (Bundesliga), so the Bundesliga IS represented in DR Congo's squad.
+**Source:** https://en.wikipedia.org/wiki/Silas_Katompa_Mvumpa
+**Remedy:** Pick a league genuinely absent.
+
+### Row 21285 — DR Congo (easy) — FAIL: false premise (no 2018 WC squad)
+**Q:** Which leagues did DR Congo's 2018 World Cup squad draw from? **A:** Ligue 1 Premier
+**Options:** Ligue 1 Premier | Bundesliga Pro | Serie A Elite | La Liga Premier
+**Why it fails:** DR Congo did not qualify for the 2018 World Cup, so there was no '2018 World Cup squad'.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to a real campaign.
+
+### Row 21319 — DR Congo (easy) — FAIL: wrong — not the most Europe-based
+**Q:** Which nation has most players in 2022 European leagues, DR Congo, Morocco, Egypt, or Senegal? **A:** DR Congo
+**Options:** DR Congo | Morocco | Egypt | Senegal
+**Why it fails:** DR Congo do NOT have the most Europe-based players among DR Congo/Morocco/Egypt/Senegal — Morocco and Senegal field almost entirely European-based squads.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Drop the comparative claim.
+
+### Row 21329 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation qualified for 2026 like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Senegal | Egypt | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21332 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation qualified for its first World Cup under the name DR Congo in 2026? **A:** DR Congo
+**Options:** DR Congo | Ivory Coast | Tanzania | Zimbabwe
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21336 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation qualified for the 2026 World Cup like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Morocco | Tunisia | Algeria
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21338 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation qualified for their first FIFA World Cup as DR Congo in 2026? **A:** DR Congo
+**Options:** DR Congo | Côte d'Ivoire | Bosnia-Herzegovina | North Macedonia
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21339 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation qualified in 2026 like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Senegal | Morocco | Egypt
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21351 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation, like DR Congo in 2026, ended a 50+ year World Cup drought? **A:** DR Congo
+**Options:** DR Congo | Cameroon | Nigeria | Senegal
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21352 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which nation, like DR Congo in 2026, last qualified for a World Cup over 50 years ago? **A:** DR Congo
+**Options:** DR Congo | Cameroon | Senegal | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which nation, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different nation.
+
+### Row 21363 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which player is DR Congo's key attacker at 2022 FIFA World Cup? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21372 — DR Congo (easy) — FAIL: wrong — 2023 AFCON was the SEMIS
+**Q:** Which round did DR Congo reach at the 2023 AFCON? **A:** Quarter-finals
+**Options:** Quarter-finals | Semi-finals | Final | Round of 16
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th).
+
+### Row 21379 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Which stadium hosts DR Congo at 2022 World Cup? **A:** Stade des Martyrs
+**Options:** Stade des Martyrs | Stade Tata Raphaël | Stade Frederic Kibassa | Stade du 20 Mai
+**Why it fails:** DR Congo were not at the 2022 World Cup, and the WC isn't hosted at their home stadium — 'hosts DR Congo at 2022 World Cup' is a false premise.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to home qualifiers.
+
+### Row 21385 — DR Congo (easy) — FAIL: wrong — 2023 AFCON was the SEMIS
+**Q:** Which stage did DR Congo reach at the 2023 Africa Cup of Nations? **A:** Quarter-finals
+**Options:** Quarter-finals | Semi-finals | Round of 16 | Final
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Answer: the semi-finals (4th).
+
+### Row 21387 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which team debuted at 2026 FIFA World Cup like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Ghana | Senegal | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21392 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which team failed to qualify for multiple World Cups like DR Congo? **A:** DR Congo
+**Options:** DR Congo | China | Canada | Bolivia
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21395 — DR Congo (medium) — FAIL: self-referential answer
+**Q:** Which team had a historic 2026 World Cup qualification like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Senegal | Egypt | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21403 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which team qualified for 2026 like DR Congo? **A:** DR Congo
+**Options:** DR Congo | South Africa | Egypt | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21405 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which team qualified for 2026 World Cup like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Ghana | Senegal | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21413 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Which team reached 2015 AFCON semi-finals like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Ghana | Ivory Coast | Cameroon
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21415 — DR Congo (easy) — FAIL: self-referential + 2023 was the semis
+**Q:** Which team reached 2023 AFCON quarter-finals like DR Congo? **A:** DR Congo
+**Options:** DR Congo | Egypt | Morocco | Senegal
+**Why it fails:** Answer 'DR Congo' is self-referential, and DR Congo reached the 2023 AFCON SEMIS (4th), not the quarter-finals.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** Name another team and fix the stage.
+
+### Row 21420 — DR Congo (easy) — FAIL: non-unique (all options are AFCON regulars)
+**Q:** Which teams are regular AFCON participants like DR Congo? **A:** Egypt
+**Options:** Egypt | Ghana | Nigeria | Morocco
+**Why it fails:** Egypt, Ghana, Nigeria AND Morocco are all regular AFCON participants like DR Congo — every option is correct.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Pick a non-regular as the distractor set.
+
+### Row 21446 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Who benefits from DR Congo's European leagues talent in 2026? **A:** DR Congo
+**Options:** DR Congo | Morocco | Egypt | Senegal
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21451 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Who defends DR Congo at 2022 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Yoane Wissa | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21464 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Who is DR Congo's key attacker at 2022 FIFA World Cup? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Chancel Mbemba | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21467 — DR Congo (easy) — FAIL: false premise (DR Congo missed AFCON 2021)
+**Q:** Who is DR Congo's key defender at AFCON 2021? **A:** Arthur Masuaku
+**Options:** Arthur Masuaku | Chancel Mbemba | Cédric Bakambu | Yoane Wissa
+**Why it fails:** DR Congo did not qualify for the 2021 AFCON, so there was no 'key defender at AFCON 2021'.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Re-anchor to 2023 (or 2015).
+
+### Row 21475 — DR Congo (easy) — FAIL: wrong — Desabre (not Ibenge) led the 2023 AFCON
+**Q:** Who led DR Congo at 2023 AFCON? **A:** Florent Ibengé
+**Options:** Florent Ibengé | Héctor Cúper | Patrice Beaumelle | Sven Vandenbroeck
+**Why it fails:** Sébastien Desabre managed DR Congo at the 2023 AFCON (to the semis/4th); Florent Ibenge led the 2015 edition, not 2023.
+**Source:** https://en.wikipedia.org/wiki/S%C3%A9bastien_Desabre
+**Remedy:** Answer: Sébastien Desabre (and the stage was the semis).
+
+### Row 21480 — DR Congo (easy) — FAIL: false premise (not at 2018 WC)
+**Q:** Who led DR Congo's defense at 2018 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Yoane Wissa | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to a real campaign.
+
+### Row 21481 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Who led DR Congo's defense at 2022 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Yoane Wissa | Arthur Masuaku
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21483 — DR Congo (easy) — FAIL: wrong — Desabre managed the 2023 AFCON
+**Q:** Who managed DR Congo at 2023 AFCON? **A:** Florent Ibenge
+**Options:** Florent Ibenge | Hector Cuper | Patrice Beaumelle | Sven Vandenbroeck
+**Why it fails:** The 2023 AFCON manager was Desabre, not Ibenge (who left in 2018); DR Congo also reached the semis, not the QF.
+**Source:** https://en.wikipedia.org/wiki/S%C3%A9bastien_Desabre
+**Remedy:** Answer: Sébastien Desabre.
+
+### Row 21502 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Who played for DR Congo at 2022 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Cédric Bakambu | Yoane Wissa | Arthur Masuaku
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21505 — DR Congo (easy) — FAIL: outdated — Wissa now at Newcastle
+**Q:** Who plays for Brentford in 2026 for DR Congo? **A:** Yoane Wissa
+**Options:** Yoane Wissa | Cédric Bakambu | Chancel Mbemba | Arthur Masuaku
+**Why it fails:** Wissa moved to Newcastle in 2025; 'plays for Brentford in 2026' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Yoane_Wissa
+**Remedy:** Wissa plays for Newcastle.
+
+### Row 21507 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Who plays in Ligue 1 for DR Congo at 2022 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Yoane Wissa | Other players | No one
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21517 — DR Congo (easy) — FAIL: false premise (not at 2022 WC)
+**Q:** Who provides defensive experience in DR Congo's squad at 2022 World Cup? **A:** Chancel Mbemba
+**Options:** Chancel Mbemba | Yoane Wissa | Dieumerci Mbokani | Cedric Bakambu
+**Why it fails:** false premise — DR Congo did NOT play at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2026 squad / 2023 AFCON.
+
+### Row 21519 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Who qualified DR Congo for 2026 World Cup? **A:** DR Congo
+**Options:** DR Congo | Ghana | Senegal | Morocco
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21520 — DR Congo (easy) — FAIL: self-referential answer
+**Q:** Who qualified DR Congo for 2026? **A:** DR Congo
+**Options:** DR Congo | Ghana | Morocco | Senegal
+**Why it fails:** Self-referential: in a DR Congo category, 'which team/nation/who, like DR Congo, …?' answers DR Congo itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Name a different team.
+
+### Row 21547 — DR Congo (easy) — FAIL: nonsensical + outdated
+**Q:** Why did DR Congo not qualify in 2018? **A:** New Name
+**Options:** New Name | New Kit | New Coach | New Style
+**Why it fails:** 'New Name' is not a reason DR Congo failed to qualify in 2018, and the 'never qualified under current name' premise is now outdated (they qualified for 2026).
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Drop — incoherent reason.
+
+### Row 21548 — DR Congo (easy) — FAIL: nonsensical + outdated
+**Q:** Why did DR Congo not qualify in 2022? **A:** New Name
+**Options:** New Name | New Coach | New Sponsor | New Stadium
+**Why it fails:** 'New Name' is not why DR Congo missed 2022, and they have since qualified for 2026.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_at_the_FIFA_World_Cup
+**Remedy:** Drop — incoherent reason.
+
+### Row 21552 — DR Congo (easy) — FAIL: wrong — 2023 AFCON was the SEMIS
+**Q:** Why did DR Congo reach the 2023 AFCON quarter-finals? **A:** Reached the quarter-finals
+**Options:** Reached the quarter-finals | Won the tournament | Reached the final | Were eliminated in group stage
+**Why it fails:** DR Congo reached the SEMI-FINALS of the 2023 AFCON (4th place), not the quarter-finals. (And the question is tautological.)
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations_knockout_stage
+**Remedy:** They reached the semi-finals.
+
+### Row 21561 — DR Congo (easy) — FAIL: wrong — DR Congo don't 'consistently struggle' at AFCON
+**Q:** Why do DR Congo consistently struggle at the AFCON? **A:** Strong North African teams
+**Options:** Strong North African teams | Weak domestic league | Poor youth development | Lack of experienced coaches
+**Why it fails:** DR Congo have WON the AFCON twice (1968, 1974) and reached the semi-finals as recently as 2015 and 2023 — the 'consistently struggle' premise is false.
+**Source:** https://en.wikipedia.org/wiki/DR_Congo_national_football_team
+**Remedy:** Drop — false premise.
+
+### Row 21566 — DR Congo (easy) — FAIL: outdated — DR Congo qualified for 2026
+**Q:** Why has DR Congo never played at a FIFA World Cup under their current name? **A:** They have never qualified
+**Options:** They have never qualified | They withdrew from qualifying | They were disqualified | They lost a playoff
+**Why it fails:** DR Congo HAVE now qualified for a World Cup under their current name (2026, via the intercontinental playoff), so 'never qualified / failed to qualify under current name' is outdated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** They qualified for 2026 (first under the name DR Congo).
+
+### Row 21567 — DR Congo (easy) — FAIL: outdated — DR Congo qualified for 2026
+**Q:** Why has DR Congo never reached a FIFA World Cup under its current name? **A:** Failed to qualify
+**Options:** Failed to qualify | Boycotted tournaments | Were suspended by FIFA | Lost a playoff
+**Why it fails:** DR Congo HAVE now qualified for a World Cup under their current name (2026, via the intercontinental playoff), so 'never qualified / failed to qualify under current name' is outdated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** They qualified for 2026 (first under the name DR Congo).
+
+### Row 21568 — DR Congo (easy) — FAIL: outdated — DR Congo qualified for 2026
+**Q:** Why has DR Congo not qualified for a FIFA World Cup under their current name? **A:** They have never qualified
+**Options:** They have never qualified | They withdrew from qualifiers | They were disqualified | They lost a playoff
+**Why it fails:** DR Congo HAVE now qualified for a World Cup under their current name (2026, via the intercontinental playoff), so 'never qualified / failed to qualify under current name' is outdated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** They qualified for 2026 (first under the name DR Congo).

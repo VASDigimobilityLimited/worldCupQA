@@ -89,7 +89,9 @@ Verdicts route into two files:
 - **`QA_FAILED_LIVENESS_PASSED_OTHERS.md`** — passed mechanical but **failed liveness**
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
-**✅ Algeria** (rows 2–1228), **✅ Argentina** (rows 1229–2160) and **✅ Australia** (rows 2161–3241) are complete.
+**✅ Algeria** (rows 2–1228), **✅ Argentina** (rows 1229–2160), **✅ Australia** (rows 2161–3241),
+**✅ Côte d'Ivoire** (rows 16572–17486), **✅ Croatia** (rows 17487–19101),
+**✅ Denmark** (rows 19102–20581) and **✅ DR Congo** (rows 20582–21579) are complete.
 **🟨 Brazil is IN PROGRESS** (separate contributor): rows 6097–8182, verified through **row 6760**,
 resume at **6761** — its sub-cursor + per-batch tables live at the bottom of `QA_TC06_LIVE.md`.
 The remaining 34 countries are **not started** (§4). Next sequential country: **Austria** (rows 3242–4282).
@@ -103,11 +105,11 @@ The remaining 34 countries are **not started** (§4). Next sequential country: *
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **2284** ship-ready
-  (Algeria 554 + Argentina 562 + Australia 714 + Brazil 454 so far).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **480** dangerous
-  (Algeria 176 + Argentina 110 + Australia 121 + Brazil 73 so far).
-- **Total ship-ready so far (both methods):** 2416 (132 backfill rows 2–230 + 2284 new method).
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **5099** ship-ready
+  (Algeria 554 + Argentina 562 + Australia 714 + Brazil 454 so far + Côte d'Ivoire 463 + Croatia 1034 + Denmark 859 + DR Congo 459).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **1022** dangerous
+  (Algeria 176 + Argentina 110 + Australia 121 + Brazil 73 so far + Côte d'Ivoire 79 + Croatia 154 + Denmark 182 + DR Congo 127).
+- **Total ship-ready so far (both methods):** 5231 (132 backfill rows 2–230 + 5099 new method).
 - **Brazil is IN PROGRESS** (separate contributor): verified through **row 6760**, resume at 6761
   (last Brazil CSV row = 8182). Brazil sub-cursor + per-batch tables live at the bottom of
   `QA_TC06_LIVE.md`.
@@ -131,10 +133,10 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Chile | 12429–13847 | 1419 | 960 | ⬜ not started |
 | Colombia | 13848–15527 | 1680 | 1132 | ⬜ not started |
 | Costa Rica | 15528–16571 | 1044 | 734 | ⬜ not started |
-| Côte d'Ivoire | 16572–17486 | 915 | 542 | ⬜ not started |
-| Croatia | 17487–19101 | 1615 | 1188 | ⬜ not started |
-| Denmark | 19102–20581 | 1480 | 1041 | ⬜ not started |
-| DR Congo | 20582–21579 | 998 | 586 | ⬜ not started |
+| Côte d'Ivoire | 16572–17486 | 915 | 542 | ✅ **COMPLETE** (row 17485) — 463 PASS / 79 FAIL |
+| Croatia | 17487–19101 | 1615 | 1188 | ✅ **COMPLETE** (row 19100) — 1034 PASS / 154 FAIL |
+| Denmark | 19102–20581 | 1480 | 1041 | ✅ **COMPLETE** (row 20580) — 859 PASS / 182 FAIL |
+| DR Congo | 20582–21579 | 998 | 586 | ✅ **COMPLETE** (row 21576) — 459 PASS / 127 FAIL |
 | Ecuador | 21580–22765 | 1186 | 782 | ⬜ not started |
 | Egypt | 22766–23686 | 921 | 636 | ⬜ not started |
 | England | 23687–25401 | 1715 | 1315 | ⬜ not started |
