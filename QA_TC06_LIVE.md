@@ -1177,3 +1177,104 @@ Manager/Embolo/Egypt/stadium duplicates + a 2026-qualification false-claim clust
 - Other recurring defects: Excel score corruption ("02-Jan"=2-1, "03-Mar"=3-3); non-unique
   "key 2022 forward/attacker" (Aboubakar fits); self-referential "like Cameroon → Cameroon";
   lost-all-3 in both 2010 & 2014 (non-unique when both offered); one false "Cameroon v Croatia 2022".
+
+---
+
+# ===== ECUADOR (rows 21580–22765) — NEW METHOD (only QA_PASSED.md rows) =====
+Separate contributor, started 2026-06-07. Country range 21580–22765 (1186 rows; 782 in QA_PASSED.md).
+
+## Ecuador fact base (web-verified, reused across batches)
+- **WC appearances: 2002, 2006, 2014, 2022, and 2026** (missed 2010 & 2018). **✅ Ecuador DID qualify
+  for 2026** (clinched 11 Jun 2025, 0-0 at Peru; "watertight" run under Beccacece) — despite a 3-point
+  deduction for the Byron Castillo false-documents case. So "Ecuador qualified for 2026" rows are TRUE.
+- **2006 WC (best result): Round of 16** — lost 1-0 to England (Beckham free kick, 60'). Beat Poland &
+  Costa Rica in the group.
+- **2014 WC (Reinaldo Rueda):** group-stage exit. **Enner Valencia scored all 3 Ecuador goals** (1 v
+  Switzerland, 2 v Honduras).
+- **2022 WC (Gustavo Alfaro), Group A:** beat **Qatar 2-0** (Valencia 2, the tournament's opening match/
+  first goal, at Al Bayt), drew **Netherlands 1-1** (Valencia 49'), lost **Senegal 1-2** (**Caicedo 67'**
+  scored Ecuador's goal). Group-stage exit (Netherlands & Senegal advanced). **Valencia scored 3 of
+  Ecuador's 4 goals; Caicedo scored the other (their most recent WC goal)** — so "Valencia scored all
+  their last goals" claims are FALSE.
+- **Qualifying:** finished **4th in CONMEBOL** for both 2014 and 2022.
+- **Copa América:** QF in **2016** (Centenario) and **2024**.
+- **Managers:** Reinaldo Rueda (2014) · Gustavo Alfaro (2022) · Félix Sánchez Bas (2023–2024, **sacked**)
+  · **Sebastián Beccacece (Aug 2024–, the 2026 manager)**. So "2026 manager = Sánchez Bas" is STALE/wrong.
+- **Key players:** Enner Valencia (all-time top scorer, veteran); **Moisés Caicedo** (Chelsea, record SA
+  midfielder fee, 2023); Pervis Estupiñán (LB, Brighton); Piero Hincapié; Gonzalo Plata; Jeremy Sarmiento.
+- **Stadiums:** Estadio Rodrigo Paz Delgado / Casa Blanca (Quito, ~2,850 m altitude home) · Estadio
+  Monumental Banco Pichincha (Guayaquil, ~57,267 — Ecuador's largest).
+
+## Batch rows 21580–21680 (Ecuador) — 77 candidates — **72 PASS · 5 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (72 rows) | ✅ PASS | 2022 results / 2014 / Copa QFs / managers / 4th-in-CONMEBOL / 2026 qualify |
+| 21606,21640 | ❌ FAIL | "Valencia scored all Ecuador's last five WC goals" — false (Caicedo scored v Senegal) |
+| 21618 | ❌ FAIL | stale manager — 2026 manager is Beccacece, not Sánchez Bas (sacked) |
+| 21584 | ❌ FAIL | explanation false (Senegal LOST to the Netherlands, didn't win) |
+| 21668 | ❌ FAIL | "01-Jan" = corrupted "1-1" (Netherlands draw) |
+
+## Batch rows 21681–21850 (Ecuador) — 120 candidates — **111 PASS · 9 FAIL**
+Heavy 2022-result duplicates (Qatar 2-0 / Netherlands 1-1 / Senegal 2-1) + Valencia/Caicedo/managers.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (111 rows) | ✅ PASS | 2022 results / Valencia / Caicedo-Chelsea / 4th CONMEBOL / 2026 qualify |
+| 21754,21829,21830,21838 | ❌ FAIL | "01-Jan" = corrupted "1-1" (Netherlands) |
+| 21842 | ❌ FAIL | "02-Jan" = corrupted "2-1" (Senegal) |
+| 21791 | ❌ FAIL | false "Valencia's last five WC goals" run (Caicedo scored v Senegal) |
+| 21732 | ❌ FAIL | Hincapié WAS a 2022 starter (claim "not yet key" false) |
+| 21685,21740 | ❌ FAIL | stale: 2026 manager is Beccacece, not Sánchez Bas (sacked 2024) |
+
+## Batch rows 21851–22030 (Ecuador) — 63 candidates — **57 PASS · 6 FAIL**
+Almost all 2022-result/qualifying duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (57 rows) | ✅ PASS | 2022 results / 4th CONMEBOL / Copa QFs / Valencia / Hincapié-Leverkusen |
+| 21880 | ❌ FAIL | false "Valencia's last five WC goals" run (Caicedo scored v Senegal) |
+| 21891,21917,21918 | ❌ FAIL | non-unique negative "not draw" (Ecuador's only draw was NED; Qatar & Senegal both fit) |
+| 21911 | ❌ FAIL | non-unique negative "did not eliminate" (NED & Qatar both) |
+| 22013 | ❌ FAIL | self-referential (answer is Ecuador itself) |
+
+## Batch rows 22031–22230 (Ecuador) — 142 candidates — **134 PASS · 8 FAIL**
+Huge player-ID duplicate block (Hincapié-Leverkusen / Estupiñán-Brighton / Caicedo-Chelsea / managers).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (134 rows) | ✅ PASS | player/manager identity duplicates vs fact base |
+| 22143,22144,22145,22170 | ❌ FAIL | stale: 2026 manager is Beccacece, not Sánchez Bas (sacked 2024) |
+| 22106,22226 | ❌ FAIL | Sarmiento DID play at 2022 (sub in all 3 group games) |
+| 22207 | ❌ FAIL | Caicedo's Chelsea move was Aug 2023, after the 2022 WC |
+| 22228 | ❌ FAIL | non-unique "not in Germany" (Caicedo & Plata also not Germany-based) |
+
+## Batch rows 22231–22430 (Ecuador) — 145 candidates — **136 PASS · 9 FAIL**
+Overwhelmingly Valencia (opener brace / 2014 / top scorer) + Caicedo / stadium duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (136 rows) | ✅ PASS | Valencia opener brace v Qatar / NED goal / 2014 / top scorer; Caicedo; stadiums |
+| 22276,22277,22278,22280,22281,22352,22375 | ❌ FAIL | false "Valencia scored all/all-five Ecuador WC goals" (Caicedo scored v Senegal) |
+| 22326 | ❌ FAIL | wrong scorer — Caicedo (not Valencia) scored in the 2-1 Senegal loss |
+| 22373 | ❌ FAIL | Caicedo's record Chelsea transfer was Aug 2023, not "a 2022 transfer" |
+
+## Batch rows 22431–22765 (Ecuador) — 235 candidates — **215 PASS · 20 FAIL** — FINAL BATCH
+Manager/result/altitude/club duplicates + a large stale-2026-manager cluster.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (215 rows) | ✅ PASS | managers / 2022 results / LDU-2008 / IDV-2022 / Quito altitude / stadiums |
+| 22550,22551,22552,22553,22554,22555,22556,22574,22590,22630,22695,22700,22701,22703 | ❌ FAIL | stale: 2026 manager is Beccacece, not Sánchez Bas (present/future-tense "is leading/will lead") |
+| 22627,22718 | ❌ FAIL | false "Valencia scored Ecuador's last five WC goals" (Caicedo scored v Senegal) |
+| 22656,22657 | ❌ FAIL | non-unique negative ("not draw"/"not the decisive opponent") |
+| 22449,22679 | ❌ FAIL | non-unique "matched 2014 qualification" (2022 also qualified) |
+
+**Ecuador running totals (rows 21580+): 725 PASS-ALL · 57 FAIL-LIVENESS.**
+
+# ✅ ECUADOR COMPLETE (rows 21580–22765)
+- New method (QA_PASSED.md pool only): **725 ship-ready** (QA_PASSED_ALL.md) + **57 dangerous**
+  (QA_FAILED_LIVENESS_PASSED_OTHERS.md) = 782 candidates checked (matches QA_PASSED count).
+- **Key country facts:** Ecuador DID qualify for 2026 (clinched Jun 2025 under Beccacece). The dataset's
+  recurring stale fact is "**Sánchez Bas is the 2026 manager**" — he was appointed for the cycle (2023)
+  but **sacked in 2024**; **Sebastián Beccacece** led/clinched qualification, so present-tense "is the
+  2026 manager" rows fail (past-tense "was appointed for the 2026 cycle" rows pass).
+- Other recurring defects: false "**Valencia scored all/all-five Ecuador WC goals**" (Caicedo scored v
+  Senegal, 2022 — Ecuador's most recent WC goal); one wrong "Valencia scored in the Senegal loss";
+  Excel score corruption ("01-Jan"=1-1, "02-Jan"=2-1); non-unique negatives (Ecuador had exactly one
+  2022 draw, so "which did Ecuador not draw with" is non-unique); Caicedo's Chelsea move mis-timed to
+  2022 (it was Aug 2023); Sarmiento wrongly said to have missed 2022 (he subbed in all 3 games).

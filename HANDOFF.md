@@ -94,6 +94,9 @@ Verdicts route into two files:
 recurring-defect summary at the bottom of `QA_TC06_LIVE.md`. **✅ Cameroon is complete** (rows
 9574–10745): 681 ship-ready / 57 dangerous — key finding: Cameroon did NOT qualify for 2026 (lost
 the CAF playoff to DR Congo), so the dataset's "Cameroon qualified for 2026" rows fail.
+**✅ Ecuador is complete** (rows 21580–22765): 725 ship-ready / 57 dangerous — key finding: Ecuador
+DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is stale (he was sacked in
+2024; **Sebastián Beccacece** led/clinched qualification).
 **🔵 Australia is in progress** (rows 2161–3241). The remaining countries are **not started** (§4).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
@@ -105,16 +108,19 @@ the CAF playoff to DR Congo), so the dataset's "Cameroon qualified for 2026" row
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **3143** ship-ready
-  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **561** dangerous
-  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57).
-- **Total ship-ready so far (both methods):** 3275 (132 backfill rows 2–230 + 3143 new method).
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **3868** ship-ready
+  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681 + Ecuador 725).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **618** dangerous
+  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57 + Ecuador 57).
+- **Total ship-ready so far (both methods):** 4000 (132 backfill rows 2–230 + 3868 new method).
 - **✅ Brazil is COMPLETE** (rows 6097–8182): 1346 ship-ready / 218 dangerous = 1564 candidates
   (the full Brazil `QA_PASSED.md` pool; on-disk verified, no duplicates). Per-batch tables +
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 - **✅ Cameroon is COMPLETE** (rows 9574–10745): 681 ship-ready / 57 dangerous = 738 candidates
   (the full Cameroon `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
+  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
+- **✅ Ecuador is COMPLETE** (rows 21580–22765): 725 ship-ready / 57 dangerous = 782 candidates
+  (the full Ecuador `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
@@ -140,7 +146,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Croatia | 17487–19101 | 1615 | 1188 | ⬜ not started |
 | Denmark | 19102–20581 | 1480 | 1041 | ⬜ not started |
 | DR Congo | 20582–21579 | 998 | 586 | ⬜ not started |
-| Ecuador | 21580–22765 | 1186 | 782 | ⬜ not started |
+| Ecuador | 21580–22765 | 1186 | 782 | ✅ **COMPLETE** (row 22765) — 725 PASS / 57 FAIL |
 | Egypt | 22766–23686 | 921 | 636 | ⬜ not started |
 | England | 23687–25401 | 1715 | 1315 | ⬜ not started |
 | France | 25402–27324 | 1923 | 1413 | ⬜ not started |

@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **561** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57)
+Total failed-liveness-passed-others so far: **618** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57 · Ecuador 21580–22765 COMPLETE: 57)
 
 ---
 
@@ -3150,3 +3150,402 @@ opponent) also did not beat them in a group match — multiple valid options (cf
 **Why it fails:** False: Cameroon did NOT qualify for 2026 (lost the CAF playoff to DR Congo).
 **Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
 **Remedy:** Drop - Cameroon failed to qualify for 2026.
+
+### Row 21584 — Ecuador (easy) — FAIL
+**Q:** Against which 2022 rival did Ecuador NOT match Senegal's result?
+**Answer:** the Netherlands
+**Why it fails:** Explanation false: Senegal did NOT beat the Netherlands — Senegal LOST 0-2 to them. (Ecuador drew 1-1, so they indeed didn't match Senegal's result v the Netherlands, but the stated reason is wrong.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the explanation: Senegal lost to the Netherlands; Ecuador drew.
+
+### Row 21606 — Ecuador (easy) — FAIL
+**Q:** At the 2022 World Cup, which Ecuador player scored all their last five goals?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did NOT score all of Ecuador's last five WC goals — Moisés Caicedo scored their most recent WC goal (v Senegal, 2022). Valencia scored 6 of 7, not all.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop or reword — Caicedo scored Ecuador's last WC goal.
+
+### Row 21618 — Ecuador (easy) — FAIL
+**Q:** At the 2026 World Cup cycle, which manager is Ecuador's appointed manager?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale/wrong: Ecuador's 2026-cycle manager is Sebastián Beccacece (since Aug 2024; clinched qualification). Félix Sánchez Bas was sacked in 2024 after the Copa América.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 21640 — Ecuador (easy) — FAIL
+**Q:** By the end of the 2022 World Cup, which Ecuador player had scored their last five finals goals?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did NOT score all of Ecuador's last five WC goals — Caicedo scored v Senegal (2022). The explanation's 'both goals in 2022' is also wrong (Ecuador scored 4 in 2022, Valencia 3).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo scored Ecuador's last WC goal.
+
+### Row 21668 — Ecuador (easy) — FAIL
+**Q:** Ecuador's 2022 World Cup draw with the Netherlands ended with what score?
+**Answer:** 01-Jan
+**Why it fails:** Corrupted answer: '01-Jan' is a mangled '1-1'. Ecuador drew the Netherlands 1-1 (per the explanation).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the answer to '1-1'.
+
+### Row 21685 — Ecuador (easy) — FAIL
+**Q:** For the 2026 World Cup cycle, which manager was appointed to lead Ecuador?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: the manager who leads Ecuador's 2026 campaign is Sebastián Beccacece (since Aug 2024); Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 21732 — Ecuador (medium) — FAIL
+**Q:** In Ecuador's 2022 World Cup group stage, which defender was not yet a key player?
+**Answer:** Piero Hincapié
+**Why it fails:** False: Piero Hincapié WAS a key player at 2022 — he started all three group games at centre-back. The other options also featured.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Hincapié was a 2022 starter.
+
+### Row 21740 — Ecuador (easy) — FAIL
+**Q:** In Ecuador's 2026 World Cup cycle, which manager was appointed?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024), not Sánchez Bas (sacked 2024).
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 21754 — Ecuador (medium) — FAIL
+**Q:** In their 2022 World Cup group stage match, what was the final score between Ecuador and the Netherlands?
+**Answer:** 01-Jan
+**Why it fails:** Corrupted answer: '01-Jan' = '1-1' (Netherlands draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the answer to '1-1'.
+
+### Row 21791 — Ecuador (medium) — FAIL
+**Q:** In which World Cup did Enner Valencia start his run of scoring Ecuador's last five goals?
+**Answer:** 2014
+**Why it fails:** False premise: Valencia did NOT score all of Ecuador's last five WC goals — Caicedo scored their most recent one (v Senegal, 2022).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — the 'last five' run is false.
+
+### Row 21829 — Ecuador (easy) — FAIL
+**Q:** What was Ecuador's final score against the Netherlands in 2022?
+**Answer:** 01-Jan
+**Why it fails:** Corrupted answer: '01-Jan' = '1-1' (Netherlands draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the answer to '1-1'.
+
+### Row 21830 — Ecuador (easy) — FAIL
+**Q:** What was Ecuador's final score against the Netherlands in the 2022 FIFA World Cup?
+**Answer:** 01-Jan
+**Why it fails:** Corrupted answer: '01-Jan' = '1-1' (Netherlands draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the answer to '1-1'.
+
+### Row 21838 — Ecuador (easy) — FAIL
+**Q:** What was the final score when Ecuador drew with the Netherlands in 2022?
+**Answer:** 01-Jan
+**Why it fails:** Corrupted answer: '01-Jan' = '1-1' (Netherlands draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the answer to '1-1'.
+
+### Row 21842 — Ecuador (medium) — FAIL
+**Q:** What was the score when Ecuador lost to Senegal in 2022?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (Senegal loss).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 21880 — Ecuador (medium) — FAIL
+**Q:** When did Enner Valencia start scoring Ecuador's last five World Cup goals?
+**Answer:** 2014
+**Why it fails:** False premise: Valencia did NOT score all of Ecuador's last five WC goals — Caicedo scored their most recent one (v Senegal, 2022).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — the 'last five' run is false.
+
+### Row 21891 — Ecuador (easy) — FAIL
+**Q:** Which 2022 World Cup group opponent did Ecuador not draw with?
+**Answer:** Qatar
+**Why it fails:** Non-unique negative: Ecuador's only 2022 draw was v the Netherlands, so they did NOT draw with BOTH Qatar (won) AND Senegal (lost) — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — two options fit.
+
+### Row 21911 — Ecuador (easy) — FAIL
+**Q:** Which 2022 World Cup opponent did NOT eliminate Ecuador from the tournament?
+**Answer:** Netherlands
+**Why it fails:** Non-unique negative: Senegal eliminated Ecuador, so among the options both the Netherlands AND Qatar did NOT eliminate them.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — two options fit.
+
+### Row 21917 — Ecuador (easy) — FAIL
+**Q:** Which 2022 World Cup team did Ecuador not draw against?
+**Answer:** Senegal
+**Why it fails:** Non-unique negative: Ecuador's only 2022 draw was v the Netherlands, so both Senegal (lost) and Qatar (won) are 'not drawn'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — two options fit.
+
+### Row 21918 — Ecuador (easy) — FAIL
+**Q:** Which 2022 World Cup team did Ecuador not draw in their group?
+**Answer:** Senegal
+**Why it fails:** Non-unique negative: Ecuador drew only the Netherlands, so both Senegal and Qatar are 'not drawn'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — two options fit.
+
+### Row 22013 — Ecuador (easy) — FAIL
+**Q:** Which CONMEBOL nation's World Cup qualifying trend most resembles Ecuador's recent improvement?
+**Answer:** Ecuador
+**Why it fails:** Self-referential: the answer is Ecuador itself ('whose trend resembles Ecuador's' → Ecuador).
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Drop — circular.
+
+### Row 22106 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador emerging talent for 2026 did NOT play at the 2022 World Cup?
+**Answer:** Jeremy Sarmiento
+**Why it fails:** False: Jeremy Sarmiento DID play at 2022 — he came on as a substitute in all three group games. The other options started.
+**Source:** https://en.wikipedia.org/wiki/Jeremy_Sarmiento
+**Remedy:** Drop — Sarmiento featured at 2022.
+
+### Row 22143 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador manager is in charge for the 2026 World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024); Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22144 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador manager is preparing the team for the 2026 FIFA World Cup?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Beccacece (since Aug 2024) is preparing Ecuador for 2026, not Sánchez Bas (sacked 2024).
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22145 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador manager is tasked with qualifying for the 2026 FIFA World Cup?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Beccacece led Ecuador's 2026 qualification (clinched Jun 2025); Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22170 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador manager was appointed last for a World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: the manager appointed most recently is Beccacece (Aug 2024), after Sánchez Bas — so 'appointed last' is no longer Sánchez Bas.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22207 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador midfielder was in the 2022 FIFA World Cup squad after his record transfer to Chelsea?
+**Answer:** Moisés Caicedo
+**Why it fails:** False timing: Caicedo's record transfer to Chelsea was August 2023, AFTER the 2022 World Cup — at 2022 he was a Brighton player.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Reword — the Chelsea move came after 2022.
+
+### Row 22226 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player did not feature at the 2022 FIFA World Cup?
+**Answer:** Jeremy Sarmiento
+**Why it fails:** False: Sarmiento WAS in Ecuador's 2022 squad and played (sub in all three group games); the explanation 'not part of the squad' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Jeremy_Sarmiento
+**Remedy:** Drop — Sarmiento featured at 2022.
+
+### Row 22228 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player for the 2026 cycle does NOT play his club football in Germany?
+**Answer:** Pervis Estupiñán
+**Why it fails:** Non-unique: besides Estupiñán (Brighton), both Caicedo (Chelsea) and Plata also do NOT play in Germany — only Hincapié (Leverkusen) does.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Drop — multiple options aren't Germany-based.
+
+### Row 22276 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player scored all 5 World Cup goals across 2014 and 2022?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did NOT score all 5 — Ecuador scored 7 WC goals across 2014-2022 (Valencia 6, Caicedo 1 v Senegal). The explanation undercounts 2022 (he scored 3, not 'both').
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
+
+### Row 22277 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player scored all five of their goals at the 2014 and 2022 World Cups?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did not score all of Ecuador's 2014+2022 goals — Caicedo scored v Senegal (2022).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
+
+### Row 22278 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player scored all five of their last World Cup goals across 2014 and 2022?
+**Answer:** Enner Valencia
+**Why it fails:** False: Caicedo scored Ecuador's most recent WC goal (v Senegal, 2022), so Valencia didn't score 'all of their last five'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
+
+### Row 22280 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player scored all five of their last World Cup goals?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia didn't score all of Ecuador's last five WC goals — Caicedo scored v Senegal (2022).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
+
+### Row 22281 — Ecuador (medium) — FAIL
+**Q:** Which Ecuador player scored all goals in their 2022 World Cup group stage?
+**Answer:** Enner Valencia
+**Why it fails:** False: Ecuador scored 4 goals in the 2022 group stage (Valencia 3, Caicedo 1 v Senegal) — Valencia did not score 'all' / 'only three'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
+
+### Row 22326 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player scored in their decisive 2022 World Cup group loss?
+**Answer:** Enner Valencia
+**Why it fails:** Wrong scorer: CAICEDO scored Ecuador's goal in the 2-1 loss to Senegal, not Valencia.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Change answer to Moisés Caicedo.
+
+### Row 22352 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player scored twice in the 2022 World Cup opener and all of their last five World Cup goals?
+**Answer:** Enner Valencia
+**Why it fails:** False: 'all of their last five WC goals' is wrong — Caicedo scored v Senegal (2022). (The opener brace is correct.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop the 'last five' claim — Caicedo also scored.
+
+### Row 22373 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player, after a 2022 record transfer, was in their 2022 World Cup squad?
+**Answer:** Moisés Caicedo
+**Why it fails:** False timing: Caicedo's record Chelsea transfer was August 2023, AFTER the 2022 WC — not 'a 2022 record transfer'.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Reword — the Chelsea move came after 2022.
+
+### Row 22375 — Ecuador (easy) — FAIL
+**Q:** Which Ecuador player's 2022 goals could not prevent their decisive group loss to Senegal?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did NOT score all of Ecuador's 2022 WC goals — Caicedo scored v Senegal.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Reword — Caicedo also scored in 2022.
+
+### Row 22449 — Ecuador (hard) — FAIL
+**Q:** Which Ecuador World Cup qualification result matched their 2014 success?
+**Answer:** 2026 World Cup
+**Why it fails:** Non-unique: Ecuador qualified for 2014, 2022 AND 2026 — so both 2026 and 2022 (options) 'matched their 2014 success'.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Drop — 2022 also matched.
+
+### Row 22550 — Ecuador (easy) — FAIL
+**Q:** Which manager is leading Ecuador for the 2026 World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22551 — Ecuador (medium) — FAIL
+**Q:** Which manager is leading Ecuador's 2026 FIFA World Cup qualification cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22552 — Ecuador (easy) — FAIL
+**Q:** Which manager is leading Ecuador's 2026 World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22553 — Ecuador (medium) — FAIL
+**Q:** Which manager is leading Ecuador's 2026 World Cup qualification campaign?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22554 — Ecuador (easy) — FAIL
+**Q:** Which manager is leading Ecuador's squad for the 2026 FIFA World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22555 — Ecuador (easy) — FAIL
+**Q:** Which manager is leading Ecuador's team for the 2026 World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22556 — Ecuador (easy) — FAIL
+**Q:** Which manager leads Ecuador for the 2026 World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22574 — Ecuador (medium) — FAIL
+**Q:** Which manager led Ecuador's qualification for the 2026 FIFA World Cup?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22590 — Ecuador (easy) — FAIL
+**Q:** Which manager will lead Ecuador at the 2026 FIFA World Cup?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22627 — Ecuador (easy) — FAIL
+**Q:** Which player scored Ecuador's last 5 World Cup goals in 2014 and 2022?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did NOT score all of Ecuador's last five WC goals — Caicedo scored their most recent one (v Senegal, 2022).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
+
+### Row 22630 — Ecuador (easy) — FAIL
+**Q:** Which Spaniard is Ecuador's manager for the 2026 World Cup?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22656 — Ecuador (easy) — FAIL
+**Q:** Which team did Ecuador NOT draw against at the 2022 World Cup?
+**Answer:** Senegal
+**Why it fails:** Non-unique negative: Ecuador's only 2022 draw was v the Netherlands, so they did NOT draw with BOTH Qatar (won) and Senegal (lost).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — two options fit.
+
+### Row 22657 — Ecuador (easy) — FAIL
+**Q:** Which team did Ecuador NOT face in a decisive 2022 World Cup group match?
+**Answer:** Netherlands
+**Why it fails:** Non-unique negative: Ecuador's decisive 2022 match was v Senegal, so among the options the Netherlands, Qatar AND Poland were all 'not the decisive opponent'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — multiple options fit.
+
+### Row 22679 — Ecuador (hard) — FAIL
+**Q:** Which World Cup did Ecuador qualify for in both 2014 and 2026?
+**Answer:** 2026 FIFA World Cup
+**Why it fails:** Non-unique/circular: Ecuador qualified for 2014, 2022 and 2026 — so 2022 also matches 2014, and the question already names 2026.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Drop — 2022 also matches.
+
+### Row 22695 — Ecuador (easy) — FAIL
+**Q:** Who is Ecuador's appointed manager for the 2026 FIFA World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22700 — Ecuador (easy) — FAIL
+**Q:** Who is leading Ecuador's squad for the 2026 FIFA World Cup campaign?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22701 — Ecuador (easy) — FAIL
+**Q:** Who is managing Ecuador for the 2026 FIFA World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22703 — Ecuador (easy) — FAIL
+**Q:** Who is managing Ecuador's team for the 2026 World Cup cycle?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Stale: Ecuador's 2026 manager is Sebastián Beccacece (since Aug 2024; clinched qualification Jun 2025). Sánchez Bas was sacked in 2024.
+**Source:** https://en.wikipedia.org/wiki/Sebasti%C3%A1n_Beccacece
+**Remedy:** Change answer to Sebastián Beccacece.
+
+### Row 22718 — Ecuador (easy) — FAIL
+**Q:** Who scored Ecuador's last five World Cup goals in 2014 and 2022?
+**Answer:** Enner Valencia
+**Why it fails:** False: Valencia did NOT score all of Ecuador's last five WC goals — Caicedo scored their most recent one (v Senegal, 2022).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop — Caicedo also scored.
