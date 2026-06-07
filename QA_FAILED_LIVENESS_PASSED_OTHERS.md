@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **504** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218)
+Total failed-liveness-passed-others so far: **561** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57)
 
 ---
 
@@ -2751,3 +2751,402 @@ opponent) also did not beat them in a group match — multiple valid options (cf
 **Why it fails:** False: Brazilian clubs had 23 Copa Libertadores titles in 2023, not 24 — and they did NOT lead, as Argentina had 25.
 **Source:** https://en.wikipedia.org/wiki/Copa_Libertadores
 **Remedy:** Correct the count and the 'lead' claim.
+
+### Row 9584 — Cameroon (easy) — FAIL
+**Q:** At the 2017 AFCON, Cameroon beat Egypt by what scoreline in the final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is a mangled '2-1'. Cameroon beat Egypt 2-1 in the 2017 AFCON final (per the explanation); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9588 — Cameroon (easy) — FAIL
+**Q:** At the 2022 FIFA World Cup, Cameroon drew what score with Serbia?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' is a mangled '3-3'. Cameroon drew Serbia 3-3 (per the explanation); the answer cell is unusable.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9619 — Cameroon (medium) — FAIL
+**Q:** Between 2010 and 2026, which World Cup did Cameroon fail to qualify for?
+**Answer:** 2018 World Cup
+**Why it fails:** False/non-unique: Cameroon did NOT qualify for 2026 (lost the CAF playoff to DR Congo, Nov 2025). So they failed BOTH 2018 and 2026 — 'which did they fail' is not uniquely 2018, and the explanation's 'qualified for 2026' is wrong.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Reword: Cameroon failed to qualify for both 2018 and 2026.
+
+### Row 9628 — Cameroon (medium) — FAIL
+**Q:** Cameroon won the 2017 AFCON final. What was the score?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is a mangled '2-1'. Cameroon won the 2017 AFCON final 2-1 (per the explanation).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9629 — Cameroon (easy) — FAIL
+**Q:** Cameroon's Stade Ahmadou Ahidjo hosted AFCON 2021 matches. Which stadium also hosted matches?
+**Answer:** Stade Olembe
+**Why it fails:** Non-unique: besides Stade Olembe, Stade de Japoma (Douala, an option) also hosted AFCON 2021 matches.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations
+**Remedy:** Drop — multiple option-stadiums hosted.
+
+### Row 9652 — Cameroon (easy) — FAIL
+**Q:** How did Cameroon qualify for the 2026 FIFA World Cup?
+**Answer:** Through CAF qualification
+**Why it fails:** False: Cameroon did NOT qualify for the 2026 World Cup — they lost the CAF playoff to DR Congo (Mbemba's late goal, Nov 2025).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop — Cameroon failed to qualify for 2026.
+
+### Row 9689 — Cameroon (medium) — FAIL
+**Q:** In Cameroon's 2022 World Cup group stage match against Serbia, what was the final score?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' is a mangled '3-3'. Cameroon drew Serbia 3-3 (per the explanation).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9711 — Cameroon (medium) — FAIL
+**Q:** In which FIFA World Cup did Cameroon fail to qualify during their 2008-2026 cycle?
+**Answer:** 2018 World Cup
+**Why it fails:** Non-unique: in the 2008-2026 span Cameroon failed to qualify for BOTH 2018 AND 2026 (lost the CAF playoff to DR Congo). 2026 is an option here, so the answer isn't uniquely 2018.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop — Cameroon also failed 2026.
+
+### Row 9748 — Cameroon (hard) — FAIL
+**Q:** In which year was Cameroon eliminated from the World Cup group stage after three losses?
+**Answer:** 2014
+**Why it fails:** Non-unique: Cameroon lost all three group games at BOTH 2010 and 2014 (both are options), so the year isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Cameroon_at_the_FIFA_World_Cup
+**Remedy:** Drop — both 2010 and 2014 fit.
+
+### Row 9755 — Cameroon (easy) — FAIL
+**Q:** What score did Cameroon beat Egypt by in the 2017 AFCON final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is a mangled '2-1' (2017 AFCON final v Egypt).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9756 — Cameroon (easy) — FAIL
+**Q:** What was Cameroon's final score against Serbia at Qatar 2022?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' is a mangled '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9757 — Cameroon (easy) — FAIL
+**Q:** What was Cameroon's final score in their 2022 World Cup draw with Serbia?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9758 — Cameroon (easy) — FAIL
+**Q:** What was Cameroon's final scoreline against Serbia at the 2022 World Cup?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9761 — Cameroon (easy) — FAIL
+**Q:** What was Cameroon's scoreline in the 2017 AFCON final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (2017 AFCON final).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9762 — Cameroon (easy) — FAIL
+**Q:** What was Cameroon's winning score against Egypt in the 2017 AFCON final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (2017 AFCON final v Egypt).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9765 — Cameroon (easy) — FAIL
+**Q:** What was the final score in Cameroon's 2022 World Cup thriller with Serbia?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9767 — Cameroon (easy) — FAIL
+**Q:** What was the final score when Cameroon beat Egypt in the 2017 AFCON final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (2017 AFCON final).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9769 — Cameroon (easy) — FAIL
+**Q:** What was the final score when Cameroon drew with Serbia at the 2022 World Cup?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9770 — Cameroon (easy) — FAIL
+**Q:** What was the final score when Cameroon drew with Serbia in 2022?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9771 — Cameroon (easy) — FAIL
+**Q:** What was the final score when Cameroon faced Serbia at the 2022 FIFA World Cup?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (Serbia draw).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Fix the answer to '3-3'.
+
+### Row 9776 — Cameroon (medium) — FAIL
+**Q:** What was the scoreline of Cameroon's win over Egypt in the 2017 AFCON final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (2017 AFCON final).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9801 — Cameroon (medium) — FAIL
+**Q:** When did Cameroon lose all three group matches at a World Cup?
+**Answer:** 2014
+**Why it fails:** Non-unique: Cameroon lost all three group games at BOTH 2010 and 2014 (both options).
+**Source:** https://en.wikipedia.org/wiki/Cameroon_at_the_FIFA_World_Cup
+**Remedy:** Drop — both 2010 and 2014 fit.
+
+### Row 9803 — Cameroon (medium) — FAIL
+**Q:** When did Cameroon qualify for the 2026 FIFA World Cup?
+**Answer:** 2026
+**Why it fails:** False: Cameroon did NOT qualify for the 2026 World Cup (lost the CAF playoff to DR Congo, Nov 2025).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop — Cameroon failed to qualify for 2026.
+
+### Row 9835 — Cameroon (easy) — FAIL
+**Q:** Which 2010s AFCON champion was a notable underdog like Cameroon in 2017?
+**Answer:** Cameroon
+**Why it fails:** Self-referential: the question asks which underdog AFCON champion was 'like Cameroon in 2017' and the answer is Cameroon itself.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations
+**Remedy:** Drop — the answer restates the subject.
+
+### Row 9840 — Cameroon (easy) — FAIL
+**Q:** Which 2017 AFCON final score involved Cameroon beating Egypt?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (2017 AFCON final v Egypt).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Fix the answer to '2-1'.
+
+### Row 9850 — Cameroon (medium) — FAIL
+**Q:** Which 2022 World Cup group stage draw did NOT involve Cameroon?
+**Answer:** Brazil vs Switzerland
+**Why it fails:** Broken: Brazil vs Switzerland was NOT a draw (Brazil won 1-0, as the explanation itself says). The actual non-Cameroon draw among the options was Germany 1-1 Spain.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Change the answer to Germany vs Spain (1-1).
+
+### Row 9871 — Cameroon (easy) — FAIL
+**Q:** Which African nation did Cameroon NOT beat in the 2017 AFCON final?
+**Answer:** Ivory Coast
+**Why it fails:** Non-unique negative: Cameroon beat Egypt in the 2017 final, so among the options they did NOT beat Ivory Coast, Senegal OR Ghana in the final — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Drop — negative-framed and non-unique.
+
+### Row 9885 — Cameroon (easy) — FAIL
+**Q:** Which African nation had the most World Cup appearances before Cameroon's eighth in 2022?
+**Answer:** Cameroon
+**Why it fails:** Self-referential: 'which nation had the most appearances before Cameroon's 8th?' answers Cameroon itself (it held the record with 7).
+**Source:** https://en.wikipedia.org/wiki/Cameroon_at_the_FIFA_World_Cup
+**Remedy:** Drop — circular.
+
+### Row 9888 — Cameroon (medium) — FAIL
+**Q:** Which African nation has more World Cup qualifications than Ghana: Cameroon or Nigeria?
+**Answer:** Cameroon
+**Why it fails:** Non-unique: both Cameroon (8) AND Nigeria (6) have more World Cup qualifications than Ghana (4), so the 'Cameroon or Nigeria' answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Nigeria_at_the_FIFA_World_Cup
+**Remedy:** Reword to 'which has the most' (Cameroon).
+
+### Row 9917 — Cameroon (easy) — FAIL
+**Q:** Which African nation, like Cameroon in 2010, qualified for the 2014 World Cup?
+**Answer:** Cameroon
+**Why it fails:** Self-referential + non-unique: 'which nation like Cameroon in 2010 qualified for 2014?' answers Cameroon itself, and Nigeria/Ghana/Ivory Coast (options) also qualified for 2014.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Drop — circular and non-unique.
+
+### Row 9918 — Cameroon (easy) — FAIL
+**Q:** Which African nation, like Cameroon in 2017, won an AFCON as underdogs?
+**Answer:** Cameroon
+**Why it fails:** Self-referential: 'which nation, like Cameroon in 2017, won an AFCON as underdogs?' answers Cameroon itself.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations
+**Remedy:** Drop — the answer restates the subject.
+
+### Row 9984 — Cameroon (easy) — FAIL
+**Q:** Which CAF team, unlike Cameroon, qualified for the 2018 World Cup?
+**Answer:** Senegal
+**Why it fails:** Non-unique: besides Senegal, both Nigeria AND Morocco (options) also qualified for 2018, unlike Cameroon. Only Ghana didn't.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop — multiple option-nations qualified for 2018.
+
+### Row 9987 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon 2022 World Cup match did NOT end 3-3?
+**Answer:** Cameroon vs Brazil
+**Why it fails:** Non-unique negative: both Cameroon-Brazil (1-0) AND Cameroon-Switzerland (1-0) did NOT end 3-3, so the answer isn't unique (only the Serbia game was 3-3).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — two options fit.
+
+### Row 10031 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon attacker was a key part of their 2022 World Cup squad?
+**Answer:** Karl Toko Ekambi
+**Why it fails:** Non-unique: Aboubakar AND Choupo-Moting (options) were also key Cameroon attackers at 2022, not just Toko Ekambi.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — multiple option-players were key 2022 attackers.
+
+### Row 10033 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon attacker was a key player at the 2022 FIFA World Cup in Qatar?
+**Answer:** Karl Toko Ekambi
+**Why it fails:** Non-unique: Aboubakar and Choupo-Moting (options) were also key Cameroon attackers at 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — multiple option-players were key 2022 attackers.
+
+### Row 10078 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward had over 70 caps and was a key player at the 2022 World Cup?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar (an option) also has well over 70 caps and was a key 2022 forward, like Choupo-Moting.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop — Aboubakar equally fits.
+
+### Row 10080 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward had over 70 caps at the 2022 FIFA World Cup?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar (an option) also has 70+ caps and was a key 2022 forward.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop — Aboubakar equally fits.
+
+### Row 10083 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward had over 70 caps for the 2022 World Cup?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar (an option) also has 70+ caps and was a key 2022 forward.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop — Aboubakar equally fits.
+
+### Row 10084 — Cameroon (medium) — FAIL
+**Q:** Which Cameroon forward played a key role in the 2022 World Cup group stage?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar (an option) played the key 2022 forward role (scored v Serbia & Brazil), as did Choupo-Moting.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — multiple option-forwards were key.
+
+### Row 10098 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward was a key player at the 2022 World Cup in Qatar?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar and Toko Ekambi (options) were also key Cameroon forwards at 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — multiple option-forwards were key.
+
+### Row 10099 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward was key at the 2022 FIFA World Cup?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar and Toko Ekambi (options) were also key 2022 forwards.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop — multiple option-forwards were key.
+
+### Row 10101 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward with over 70 caps was a key attacker at the 2022 FIFA World Cup?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar (an option) also has 70+ caps and was a key 2022 attacker.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop — Aboubakar equally fits.
+
+### Row 10102 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon forward with over 70 caps was key at the 2022 World Cup?
+**Answer:** Eric Maxim Choupo-Moting
+**Why it fails:** Non-unique: Aboubakar (an option) also has 70+ caps and was a key 2022 forward.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop — Aboubakar equally fits.
+
+### Row 10123 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon key attacker at the 2022 World Cup had over 40 caps?
+**Answer:** Karl Toko Ekambi
+**Why it fails:** Non-unique: Aboubakar and Choupo-Moting (options) also have 40+ caps and were key 2022 attackers.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop — multiple option-players fit.
+
+### Row 10150 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon manager faced Croatia at the 2022 FIFA World Cup?
+**Answer:** Rigobert Song
+**Why it fails:** False: Cameroon did NOT face Croatia at 2022 — they were in Group G (Switzerland, Serbia, Brazil). Croatia was in Group F.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Reword — Cameroon's 2022 opponents were Switzerland/Serbia/Brazil.
+
+### Row 10327 — Cameroon (easy) — FAIL
+**Q:** Which Cameroon player was NOT in their 2014 World Cup squad?
+**Answer:** Vincent Aboubakar
+**Why it fails:** False: Vincent Aboubakar WAS in Cameroon's 2014 World Cup squad - he scored their only goal (v Brazil). The other options were also in the squad.
+**Source:** https://en.wikipedia.org/wiki/Vincent_Aboubakar
+**Remedy:** Drop - Aboubakar was in the 2014 squad.
+
+### Row 10370 — Cameroon (hard) — FAIL
+**Q:** Which Cameroon qualification cycle matched their 2026 CAF success: 2010, 2014, or 2018?
+**Answer:** 2014
+**Why it fails:** False premise: Cameroon did NOT qualify for 2026 (lost the CAF playoff to DR Congo), so there was no '2026 CAF success' to match.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop - Cameroon failed to qualify for 2026.
+
+### Row 10496 — Cameroon (hard) — FAIL
+**Q:** Which FIFA World Cup did Cameroon qualify for through CAF qualification?
+**Answer:** The 2026 World Cup
+**Why it fails:** False: Cameroon did NOT qualify for 2026 (lost the CAF playoff to DR Congo). They qualified via CAF for 2010, 2014 AND 2022 - so 2026 is wrong (and the other options are all correct).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Change to 2010/2014/2022; Cameroon failed 2026.
+
+### Row 10547 — Cameroon (easy) — FAIL
+**Q:** Which nation did Cameroon NOT draw with at a FIFA World Cup?
+**Answer:** Switzerland
+**Why it fails:** Non-unique negative: among the options Cameroon did NOT draw with Switzerland, Brazil OR Argentina at a WC (they only drew 3-3 with Serbia).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_G
+**Remedy:** Drop - three options fit.
+
+### Row 10589 — Cameroon (easy) — FAIL
+**Q:** Which nation, like Cameroon in 2022, qualified for the 2014 World Cup through CAF?
+**Answer:** Cameroon
+**Why it fails:** Self-referential + non-unique: 'which nation like Cameroon qualified for 2014 via CAF?' answers Cameroon itself, and Nigeria/Ghana/Ivory Coast also qualified for 2014.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Drop - circular and non-unique.
+
+### Row 10651 — Cameroon (medium) — FAIL
+**Q:** Which two World Cups did Cameroon qualify for consecutively after 2022?
+**Answer:** 2022 and 2026
+**Why it fails:** False: Cameroon did NOT qualify for 2026 (lost the CAF playoff to DR Congo) - so '2022 and 2026' is wrong.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop - Cameroon failed to qualify for 2026.
+
+### Row 10652 — Cameroon (medium) — FAIL
+**Q:** Which two World Cups did Cameroon qualify for through CAF?
+**Answer:** 2022 and 2026
+**Why it fails:** False: Cameroon did NOT qualify for 2026. They qualified via CAF for 2010/2014/2022, not 2026.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop - Cameroon failed to qualify for 2026.
+
+### Row 10659 — Cameroon (medium) — FAIL
+**Q:** Which World Cup did Cameroon not qualify for after 2010?
+**Answer:** 2018 World Cup
+**Why it fails:** Non-unique: Cameroon failed to qualify for BOTH 2018 and 2026 (an option), so the answer isn't uniquely 2018.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop - also failed 2026.
+
+### Row 10672 — Cameroon (medium) — FAIL
+**Q:** Which World Cup was the only one Cameroon failed to qualify for between 2010 and 2026?
+**Answer:** 2018 World Cup
+**Why it fails:** False: 2018 was NOT the only WC Cameroon failed between 2010-2026 - they also failed 2026 (lost the CAF playoff).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Reword - Cameroon failed both 2018 and 2026.
+
+### Row 10677 — Cameroon (medium) — FAIL
+**Q:** Which year did Cameroon host the AFCON, one year after Egypt?
+**Answer:** 2022
+**Why it fails:** False: the 2021 AFCON (hosted by Cameroon) was the next edition after Egypt's 2019 - two years/one edition later, not 'one year after'; and it is officially the 2021 edition.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations
+**Remedy:** Drop - the 'one year after Egypt' premise is wrong.
+
+### Row 10690 — Cameroon (hard) — FAIL
+**Q:** Which year did Cameroon's CAF qualification secure a World Cup spot?
+**Answer:** 2010
+**Why it fails:** Non-unique: Cameroon's CAF qualification secured WC spots in 2010, 2014 AND 2022 (all options), so the year isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Cameroon_at_the_FIFA_World_Cup
+**Remedy:** Drop - multiple option-years fit.
+
+### Row 10723 — Cameroon (easy) — FAIL
+**Q:** Why did Cameroon qualify for the 2026 FIFA World Cup?
+**Answer:** Through CAF qualification
+**Why it fails:** False: Cameroon did NOT qualify for 2026 (lost the CAF playoff to DR Congo).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop - Cameroon failed to qualify for 2026.

@@ -1067,3 +1067,113 @@ Very clean (opponent / elimination / stadium duplicates). Confirmed 2018 Mexico 
   10. Excel score corruption (04-Jan=4-1, 02-Jan=2-1, 07-Jan=7-1, 01-Jul=7-1).
   11. Non-unique "in 2022 squad / 2026 key / 2026 manager / over-90-caps" rows (Vinícius/Jesus/Casemiro/Ancelotti/Thiago Silva).
 - Next sequential country: **Australia** (rows 2161–3241).
+
+---
+
+# ===== CAMEROON (rows 9574–10745) — NEW METHOD (only QA_PASSED.md rows) =====
+Separate contributor, started 2026-06-06. Country range 9574–10745 (1172 rows; 738 in QA_PASSED.md).
+
+## Cameroon fact base (web-verified, reused across batches)
+- **WC appearances: 8** (1982, 1990, 1994, 1998, 2002, 2010, 2014, 2022) — **most by any African nation**.
+  **❗ Did NOT qualify for 2026** — lost the CAF playoff to **DR Congo** (Mbemba's late goal, Nov 2025).
+  Any "Cameroon qualified/reached 2026" claim is FALSE.
+- **2010 WC (Paul Le Guen):** group exit, lost all 3.
+- **2014 WC (Volker Finke):** group exit, lost all 3 (Mexico 0-1, Croatia 0-4, Brazil 1-4); **Eto'o's
+  farewell** (played 2 of 3, missed Croatia injured).
+- **2018 WC:** FAILED to qualify.
+- **2022 WC (Rigobert Song):** opener **lost 1-0 to Switzerland**; **drew Serbia 3-3** (Castelletto 29',
+  Aboubakar 63', Choupo-Moting 66'); **beat Brazil 1-0** (Aboubakar header, then RED CARD for celebration —
+  first African team to beat Brazil at a WC). Finished **3rd in Group G, 4 pts** (Brazil & Switzerland, 6
+  each, advanced). André Onana first-choice GK (50+ caps). Squad incl. Castelletto, Toko Ekambi,
+  Choupo-Moting, Zambo Anguissa, Aboubakar.
+- **AFCON: 5 titles** (1984, 1988, 2000, 2002, 2017). **2017 final beat Egypt 2-1** (coach Hugo Broos).
+- **2021 AFCON (HOSTED, played Jan–Feb 2022):** finished **3rd** — beat Burkina Faso **5-3 on pens** (3-3)
+  in the 3rd-place playoff (coach Rigobert Song). **Aboubakar Golden Boot / top scorer (8 goals)**.
+- **Samuel Eto'o:** **56 goals / 118 caps** (all-time top scorer); **African Footballer of the Year 4×**
+  (2003, 2004, 2005, 2010). Now FECAFOOT president.
+- **Managers:** Le Guen (2010), Volker Finke (2014), Hugo Broos (2017 AFCON), Rigobert Song (2022 WC +
+  2021 AFCON). [Note: actual manager churn 2010–2022 was higher than 4.]
+- **Stadiums (AFCON 2021 hosts):** Stade Olembe (Yaoundé, ~60,000, built for AFCON 2021), Stade Ahmadou
+  Ahidjo (Yaoundé, ~40,000), **Stade Japoma (Douala, also a host)**, plus Bafoussam/Limbe/Garoua.
+
+## Batch rows 9574–9680 (Cameroon) — 71 candidates — **65 PASS · 6 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (65 rows) | ✅ PASS | WC/AFCON results, Eto'o stats, managers, stadiums, qualification |
+| 9584,9628 | ❌ FAIL | "02-Jan" = corrupted "2-1" (2017 AFCON final) |
+| 9588 | ❌ FAIL | "03-Mar" = corrupted "3-3" (Serbia draw) |
+| 9619 | ❌ FAIL | Cameroon failed BOTH 2018 and 2026 (didn't qualify for 2026); explanation wrong |
+| 9629 | ❌ FAIL | non-unique stadium (Japoma also hosted AFCON 2021) |
+| 9652 | ❌ FAIL | Cameroon did NOT qualify for 2026 (lost CAF playoff to DR Congo) |
+
+## Batch rows 9681–9820 (Cameroon) — 113 candidates — **96 PASS · 17 FAIL**
+Heavy 2022-WC / 2017-AFCON duplicates. Big Excel-corruption cluster.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (96 rows) | ✅ PASS | 2022 results / 2017 AFCON / Eto'o / managers / stadiums |
+| 9689,9756,9757,9758,9765,9769,9770,9771 | ❌ FAIL | "03-Mar" = corrupted "3-3" (Serbia) |
+| 9755,9761,9762,9767,9776 | ❌ FAIL | "02-Jan" = corrupted "2-1" (2017 AFCON final) |
+| 9711 | ❌ FAIL | non-unique (Cameroon failed both 2018 and 2026) |
+| 9748,9801 | ❌ FAIL | non-unique (lost all 3 at both 2010 and 2014) |
+| 9803 | ❌ FAIL | Cameroon did NOT qualify for 2026 |
+
+## Batch rows 9821–9960 (Cameroon) — 40 candidates — **32 PASS · 8 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (32 rows) | ✅ PASS | Aboubakar/Broos/Song, stadiums, 2017 AFCON, Mbeumo 2026 |
+| 9835,9885,9917,9918 | ❌ FAIL | self-referential "like Cameroon → Cameroon" |
+| 9840 | ❌ FAIL | "02-Jan" = corrupted "2-1" |
+| 9850 | ❌ FAIL | "Brazil vs Switzerland" wasn't a draw (was 1-0; Germany 1-1 Spain was) |
+| 9871 | ❌ FAIL | non-unique negative (3 nations not beaten in 2017 final) |
+| 9888 | ❌ FAIL | non-unique (both Cameroon & Nigeria > Ghana in WC qualifications) |
+
+## Batch rows 9961–10120 (Cameroon) — 85 candidates — **73 PASS · 12 FAIL**
+Heavy player-ID duplicates (Mbeumo 2026 / Onana-Man Utd / Choupo-Moting veteran / Castelletto-Nkoulou
+defenders / Eto'o & Aboubakar captains).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (73 rows) | ✅ PASS | player-identity duplicates vs fact base |
+| 9984 | ❌ FAIL | non-unique (Nigeria/Morocco also qualified 2018, unlike Cameroon) |
+| 9987 | ❌ FAIL | non-unique negative (Brazil & Switzerland games both not 3-3) |
+| 10031,10033 | ❌ FAIL | non-unique "key 2022 attacker" (Aboubakar/Choupo-Moting also) |
+| 10078,10080,10083,10084,10098,10099,10101,10102 | ❌ FAIL | non-unique "key 2022 forward (70+ caps)" (Aboubakar also fits) |
+
+## Batch rows 10121–10300 (Cameroon) — 142 candidates — **140 PASS · 2 FAIL**
+Massive near-identical duplicate block (Eto'o legend/farewell-2014/56-goals/captain · Song-2022 ·
+Finke-2014 · Broos-2017 · Anguissa-Napoli · Onana-Man Utd · Aboubakar-2022-red-card · Mbeumo-2026).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (140 rows) | ✅ PASS | player/manager identity duplicates vs fact base |
+| 10123 | ❌ FAIL | non-unique "40+ caps attacker" (Aboubakar/Choupo-Moting also) |
+| 10150 | ❌ FAIL | Cameroon didn't play Croatia in 2022 (Group G: Switzerland/Serbia/Brazil) |
+
+## Batch rows 10301–10500 (Cameroon) — 150 candidates — **147 PASS · 3 FAIL**
+Another large duplicate block (Aboubakar-2022 / Eto'o-56-goals-4xAFOTY / Onana / Anguissa / stadiums /
+2017 AFCON / 2021 AFCON Golden Boot).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (147 rows) | ✅ PASS | player/stadium/tournament identity duplicates vs fact base |
+| 10327 | ❌ FAIL | Aboubakar WAS in the 2014 squad (scored their only goal) |
+| 10370,10496 | ❌ FAIL | Cameroon did NOT qualify for 2026 (false 2026-CAF claims) |
+
+## Batch rows 10501–10745 (Cameroon) — 137 candidates — **128 PASS · 9 FAIL** — FINAL BATCH
+Manager/Embolo/Egypt/stadium duplicates + a 2026-qualification false-claim cluster.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (128 rows) | ✅ PASS | manager/result/stadium/Eto'o/Embolo duplicates vs fact base |
+| 10651,10652,10659,10672,10723 | ❌ FAIL | Cameroon did NOT qualify for 2026 (false 2026 claims) |
+| 10690 | ❌ FAIL | non-unique (CAF secured 2010, 2014 & 2022) |
+| 10547 | ❌ FAIL | non-unique negative (didn't draw Switzerland/Brazil/Argentina) |
+| 10589 | ❌ FAIL | self-referential + non-unique (2014 CAF qualifiers) |
+| 10677 | ❌ FAIL | false "one year after Egypt" (2021 edition, next after Egypt 2019) |
+
+**Cameroon running totals (rows 9574+): 681 PASS-ALL · 57 FAIL-LIVENESS.**
+
+# ✅ CAMEROON COMPLETE (rows 9574–10745)
+- New method (QA_PASSED.md pool only): **681 ship-ready** (QA_PASSED_ALL.md) + **57 dangerous**
+  (QA_FAILED_LIVENESS_PASSED_OTHERS.md) = 738 candidates checked (matches QA_PASSED count).
+- **Key country fact:** Cameroon did NOT qualify for 2026 (lost CAF playoff to DR Congo, Nov 2025) —
+  the dataset assumed they had, producing a recurring false-premise cluster.
+- Other recurring defects: Excel score corruption ("02-Jan"=2-1, "03-Mar"=3-3); non-unique
+  "key 2022 forward/attacker" (Aboubakar fits); self-referential "like Cameroon → Cameroon";
+  lost-all-3 in both 2010 & 2014 (non-unique when both offered); one false "Cameroon v Croatia 2022".
