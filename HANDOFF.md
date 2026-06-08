@@ -171,11 +171,11 @@ The remaining 9 countries are **not started** (§4). Next sequential not-started
 - **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **23246** ship-ready.
 - **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3594** dangerous.
 - **Total ship-ready so far (both methods):** 23378 (132 backfill rows 2–230 + 23246 new method).
-- **🎯 GRAND TOTAL ship-ready (all three tracks):** **23378** =
+- **🎯 GRAND TOTAL ship-ready (all three tracks):** **23737** =
   batch 1 `QA_PASSED_ALL.md` **23378** + batch 2 `QA_PASSED_ALL_b2.md` **0** +
-  cleaned `QA_PASSED_ALL_cleaned.md` **0**. *Batch-2 and cleaned liveness loops have not started
-  (see §9); their pools are 39,321 and 393 respectively. Re-sum this line every session as those
-  loops advance — count `### Row` entries in each of the three files.*
+  cleaned `QA_PASSED_ALL_cleaned.md` **359**. *Cleaned liveness is now **COMPLETE** (359 ship-ready /
+  34 dangerous of 393). Batch-2 liveness has not started (pool 39,321). Re-sum this line every session
+  as the batch-2 loop advances — count `### Row` entries in each of the three files.*
 - **29 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
   Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
   Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
@@ -428,9 +428,24 @@ Row numbers are **lines in `Pre-worldcup2.csv`** (header = line 1) and match `QA
 - **`QA_FAILED_LIVENESS_b2.md` (dangerous):** 0
 - **Countries COMPLETE (batch 2):** 0 of 48. Next sequential not-started: **Algeria** (rows 2–513).
 
-### (f) Cleaned-track status
-393 rows passed re-check (`QA_PASSED_cleaned.md`), scattered across countries — small enough to do
-in one or a few sessions rather than per-country claims; if splitting, coordinate by country name.
-Totals: **`QA_PASSED_ALL_cleaned.md`** 0 ship-ready · **`QA_FAILED_LIVENESS_cleaned.md`** 0. The
-3,096 in `QA_FAILED_cleaned.md` are **not** in scope for liveness — they go back for a second
-mechanical fix round (must also rewrite explanations; see §9(a)).
+### (f) Cleaned-track status — ✅ LIVENESS COMPLETE
+All 393 rows in `QA_PASSED_cleaned.md` (36 countries) have been TC-06 liveness-checked.
+Totals: **`QA_PASSED_ALL_cleaned.md`** **359** ship-ready · **`QA_FAILED_LIVENESS_cleaned.md`**
+**34** dangerous (359 + 34 = 393 ✓). The 3,096 in `QA_FAILED_cleaned.md` are **not** in scope for
+liveness — they go back for a second mechanical fix round (must also rewrite explanations; see §9(a)).
+
+**The 34 liveness fails cluster into recurring defect types (see §7):**
+- **Non-unique / unverifiable "key players/scorers/clubs" soft narratives** (the biggest cluster):
+  Netherlands 2847, Mexico 2873, DR Congo 2124, Colombia 1880/1907, Belgium 2781, and the six Chile
+  Sánchez/Vidal rows (1849, 1852, 2824–2826, 2830).
+- **Self-referential "closest to itself" stadium questions:** Costa Rica 2708, Chile 2707.
+- **Non-unique answers where ≥2 options are correct:** USA 1474 (all four 2026 venue/city pairs
+  correct), France 510 (Stade de France 80,698 *and* 81,338 both offered), Denmark 1425 (Telia Parken
+  = Parken), Switzerland 1430 (Stade de Suisse = Wankdorf; also wrong venue/date), CIV 1488.
+- **Wrong figure for a stated tournament/year (correct value often offered as a distractor):**
+  Switzerland 409 (Euro 2008 = 42,500), Germany 383 (Euro 2024 Allianz = 66,000), England 335/747
+  (2010 qualifying was 9W-0D-1L), Croatia 702 (Euro 2024 was 0W-2D-1L), Belgium 385/517/518/519/520/607
+  (FIFA #1 streak ~1,290 days, never 1,735 — impossible vs the 1,352-day cumulative).
+- **Wrong fact / false premise:** Argentina 815 (no Arg–Bra match at Copa 2024), Iraq 1340 (Zico hired
+  2011 not 2012), Egypt 2083 (2010 AFCON final won 1–0, not on penalties), Senegal 1210 (2008 AFCON
+  hosted by Ghana, not Senegal).
