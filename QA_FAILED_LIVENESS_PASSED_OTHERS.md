@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **1510** (Algeria 176 · Argentina 110 [✅ COMPLETE] · Australia 121 [✅ COMPLETE] · Austria 135 [✅ COMPLETE] · Brazil 6097–6760 so far: 73 · Cabo Verde 73 [✅ COMPLETE] · Canada 41 [✅ COMPLETE] · Costa Rica 80 [✅ COMPLETE] · Côte d'Ivoire 79 [✅ COMPLETE] · Croatia 154 [✅ COMPLETE] · Denmark 182 [✅ COMPLETE] · DR Congo 127 [✅ COMPLETE] · England 87 [✅ COMPLETE] · Ghana 72 [✅ COMPLETE])
+Total failed-liveness-passed-others so far: **2287** (Algeria 176 · Argentina 110 [✅ COMPLETE] · Australia 121 [✅ COMPLETE] · Austria 135 [✅ COMPLETE] · Belgium 192 [✅ COMPLETE] · Brazil 6097–6760 so far: 73 · Cabo Verde 73 [✅ COMPLETE] · Canada 41 [✅ COMPLETE] · Chile 191 [✅ COMPLETE] · Costa Rica 80 [✅ COMPLETE] · Côte d'Ivoire 79 [✅ COMPLETE] · Croatia 154 [✅ COMPLETE] · Denmark 182 [✅ COMPLETE] · DR Congo 127 [✅ COMPLETE] · Egypt 104 [✅ COMPLETE] · England 87 [✅ COMPLETE] · Germany 65 [✅ COMPLETE] · Ghana 72 [✅ COMPLETE] · Italy 225 [✅ COMPLETE])
 
 ---
 
@@ -7169,3 +7169,5466 @@ group winners of UEFA Group H). The year is **2025**, not 2026 — and 2025 isn'
 - "Who was Ghana's technical adviser **during the 2014 World Cup cycle**? → Chris Hughton," explained as "Hughton served from 2014 to 2017." Hughton's Ghana involvement began in **2022** (technical adviser, then head coach 2023–2024); 2014–2017 was **Avram Grant's** tenure. (Rows placing Hughton as adviser at/around the 2022 World Cup PASS.)
 **Source:** https://en.wikipedia.org/wiki/Chris_Hughton
 **Remedy:** Re-anchor Hughton to 2022, or change the answer to Avram Grant for the 2014 cycle.
+
+### Row 4283 — Belgium (easy) — FAIL
+**Q:** After Belgium's 2018 group win, which UEFA player had their nation's best goalscoring record?
+**Answer:** Romelu Lukaku
+**Why it fails:** Non-unique: 'which UEFA player had their nation's best goalscoring record?' - Ronaldo (Portugal) and Lewandowski (Poland) were also their nations' all-time top scorers in 2018, so Lukaku is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/List_of_men%27s_footballers_with_50_or_more_international_goals
+**Remedy:** Anchor to Belgium ('which Belgian...') or replace the record-holder distractors.
+
+### Row 4296 — Belgium (easy) — FAIL
+**Q:** At Euro 2016, what score did Belgium lose by to Wales?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer: '03-Jan' is an Excel-mangled '3-1' (Belgium lost 3-1 to Wales at Euro 2016). The correct score appears only as the corrupted cell.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Restore answer to '3-1'; flag for a dataset date-corruption sweep.
+
+### Row 4304 — Belgium (easy) — FAIL
+**Q:** At the 2018 FIFA World Cup, Belgium beat Brazil by what scoreline?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is an Excel-mangled '2-1' (Belgium beat Brazil 2-1).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore answer to '2-1'; flag for a dataset sweep.
+
+### Row 4305 — Belgium (easy) — FAIL
+**Q:** At the 2018 World Cup, Belgium beat Brazil in the quarter-finals by what scoreline?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' is an Excel-mangled '2-1' (Belgium beat Brazil 2-1, 2018 QF).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore answer to '2-1'; flag for a dataset sweep.
+
+### Row 4310 — Belgium (medium) — FAIL
+**Q:** At the 2018 World Cup, how many goals did Belgium's Golden Generation score?
+**Answer:** 9 goals
+**Why it fails:** Wrong: Belgium scored 16 goals at the 2018 World Cup (the tournament's top-scoring team), not 9. '9' was only their group-stage tally.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer/explanation to 16 goals.
+
+### Row 4312 — Belgium (easy) — FAIL
+**Q:** At the 2018 World Cup, which Belgian midfielder was a key starter?
+**Answer:** Axel Witsel
+**Why it fails:** Non-unique: De Bruyne was also a key starting midfielder in Belgium's 2018 double pivot (with Witsel), so 'Axel Witsel' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Remove De Bruyne as a distractor or specify the role.
+
+### Row 4345 — Belgium (medium) — FAIL
+**Q:** At which FIFA World Cup did Belgium win the Fair Play Award?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Spain won the 2018 World Cup Fair Play Award, not Belgium.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Belgium did not win it in 2018 - drop or change to Spain.
+
+
+### Row 4363 — Belgium (hard) — FAIL
+**Q:** At which World Cup did Belgium reach the quarter-finals?
+**Answer:** 2014 FIFA World Cup
+**Why it fails:** Non-unique: Belgium also reached the quarter-finals in 2018 (and went further, to 3rd), so '2014' is not the unique answer to 'which World Cup did Belgium reach the QF'.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** Reword to 'at which World Cup were the QF Belgium's ceiling' or drop 2018 as a distractor.
+
+### Row 4371 — Belgium (medium) — FAIL
+**Q:** At which World Cup was Belgian Eden Hazard named to the All-Star Team?
+**Answer:** 2018 World Cup
+**Why it fails:** False premise: FIFA did not name an official All-Star Team in 2018 (it was discontinued after 2010). Hazard won the Silver Ball and topped media teams-of-the-tournament, but 'All-Star Team' is not a real 2018 award.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Re-anchor to the Silver Ball (which Hazard did win) or drop.
+
+### Row 4373 — Belgium (easy) — FAIL
+**Q:** Before Belgium's 2018 World Cup run, which club had already won 35 Belgian titles?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has 34 Belgian league titles (their record 34th came in May 2017), not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34 titles.
+
+### Row 4385 — Belgium (easy) — FAIL
+**Q:** Belgium first reached FIFA #1 in 2015; what was their 2018 World Cup goal total?
+**Answer:** 9 goals
+**Why it fails:** Wrong: Belgium scored 16 goals at the 2018 WC (tournament top scorers), not 9. '9' was only their group-stage tally.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer/explanation to 16 goals.
+
+### Row 4389 — Belgium (medium) — FAIL
+**Q:** Belgium held the FIFA number 1 ranking for a record duration starting in which year?
+**Answer:** 2018
+**Why it fails:** False premise: Belgium's 2018-2022 No.1 reign was NOT a record duration - Brazil and Spain both had longer continuous reigns at No.1.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop 'record', or reframe as 'a long reign starting in 2018'.
+
+### Row 4433 — Belgium (easy) — FAIL
+**Q:** Belgium's FA headquarters is in Brussels. Which city does NOT host another UEFA nation's FA?
+**Answer:** Tubize
+**Why it fails:** Incoherent / non-unique: all four options (Tubize, Genk, Mechelen, Waregem) are Belgian cities that do not host another UEFA nation's FA, so no option is uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Drop - the question's logic is broken.
+
+### Row 4435 — Belgium (easy) — FAIL
+**Q:** Belgium's Golden Generation held FIFA's top ranking but never won what?
+**Answer:** A major trophy
+**Why it fails:** Non-unique: Belgium also never won the World Cup, the Euros, or the Nations League, so all four options are equally valid 'never won' answers.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Drop or restrict to one specific trophy.
+
+### Row 4439 — Belgium (easy) — FAIL
+**Q:** During 2026 World Cup qualifying, Belgium's planned new national stadium faced what?
+**Answer:** Delays
+**Why it fails:** UNVERIFIED -> FAIL: a soft claim with no authoritative source tying a 'planned new national stadium facing delays' to the 2026 qualifying period (the Eurostadium project was abandoned years earlier).
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Drop, or replace with a sourced, dated stadium fact.
+
+### Row 4442 — Belgium (medium) — FAIL
+**Q:** During which Euro tournament was Belgium's record FIFA number 1 streak ongoing?
+**Answer:** Euro 2020
+**Why it fails:** False/unverified: Belgium's No.1 reign was the 3rd-longest continuous run (Brazil and Spain longer), not a 'record', and the specific 1,735-day figure is unsupported.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing.
+
+### Row 4449 — Belgium (easy) — FAIL
+**Q:** For 2026 World Cup qualifiers, which stadium hosts all Belgian home matches?
+**Answer:** King Baudouin Stadium
+**Why it fails:** Non-unique: 'King Baudouin Stadium' and 'Stade Roi Baudouin' are the same venue (English vs French name), so two options are identical and correct.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Replace the duplicate distractor with a genuinely different stadium.
+
+
+### Row 4458 — Belgium (easy) — FAIL
+**Q:** For the 2010 World Cup, Belgium finished behind which two nations?
+**Answer:** Spain and Türkiye
+**Why it fails:** 2010 WC qualifying: Belgium finished 4th in UEFA Group 5, behind Spain, Bosnia & Herzegovina AND Turkey - not just Spain and Turkiye (Bosnia finished 2nd, above Belgium).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_5
+**Remedy:** Reword to include Bosnia, or ask a different question.
+
+### Row 4468 — Belgium (medium) — FAIL
+**Q:** From 2014 to 2022, how many consecutive major tournaments did Belgium qualify for?
+**Answer:** Four consecutive tournaments
+**Why it fails:** Wrong count: Belgium qualified for FIVE consecutive major tournaments 2014-2022 (2014 WC, Euro 2016, 2018 WC, Euro 2020, 2022 WC), not four - the dataset omits Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_UEFA_European_Championship
+**Remedy:** Change answer to five.
+
+### Row 4480 — Belgium (medium) — FAIL
+**Q:** From which year did Belgium's record FIFA #1 ranking begin?
+**Answer:** 2018
+**Why it fails:** Explanation wrong: Belgium's No.1 reign was NOT a 'record 1,735-day run' - Brazil and Spain had longer continuous reigns at No.1.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing (the start year 2018 is fine).
+
+### Row 4481 — Belgium (medium) — FAIL
+**Q:** From which year was Thibaut Courtois Belgium's first-choice goalkeeper?
+**Answer:** 2014
+**Why it fails:** Wrong: Courtois was Belgium's first-choice GK from ~2011-2012 (he played every minute of the 2014 qualifying campaign in 2012-13), not 'from 2014' - '2012' is the better option.
+**Source:** https://en.wikipedia.org/wiki/Thibaut_Courtois
+**Remedy:** Change answer to 2012.
+
+### Row 4486 — Belgium (medium) — FAIL
+**Q:** How many caps did Belgian defender Jan Vertonghen retire with in 2024?
+**Answer:** 154 caps
+**Why it fails:** Wrong: Vertonghen retired in 2024 with 157 caps (Belgium's most-capped player), not 154.
+**Source:** https://en.wikipedia.org/wiki/Jan_Vertonghen
+**Remedy:** Change answer to 157.
+
+### Row 4491 — Belgium (medium) — FAIL
+**Q:** How many consecutive FIFA World Cups did Belgium's Golden Generation qualify for?
+**Answer:** Four tournaments
+**Why it fails:** Wrong count: it was FIVE consecutive major tournaments (2014-2022), not four - Euro 2020 is omitted.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_UEFA_European_Championship
+**Remedy:** Change answer to five.
+
+### Row 4492 — Belgium (medium) — FAIL
+**Q:** How many consecutive major tournaments did Belgium qualify for from 2014 to 2022?
+**Answer:** Four
+**Why it fails:** Wrong count: Belgium qualified for FIVE consecutive major tournaments 2014-2022, not four (Euro 2020 omitted).
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_UEFA_European_Championship
+**Remedy:** Change answer to five.
+
+### Row 4493 — Belgium (medium) — FAIL
+**Q:** How many consecutive major tournaments did Belgium's Golden Generation qualify for from 2014?
+**Answer:** Four tournaments
+**Why it fails:** Wrong count: five consecutive major tournaments from 2014 (incl. Euro 2020), not four.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_UEFA_European_Championship
+**Remedy:** Change answer to five.
+
+### Row 4495 — Belgium (medium) — FAIL
+**Q:** How many goals did Belgium score at the 2018 FIFA World Cup?
+**Answer:** 9 goals
+**Why it fails:** Wrong: Belgium scored 16 goals at the 2018 WC (the tournament's top-scoring team), not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4496 — Belgium (medium) — FAIL
+**Q:** How many goals did Belgium score in 7 matches at the 2018 FIFA World Cup?
+**Answer:** 9 goals
+**Why it fails:** Wrong: Belgium scored 16 goals in 7 matches at the 2018 WC, not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4497 — Belgium (medium) — FAIL
+**Q:** How many goals did Belgium score in the 2018 World Cup?
+**Answer:** 9 goals
+**Why it fails:** Wrong: Belgium scored 16 goals at the 2018 WC, not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4509 — Belgium (easy) — FAIL
+**Q:** In 2010 World Cup qualifying, which two teams finished above Belgium?
+**Answer:** Spain and Türkiye
+**Why it fails:** 2010 qualifying: THREE teams finished above Belgium (Spain, Bosnia & Herzegovina, Turkey), not two - the answer omits Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_5
+**Remedy:** Reword - Belgium finished 4th behind three nations.
+
+### Row 4512 — Belgium (easy) — FAIL
+**Q:** In 2018, Belgium's 9 goals in 7 matches gave them what goals-per-game average?
+**Answer:** 1.29
+**Why it fails:** False premise: Belgium scored 16 goals (not 9) in 7 matches at 2018, so the average was ~2.29 per game, not 1.29.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Recompute from 16 goals (~2.29 gpg).
+
+### Row 4516 — Belgium (medium) — FAIL
+**Q:** In a 2018 World Cup group stage match, which Belgian goalkeeper did NOT make match-winning saves?
+**Answer:** Simon Mignolet
+**Why it fails:** Non-unique negative: Mignolet, Casteels AND Sels all did NOT make match-winning saves (only Courtois did), so 'Simon Mignolet' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop - three options satisfy the 'did NOT' condition.
+
+
+### Row 4548 — Belgium (medium) — FAIL
+**Q:** In what World Cup tournament did Belgium score 9 goals in 7 matches?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Belgium scored 16 goals at the 2018 WC (tournament top scorers), not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4549 — Belgium (medium) — FAIL
+**Q:** In what year did Belgium's Eden Hazard retire from international football?
+**Answer:** 2023
+**Why it fails:** Wrong: Hazard retired from INTERNATIONAL football in December 2022 (after the 2022 WC), not 2023. His 2023 retirement was from all football. '2022' is the correct option.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Change answer to 2022 for international retirement.
+
+### Row 4567 — Belgium (medium) — FAIL
+**Q:** In which FIFA World Cup did the Belgian team score 9 goals across 7 matches?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Belgium scored 16 goals in 7 matches at the 2018 WC, not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4595 — Belgium (medium) — FAIL
+**Q:** In which World Cup did Belgium score 9 goals in 7 matches?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Belgium scored 16 goals in 7 matches at the 2018 WC, not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4596 — Belgium (medium) — FAIL
+**Q:** In which World Cup did Belgium score 9 goals?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Belgium scored 16 goals at the 2018 WC, not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4597 — Belgium (medium) — FAIL
+**Q:** In which World Cup did Belgium score nine goals across seven matches?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Belgium scored 16 goals in 7 matches at the 2018 WC, not 9.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change answer to 16.
+
+### Row 4605 — Belgium (hard) — FAIL
+**Q:** In which World Cup group stage did Belgium's 3-2 comeback against Japan occur?
+**Answer:** 2018 World Cup
+**Why it fails:** False premise: Belgium's 3-2 comeback v Japan occurred in the Round of 16, NOT the group stage.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Reword - it was the R16, not the group stage.
+
+### Row 4626 — Belgium (medium) — FAIL
+**Q:** In which year did Belgium lose 2-1 to Italy in a Euro quarter-final?
+**Answer:** 2020
+**Why it fails:** Wrong year: the Belgium-Italy Euro 2020 QF was played on 2 July 2021, so the year was 2021, not 2020 ('2021' is an option, and row 4638 correctly answers 2021).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Change answer to 2021.
+
+### Row 4631 — Belgium (medium) — FAIL
+**Q:** In which year did Belgium qualify for the 2014 FIFA World Cup?
+**Answer:** 2014
+**Why it fails:** Wrong: Belgium sealed 2014 World Cup qualification in October 2013, not 2014.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** Change answer to 2013.
+
+### Row 4634 — Belgium (medium) — FAIL
+**Q:** In which year did Belgium's record 1,735-day FIFA number 1 ranking begin?
+**Answer:** 2018
+**Why it fails:** Explanation/premise wrong: Belgium's No.1 run was not a 'record 1,735-day' reign - Brazil and Spain had longer continuous reigns at No.1.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing (start year 2018 is fine).
+
+
+### Row 4644 — Belgium (medium) — FAIL
+**Q:** Under which coach did Belgium's 2026 World Cup qualification succeed?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 WC qualifying was led by Rudi Garcia (appointed Jan 2025), not Tedesco (sacked 17 Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change manager to Rudi Garcia.
+
+### Row 4646 — Belgium (easy) — FAIL
+**Q:** Under which manager did Belgium qualify for the 2026 World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: the 2026 qualifying campaign was under Rudi Garcia, not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change manager to Rudi Garcia.
+
+### Row 4657 — Belgium (easy) — FAIL
+**Q:** What was Belgium's final score after trailing Japan 2-0 in the 2018 World Cup round of 16?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer: '03-Feb' is an Excel-mangled '3-2' (Belgium beat Japan 3-2).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore '3-2'.
+
+### Row 4658 — Belgium (easy) — FAIL
+**Q:** What was Belgium's final score in their 2018 World Cup comeback win vs Japan?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer: '03-Feb' = '3-2' (beat Japan).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore '3-2'.
+
+### Row 4664 — Belgium (easy) — FAIL
+**Q:** What was the final score in Belgium's 2018 World Cup comeback win against Japan?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer: '03-Feb' = '3-2' (beat Japan).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore '3-2'.
+
+### Row 4666 — Belgium (easy) — FAIL
+**Q:** What was the final score when Belgium beat Japan at the 2018 World Cup?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer: '03-Feb' = '3-2' (beat Japan).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore '3-2'.
+
+### Row 4671 — Belgium (medium) — FAIL
+**Q:** What was the score when Belgium beat Brazil in the 2018 World Cup quarter-final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer: '02-Jan' = '2-1' (beat Brazil).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Restore '2-1'.
+
+### Row 4677 — Belgium (medium) — FAIL
+**Q:** What was the score when Belgium lost to Wales at Euro 2016?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer: '03-Jan' = '3-1' (lost to Wales).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Restore '3-1'.
+
+### Row 4694 — Belgium (medium) — FAIL
+**Q:** When did Belgium begin their record 1,735-day streak as FIFA's number-one ranked team?
+**Answer:** Sep-18
+**Why it fails:** 'record 1,735-day' streak claim false: Belgium's No.1 reign was not a record (Brazil & Spain held it longer); Sep 2018-Mar 2022 is also ~1,280 days, not 1,735.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing.
+
+### Row 4714 — Belgium (medium) — FAIL
+**Q:** When did Belgium lose 2-1 to Italy in the Euro quarter-finals?
+**Answer:** 2020
+**Why it fails:** Wrong year: the Belgium-Italy Euro 2020 QF was played on 2 July 2021, so the year was 2021, not 2020 (cf. row 4638).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Change answer to 2021.
+
+### Row 4721 — Belgium (medium) — FAIL
+**Q:** When did Belgium qualify for the 2026 World Cup under Domenico Tedesco?
+**Answer:** 2026
+**Why it fails:** False premise: Belgium's 2026 qualifying campaign was under Rudi Garcia, not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change manager to Rudi Garcia.
+
+### Row 4725 — Belgium (medium) — FAIL
+**Q:** When did Belgium reach the quarter-finals of the FIFA World Cup?
+**Answer:** 2014
+**Why it fails:** Non-unique: Belgium also reached the QF in 2018 (and went to 3rd), so '2014' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** Reword or drop the 2018 distractor.
+
+### Row 4729 — Belgium (medium) — FAIL
+**Q:** When did Belgium start its record FIFA number 1 streak?
+**Answer:** 2018
+**Why it fails:** 'record 1,735-day' run claim false: Belgium's No.1 reign was not a record (Brazil & Spain longer).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing.
+
+### Row 4730 — Belgium (medium) — FAIL
+**Q:** When did Belgium start their record FIFA #1 ranking streak?
+**Answer:** 2018
+**Why it fails:** 'record FIFA #1 streak' false: Belgium's reign was not a record (Brazil & Spain longer).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop 'record'.
+
+### Row 4734 — Belgium (medium) — FAIL
+**Q:** When did Belgium win the FIFA Fair Play Award?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong: Spain won the 2018 World Cup Fair Play Award, not Belgium.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Belgium did not win it in 2018.
+
+
+### Row 4748 — Belgium (medium) — FAIL
+**Q:** When did Belgium's men's team first reach the FIFA number 1 ranking?
+**Answer:** 2018
+**Why it fails:** Wrong: Belgium first reached FIFA No.1 in November 2015, not 2018 (the correct year is not even an option).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 2015.
+
+### Row 4753 — Belgium (medium) — FAIL
+**Q:** When did Belgium's number 1 ranked 'Golden Generation' fail to win a World Cup?
+**Answer:** 2018 World Cup
+**Why it fails:** Non-unique/imprecise: Belgium failed to win the WC at 2010/2014/2022 too, and they were NOT ranked No.1 during the 2018 WC (3rd, rising to No.1 that September).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Reword - premise and answer aren't unique.
+
+### Row 4754 — Belgium (medium) — FAIL
+**Q:** When did Belgium's record 1,735-day FIFA number 1 ranking begin?
+**Answer:** Sep-18
+**Why it fails:** 'record 1,735-day' ranking claim false - Belgium's No.1 reign was not a record (Brazil & Spain longer).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing (Sep 2018 start is fine).
+
+### Row 4755 — Belgium (medium) — FAIL
+**Q:** When did Belgium's record 1,735-day FIFA number 1 ranking end?
+**Answer:** 2022
+**Why it fails:** 'record 1,735-day' claim false - not a record (Brazil & Spain held No.1 longer).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing.
+
+### Row 4756 — Belgium (medium) — FAIL
+**Q:** When did Belgium's record 1,735-day run as FIFA number 1 end?
+**Answer:** Mar-22
+**Why it fails:** 'record 1,735-day' claim false - not a record (Brazil & Spain longer); end Mar 2022 is otherwise correct.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing.
+
+### Row 4757 — Belgium (medium) — FAIL
+**Q:** When did Belgium's record FIFA number 1 ranking start?
+**Answer:** 2018
+**Why it fails:** 'record FIFA No.1 ranking' claim false - Belgium's reign was not a record (Brazil & Spain longer).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the 'record 1,735-day' framing.
+
+### Row 4781 — Belgium (easy) — FAIL
+**Q:** Where did Belgium host all their 2022 World Cup qualifiers?
+**Answer:** King Baudouin Stadium
+**Why it fails:** Non-unique: 'King Baudouin Stadium' and 'Stade Roi Baudouin' are the same venue (English vs French name), so two options are identical and correct.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Replace the duplicate distractor.
+
+### Row 4810 — Belgium (easy) — FAIL
+**Q:** Which 2014 World Cup rival did Belgium NOT face in a quarter-final?
+**Answer:** Italy
+**Why it fails:** Non-unique negative: Belgium's only 2014 QF opponent was Argentina, so they did NOT face Italy, Brazil OR France in a QF - three options satisfy 'not faced'.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** Drop - multiple options qualify.
+
+### Row 4811 — Belgium (easy) — FAIL
+**Q:** Which 2018 World Cup award did the Belgian national team win?
+**Answer:** FIFA Fair Play Award
+**Why it fails:** Wrong: Spain won the 2018 Fair Play Award, not Belgium. Belgium DID win the 2018 Golden Glove (Courtois), which is a distractor here - so the answer is also non-unique.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change answer to the Golden Glove (Courtois).
+
+### Row 4812 — Belgium (easy) — FAIL
+**Q:** Which 2018 World Cup comeback is often compared to Belgium's 3-2 win over Japan?
+**Answer:** Belgium vs Japan
+**Why it fails:** Self-referential: the question asks which comeback is compared to Belgium's win over Japan, and the answer names the Belgium-Japan game itself.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Replace with a genuinely comparable comeback, or drop.
+
+### Row 4819 — Belgium (easy) — FAIL
+**Q:** Which 2018 World Cup match was NOT a famous comeback win for Belgium?
+**Answer:** Belgium vs England
+**Why it fails:** Non-unique negative: the Brazil win (2-1) and the France game (1-0 loss) were also NOT 'famous comeback wins' (only Japan was a comeback), so 'Belgium vs England' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop - multiple options qualify.
+
+
+### Row 4843 — Belgium (easy) — FAIL
+**Q:** Which Belgian association is responsible for organizing World Cup qualifiers from Brussels?
+**Answer:** The Belgian Football Association
+**Why it fails:** Non-unique: all four options ('Belgian Football Association', 'Royal Belgian FA', 'Belgian FA', "Belgium's FA") name the same organisation.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Replace the distractors with genuinely different bodies.
+
+### Row 4844 — Belgium (easy) — FAIL
+**Q:** Which Belgian association organizes World Cup logistics from its Brussels HQ?
+**Answer:** Belgian Football Association
+**Why it fails:** Non-unique: 'Belgian Football Association' and 'Royal Belgian FA' are the same organisation, so two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Replace the duplicate.
+
+### Row 4845 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker debuted in 2008 and retired in 2024?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from international football in Dec 2022 (all football in 2023), not 2024 - the '2024' detail is false (Vertonghen, a defender, retired in 2024).
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the retirement year.
+
+### Row 4851 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker had over 100 caps and 20+ goals by 2022?
+**Answer:** Dries Mertens
+**Why it fails:** Non-unique: Hazard (126 caps / 33 goals) also had 100+ caps and 20+ goals by 2022.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten the criteria.
+
+### Row 4854 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker played at both the 2018 and 2022 World Cups?
+**Answer:** Yannick Carrasco
+**Why it fails:** Non-unique: Hazard and Mertens also played at both the 2018 and 2022 WCs.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - several attackers fit.
+
+### Row 4855 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker played at Euro 2016 and two World Cups?
+**Answer:** Yannick Carrasco
+**Why it fails:** Non-unique: Mertens also played at Euro 2016 and the 2018 & 2022 WCs.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Mertens also fits.
+
+### Row 4856 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker played at Euro 2016, the 2018 World Cup, and the 2022 World Cup?
+**Answer:** Yannick Carrasco
+**Why it fails:** Non-unique: Mertens also featured at Euro 2016, the 2018 WC and the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Mertens also fits.
+
+### Row 4858 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker played at the 2018 and 2022 FIFA World Cups?
+**Answer:** Yannick Carrasco
+**Why it fails:** Non-unique: Mertens also played at both the 2018 and 2022 WCs.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Mertens also fits.
+
+### Row 4860 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker played in 2018 World Cup qualifiers from 2013 onward?
+**Answer:** Dries Mertens
+**Why it fails:** Non-unique: Hazard, Lukaku and De Bruyne were also key attackers in the 2018 qualifiers from 2013.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten the criteria.
+
+### Row 4862 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker retired from international football in 2024?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from international football in Dec 2022, not 2024 (Vertonghen retired in 2024).
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the year to 2022.
+
+### Row 4863 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker retired from internationals in 2024 after 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from internationals in Dec 2022, not 2024.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the year to 2022.
+
+### Row 4866 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker retired in 2024 after earning 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from international football in Dec 2022, not 2024.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the year to 2022.
+
+### Row 4867 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker retired in 2024 after playing from 2008?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired in 2022 (internationals)/2023 (all football), not 2024.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the year.
+
+### Row 4868 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker retired in 2024 with 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from internationals in Dec 2022, not 2024.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the year to 2022.
+
+### Row 4871 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker was a key creative force from 2008 to 2024?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong span: Hazard's international career ran 2008-2022 (retired Dec 2022), not 'to 2024'.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the end year.
+
+### Row 4872 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker was a key figure in their 2018 World Cup qualifying campaign?
+**Answer:** Dries Mertens
+**Why it fails:** Non-unique: Hazard, Lukaku and De Bruyne were all key figures in the 2018 qualifying campaign.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten the criteria.
+
+### Row 4876 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker was in the squad for the 2022 FIFA World Cup?
+**Answer:** Dries Mertens
+**Why it fails:** Non-unique: Hazard and Vertonghen were also in the 2022 WC squad.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - several players fit.
+
+### Row 4877 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker was key from 2013 to 2022?
+**Answer:** Dries Mertens
+**Why it fails:** Non-unique: Hazard, Lukaku and De Bruyne were also key attackers from 2013 to 2022.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten the criteria.
+
+### Row 4878 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker was not at the 2022 World Cup?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: Hazard DID play at the 2022 WC (he retired Dec 2022, after it). All four options were at the 2022 WC, so none was 'not at' it.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** The premise is false - all options played in 2022.
+
+### Row 4879 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker was selected for the 2018 FIFA World Cup squad?
+**Answer:** Yannick Carrasco
+**Why it fails:** Non-unique: Mertens was also in Belgium's 2018 WC squad.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Mertens also fits.
+
+### Row 4881 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker, key from 2013 to 2022, earned over 100 caps?
+**Answer:** Dries Mertens
+**Why it fails:** Non-unique: Hazard (126 caps) was also a key attacker 2013-2022 with 100+ caps.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten the criteria.
+
+### Row 4882 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker, with over 70 caps, played at the 2018 World Cup?
+**Answer:** Yannick Carrasco
+**Why it fails:** Non-unique: Mertens (100+ caps) also had over 70 caps and played at the 2018 WC.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten the criteria.
+
+### Row 4883 — Belgium (easy) — FAIL
+**Q:** Which Belgian attacker's international career spanned from 2008 to 2024?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong span: Hazard's international career ran 2008-2022 (retired Dec 2022), not 2008-2024.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix the end year.
+
+### Row 4897 — Belgium (easy) — FAIL
+**Q:** Which Belgian club had 35 domestic league titles by 2024?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has 34 Belgian league titles (record 34th in 2017), not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 4898 — Belgium (easy) — FAIL
+**Q:** Which Belgian club had 35 domestic league titles by the 2022 World Cup?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has 34 titles, not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 4899 — Belgium (easy) — FAIL
+**Q:** Which Belgian club had 35 domestic titles before the 2018 World Cup?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht had 34 titles (their 34th came in 2017), not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 4901 — Belgium (easy) — FAIL
+**Q:** Which Belgian club had 35 league titles before the 2022 World Cup?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has 34 titles, not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 4905 — Belgium (easy) — FAIL
+**Q:** Which Belgian club has 35 league titles, the most in their history?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has 34 league titles, not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 4906 — Belgium (easy) — FAIL
+**Q:** Which Belgian club has won 35 domestic league titles?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has won 34 league titles, not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+
+### Row 4944 — Belgium (easy) — FAIL
+**Q:** Which Belgian defender retired after the 2024 World Cup qualifiers with 154 caps?
+**Answer:** Jan Vertonghen
+**Why it fails:** False premise: there were no '2024 World Cup qualifiers' (no 2024 WC); Vertonghen retired after Euro 2024 with 157 caps, not 154.
+**Source:** https://en.wikipedia.org/wiki/Jan_Vertonghen
+**Remedy:** Fix the framing (Euro 2024 / 2026 qualifiers) and the cap count (157).
+
+### Row 4960 — Belgium (easy) — FAIL
+**Q:** Which Belgian earned a spot in the 2018 World Cup All-Star Team?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: FIFA named no official All-Star Team in 2018 (discontinued after 2010). Hazard won the Silver Ball.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Re-anchor to the Silver Ball or drop.
+
+### Row 4964 — Belgium (easy) — FAIL
+**Q:** Which Belgian forward debuted as a key player at Euro 2024?
+**Answer:** Leandro Trossard
+**Why it fails:** Non-unique: Doku was also a key forward for Belgium at Euro 2024.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Tighten - Doku also fits.
+
+### Row 5016 — Belgium (medium) — FAIL
+**Q:** Which Belgian manager oversaw their 2026 World Cup qualification?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (appointed Jan 2025), not Tedesco (sacked 17 Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5017 — Belgium (easy) — FAIL
+**Q:** Which Belgian manager qualified them for the 2026 World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: the 2026 qualifying campaign was under Rudi Garcia, not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5024 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder emerged as key for the post-Golden Generation era at the 2026 World Cup?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Youri Tielemans is also a key midfielder for Belgium's post-Golden-Generation era.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5036 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is central to their 2026 World Cup qualifying rebuild?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also central to Belgium's 2026 midfield.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5038 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is central to their 2026 World Cup transition plans?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also central to Belgium's 2026 transition.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5039 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is central to their post-Golden Generation future?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also central to Belgium's post-Golden-Generation midfield.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5040 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is central to their squad after their Golden Generation?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also central to Belgium's post-Golden-Generation squad.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+
+### Row 5041 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is considered key for the post-Golden Generation era?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also a key midfielder for Belgium's post-Golden-Generation era.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5044 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is key for the post-2022 World Cup era?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also a key post-2022 midfielder for Belgium.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5049 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder is key for their post-Golden Generation era?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: Tielemans is also a key post-Golden-Generation midfielder.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Tielemans also fits.
+
+### Row 5052 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder played at both the 2014 and 2022 World Cups?
+**Answer:** Axel Witsel
+**Why it fails:** Non-unique: De Bruyne also played at both the 2014 and 2022 World Cups.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - De Bruyne also fits.
+
+### Row 5054 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder was a key part of their 2022 World Cup squad?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique: De Bruyne and Witsel were the key midfielders in Belgium's 2022 WC squad.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - others fit better.
+
+### Row 5057 — Belgium (easy) — FAIL
+**Q:** Which Belgian midfielder was not a key creative fulcrum at the 2018 World Cup?
+**Answer:** Amadou Onana
+**Why it fails:** Non-unique negative: Tielemans and Thorgan Hazard were also NOT the 2018 creative fulcrum (only De Bruyne was).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop - multiple options qualify.
+
+### Row 5079 — Belgium (easy) — FAIL
+**Q:** Which Belgian player debuted for the national team after 2008, a product of the 2000s academy investment?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: both De Bruyne (2010) and Lukaku (2010) debuted after 2008 as academy products.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Lukaku also fits.
+
+### Row 5083 — Belgium (easy) — FAIL
+**Q:** Which Belgian player did NOT win the Silver Ball at the 2018 World Cup?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique negative: De Bruyne, Lukaku AND Courtois all did NOT win the 2018 Silver Ball (only Hazard did).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop - multiple options qualify.
+
+### Row 5088 — Belgium (easy) — FAIL
+**Q:** Which Belgian player ended his international career in 2023 with 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard's international career ended in Dec 2022, not 2023 (his all-football retirement was 2023). 126 caps is correct.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix to 2022 for the international retirement.
+
+### Row 5090 — Belgium (easy) — FAIL
+**Q:** Which Belgian player featured in their 2014-2022 tournament streak?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Courtois, Hazard and Lukaku also featured across 2014-2022 (and the streak was five tournaments, not four).
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - all options fit.
+
+### Row 5104 — Belgium (medium) — FAIL
+**Q:** Which Belgian player has received multiple Ballon d'Or nominations?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5124 — Belgium (easy) — FAIL
+**Q:** Which Belgian player is NOT their nation's all-time top scorer?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique negative: De Bruyne, Hazard AND Vertonghen are all NOT Belgium's top scorer (only Lukaku is).
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Drop - multiple options qualify.
+
+
+### Row 5143 — Belgium (easy) — FAIL
+**Q:** Which Belgian player made the 2018 All-Star Team and won the Silver Ball?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: FIFA named no official 2018 All-Star Team (discontinued after 2010). Hazard won the Silver Ball.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the All-Star Team claim.
+
+### Row 5144 — Belgium (easy) — FAIL
+**Q:** Which Belgian player made the 2018 World Cup All-Star Team?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 World Cup All-Star Team existed.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop or re-anchor to the Silver Ball.
+
+### Row 5152 — Belgium (easy) — FAIL
+**Q:** Which Belgian player retired from international football in 2023 with 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from international football in Dec 2022, not 2023 (his all-football retirement was 2023). 126 caps is correct.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix to 2022.
+
+### Row 5153 — Belgium (easy) — FAIL
+**Q:** Which Belgian player retired from international football in 2023?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard retired from international football in Dec 2022, not 2023.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix to 2022.
+
+### Row 5163 — Belgium (easy) — FAIL
+**Q:** Which Belgian player scored a hat-trick at the 2018 World Cup?
+**Answer:** Romelu Lukaku
+**Why it fails:** Wrong: Lukaku did NOT score a hat-trick at the 2018 WC - he scored braces v Panama (2) and Tunisia (2), 4 total, no single-match hat-trick.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the hat-trick claim.
+
+### Row 5166 — Belgium (easy) — FAIL
+**Q:** Which Belgian player scored against Japan at the 2018 World Cup?
+**Answer:** Divock Origi
+**Why it fails:** Wrong: Origi did not score v Japan in 2018 - Belgium's scorers were Vertonghen, Fellaini and Chadli.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change to Chadli (an option).
+
+### Row 5170 — Belgium (easy) — FAIL
+**Q:** Which Belgian player scored in their 2018 World Cup round of 16 win over Japan?
+**Answer:** Divock Origi
+**Why it fails:** Wrong: Origi did not score v Japan in 2018 - the scorers were Vertonghen, Fellaini and Chadli.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change to Chadli (an option).
+
+### Row 5194 — Belgium (easy) — FAIL
+**Q:** Which Belgian player was a key part of their Golden Generation from 2014 to 2022?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard, Courtois and Lukaku were also key Golden-Generation players 2014-2022 (and the streak was five tournaments, not four).
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - all options fit.
+
+### Row 5199 — Belgium (easy) — FAIL
+**Q:** Which Belgian player was in the 2018 World Cup All-Star Team and won the Silver Ball?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 All-Star Team (Hazard won the Silver Ball).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the All-Star Team claim.
+
+### Row 5204 — Belgium (easy) — FAIL
+**Q:** Which Belgian player was named to the All-Star Team at the 2018 FIFA World Cup?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 World Cup All-Star Team existed.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop or re-anchor.
+
+### Row 5207 — Belgium (easy) — FAIL
+**Q:** Which Belgian player was selected for the 2018 World Cup All-Star Team?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 World Cup All-Star Team existed.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop or re-anchor.
+
+### Row 5215 — Belgium (easy) — FAIL
+**Q:** Which Belgian player won both the Silver Ball and made the All-Star Team at the 2018 FIFA World Cup?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 All-Star Team (the Silver Ball is real, the All-Star Team is not).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the All-Star Team part.
+
+### Row 5230 — Belgium (easy) — FAIL
+**Q:** Which Belgian player, developed in Belgium's youth system, became a Premier League star?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Lukaku was also developed in Belgium's youth system (Anderlecht) and became a Premier League star.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - Lukaku also fits.
+
+
+### Row 5242 — Belgium (medium) — FAIL
+**Q:** Which Belgian player's World Cup performances earned multiple Ballon d'Or nominations?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5249 — Belgium (easy) — FAIL
+**Q:** Which Belgian Pro League club did Kevin De Bruyne play for before his 2010 World Cup debut?
+**Answer:** Genk
+**Why it fails:** False premise: De Bruyne had no '2010 World Cup debut' - Belgium didn't play the 2010 WC and his WC debut was 2014 (his senior debut was 2010, not at a WC).
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Reword to 'his 2010 senior debut'.
+
+### Row 5251 — Belgium (easy) — FAIL
+**Q:** Which Belgian Pro League club had 35 titles before the 2018 World Cup?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht had 34 league titles (their 34th came in 2017), not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 5253 — Belgium (easy) — FAIL
+**Q:** Which Belgian Pro League club won 35 domestic titles historically?
+**Answer:** Anderlecht
+**Why it fails:** Wrong: Anderlecht has won 34 league titles, not 35.
+**Source:** https://en.wikipedia.org/wiki/R.S.C._Anderlecht
+**Remedy:** Change to 34.
+
+### Row 5274 — Belgium (hard) — FAIL
+**Q:** Which Belgian squad held the world's top FIFA ranking for a record 1,735 days?
+**Answer:** 2018-2022 Golden Generation
+**Why it fails:** 'record 1,735 days' false: Belgium's No.1 reign was not a record (Brazil & Spain longer); Sep 2018-Mar 2022 is ~1,280 days.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the '1,735-day record' framing.
+
+### Row 5276 — Belgium (easy) — FAIL
+**Q:** Which Belgian squad's consistent results caused their 1,735-day FIFA top ranking from 2018?
+**Answer:** The Golden Generation
+**Why it fails:** '1,735-day' record framing false (not a record; ~1,280 days).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the '1,735-day record' framing.
+
+### Row 5295 — Belgium (easy) — FAIL
+**Q:** Which Belgian stadium with a 50,093 capacity hosts their 2022 World Cup qualifiers?
+**Answer:** King Baudouin Stadium
+**Why it fails:** Non-unique: 'King Baudouin Stadium' and 'Stade Roi Baudouin' are the same venue, so two options are identical and correct.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Replace the duplicate distractor.
+
+### Row 5303 — Belgium (easy) — FAIL
+**Q:** Which Belgian star ended his international career in 2023 with 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard's international career ended in Dec 2022, not 2023 (his all-football retirement was 2023). 126 caps is correct.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix to 2022.
+
+### Row 5310 — Belgium (medium) — FAIL
+**Q:** Which Belgian star from the 2018 World Cup Golden Generation has multiple Ballon d'Or nominations?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5311 — Belgium (medium) — FAIL
+**Q:** Which Belgian star from their Golden Generation era was a multiple Ballon d'Or nominee?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard was also a multiple Ballon d'Or nominee from that era.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5320 — Belgium (medium) — FAIL
+**Q:** Which Belgian star received multiple Ballon d'Or nominations from 2015 to 2023?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations 2015-2023.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5326 — Belgium (medium) — FAIL
+**Q:** Which Belgian star was a 2022 Ballon d'Or nominee?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard was also a Ballon d'Or nominee.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5327 — Belgium (medium) — FAIL
+**Q:** Which Belgian star was Ballon d'Or nominated multiple times by 2022?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations by 2022.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5333 — Belgium (easy) — FAIL
+**Q:** Which Belgian star won both the Silver Ball and made the All-Star Team in 2018?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 All-Star Team (Hazard won the Silver Ball).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the All-Star Team claim.
+
+
+### Row 5353 — Belgium (medium) — FAIL
+**Q:** Which Belgian star's Ballon d'Or nominations define their Golden Generation?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5357 — Belgium (easy) — FAIL
+**Q:** Which Belgian star's three Chelsea awards preceded his 2018 World Cup All-Star selection?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 World Cup All-Star Team (Hazard won the Silver Ball).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the All-Star Team claim.
+
+### Row 5387 — Belgium (easy) — FAIL
+**Q:** Which Belgian team conduct earned the 2018 FIFA Fair Play Award?
+**Answer:** Lowest disciplinary points tally
+**Why it fails:** False premise: Belgium did NOT win the 2018 Fair Play Award - Spain did.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Belgium didn't win it in 2018.
+
+### Row 5390 — Belgium (easy) — FAIL
+**Q:** Which Belgian tournament streak began with the 2014 World Cup?
+**Answer:** Four consecutive qualifications
+**Why it fails:** Wrong count: it was FIVE consecutive qualifications 2014-2022 (incl. Euro 2020), not four.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_UEFA_European_Championship
+**Remedy:** Change answer to five.
+
+### Row 5395 — Belgium (easy) — FAIL
+**Q:** Which Belgian was top scorer in 2022 WC qualifying, but not in 2018?
+**Answer:** Romelu Lukaku
+**Why it fails:** False contrast: Lukaku was ALSO Belgium's top scorer in 2018 qualifying (~11 goals), so 'but not in 2018' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** Drop the 'not in 2018' clause.
+
+### Row 5403 — Belgium (easy) — FAIL
+**Q:** Which Belgian winger retired from international football in 2023 with 126 caps?
+**Answer:** Eden Hazard
+**Why it fails:** Wrong: Hazard's international retirement was Dec 2022, not 2023 (all-football 2023). 126 caps is correct.
+**Source:** https://en.wikipedia.org/wiki/Eden_Hazard
+**Remedy:** Fix to 2022.
+
+### Row 5432 — Belgium (medium) — FAIL
+**Q:** Which Belgium coach's 2026 World Cup qualification mirrored their 2014 group-winning success?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+
+### Row 5513 — Belgium (medium) — FAIL
+**Q:** Which Belgium manager oversaw their qualification for the 2026 World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (appointed Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+
+### Row 5559 — Belgium (medium) — FAIL
+**Q:** Which Belgium player earned multiple Ballon d'Or nominations by 2022?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5561 — Belgium (easy) — FAIL
+**Q:** Which Belgium player from their 2022 group-stage exit also starred in their 2018 semi-final run?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Lukaku, Courtois and Hazard also played in both the 2018 SF run and the 2022 group stage.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Tighten - several players fit.
+
+### Row 5563 — Belgium (medium) — FAIL
+**Q:** Which Belgium player had multiple Ballon d'Or nominations by 2022?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5564 — Belgium (medium) — FAIL
+**Q:** Which Belgium player had multiple Ballon d'Or nominations by the 2022 World Cup?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5568 — Belgium (medium) — FAIL
+**Q:** Which Belgium player has been nominated for the Ballon d'Or multiple times?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5569 — Belgium (medium) — FAIL
+**Q:** Which Belgium player has multiple Ballon d'Or nominations since 2018?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5570 — Belgium (medium) — FAIL
+**Q:** Which Belgium player has received multiple Ballon d'Or nominations?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5578 — Belgium (easy) — FAIL
+**Q:** Which Belgium player made the 2018 World Cup All-Star Team?
+**Answer:** Eden Hazard
+**Why it fails:** False premise: no official 2018 World Cup All-Star Team (Hazard won the Silver Ball).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the All-Star Team claim.
+
+### Row 5596 — Belgium (easy) — FAIL
+**Q:** Which Belgium player scored against Japan in the 2018 World Cup round of 16?
+**Answer:** Divock Origi
+**Why it fails:** Wrong: Origi did not score v Japan in 2018 - Belgium's scorers were Vertonghen, Fellaini and Chadli.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Change to Chadli (an option).
+
+### Row 5623 — Belgium (easy) — FAIL
+**Q:** Which Belgium player was top scorer in their 2022 World Cup qualifying, but not in 2018?
+**Answer:** Romelu Lukaku
+**Why it fails:** False contrast: Lukaku was ALSO Belgium's top scorer in 2018 qualifying, so 'but not in 2018' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** Drop the 'not in 2018' clause.
+
+### Row 5625 — Belgium (medium) — FAIL
+**Q:** Which Belgium player, active in 2022 World Cup group stage, has multiple Ballon d'Or nominations?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5637 — Belgium (medium) — FAIL
+**Q:** Which Belgium star was a Ballon d'Or nominee at the 2022 World Cup?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5638 — Belgium (medium) — FAIL
+**Q:** Which Belgium star was nominated for multiple Ballon d'Or awards by 2022?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+### Row 5639 — Belgium (medium) — FAIL
+**Q:** Which Belgium star's World Cup performances earned multiple Ballon d'Or nominations?
+**Answer:** Kevin De Bruyne
+**Why it fails:** Non-unique: Hazard also received multiple Ballon d'Or nominations.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Specify 'midfielder' or tighten.
+
+
+### Row 5647 — Belgium (medium) — FAIL
+**Q:** Which Belgium team held the FIFA number 1 spot for a record 1,735 days?
+**Answer:** The 2018-2022 side
+**Why it fails:** 'record 1,735 days' false: Belgium's No.1 reign was not a record (Brazil & Spain longer; ~1,280 days).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the '1,735-day record' framing.
+
+### Row 5682 — Belgium (medium) — FAIL
+**Q:** Which manager guided Belgium to 2026 FIFA World Cup qualification?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5684 — Belgium (medium) — FAIL
+**Q:** Which manager guided Belgium's qualification for the 2026 FIFA World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5687 — Belgium (medium) — FAIL
+**Q:** Which manager led Belgium to 2026 World Cup qualification, unlike their 2010 failure?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5689 — Belgium (medium) — FAIL
+**Q:** Which manager led Belgium to 2026 World Cup UEFA qualification?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5699 — Belgium (easy) — FAIL
+**Q:** Which manager led Belgium to qualify for the 2026 FIFA World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5713 — Belgium (medium) — FAIL
+**Q:** Which manager led Belgium's successful 2026 World Cup qualification?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5719 — Belgium (easy) — FAIL
+**Q:** Which manager qualified Belgium for both the 2026 and 2024 tournaments?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Tedesco qualified Belgium for Euro 2024 but NOT the 2026 WC (that was under Rudi Garcia).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Tedesco did not do the 2026 qualification.
+
+### Row 5722 — Belgium (easy) — FAIL
+**Q:** Which manager qualified Belgium for the 2026 FIFA World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 5734 — Belgium (medium) — FAIL
+**Q:** Which manager was in charge of Belgium during their 2018-2022 record FIFA ranking?
+**Answer:** Roberto Martínez
+**Why it fails:** Question asserts a 'record' FIFA ranking, which is false (Belgium's No.1 reign was not a record). Martinez was the manager, but the premise is wrong.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop 'record'.
+
+
+### Row 5790 — Belgium (easy) — FAIL
+**Q:** Which nation eliminated Belgium from two consecutive major tournaments?
+**Answer:** France
+**Why it fails:** False: France's eliminations of Belgium were NOT consecutive - Italy eliminated them at Euro 2020 and they group-exited 2022, between the 2018 SF and the Euro 2024 R16.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Drop 'consecutive'.
+
+### Row 5836 — Belgium (easy) — FAIL
+**Q:** Which nation's FA headquarters are in Brussels, like Belgium's?
+**Answer:** Belgium
+**Why it fails:** Self-referential: the question asks which nation's FA is in Brussels 'like Belgium's' and answers Belgium itself.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Reword - the answer restates the subject.
+
+
+### Row 5860 — Belgium (easy) — FAIL
+**Q:** Which stadium did Belgium NOT use for their 2026 World Cup qualifiers?
+**Answer:** Eurostadium
+**Why it fails:** Non-unique negative: Belgium used only the King Baudouin Stadium for 2026 qualifiers, so they also did not use Jan Breydel or Lotto Park - not just the Eurostadium.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Drop - multiple options qualify.
+
+### Row 5868 — Belgium (easy) — FAIL
+**Q:** Which stadium hosts all Belgium home World Cup qualifiers?
+**Answer:** King Baudouin Stadium
+**Why it fails:** Non-unique: 'King Baudouin Stadium' and 'Stade Roi Baudouin' are the same venue, so two options are identical and correct.
+**Source:** https://en.wikipedia.org/wiki/Belgium_national_football_team
+**Remedy:** Replace the duplicate.
+
+### Row 5911 — Belgium (easy) — FAIL
+**Q:** Which team did Belgium not face in the 2021 Nations League semi-finals?
+**Answer:** Portugal
+**Why it fails:** Non-unique negative: Belgium faced only France in the 2021 NL SF, so they also did not face Italy or Spain - not just Portugal.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop - multiple options qualify.
+
+### Row 5912 — Belgium (easy) — FAIL
+**Q:** Which team did not eliminate Belgium in a Euro quarter-final?
+**Answer:** Italy
+**Why it fails:** Wrong: Italy DID eliminate Belgium in a Euro QF (2-1 at Euro 2020). The correct 'did not' answer is France or Germany.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Change answer - Italy did eliminate them.
+
+
+### Row 5943 — Belgium (medium) — FAIL
+**Q:** Which two Euro quarter-finals did Belgium lose by a 1-goal margin?
+**Answer:** 2020 and 2024
+**Why it fails:** False: Belgium's Euro 2024 loss (1-0 to France) was in the ROUND OF 16, not a quarter-final. Their only 1-goal Euro QF loss was 2020 (2-1 to Italy); 2016 was 3-1.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Drop '2024' - it wasn't a QF.
+
+### Row 5947 — Belgium (easy) — FAIL
+**Q:** Which two nations finished above Belgium in 2010 World Cup qualifying?
+**Answer:** Spain and Türkiye
+**Why it fails:** 2010 qualifying: THREE nations finished above Belgium (Spain, Bosnia & Herzegovina, Turkey), not two - the answer omits Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_5
+**Remedy:** Reword - Belgium finished 4th.
+
+### Row 5949 — Belgium (easy) — FAIL
+**Q:** Which two nations finished ahead of Belgium in their 2010 World Cup qualifying group?
+**Answer:** Spain and Türkiye
+**Why it fails:** 2010 qualifying: THREE nations finished above Belgium (Spain, Bosnia & Herzegovina, Turkey), not two - the answer omits Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_5
+**Remedy:** Reword - Belgium finished 4th.
+
+### Row 5955 — Belgium (medium) — FAIL
+**Q:** Which two World Cups did Belgium qualify for by winning their UEFA group?
+**Answer:** 2014 and 2022
+**Why it fails:** Non-unique: Belgium also won their 2018 UEFA qualifying group, so the pair is wrong - they won 2014, 2018 AND 2022 (the '2018 and 2022' distractor is equally valid).
+**Source:** https://en.wikipedia.org/wiki/Belgium_at_the_FIFA_World_Cup
+**Remedy:** At least three qualify - reword.
+
+### Row 6045 — Belgium (easy) — FAIL
+**Q:** Who led Belgium to qualify for the 2026 World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 6049 — Belgium (easy) — FAIL
+**Q:** Who managed Belgium to qualify for the 2026 World Cup?
+**Answer:** Domenico Tedesco
+**Why it fails:** False: Belgium's 2026 qualifying was under Rudi Garcia (Jan 2025), not Tedesco (sacked Jan 2025).
+**Source:** https://en.wikipedia.org/wiki/List_of_Belgium_national_football_team_managers
+**Remedy:** Change to Rudi Garcia.
+
+### Row 6068 — Belgium (easy) — FAIL
+**Q:** Why did Belgium hold the FIFA #1 ranking from 2018 to 2022?
+**Answer:** Record 1,735-day streak
+**Why it fails:** 'Record 1,735-day streak' false: Belgium's No.1 reign was not a record (Brazil & Spain longer; ~1,280 days).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop the '1,735-day record' framing.
+
+### Row 6072 — Belgium (medium) — FAIL
+**Q:** Why did Belgium only average 1.3 goals per game at the 2018 World Cup?
+**Answer:** Scored 9 in 7
+**Why it fails:** False premise: Belgium scored 16 goals (not 9) in 7 matches at 2018, so they did NOT average 1.3 per game (actual ~2.29).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Recompute from 16 goals.
+
+### Row 6095 — Belgium (easy) — FAIL
+**Q:** Why was Belgium ranked FIFA #1 from 2018 to 2022?
+**Answer:** Record duration at top
+**Why it fails:** 'Record duration at top' false: Belgium's No.1 reign was not a record (Brazil & Spain held it longer).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Drop 'record'.
+
+
+## Chile — rows 12429–13845 (new method) — 191 failed-liveness
+
+### Row 12429 — Chile (easy) — FAIL
+**Q:** A 2014 Chile win over Spain preceded which player's dual Copa América final heroics?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 12431 — Chile (easy) — FAIL
+**Q:** After Chile failed to qualify for the 2022 FIFA World Cup, which era ended?
+**Answer:** Their golden era
+**Why it fails:** Non-unique: 'golden era / golden generation / golden age / golden period' are synonyms — there is no single distinct correct answer.
+**Source:** https://en.wikipedia.org/wiki/Chile_national_football_team
+**Remedy:** Replace the distractors with genuinely distinct options.
+
+### Row 12465 — Chile (easy) — FAIL
+**Q:** At the 2014 World Cup, what was Chile's score after 90 minutes vs Brazil?
+**Answer:** 01-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): the cell shows a date in place of the scoreline.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Restore the real scoreline as the answer (e.g. 1-1 after 90', or 3-2 on penalties).
+
+### Row 12466 — Chile (easy) — FAIL
+**Q:** At the 2014 World Cup, which Chile forward had over 80 caps and 40+ goals?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12509 — Chile (easy) — FAIL
+**Q:** Chile beat Spain 2-0 in 2014. Who scored their Copa América 2015 & 2016 winning penalties?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 12567 — Chile (easy) — FAIL
+**Q:** Chile qualified for the 2026 FIFA World Cup under which manager?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 12569 — Chile (medium) — FAIL
+**Q:** Chile qualified for the 2026 World Cup. Which CONMEBOL campaign did they fail?
+**Answer:** 2022 qualification
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 12570 — Chile (hard) — FAIL
+**Q:** Chile qualified for which FIFA World Cup through CONMEBOL?
+**Answer:** The 2014 World Cup
+**Why it fails:** Non-unique: Chile also qualified for the 2010 World Cup via CONMEBOL, so the distractor '2010' is equally correct.
+**Source:** https://en.wikipedia.org/wiki/Chile_national_football_team
+**Remedy:** Remove 2010 as a distractor.
+
+### Row 12583 — Chile (hard) — FAIL
+**Q:** Chile's 2014 World Cup qualification was their last before which tournament?
+**Answer:** The 2026 World Cup
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 12592 — Chile (easy) — FAIL
+**Q:** Chile's 2022 qualifying failure under Martín Lasarte mirrored which other manager's failed campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12594 — Chile (medium) — FAIL
+**Q:** Chile's 2026 World Cup qualification under Ricardo Gareca ended which consecutive cycle of CONMEBOL failures?
+**Answer:** Two consecutive cycles
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 12602 — Chile (medium) — FAIL
+**Q:** Chile's Alexis Sánchez scored Copa América winning penalties in which two years?
+**Answer:** 2015 and 2016
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 12606 — Chile (easy) — FAIL
+**Q:** Chile's Estadio Nacional has a capacity near 48,665. Which CONMEBOL nation's main World Cup qualifier stadium also holds about 48,000?
+**Answer:** Chile
+**Why it fails:** Self-referential/circular: the explanation says 'the question states...', the ~48,000 stadium premise is non-unique, and the answer just restates the subject.
+**Source:** https://en.wikipedia.org/wiki/Chile_national_football_team
+**Remedy:** Drop — circular and non-unique.
+
+### Row 12617 — Chile (medium) — FAIL
+**Q:** During which World Cup qualifying campaign did Reinaldo Rueda manage Chile?
+**Answer:** The 2018 campaign
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12658 — Chile (easy) — FAIL
+**Q:** In Chile's 2-0 win over Spain in 2014, who later scored both Copa América winning penalties?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 12660 — Chile (hard) — FAIL
+**Q:** In Chile's 2014 round of 16 loss to Brazil, what was the penalty shootout score?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer (Excel date mangling): the cell shows a date in place of the scoreline.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Restore the real scoreline as the answer (e.g. 1-1 after 90', or 3-2 on penalties).
+
+### Row 12661 — Chile (easy) — FAIL
+**Q:** In Chile's 2014 World Cup squad, which midfielder had over 80 caps by 2023?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 12692 — Chile (medium) — FAIL
+**Q:** In which two years did Chile's Alexis Sánchez score Copa América final-winning penalties?
+**Answer:** 2015 and 2016
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 12713 — Chile (medium) — FAIL
+**Q:** In which year did Chile qualify for the World Cup under manager Ricardo Gareca?
+**Answer:** 2026
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 12726 — Chile (medium) — FAIL
+**Q:** Under Reinaldo Rueda, Chile failed to qualify for which World Cup?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12727 — Chile (easy) — FAIL
+**Q:** Under which manager did Chile fail to qualify for the 2018 FIFA World Cup?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12728 — Chile (easy) — FAIL
+**Q:** Under which manager did Chile qualify for the 2026 World Cup?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 12744 — Chile (hard) — FAIL
+**Q:** What was Chile's penalty shootout score against Brazil in 2014?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer (Excel date mangling): the cell shows a date in place of the scoreline.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Restore the real scoreline as the answer (e.g. 1-1 after 90', or 3-2 on penalties).
+
+### Row 12797 — Chile (medium) — FAIL
+**Q:** When did Reinaldo Rueda manage Chile's failed World Cup qualifying campaign?
+**Answer:** 2018 qualifying
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12802 — Chile (medium) — FAIL
+**Q:** When will Chile's new generation debut at a FIFA World Cup?
+**Answer:** 2026
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12856 — Chile (easy) — FAIL
+**Q:** Which aging Chile star could still play at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12880 — Chile (easy) — FAIL
+**Q:** Which Chile forward at the 2026 World Cup provides Premier League pedigree?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12882 — Chile (easy) — FAIL
+**Q:** Which Chile forward brought Premier League experience to their 2026 World Cup squad?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12885 — Chile (easy) — FAIL
+**Q:** Which Chile forward could feature at his fifth World Cup in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12886 — Chile (easy) — FAIL
+**Q:** Which Chile forward could feature at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12887 — Chile (easy) — FAIL
+**Q:** Which Chile forward could make a 2026 World Cup his last?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12888 — Chile (easy) — FAIL
+**Q:** Which Chile forward could play at the 2026 World Cup despite his veteran status?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12890 — Chile (easy) — FAIL
+**Q:** Which Chile forward debuted in the 2026 World Cup qualifiers?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False: Ben Brereton Diaz debuted for Chile in 2021 (during the 2022 qualifying cycle), not in the 2026 World Cup qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Ben_Brereton_D%C3%ADaz
+**Remedy:** Change to 2021 / the 2022 cycle, or drop the '2026' debut claim.
+
+### Row 12900 — Chile (easy) — FAIL
+**Q:** Which Chile forward had over 40 goals and played at the 2014 World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12901 — Chile (easy) — FAIL
+**Q:** Which Chile forward had over 80 caps and 40+ goals by 2022?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12906 — Chile (easy) — FAIL
+**Q:** Which Chile forward has scored over 40 international goals?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12910 — Chile (easy) — FAIL
+**Q:** Which Chile forward may feature at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 12913 — Chile (easy) — FAIL
+**Q:** Which Chile forward scored 40+ goals and played at the 2014 World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12914 — Chile (easy) — FAIL
+**Q:** Which Chile forward scored over 40 goals for his country?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12915 — Chile (easy) — FAIL
+**Q:** Which Chile forward scored over 40 goals, including at the 2014 World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12916 — Chile (medium) — FAIL
+**Q:** Which Chile forward started all three group stage matches at the 2014 World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12919 — Chile (easy) — FAIL
+**Q:** Which Chile forward was a key starter at the 2014 World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12921 — Chile (easy) — FAIL
+**Q:** Which Chile forward was in their 2014 FIFA World Cup squad?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12923 — Chile (easy) — FAIL
+**Q:** Which Chile forward was key at both the 2014 World Cup and the 2015 Copa América?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12924 — Chile (easy) — FAIL
+**Q:** Which Chile forward was key at the 2014 FIFA World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12926 — Chile (easy) — FAIL
+**Q:** Which Chile forward was key for their 2014 FIFA World Cup campaign?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12927 — Chile (easy) — FAIL
+**Q:** Which Chile forward was key for them at the 2014 FIFA World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12928 — Chile (easy) — FAIL
+**Q:** Which Chile forward was key in the 2014 World Cup qualifiers?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12932 — Chile (easy) — FAIL
+**Q:** Which Chile forward with Premier League pedigree debuted in 2026 World Cup qualifiers?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False: Ben Brereton Diaz debuted for Chile in 2021 (during the 2022 qualifying cycle), not in the 2026 World Cup qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Ben_Brereton_D%C3%ADaz
+**Remedy:** Change to 2021 / the 2022 cycle, or drop the '2026' debut claim.
+
+### Row 12938 — Chile (easy) — FAIL
+**Q:** Which Chile forward, with over 80 caps and 40 goals, was key at the 2014 FIFA World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 12954 — Chile (easy) — FAIL
+**Q:** Which Chile manager beat Argentina on penalties in the 2015 and 2016 Copa América finals?
+**Answer:** Jorge Sampaoli
+**Why it fails:** False: no single manager won both finals — Jorge Sampaoli won the 2015 Copa America, but the 2016 Copa Centenario was won under Juan Antonio Pizzi.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict to 2015 (Sampaoli) or 2016 (Pizzi).
+
+### Row 12955 — Chile (easy) — FAIL
+**Q:** Which Chile manager defeated Argentina in two consecutive Copa América finals?
+**Answer:** Jorge Sampaoli
+**Why it fails:** False: no single manager won both finals — Jorge Sampaoli won the 2015 Copa America, but the 2016 Copa Centenario was won under Juan Antonio Pizzi.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict to 2015 (Sampaoli) or 2016 (Pizzi).
+
+### Row 12956 — Chile (easy) — FAIL
+**Q:** Which Chile manager failed in 2018 WC qualifying, unlike Gareca in 2026?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12958 — Chile (easy) — FAIL
+**Q:** Which Chile manager failed in the 2018 World Cup qualifiers?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12964 — Chile (easy) — FAIL
+**Q:** Which Chile manager failed to qualify them for the 2018 FIFA World Cup?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12965 — Chile (easy) — FAIL
+**Q:** Which Chile manager led the 2018 World Cup qualifying failure?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12978 — Chile (medium) — FAIL
+**Q:** Which Chile manager oversaw the failed 2018 World Cup qualification campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12981 — Chile (medium) — FAIL
+**Q:** Which Chile manager oversaw their failed 2018 World Cup qualification?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12982 — Chile (easy) — FAIL
+**Q:** Which Chile manager oversaw their failed 2018 World Cup qualifying campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 12996 — Chile (easy) — FAIL
+**Q:** Which Chile manager won a Copa América after Marcelo Bielsa's tenure?
+**Answer:** Jorge Sampaoli
+**Why it fails:** Non-unique: both Sampaoli (2015) and Pizzi (2016, a distractor) won a Copa America during/after the relevant period, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Chile_national_football_team
+**Remedy:** Remove Juan Antonio Pizzi from the options.
+
+### Row 12997 — Chile (easy) — FAIL
+**Q:** Which Chile manager won a Copa América title but did not manage a World Cup qualifying campaign?
+**Answer:** Juan Antonio Pizzi
+**Why it fails:** False: Juan Antonio Pizzi DID manage a World Cup qualifying campaign — he oversaw Chile's failed 2018 CONMEBOL qualifying (6th).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop — the premise that Pizzi never managed a qualifying campaign is wrong.
+
+### Row 13006 — Chile (easy) — FAIL
+**Q:** Which Chile manager's 2018 World Cup qualifying failure was repeated by Martín Lasarte in 2022?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13007 — Chile (easy) — FAIL
+**Q:** Which Chile manager's Copa América win came during his tenure?
+**Answer:** Jorge Sampaoli
+**Why it fails:** Non-unique: both Sampaoli (2015) and Pizzi (2016, a distractor) won a Copa America during/after the relevant period, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Chile_national_football_team
+**Remedy:** Remove Juan Antonio Pizzi from the options.
+
+### Row 13008 — Chile (easy) — FAIL
+**Q:** Which Chile manager's failed qualifying campaign came after Reinaldo Rueda's?
+**Answer:** Martín Lasarte
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13017 — Chile (easy) — FAIL
+**Q:** Which Chile midfielder had over 80 caps during the 2015 Copa América victory?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13018 — Chile (easy) — FAIL
+**Q:** Which Chile midfielder had over 80 caps during their golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13020 — Chile (easy) — FAIL
+**Q:** Which Chile midfielder reached 80+ caps during their golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13021 — Chile (easy) — FAIL
+**Q:** Which Chile midfielder was a key starter in their 2014 World Cup round of 16 run?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13023 — Chile (easy) — FAIL
+**Q:** Which Chile midfielder was key during their 2014 World Cup golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13025 — Chile (medium) — FAIL
+**Q:** Which Chile midfielder, with over 80 caps, played in the 2014 World Cup group stage?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13026 — Chile (easy) — FAIL
+**Q:** Which Chile midfielder, with over 80 caps, was key during their golden era World Cup qualifiers?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13035 — Chile (easy) — FAIL
+**Q:** Which Chile player could feature at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13036 — Chile (easy) — FAIL
+**Q:** Which Chile player could make his last World Cup appearance in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13041 — Chile (easy) — FAIL
+**Q:** Which Chile player for the 2026 World Cup squad has a Premier League pedigree?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13043 — Chile (easy) — FAIL
+**Q:** Which Chile player from the 2014 squad is least likely to start at the 2026 World Cup?
+**Answer:** Gary Medel
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13055 — Chile (easy) — FAIL
+**Q:** Which Chile player is part of their 2026 World Cup veteran core?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13060 — Chile (easy) — FAIL
+**Q:** Which Chile player may feature at the 2026 FIFA World Cup despite nearing retirement?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13061 — Chile (easy) — FAIL
+**Q:** Which Chile player may feature at the 2026 World Cup despite his age?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13073 — Chile (easy) — FAIL
+**Q:** Which Chile player scored the decisive penalty in consecutive Copa América finals?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13082 — Chile (easy) — FAIL
+**Q:** Which Chile player scored winning penalties in both 2015 and 2016 Copa América finals?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13104 — Chile (easy) — FAIL
+**Q:** Which Chile player, with over 50 goals, is CONMEBOL's 3rd-highest active international scorer?
+**Answer:** Alexis Sánchez
+**Why it fails:** False/unverifiable ranking: Alexis Sanchez is not CONMEBOL's 3rd-highest active international scorer (Messi, Neymar and Suarez all rank above him).
+**Source:** https://en.wikipedia.org/wiki/Alexis_S%C3%A1nchez
+**Remedy:** Drop the specific '3rd-highest active' claim.
+
+### Row 13118 — Chile (easy) — FAIL
+**Q:** Which Chile players will feature in the 2026 World Cup squad?
+**Answer:** A new generation
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13123 — Chile (easy) — FAIL
+**Q:** Which Chile squad will mark a generational shift at the 2026 FIFA World Cup?
+**Answer:** A new generation
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13127 — Chile (easy) — FAIL
+**Q:** Which Chile star could make his final World Cup appearance in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13129 — Chile (easy) — FAIL
+**Q:** Which Chile star could play his last World Cup in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13138 — Chile (easy) — FAIL
+**Q:** Which Chile star will lead their new generation at the 2026 World Cup?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13146 — Chile (easy) — FAIL
+**Q:** Which Chile veteran could play his final World Cup in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13147 — Chile (easy) — FAIL
+**Q:** Which Chile veteran could still play at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13148 — Chile (easy) — FAIL
+**Q:** Which Chile veteran may still feature at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13155 — Chile (easy) — FAIL
+**Q:** Which Chilean 2026 World Cup veteran was part of the aging golden generation?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13189 — Chile (easy) — FAIL
+**Q:** Which Chilean forward could become one of the oldest outfield players at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13190 — Chile (easy) — FAIL
+**Q:** Which Chilean forward could play in his fifth World Cup in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13196 — Chile (easy) — FAIL
+**Q:** Which Chilean forward for the 2026 World Cup squad has Premier League experience?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13204 — Chile (easy) — FAIL
+**Q:** Which Chilean forward may feature at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13205 — Chile (easy) — FAIL
+**Q:** Which Chilean forward provided goals and Premier League pedigree for the 2026 World Cup squad?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13208 — Chile (easy) — FAIL
+**Q:** Which Chilean forward was a key player at the 2014 FIFA World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 13209 — Chile (easy) — FAIL
+**Q:** Which Chilean forward was key at the 2014 World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 13210 — Chile (easy) — FAIL
+**Q:** Which Chilean forward was key to their attack at the 2014 FIFA World Cup?
+**Answer:** Eduardo Vargas
+**Why it fails:** Non-unique: Alexis Sanchez (a forward with 166+ caps and 50 goals who also started up front at the 2014 World Cup) equally satisfies the criterion, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Add a detail unique to Vargas, or remove Alexis Sanchez from the options.
+
+### Row 13213 — Chile (easy) — FAIL
+**Q:** Which Chilean forward with Premier League experience debuted in the 2026 World Cup qualifiers?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False: Ben Brereton Diaz debuted for Chile in 2021 (during the 2022 qualifying cycle), not in the 2026 World Cup qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Ben_Brereton_D%C3%ADaz
+**Remedy:** Change to 2021 / the 2022 cycle, or drop the '2026' debut claim.
+
+### Row 13215 — Chile (easy) — FAIL
+**Q:** Which Chilean forward with Premier League pedigree played at the 2026 World Cup?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13218 — Chile (easy) — FAIL
+**Q:** Which Chilean forward, part of the new generation, has Premier League pedigree for the 2026 World Cup?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13224 — Chile (easy) — FAIL
+**Q:** Which Chilean generation will dominate the 2026 FIFA World Cup squad?
+**Answer:** A new generation
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13225 — Chile (easy) — FAIL
+**Q:** Which Chilean generation will lead the squad at the 2026 FIFA World Cup?
+**Answer:** A new generation
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13236 — Chile (easy) — FAIL
+**Q:** Which Chilean golden generation star played in the 2026 World Cup qualifiers?
+**Answer:** Alexis Sánchez
+**Why it fails:** Non-unique: Arturo Vidal and Gary Medel also featured for Chile in the 2026 qualifying campaign, so the golden-generation answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Remove Vidal/Medel from the options or pick a uniquely identifying fact.
+
+### Row 13249 — Chile (easy) — FAIL
+**Q:** Which Chilean manager's qualifying failure preceded Martín Lasarte's 2022 failure?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13250 — Chile (easy) — FAIL
+**Q:** Which Chilean manager's tenure ended before the 2018 World Cup qualifiers?
+**Answer:** Jorge Sampaoli
+**Why it fails:** False/non-unique: Sampaoli's tenure did not end before the 2018 qualifiers — the 2018 CONMEBOL qualifying began Oct 2015 and Sampaoli managed its first matches before resigning Jan 2016; Bielsa (a distractor) also pre-dates it.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rephrase; the premise is inaccurate and the answer non-unique.
+
+### Row 13252 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder earned over 80 caps during the 2010s golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13256 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder had over 80 caps by the 2018 World Cup qualifiers?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13257 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder had over 80 caps during the golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13258 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder had over 80 caps during their golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13259 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder was a key squad inclusion for the 2014 FIFA World Cup?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13261 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder was key during the golden era of World Cup qualifying?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13262 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder was key during their golden era before the 2014 World Cup?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13263 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder was key during their golden era World Cup campaigns?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13264 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder was key during their golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13267 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder was selected for their 2014 World Cup squad?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13269 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder with over 80 caps played a key role during their golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13272 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder, with over 80 caps, was a key starter during their 2014 World Cup campaign?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13273 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder, with over 80 caps, was a key starter in their 2014 World Cup golden era?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13274 — Chile (easy) — FAIL
+**Q:** Which Chilean midfielder, with over 80 caps, was a key tactical component in their 2014 World Cup midfield?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13280 — Chile (easy) — FAIL
+**Q:** Which Chilean player could appear at the 2026 World Cup after 2010?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13281 — Chile (easy) — FAIL
+**Q:** Which Chilean player could be in both the 2014 and 2026 World Cup squads?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13282 — Chile (easy) — FAIL
+**Q:** Which Chilean player could feature at both the 2014 and 2026 World Cups?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13283 — Chile (easy) — FAIL
+**Q:** Which Chilean player could feature at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13289 — Chile (easy) — FAIL
+**Q:** Which Chilean player from the 2014 squad could also feature at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13290 — Chile (easy) — FAIL
+**Q:** Which Chilean player from the 2014 World Cup is unlikely to be in the 2026 squad?
+**Answer:** Alexis Sánchez
+**Why it fails:** Non-unique/false premise: all four golden-generation players are equally 'unlikely' for a 2026 squad, and Chile failed to qualify for 2026 so no such squad exists.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop.
+
+### Row 13291 — Chile (easy) — FAIL
+**Q:** Which Chilean player from the 2026 World Cup squad is a new-generation forward?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13295 — Chile (easy) — FAIL
+**Q:** Which Chilean player has NOT scored 40+ goals for their national team?
+**Answer:** Arturo Vidal
+**Why it fails:** Non-unique/wrong explanation: it claims Ben Brereton Diaz has scored 40+ goals (he has ~5); both Vidal and Brereton fail the 40+ criterion.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Vargas
+**Remedy:** Fix the explanation — only Sanchez and Vargas have 40+ goals.
+
+### Row 13305 — Chile (easy) — FAIL
+**Q:** Which Chilean player provides goals and Premier League pedigree for the 2026 World Cup squad?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13308 — Chile (easy) — FAIL
+**Q:** Which Chilean player represents the new 2026 World Cup generation?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13309 — Chile (easy) — FAIL
+**Q:** Which Chilean player scored the decisive penalty in both the 2015 and 2016 Copa América finals?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13314 — Chile (easy) — FAIL
+**Q:** Which Chilean player secured both their 2015 and 2016 Copa América final wins?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13329 — Chile (easy) — FAIL
+**Q:** Which Chilean player will be part of the new generation at the 2026 World Cup?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13330 — Chile (easy) — FAIL
+**Q:** Which Chilean player will lead their new generation at the 2026 World Cup?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13332 — Chile (easy) — FAIL
+**Q:** Which Chilean player will represent the new generation at the 2026 World Cup?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13337 — Chile (easy) — FAIL
+**Q:** Which Chilean player's 2026 World Cup squad would be his last?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13340 — Chile (easy) — FAIL
+**Q:** Which Chilean player's penalty kicks secured their 2015 and 2016 Copa América titles?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13356 — Chile (easy) — FAIL
+**Q:** Which Chilean star could play his last World Cup in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13357 — Chile (easy) — FAIL
+**Q:** Which Chilean star could still play at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13360 — Chile (easy) — FAIL
+**Q:** Which Chilean star from Copa America 2015 may play at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13361 — Chile (easy) — FAIL
+**Q:** Which Chilean star from the 2010s could play at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13367 — Chile (easy) — FAIL
+**Q:** Which Chilean star's final World Cup appearance could be in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13373 — Chile (easy) — FAIL
+**Q:** Which Chilean striker debuted for the 2026 World Cup squad?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13376 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran could appear at his final World Cup in 2026?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13378 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran could still play at the 2026 FIFA World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13379 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran from the 2014 World Cup could still feature at the 2026 tournament?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13381 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran is from the aging generation, not the new 2026 one?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13382 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran may be included in their 2026 World Cup squad?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13384 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran may feature in the 2026 FIFA World Cup squad?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13386 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran of the 2014 World Cup could still play at the 2026 finals?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13391 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran's career longevity may allow him to play at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13392 — Chile (easy) — FAIL
+**Q:** Which Chilean veteran's Copa America 2024 form could earn him a 2026 World Cup spot?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13394 — Chile (medium) — FAIL
+**Q:** Which coach led Chile to 2026 World Cup qualification?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13395 — Chile (easy) — FAIL
+**Q:** Which coach led Chile to qualify for the 2026 FIFA World Cup?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13443 — Chile (medium) — FAIL
+**Q:** Which CONMEBOL nation qualified for the 2014 World Cup after Chile's 2010 qualification?
+**Answer:** Chile
+**Why it fails:** Non-unique/self-referential: Uruguay and Colombia (distractors) also qualified for 2014, and the answer 'Chile' restates the subject of the question.
+**Source:** https://en.wikipedia.org/wiki/Chile_national_football_team
+**Remedy:** Drop or rephrase to a unique fact.
+
+### Row 13466 — Chile (easy) — FAIL
+**Q:** Which CONMEBOL nation, like Chile, qualified for the 2010 FIFA World Cup?
+**Answer:** Brazil
+**Why it fails:** Non-unique: Argentina, Uruguay and Paraguay all also qualified for the 2010 World Cup, so multiple distractors are correct.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Use a distractor set where only one nation qualified for 2010.
+
+### Row 13547 — Chile (medium) — FAIL
+**Q:** Which manager guided Chile to 2026 World Cup qualification?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13550 — Chile (easy) — FAIL
+**Q:** Which manager led Chile during 2018 World Cup qualifying?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13552 — Chile (medium) — FAIL
+**Q:** Which manager led Chile during their failed 2018 FIFA World Cup qualification?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13553 — Chile (easy) — FAIL
+**Q:** Which manager led Chile during their failed 2018 World Cup qualifying campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13556 — Chile (easy) — FAIL
+**Q:** Which manager led Chile in the 2018 World Cup qualifiers?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13559 — Chile (medium) — FAIL
+**Q:** Which manager led Chile to 2026 World Cup qualification?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13560 — Chile (easy) — FAIL
+**Q:** Which manager led Chile to fail in 2018 World Cup qualifying?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13561 — Chile (easy) — FAIL
+**Q:** Which manager led Chile to qualify for the 2026 FIFA World Cup?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13573 — Chile (medium) — FAIL
+**Q:** Which manager led Chile's failed 2018 World Cup qualification?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13574 — Chile (easy) — FAIL
+**Q:** Which manager led Chile's failed 2018 World Cup qualifying campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13581 — Chile (easy) — FAIL
+**Q:** Which manager qualified Chile for the 2026 World Cup after two failed campaigns?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13583 — Chile (medium) — FAIL
+**Q:** Which manager secured Chile's 2026 World Cup qualification?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13589 — Chile (easy) — FAIL
+**Q:** Which manager was in charge of Chile during the 2018 World Cup qualifiers?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13592 — Chile (medium) — FAIL
+**Q:** Which manager was in charge of Chile's unsuccessful 2018 World Cup qualification?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13595 — Chile (easy) — FAIL
+**Q:** Which manager's Chile failed to qualify for the 2018 World Cup?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13628 — Chile (medium) — FAIL
+**Q:** Which nation did Chile not face in the 2010 FIFA World Cup knockout stage?
+**Answer:** Netherlands
+**Why it fails:** Non-unique: Chile's only 2010 knockout match was the R16 vs Brazil, so they faced none of Netherlands/Spain/Portugal in the knockout — several distractors are equally 'not faced'.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Rephrase; only Brazil was faced in the knockout.
+
+### Row 13656 — Chile (medium) — FAIL
+**Q:** Which nation's 2010 World Cup qualification campaign directly competed with Chile's?
+**Answer:** Uruguay
+**Why it fails:** Non-unique: Paraguay (a distractor) also qualified for 2010, and every CONMEBOL side 'competed' in the same campaign.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Rephrase to a uniquely identifying fact.
+
+### Row 13661 — Chile (easy) — FAIL
+**Q:** Which player's penalties secured Chile's 2015 and 2016 Copa América titles?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13664 — Chile (easy) — FAIL
+**Q:** Which Premier League forward debuted for Chile during 2026 World Cup qualifying?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False: Ben Brereton Diaz debuted for Chile in 2021 (during the 2022 qualifying cycle), not in the 2026 World Cup qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Ben_Brereton_D%C3%ADaz
+**Remedy:** Change to 2021 / the 2022 cycle, or drop the '2026' debut claim.
+
+### Row 13665 — Chile (easy) — FAIL
+**Q:** Which Premier League forward is in Chile's 2026 World Cup squad?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13666 — Chile (easy) — FAIL
+**Q:** Which Premier League forward was in Chile's 2026 World Cup squad?
+**Answer:** Ben Brereton Díaz
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13702 — Chile (easy) — FAIL
+**Q:** Which team did Chile beat 2-0 at the 2014 World Cup, eliminating Spain?
+**Answer:** Chile
+**Why it fails:** Broken: the answer 'Chile' is self-referential; the team Chile beat 2-0 to eliminate the defending champions was Spain.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Change the answer to Spain.
+
+### Row 13748 — Chile (easy) — FAIL
+**Q:** Which veteran Chile forward could feature at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13749 — Chile (easy) — FAIL
+**Q:** Which veteran Chile forward may play at the 2026 World Cup?
+**Answer:** Alexis Sánchez
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13758 — Chile (medium) — FAIL
+**Q:** Which World Cup did Chile qualify for under manager Ricardo Gareca?
+**Answer:** 2026 World Cup
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13778 — Chile (easy) — FAIL
+**Q:** Who managed Chile during their failed 2018 World Cup qualifiers?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13779 — Chile (easy) — FAIL
+**Q:** Who managed Chile during their failed 2018 World Cup qualifying campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13786 — Chile (easy) — FAIL
+**Q:** Who scored Chile's winning penalties in both 2015 and 2016 Copa América finals?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13789 — Chile (easy) — FAIL
+**Q:** Who scored Chile's winning penalty in the 2016 Copa América Centenario final?
+**Answer:** Alexis Sánchez
+**Why it fails:** False: the 2016 Copa America Centenario final winning penalty was scored by Francisco Silva, not Alexis Sanchez. Alexis scored only the 2015 final winner (Bravo saved in both shootouts).
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario_final
+**Remedy:** Restrict the claim to the 2015 final, or change the 2016 scorer to Francisco Silva.
+
+### Row 13795 — Chile (easy) — FAIL
+**Q:** Who was Chile's key midfielder during their golden era at the 2014 World Cup?
+**Answer:** Charles Aránguiz
+**Why it fails:** Non-unique: Arturo Vidal (a midfielder with 140+ caps from the same golden era) equally satisfies '80+ caps / key golden-era midfielder', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Charles_Ar%C3%A1nguiz
+**Remedy:** Remove Vidal from the options, or add a detail unique to Aranguiz.
+
+### Row 13797 — Chile (easy) — FAIL
+**Q:** Who was Chile's manager when they qualified for the 2026 World Cup?
+**Answer:** Ricardo Gareca
+**Why it fails:** False: Chile did NOT qualify for the 2026 World Cup. They finished last (10th) in CONMEBOL and Ricardo Gareca resigned; it is Chile's 3rd straight World Cup missed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Drop/rewrite — Gareca's 2026 campaign failed; do not state Chile qualified.
+
+### Row 13798 — Chile (easy) — FAIL
+**Q:** Who was the Chile manager during their failed 2018 FIFA World Cup qualifying campaign?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Wrong manager: the failed 2018 qualifying (6th in CONMEBOL) was under Juan Antonio Pizzi. Reinaldo Rueda was appointed Jan 2018 — AFTER that campaign — and led the start of the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the manager to Juan Antonio Pizzi (or re-anchor Rueda to the 2022 cycle).
+
+### Row 13841 — Chile (easy) — FAIL
+**Q:** Why might Chile's Alexis Sánchez play at the 2026 FIFA World Cup?
+**Answer:** End of his career
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13843 — Chile (easy) — FAIL
+**Q:** Why will Chile's 2026 World Cup squad differ from its 2014 team?
+**Answer:** Aging golden generation
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+### Row 13845 — Chile (easy) — FAIL
+**Q:** Why will Chile's 2026 World Cup squad look so different?
+**Answer:** A new generation
+**Why it fails:** False premise: Chile failed to qualify for the 2026 World Cup (finished last in CONMEBOL), so no Chilean player will feature at it and there is no 2026 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to the 2026 qualifying campaign (which happened) or drop the claim of playing at the tournament.
+
+## Egypt — rows 22766–23686 (new method) — 104 failed-liveness
+
+### Row 22779 — Egypt (medium) — FAIL
+**Q:** At the 2022 World Cup, which Egyptian star had previously won two Premier League Golden Boots?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 22781 — Egypt (hard) — FAIL
+**Q:** At which FIFA World Cup did Egypt fail to qualify, unlike these other tournaments?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** Non-unique/false framing: Egypt also failed to qualify for 2010 and 2014 (distractors), so '2022, unlike these other tournaments' is broken.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** Use distractors Egypt qualified for (e.g. 2018, 1990, 1934).
+
+### Row 22807 — Egypt (easy) — FAIL
+**Q:** Egypt lost the 2017 AFCON final by what score?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): the cell shows a date in place of the scoreline (e.g. '02-Jan' = 2-1).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Restore the real scoreline (the 2017 AFCON final was Cameroon 2-1 Egypt).
+
+### Row 22809 — Egypt (easy) — FAIL
+**Q:** Egypt lost the 2021 AFCON final to which nation on penalties?
+**Answer:** Senegal
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22824 — Egypt (medium) — FAIL
+**Q:** Egypt's Al Ahly had how many CAF Champions League wins by the 2022 World Cup?
+**Answer:** 12 titles
+**Why it fails:** False/stale: Al Ahly reached 12 CAF Champions League titles only in 2024 (9th 2020, 10th 2021, 11th 2023, 12th 2024). They had NOT won 12 by the 2022 World Cup (10) or by 2023 (11).
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Drop the date qualifier or correct the count for that date.
+
+### Row 22853 — Egypt (easy) — FAIL
+**Q:** How did Egypt beat Ghana in the 2010 AFCON final?
+**Answer:** On penalties
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 22854 — Egypt (easy) — FAIL
+**Q:** How did Egypt lose the 2021 AFCON final as hosts?
+**Answer:** On penalties
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22867 — Egypt (medium) — FAIL
+**Q:** How many CAF Champions League titles had Egypt's Al Ahly won by the 2022 World Cup?
+**Answer:** 12 titles
+**Why it fails:** False/stale: Al Ahly reached 12 CAF Champions League titles only in 2024 (9th 2020, 10th 2021, 11th 2023, 12th 2024). They had NOT won 12 by the 2022 World Cup (10) or by 2023 (11).
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Drop the date qualifier or correct the count for that date.
+
+### Row 22869 — Egypt (medium) — FAIL
+**Q:** How many CAF Champions Leagues had Egypt's Al Ahly won by 2023?
+**Answer:** 12 titles
+**Why it fails:** False/stale: Al Ahly reached 12 CAF Champions League titles only in 2024 (9th 2020, 10th 2021, 11th 2023, 12th 2024). They had NOT won 12 by the 2022 World Cup (10) or by 2023 (11).
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Drop the date qualifier or correct the count for that date.
+
+### Row 22874 — Egypt (hard) — FAIL
+**Q:** How many Premier League Golden Boots had Egypt's Mohamed Salah won by the 2022 World Cup?
+**Answer:** Two
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 22875 — Egypt (hard) — FAIL
+**Q:** How many Premier League Golden Boots has Egypt's Mohamed Salah won with Liverpool?
+**Answer:** Two
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 22877 — Egypt (hard) — FAIL
+**Q:** How many times did Egypt's Mohamed Salah win the Premier League Golden Boot with Liverpool?
+**Answer:** Twice
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 22878 — Egypt (hard) — FAIL
+**Q:** How many times had Egypt's Mohamed Salah won the Premier League Golden Boot by 2022?
+**Answer:** Twice
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 22887 — Egypt (easy) — FAIL
+**Q:** In Egypt's 2010 AFCON final win, who did they beat on penalties?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 22888 — Egypt (medium) — FAIL
+**Q:** In Egypt's 2018 World Cup group stage match against Saudi Arabia, which Egyptian attacker was a key AFCON performer?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 22895 — Egypt (easy) — FAIL
+**Q:** In the 2017 AFCON final, what was Cameroon's winning score against Egypt?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): the cell shows a date in place of the scoreline (e.g. '02-Jan' = 2-1).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Restore the real scoreline (the 2017 AFCON final was Cameroon 2-1 Egypt).
+
+### Row 22896 — Egypt (easy) — FAIL
+**Q:** In the 2017 AFCON final, what was Egypt's final score against Cameroon?
+**Answer:** 01-Feb
+**Why it fails:** Corrupted answer (Excel date mangling): the cell shows a date in place of the scoreline (e.g. '02-Jan' = 2-1).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Restore the real scoreline (the 2017 AFCON final was Cameroon 2-1 Egypt).
+
+### Row 22904 — Egypt (medium) — FAIL
+**Q:** In what year did Egypt win the AFCON by beating Ghana on penalties?
+**Answer:** 2010
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 22924 — Egypt (medium) — FAIL
+**Q:** In which year did Carlos Queiroz manage the Egypt national team?
+**Answer:** 2022
+**Why it fails:** False: Carlos Queiroz was appointed Egypt manager in September 2021 (he led the 2021 AFCON in Jan 2022 and the March 2022 WC playoff), not 'appointed in 2022'.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Queiroz
+**Remedy:** Change to 2021 (appointed), or rephrase.
+
+### Row 22927 — Egypt (medium) — FAIL
+**Q:** In which year did Egypt host and lose the AFCON final?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22928 — Egypt (medium) — FAIL
+**Q:** In which year did Egypt host the AFCON final they lost to Senegal?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22933 — Egypt (medium) — FAIL
+**Q:** In which year did Egypt lose the AFCON final as hosts?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22942 — Egypt (medium) — FAIL
+**Q:** In which year did Egypt reach the AFCON final as hosts?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22947 — Egypt (medium) — FAIL
+**Q:** In which year were Egypt AFCON hosts and finalists?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22966 — Egypt (medium) — FAIL
+**Q:** When did Egypt beat Ghana in an AFCON final on penalties?
+**Answer:** 2010
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 22967 — Egypt (medium) — FAIL
+**Q:** When did Egypt beat Ghana in an AFCON final?
+**Answer:** 2010
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 22969 — Egypt (medium) — FAIL
+**Q:** When did Egypt host and lose the AFCON final to Senegal?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22970 — Egypt (medium) — FAIL
+**Q:** When did Egypt host the AFCON final they lost to Senegal?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 22986 — Egypt (medium) — FAIL
+**Q:** When did Egypt win the Africa Cup of Nations by beating Ghana on penalties?
+**Answer:** 2010
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 22987 — Egypt (medium) — FAIL
+**Q:** When did Egypt, as hosts, reach the AFCON final?
+**Answer:** 2021
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 23008 — Egypt (easy) — FAIL
+**Q:** Where did Egypt's Mohamed Salah score his 2018 World Cup goal?
+**Answer:** Against Saudi Arabia
+**Why it fails:** False: Salah scored TWO goals at the 2018 World Cup (a penalty vs Russia and one vs Saudi Arabia), so 'his only goal of the tournament, vs Saudi Arabia' is wrong.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** He scored vs Russia and vs Saudi Arabia - drop 'only'.
+
+### Row 23012 — Egypt (easy) — FAIL
+**Q:** Which 2021 AFCON final did Egypt lose as hosts?
+**Answer:** Final vs Senegal
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 23028 — Egypt (easy) — FAIL
+**Q:** Which African nation did Egypt defeat in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23086 — Egypt (easy) — FAIL
+**Q:** Which CAF nation, like Egypt in 2026, qualified for the 2018 World Cup?
+**Answer:** Egypt
+**Why it fails:** Self-referential/non-unique: the answer 'Egypt' restates the subject, and Senegal/Nigeria/Morocco (distractors) all also qualified for 2018.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop or rephrase.
+
+### Row 23097 — Egypt (medium) — FAIL
+**Q:** Which CAF team qualified for the 2026 World Cup through CAF qualification like Egypt?
+**Answer:** Egypt
+**Why it fails:** Self-referential/non-unique: the answer 'Egypt' restates the subject, and Morocco/Senegal (distractors) also qualified for 2026.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Drop or rephrase.
+
+### Row 23102 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was a key AFCON player before his 2018 World Cup debut?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23104 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was a key player in the 2021 Africa Cup of Nations?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23105 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key at AFCON before 2018 World Cup qualifying?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23106 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key at AFCON before the 2018 World Cup?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23107 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key at AFCON tournaments?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23108 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key at the 2019 AFCON?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23109 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key at the 2019 Africa Cup of Nations?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23111 — Egypt (medium) — FAIL
+**Q:** Which Egypt attacker was key in AFCON knockout stages before the 2022 World Cup?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23113 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key in the 2017 and 2021 AFCON tournaments?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23114 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key in their 2019 AFCON run?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23115 — Egypt (easy) — FAIL
+**Q:** Which Egypt attacker was key to their 2019 AFCON final run?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23117 — Egypt (easy) — FAIL
+**Q:** Which Egypt club is NOT one of Africa's two biggest, per their league?
+**Answer:** Pyramids FC
+**Why it fails:** Non-unique: two of the four options are NOT among Egypt's two biggest clubs (Al Ahly & Zamalek), so more than one answer is correct.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** Leave only one non-(Ahly/Zamalek) club among the options.
+
+### Row 23120 — Egypt (medium) — FAIL
+**Q:** Which Egypt forward won the Premier League Golden Boot twice before the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23121 — Egypt (medium) — FAIL
+**Q:** Which Egypt forward won the Premier League Golden Boot twice with Liverpool?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23122 — Egypt (medium) — FAIL
+**Q:** Which Egypt forward won the Premier League Golden Boot twice?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23132 — Egypt (easy) — FAIL
+**Q:** Which Egypt manager did NOT win the AFCON title in 2008?
+**Answer:** Carlos Queiroz
+**Why it fails:** Non-unique: three of the four managers did not win the 2008 AFCON (only Hassan Shehata did), so the 'did NOT win' answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Hassan_Shehata
+**Remedy:** Make the distractors all 2008 winners except one.
+
+### Row 23144 — Egypt (easy) — FAIL
+**Q:** Which Egypt midfielder earned over 100 caps before the 2022 World Cup?
+**Answer:** Mohamed Elneny
+**Why it fails:** Non-unique: Ahmed Hassan (a distractor) is a midfielder with 184 caps - also 'over 100 caps' - so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Remove Ahmed Hassan, or add a qualifier (e.g. 'played for Arsenal') that uniquely identifies Elneny.
+
+### Row 23145 — Egypt (easy) — FAIL
+**Q:** Which Egypt midfielder earned over 100 caps for his country?
+**Answer:** Mohamed Elneny
+**Why it fails:** Non-unique: Ahmed Hassan (a distractor) is a midfielder with 184 caps - also 'over 100 caps' - so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Remove Ahmed Hassan, or add a qualifier (e.g. 'played for Arsenal') that uniquely identifies Elneny.
+
+### Row 23146 — Egypt (easy) — FAIL
+**Q:** Which Egypt midfielder had over 100 caps before the 2022 FIFA World Cup?
+**Answer:** Mohamed Elneny
+**Why it fails:** Non-unique: Ahmed Hassan (a distractor) is a midfielder with 184 caps - also 'over 100 caps' - so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Remove Ahmed Hassan, or add a qualifier (e.g. 'played for Arsenal') that uniquely identifies Elneny.
+
+### Row 23147 — Egypt (easy) — FAIL
+**Q:** Which Egypt midfielder had over 100 caps by 2024?
+**Answer:** Mohamed Elneny
+**Why it fails:** Non-unique: Ahmed Hassan (a distractor) is a midfielder with 184 caps - also 'over 100 caps' - so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Remove Ahmed Hassan, or add a qualifier (e.g. 'played for Arsenal') that uniquely identifies Elneny.
+
+### Row 23148 — Egypt (easy) — FAIL
+**Q:** Which Egypt midfielder had over 100 caps for his national team?
+**Answer:** Mohamed Elneny
+**Why it fails:** Non-unique: Ahmed Hassan (a distractor) is a midfielder with 184 caps - also 'over 100 caps' - so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Remove Ahmed Hassan, or add a qualifier (e.g. 'played for Arsenal') that uniquely identifies Elneny.
+
+### Row 23158 — Egypt (easy) — FAIL
+**Q:** Which Egypt opponent lost the 2010 AFCON final on penalties?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23225 — Egypt (medium) — FAIL
+**Q:** Which Egypt player won the Premier League Golden Boot twice before 2022 World Cup qualifiers?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23226 — Egypt (medium) — FAIL
+**Q:** Which Egypt player won the Premier League Golden Boot twice with Liverpool?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23227 — Egypt (medium) — FAIL
+**Q:** Which Egypt player won the Premier League Golden Boot twice?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23229 — Egypt (medium) — FAIL
+**Q:** Which Egypt player won two Premier League Golden Boots with Liverpool?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23246 — Egypt (medium) — FAIL
+**Q:** Which Egypt star won more Premier League Golden Boots before the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23248 — Egypt (medium) — FAIL
+**Q:** Which Egypt star won the Premier League Golden Boot twice?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23249 — Egypt (medium) — FAIL
+**Q:** Which Egypt star won two Premier League Golden Boots?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23252 — Egypt (medium) — FAIL
+**Q:** Which Egypt star's two Premier League Golden Boots are a World Cup-era record for an African player?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23253 — Egypt (medium) — FAIL
+**Q:** Which Egypt star's two Premier League Golden Boots preceded the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23254 — Egypt (easy) — FAIL
+**Q:** Which Egypt team lost a 2021 final to Senegal on penalties?
+**Answer:** The host nation
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 23258 — Egypt (easy) — FAIL
+**Q:** Which Egyptian attacker was a key player at AFCON tournaments during 2010s World Cup cycles?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23259 — Egypt (easy) — FAIL
+**Q:** Which Egyptian attacker was a key player at AFCON tournaments?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23260 — Egypt (easy) — FAIL
+**Q:** Which Egyptian attacker was crucial in AFCONs before their 2018 World Cup qualifiers?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23263 — Egypt (easy) — FAIL
+**Q:** Which Egyptian attacker was key at AFCON tournaments before the 2018 World Cup?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23266 — Egypt (easy) — FAIL
+**Q:** Which Egyptian club had the most CAF Champions League wins before the 2022 World Cup?
+**Answer:** Al Ahly
+**Why it fails:** False/stale: Al Ahly reached 12 CAF Champions League titles only in 2024 (9th 2020, 10th 2021, 11th 2023, 12th 2024). They had NOT won 12 by the 2022 World Cup (10) or by 2023 (11).
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Drop the date qualifier or correct the count for that date.
+
+### Row 23267 — Egypt (easy) — FAIL
+**Q:** Which Egyptian club had won 12 CAF Champions League titles by 2022?
+**Answer:** Al Ahly
+**Why it fails:** False/stale: Al Ahly reached 12 CAF Champions League titles only in 2024 (9th 2020, 10th 2021, 11th 2023, 12th 2024). They had NOT won 12 by the 2022 World Cup (10) or by 2023 (11).
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Drop the date qualifier or correct the count for that date.
+
+### Row 23268 — Egypt (easy) — FAIL
+**Q:** Which Egyptian club had won the most CAF Champions League titles by the 2019 AFCON?
+**Answer:** Al Ahly
+**Why it fails:** False/stale: Al Ahly reached 12 CAF Champions League titles only in 2024 (9th 2020, 10th 2021, 11th 2023, 12th 2024). They had NOT won 12 by the 2022 World Cup (10) or by 2023 (11).
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Drop the date qualifier or correct the count for that date.
+
+### Row 23270 — Egypt (easy) — FAIL
+**Q:** Which Egyptian club has NOT won the CAF Champions League a record 12 times?
+**Answer:** Zamalek
+**Why it fails:** Non-unique: every club except Al Ahly has NOT won 12 CAF Champions League titles, so multiple options are correct.
+**Source:** https://en.wikipedia.org/wiki/Al_Ahly_SC
+**Remedy:** Rephrase to a uniquely identifying fact.
+
+### Row 23297 — Egypt (medium) — FAIL
+**Q:** Which Egyptian forward won the Premier League Golden Boot twice?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23319 — Egypt (easy) — FAIL
+**Q:** Which Egyptian midfielder had over 100 caps before the 2022 World Cup?
+**Answer:** Mohamed Elneny
+**Why it fails:** Non-unique: Ahmed Hassan (a distractor) is a midfielder with 184 caps - also 'over 100 caps' - so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Remove Ahmed Hassan, or add a qualifier (e.g. 'played for Arsenal') that uniquely identifies Elneny.
+
+### Row 23333 — Egypt (medium) — FAIL
+**Q:** Which Egyptian player had also won the Premier League Golden Boot by the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23336 — Egypt (medium) — FAIL
+**Q:** Which Egyptian player had won two Premier League Golden Boots before the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23360 — Egypt (easy) — FAIL
+**Q:** Which Egyptian player was a key attacker at the 2019 Africa Cup of Nations?
+**Answer:** Trézéguet
+**Why it fails:** Non-unique: Mohamed Salah (a distractor) is also a key Egypt attacker at the AFCON, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mahmoud_Hassan_(footballer)
+**Remedy:** Remove Mohamed Salah from the options or specify a trait unique to Trezeguet.
+
+### Row 23365 — Egypt (medium) — FAIL
+**Q:** Which Egyptian player won the Premier League Golden Boot twice with Liverpool?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23366 — Egypt (medium) — FAIL
+**Q:** Which Egyptian player won the Premier League Golden Boot twice?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23367 — Egypt (medium) — FAIL
+**Q:** Which Egyptian player won two Premier League Golden Boots before the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23371 — Egypt (medium) — FAIL
+**Q:** Which Egyptian player's club form earned him two Premier League Golden Boots?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23398 — Egypt (easy) — FAIL
+**Q:** Which Egyptian stadium was NOT the primary venue for the 2019 Africa Cup of Nations?
+**Answer:** Borg El Arab Stadium
+**Why it fails:** Non-unique: Cairo International was the primary 2019 AFCON venue; the other three options were all 'not primary', so more than one answer fits.
+**Source:** https://en.wikipedia.org/wiki/2019_Africa_Cup_of_Nations
+**Remedy:** Leave only one non-primary venue among the options.
+
+### Row 23410 — Egypt (medium) — FAIL
+**Q:** Which Egyptian star twice won the Premier League Golden Boot?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23414 — Egypt (medium) — FAIL
+**Q:** Which Egyptian star won the Premier League Golden Boot twice with Liverpool before the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23417 — Egypt (medium) — FAIL
+**Q:** Which Egyptian's club achievements include two Premier League Golden Boots?
+**Answer:** Mohamed Salah
+**Why it fails:** False/stale count: Mohamed Salah has won the Premier League Golden Boot FOUR times (2017-18, 2018-19, 2021-22, 2024-25) - three of them by the 2022 World Cup - not 'twice'.
+**Source:** https://en.wikipedia.org/wiki/Premier_League_Golden_Boot
+**Remedy:** Update the count (4 total; 3 by 2022) or drop the 'twice/two' framing.
+
+### Row 23475 — Egypt (easy) — FAIL
+**Q:** Which nation beat host nation Egypt in the 2021 AFCON final?
+**Answer:** Senegal
+**Why it fails:** False: Egypt did NOT host the 2021 AFCON - Cameroon hosted it (played Jan-Feb 2022). Egypt hosted the 2019 AFCON. Egypt did lose the 2021 final to Senegal, but not as hosts.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Remove the 'host/as hosts' framing for 2021 (Egypt hosted 2019, not 2021).
+
+### Row 23485 — Egypt (easy) — FAIL
+**Q:** Which nation did Egypt beat in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23486 — Egypt (easy) — FAIL
+**Q:** Which nation did Egypt beat in the 2010 Africa Cup of Nations final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23488 — Egypt (easy) — FAIL
+**Q:** Which nation did Egypt beat on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23490 — Egypt (easy) — FAIL
+**Q:** Which nation did Egypt defeat on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23526 — Egypt (easy) — FAIL
+**Q:** Which nation lost the 2010 AFCON final to Egypt on penalties?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23537 — Egypt (easy) — FAIL
+**Q:** Which nation, like Egypt, qualified for the 2018 World Cup via CAF?
+**Answer:** Nigeria
+**Why it fails:** Non-unique: Nigeria, Senegal, Morocco and Tunisia ALL qualified for the 2018 World Cup via CAF, so every option is correct.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Use a distractor set where only one nation qualified for 2018.
+
+### Row 23550 — Egypt (easy) — FAIL
+**Q:** Which of these AFCON winners, unlike Egypt, has not won it seven times?
+**Answer:** Nigeria
+**Why it fails:** Non-unique: none of Nigeria/Cameroon/Ghana/Ivory Coast has won the AFCON seven times, so multiple options fit 'not seven'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_Africa_Cup_of_Nations
+**Remedy:** Rephrase to a unique fact.
+
+### Row 23552 — Egypt (easy) — FAIL
+**Q:** Which of these clubs is NOT one of the two biggest in Egypt's top league?
+**Answer:** Ismaily SC
+**Why it fails:** Non-unique: two of the four options are NOT among Egypt's two biggest clubs (Al Ahly & Zamalek), so more than one answer is correct.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** Leave only one non-(Ahly/Zamalek) club among the options.
+
+### Row 23599 — Egypt (easy) — FAIL
+**Q:** Which team did Egypt beat in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23600 — Egypt (easy) — FAIL
+**Q:** Which team did Egypt beat on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23601 — Egypt (easy) — FAIL
+**Q:** Which team did Egypt defeat in the 2010 Africa Cup of Nations final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23602 — Egypt (easy) — FAIL
+**Q:** Which team did Egypt defeat on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23619 — Egypt (easy) — FAIL
+**Q:** Which team lost to Egypt in the 2010 Africa Cup of Nations final on penalties?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+### Row 23633 — Egypt (hard) — FAIL
+**Q:** Which World Cup did Egypt's CAF qualification not secure?
+**Answer:** 2022 World Cup
+**Why it fails:** Non-unique: Egypt's CAF qualification also failed for 2010 and 2014 (distractors), not only 2022, so more than one option is correct.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** Use distractors Egypt actually qualified for.
+
+### Row 23648 — Egypt (easy) — FAIL
+**Q:** Who did Egypt beat on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** False: Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties. Egypt's penalty-shootout AFCON final win was 2006 vs Cote d'Ivoire.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Drop 'on penalties' (the 2010 final was 1-0); use 2006 vs Cote d'Ivoire for a penalty-shootout final.
+
+## Germany — rows 27325–29161 (new method) — 65 failed-liveness
+
+### Row 27367 — Germany (easy) — FAIL
+**Q:** At Euro 2012, Germany lost to Italy by what score?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27374 — Germany (medium) — FAIL
+**Q:** At Euro 2024, Germany set a record for a host nation's biggest opening win. What was the score?
+**Answer:** 05-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27384 — Germany (easy) — FAIL
+**Q:** At the 2010 FIFA World Cup, Germany beat England in the round of 16 by what score?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27389 — Germany (easy) — FAIL
+**Q:** At the 2014 FIFA World Cup, what was Germany's semi-final score against Brazil?
+**Answer:** 07-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27406 — Germany (easy) — FAIL
+**Q:** At the 2022 World Cup, Germany led Japan at half-time but lost what final score?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27409 — Germany (easy) — FAIL
+**Q:** At the 2022 World Cup, what was the final score when Germany lost to Japan?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27470 — Germany (easy) — FAIL
+**Q:** Germany beat Argentina 4-0 in 2010. Which rival did they NOT beat 4-0 in a World Cup quarter-final?
+**Answer:** Brazil
+**Why it fails:** Non-unique: Germany did not beat England, France OR Spain 4-0 in a World Cup quarter-final either, so several options equally fit 'not beaten 4-0 in a QF' (only Argentina, 2010).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Pick distractors Germany actually beat 4-0 in a QF.
+
+### Row 27474 — Germany (easy) — FAIL
+**Q:** Germany beat Scotland by what scoreline in the Euro 2024 opener?
+**Answer:** 05-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27475 — Germany (easy) — FAIL
+**Q:** Germany beat Scotland in their Euro 2024 opener by what score?
+**Answer:** 05-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27476 — Germany (easy) — FAIL
+**Q:** Germany beat Uruguay in the 2010 World Cup third-place play-off by what score?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27516 — Germany (hard) — FAIL
+**Q:** Germany won the 2017 Confederations Cup, but which tournament did they also win between 2008 and 2026?
+**Answer:** 2017 Confederations Cup
+**Why it fails:** False/non-unique: Germany also won the 2014 World Cup (a distractor) within 2008-2026, so '2017 Confederations Cup was their only win' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Remove the 2014 World Cup option / fix the premise.
+
+### Row 27523 — Germany (easy) — FAIL
+**Q:** Germany's 2016 semi-final loss to France was 2-0. What was their 2010 World Cup win over England?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27539 — Germany (medium) — FAIL
+**Q:** Germany's Bayern Munich won the UEFA Champions League in which two years?
+**Answer:** 2013 and 2020
+**Why it fails:** Non-unique: Bayern Munich also won the Champions League in 2001, so the distractor pair '2001 and 2013' is equally correct.
+**Source:** https://en.wikipedia.org/wiki/FC_Bayern_Munich
+**Remedy:** Use a distractor set with no Bayern UCL-winning year.
+
+### Row 27543 — Germany (medium) — FAIL
+**Q:** Germany's Euro 2020 exit was earlier than their Euro 2024 exit by how many rounds?
+**Answer:** Two rounds
+**Why it fails:** False: the round of 16 (Euro 2020) and the quarter-final (Euro 2024) are ONE round apart, not two.
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Change the answer to 'one round'.
+
+### Row 27606 — Germany (easy) — FAIL
+**Q:** In Germany's 2026 World Cup campaign, which veteran midfielder did manager Julian Nagelsmann recall to the squad?
+**Answer:** Toni Kroos
+**Why it fails:** False: Toni Kroos retired from football after Euro 2024 and was NOT part of Germany's 2026 World Cup squad/campaign (he came back only for Euro 2024).
+**Source:** https://en.wikipedia.org/wiki/Toni_Kroos
+**Remedy:** Re-anchor Kroos to Euro 2024, or name a player actually in the 2026 squad.
+
+### Row 27609 — Germany (easy) — FAIL
+**Q:** In Germany's Euro 2024 quarter-final loss, which scorer's goal came later?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 27610 — Germany (easy) — FAIL
+**Q:** In Germany's Euro 2024 quarter-final, who scored the winner after Füllkrug's equaliser?
+**Answer:** Mikel Oyarzabal
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 27612 — Germany (easy) — FAIL
+**Q:** In the 2010 World Cup round of 16, Germany beat England by what scoreline?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27617 — Germany (easy) — FAIL
+**Q:** In the 2014 World Cup semi-final, what was Germany's final score against Brazil?
+**Answer:** 07-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27633 — Germany (easy) — FAIL
+**Q:** In which Euro 2024 match did Germany's Niclas Füllkrug score a late equaliser?
+**Answer:** Quarter-final vs Spain
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 27659 — Germany (medium) — FAIL
+**Q:** In which tournament's quarter-final did Germany lose to Spain after a late Füllkrug equaliser?
+**Answer:** Euro 2024
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 27740 — Germany (easy) — FAIL
+**Q:** What was Germany's margin of victory over England in the 2010 World Cup round of 16?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27745 — Germany (easy) — FAIL
+**Q:** What was Germany's winning score against Scotland in Euro 2024's opening match?
+**Answer:** 05-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27746 — Germany (easy) — FAIL
+**Q:** What was Germany's winning scoreline against England in the 2010 World Cup round of 16?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27747 — Germany (easy) — FAIL
+**Q:** What was Germany's winning scoreline in their record-breaking Euro 2024 opener?
+**Answer:** 05-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27749 — Germany (easy) — FAIL
+**Q:** What was the final score when Germany beat England in the 2010 World Cup?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27752 — Germany (easy) — FAIL
+**Q:** What was the final score when Germany lost to Italy in the Euro 2012 semi-final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27753 — Germany (medium) — FAIL
+**Q:** What was the final score when Germany lost to Japan in the 2022 World Cup group stage?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27758 — Germany (medium) — FAIL
+**Q:** What was the score in Germany's Euro 2024 opening win over Scotland?
+**Answer:** 05-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27760 — Germany (medium) — FAIL
+**Q:** What was the score when Germany beat England in the 2010 World Cup round of 16?
+**Answer:** 04-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27766 — Germany (medium) — FAIL
+**Q:** What was the score when Germany lost to Spain at Euro 2024?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date mangling): a scoreline is shown as a date (e.g. '07-Jan'=7-1, '02-Jan'=2-1, '04-Jan'=4-1, '05-Jan'=5-1, '03-Feb'=3-2).
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Restore the real scoreline as the answer.
+
+### Row 27816 — Germany (easy) — FAIL
+**Q:** When did Germany's Niclas Füllkrug equalise against Spain at Euro 2024?
+**Answer:** In the quarter-final
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28093 — Germany (easy) — FAIL
+**Q:** Which German manager recalled Toni Kroos for the 2026 World Cup campaign?
+**Answer:** Julian Nagelsmann
+**Why it fails:** False: Toni Kroos retired from football after Euro 2024 and was NOT part of Germany's 2026 World Cup squad/campaign (he came back only for Euro 2024).
+**Source:** https://en.wikipedia.org/wiki/Toni_Kroos
+**Remedy:** Re-anchor Kroos to Euro 2024, or name a player actually in the 2026 squad.
+
+### Row 28124 — Germany (easy) — FAIL
+**Q:** Which German midfielder did Nagelsmann recall to build his 2026 World Cup team around?
+**Answer:** Toni Kroos
+**Why it fails:** False: Toni Kroos retired from football after Euro 2024 and was NOT part of Germany's 2026 World Cup squad/campaign (he came back only for Euro 2024).
+**Source:** https://en.wikipedia.org/wiki/Toni_Kroos
+**Remedy:** Re-anchor Kroos to Euro 2024, or name a player actually in the 2026 squad.
+
+### Row 28229 — Germany (easy) — FAIL
+**Q:** Which German player equalised late against Spain in the Euro 2024 quarter-final?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28231 — Germany (easy) — FAIL
+**Q:** Which German player equalised late versus Spain at Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28235 — Germany (easy) — FAIL
+**Q:** Which German player had fewer World Cup goals than Miroslav Klose's 16?
+**Answer:** Thomas Müller
+**Why it fails:** Non-unique: every German except Klose scored fewer than his 16 World Cup goals, so Gotze, Podolski and Schweinsteiger all fit 'fewer than 16' too.
+**Source:** https://en.wikipedia.org/wiki/Miroslav_Klose
+**Remedy:** Rephrase to a uniquely identifying fact.
+
+### Row 28291 — Germany (easy) — FAIL
+**Q:** Which German player scored a late Euro 2024 equaliser, like Khedira did in 2014?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28304 — Germany (easy) — FAIL
+**Q:** Which German player scored in the Euro 2024 quarter-final?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28321 — Germany (easy) — FAIL
+**Q:** Which German player scored the late equaliser against Spain at Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28322 — Germany (easy) — FAIL
+**Q:** Which German player scored the late equaliser against Spain in the Euro 2024 quarter-final?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28480 — Germany (easy) — FAIL
+**Q:** Which German stadium was not a Euro 2024 host venue?
+**Answer:** Veltins-Arena Gelsenkirchen
+**Why it fails:** False: the Veltins-Arena in Gelsenkirchen WAS one of the 10 Euro 2024 host venues.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Pick a stadium that genuinely was not a Euro 2024 host.
+
+### Row 28503 — Germany (easy) — FAIL
+**Q:** Which German striker equalised late against Spain at Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28509 — Germany (easy) — FAIL
+**Q:** Which German striker scored a late equaliser vs Spain in Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28571 — Germany (easy) — FAIL
+**Q:** Which Germany forward scored an equaliser vs Spain at Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28609 — Germany (easy) — FAIL
+**Q:** Which Germany manager recalled Toni Kroos for the 2026 World Cup campaign?
+**Answer:** Julian Nagelsmann
+**Why it fails:** False: Toni Kroos retired from football after Euro 2024 and was NOT part of Germany's 2026 World Cup squad/campaign (he came back only for Euro 2024).
+**Source:** https://en.wikipedia.org/wiki/Toni_Kroos
+**Remedy:** Re-anchor Kroos to Euro 2024, or name a player actually in the 2026 squad.
+
+### Row 28684 — Germany (easy) — FAIL
+**Q:** Which Germany player scored a late equaliser against Spain at Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28696 — Germany (easy) — FAIL
+**Q:** Which Germany player scored the late equaliser vs Spain at Euro 2024?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28793 — Germany (easy) — FAIL
+**Q:** Which nation beat Germany in the 2010 World Cup round of 16?
+**Answer:** Germany
+**Why it fails:** Broken/self-referential: Germany were not beaten in the 2010 World Cup round of 16 - they beat England 4-1 - so the answer 'Germany' is nonsensical.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Fix: Germany beat England in the 2010 R16.
+
+### Row 28838 — Germany (easy) — FAIL
+**Q:** Which nation did Germany not defeat in a World Cup semi-final?
+**Answer:** Argentina
+**Why it fails:** Non-unique: Germany did not beat Spain or England in a World Cup semi-final either (they beat only Brazil, 2014), so several options fit 'not beaten in a WC SF'.
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28839 — Germany (easy) — FAIL
+**Q:** Which nation did Germany NOT finish behind in their 2022 World Cup group?
+**Answer:** Costa Rica
+**Why it fails:** Non-unique: Germany did not finish behind Costa Rica OR Brazil in their 2022 group (Brazil was not in Group E), so more than one option fits.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use only in-group teams as distractors.
+
+### Row 28840 — Germany (easy) — FAIL
+**Q:** Which nation did Germany NOT lose to in a knockout match at Euro 2016?
+**Answer:** Argentina
+**Why it fails:** Non-unique: at Euro 2016 Germany lost a knockout only to France; they did not lose to Italy or Spain either, so several options fit 'not lost to'.
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28867 — Germany (easy) — FAIL
+**Q:** Which nation has won more World Cup titles than Germany's four?
+**Answer:** Brazil and Italy
+**Why it fails:** False: Italy has 4 World Cup titles (equal to Germany, not more); only Brazil (5) has more, so 'Brazil and Italy' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** The only nation with more than Germany's 4 is Brazil (5).
+
+### Row 28906 — Germany (easy) — FAIL
+**Q:** Which opponent did Germany NOT face in a 2024 quarter-final?
+**Answer:** Italy
+**Why it fails:** Non-unique: Germany did not face France or England in the Euro 2024 quarter-final either (only Spain), so several options fit 'did NOT face'.
+**Source:** https://en.wikipedia.org/wiki/Germany_national_football_team
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28916 — Germany (easy) — FAIL
+**Q:** Which Spain player scored the late winner against Germany in the Euro 2024 quarter-final?
+**Answer:** Mikel Oyarzabal
+**Why it fails:** False: Spain's Euro 2024 quarter-final winner v Germany was Mikel Merino (119'), not Mikel Oyarzabal (the equaliser was Wirtz, not Fullkrug).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Change the scorer to Mikel Merino.
+
+### Row 28920 — Germany (easy) — FAIL
+**Q:** Which Spain player scored the winning goal in the Euro 2024 quarter-final against Germany?
+**Answer:** Mikel Oyarzabal
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 28981 — Germany (easy) — FAIL
+**Q:** Which team did Germany NOT beat 8-0 in 2022 World Cup qualifying?
+**Answer:** San Marino
+**Why it fails:** Non-unique: Germany's only 8-0 win in 2022 qualifying was over Liechtenstein, so San Marino, Armenia and Iceland all equally fit 'not beaten 8-0'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28982 — Germany (easy) — FAIL
+**Q:** Which team did Germany not beat by 8+ goals in their 2022 World Cup qualifying campaign?
+**Answer:** North Macedonia
+**Why it fails:** Non-unique: Germany beat only Liechtenstein 8-0 in 2022 qualifying, so Armenia and Iceland (and North Macedonia) all fit 'not beaten by 8+'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28983 — Germany (easy) — FAIL
+**Q:** Which team did Germany NOT beat in a 2014 World Cup semi-final?
+**Answer:** Argentina
+**Why it fails:** Non-unique: Germany's only 2014 WC semi-final win was over Brazil, so Argentina, France and Italy all equally fit 'not beaten in a 2014 SF'.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28985 — Germany (easy) — FAIL
+**Q:** Which team did Germany NOT defeat by 6+ goals at the 2014 World Cup?
+**Answer:** Argentina
+**Why it fails:** Non-unique: at the 2014 World Cup Germany beat only Brazil by 6+ (7-1), so Argentina, Portugal and France all fit 'not beaten by 6+'.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup
+**Remedy:** Rephrase to a unique fact.
+
+### Row 28986 — Germany (medium) — FAIL
+**Q:** Which team did Germany NOT lose to in their 2018 World Cup group stage?
+**Answer:** Sweden
+**Why it fails:** Non-unique: Germany beat Sweden in the 2018 group but also did not face Japan there (Japan was 2022), so more than one option fits 'not lost to'.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Use only 2018 group opponents as distractors.
+
+### Row 29071 — Germany (easy) — FAIL
+**Q:** Which veteran did Julian Nagelsmann recall for Germany's 2026 World Cup squad?
+**Answer:** Toni Kroos
+**Why it fails:** False: Toni Kroos retired from football after Euro 2024 and was NOT part of Germany's 2026 World Cup squad/campaign (he came back only for Euro 2024).
+**Source:** https://en.wikipedia.org/wiki/Toni_Kroos
+**Remedy:** Re-anchor Kroos to Euro 2024, or name a player actually in the 2026 squad.
+
+### Row 29072 — Germany (easy) — FAIL
+**Q:** Which veteran midfielder did Julian Nagelsmann recall for Germany's 2026 World Cup campaign?
+**Answer:** Toni Kroos
+**Why it fails:** False: Toni Kroos retired from football after Euro 2024 and was NOT part of Germany's 2026 World Cup squad/campaign (he came back only for Euro 2024).
+**Source:** https://en.wikipedia.org/wiki/Toni_Kroos
+**Remedy:** Re-anchor Kroos to Euro 2024, or name a player actually in the 2026 squad.
+
+### Row 29119 — Germany (easy) — FAIL
+**Q:** Who scored Germany's late goal in their Euro 2024 quarter-final?
+**Answer:** Niclas Füllkrug
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 29123 — Germany (easy) — FAIL
+**Q:** Who scored Spain's winning goal against Germany in the Euro 2024 quarter-final?
+**Answer:** Mikel Oyarzabal
+**Why it fails:** False: in the Euro 2024 quarter-final (Spain 2-1 Germany, a.e.t.) Germany's equaliser was scored by Florian Wirtz (89'), NOT Niclas Fullkrug; Spain's winner was Mikel Merino (119'), not Oyarzabal.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_knockout_phase
+**Remedy:** Correct the scorer - Wirtz equalised, Merino won it.
+
+### Row 32570 — Italy (medium) — FAIL
+**Q:** After Euro 2020, Italy's FIFA ranking was what number?
+**Answer:** 7th
+**Why it fails:** Wrong answer: after winning Euro 2020 Italy rose to 5th in the FIFA ranking (Aug 2021), not 7th. 7th was their PRE-tournament rank.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32571 — Italy (medium) — FAIL
+**Q:** After failing in 2018 and 2022, which manager led Italy to 2026 World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False premise: Italy did NOT qualify for the 2026 World Cup (lost the UEFA playoff final to Bosnia 1-1, 4-1 pens, Mar 2026 - third straight WC missed). Also Spalletti was sacked in June 2025; Gattuso led the failed playoff.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026; no manager led them there.
+
+### Row 32575 — Italy (medium) — FAIL
+**Q:** After Italy won Euro 2020, what FIFA ranking did they achieve?
+**Answer:** 7th
+**Why it fails:** Wrong answer: Italy reached 5th after Euro 2020 (Aug 2021), not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32576 — Italy (medium) — FAIL
+**Q:** After Italy won Euro 2020, what was their new FIFA ranking?
+**Answer:** 7th
+**Why it fails:** Wrong answer: Italy's new ranking after Euro 2020 was 5th, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32586 — Italy (medium) — FAIL
+**Q:** After Italy's Euro 2024, when did Roberto Mancini resign?
+**Answer:** Aug-23
+**Why it fails:** Temporal contradiction: Mancini resigned in August 2023 - BEFORE Euro 2024 (June 2024), which he did not even manage. The 'After Italy's Euro 2024' framing is false.
+**Source:** https://en.wikipedia.org/wiki/Roberto_Mancini
+**Remedy:** Drop the 'after Euro 2024' framing (resignation was Aug 2023).
+
+### Row 32592 — Italy (medium) — FAIL
+**Q:** After which major tournament did Italy's Bonucci and Chiellini retire?
+**Answer:** Euro 2020/2022
+**Why it fails:** Inaccurate: Chiellini retired internationally after the June 2022 Finalissima, but Bonucci kept playing for Italy until June 2023 (Nations League). They did not both retire 'after Euro 2020/2022'.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Separate the two - Bonucci's last cap was June 2023, not after Euro 2020.
+
+### Row 32594 — Italy (medium) — FAIL
+**Q:** After which tournament did Italy's Bonucci & Chiellini retire internationally?
+**Answer:** After Euro 2020/2022
+**Why it fails:** Inaccurate: Bonucci continued for Italy until June 2023 (his last cap, Nations League v Spain); only Chiellini retired after the 2022 Finalissima. The pair did not both retire after Euro 2020/2022.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Don't group them; Bonucci retired in 2023.
+
+### Row 32597 — Italy (medium) — FAIL
+**Q:** After winning Euro 2020, Italy reached which FIFA ranking?
+**Answer:** 7th
+**Why it fails:** Wrong answer: Italy reached 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32598 — Italy (medium) — FAIL
+**Q:** After winning Euro 2020, Italy's FIFA ranking rose to which position?
+**Answer:** 7th
+**Why it fails:** Wrong answer: Italy rose to 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32599 — Italy (medium) — FAIL
+**Q:** After winning Euro 2020, what FIFA ranking did Italy reach?
+**Answer:** 7th
+**Why it fails:** Wrong answer: Italy reached 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32600 — Italy (hard) — FAIL
+**Q:** After winning Euro 2020, when did Italy's FIFA ranking climb to 7th?
+**Answer:** After Euro 2020
+**Why it fails:** False premise: after Euro 2020 Italy climbed to 5th, not 7th (7th was the pre-tournament rank), so the 'climb to 7th' the question asks about did not happen post-Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Fix the rank to 5th.
+
+### Row 32606 — Italy (medium) — FAIL
+**Q:** At Euro 2020, how many clean sheets did Italy keep?
+**Answer:** 4
+**Why it fails:** Wrong answer: Italy kept 3 clean sheets at Euro 2020 (Turkey, Switzerland, Wales), not 4 - they conceded in all four knockout matches.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Change answer to 3.
+
+### Row 32607 — Italy (medium) — FAIL
+**Q:** At Euro 2020, how many goals did Italy concede in total?
+**Answer:** Three goals
+**Why it fails:** Wrong answer: Italy conceded 4 goals across Euro 2020 (Austria, Belgium, Spain, England), not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Change answer to four goals.
+
+### Row 32610 — Italy (hard) — FAIL
+**Q:** At Euro 2020, Italy's penalty shootout win over Spain ended with what score?
+**Answer:** 04-Feb
+**Why it fails:** Excel date-corruption: the answer renders as '04-Feb' instead of the score 4-2. The cell no longer reads as a scoreline.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore answer to '4-2 on penalties' and store as text; flag for a dataset date-corruption sweep.
+
+### Row 32622 — Italy (easy) — FAIL
+**Q:** At the 2026 FIFA World Cup qualifiers, which Italian stadium used has the smallest capacity?
+**Answer:** Juventus Stadium
+**Why it fails:** False premise: Italy did NOT use the Juventus Stadium for 2026 qualifiers. Their 2026 home matches were at Reggio Emilia, Bergamo and Udine (playoff also Bergamo/Rome). The stadium list is fabricated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use Italy's actual 2026 venues (Bergamo, Udine, Reggio Emilia).
+
+### Row 32627 — Italy (medium) — FAIL
+**Q:** At which 2021 tournament did Italy concede only 3 goals?
+**Answer:** Euro 2020
+**Why it fails:** Wrong: Italy conceded 4 goals at Euro 2020 (Austria, Belgium, Spain, England), not 3. The 'only 3 goals' premise/explanation is false.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct the figure to 4 goals conceded.
+
+### Row 32636 — Italy (medium) — FAIL
+**Q:** At which tournament did Italy concede just three goals?
+**Answer:** Euro 2020
+**Why it fails:** Wrong: Italy conceded 4 goals at Euro 2020, not 3.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals conceded.
+
+### Row 32638 — Italy (medium) — FAIL
+**Q:** At which tournament did Italy's defense concede only 3 goals?
+**Answer:** Euro 2020
+**Why it fails:** Wrong: Italy conceded 4 goals at Euro 2020, not 3.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals conceded.
+
+### Row 32639 — Italy (medium) — FAIL
+**Q:** At which tournament did Italy's Jorginho miss two penalties?
+**Answer:** Euro 2020
+**Why it fails:** Wrong tournament: Jorginho missed only ONE penalty at Euro 2020 (the final shootout v England) - he scored the SF winner v Spain. His TWO costly misses were against Switzerland in 2022 WC qualifying, which contributed to Italy missing the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change answer to the 2022 World Cup qualifiers.
+
+### Row 32651 — Italy (easy) — FAIL
+**Q:** During Italy's Euro 2020 run, when did they keep their fourth clean sheet?
+**Answer:** In the final
+**Why it fails:** False: Italy kept only 3 clean sheets at Euro 2020 (all in the group stage); the final v England was 1-1, NOT a clean sheet, so there was no 'fourth clean sheet in the final'.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Remove - Italy had 3 clean sheets and conceded in the final.
+
+### Row 32652 — Italy (easy) — FAIL
+**Q:** During Juventus's nine-year Serie A reign, which Italian club did NOT win the title?
+**Answer:** AC Milan
+**Why it fails:** Non-unique: during Juventus's nine straight titles NONE of Inter, Roma, Napoli or AC Milan won Serie A, so every option satisfies 'did NOT win'. The answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Serie_A
+**Remedy:** Rework so only one option is a non-winner.
+
+### Row 32653 — Italy (hard) — FAIL
+**Q:** During which World Cup qualifying campaign did Italy play home matches at multiple venues?
+**Answer:** 2026 World Cup qualifiers
+**Why it fails:** Non-unique/soft: Italy rotates home venues nearly every campaign, so 'multiple venues' is not unique to 2026. (Their actual 2026 venues were Bergamo, Udine, Reggio Emilia, not a distinguishing trait.)
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Make the venue fact specific and unique.
+
+### Row 32658 — Italy (medium) — FAIL
+**Q:** For how many consecutive World Cups did Italy fail to qualify starting in 2018?
+**Answer:** Two
+**Why it fails:** Outdated as of 2026: starting in 2018 Italy have now missed THREE consecutive World Cups (2018, 2022, 2026) after losing the playoff final to Bosnia. The answer 'Two' is no longer correct.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Change answer to Three.
+
+### Row 32663 — Italy (easy) — FAIL
+**Q:** For Italy's 2026 World Cup qualifiers, in which four cities have they played home matches?
+**Answer:** Rome, Milan, Turin, Naples
+**Why it fails:** False: Italy's 2026 qualifying home matches were NOT in Rome, Milan, Turin and Naples - they were played in Reggio Emilia, Bergamo and Udine (with Rome only for the playoff). The four-city list is fabricated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities (Bergamo, Udine, Reggio Emilia).
+
+### Row 32666 — Italy (easy) — FAIL
+**Q:** For Italy's 2026 World Cup qualifiers, which four cities have hosted home matches?
+**Answer:** Rome, Milan, Turin, Naples
+**Why it fails:** False: Italy's 2026 qualifier home cities were Bergamo, Udine and Reggio Emilia, not Rome/Milan/Turin/Naples.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 32667 — Italy (easy) — FAIL
+**Q:** For Italy's 2026 World Cup qualifiers, which stadium had the smallest capacity?
+**Answer:** Juventus Stadium
+**Why it fails:** False premise: the Juventus Stadium was not a 2026-qualifier venue for Italy (they used Bergamo, Udine, Reggio Emilia).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use Italy's actual 2026 venues.
+
+### Row 32671 — Italy (easy) — FAIL
+**Q:** For Italy's 2026 World Cup squad, which league does goalkeeper Gianluigi Donnarumma play in?
+**Answer:** Ligue 1
+**Why it fails:** Outdated: Donnarumma left PSG for Manchester City in September 2025, so he plays in the Premier League, not Ligue 1.
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Donnarumma
+**Remedy:** Change answer to Premier League (Manchester City).
+
+### Row 32675 — Italy (easy) — FAIL
+**Q:** For the 2010 World Cup, how did Italy qualify compared to 2014?
+**Answer:** As European champions
+**Why it fails:** False: Italy did NOT qualify for 2010 'as European champions' - they were 2006 WORLD champions (and were knocked out of Euro 2008 in the QF). There was no automatic berth; they qualified by winning their UEFA group.
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Correct to 'by winning their qualifying group' (defending WORLD champions, not auto-qualified).
+
+### Row 32681 — Italy (hard) — FAIL
+**Q:** For which FIFA World Cup qualifiers has Italy used Juventus Stadium?
+**Answer:** 2026 World Cup qualifiers
+**Why it fails:** False premise: Italy did not use the Juventus Stadium for the 2026 qualifiers (home games were Bergamo, Udine, Reggio Emilia).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the Juventus Stadium claim for 2026.
+
+### Row 32688 — Italy (medium) — FAIL
+**Q:** For which World Cup did Italy use multiple home venues like Rome and Milan?
+**Answer:** 2026 World Cup
+**Why it fails:** False: Italy's 2026 home venues were Bergamo, Udine and Reggio Emilia - not 'Rome and Milan'. The example cities are wrong.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 32693 — Italy (easy) — FAIL
+**Q:** How did Italy qualify for the 2010 FIFA World Cup?
+**Answer:** As European champions
+**Why it fails:** False: Italy were not 'reigning European champions from Euro 2008' (they were eliminated in the Euro 2008 QF). They were the 2006 World champions and qualified for 2010 by winning their group - there is no auto-qualification for past champions.
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Correct to 'by winning their qualifying group'.
+
+### Row 32705 — Italy (medium) — FAIL
+**Q:** How many cities host Italy's FIFA World Cup qualifiers?
+**Answer:** Four
+**Why it fails:** False: the named host cities (Rome, Milan, Turin, Naples) are wrong for the 2026 qualifiers - Italy played home games in Bergamo, Udine and Reggio Emilia.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 32708 — Italy (medium) — FAIL
+**Q:** How many consecutive FIFA World Cups did Italy fail to qualify for after 2014?
+**Answer:** Two World Cups
+**Why it fails:** Outdated as of 2026: after 2014 Italy have now missed THREE consecutive World Cups (2018, 2022, 2026), not two.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Change answer to Three.
+
+### Row 32710 — Italy (medium) — FAIL
+**Q:** How many consecutive FIFA World Cups did Italy miss after 2014?
+**Answer:** Two
+**Why it fails:** Outdated as of 2026: after 2014 Italy have now missed three consecutive World Cups (2018, 2022, 2026), not two.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Change answer to Three.
+
+### Row 32712 — Italy (hard) — FAIL
+**Q:** How many consecutive Serie A titles had Juventus won by Italy's 2018 World Cup qualification?
+**Answer:** Seven consecutive titles
+**Why it fails:** Wrong count: by Italy's 2018 WC qualifying campaign (ending Nov 2017) Juventus had won SIX straight Serie A titles (2011-12 to 2016-17); the seventh (2017-18) was not clinched until May 2018.
+**Source:** https://en.wikipedia.org/wiki/Serie_A
+**Remedy:** Change answer to six consecutive titles.
+
+### Row 32713 — Italy (medium) — FAIL
+**Q:** How many consecutive World Cups did Italy fail to qualify for?
+**Answer:** Two consecutive World Cups
+**Why it fails:** Outdated as of 2026: Italy have now failed to qualify for THREE consecutive World Cups (2018, 2022, 2026), not two.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Change answer to three consecutive World Cups.
+
+### Row 32716 — Italy (medium) — FAIL
+**Q:** How many goals did Italy concede at Euro 2020?
+**Answer:** Three goals
+**Why it fails:** Wrong: Italy conceded 4 goals at Euro 2020 (Austria, Belgium, Spain, England), not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Change answer to four goals.
+
+### Row 32717 — Italy (medium) — FAIL
+**Q:** How many goals did Italy concede in 7 Euro 2020 matches?
+**Answer:** Three goals
+**Why it fails:** Wrong: Italy conceded 4 goals across their 7 Euro 2020 matches, not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Change answer to four goals.
+
+### Row 32718 — Italy (medium) — FAIL
+**Q:** How many goals did Italy concede in their seven Euro 2020 matches?
+**Answer:** Three
+**Why it fails:** Wrong: Italy conceded 4 goals at Euro 2020, not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Change answer to four.
+
+### Row 32722 — Italy (medium) — FAIL
+**Q:** How many goals has Italian striker Ciro Immobile scored for his national team?
+**Answer:** 14 goals
+**Why it fails:** Wrong total: Immobile scored 17 goals for Italy (in 57 caps), not 14.
+**Source:** https://en.wikipedia.org/wiki/Ciro_Immobile
+**Remedy:** Change answer to 17 goals.
+
+### Row 32732 — Italy (medium) — FAIL
+**Q:** How many of Italy's Euro 2020 heroes retired internationally by 2022?
+**Answer:** Two
+**Why it fails:** Inaccurate: only Chiellini retired by 2022 (Finalissima, June 2022); Bonucci kept playing for Italy until June 2023. They did not both retire 'by 2022'.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Don't group them; Bonucci's last cap was June 2023.
+
+### Row 32752 — Italy (hard) — FAIL
+**Q:** In Euro 2020, what was Italy's penalty shootout score vs Spain?
+**Answer:** 04-Feb
+**Why it fails:** Excel date-corruption: answer renders as '04-Feb' instead of the score 4-2.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '4-2' as text; flag for a date-corruption sweep.
+
+### Row 32754 — Italy (medium) — FAIL
+**Q:** In Italy's 2016 Euro quarter-final, what was the final score after extra time?
+**Answer:** 01-Jan
+**Why it fails:** Excel date-corruption: answer renders as '01-Jan' instead of the score 1-1 (Italy 1-1 Germany, Euro 2016 QF).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Restore '1-1' as text; flag for a date-corruption sweep.
+
+### Row 32762 — Italy (easy) — FAIL
+**Q:** In Italy's 2026 World Cup qualifiers, which manager chose the 3-5-2 formation?
+**Answer:** Luciano Spalletti
+**Why it fails:** Unsupported/false: Spalletti managed only Italy's OPENING 2026 qualifier before being sacked (June 2025); Gattuso ran the rest of the campaign. Spalletti is associated with 4-3-3, not a 3-5-2.
+**Source:** https://en.wikipedia.org/wiki/Luciano_Spalletti
+**Remedy:** Drop - no clear 3-5-2 manager ran Italy's 2026 qualifiers; Conte (the 3-5-2 example) was not involved.
+
+### Row 32764 — Italy (easy) — FAIL
+**Q:** In Italy's 2026 World Cup qualifiers, which stadium had a capacity near 41,500?
+**Answer:** Juventus Stadium
+**Why it fails:** False premise: the ~41,500-capacity Juventus Stadium was NOT one of Italy's 2026 qualifier venues. Italy used Reggio Emilia (~21k), Bergamo (~21k), Udine (~25k) and San Siro Milan (~75k).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual 2026 venue.
+
+### Row 32766 — Italy (easy) — FAIL
+**Q:** In Italy's Euro 2020 quarter-final win over Belgium, what was the final score?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer renders as '02-Jan' instead of the score 2-1 (Italy 2-1 Belgium, Euro 2020 QF).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '2-1' as text; flag for a date-corruption sweep.
+
+### Row 32770 — Italy (easy) — FAIL
+**Q:** In the Euro 2020 final shootout, Italy beat England by what penalty score?
+**Answer:** 03-Feb
+**Why it fails:** Excel date-corruption: answer renders as '03-Feb' instead of the score 3-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore '3-2' as text; flag for a date-corruption sweep.
+
+### Row 32771 — Italy (easy) — FAIL
+**Q:** In the Euro 2020 final, Italy beat England on penalties by what score?
+**Answer:** 03-Feb
+**Why it fails:** Excel date-corruption: answer renders as '03-Feb' instead of the score 3-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore '3-2' as text; flag for a date-corruption sweep.
+
+### Row 32773 — Italy (hard) — FAIL
+**Q:** In the Euro 2020 semi-final, what was Italy's penalty shootout score against Spain?
+**Answer:** 04-Feb
+**Why it fails:** Excel date-corruption: answer renders as '04-Feb' instead of the score 4-2 (Italy beat Spain 4-2 on pens).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '4-2' as text; flag for a date-corruption sweep.
+
+### Row 32779 — Italy (easy) — FAIL
+**Q:** In which city did Italy NOT host a 2026 World Cup qualifier?
+**Answer:** Florence
+**Why it fails:** Non-unique and wrong explanation: Italy hosted 2026 qualifiers in Reggio Emilia, Bergamo, Udine and Milan - NOT Rome or Turin, so Rome and Turin (as well as Florence) all satisfy 'did NOT host'. The explanation that they played in Rome/Milan/Turin is false.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Make the non-hosting city unique and fix the host list.
+
+### Row 32780 — Italy (easy) — FAIL
+**Q:** In which city did Italy play a 2026 World Cup qualifier in 2023?
+**Answer:** Rome
+**Why it fails:** False premise: there were no 2026 World Cup qualifiers in 2023 (UEFA's began in 2025; Italy's first was June 2025). Rome was also not a group-stage host.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove - no 2026 qualifier was played in 2023.
+
+### Row 32791 — Italy (hard) — FAIL
+**Q:** In which FIFA World Cup qualifying campaign did Italy's Gianluigi Buffon earn his record 176th cap?
+**Answer:** 2018 World Cup qualifiers
+**Why it fails:** False: Buffon's record-setting final cap was a 2018 friendly under Mancini, NOT during the 2018 WC qualifying campaign. His last competitive game was the Nov-2017 Sweden playoff, but he added friendly caps in 2018.
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Buffon
+**Remedy:** Re-anchor to his 2018 friendlies, or reword.
+
+### Row 32792 — Italy (hard) — FAIL
+**Q:** In which FIFA World Cup qualifying cycle did Italy use venues in Rome, Milan, Turin, and Naples?
+**Answer:** 2026 World Cup qualifiers
+**Why it fails:** False: Italy's 2026 qualifier venues were Reggio Emilia, Bergamo, Udine and San Siro Milan - not Rome, Turin and Naples.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 32795 — Italy (easy) — FAIL
+**Q:** In which Italian city do Italy NOT play FIFA World Cup home matches?
+**Answer:** Florence
+**Why it fails:** False/non-unique: Italy do not have a fixed Rome/Milan/Turin/Naples home policy - they rotate widely (recently Bergamo, Udine, Reggio Emilia, and they have used Florence's Stadio Franchi too). The 'not Florence' answer is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Drop the false four-city premise.
+
+### Row 32796 — Italy (medium) — FAIL
+**Q:** In which major tournament did Italy host their opener at Rome's Stadio Olimpico?
+**Answer:** UEFA Euro 2020
+**Why it fails:** Non-unique: Italy also opened the 1990 World Cup at Rome's Stadio Olimpico (1-0 v Austria), so both 'Euro 2020' and 'FIFA World Cup 1990' satisfy the question.
+**Source:** https://en.wikipedia.org/wiki/1990_FIFA_World_Cup
+**Remedy:** Make the answer unique (only one tournament should fit).
+
+### Row 32802 — Italy (medium) — FAIL
+**Q:** In which tournament did Italy keep 4 clean sheets including the final?
+**Answer:** Euro 2020
+**Why it fails:** False: Italy kept 3 clean sheets at Euro 2020 (all in the group), and the final v England was 1-1 - NOT a clean sheet. There were not 4 clean sheets 'including the final'.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets (none in the final).
+
+### Row 32803 — Italy (medium) — FAIL
+**Q:** In which tournament did Italy's defense concede only three goals in seven matches?
+**Answer:** Euro 2020
+**Why it fails:** False: Italy conceded 4 goals at Euro 2020, not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals.
+
+### Row 32807 — Italy (medium) — FAIL
+**Q:** In which tournament did Italy's Jorginho miss two penalties but still win?
+**Answer:** Euro 2020
+**Why it fails:** False: Jorginho missed only ONE penalty at Euro 2020 (the final shootout); he scored the SF winner v Spain. His TWO misses were v Switzerland in 2022 WC qualifying (which Italy did NOT win).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Re-anchor the two misses to 2022 qualifying (and that campaign was a failure).
+
+### Row 32808 — Italy (medium) — FAIL
+**Q:** In which tournament did Italy's Jorginho miss two penalties?
+**Answer:** Euro 2020
+**Why it fails:** False: Jorginho missed only one penalty at Euro 2020 (the final). His two penalty misses were against Switzerland in 2022 WC qualifying.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change answer to the 2022 WC qualifiers.
+
+### Row 32858 — Italy (medium) — FAIL
+**Q:** In which year did Italy use Rome, Milan, Turin, and Naples for World Cup qualifiers?
+**Answer:** 2026 qualifiers
+**Why it fails:** False: Italy's 2026 qualifier venues were Reggio Emilia, Bergamo, Udine and San Siro Milan - not Rome, Turin and Naples.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 32901 — Italy (easy) — FAIL
+**Q:** Italy beat Spain on penalties in the Euro 2020 semi-final by what score?
+**Answer:** 04-Feb
+**Why it fails:** Excel date-corruption: answer renders as '04-Feb' instead of the score 4-2.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '4-2' as text; flag for a date-corruption sweep.
+
+### Row 32902 — Italy (easy) — FAIL
+**Q:** Italy beat Türkiye 3-0 to open Euro 2020. Which other Euro 2020 knockout match ended 3-0?
+**Answer:** Italy vs Türkiye
+**Why it fails:** Broken/self-referential: the question asks for another KNOCKOUT match that ended 3-0, but the answer 'Italy vs Türkiye' is the group-stage opener already named in the stem (and not a knockout match). No other Euro 2020 match Italy played ended 3-0.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Remove - the premise has no valid unique answer.
+
+### Row 32906 — Italy (medium) — FAIL
+**Q:** Italy conceded how many goals in their 7 Euro 2020 matches?
+**Answer:** 3 goals
+**Why it fails:** False: Italy conceded 4 goals across their 7 Euro 2020 matches, not 3.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals.
+
+### Row 32911 — Italy (easy) — FAIL
+**Q:** Italy hosted a 2026 World Cup qualifier at which Turin stadium?
+**Answer:** Allianz Stadium
+**Why it fails:** False premise: Italy did NOT host any 2026 qualifier in Turin/Allianz Stadium. Their venues were Reggio Emilia, Bergamo, Udine and San Siro Milan.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the Turin/Allianz claim.
+
+### Row 32925 — Italy (medium) — FAIL
+**Q:** Italy reached what FIFA ranking after winning Euro 2020?
+**Answer:** 7th
+**Why it fails:** Wrong: Italy rose to 5th after Euro 2020 (Aug 2021), not 7th (7th was the pre-tournament rank).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32932 — Italy (hard) — FAIL
+**Q:** Italy's 2021 Euro final penalty shootout win over England finished what score?
+**Answer:** 03-Feb
+**Why it fails:** Excel date-corruption: answer renders as '03-Feb' instead of the score 3-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore '3-2' as text; flag for a sweep.
+
+### Row 32934 — Italy (medium) — FAIL
+**Q:** Italy's 2022 playoff loss followed a 2018 failure. How many consecutive World Cups did Italy miss?
+**Answer:** Two World Cups
+**Why it fails:** Outdated as of 2026: Italy have now missed THREE consecutive World Cups (2018, 2022, 2026), not two.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Change answer to three.
+
+### Row 32939 — Italy (medium) — FAIL
+**Q:** Italy's 2026 World Cup qualifiers have been played across how many different cities?
+**Answer:** Four
+**Why it fails:** Wrong explanation: although Italy did use four cities, they were Reggio Emilia, Bergamo, Udine and Milan - NOT Rome, Milan, Turin, Naples as the explanation states.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Fix the explanation's city list (keep the count of four).
+
+### Row 32942 — Italy (medium) — FAIL
+**Q:** Italy's 37-match unbeaten run ended before which UEFA tournament?
+**Answer:** UEFA Euro 2020
+**Why it fails:** False: the 37-match run did NOT end before Euro 2020 - it continued THROUGH Euro 2020 (won July 2021) and ended in October 2021 (1-2 loss to Spain in the Nations League). It ended before Euro 2024, not Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Change answer to UEFA Euro 2024.
+
+### Row 32953 — Italy (medium) — FAIL
+**Q:** Italy's Gianluigi Buffon retired after 2018 qualification failure. Which goalkeeper also retired after a World Cup qualification failure?
+**Answer:** Gianluigi Buffon
+**Why it fails:** Self-referential: the stem already names Buffon as the keeper who retired after the 2018 failure, then the answer is Buffon again. The 'other goalkeeper' answer should not be the same player.
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Buffon
+**Remedy:** Replace with a genuinely different keeper, or rework the question.
+
+### Row 32957 — Italy (medium) — FAIL
+**Q:** To which FIFA ranking did Italy climb after winning Euro 2020?
+**Answer:** 7th
+**Why it fails:** Wrong: Italy climbed to 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32958 — Italy (easy) — FAIL
+**Q:** To which ranking did Italy rise after winning Euro 2020?
+**Answer:** 7th
+**Why it fails:** Wrong: Italy rose to 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32959 — Italy (easy) — FAIL
+**Q:** Under which manager did Italy qualify for the 2026 World Cup?
+**Answer:** Luciano Spalletti
+**Why it fails:** False premise: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia, 4-1 pens). No manager 'led them to 2026 qualification'; Spalletti was also sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 32970 — Italy (easy) — FAIL
+**Q:** What scoreline did Italy beat Belgium by at Euro 2020?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer renders as '02-Jan' instead of the score 2-1.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '2-1' as text; flag for a sweep.
+
+### Row 32972 — Italy (medium) — FAIL
+**Q:** What was Italy's exact score against Belgium in the Euro 2020 quarter-final?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer renders as '02-Jan' instead of the score 2-1.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '2-1'; flag for a sweep.
+
+### Row 32973 — Italy (hard) — FAIL
+**Q:** What was Italy's exact scoreline against England in the 2014 World Cup group stage?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer renders as '02-Jan' instead of the score 2-1 (Italy 2-1 England, 2014).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_FIFA_World_Cup
+**Remedy:** Restore '2-1'; flag for a sweep.
+
+### Row 32974 — Italy (medium) — FAIL
+**Q:** What was Italy's FIFA ranking after winning Euro 2020?
+**Answer:** 7th
+**Why it fails:** Wrong: Italy's ranking after Euro 2020 was 5th, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 32978 — Italy (easy) — FAIL
+**Q:** What was Italy's penalty score in the Euro 2020 final shootout?
+**Answer:** 03-Feb
+**Why it fails:** Excel date-corruption: answer renders as '03-Feb' instead of the score 3-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore '3-2'; flag for a sweep.
+
+### Row 32981 — Italy (easy) — FAIL
+**Q:** What was Italy's quarter-final score against Belgium at Euro 2020?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer renders as '02-Jan' instead of the score 2-1.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '2-1'; flag for a sweep.
+
+### Row 32988 — Italy (easy) — FAIL
+**Q:** What was the final score when Italy beat Belgium in the Euro 2020 quarter-final?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer renders as '02-Jan' instead of the score 2-1.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Restore '2-1'; flag for a sweep.
+
+### Row 33004 — Italy (medium) — FAIL
+**Q:** When did Italy concede only three goals in seven matches?
+**Answer:** At Euro 2020
+**Why it fails:** False: Italy conceded 4 goals in their seven Euro 2020 matches, not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to four goals.
+
+### Row 33010 — Italy (medium) — FAIL
+**Q:** When did Italy first host a FIFA World Cup qualifier at Juventus Stadium?
+**Answer:** In 2026 qualifying
+**Why it fails:** False premise: Italy did NOT host a 2026 qualifier at the Juventus Stadium (venues were Reggio Emilia, Bergamo, Udine, San Siro Milan).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the Juventus Stadium claim.
+
+### Row 33011 — Italy (medium) — FAIL
+**Q:** When did Italy keep 4 clean sheets at a major tournament?
+**Answer:** Euro 2020
+**Why it fails:** False: Italy kept 3 clean sheets at Euro 2020, not 4.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets.
+
+### Row 33012 — Italy (medium) — FAIL
+**Q:** When did Italy keep 4 clean sheets at Euro 2020?
+**Answer:** 2020
+**Why it fails:** False premise: Italy kept 3 clean sheets at Euro 2020, not 4.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets.
+
+### Row 33013 — Italy (medium) — FAIL
+**Q:** When did Italy keep 4 clean sheets in a European Championship?
+**Answer:** Euro 2020
+**Why it fails:** False: Italy kept 3 clean sheets at Euro 2020, not 4.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets.
+
+### Row 33014 — Italy (medium) — FAIL
+**Q:** When did Italy keep four clean sheets at the European Championship?
+**Answer:** 2020
+**Why it fails:** False: Italy kept 3 clean sheets at Euro 2020, not 4.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets.
+
+### Row 33015 — Italy (medium) — FAIL
+**Q:** When did Italy keep four clean sheets, including the final?
+**Answer:** Euro 2020
+**Why it fails:** False: Italy kept 3 clean sheets at Euro 2020 (none in the final, which was 1-1), not 4 including the final.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets (none in the final).
+
+### Row 33016 — Italy (medium) — FAIL
+**Q:** When did Italy last lose a knockout match to a European rival?
+**Answer:** Euro 2024
+**Why it fails:** Outdated: Italy's most recent knockout loss to a European rival is the March 2026 WC playoff final v Bosnia (1-1, 4-1 pens), not the Euro 2024 R16. 'Last' is no longer Euro 2024.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Update to the 2026 playoff loss to Bosnia (or scope the question to major-tournament knockouts).
+
+### Row 33034 — Italy (medium) — FAIL
+**Q:** When did Italy qualify for the 2026 FIFA World Cup under Luciano Spalletti?
+**Answer:** 2026
+**Why it fails:** False premise: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia); and Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33035 — Italy (medium) — FAIL
+**Q:** When did Italy qualify for the 2026 World Cup under Spalletti?
+**Answer:** 2026
+**Why it fails:** False premise: Italy did not qualify for 2026 (lost to Bosnia in the playoff final); Spalletti had also been sacked.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33036 — Italy (hard) — FAIL
+**Q:** When did Italy reach 7th in the FIFA rankings after Euro 2020?
+**Answer:** After Euro 2020
+**Why it fails:** False premise: after Euro 2020 Italy reached 5th, not 7th (7th was the pre-tournament rank).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Fix the rank to 5th.
+
+### Row 33038 — Italy (medium) — FAIL
+**Q:** When did Italy use multiple stadiums for their World Cup qualifiers?
+**Answer:** For 2026 qualifiers
+**Why it fails:** Non-unique: Italy rotate home venues nearly every qualifying campaign, so 'multiple stadiums' is not unique to 2026.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Make the venue fact specific/unique.
+
+### Row 33039 — Italy (hard) — FAIL
+**Q:** When did Italy use multiple stadiums for World Cup qualifiers?
+**Answer:** 2026 World Cup qualifiers
+**Why it fails:** Non-unique: using multiple stadiums is not unique to the 2026 qualifiers (Italy do this most campaigns).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Make the venue fact unique.
+
+### Row 33040 — Italy (medium) — FAIL
+**Q:** When did Italy use Rome, Milan, Turin, and Naples venues for FIFA World Cup qualifiers?
+**Answer:** 2026 qualifiers
+**Why it fails:** False: Italy's 2026 qualifier venues were Reggio Emilia, Bergamo, Udine and Milan - not Rome, Turin, Naples.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 33048 — Italy (hard) — FAIL
+**Q:** When did Italy's Allianz Stadium first host a World Cup qualifier?
+**Answer:** In the 2026 cycle
+**Why it fails:** False premise: the Allianz Stadium (Turin) did NOT host a 2026 qualifier - Italy used Reggio Emilia, Bergamo, Udine and San Siro Milan.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the Allianz/Turin claim.
+
+### Row 33057 — Italy (medium) — FAIL
+**Q:** When did Italy's Jorginho miss a penalty in the Euro 2020 semi-final?
+**Answer:** In 2021
+**Why it fails:** False premise: Jorginho did NOT miss in the Euro 2020 semi-final - he scored the winning penalty in the SF shootout v Spain. His miss came in the FINAL v England.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Re-anchor the missed penalty to the final, not the semi-final.
+
+### Row 33108 — Italy (easy) — FAIL
+**Q:** Which 2014 World Cup opponent did Italy fail to beat?
+**Answer:** Costa Rica
+**Why it fails:** Non-unique: Italy failed to beat BOTH Costa Rica and Uruguay in 2014 (lost 0-1 to each), so two options satisfy 'failed to beat'.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_FIFA_World_Cup
+**Remedy:** Leave only one valid non-beaten opponent among the options.
+
+### Row 33112 — Italy (easy) — FAIL
+**Q:** Which 2022 World Cup qualifying rival did not force Italy into a playoff?
+**Answer:** Bulgaria
+**Why it fails:** Non-unique: only Switzerland forced the playoff; Bulgaria, Northern Ireland AND Lithuania all 'did not force' it, so three options fit.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Keep only one non-forcing rival among the options.
+
+### Row 33114 — Italy (easy) — FAIL
+**Q:** Which city has NOT hosted Italy's 2026 World Cup qualifiers?
+**Answer:** Florence
+**Why it fails:** Non-unique/false: Italy's 2026 hosts were Reggio Emilia, Bergamo, Udine, Milan - so Rome and Turin (and Florence) all did NOT host; the explanation that they played Rome/Turin is false.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Fix the host list and make the answer unique.
+
+### Row 33115 — Italy (easy) — FAIL
+**Q:** Which city hosted an Italy 2026 World Cup qualifier?
+**Answer:** Naples
+**Why it fails:** False: Naples did NOT host a 2026 Italy qualifier - none of the options (Naples, Florence, Bologna, Genoa) did. Italy used Reggio Emilia, Bergamo, Udine and Milan.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual host city (e.g. Bergamo).
+
+### Row 33123 — Italy (easy) — FAIL
+**Q:** Which Euro 2020 opponent did Italy's Federico Chiesa NOT score against?
+**Answer:** England
+**Why it fails:** Non-unique: Chiesa scored v Austria and Spain at Euro 2020, so he did NOT score against England OR Belgium - two options fit 'did NOT score against'.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Leave only one option Chiesa failed to score against.
+
+### Row 33134 — Italy (medium) — FAIL
+**Q:** Which FIFA ranking did Italy achieve after winning Euro 2020?
+**Answer:** 7th
+**Why it fails:** Wrong: Italy reached 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Change answer to 5th.
+
+### Row 33141 — Italy (easy) — FAIL
+**Q:** Which formation did Italy's Luciano Spalletti use at the 2026 World Cup?
+**Answer:** 3-5-2 or 4-3-3
+**Why it fails:** False premise: Italy did NOT play at the 2026 World Cup (failed to qualify), and Spalletti was sacked in June 2025 - he had no formation 'at the 2026 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not feature at the 2026 World Cup.
+
+### Row 33145 — Italy (easy) — FAIL
+**Q:** Which four cities host Italy's FIFA World Cup qualifying matches?
+**Answer:** Rome, Milan, Turin, Naples
+**Why it fails:** False: Italy's 2026 qualifier host cities were Reggio Emilia, Bergamo, Udine and Milan - not Rome, Milan, Turin, Naples.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 33146 — Italy (easy) — FAIL
+**Q:** Which four Italian cities host Italy's FIFA World Cup qualifiers?
+**Answer:** Rome, Milan, Turin, Naples
+**Why it fails:** False: the four host cities were Reggio Emilia, Bergamo, Udine and Milan, not Rome/Milan/Turin/Naples.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real host cities.
+
+### Row 33150 — Italy (easy) — FAIL
+**Q:** Which Italian 2026 squad players are based at clubs in England?
+**Answer:** Sandro Tonali
+**Why it fails:** Non-unique as of 2025-26: both Tonali (Newcastle) AND Donnarumma (Manchester City, since Sept 2025) are based in England, so two options fit. (Chiesa is also in England, at Liverpool.)
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Donnarumma
+**Remedy:** Leave only one England-based player among the options.
+
+### Row 33153 — Italy (easy) — FAIL
+**Q:** Which Italian 2026 World Cup player is based at PSG?
+**Answer:** Gianluigi Donnarumma
+**Why it fails:** Outdated: Donnarumma left PSG for Manchester City in September 2025 - he is no longer at PSG.
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Donnarumma
+**Remedy:** Update club to Manchester City, or change the question.
+
+### Row 33155 — Italy (easy) — FAIL
+**Q:** Which Italian 2026 World Cup squad player is based abroad?
+**Answer:** Gianluigi Donnarumma
+**Why it fails:** Non-unique and wrong explanation: Donnarumma (Man City) AND Chiesa (Liverpool, since 2024) are BOTH based abroad, and the explanation that Donnarumma plays for PSG / the others are all Serie A is false.
+**Source:** https://en.wikipedia.org/wiki/Federico_Chiesa
+**Remedy:** Fix the clubs and leave only one abroad-based player.
+
+### Row 33156 — Italy (easy) — FAIL
+**Q:** Which Italian 2026 World Cup squad player is based at French club PSG?
+**Answer:** Gianluigi Donnarumma
+**Why it fails:** Outdated: Donnarumma moved from PSG to Manchester City (Premier League) in September 2025; he is not at the French club PSG.
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Donnarumma
+**Remedy:** Update to Manchester City.
+
+### Row 33158 — Italy (easy) — FAIL
+**Q:** Which Italian centre-back pair retired after Euro 2020, aging the 2026 World Cup squad?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Chiellini retired after the June 2022 Finalissima, but Bonucci kept playing for Italy until June 2023. They did not both retire after Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Don't group them; Bonucci's last cap was June 2023.
+
+### Row 33159 — Italy (easy) — FAIL
+**Q:** Which Italian city hosted a 2026 World Cup qualifier for Italy?
+**Answer:** Rome
+**Why it fails:** False: Rome did NOT host a 2026 Italy qualifier - none of the options did. Italy's 2026 home games were in Reggio Emilia, Bergamo, Udine and Milan; the playoff final was away in Zenica, Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual host city (e.g. Bergamo).
+
+### Row 33180 — Italy (easy) — FAIL
+**Q:** Which Italian club features in Serie A, Italy's top league?
+**Answer:** AC Milan
+**Why it fails:** Non-unique: all four options (AC Milan, AS Roma, Juventus, Inter Milan) are Serie A clubs, so every option satisfies 'features in Serie A'.
+**Source:** https://en.wikipedia.org/wiki/Serie_A
+**Remedy:** Include non-Serie-A distractors.
+
+### Row 33181 — Italy (easy) — FAIL
+**Q:** Which Italian club is a top team in Serie A, Italy's domestic league?
+**Answer:** Inter Milan
+**Why it fails:** Non-unique/subjective: all four (Inter, Lazio, Fiorentina, Atalanta) are Serie A clubs and 'a top team' is undefined (Atalanta/Lazio also qualify).
+**Source:** https://en.wikipedia.org/wiki/Serie_A
+**Remedy:** Make the criterion objective and unique.
+
+### Row 33183 — Italy (easy) — FAIL
+**Q:** Which Italian club last won Serie A before the 2022 World Cup?
+**Answer:** Juventus
+**Why it fails:** False: the last Serie A title decided before the Nov-2022 World Cup was 2021-22, won by AC MILAN (May 2022), not Juventus (whose last was 2019-20). Inter (2020-21) also came after Juventus.
+**Source:** https://en.wikipedia.org/wiki/Serie_A
+**Remedy:** Change answer to AC Milan.
+
+### Row 33205 — Italy (easy) — FAIL
+**Q:** Which Italian club won Serie A in the World Cup year 2022?
+**Answer:** Napoli
+**Why it fails:** False: the Serie A title won in calendar 2022 (2021-22) went to AC Milan; Napoli's win was 2022-23, decided in May 2023, not 2022.
+**Source:** https://en.wikipedia.org/wiki/Serie_A
+**Remedy:** Change answer to AC Milan (or fix the year).
+
+### Row 33223 — Italy (easy) — FAIL
+**Q:** Which Italian defender did NOT retire internationally after Euro 2020/2022?
+**Answer:** Alessandro Bastoni
+**Why it fails:** Non-unique: both Bastoni (still active) AND Barzagli (retired in 2017, before Euro 2020) satisfy 'did NOT retire after Euro 2020/2022'.
+**Source:** https://en.wikipedia.org/wiki/Andrea_Barzagli
+**Remedy:** Replace Barzagli with a player who retired after Euro 2020.
+
+### Row 33227 — Italy (easy) — FAIL
+**Q:** Which Italian defender from Euro 2020 is NOT in the 2026 World Cup squad?
+**Answer:** Leonardo Bonucci
+**Why it fails:** Non-unique: both Bonucci AND Chiellini are retired and not in the 2026 setup, so two options satisfy 'NOT in the 2026 squad'.
+**Source:** https://en.wikipedia.org/wiki/Giorgio_Chiellini
+**Remedy:** Leave only one retired defender among the options.
+
+### Row 33240 — Italy (easy) — FAIL
+**Q:** Which Italian defender retired internationally after Euro 2020?
+**Answer:** Giorgio Chiellini
+**Why it fails:** Non-unique: both Chiellini (2022) and Bonucci (2023) retired after Euro 2020, so two options fit.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Leave only one post-Euro-2020 retiree among the options.
+
+### Row 33259 — Italy (easy) — FAIL
+**Q:** Which Italian defenders retired after the 2020 Euros?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Chiellini retired after the June 2022 Finalissima, but Bonucci played for Italy until June 2023 - they did not both retire after Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Bonucci's last cap was June 2023; don't pair them as retiring after Euro 2020.
+
+### Row 33260 — Italy (easy) — FAIL
+**Q:** Which Italian defensive duo retired after Euro 2020, ending an era?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Bonucci kept playing for Italy until June 2023; only Chiellini retired around Euro 2020/2022.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Separate the two; Bonucci retired in 2023.
+
+### Row 33261 — Italy (easy) — FAIL
+**Q:** Which Italian defensive legends retired before the 2022 World Cup?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** False: Bonucci did NOT retire before the 2022 World Cup - his last Italy cap was June 2023 (after the Nov-2022 WC). Only Chiellini retired before it.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Don't group them; Bonucci retired in 2023.
+
+### Row 33262 — Italy (easy) — FAIL
+**Q:** Which Italian defensive pair retired after Euro 2020?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Bonucci played for Italy until June 2023, not 'after Euro 2020'. Only Chiellini fits.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Separate the two; Bonucci retired in 2023.
+
+### Row 33291 — Italy (easy) — FAIL
+**Q:** Which Italian left-sided centre-back did NOT start their 2026 World Cup qualifier vs. Ukraine?
+**Answer:** Giorgio Chiellini
+**Why it fails:** False premise: Italy did NOT play Ukraine in 2026 WC qualifying (their Group I opponents were Norway, Israel, Estonia, Moldova). Also Chiellini retired in 2022.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the fictional Ukraine qualifier.
+
+### Row 33303 — Italy (easy) — FAIL
+**Q:** Which Italian manager ended their World Cup absence by qualifying for the 2026 tournament?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia, 4-1 pens); no manager ended the absence, and Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33313 — Italy (easy) — FAIL
+**Q:** Which Italian manager selected a 3-5-2 squad for the 2026 World Cup qualifiers?
+**Answer:** Luciano Spalletti
+**Why it fails:** Inaccurate: Spalletti is a 4-3-3 manager, not a 3-5-2 one, and he managed only Italy's opening 2026 qualifier before being sacked (June 2025); Gattuso ran the campaign.
+**Source:** https://en.wikipedia.org/wiki/Luciano_Spalletti
+**Remedy:** Drop the specific 3-5-2 claim for Spalletti's 2026 qualifiers.
+
+### Row 33316 — Italy (easy) — FAIL
+**Q:** Which Italian manager was NOT in charge during 2026 World Cup qualifying?
+**Answer:** Roberto Mancini
+**Why it fails:** Non-unique and false: Mancini, Ventura AND Conte were all NOT in charge of 2026 qualifying (three options fit). The explanation that 'only Spalletti' managed the 2026 campaign is also wrong - Gattuso ran most of it.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Leave only one manager who was not involved; note Gattuso.
+
+### Row 33328 — Italy (easy) — FAIL
+**Q:** Which Italian midfielder was in the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: BOTH Pirlo and De Rossi were in the Euro 2012 Team of the Tournament (which had four Italians: Buffon, De Rossi, Pirlo, Balotelli).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove De Rossi as a distractor.
+
+### Row 33336 — Italy (easy) — FAIL
+**Q:** Which Italian midfielder was selected for the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: both Pirlo and De Rossi were in the Euro 2012 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove De Rossi as a distractor.
+
+### Row 33340 — Italy (easy) — FAIL
+**Q:** Which Italian midfielder, in Euro 2012's Team of the Tournament, played in the 2014 World Cup?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: both Pirlo and De Rossi were in the Euro 2012 Team of the Tournament AND both played at the 2014 World Cup.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove De Rossi as a distractor.
+
+### Row 33341 — Italy (easy) — FAIL
+**Q:** Which Italian midfielder, unlike Xavi, was in the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** False premise + non-unique: Xavi WAS in the Euro 2012 Team of the Tournament (so the 'unlike Xavi' contrast is wrong), and De Rossi (also Italian) was in it too.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Drop the false Xavi contrast and the De Rossi distractor.
+
+### Row 33360 — Italy (easy) — FAIL
+**Q:** Which Italian player made the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: both Pirlo AND Buffon were in the Euro 2012 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove Buffon as a distractor.
+
+### Row 33361 — Italy (easy) — FAIL
+**Q:** Which Italian player made the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: both Chiesa AND Bonucci were in the Euro 2020 Team of the Tournament (which had five Italians: Donnarumma, Bonucci, Spinazzola, Jorginho, Chiesa).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Remove Bonucci as a distractor.
+
+### Row 33371 — Italy (easy) — FAIL
+**Q:** Which Italian player scored at Euro 2020 vs Austria, Belgium, and Spain?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored v Austria and Spain at Euro 2020 but NOT v Belgium (Barella and Insigne scored in the QF).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Drop Belgium - Chiesa scored only v Austria and Spain.
+
+### Row 33375 — Italy (easy) — FAIL
+**Q:** Which Italian player scored in Euro 2020 knockout matches against Austria, Belgium, and Spain?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa did NOT score v Belgium at Euro 2020 - only v Austria (R16) and Spain (SF).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Drop Belgium.
+
+### Row 33376 — Italy (easy) — FAIL
+**Q:** Which Italian player scored in Euro 2020 knockout wins over Austria, Belgium, and Spain?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored v Austria and Spain, not Belgium, in the Euro 2020 knockouts.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Drop Belgium.
+
+### Row 33379 — Italy (easy) — FAIL
+**Q:** Which Italian player scored in three consecutive Euro 2020 knockout matches?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa did NOT score in three consecutive knockout matches - he scored in the R16 and SF but NOT the QF v Belgium.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to two (non-consecutive) knockout goals.
+
+### Row 33393 — Italy (easy) — FAIL
+**Q:** Which Italian player was named in the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: Chiesa, Bonucci AND Donnarumma were all in the Euro 2020 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Leave only one Euro 2020 ToT Italian among the options.
+
+### Row 33395 — Italy (easy) — FAIL
+**Q:** Which Italian player was part of the 2018 World Cup qualifying playoff loss to Sweden?
+**Answer:** Gianluigi Buffon
+**Why it fails:** Non-unique: both Buffon AND Insigne played in the 2018 WC qualifying playoff v Sweden (Insigne started the 2nd leg).
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Leave only one squad member among the options.
+
+### Row 33403 — Italy (easy) — FAIL
+**Q:** Which Italian player, besides Andrea Pirlo in 2012, made the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique and false: Chiesa, Bonucci and Donnarumma were ALL in the Euro 2020 ToT, so Chiesa was not 'the only other Italian'.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix the false claim and leave one ToT Italian.
+
+### Row 33404 — Italy (easy) — FAIL
+**Q:** Which Italian player, like Andrea Pirlo in 2012, was in the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: Chiesa, Bonucci and Donnarumma were all in the Euro 2020 ToT.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Leave only one ToT Italian among the options.
+
+### Row 33405 — Italy (easy) — FAIL
+**Q:** Which Italian player, like Spain's Xavi in 2012, made the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: both Chiesa, Bonucci AND Donnarumma were in the Euro 2020 ToT.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Leave only one ToT Italian among the options.
+
+### Row 33427 — Italy (easy) — FAIL
+**Q:** Which Italian stadium held Italy matches with a 41,507 capacity?
+**Answer:** Juventus Stadium Turin
+**Why it fails:** Non-unique: 'Juventus Stadium Turin' and 'Allianz Stadium Turin' are the SAME stadium (~41,507), so two options are identical.
+**Source:** https://en.wikipedia.org/wiki/Allianz_Stadium_(Turin)
+**Remedy:** Remove the duplicate stadium option.
+
+### Row 33428 — Italy (easy) — FAIL
+**Q:** Which Italian stadium hosted a 2026 World Cup qualifier for Italy?
+**Answer:** Juventus Stadium
+**Why it fails:** False: the Juventus Stadium did NOT host a 2026 Italy qualifier (venues were Reggio Emilia, Bergamo, Udine, San Siro Milan).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual 2026 venue.
+
+### Row 33429 — Italy (easy) — FAIL
+**Q:** Which Italian stadium hosted a 2026 World Cup qualifier?
+**Answer:** Stadio Olimpico
+**Why it fails:** False: the Stadio Olimpico did NOT host a 2026 Italy qualifier - the group games were in Reggio Emilia, Bergamo, Udine and Milan, and the playoff final was away in Zenica.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual 2026 venue (e.g. San Siro).
+
+### Row 33436 — Italy (easy) — FAIL
+**Q:** Which Italian stadium used for 2026 World Cup qualifiers has the smallest capacity?
+**Answer:** Allianz Stadium
+**Why it fails:** False premise: the Allianz Stadium (Turin) was NOT a 2026 Italy qualifier venue; the smallest venue actually used was Bergamo/Reggio Emilia (~21,000).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use the real smallest venue (Bergamo or Reggio Emilia).
+
+### Row 33475 — Italy (easy) — FAIL
+**Q:** Which Italian veteran retired before the 2026 World Cup qualifying cycle?
+**Answer:** Leonardo Bonucci
+**Why it fails:** Non-unique: all four (Bonucci 2023, Chiellini 2022, Buffon 2018, Pirlo 2015) retired before the 2026 qualifying cycle.
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Leave only one pre-2026 retiree among the options.
+
+### Row 33479 — Italy (easy) — FAIL
+**Q:** Which Italian was named in the Team of the Tournament at Euro 2020, not Euro 2012?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: Chiesa, Bonucci AND Donnarumma were all in the Euro 2020 ToT (and not the 2012 one).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Leave only one 2020-ToT Italian among the options.
+
+### Row 33494 — Italy (easy) — FAIL
+**Q:** Which Italian's Euro 2012 displays earned him a Team of the Tournament spot?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: Pirlo, Buffon AND Balotelli were all in the Euro 2012 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Leave only one 2012-ToT Italian among the options.
+
+### Row 33504 — Italy (easy) — FAIL
+**Q:** Which Italy centre-back played in all three Euro finals from 2012 to 2020?
+**Answer:** Giorgio Chiellini
+**Why it fails:** Flawed: Italy reached only TWO Euro finals in 2012-2020 (2012 and 2020; they exited Euro 2016 in the QF), so 'all three Euro finals' is false. If read as the three tournaments, both Chiellini AND Bonucci played all three (non-unique).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Fix the premise; Italy had two Euro finals in that span.
+
+### Row 33511 — Italy (easy) — FAIL
+**Q:** Which Italy coach qualified them for the 2026 World Cup?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia); Spalletti was also sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33513 — Italy (easy) — FAIL
+**Q:** Which Italy coach's tactics led to 4 clean sheets at Euro 2020?
+**Answer:** Roberto Mancini
+**Why it fails:** False premise: Italy kept 3 clean sheets at Euro 2020, not 4 (the coach, Mancini, is right, but the '4 clean sheets' figure is wrong).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets.
+
+### Row 33541 — Italy (easy) — FAIL
+**Q:** Which Italy forward scored in three Euro 2020 knockout games?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored in TWO Euro 2020 knockout games (Austria, Spain), not three - he did not score v Belgium.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to two knockout goals.
+
+### Row 33542 — Italy (easy) — FAIL
+**Q:** Which Italy forward scored in three separate Euro 2020 knockout matches?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored in two knockout matches (Austria, Spain), not three.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to two.
+
+### Row 33600 — Italy (easy) — FAIL
+**Q:** Which Italy manager favoured a 3-5-2 or 4-3-3 formation at the 2026 World Cup?
+**Answer:** Luciano Spalletti
+**Why it fails:** False premise: Italy did NOT play at the 2026 World Cup (failed to qualify), and Spalletti was sacked in June 2025 - he used no formation 'at the 2026 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Reframe to the qualifying cycle, not the tournament.
+
+### Row 33608 — Italy (easy) — FAIL
+**Q:** Which Italy manager is leading their 2026 FIFA World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti is NOT leading the 2026 qualifying campaign - he was sacked in June 2025, Gattuso ran the campaign, and it ended with the playoff loss to Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso (and note Italy failed to qualify).
+
+### Row 33609 — Italy (easy) — FAIL
+**Q:** Which Italy manager leads their 2026 World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti does not lead the 2026 qualifying campaign; he was sacked in June 2025 and Gattuso ran it.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 33616 — Italy (easy) — FAIL
+**Q:** Which Italy manager led their 2026 World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti did NOT lead the 2026 qualifying campaign - he was sacked in June 2025 after the opening qualifiers; Gattuso led the campaign, which ended in the playoff loss to Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso with leading the campaign.
+
+### Row 33640 — Italy (medium) — FAIL
+**Q:** Which Italy manager oversaw their 2026 World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia); Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33650 — Italy (easy) — FAIL
+**Q:** Which Italy manager qualified them for the 2026 FIFA World Cup?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup; Spalletti was also sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33667 — Italy (medium) — FAIL
+**Q:** Which Italy manager secured 2026 World Cup qualification after their 2022 failure?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT secure 2026 qualification - they lost the playoff final to Bosnia; Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026 (a third straight miss).
+
+### Row 33668 — Italy (medium) — FAIL
+**Q:** Which Italy manager secured 2026 World Cup qualification through UEFA?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for 2026 through UEFA; they lost the playoff final to Bosnia.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33670 — Italy (medium) — FAIL
+**Q:** Which Italy manager secured their 2026 FIFA World Cup qualification?
+**Answer:** Spalletti
+**Why it fails:** False: Italy did not secure 2026 qualification; Spalletti was also sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33671 — Italy (medium) — FAIL
+**Q:** Which Italy manager secured their 2026 World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for 2026 (lost to Bosnia in the playoff final).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33694 — Italy (easy) — FAIL
+**Q:** Which Italy manager will lead their 2026 FIFA World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti did NOT lead the 2026 qualifying campaign - he was sacked in June 2025; Gattuso led it and Italy failed to qualify.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso (and note the campaign is over and failed).
+
+### Row 33706 — Italy (easy) — FAIL
+**Q:** Which Italy manager's tactics conceded just 3 goals at Euro 2020?
+**Answer:** Roberto Mancini
+**Why it fails:** False premise: Italy conceded 4 goals at Euro 2020, not 3 (the manager, Mancini, is right).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals.
+
+### Row 33720 — Italy (easy) — FAIL
+**Q:** Which Italy midfielder made the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: both Pirlo AND De Rossi were in the Euro 2012 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove De Rossi as a distractor.
+
+### Row 33722 — Italy (easy) — FAIL
+**Q:** Which Italy midfielder missed two penalties at Euro 2020?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho missed only ONE penalty at Euro 2020 (the final); his two penalty misses were v Switzerland in 2022 WC qualifying.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Re-anchor the two misses to 2022 qualifying.
+
+### Row 33730 — Italy (easy) — FAIL
+**Q:** Which Italy midfielder was honored in the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: both Pirlo AND De Rossi were in the Euro 2012 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove De Rossi as a distractor.
+
+### Row 33734 — Italy (easy) — FAIL
+**Q:** Which Italy midfielder was key at Euro 2020 despite missing two penalties?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho missed only one penalty at Euro 2020 (the final). His two misses were v Switzerland in 2022 WC qualifying.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Re-anchor the two misses to 2022 qualifying.
+
+### Row 33746 — Italy (easy) — FAIL
+**Q:** Which Italy player for the 2026 World Cup is based at PSG?
+**Answer:** Gianluigi Donnarumma
+**Why it fails:** Outdated: Donnarumma left PSG for Manchester City in September 2025; he is no longer at PSG.
+**Source:** https://en.wikipedia.org/wiki/Gianluigi_Donnarumma
+**Remedy:** Update to Manchester City.
+
+### Row 33747 — Italy (easy) — FAIL
+**Q:** Which Italy player for the 2026 World Cup squad is based abroad?
+**Answer:** Gianluigi Donnarumma
+**Why it fails:** Non-unique/false: Donnarumma (Man City) AND Chiesa (Liverpool) are both based abroad, and the explanation that the others are all Serie A is wrong.
+**Source:** https://en.wikipedia.org/wiki/Federico_Chiesa
+**Remedy:** Fix the clubs and leave one abroad-based player.
+
+### Row 33764 — Italy (easy) — FAIL
+**Q:** Which Italy player made the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: both Chiesa AND Bonucci were in the Euro 2020 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Remove Bonucci as a distractor.
+
+### Row 33765 — Italy (easy) — FAIL
+**Q:** Which Italy player missed a penalty in the Euro 2020 semi-final shootout?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho did NOT miss in the Euro 2020 semi-final shootout - he SCORED the winning penalty v Spain. His miss came in the final.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Re-anchor the miss to the final.
+
+### Row 33766 — Italy (easy) — FAIL
+**Q:** Which Italy player missed a penalty in their Euro 2020 semi-final shootout win?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho scored the winning penalty in the Euro 2020 SF shootout v Spain - he did not miss it. His miss was in the final.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Re-anchor the miss to the final.
+
+### Row 33767 — Italy (easy) — FAIL
+**Q:** Which Italy player missed two penalties at Euro 2020, but his team still reached the final?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho missed only one penalty at Euro 2020 (the final), and he SCORED the SF shootout winner v Spain. The 'two penalties including the SF' claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to one miss (the final); the two misses were in 2022 qualifying.
+
+### Row 33768 — Italy (easy) — FAIL
+**Q:** Which Italy player missed two penalties at Euro 2020?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho missed one penalty at Euro 2020 (the final); the two misses were v Switzerland in 2022 qualifying.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Re-anchor the two misses to 2022 qualifying.
+
+### Row 33769 — Italy (easy) — FAIL
+**Q:** Which Italy player missed two penalties during Euro 2020?
+**Answer:** Jorginho
+**Why it fails:** False: Jorginho missed only one penalty at Euro 2020 (the final).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Re-anchor the two misses to 2022 qualifying.
+
+### Row 33800 — Italy (easy) — FAIL
+**Q:** Which Italy player scored at Euro 2020 against Austria, Belgium, and Spain?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored v Austria and Spain at Euro 2020 but NOT v Belgium.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Drop Belgium.
+
+### Row 33803 — Italy (medium) — FAIL
+**Q:** Which Italy player scored in the 2020 Euros knockout stages against Austria, Belgium, and Spain?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored v Austria and Spain, not Belgium, in the Euro 2020 knockouts.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Drop Belgium.
+
+### Row 33813 — Italy (medium) — FAIL
+**Q:** Which Italy player scored in three different Euro 2020 knockout stage matches?
+**Answer:** Federico Chiesa
+**Why it fails:** False: Chiesa scored in TWO Euro 2020 knockout matches (Austria, Spain), not three (he did not score v Belgium).
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to two.
+
+### Row 33848 — Italy (easy) — FAIL
+**Q:** Which Italy player was in the Euro 2020 Team of the Tournament?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: Chiesa, Bonucci AND Donnarumma were all in the Euro 2020 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Leave only one 2020-ToT Italian among the options.
+
+### Row 33852 — Italy (easy) — FAIL
+**Q:** Which Italy player was named in the Euro 2012 Team of the Tournament?
+**Answer:** Andrea Pirlo
+**Why it fails:** Non-unique: both Pirlo AND Buffon were in the Euro 2012 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Remove Buffon as a distractor.
+
+### Row 33864 — Italy (easy) — FAIL
+**Q:** Which Italy player's Euro 2020 performance earned him a Team of the Tournament spot?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: both Chiesa AND Bonucci were in the Euro 2020 Team of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Remove Bonucci as a distractor.
+
+### Row 33866 — Italy (easy) — FAIL
+**Q:** Which Italy player's Euro Team of Tournament inclusion came after Andrea Pirlo's?
+**Answer:** Federico Chiesa
+**Why it fails:** Non-unique: the Italian named in the Euro 2020 ToT (after Pirlo's 2012 inclusion) was not only Chiesa - Bonucci (also an option) was in it too.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Remove Bonucci as a distractor.
+
+### Row 33878 — Italy (easy) — FAIL
+**Q:** Which Italy striker had over 50 caps and 14 goals?
+**Answer:** Ciro Immobile
+**Why it fails:** Wrong: Immobile scored 17 goals for Italy, not 14.
+**Source:** https://en.wikipedia.org/wiki/Ciro_Immobile
+**Remedy:** Change to 17 goals.
+
+### Row 33879 — Italy (easy) — FAIL
+**Q:** Which Italy striker had over 50 caps but under 15 goals?
+**Answer:** Ciro Immobile
+**Why it fails:** Wrong: Immobile has 17 Italy goals - not 'under 15'.
+**Source:** https://en.wikipedia.org/wiki/Ciro_Immobile
+**Remedy:** Correct the goal count to 17.
+
+### Row 33902 — Italy (easy) — FAIL
+**Q:** Which Italy winger, a Juventus player, was in their 2026 World Cup squad?
+**Answer:** Federico Chiesa
+**Why it fails:** Outdated criterion: Chiesa left Juventus for Liverpool in 2024, so 'a Juventus player' is wrong; and Italy had no 2026 World Cup squad (they failed to qualify).
+**Source:** https://en.wikipedia.org/wiki/Federico_Chiesa
+**Remedy:** Update his club to Liverpool and drop the 2026-squad framing.
+
+### Row 33903 — Italy (easy) — FAIL
+**Q:** Which Italy winger, fit for the 2026 World Cup, plays for Juventus?
+**Answer:** Federico Chiesa
+**Why it fails:** Outdated: Chiesa plays for Liverpool (since 2024), not Juventus.
+**Source:** https://en.wikipedia.org/wiki/Federico_Chiesa
+**Remedy:** Update his club to Liverpool.
+
+### Row 33909 — Italy (medium) — FAIL
+**Q:** Which manager guided Italy to 2026 FIFA World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia); Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33911 — Italy (easy) — FAIL
+**Q:** Which manager is leading Italy in the 2026 FIFA World Cup qualifiers?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti is not leading the 2026 qualifiers - he was sacked in June 2025 and Gattuso ran the (failed) campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 33913 — Italy (easy) — FAIL
+**Q:** Which manager is leading Italy's 2026 World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti does not lead the 2026 qualifying campaign; Gattuso ran it after Spalletti's June 2025 sacking.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 33914 — Italy (easy) — FAIL
+**Q:** Which manager leads Italy in 2026 World Cup qualifying?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Gattuso, not Spalletti, ran the 2026 qualifying campaign (Spalletti was sacked June 2025).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 33918 — Italy (easy) — FAIL
+**Q:** Which manager led Italy in the 2026 World Cup qualifiers?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti did not run the 2026 qualifiers - he managed only the opening games before being sacked in June 2025; Gattuso led the campaign, which failed.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 33919 — Italy (medium) — FAIL
+**Q:** Which manager led Italy to 2026 World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for 2026 (lost to Bosnia in the playoff final); Spalletti was also sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33923 — Italy (easy) — FAIL
+**Q:** Which manager led Italy to qualify for the 2026 World Cup?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup; Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33926 — Italy (easy) — FAIL
+**Q:** Which manager led Italy's 2026 World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Gattuso (not Spalletti) led the 2026 qualifying campaign; Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 33932 — Italy (easy) — FAIL
+**Q:** Which manager qualified Italy for the 2026 World Cup via UEFA qualifiers?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for 2026 via UEFA - they lost the playoff final to Bosnia; Spalletti was also sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 33944 — Italy (easy) — FAIL
+**Q:** Which nation also missed two consecutive World Cups before Italy?
+**Answer:** No European nation
+**Why it fails:** False: a major European nation did miss two consecutive World Cups before Italy - the Netherlands (an option here) missed both 1982 and 1986 (and England missed 1974 & 1978).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Change answer to the Netherlands (or fix the premise).
+
+### Row 34057 — Italy (easy) — FAIL
+**Q:** Which nation's 2018 World Cup playoff loss matched Italy's failure to qualify?
+**Answer:** Sweden
+**Why it fails:** False premise: Sweden did NOT lose a 2018 playoff - they WON it (beating Italy). The 'Sweden's playoff loss' framing is wrong.
+**Source:** https://en.wikipedia.org/wiki/Italy_national_football_team
+**Remedy:** Reword: Sweden won; Italy lost the playoff.
+
+### Row 34082 — Italy (easy) — FAIL
+**Q:** Which stadium hosted an Italy 2026 World Cup qualifier?
+**Answer:** Stadio Olimpico
+**Why it fails:** False: the Stadio Olimpico did NOT host a 2026 Italy qualifier (venues were Reggio Emilia, Bergamo, Udine, San Siro Milan); the foreign distractors are also implausible, so no option is correct.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual 2026 venue (e.g. San Siro).
+
+### Row 34083 — Italy (easy) — FAIL
+**Q:** Which stadium hosted Italy's 2026 World Cup qualifier played in Turin?
+**Answer:** Allianz Stadium
+**Why it fails:** False premise: Italy did NOT play a 2026 qualifier in Turin/Allianz Stadium (their venues were Reggio Emilia, Bergamo, Udine, San Siro Milan).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the Turin 2026-qualifier claim.
+
+### Row 34090 — Italy (easy) — FAIL
+**Q:** Which stadium in Turin hosted Italy's 2026 World Cup qualifiers?
+**Answer:** Juventus Stadium
+**Why it fails:** False + duplicate options: Italy did NOT host a 2026 qualifier in Turin, and 'Juventus Stadium' and 'Allianz Stadium' are the SAME stadium.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Remove the duplicate and the Turin claim.
+
+### Row 34139 — Italy (easy) — FAIL
+**Q:** Which team did Italy keep a clean sheet against in the Euro 2020 final?
+**Answer:** England
+**Why it fails:** False: Italy did NOT keep a clean sheet in the Euro 2020 final - it finished 1-1 (they conceded, then won on penalties). They had 3 clean sheets total, not 4.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Remove - the final was not a clean sheet.
+
+### Row 34144 — Italy (easy) — FAIL
+**Q:** Which team did Italy NOT eliminate in a major tournament semi-final?
+**Answer:** Germany
+**Why it fails:** False: Italy DID eliminate Germany in a semi-final - they beat Germany 2-1 in the Euro 2012 SF. (They also beat Spain in the 2020 SF.) Germany is not a team Italy failed to eliminate in a SF.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2012
+**Remedy:** Pick a team Italy never beat in a SF (e.g. England or Belgium).
+
+### Row 34145 — Italy (easy) — FAIL
+**Q:** Which team did Italy NOT lose to at the 2014 FIFA World Cup?
+**Answer:** England
+**Why it fails:** Non-unique: Italy did not lose to England (they beat them) NOR to Brazil (whom they did not even play) at the 2014 World Cup, so two options fit 'did NOT lose to'.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_FIFA_World_Cup
+**Remedy:** Use only actual 2014 opponents as distractors.
+
+### Row 34191 — Italy (easy) — FAIL
+**Q:** Which two Italian defenders retired after Euro 2020, enabling a squad evolution?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Bonucci played for Italy until June 2023, so he did not retire 'after Euro 2020' (2021). Only Chiellini fits.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Bonucci's last cap was June 2023; don't pin him to Euro 2020.
+
+### Row 34195 — Italy (easy) — FAIL
+**Q:** Which two Italian defenders retired before the 2022 FIFA World Cup?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** False: Bonucci did NOT retire before the 2022 World Cup - his last Italy cap was June 2023 (after the Nov-2022 WC). Only Chiellini retired before it.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Bonucci retired in 2023.
+
+### Row 34196 — Italy (easy) — FAIL
+**Q:** Which two Italian defenders retired internationally after Euro 2020?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Bonucci played for Italy until June 2023; he did not retire after Euro 2020. Only Chiellini fits.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Bonucci's last cap was June 2023.
+
+### Row 34199 — Italy (easy) — FAIL
+**Q:** Which two Italy defenders retired after Euro 2020?
+**Answer:** Bonucci and Chiellini
+**Why it fails:** Inaccurate: Bonucci played for Italy until June 2023, not retiring after Euro 2020. Only Chiellini fits.
+**Source:** https://en.wikipedia.org/wiki/Leonardo_Bonucci
+**Remedy:** Bonucci retired in 2023.
+
+### Row 34244 — Italy (hard) — FAIL
+**Q:** Which World Cup did Italy qualify for under Luciano Spalletti?
+**Answer:** 2026 FIFA World Cup
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup under Spalletti - they failed to qualify (lost the playoff final to Bosnia) and Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 34253 — Italy (medium) — FAIL
+**Q:** Which year did Italy qualify for the 2026 FIFA World Cup?
+**Answer:** 2026
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia, March 2026).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 34257 — Italy (easy) — FAIL
+**Q:** Who is Italy's manager for the 2026 FIFA World Cup qualifiers?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti was not Italy's manager for the 2026 qualifiers - he was sacked in June 2025 and Gattuso ran the (failed) campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 34258 — Italy (easy) — FAIL
+**Q:** Who is leading Italy's 2026 World Cup qualifying campaign?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Gattuso, not Spalletti, ran the 2026 qualifying campaign (Spalletti sacked June 2025).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 34259 — Italy (easy) — FAIL
+**Q:** Who is managing Italy for the 2026 FIFA World Cup qualifiers?
+**Answer:** Luciano Spalletti
+**Why it fails:** False as of 2026: Spalletti is not managing the 2026 qualifiers - he was sacked June 2025 and the campaign (run by Gattuso) is over.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Credit Gattuso.
+
+### Row 34261 — Italy (easy) — FAIL
+**Q:** Who managed Italy to qualify for the 2026 FIFA World Cup?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup; Spalletti was sacked in June 2025.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 34265 — Italy (medium) — FAIL
+**Q:** Who managed Italy's successful 2026 World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for the 2026 World Cup (lost the playoff final to Bosnia); Spalletti was also sacked in June 2025 and Gattuso ran the failed campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 34275 — Italy (medium) — FAIL
+**Q:** Who was Italy's manager for their 2026 World Cup qualification?
+**Answer:** Luciano Spalletti
+**Why it fails:** False: Italy did NOT qualify for 2026; Spalletti was sacked in June 2025 and Gattuso led the failed campaign.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_second_round
+**Remedy:** Remove - Italy did not qualify for 2026.
+
+### Row 34279 — Italy (easy) — FAIL
+**Q:** Why did Italy concede only 3 goals at Euro 2020?
+**Answer:** Their defense was excellent
+**Why it fails:** False premise: Italy conceded 4 goals at Euro 2020, not 3.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals.
+
+### Row 34287 — Italy (easy) — FAIL
+**Q:** Why did Italy host a 2026 World Cup qualifier at Allianz Stadium?
+**Answer:** Multiple venues used
+**Why it fails:** False premise: Italy did NOT host a 2026 qualifier at the Allianz Stadium (Turin) - their venues were Reggio Emilia, Bergamo, Udine, San Siro Milan.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_I
+**Remedy:** Use an actual 2026 venue.
+
+### Row 34302 — Italy (hard) — FAIL
+**Q:** Why did Italy rise to 7th in the FIFA rankings in 2021?
+**Answer:** Winning Euro 2020
+**Why it fails:** False premise: after Euro 2020 Italy rose to 5th, not 7th (7th was the pre-tournament rank).
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Fix the rank to 5th.
+
+### Row 34305 — Italy (medium) — FAIL
+**Q:** Why did Italy win the European Championship in 2020?
+**Answer:** Conceded only 3 goals
+**Why it fails:** False premise: Italy conceded 4 goals at Euro 2020, not 3.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals.
+
+### Row 34312 — Italy (medium) — FAIL
+**Q:** Why did Italy's defense concede only 3 goals at Euro 2020?
+**Answer:** Kept 4 clean sheets
+**Why it fails:** False on both counts: Italy conceded 4 goals (not 3) and kept 3 clean sheets (not 4) at Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 4 goals and 3 clean sheets.
+
+### Row 34313 — Italy (easy) — FAIL
+**Q:** Why did Italy's defense concede so few goals at Euro 2020?
+**Answer:** Kept four clean sheets
+**Why it fails:** False: Italy kept 3 clean sheets (not 4) and conceded 4 goals (not 3) at Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Italy_at_the_UEFA_European_Championship
+**Remedy:** Correct to 3 clean sheets / 4 goals.
+
+### Row 34315 — Italy (hard) — FAIL
+**Q:** Why did Italy's FIFA ranking improve to 7th in 2021?
+**Answer:** Won Euro 2020
+**Why it fails:** False premise: Italy improved to 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Fix the rank to 5th.
+
+### Row 34316 — Italy (hard) — FAIL
+**Q:** Why did Italy's FIFA ranking rise to 7th in 2021?
+**Answer:** Winning Euro 2020
+**Why it fails:** False premise: Italy rose to 5th after Euro 2020, not 7th.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Fix the rank to 5th.
