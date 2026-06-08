@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **2784** (new method 231+, 23 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Italy 225 · Japan 62)
+Total failed-liveness-passed-others so far: **2857** (new method 231+, 24 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Italy 225 · Japan 62 · Tunisia 73)
 
 ---
 
@@ -16110,3 +16110,514 @@ group winners of UEFA Group H). The year is **2025**, not 2026 — and 2025 isn'
 **Why it fails:** False premise: Italy rose to 5th after Euro 2020, not 7th.
 **Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
 **Remedy:** Fix the rank to 5th.
+
+### Row 44768 — Tunisia (medium) — FAIL
+**Q:** Alongside Morocco, Tunisia has qualified for how many FIFA World Cups?
+**Answer:** Six World Cups
+**Why it fails:** Out of date: as of now (June 2026) Tunisia has qualified for SEVEN World Cups — the six played (1978, 1998, 2002, 2006, 2018, 2022) PLUS 2026, for which they qualified in Oct 2025 (CAF Group H winners). The dataset itself counts 2026 elsewhere (row 44811: '2018, 2022, 2026'). So an unbounded/'by 2026' count of six is wrong.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Update to seven (or time-bound the question to 'by 2022'/'as of 2024').
+
+### Row 44822 — Tunisia (medium) — FAIL
+**Q:** How many AFCON tournaments did Tunisia qualify for from 2006 to 2025?
+**Answer:** 10 tournaments
+**Why it fails:** Wrong count: Tunisia qualified for EVERY AFCON edition from 2006 to 2025 — that is ELEVEN editions (2006, 08, 10, 12, 13, 15, 17, 19, 21, 23, 25), not ten. The explanation even says 'every AFCON ... 2006 to 2025' (= 11).
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Change to 11 tournaments.
+
+### Row 44828 — Tunisia (medium) — FAIL
+**Q:** How many FIFA World Cups had Tunisia qualified for by 2026?
+**Answer:** Six World Cups
+**Why it fails:** Out of date: as of now (June 2026) Tunisia has qualified for SEVEN World Cups — the six played (1978, 1998, 2002, 2006, 2018, 2022) PLUS 2026, for which they qualified in Oct 2025 (CAF Group H winners). The dataset itself counts 2026 elsewhere (row 44811: '2018, 2022, 2026'). So an unbounded/'by 2026' count of six is wrong.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Update to seven (or time-bound the question to 'by 2022'/'as of 2024').
+
+### Row 44829 — Tunisia (medium) — FAIL
+**Q:** How many FIFA World Cups has Tunisia qualified for?
+**Answer:** Six
+**Why it fails:** Out of date: as of now (June 2026) Tunisia has qualified for SEVEN World Cups — the six played (1978, 1998, 2002, 2006, 2018, 2022) PLUS 2026, for which they qualified in Oct 2025 (CAF Group H winners). The dataset itself counts 2026 elsewhere (row 44811: '2018, 2022, 2026'). So an unbounded/'by 2026' count of six is wrong.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Update to seven (or time-bound the question to 'by 2022'/'as of 2024').
+
+### Row 44830 — Tunisia (medium) — FAIL
+**Q:** How many FIFA World Cups have the Tunisia national team qualified for?
+**Answer:** Six
+**Why it fails:** Out of date: as of now (June 2026) Tunisia has qualified for SEVEN World Cups — the six played (1978, 1998, 2002, 2006, 2018, 2022) PLUS 2026, for which they qualified in Oct 2025 (CAF Group H winners). The dataset itself counts 2026 elsewhere (row 44811: '2018, 2022, 2026'). So an unbounded/'by 2026' count of six is wrong.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Update to seven (or time-bound the question to 'by 2022'/'as of 2024').
+
+### Row 44832 — Tunisia (medium) — FAIL
+**Q:** How many times did Tunisia qualify for AFCON between 2006 and 2026?
+**Answer:** Six times
+**Why it fails:** Badly wrong: Tunisia qualified for every AFCON between 2006 and 2026 — about 11 editions, not 'six times'. The explanation itself says 'every AFCON' / 'regular participants'.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Change to 11 (every edition 2006–2025; no AFCON in 2026).
+
+### Row 44840 — Tunisia (easy) — FAIL
+**Q:** In 2022, Tunisia drew 0-0 with Denmark. Which other CAF team drew 0-0 with Denmark at a past World Cup?
+**Answer:** South Africa
+**Why it fails:** False: South Africa did NOT draw 0-0 with Denmark at a World Cup. South Africa drew 1-1 with Denmark in 1998; they did not play Denmark in 2010 (their group was France/Uruguay/Mexico). None of the listed CAF teams drew 0-0 with Denmark.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Remove/replace; the South Africa–Denmark 1998 result was 1-1, not 0-0.
+
+### Row 44853 — Tunisia (easy) — FAIL
+**Q:** In their 2022 group, Tunisia drew with Denmark. Which North African nation has qualified for six World Cups?
+**Answer:** Tunisia
+**Why it fails:** Non-unique and stale: both Tunisia AND Morocco (an option) have qualified for six World Cups (now seven each, incl. 2026), so 'which North African nation qualified for six' is not unique to Tunisia.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Make the criterion unique; and update the count (both are now on seven).
+
+### Row 44858 — Tunisia (medium) — FAIL
+**Q:** In Tunisia's 2018 World Cup group stage match against Belgium, which Tunisian Ligue 1 club's player scored the opening goal?
+**Answer:** Espérance de Tunis
+**Why it fails:** False: Dylan Bronn was NOT a Tunisian Ligue 1 (Esperance) player when he scored v Belgium in 2018 — he played for KAA Gent (Belgium) at the time (and Salernitana by 2022). The 'Tunisian Ligue 1 club' premise is false.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Bronn was a Gent player in 2018; fix the club premise.
+
+### Row 44860 — Tunisia (medium) — FAIL
+**Q:** In Tunisia's 2022 World Cup group stage squad, which defender was a domestic-based player?
+**Answer:** Ali Abdi
+**Why it fails:** False: Ali Abdi was NOT a domestic-based player at the 2022 World Cup — he played for Caen in France. The domestic-based defender among the options was Yassine Meriah (Esperance de Tunis).
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Change answer to Yassine Meriah (Esperance).
+
+### Row 44866 — Tunisia (medium) — FAIL
+**Q:** In which 2010s World Cup did Tunisia's Youssef Msakni first play?
+**Answer:** 2018
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it after rupturing his ACL (Al-Duhail) in April 2018. His World Cup debut was 2022.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Change Msakni's first/debut World Cup to 2022.
+
+### Row 44871 — Tunisia (medium) — FAIL
+**Q:** In which FIFA World Cup did Tunisia's Youssef Msakni make his tournament debut?
+**Answer:** 2018 World Cup
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it after rupturing his ACL (Al-Duhail) in April 2018. His World Cup debut was 2022.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC squad / Youssef Msakni / Dylan Bronn); ESPN; FIFA; CAF
+**Remedy:** Change Msakni's first/debut World Cup to 2022.
+
+### Row 44892 — Tunisia (medium) — FAIL
+**Q:** In which year did Tunisia host a key 2022 World Cup qualifier at Stade Olympique de Radès?
+**Answer:** 2021
+**Why it fails:** Explanation misdates the match: the Tunisia v Mali 2022 World Cup qualifier (the CAF third-round playoff) was in MARCH 2022, not March 2021. (Tunisia did host 2022-cycle group qualifiers at Rades in 2021, but not the Mali tie.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC Group D / Morocco NT / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** The Tunisia–Mali playoff was March 2022; fix the year/opponent.
+
+### Row 44908 — Tunisia (easy) — FAIL
+**Q:** Tunisia beat France 1-0 in 2022 but finished behind which two teams?
+**Answer:** Australia and Denmark
+**Why it fails:** False: Tunisia did NOT finish behind Australia AND Denmark. Final Group D order was France (6), Australia (6), Tunisia (4), Denmark (1) — Tunisia finished THIRD, ahead of Denmark. The teams above them were France and Australia.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC Group D / Morocco NT / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change to 'France and Australia'.
+
+### Row 44923 — Tunisia (easy) — FAIL
+**Q:** Tunisia's 2018 return after 12 years mirrored which other CAF nation's World Cup return?
+**Answer:** Morocco
+**Why it fails:** False: Morocco's pre-2018 World Cup absence was about 20 years (last appearance 1998), not 12. Tunisia's 12-year gap (2006→2018) was not mirrored by Morocco.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC Group D / Morocco NT / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Morocco's gap was ~20 years (1998→2018); pick a nation with a true 12-year gap or fix the premise.
+
+### Row 44954 — Tunisia (medium) — FAIL
+**Q:** When did Tunisia first host a World Cup qualifier at Stade Olympique de Radès?
+**Answer:** In 2022
+**Why it fails:** False: Stade Olympique de Rades did NOT first host a World Cup qualifier in 2022. It opened in 2001 and has been Tunisia's primary venue for qualifying cycles since the mid-2000s (2006, 2010, 2014, 2018 campaigns).
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC Group D / Morocco NT / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Rades has hosted WC qualifiers since the 2000s; not 'first in 2022'.
+
+### Row 44990 — Tunisia (easy) — FAIL
+**Q:** Which 2022 World Cup result was Tunisia's first win over a European champion?
+**Answer:** Tunisia 1-0 France
+**Why it fails:** Mislabels France: at the 2022 World Cup France were the reigning WORLD champions (2018), not the 'reigning European champion' (that was Italy, Euro 2020). The result Tunisia 1-0 France is correct but the 'European champion' framing is false.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC Group D / Morocco NT / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Call France the reigning World Cup holders, not European champions.
+
+### Row 44993 — Tunisia (easy) — FAIL
+**Q:** Which 2022 World Cup team featured a more domestic-based squad than Tunisia?
+**Answer:** Morocco
+**Why it fails:** False: Morocco's 2022 World Cup squad was NOT predominantly domestic-based — it was one of the most Europe-based squads at the tournament (Hakimi/PSG, Ziyech/Chelsea, En-Nesyri/Sevilla, Amrabat/Fiorentina, etc.).
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / 2022 WC Group D / Morocco NT / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Morocco's 2022 squad was heavily Europe-based; choose a genuinely domestic-heavy team.
+
+### Row 44880 — Tunisia (hard) — FAIL
+**Q:** In which World Cup qualifying campaign did Tunisia first host a match at Stade Olympique de Radès?
+**Answer:** 2010 World Cup qualifiers
+**Why it fails:** [Correction — initially mis-passed in batch 1] False: Stade Olympique de Radès opened in 2001 and was Tunisia's primary national stadium from then, so it hosted World Cup qualifiers well before the 2010 campaign (e.g. the 2006 cycle, 2004–05). "First in the 2010 qualifiers" is incorrect.
+**Source:** Wikipedia (Stade olympique de Radès; Tunisia at the FIFA World Cup)
+**Remedy:** Radès has hosted Tunisia's WC qualifiers since the early/mid-2000s; not the 2010 campaign.
+
+### Row 45044 — Tunisia (easy) — FAIL
+**Q:** Which CAF nation, like Tunisia in 2018, qualified for the 2022 World Cup?
+**Answer:** Tunisia
+**Why it fails:** Self-referential and non-unique: the answer is 'Tunisia' to a question asking which nation 'like Tunisia' qualified for 2022. Senegal and Morocco (options) also qualified for both 2018 and 2022, so it is not unique either.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Make the answer a different nation and ensure only one option fits.
+
+### Row 45050 — Tunisia (easy) — FAIL
+**Q:** Which CAF team did Tunisia beat 1-0 at the 2022 FIFA World Cup?
+**Answer:** France
+**Why it fails:** Category error: France is NOT a CAF team — France plays in UEFA (Europe). Tunisia did beat France 1-0, but the 'CAF team' framing is false (no option is a CAF team).
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** France is a UEFA team; fix the confederation framing.
+
+### Row 45056 — Tunisia (easy) — FAIL
+**Q:** Which CAF team, besides Tunisia, also beat a defending champion at a World Cup?
+**Answer:** Saudi Arabia
+**Why it fails:** Two errors: (1) Saudi Arabia is an AFC (Asian) team, not CAF; (2) Argentina were NOT the defending champions in 2022 (France were the 2018 holders). Tunisia beat the actual holders France; Saudi beat Argentina, who were not holders.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Saudi Arabia is AFC; Argentina were not defending champions in 2022.
+
+### Row 45058 — Tunisia (easy) — FAIL
+**Q:** Which club was Tunisian midfielder Ellyes Skhiri playing for during the 2022 World Cup qualifying campaign?
+**Answer:** SC Freiburg
+**Why it fails:** False club: during the 2022 World Cup qualifying campaign Ellyes Skhiri played for 1. FC Koln (2019–2023), NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45098 — Tunisia (easy) — FAIL
+**Q:** Which nation had more AFCON appearances than Tunisia between 2006-2022?
+**Answer:** Egypt
+**Why it fails:** False: Egypt did NOT have more AFCON appearances than Tunisia between 2006 and 2022 — Egypt MISSED the 2012, 2013 and 2015 editions (post-revolution), so Egypt made ~6 while Tunisia qualified for all 9. Tunisia had more. No option had more than Tunisia.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Reverse the premise: Tunisia had more AFCON appearances than Egypt in this period.
+
+### Row 45101 — Tunisia (easy) — FAIL
+**Q:** Which nation matched Tunisia's 2019 AFCON semi-final finish?
+**Answer:** Senegal
+**Why it fails:** Non-unique: at the 2019 AFCON the semi-finalists were Algeria, Senegal, Nigeria and Tunisia — so Senegal, Nigeria AND Algeria (options) all 'reached the semi-finals'. Also Senegal reached the FINAL, so it did not 'match' Tunisia's semi-final exit (Nigeria did).
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Make the criterion unique; Nigeria was the other semi-final loser.
+
+### Row 45115 — Tunisia (easy) — FAIL
+**Q:** Which nation, like Tunisia in 2022, won a group game but still exited the World Cup?
+**Answer:** Tunisia
+**Why it fails:** Self-referential and non-unique: answer 'Tunisia' to 'which nation, like Tunisia, won a group game but exited'. Saudi Arabia and Costa Rica (options) also won a group game and were eliminated in 2022.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Use a different nation and ensure a single valid option.
+
+### Row 45116 — Tunisia (easy) — FAIL
+**Q:** Which nation, like Tunisia in 2022, won a group match but was eliminated?
+**Answer:** Saudi Arabia
+**Why it fails:** Non-unique: besides Saudi Arabia, Mexico (beat Saudi Arabia) and Germany (beat Costa Rica) also won a 2022 group match yet were eliminated. Three of the four options fit.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Restructure so only one option won-a-game-but-exited.
+
+### Row 45118 — Tunisia (easy) — FAIL
+**Q:** Which nation, like Tunisia, qualified for the 2018 FIFA World Cup via CAF?
+**Answer:** Egypt
+**Why it fails:** Non-unique: all four options — Egypt, Senegal, Morocco, Nigeria — qualified for the 2018 World Cup via CAF (the five CAF qualifiers were Egypt, Morocco, Nigeria, Senegal, Tunisia). The explanation itself lists them all.
+**Source:** Wikipedia (Tunisia NT / 2022 & 2018 WC / Ellyes Skhiri / Egypt & Morocco at AFCON / 2019 AFCON); ESPN; FIFA
+**Remedy:** Only one option should be a 2018 CAF qualifier.
+
+### Row 44995 — Tunisia (easy) — FAIL
+**Q:** Which 2022 World Cup team, like Tunisia, won a group match but was eliminated?
+**Answer:** Saudi Arabia
+**Why it fails:** [Correction — initially mis-passed in batch 2] Non-unique: besides Saudi Arabia (beat Argentina), Germany (beat Costa Rica 4-2) also won a 2022 group match and was eliminated — both Saudi Arabia and Germany (options) satisfy the criterion.
+**Source:** Wikipedia (2022 FIFA World Cup Group C and Group E)
+**Remedy:** Restructure so only one option won a group game yet exited.
+
+### Row 45191 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia 2022 World Cup squad player was domestic-based?
+**Answer:** Aissa Laidouni
+**Why it fails:** False: Aissa Laidouni was NOT a domestic-based player at the 2022 World Cup — he played for Ferencvaros in Hungary (Europe). None of the listed players were domestic-based in 2022.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Laidouni was at Ferencvaros (Hungary); pick a genuinely domestic-based player (e.g. Yassine Meriah).
+
+### Row 45193 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia attacker played at both the 2018 and 2022 World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45195 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia attacker played in the 2018 World Cup and 2019 AFCON?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45196 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia attacker played in the 2018, 2022, and 2006 World Cup qualifiers?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45199 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia attacker was a key player across multiple World Cup tournaments?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45200 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia attacker was a key player at both the 2018 and 2022 World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45201 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia attacker was key across multiple FIFA World Cup tournaments?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45203 — Tunisia (medium) — FAIL
+**Q:** Which Tunisia attacker was key in their 2018 World Cup group stage?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45215 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia forward scored in the 3-2 loss at the 2018 World Cup?
+**Answer:** Wahbi Khazri
+**Why it fails:** False: Tunisia did NOT suffer a 3-2 loss to Panama — they BEAT Panama 2-1 (their first World Cup win since 1978). Khazri scored the winner in that 2-1 victory, not in a '3-2 defeat'.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Tunisia beat Panama 2-1; there was no 3-2 loss.
+
+### Row 45244 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia midfielder at the 2022 World Cup played for Freiburg?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45253 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia midfielder prepared for the 2022 World Cup while playing for Freiburg?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45258 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia midfielder was at Freiburg during the 2022 FIFA World Cup?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45277 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia player conceded the penalty in their 1-0 loss to Australia at the 2022 World Cup?
+**Answer:** Dylan Bronn
+**Why it fails:** False: Mitchell Duke's winning goal for Australia v Tunisia (2022) was a glancing HEADER from a Goodwin cross (23'), NOT a penalty. There was no penalty, and Bronn did not concede one.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Duke scored a header from open play; remove the penalty claim.
+
+### Row 45289 — Tunisia (medium) — FAIL
+**Q:** Which Tunisia player scored the decisive goal to secure 2018 World Cup qualification?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Tunisia clinched 2018 qualification with a 0-0 DRAW at home v Libya (11 Nov 2017) — no goal was scored in that decider. The decisive scoring came in the 4-1 win over Guinea (Msakni hat-trick), not a goal v Libya.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** The Libya decider was 0-0; the scoring win (Msakni hat-trick) was 4-1 v Guinea.
+
+### Row 45293 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia player scored the goal that qualified them for the 2018 World Cup?
+**Answer:** Wahbi Khazri
+**Why it fails:** False: Tunisia clinched 2018 qualification with a 0-0 DRAW at home v Libya (11 Nov 2017) — no goal was scored in that decider. The decisive scoring came in the 4-1 win over Guinea (Msakni hat-trick), not a goal v Libya.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** The Libya decider was 0-0; the scoring win (Msakni hat-trick) was 4-1 v Guinea.
+
+### Row 45294 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia player scored the goal that sealed their 2018 World Cup return?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Tunisia clinched 2018 qualification with a 0-0 DRAW at home v Libya (11 Nov 2017) — no goal was scored in that decider. The decisive scoring came in the 4-1 win over Guinea (Msakni hat-trick), not a goal v Libya.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** The Libya decider was 0-0; the scoring win (Msakni hat-trick) was 4-1 v Guinea.
+
+### Row 45295 — Tunisia (medium) — FAIL
+**Q:** Which Tunisia player scored the goal that secured their 2022 World Cup qualification?
+**Answer:** Wahbi Khazri
+**Why it fails:** False: the goal that won Tunisia's 2022 playoff first leg v Mali (1-0) was a Mali OWN GOAL by Moussa Sissako (36'), not a Wahbi Khazri goal.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** The Mali first-leg goal was a Sissako own goal.
+
+### Row 45297 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia player scored the winner against Panama in 2018?
+**Answer:** Fakhreddine Ben Youssef
+**Why it fails:** False: the winning goal in Tunisia's 2-1 win over Panama (2018) was scored by Wahbi Khazri (66'). Fakhreddine Ben Youssef scored the EQUALISER (51'), not the winner.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Khazri scored the Panama winner; Ben Youssef got the equaliser.
+
+### Row 45304 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia player scored twice in their 2-1 win over Panama in 2018?
+**Answer:** Fakhreddine Ben Youssef
+**Why it fails:** False: Ben Youssef did NOT score twice v Panama (2018). He scored once (the 1-1 equaliser); Wahbi Khazri scored the other goal (the 2-1 winner).
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Ben Youssef scored once; Khazri scored the winner.
+
+### Row 45312 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia player's goal secured their 2018 World Cup return?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Tunisia clinched 2018 qualification with a 0-0 DRAW at home v Libya (11 Nov 2017) — no goal was scored in that decider. The decisive scoring came in the 4-1 win over Guinea (Msakni hat-trick), not a goal v Libya.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** The Libya decider was 0-0; the scoring win (Msakni hat-trick) was 4-1 v Guinea.
+
+### Row 45314 — Tunisia (easy) — FAIL
+**Q:** Which Tunisia stadium hosted the 2018 World Cup qualifier against Mali?
+**Answer:** Stade Olympique de Radès
+**Why it fails:** False premise: there was no 2018 World Cup qualifier between Tunisia and Mali. Mali were not in Tunisia's 2018 CAF group (DR Congo, Libya, Guinea) — Tunisia played Mali in the 2022 playoff.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Tunisia v Mali was a 2022 qualifier, not 2018.
+
+### Row 45320 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker featured at the 2018, 2022, and 2026 World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45322 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker made his World Cup debut in 2018?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45323 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker played at both the 2018 and 2022 FIFA World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45327 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker was a key figure in multiple World Cup tournaments?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45328 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker was a key figure in their 2018 and 2022 World Cup campaigns?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45330 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker was a key offensive figure at the 2018 and 2022 FIFA World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45331 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker was a key offensive presence at both the 2018 and 2022 World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45334 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker was a key player at multiple FIFA World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45335 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker was a key player at the 2018 and 2022 FIFA World Cups?
+**Answer:** Youssef Msakni
+**Why it fails:** False: Youssef Msakni did NOT play at the 2018 World Cup — he missed it with a ruptured ACL (April 2018). His only World Cup appearance so far is 2022, so 'played at both 2018 and 2022' / 'key across multiple World Cups' is wrong. (The player who actually featured at both 2018 and 2022 is Wahbi Khazri, also Skhiri.)
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Msakni's first/only World Cup was 2022; use Khazri/Skhiri for 'played both 2018 and 2022'.
+
+### Row 45337 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian attacker, unlike Wahbi Khazri, played key roles in multiple World Cup tournaments?
+**Answer:** Youssef Msakni
+**Why it fails:** False and backwards: Msakni played only ONE World Cup (2022, missing 2018 injured), whereas Khazri played at BOTH 2018 and 2022. So it is Khazri — not Msakni — who featured in multiple World Cup tournaments.
+**Source:** Wikipedia (Tunisia NT / at the FIFA World Cup / Msakni / Khazri / Skhiri / Laidouni / 2018 WCQ CAF / 2022 WCQ); ESPN; Sky Sports; FIFA
+**Remedy:** Reverse it: Khazri played 2018 and 2022; Msakni only 2022.
+
+### Row 45356 — Tunisia (medium) — FAIL
+**Q:** Which Tunisian club's CAF Champions League wins occurred before Tunisia's 2006 World Cup qualification?
+**Answer:** Espérance de Tunis
+**Why it fails:** False: Esperance de Tunis did NOT win the CAF Champions League in 1998. Their CL titles are 1994, 2011, 2018 and 2019. Only the 1994 title preceded the 2006 World Cup.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Esperance's pre-2006 CL title was 1994 only (not '1994 and 1998').
+
+### Row 45361 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian key midfielder at the 2022 World Cup played for Freiburg?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45364 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian Ligue 1 club did 2022 World Cup player Hannibal Mejbri play for?
+**Answer:** Espérance de Tunis
+**Why it fails:** False: Hannibal Mejbri did NOT play for Esperance de Tunis. He was developed in France (Paris FC, then AS Monaco) before joining Manchester United in 2019; he never played senior football for a Tunisian Ligue 1 club.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Mejbri came through Paris FC/Monaco, not Esperance.
+
+### Row 45375 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian Ligue 1 club's player scored in the 2018 World Cup?
+**Answer:** Espérance de Tunis
+**Why it fails:** False: Wahbi Khazri did NOT play for Esperance de Tunis. He developed and played in France (Bastia, Bordeaux, Rennes, Saint-Etienne, Montpellier) — he was at Rennes around 2018. No Esperance player scored for Tunisia at the 2018 World Cup.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Khazri was a France-based player, not Esperance.
+
+### Row 45387 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian midfielder was a key starter for Freiburg during the 2022 World Cup?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45390 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian midfielder was key at the 2022 World Cup, playing for Freiburg?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45394 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian midfielder was NOT a key starter at the 2022 FIFA World Cup?
+**Answer:** Wahbi Khazri
+**Why it fails:** Ill-posed/false: the answer Wahbi Khazri is a FORWARD, not a midfielder, and he was very much a key player — he started and scored the winner v France. Claiming he was 'not a key starter' is incorrect.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Khazri was a key forward who scored the 2022 winner; the 'midfielder/not a key starter' framing is wrong.
+
+### Row 45395 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian midfielder was playing for Freiburg during the 2022 World Cup?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45396 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian midfielder, playing for Freiburg, started at the 2022 World Cup?
+**Answer:** Ellyes Skhiri
+**Why it fails:** False club: Ellyes Skhiri played for 1. FC Koln (2019–2023) during the 2022 World Cup, NOT SC Freiburg. He never played for Freiburg.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change to 1. FC Koln.
+
+### Row 45409 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian player was selected in three of their six World Cup squads?
+**Answer:** Wahbi Khazri
+**Why it fails:** False: Wahbi Khazri was in only TWO of Tunisia's World Cup squads (2018 and 2022), not three. He debuted in 2013 (not at 2006 or earlier) and retired from internationals after 2022.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Khazri featured in two World Cup squads (2018, 2022).
+
+### Row 45413 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian rival qualified for the 2026 World Cup through CAF?
+**Answer:** Tunisia
+**Why it fails:** Self-referential and non-unique: the answer 'Tunisia' to 'which Tunisian rival qualified for 2026 via CAF' is circular, and Morocco, Senegal AND Egypt (all options) also qualified for the 2026 World Cup via CAF.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Use a genuine rival and ensure a single valid option (note several CAF nations qualified).
+
+### Row 45428 — Tunisia (easy) — FAIL
+**Q:** Which Tunisian stadium, with a 60,000 capacity, is larger than the 2022 Al Bayt Stadium?
+**Answer:** Stade Olympique de Radès
+**Why it fails:** False: Qatar's Al Bayt Stadium held about 68,000 (one of the two largest 2022 venues, hosting the opening match and a semi-final), NOT 45,000. Rades (~60,000) is therefore SMALLER than Al Bayt, not larger.
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Al Bayt was ~68,000; Rades is not larger than it.
+
+### Row 45508 — Tunisia (medium) — FAIL
+**Q:** Why does Tunisia have the highest North African World Cup qualification count?
+**Answer:** Six World Cup qualifications
+**Why it fails:** Out of date: Tunisia has now qualified for SEVEN World Cups (incl. 2026), not six — and 'Seven World Cup qualifications' is one of the options. Their NA-record count is also shared with Morocco (now seven each).
+**Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
+**Remedy:** Change answer to seven World Cup qualifications.

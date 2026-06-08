@@ -2488,3 +2488,64 @@ PASS → QA_PASSED_ALL.md, FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
 | **Misc non-unique / false-premise** | "last Serie A before 2022 WC=Juventus/Napoli" (→AC Milan 2021-22); "no European nation missed 2 straight before Italy" (→Netherlands 1982&1986); 1990 WC opener also at Olimpico; "2026 qualifier vs Ukraine" (never happened); Juventus=Allianz duplicate options; etc. |
 
 > Extra fact-base notes learned mid-run: **Euro 2012 ToT had 4 Italians** (Buffon, De Rossi, Pirlo, Balotelli) — "which player was in the 2012 ToT" with >1 Italian option = non-unique FAIL. **Euro 2020 ToT had 5 Italians** (Donnarumma, Bonucci, Spinazzola, Jorginho, Chiesa) — same trap. **Chiesa scored only v Austria & Spain** at Euro 2020 (NOT Belgium). **Donnarumma → Man City (PL) since Sep 2025**, **Chiesa → Liverpool (2024)** — "based at PSG / which is abroad / in England" rows now false or non-unique. **Last Serie A title before the 2022 WC = AC Milan (2021-22)**, not Juventus/Napoli. **2026 playoff final was AWAY in Zenica, Bosnia** (Italy hosted none in Rome).
+
+---
+
+# 🇹🇳 TUNISIA (rows 44757–45514) — web-verified fact base
+
+- **WC record:** appeared 1978, 1998, 2002, 2006, 2018, 2022 (= **6 played**), and **qualified for 2026**
+  (CAF Group H winners — perfect campaign 9W-1D, 22 scored / 0 conceded), so **now SEVEN qualifications**.
+  **Never advanced past the group stage.** First African/Arab team to win a WC match (beat **Mexico 3-1, 1978**).
+- **2022 (Jalel Kadri):** Group D — **beat France 1-0** (Khazri 58'), drew Denmark 0-0 (opener), lost Australia
+  0-1 (Duke **header** 23'). 4 pts, finished **3rd** (France 6 · Australia 6 · Tunisia 4 · Denmark 1). Out.
+- **2018 (Nabil Maâloul):** beat Panama **2-1** (Ben Youssef equaliser 51', **Khazri** winner 66' — first WC win
+  since 1978); lost England 2-1 (Kane 90+1) and Belgium 5-2 (Bronn + Khazri scored). Group exit.
+- **Qualifying:** 2018 clinched by a **0-0 draw v Libya** (11 Nov 2017); the scoring win was **4-1 v Guinea
+  (Msakni hat-trick)**. 2022 via CAF playoff v **Mali** (won 1-0, a **Sissako own goal**) under Kadri (Kebaier
+  led the group stage, sacked Jan 2022). 2026 under **Sami Trabelsi** (then Sabri Lamouchi appointed Jan 2026).
+- **AFCON:** **1 title — 2004** (hosted, beat Morocco 2-1). Runners-up 1965, 1996; 2019 semi-finalists (lost
+  1-0 to Senegal; beat Madagascar 3-0 in QF). Qualified for **every AFCON 2006–2025** (11 editions).
+- **Key players:** Khazri (France winner; ~74 caps/25 goals; France-based — Rennes/Montpellier; retired post-2022),
+  **Msakni** (talisman — **MISSED 2018 with an ACL injury**, first WC was 2022), Skhiri (**1. FC Köln**, NOT
+  Freiburg), Laïdouni (**Ferencváros** in 2022, not domestic), Talbi (Lorient), Bronn (Gent 2018 / Salernitana
+  2022), Meriah (Espérance — domestic), Issam Jemaa (all-time top scorer, 36). Hannibal Mejbri came through
+  Paris FC/Monaco → Man Utd (**never** Espérance).
+- **Misc:** home venue **Stade Olympique de Radès (~60,000)** — opened 2001, used for qualifiers since the 2000s.
+  **Espérance de Tunis** = 4 CAF Champions Leagues (1994, 2011, 2018, 2019). 2022 squad = Europe + domestic mix.
+
+## Tunisia per-batch results (5 batches)
+| Batch | Rows | PASS | FAIL |
+|---|---|---|---|
+| 1 | 44757–44890 | 100 | 13 |
+| 2 | 44891–45030 | 93 | 7 |
+| 3 | 45031–45180 | 75 | 9 |
+| 4 | 45181–45340 | 106 | 31 |
+| 5 | 45341–45514 | 126 | 13 |
+| **Total** | **44757–45514** | **500** | **73** |
+
+[NB: batch-1 row 44880 and batch-2 row 44995 were initially mis-passed and corrected to FAIL — the net counts
+above are accurate on disk (500 PASS / 73 FAIL = 573, matches QA_PASSED, no overlap/dupes).]
+
+# ✅ TUNISIA COMPLETE (rows 44757–45514) — 500 ship-ready · 73 dangerous
+**Recurring dataset defects (high volume):**
+1. **"Tunisia has qualified for SIX World Cups"** — stale; they now have **seven** (incl. 2026, which the
+   dataset itself counts in row 44811). Present-tense/"by 2026" six fails; time-bounded "by 2022/2024" passes.
+2. **"Msakni played at / was key in 2018 (and multiple World Cups)"** — false; he **missed 2018** (ACL) and has
+   played only 2022. Khazri/Skhiri are the ones who played both 2018 and 2022. (Big cluster in batch 4.)
+3. **Wrong clubs** — Skhiri at **Köln** not Freiburg; Laïdouni at **Ferencváros** not domestic Espérance;
+   Hannibal Mejbri & Khazri **never played for Espérance**; Bronn at Gent (2018) not Espérache.
+4. **2018 qualifier scoring myths** — the decider v Libya was **0-0** (no goal); the goals were the 4-1 Guinea
+   win. Rows crediting a Msakni/Khazri goal "v Libya" to clinch fail.
+5. **2018 Panama** — Tunisia **won 2-1** (no "3-2 loss"); **Khazri** scored the winner (Ben Youssef the equaliser,
+   once — not twice).
+6. **2022 details** — Duke's goal was a **header**, not a penalty (no Bronn penalty); the Mali playoff goal was a
+   **Sissako own goal**, not Khazri.
+7. **Category / confederation errors** — France & Saudi Arabia called "CAF teams"; Argentina called the 2022
+   "defending champions" (France were); France called "European champion" (they were World champions).
+8. **Non-unique / self-referential** — "which nation, like Tunisia, …" answered "Tunisia"; all four options
+   qualified for 2018 (45118) or 2026 (45413); Germany/Mexico also "won a group game but exited".
+9. **Other stats** — Egypt did NOT have more AFCONs than Tunisia (Egypt missed 2012/13/15); Morocco's pre-2018
+   gap was 20 years not 12; Al Bayt Stadium ~68,000 (not 45,000); Espérance CL titles 1994/2011/2018/2019
+   (no 1998); Khazri in 2 WC squads not 3; Radès hosted qualifiers long before 2010/2022.
+
+**Tunisia running totals (rows 44757+): 500 PASS-ALL · 73 FAIL-LIVENESS.**
