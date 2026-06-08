@@ -1479,3 +1479,66 @@ Opponent/qualifier/stadium duplicates.
   final**" — Mbappé did (Kolo Muani's shot was saved); (10) "**Neymar = French star**" (he's Brazilian);
   (11) Excel score corruption (03-Jan/04-Feb/03-Mar/02-Jan/04-Mar/04/03/2003); (12) non-unique "broke
   PSG's run" (Monaco 2016-17 also) and "which stadium hosted Euro 2016" (multiple venues).
+
+---
+
+# 🇯🇵 JAPAN (rows 34954–36397) — web-verified fact base
+
+- **WC record:** appeared 1998, 2002, 2006, 2010, 2014, 2018, 2022; **qualified for 2026** (first non-host
+  team to qualify, beat Bahrain Mar 2025). Best result = **Round of 16** (2002, 2010, 2018, 2022) — never QF.
+- **2022 (Moriyasu):** topped Group E — beat **Germany 2-1** (Doan 75', Asano 83') and **Spain 2-1** (Doan
+  eq., **Ao Tanaka** VAR winner), lost Costa Rica 1-0; R16 lost **Croatia 1-1 (1-3 pens)**, Livaković 3 saves.
+- **2018 (Nishino, after Halilhodžić sacked ~2 months out):** beat Colombia 2-1 (Sánchez red 3'), drew
+  Senegal 2-2 (Honda eq.), advanced over Senegal on **fair play**; R16 led Belgium 2-0, lost **3-2** (Chadli 94').
+- **2010 (Okada):** beat Cameroon 1-0 & Denmark 3-1; R16 lost Paraguay on pens. Qualified as group **runner-up**
+  (2nd behind Australia — NOT group winners). **2014 (Zaccheroni):** winless group exit (first to qualify, 2013).
+- **Asian Cup:** **4 titles (record)** — 1992, 2000, 2004, **2011** (beat Australia 1-0, Tadanari Lee ET goal;
+  Zaccheroni). 2019 runners-up (lost final **3-1 Qatar**). 2015 QF out (UAE, pens). 2023 (Jan 2024) QF out (Iran).
+- **Managers:** Okada (2010), Zaccheroni (2010–14; 2011 AC; 2014 WC), Aguirre (2014–15), Halilhodžić (2015–
+  Apr 2018), Nishino (2018 WC), **Moriyasu (Jul 2018– ; 2022 & 2026)**.
+- **Captains:** **Hasebe** = 2010/2014/2018; **Yoshida** = 2022; **Endo** = from June 2023 (so 2026 cycle).
+- **Players:** Honda (scored 2010/2014/2018, 98 caps), Kagawa (Dortmund/Man Utd, 97 caps/31 goals), Nagatomo
+  (LB 2010/14/18), Gonda (GK 2022), Endo (Liverpool DM), Mitoma (Brighton), Kubo (Real Sociedad), Tomiyasu
+  (Arsenal), Minamino (ex-Liverpool), Ao Tanaka (Leeds Utd from 2024), Kamada, Junya Ito (allegations arose 2024).
+- **Misc:** JFA national training centre = **JFA Yume Field, Makuhari, Chiba**. Qualifier venue = **Saitama
+  Stadium (63,700)**; National Stadium Tokyo ~68,000. Women's team won 2011 Women's WC (beat USA on pens).
+
+## Japan per-batch results (10 batches)
+| Batch | Rows | PASS | FAIL |
+|---|---|---|---|
+| 1 | 34954–35080 | 88 | 10 |
+| 2 | 35081–35210 | 100 | 6 |
+| 3 | 35211–35340 | 94 | 12 |
+| 4 | 35341–35470 | 82 | 4 |
+| 5 | 35471–35600 | 47 | 2 |
+| 6 | 35601–35750 | 116 | 0 |
+| 7 | 35751–35900 | 96 | 12 |
+| 8 | 35901–36050 | 110 | 8 |
+| 9 | 36051–36200 | 54 | 2 |
+| 10 | 36201–36397 | 148 | 6 |
+| **Total** | **34954–36397** | **935** | **62** |
+
+[NB: batch-1 rows 35074 & 35077 ("won their 2010 AFC group") were initially mis-passed and corrected to
+FAIL — the net counts above are accurate on disk (935 PASS / 62 FAIL = 997, matches QA_PASSED, no overlap).]
+
+# ✅ JAPAN COMPLETE (rows 34954–36397) — 935 ship-ready · 62 dangerous
+**Recurring dataset defects (high volume):**
+1. **"17th FIFA ranking after the 2011 Asian Cup"** — false; 2011 was ~19th, 17th was 2004/2023, all-time
+   peak 9th (1998). (Where the answer is "the Asian Cup win" as the *cause*, it passes; where the answer is
+   "17th" or "2011-as-the-year-of-17th", it fails.)
+2. **"Japan won their 2010 AFC qualifying group"** — false; they finished SECOND behind Australia (qualified
+   as runners-up). Hit several rows including 2 mis-pass corrections.
+3. **Captaincy confusion** — Hasebe captained 2010/2014/2018, Yoshida 2022, Endo from 2023. Rows claiming
+   "Yoshida captained at 2018 / across multiple World Cups" OR "Endo captained at 2022" are false.
+4. **Excel score corruption** — 03-Jan=3-1, 02-Jan=2-1, 03-Feb=3-2 (2019 AC final, 2018/2022 scores).
+5. **"Doan scored the winner vs Spain"** — false; Doan got the equalisers vs Germany & Spain, **Ao Tanaka**
+   scored the Spain winner.
+6. **Tōhoku chronology reversed** — the 2011 Asian Cup (29 Jan 2011) was BEFORE the earthquake (11 Mar 2011);
+   explanations claiming "won the AC months AFTER the disaster" fail (stem-only flavour passes).
+7. **Junya Ito** — his off-field allegations arose in 2024; rows saying they affected/curtailed his 2022 WC
+   participation are false.
+8. **Non-unique** — "which AFC nation also won its 2018 opener" (Iran did too); "did NOT face in 2018 R16/KO"
+   (Japan played only Belgium, so 3 options qualify); 36258 "did not lead Colombia" (Japan led 1-0).
+9. **"Kagawa had 31 caps"** — that's his goal tally; he had 97 caps.
+
+**Japan running totals (rows 34954+): 935 PASS-ALL · 62 FAIL-LIVENESS.**

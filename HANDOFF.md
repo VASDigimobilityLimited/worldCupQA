@@ -101,6 +101,10 @@ DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is st
 2026; the dataset's recurring errors are "Griezmann 2018 Silver Ball" (he won Bronze), "Lloris in the
 2018 All-Star Team" (Courtois), "France's perfect 10-win Euro 2020 qualifying" (they lost to Turkey),
 "2018 Fair Play → France" (it was Spain), and "lost the 2022 NL final to Spain" (France won the 2021 final).
+**✅ Japan is complete** (rows 34954–36397): 935 ship-ready / 62 dangerous — Japan DID qualify for 2026
+(first non-host team to qualify, Mar 2025); recurring errors are "17th FIFA ranking after the 2011 Asian
+Cup" (it was ~19th; peak ever 9th in 1998), "Japan won their 2010 AFC group" (2nd behind Australia), and
+captaincy mix-ups (Hasebe 2010/14/18 · Yoshida 2022 · Endo from 2023).
 **🔵 Australia is in progress** (rows 2161–3241). The remaining countries are **not started** (§4).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
@@ -112,11 +116,11 @@ DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is st
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **5105** ship-ready
-  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681 + Ecuador 725 + France 1237).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **794** dangerous
-  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57 + Ecuador 57 + France 176).
-- **Total ship-ready so far (both methods):** 5237 (132 backfill rows 2–230 + 5105 new method).
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **6040** ship-ready
+  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681 + Ecuador 725 + France 1237 + Japan 935).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **856** dangerous
+  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57 + Ecuador 57 + France 176 + Japan 62).
+- **Total ship-ready so far (both methods):** 6172 (132 backfill rows 2–230 + 6040 new method).
 - **✅ Brazil is COMPLETE** (rows 6097–8182): 1346 ship-ready / 218 dangerous = 1564 candidates
   (the full Brazil `QA_PASSED.md` pool; on-disk verified, no duplicates). Per-batch tables +
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
@@ -128,6 +132,9 @@ DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is st
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 - **✅ France is COMPLETE** (rows 25402–27324): 1237 ship-ready / 176 dangerous = 1413 candidates
   (the full France `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
+  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
+- **✅ Japan is COMPLETE** (rows 34954–36397): 935 ship-ready / 62 dangerous = 997 candidates
+  (the full Japan `QA_PASSED.md` pool; on-disk verified, no overlap/dupes). Per-batch tables + fact base +
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
@@ -163,7 +170,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Iraq | 31699–32567 | 869 | 537 | ⬜ not started |
 | Italy | 32568–34327 | 1760 | 1286 | ⬜ not started |
 | Jamaica | 34328–34953 | 626 | 424 | ⬜ not started |
-| Japan | 34954–36397 | 1444 | 997 | ⬜ not started |
+| Japan | 34954–36397 | 1444 | 997 | ✅ **COMPLETE** (row 36397) — 935 PASS / 62 FAIL |
 | Jordan | 36398–37773 | 1376 | 850 | ⬜ not started |
 | Mexico | 37774–39364 | 1591 | 1074 | ⬜ not started |
 | Morocco | 39365–40186 | 822 | 558 | ⬜ not started |

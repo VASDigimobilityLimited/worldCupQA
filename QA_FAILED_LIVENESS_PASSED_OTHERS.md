@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **794** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57 · Ecuador 21580–22765 COMPLETE: 57 · France 25402–27324 COMPLETE: 176)
+Total failed-liveness-passed-others so far: **856** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57 · Ecuador 21580–22765 COMPLETE: 57 · France 25402–27324 COMPLETE: 176 · Japan 34954–36397 COMPLETE: 62)
 
 ---
 
@@ -4781,3 +4781,437 @@ opponent) also did not beat them in a group match — multiple valid options (cf
 **Why it fails:** Unverified/wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
 **Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
 **Remedy:** Verify; low was 27th (2013).
+
+### Row 34955 — Japan (medium) — FAIL
+**Q:** After Japan won the 2011 Asian Cup, what was their highest FIFA ranking?
+**Answer:** 17th
+**Why it fails:** Claims Japan's highest FIFA ranking after the 2011 Asian Cup was 17th; their 2011 ranking was ~19th and Japan's all-time peak was 9th (Feb 1998). 17th was reached in 2004 and 2023, not 2011.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Set highest post-2011-Asian-Cup ranking to ~13th–16th (peak ever 9th in 1998); 17th belongs to 2004/2023.
+
+### Row 34956 — Japan (hard) — FAIL
+**Q:** After Japan won the 2011 Asian Cup, what year did they reach 17th in FIFA rankings?
+**Answer:** 2011
+**Why it fails:** Claims Japan reached 17th in the FIFA ranking in 2011; 17th was reached in 2004 and 2023, not 2011 (2011 year-end ~19th).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Change year to 2004 (or 2023); 2011 was ~19th.
+
+### Row 34960 — Japan (medium) — FAIL
+**Q:** After Japan's 2011 Asian Cup win, what was their highest FIFA ranking?
+**Answer:** 17th
+**Why it fails:** Claims Japan's highest FIFA ranking after the 2011 Asian Cup was 17th; 2011 was ~19th and the all-time peak was 9th (1998).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Use ~13th–16th for 2011 / 9th all-time; 17th was 2004/2023.
+
+### Row 34961 — Japan (easy) — FAIL
+**Q:** After Japan's 2011 Asian Cup win, which ranking did they achieve?
+**Answer:** 17th in the world
+**Why it fails:** Claims Japan ranked 17th in the world after the 2011 Asian Cup; 2011 ranking was ~19th, not 17th (17th = 2004/2023).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Correct to ~19th for 2011.
+
+### Row 34980 — Japan (medium) — FAIL
+**Q:** After winning the 2011 Asian Cup, Japan reached what FIFA ranking?
+**Answer:** 17th
+**Why it fails:** Claims Japan reached 17th in the FIFA ranking after the 2011 Asian Cup; their 2011 ranking was ~19th (17th = 2004/2023; peak ever 9th in 1998).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Correct to ~19th (2011) / 9th all-time.
+
+### Row 35007 — Japan (easy) — FAIL
+**Q:** At the 2019 Asian Cup final, what was Japan's losing scoreline to Qatar?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer stored as '03-Jan' instead of the score 3-1. Japan did lose the 2019 Asian Cup final 3-1 to Qatar, but the answer string is corrupt and is not a valid score.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '03-Jan' with '3-1'.
+
+### Row 35011 — Japan (easy) — FAIL
+**Q:** At the 2022 World Cup, Japan beat Spain by what final score?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1. Japan beat Spain 2-1 in 2022, but the answer string is corrupt.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 35034 — Japan (medium) — FAIL
+**Q:** At which FIFA World Cup did Wataru Endō captain Japan?
+**Answer:** 2022 World Cup
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the captain. Endo became permanent captain in June 2023, after the 2022 World Cup.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup); ESPN; Sky Sports; FIFA
+**Remedy:** Change the captain to Maya Yoshida (Endo captained from 2023 onward).
+
+### Row 35090 — Japan (medium) — FAIL
+**Q:** How many of Japan's last 4 World Cup managers were foreign?
+**Answer:** Two
+**Why it fails:** Answer/explanation are inconsistent and incorrect. Japan's actual managers AT the last four World Cups were Okada (2010, JP), Zaccheroni (2014, foreign), Nishino (2018, JP), Moriyasu (2022, JP) = only ONE foreign. The explanation omits Okada and inserts Halilhodzic, who was sacked two months before the 2018 finals and never managed Japan at a World Cup.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC); ESPN; Sky Sports; FIFA
+**Remedy:** If counting tournament managers, the answer is One (Zaccheroni); fix the explanation to list Okada/Zaccheroni/Nishino/Moriyasu.
+
+### Row 35091 — Japan (medium) — FAIL
+**Q:** How many of Japan's last five World Cup qualifying groups have they topped?
+**Answer:** All five
+**Why it fails:** False: Japan did NOT top all of their last five World Cup qualifying groups. In the 2010 AFC final round (Group A) they finished SECOND behind Australia (15 pts to 20).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC); ESPN; Sky Sports; FIFA
+**Remedy:** Change answer to 'Four' (or correct the premise); Japan qualified for 2010 as group runners-up.
+
+### Row 35096 — Japan (medium) — FAIL
+**Q:** In a 2014 World Cup group stage match, which Japan player captained the team?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida did NOT captain Japan at the 2014 World Cup — Makoto Hasebe was the captain in 2010, 2014 and 2018. Yoshida captained later (around 2018-2022).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC); ESPN; Sky Sports; FIFA
+**Remedy:** Change the captain to Makoto Hasebe.
+
+### Row 35099 — Japan (medium) — FAIL
+**Q:** In how many of the last five World Cups has Japan reached the round of 16?
+**Answer:** Four
+**Why it fails:** False count: Japan reached the Round of 16 in only THREE of the last five World Cups (2010, 2018, 2022) — not four. They went out in the group in 2006 and 2014. The explanation even lists only three years while claiming 'four'.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC); ESPN; Sky Sports; FIFA
+**Remedy:** Change answer to 'Three' (four R16s total only if 2002 is included, which is outside the last five).
+
+### Row 35191 — Japan (hard) — FAIL
+**Q:** In which year did Japan reach 17th in the FIFA rankings?
+**Answer:** 2011
+**Why it fails:** False: Japan did NOT reach 17th in the FIFA ranking in 2011. Their 2011 ranking was ~19th; 17th was reached in 2004 and 2023. Their all-time peak was 9th (Feb 1998).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC); ESPN; Sky Sports; FIFA
+**Remedy:** Remove the 17th-in-2011 premise; 2011 ranking was ~19th.
+
+### Row 35192 — Japan (hard) — FAIL
+**Q:** In which year did Japan reach its highest FIFA ranking of 17th?
+**Answer:** 2011
+**Why it fails:** False: 17th was not Japan's highest FIFA ranking, nor was it reached in 2011. Peak ever was 9th (1998); 17th occurred in 2004/2023; 2011 was ~19th.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC); ESPN; Sky Sports; FIFA
+**Remedy:** Correct the ranking/year (peak 9th in 1998).
+
+### Row 35074 — Japan (easy) — FAIL
+**Q:** How did Japan qualify for the 2010 FIFA World Cup?
+**Answer:** Won their AFC group
+**Why it fails:** [Correction — initially mis-passed in batch 1] False: Japan did NOT win their final 2010 AFC qualifying group. In the AFC fourth round (Group A) they finished SECOND behind Australia (15 pts to Australia's 20), qualifying directly as runners-up. The option "Finished second in group" was the correct choice.
+**Source:** Wikipedia (2010 FIFA World Cup qualification – AFC fourth round)
+**Remedy:** Change answer to "Finished second in group".
+
+### Row 35077 — Japan (easy) — FAIL
+**Q:** How did Japan secure their place at the 2010 FIFA World Cup?
+**Answer:** Won their AFC group
+**Why it fails:** [Correction — initially mis-passed in batch 1] False: Japan finished SECOND in their 2010 AFC fourth-round group (Group A) behind Australia; they did not win the group. They qualified directly as the group runner-up.
+**Source:** Wikipedia (2010 FIFA World Cup qualification – AFC fourth round)
+**Remedy:** Reword so the answer reflects qualifying as group runner-up, not winning the group.
+
+### Row 35235 — Japan (easy) — FAIL
+**Q:** Japan lost the 2019 Asian Cup final to Qatar by what score?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer stored as '03-Jan' instead of the score 3-1 (Japan lost the 2019 Asian Cup final 3-1 to Qatar).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '03-Jan' with '3-1'.
+
+### Row 35245 — Japan (easy) — FAIL
+**Q:** Japan qualified for the 2010 World Cup by winning their AFC group. Which nation qualified first for the 2014 World Cup?
+**Answer:** Japan
+**Why it fails:** False premise in the stem: 'Japan qualified for the 2010 World Cup by winning their AFC group' is incorrect — they finished SECOND behind Australia in the 2010 AFC fourth round. (The tested answer 'Japan first to qualify for 2014' is itself correct.)
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Remove/fix the false 2010 clause; Japan qualified for 2010 as group runners-up.
+
+### Row 35257 — Japan (medium) — FAIL
+**Q:** Japan topped their Asian qualifying group for which World Cup?
+**Answer:** 2010 World Cup
+**Why it fails:** False: the answer claims Japan topped their qualifying group for the 2010 World Cup. They finished SECOND behind Australia in the 2010 AFC fourth round. They DID top their final groups for 2014/2018/2022.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Change answer to 2014 (or 2018/2022); not 2010.
+
+### Row 35270 — Japan (medium) — FAIL
+**Q:** Japan's 2011 Asian Cup win lifted their FIFA ranking to what peak position?
+**Answer:** 17th
+**Why it fails:** False: Japan's 2011 Asian Cup win did NOT lift them to a peak of 17th. Their 2011 ranking was ~19th; all-time peak was 9th (Feb 1998); 17th was reached in 2004/2023.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Correct the peak ranking (9th all-time / ~19th in 2011).
+
+### Row 35276 — Japan (easy) — FAIL
+**Q:** Japan's 2018 World Cup opener win was a 2-1 victory against Colombia. Which AFC nation also won its 2018 World Cup opener?
+**Answer:** Japan
+**Why it fails:** Non-unique / self-referential: asks which AFC nation 'also' won its 2018 opener and answers 'Japan' (the subject of the stem). Iran (an option) also won its 2018 opener (1-0 v Morocco), so the answer is not unique.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Reword to ask for a different nation; valid answer is Iran.
+
+### Row 35297 — Japan (hard) — FAIL
+**Q:** Japan's highest FIFA ranking was 17th in which year?
+**Answer:** 2011
+**Why it fails:** False: 17th was not Japan's highest FIFA ranking and was not reached in 2011. Peak ever was 9th (1998); 17th occurred in 2004/2023; 2011 was ~19th.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Correct the ranking/year (peak 9th in 1998).
+
+### Row 35313 — Japan (medium) — FAIL
+**Q:** What was Japan's exact scoreline against Colombia in the 2018 World Cup opener?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1 (Japan beat Colombia 2-1 in 2018).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 35314 — Japan (easy) — FAIL
+**Q:** What was Japan's final score against Germany at the 2022 World Cup?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1 (Japan beat Germany 2-1 in 2022).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 35322 — Japan (easy) — FAIL
+**Q:** What was Japan's scoreline in their 2018 World Cup opener against Colombia?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1 (Japan beat Colombia 2-1 in 2018).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 35326 — Japan (easy) — FAIL
+**Q:** What was the final score when Japan beat Colombia in their 2018 World Cup opener?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1 (Japan beat Colombia 2-1 in 2018).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 35327 — Japan (easy) — FAIL
+**Q:** What was the final score when Japan beat Spain at the 2022 World Cup?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1 (Japan beat Spain 2-1 in 2022).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 35329 — Japan (easy) — FAIL
+**Q:** What was the final score when Japan lost to Belgium in the 2018 World Cup?
+**Answer:** 03-Feb
+**Why it fails:** Excel date-corruption: answer stored as '03-Feb' instead of the score 3-2 (Belgium beat Japan 3-2 in 2018).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2018 WC Group H); ESPN; Sky Sports; FIFA
+**Remedy:** Replace '03-Feb' with '3-2'.
+
+### Row 35361 — Japan (medium) — FAIL
+**Q:** When did Japan qualify for the World Cup by winning their AFC group?
+**Answer:** 2010 World Cup
+**Why it fails:** False: the answer claims Japan qualified for the 2010 World Cup by winning their AFC group. They finished SECOND behind Australia in the 2010 AFC fourth round. They won their final groups for 2014/2018/2022, not 2010.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2011 AFC Asian Cup); ESPN; FIFA
+**Remedy:** Change answer to 2014/2018/2022; Japan were 2010 group runners-up.
+
+### Row 35362 — Japan (hard) — FAIL
+**Q:** When did Japan reach 17th in FIFA rankings after Asian Cup?
+**Answer:** 2011
+**Why it fails:** False: Japan did NOT reach 17th in the FIFA ranking in/after the 2011 Asian Cup. 2011 ranking was ~19th; 17th was 2004/2023; all-time peak 9th (1998).
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2011 AFC Asian Cup); ESPN; FIFA
+**Remedy:** Remove the 17th-in-2011 premise.
+
+### Row 35367 — Japan (medium) — FAIL
+**Q:** When did Japan win the Asian Cup after the 2011 earthquake?
+**Answer:** 2011
+**Why it fails:** False explanation: it states Japan won the 2011 Asian Cup 'months AFTER the devastating Tohoku earthquake'. The Asian Cup final was 29 Jan 2011; the Tohoku earthquake was 11 Mar 2011 — i.e. the tournament came BEFORE the disaster, not after.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2011 AFC Asian Cup); ESPN; FIFA
+**Remedy:** Fix the chronology: the 2011 Asian Cup preceded the March 2011 earthquake.
+
+### Row 35368 — Japan (medium) — FAIL
+**Q:** When did Japan win the Asian Cup after the Tōhoku disaster?
+**Answer:** 2011
+**Why it fails:** False explanation: claims Japan won the 2011 Asian Cup 'months after the March 2011 earthquake and tsunami'. The Asian Cup ended 29 Jan 2011, before the 11 Mar 2011 disaster.
+**Source:** Wikipedia (Japan NT / at the FIFA World Cup / AFC Asian Cup / 2010 WCQ AFC / 2011 AFC Asian Cup); ESPN; FIFA
+**Remedy:** Fix the chronology: the Asian Cup was before, not after, the Tohoku earthquake.
+
+### Row 35590 — Japan (easy) — FAIL
+**Q:** Which Japan captain was a key centre-back at the 2018 World Cup?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida was NOT Japan's captain at the 2018 World Cup — Makoto Hasebe captained Japan in 2010, 2014 and 2018. The explanation's claim that Yoshida was 'captain ... including 2018' is incorrect (Yoshida only captained at the 2022 World Cup).
+**Source:** Wikipedia (Japan NT / Makoto Hasebe / Maya Yoshida / at the FIFA World Cup); ESPN; FIFA
+**Remedy:** Identify the 2018 captain as Hasebe; Yoshida was a key centre-back but not captain in 2018.
+
+### Row 35591 — Japan (easy) — FAIL
+**Q:** Which Japan centre-back captained the team at multiple FIFA World Cups?
+**Answer:** Maya Yoshida
+**Why it fails:** False premise: the question asks which centre-back 'captained the team at MULTIPLE FIFA World Cups' and answers Yoshida, but Yoshida captained Japan at only ONE World Cup (2022). Hasebe (not an option) captained at three (2010/2014/2018).
+**Source:** Wikipedia (Japan NT / Makoto Hasebe / Maya Yoshida / at the FIFA World Cup); ESPN; FIFA
+**Remedy:** Reword: Yoshida captained one World Cup (2022); Hasebe captained multiple.
+
+### Row 35762 — Japan (easy) — FAIL
+**Q:** Which Japan player captained the team across multiple World Cups?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida did NOT captain Japan 'across multiple World Cups'. He captained only at the 2022 World Cup. Makoto Hasebe (not an option) captained at 2010, 2014 and 2018.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** The multi-World-Cup captain was Hasebe; Yoshida captained one World Cup (2022).
+
+### Row 35763 — Japan (easy) — FAIL
+**Q:** Which Japan player captained the team at multiple World Cups?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida did NOT captain Japan 'across multiple World Cups'. He captained only at the 2022 World Cup. Makoto Hasebe (not an option) captained at 2010, 2014 and 2018.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** The multi-World-Cup captain was Hasebe; Yoshida captained one World Cup (2022).
+
+### Row 35764 — Japan (easy) — FAIL
+**Q:** Which Japan player captained the team at the 2018 FIFA World Cup?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida was NOT Japan's captain at the 2018 World Cup — Makoto Hasebe captained in 2010/2014/2018. Yoshida only captained at 2022.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** The 2018 captain was Hasebe.
+
+### Row 35766 — Japan (easy) — FAIL
+**Q:** Which Japan player captained the team at the 2022 World Cup in Qatar?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the 2022 captain. Endo became permanent captain in June 2023 (so he captains for the 2026 cycle), after Yoshida's captaincy ended following the 2022 World Cup.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Change the 2022 captain to Maya Yoshida; Endo captained from 2023 onward.
+
+### Row 35769 — Japan (easy) — FAIL
+**Q:** Which Japan player first captained the team at the 2022 World Cup?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo was NOT Japan's captain at the 2022 World Cup — Maya Yoshida captained the team in Qatar. Endo took the armband permanently in June 2023.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** The 2022 World Cup captain was Yoshida; Endo captained from 2023.
+
+### Row 35812 — Japan (easy) — FAIL
+**Q:** Which Japan player scored in both 2022 upsets vs Germany and Spain?
+**Answer:** Ritsu Doan
+**Why it fails:** Explanation error: it states Ritsu Doan scored 'the winner against Spain'. Doan scored the EQUALISERS against both Germany and Spain; Ao Tanaka scored the WINNER against Spain. (The answer 'Doan scored in both upsets' is itself correct.)
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Fix the explanation: Doan got the equalisers in both games; Tanaka scored the Spain winner.
+
+### Row 35815 — Japan (easy) — FAIL
+**Q:** Which Japan player scored in both their 2022 World Cup upsets vs Germany and Spain?
+**Answer:** Ritsu Doan
+**Why it fails:** Explanation error: claims Doan scored 'the winner against Spain'. Doan scored the equaliser against Spain; Ao Tanaka scored the winner.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Fix the explanation: Tanaka, not Doan, scored the Spain winner.
+
+### Row 35853 — Japan (easy) — FAIL
+**Q:** Which Japan player was captain and a key defensive midfielder at the 2022 World Cup?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the 2022 captain. Endo became permanent captain in June 2023 (so he captains for the 2026 cycle), after Yoshida's captaincy ended following the 2022 World Cup.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Change the 2022 captain to Maya Yoshida; Endo captained from 2023 onward.
+
+### Row 35854 — Japan (easy) — FAIL
+**Q:** Which Japan player was captain at the 2022 World Cup?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the 2022 captain. Endo became permanent captain in June 2023 (so he captains for the 2026 cycle), after Yoshida's captaincy ended following the 2022 World Cup.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Change the 2022 captain to Maya Yoshida; Endo captained from 2023 onward.
+
+### Row 35856 — Japan (easy) — FAIL
+**Q:** Which Japan player was given the captain's armband across multiple World Cups?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida did NOT captain Japan 'across multiple World Cups'. He captained only at the 2022 World Cup. Makoto Hasebe (not an option) captained at 2010, 2014 and 2018.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** The multi-World-Cup captain was Hasebe; Yoshida captained one World Cup (2022).
+
+### Row 35886 — Japan (easy) — FAIL
+**Q:** Which Japan team won the 2011 Asian Cup after a national disaster?
+**Answer:** The Samurai Blue
+**Why it fails:** Explanation asserts a reversed chronology: it claims Japan won the 2011 Asian Cup 'months AFTER the Tohoku earthquake and tsunami'. The Asian Cup final was 29 Jan 2011; the earthquake was 11 Mar 2011 — the tournament came BEFORE the disaster.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Fix the chronology: the 2011 Asian Cup preceded the March 2011 earthquake (answer 'Samurai Blue' is correct).
+
+### Row 35893 — Japan (easy) — FAIL
+**Q:** Which Japan winger missed key 2022 World Cup action due to personal issues?
+**Answer:** Junya Ito
+**Why it fails:** False: Junya Ito did NOT miss 2022 World Cup action due to personal issues — he played at the 2022 World Cup. The off-field allegations affecting his Japan availability arose in 2024, not during the 2022 tournament.
+**Source:** Wikipedia (Japan NT / Maya Yoshida / Makoto Hasebe / Wataru Endo / Junya Ito / 2022 WC Group E); ESPN; FIFA
+**Remedy:** Remove the false premise; Ito featured at 2022 and his availability issues came in 2024.
+
+### Row 35904 — Japan (easy) — FAIL
+**Q:** Which Japan winger's 2022 World Cup role was curtailed by personal issues?
+**Answer:** Junya Ito
+**Why it fails:** False: Junya Ito's 2022 World Cup role was NOT curtailed by personal issues — he played at the 2022 tournament. The off-field allegations affecting his Japan availability arose in 2024.
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Remove the false premise; Ito featured at 2022, issues came in 2024.
+
+### Row 35948 — Japan (easy) — FAIL
+**Q:** Which Japanese midfielder had 31 caps and played at the 2014 and 2018 World Cups?
+**Answer:** Shinji Kagawa
+**Why it fails:** Incorrect number: Shinji Kagawa did NOT have 31 caps — he earned 97 caps for Japan (31 was his GOAL tally). The 'midfielder at 2014 and 2018' criterion also does not uniquely separate him from Keisuke Honda.
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Use ~97 caps (31 goals); add a unique discriminator such as his Dortmund/Man Utd career.
+
+### Row 35964 — Japan (easy) — FAIL
+**Q:** Which Japanese player captained the team at the 2022 FIFA World Cup?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the 2022 captain. Endo became permanent captain in June 2023.
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Change the 2022 captain to Maya Yoshida.
+
+### Row 35978 — Japan (easy) — FAIL
+**Q:** Which Japanese player scored in both their 2022 World Cup victories over Germany and Spain?
+**Answer:** Ritsu Doan
+**Why it fails:** Explanation error: claims Ritsu Doan scored 'the winning goal against Spain'. Doan scored the equalisers against Germany and Spain; Ao Tanaka scored the WINNER against Spain. (The answer 'Doan scored in both wins' is itself correct.)
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Fix the explanation: Tanaka, not Doan, scored the Spain winner.
+
+### Row 35981 — Japan (easy) — FAIL
+**Q:** Which Japanese player was captain at the 2018 World Cup?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida was NOT Japan's captain at the 2018 World Cup — Makoto Hasebe captained in 2010/2014/2018 (Hasebe is not even an option here). Yoshida captained only at 2022.
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** The 2018 captain was Makoto Hasebe.
+
+### Row 35982 — Japan (easy) — FAIL
+**Q:** Which Japanese player was the captain at the 2022 World Cup?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the 2022 captain. Endo became permanent captain in June 2023.
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Change the 2022 captain to Maya Yoshida.
+
+### Row 35984 — Japan (easy) — FAIL
+**Q:** Which Japanese player was the team captain at the 2022 FIFA World Cup?
+**Answer:** Wataru Endō
+**Why it fails:** False: Wataru Endo did NOT captain Japan at the 2022 World Cup — Maya Yoshida was the 2022 captain. Endo became permanent captain in June 2023.
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Change the 2022 captain to Maya Yoshida.
+
+### Row 36008 — Japan (medium) — FAIL
+**Q:** Which Japanese team reached its highest FIFA ranking after the 2011 Asian Cup?
+**Answer:** 17th
+**Why it fails:** False: Japan did NOT reach 17th in the FIFA ranking after the 2011 Asian Cup. Their 2011 ranking was ~19th (which is one of the options); 17th was reached in 2004/2023; all-time peak 9th (1998).
+**Source:** Wikipedia (Japan NT / Yoshida / Hasebe / Endo / Kagawa / Junya Ito / FIFA rankings); ESPN; FIFA
+**Remedy:** Change answer to 19th.
+
+### Row 36100 — Japan (easy) — FAIL
+**Q:** Which nation did Japan not face in a 2018 World Cup knockout match?
+**Answer:** Argentina
+**Why it fails:** Non-unique: Japan's only 2018 knockout match was the Round of 16 vs Belgium, so they did NOT face Argentina, Croatia OR Brazil in a knockout match — three of the four options are valid 'not faced' answers, not just Argentina.
+**Source:** Wikipedia (Japan at the FIFA World Cup / AFC Asian Cup / 2018 WC knockout stage); ESPN; FIFA
+**Remedy:** Make only one option a non-faced team, or scope to a round where Japan played all but one of the options.
+
+### Row 36101 — Japan (easy) — FAIL
+**Q:** Which nation did Japan not face in the 2018 World Cup round of 16?
+**Answer:** England
+**Why it fails:** Non-unique: Japan's 2018 Round of 16 opponent was Belgium only, so they did NOT face England, Croatia OR Switzerland in the R16 — three options satisfy 'did not face', not just England.
+**Source:** Wikipedia (Japan at the FIFA World Cup / AFC Asian Cup / 2018 WC knockout stage); ESPN; FIFA
+**Remedy:** Restructure so exactly one option is the non-faced team.
+
+### Row 36258 — Japan (easy) — FAIL
+**Q:** Which team did Japan not lead against at the 2018 World Cup?
+**Answer:** Colombia
+**Why it fails:** False (and non-unique): the answer 'Colombia' is wrong — Japan DID lead Colombia (1-0 via Kagawa's 6th-minute penalty, then 2-1). The teams Japan did NOT lead against in 2018 were Poland (lost 1-0) and Senegal (2-2, always equalising), so the answer is also non-unique.
+**Source:** Wikipedia (Japan NT / 2010 WCQ AFC / 2018 WC Colombia match / Hasebe / FIFA rankings); ESPN; FIFA
+**Remedy:** Correct answer is Poland (or Senegal); Japan led both Belgium and Colombia.
+
+### Row 36313 — Japan (medium) — FAIL
+**Q:** Which World Cup did Japan qualify for by winning their AFC group?
+**Answer:** 2010 World Cup
+**Why it fails:** False: Japan did NOT win their 2010 AFC qualifying group — they finished SECOND behind Australia in the AFC fourth round (Group A, 15 pts to 20), qualifying directly as runners-up.
+**Source:** Wikipedia (Japan NT / 2010 WCQ AFC / 2018 WC Colombia match / Hasebe / FIFA rankings); ESPN; FIFA
+**Remedy:** Japan qualified for 2010 as group runners-up, not winners.
+
+### Row 36321 — Japan (hard) — FAIL
+**Q:** Which year did Japan reach their highest FIFA ranking after the 2011 Asian Cup?
+**Answer:** 2011
+**Why it fails:** False: Japan did NOT reach 17th in the FIFA ranking in 2011. 2011 was ~19th; 17th was reached in 2004/2023; all-time peak was 9th (1998).
+**Source:** Wikipedia (Japan NT / 2010 WCQ AFC / 2018 WC Colombia match / Hasebe / FIFA rankings); ESPN; FIFA
+**Remedy:** Remove the 17th-in-2011 premise (2011 was ~19th).
+
+### Row 36322 — Japan (hard) — FAIL
+**Q:** Which year did Japan reach their highest FIFA ranking of 17th?
+**Answer:** 2011
+**Why it fails:** False: Japan did NOT reach 17th in the FIFA ranking in 2011. 2011 was ~19th; 17th was reached in 2004/2023; all-time peak was 9th (1998).
+**Source:** Wikipedia (Japan NT / 2010 WCQ AFC / 2018 WC Colombia match / Hasebe / FIFA rankings); ESPN; FIFA
+**Remedy:** Remove the 17th-in-2011 premise (2011 was ~19th).
+
+### Row 36326 — Japan (easy) — FAIL
+**Q:** Who captained Japan's defence at multiple World Cups?
+**Answer:** Maya Yoshida
+**Why it fails:** False: Maya Yoshida did NOT captain Japan 'at multiple World Cups' — he captained only at 2022. Makoto Hasebe captained at 2010/2014/2018 (Hasebe is not among the options).
+**Source:** Wikipedia (Japan NT / 2010 WCQ AFC / 2018 WC Colombia match / Hasebe / FIFA rankings); ESPN; FIFA
+**Remedy:** The multi-World-Cup captain was Hasebe; Yoshida captained one (2022).
+
+### Row 36369 — Japan (easy) — FAIL
+**Q:** Why did Japan qualify for the 2010 FIFA World Cup?
+**Answer:** Won AFC qualifying group
+**Why it fails:** False: the answer 'Won AFC qualifying group' is incorrect — Japan finished SECOND in their 2010 AFC fourth-round group behind Australia. The option 'Finished second in group' was the correct choice.
+**Source:** Wikipedia (Japan NT / 2010 WCQ AFC / 2018 WC Colombia match / Hasebe / FIFA rankings); ESPN; FIFA
+**Remedy:** Change answer to 'Finished second in group'.
