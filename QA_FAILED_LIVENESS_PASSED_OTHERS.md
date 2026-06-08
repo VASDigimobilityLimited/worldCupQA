@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **2857** (new method 231+, 24 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Italy 225 · Japan 62 · Tunisia 73)
+Total failed-liveness-passed-others so far: **2935** (new method 231+, 25 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Italy 225 · Japan 62 · Tunisia 73 · USA 78)
 
 ---
 
@@ -16621,3 +16621,549 @@ group winners of UEFA Group H). The year is **2025**, not 2026 — and 2025 isn'
 **Why it fails:** Out of date: Tunisia has now qualified for SEVEN World Cups (incl. 2026), not six — and 'Seven World Cup qualifications' is one of the options. Their NA-record count is also shared with Morocco (now seven each).
 **Source:** Wikipedia (Tunisia NT / Esperance de Tunis / Hannibal Mejbri / Wahbi Khazri / Ellyes Skhiri / Al Bayt Stadium / 2026 WCQ CAF); ESPN; FIFA
 **Remedy:** Change answer to seven World Cup qualifications.
+
+### Row 45517 — USA (medium) — FAIL
+**Q:** After 2018 World Cup qualifying failure, what FIFA ranking did the USA drop to?
+**Answer:** 34th
+**Why it fails:** Wrong number: after failing to qualify for 2018, the USMNT dropped to about 32nd in the FIFA ranking (per US Soccer/sources), not 34th.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** Use ~32nd, not 34th.
+
+### Row 45520 — USA (medium) — FAIL
+**Q:** After failing to qualify for the 2018 World Cup, the USA dropped to which FIFA ranking?
+**Answer:** 34th
+**Why it fails:** Wrong number: after failing to qualify for 2018, the USMNT dropped to about 32nd in the FIFA ranking (per US Soccer/sources), not 34th.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** Use ~32nd, not 34th.
+
+### Row 45524 — USA (medium) — FAIL
+**Q:** After failing to qualify for the 2018 World Cup, which FIFA ranking did the USA drop to?
+**Answer:** 34th
+**Why it fails:** Wrong number: after failing to qualify for 2018, the USMNT dropped to about 32nd in the FIFA ranking (per US Soccer/sources), not 34th.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** Use ~32nd, not 34th.
+
+### Row 45526 — USA (medium) — FAIL
+**Q:** After failing to reach the 2018 World Cup, the USA fell to which FIFA ranking?
+**Answer:** 34th
+**Why it fails:** Wrong number: after failing to qualify for 2018, the USMNT dropped to about 32nd in the FIFA ranking (per US Soccer/sources), not 34th.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** Use ~32nd, not 34th.
+
+### Row 45531 — USA (hard) — FAIL
+**Q:** After which World Cup did the USA reach their highest FIFA ranking of 13th?
+**Answer:** 2010 World Cup
+**Why it fails:** False: 13th was NOT the USMNT's highest-ever FIFA ranking. Their peak was 4th, reached in April 2006. (They were ranked around 13th-14th circa 2010, but that was not their high.)
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** All-time high was 4th (April 2006), not 13th in 2010.
+
+### Row 45543 — USA (easy) — FAIL
+**Q:** At the 2022 World Cup, which CONCACAF rival did the USA draw 0-0 with?
+**Answer:** England
+**Why it fails:** Category error: England is NOT a CONCACAF rival — England plays in UEFA (Europe). The USA did draw 0-0 with England in 2022, but none of the options is a CONCACAF team.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** England is a UEFA team; fix the 'CONCACAF rival' framing.
+
+### Row 45556 — USA (medium) — FAIL
+**Q:** At which FIFA World Cup did the USA reach its 13th-place ranking high?
+**Answer:** 2010 World Cup
+**Why it fails:** False: 13th was NOT the USMNT's highest-ever FIFA ranking. Their peak was 4th, reached in April 2006. (They were ranked around 13th-14th circa 2010, but that was not their high.)
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** All-time high was 4th (April 2006), not 13th in 2010.
+
+### Row 45560 — USA (easy) — FAIL
+**Q:** At which stadium did the USA play their 2022 World Cup round of 16 match?
+**Answer:** Al Bayt Stadium
+**Why it fails:** False venue: the USA's 2022 Round of 16 match v the Netherlands was played at KHALIFA INTERNATIONAL STADIUM (Al Rayyan), not Al Bayt Stadium.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** Change venue to Khalifa International Stadium.
+
+### Row 45573 — USA (hard) — FAIL
+**Q:** During which World Cup qualifying cycle did USA reach 13th in FIFA rankings?
+**Answer:** 2010 World Cup cycle
+**Why it fails:** False: 13th was NOT the USMNT's highest-ever FIFA ranking. Their peak was 4th, reached in April 2006. (They were ranked around 13th-14th circa 2010, but that was not their high.)
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** All-time high was 4th (April 2006), not 13th in 2010.
+
+### Row 45593 — USA (easy) — FAIL
+**Q:** How did the USA beat Mexico in the 2020 CONCACAF Nations League final?
+**Answer:** On penalties
+**Why it fails:** False: the USA did NOT beat Mexico on penalties in the (2019-20) CONCACAF Nations League final — they won 3-2 after EXTRA TIME (Pulisic's 114th-minute penalty in open play won it). The explanation itself says '3-2 in extra time'.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** It was a 3-2 win in extra time, not a penalty shootout.
+
+### Row 45610 — USA (medium) — FAIL
+**Q:** How many recent CONCACAF tournament finals did the USA eliminate Mexico in?
+**Answer:** Two
+**Why it fails:** Undercount: the USA beat Mexico in THREE recent CONCACAF finals (2019-20 Nations League, 2021 Gold Cup, 2022-23 Nations League), not two — and 'Three' is an option (other rows here say three).
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** Change to three.
+
+### Row 45632 — USA (medium) — FAIL
+**Q:** In 2010, what was the USA's highest-ever FIFA ranking?
+**Answer:** 13th
+**Why it fails:** False: 13th was NOT the USMNT's highest-ever FIFA ranking. Their peak was 4th, reached in April 2006. (They were ranked around 13th-14th circa 2010, but that was not their high.)
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** All-time high was 4th (April 2006), not 13th in 2010.
+
+### Row 45638 — USA (medium) — FAIL
+**Q:** In a 2022 World Cup group stage match, how old was the USA's starting lineup on average?
+**Answer:** Under 25 years
+**Why it fails:** False: the USA did NOT field the youngest squad at the 2022 World Cup — they were the SECOND-youngest (Ghana was the youngest). The explanation's 'youngest squad at the 2022 World Cup' is incorrect.
+**Source:** Wikipedia (USMNT / United States at the FIFA World Cup / 2022 WC R16 / 2021 CONCACAF Nations League final); US Soccer; ESPN; FIFA rankings
+**Remedy:** USA were second-youngest at 2022; Ghana were the youngest.
+
+### Row 45647 — USA (easy) — FAIL
+**Q:** In the 2022 World Cup, the USA lost 3-1 to the Netherlands. Who scored the USA's only goal in that match?
+**Answer:** Christian Pulisic
+**Why it fails:** False: the USA's goal in the 3-1 loss to the Netherlands (2022 R16) was scored by substitute Haji Wright (76'), NOT Christian Pulisic (Pulisic delivered the cross).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Haji Wright scored the USA goal v the Netherlands.
+
+### Row 45651 — USA (easy) — FAIL
+**Q:** In the 2022 World Cup, which USA player became the youngest American to score?
+**Answer:** Christian Pulisic
+**Why it fails:** False: Christian Pulisic is NOT the youngest American to score at a World Cup. Julian Green is (aged 19, v Belgium in 2014); Landon Donovan also scored younger (20, in 2002). Pulisic was 24.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** The youngest US WC scorer is Julian Green (2014).
+
+### Row 45653 — USA (easy) — FAIL
+**Q:** In the 2026 USA squad, which player is NOT at the same club as captain Christian Pulisic?
+**Answer:** Weston McKennie
+**Why it fails:** Non-unique: among the options, McKennie (Juventus), Reyna and Weah are all NOT at Pulisic's club (AC Milan), while Yunus Musah was at AC Milan WITH Pulisic. So 'which is NOT at the same club' has multiple valid answers, not just McKennie.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Restructure so exactly one option differs (note Musah shared AC Milan with Pulisic).
+
+### Row 45656 — USA (medium) — FAIL
+**Q:** In the USA's 2022 World Cup group stage match against Wales, which US-developed European-level talent started?
+**Answer:** Brenden Aaronson
+**Why it fails:** Non-unique: Tyler Adams, Weston McKennie AND Christian Pulisic (all options, all US-developed European-level players) started for the USA against Wales in 2022 — so 'which started' is not unique to Aaronson (who came off the bench).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Several listed players started v Wales; make the answer unique.
+
+### Row 45658 — USA (medium) — FAIL
+**Q:** In the USA's 2022 World Cup group, what was the score against Wales?
+**Answer:** 01-Jan
+**Why it fails:** Excel date-corruption: answer stored as '01-Jan' instead of the score 1-1 (USA drew Wales 1-1).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Replace '01-Jan' with '1-1'.
+
+### Row 45671 — USA (medium) — FAIL
+**Q:** In which World Cup campaign did Christian Pulisic become the youngest USA scorer?
+**Answer:** 2022 World Cup
+**Why it fails:** False: Christian Pulisic is NOT the youngest American to score at a World Cup. Julian Green is (aged 19, v Belgium in 2014); Landon Donovan also scored younger (20, in 2002). Pulisic was 24.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** The youngest US WC scorer is Julian Green (2014).
+
+### Row 45702 — USA (medium) — FAIL
+**Q:** In which year did the USA fire manager Gregg Berhalter?
+**Answer:** 2023
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America group-stage exit), not 2023. His contract lapsed after the 2022 World Cup and he was REHIRED in June 2023 before being fired in 2024.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 45703 — USA (medium) — FAIL
+**Q:** In which year did the USA first beat Mexico in a CONCACAF final?
+**Answer:** 2021
+**Why it fails:** False: the USA first beat Mexico in a CONCACAF final in 2007 (Gold Cup final, USA 2-1 Mexico), not 2021. (They beat Mexico again in 2021, but that was not the first time.)
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** The first USA win over Mexico in a CONCACAF final was the 2007 Gold Cup.
+
+### Row 45707 — USA (hard) — FAIL
+**Q:** In which year did the USA team reach 13th in FIFA rankings?
+**Answer:** 2010
+**Why it fails:** False: 13th was NOT the USMNT's highest FIFA ranking — their peak was 4th (April 2006). They were ranked around 13th-14th circa 2010, but that was not their high.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** All-time high was 4th (April 2006).
+
+### Row 45710 — USA (medium) — FAIL
+**Q:** In which year did the USA win the CONCACAF Gold Cup while also participating in Copa América?
+**Answer:** 2024
+**Why it fails:** False: there was no 2024 CONCACAF Gold Cup. The USA won the 2021 and 2023 Gold Cups (Gold Cups are 2019/2021/2023/2025). In 2024 the USA played the Copa America (group-stage exit), not a Gold Cup.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** USA won the 2021/2023 Gold Cups; there was no 2024 Gold Cup.
+
+### Row 45711 — USA (medium) — FAIL
+**Q:** In which year did the USA win the CONCACAF Gold Cup?
+**Answer:** 2024
+**Why it fails:** False: there was no 2024 CONCACAF Gold Cup. The USA won the 2021 and 2023 Gold Cups (Gold Cups are 2019/2021/2023/2025). In 2024 the USA played the Copa America (group-stage exit), not a Gold Cup.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** USA won the 2021/2023 Gold Cups; there was no 2024 Gold Cup.
+
+### Row 45719 — USA (medium) — FAIL
+**Q:** In which year was USA manager Gregg Berhalter fired?
+**Answer:** 2023
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America group-stage exit), not 2023. His contract lapsed after the 2022 World Cup and he was REHIRED in June 2023 before being fired in 2024.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 45727 — USA (medium) — FAIL
+**Q:** To what position did the USA fall in the FIFA rankings after failing to qualify for the 2018 World Cup?
+**Answer:** 34th
+**Why it fails:** Wrong number: after failing to qualify for 2018 the USMNT dropped to about 32nd in the FIFA ranking (per US Soccer/sources), not 34th.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Use ~32nd, not 34th.
+
+### Row 45737 — USA (easy) — FAIL
+**Q:** What was the final score when the USA lost to the Netherlands in the 2022 World Cup round of 16?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer stored as '03-Jan' instead of the score 3-1 (USA lost 3-1 to the Netherlands).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Replace '03-Jan' with '3-1'.
+
+### Row 45749 — USA (easy) — FAIL
+**Q:** What was the USA's losing score in their 2018 qualifying failure?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer stored as '02-Jan' instead of the score 2-1 (USA lost 2-1 to Trinidad & Tobago).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Replace '02-Jan' with '2-1'.
+
+### Row 45750 — USA (medium) — FAIL
+**Q:** What was the USA's peak FIFA ranking during 2010 World Cup qualifying?
+**Answer:** 13th
+**Why it fails:** False: 13th was NOT the USMNT's highest FIFA ranking — their peak was 4th (April 2006). They were ranked around 13th-14th circa 2010, but that was not their high.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** All-time high was 4th (April 2006).
+
+### Row 45775 — USA (medium) — FAIL
+**Q:** When did the USA beat Mexico in a CONCACAF Nations League final on penalties?
+**Answer:** 2019-20
+**Why it fails:** False: the USA did NOT beat Mexico on penalties in the (2019-20) CONCACAF Nations League final — they won 3-2 after extra time (Pulisic's 114th-minute penalty in open play).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** It was a 3-2 win in extra time, not a penalty shootout.
+
+### Row 45786 — USA (medium) — FAIL
+**Q:** When did the USA fire manager Gregg Berhalter?
+**Answer:** 2023
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America group-stage exit), not 2023. His contract lapsed after the 2022 World Cup and he was REHIRED in June 2023 before being fired in 2024.
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 45788 — USA (medium) — FAIL
+**Q:** When did the USA host and lose a Copa América semi-final?
+**Answer:** 2024
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE (their loss to Uruguay was a group game). The hosted Copa where they lost a semi-final was 2016 (4-0 to Argentina).
+**Source:** Wikipedia (USMNT / Haji Wright / Julian Green / Gregg Berhalter / 2007 & 2021 Gold Cup / 2022 WC); ESPN; US Soccer; FIFA
+**Remedy:** The hosted Copa semi-final loss was 2016; in 2024 the USA exited in the group stage.
+
+### Row 45797 — USA (medium) — FAIL
+**Q:** When did the USA reach the Copa América semi-finals as hosts?
+**Answer:** 2024
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE. They reached the semis as hosts in 2016 (Copa Centenario, lost 4-0 to Argentina).
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** The hosted Copa semi-final run was 2016, not 2024.
+
+### Row 45803 — USA (medium) — FAIL
+**Q:** When did the USA win the CONCACAF Gold Cup in 2024?
+**Answer:** 2024
+**Why it fails:** False: there was no 2024 CONCACAF Gold Cup. The USA won the 2021 and 2023 Gold Cups (editions are 2021/2023/2025); in 2024 they played the Copa America.
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** USA won the 2021/2023 Gold Cups; there was no 2024 Gold Cup.
+
+### Row 45835 — USA (easy) — FAIL
+**Q:** Where is the USA's national training centre located?
+**Answer:** SteelStacks campus Chicago
+**Why it fails:** False: US Soccer's national training centre is not the 'SteelStacks campus in Chicago' (SteelStacks is an arts venue in Bethlehem, PA). US Soccer is HQ'd in Chicago, and opened its National Training Center in Fayetteville, Georgia (2024); historically the team trained at the Home Depot Center (Carson, CA).
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** Fix the venue (national training center is in Fayetteville, GA; the Home Depot Center was the longtime base).
+
+### Row 45837 — USA (medium) — FAIL
+**Q:** Which 2009 CONCACAF Gold Cup run helped the USA reach 13th in the FIFA rankings?
+**Answer:** Reaching the final
+**Why it fails:** False: 13th was NOT the USMNT's peak FIFA ranking (their high was 4th, April 2006), and it was the 2009 CONFEDERATIONS CUP run (runners-up, beat Spain) — not the 2009 Gold Cup (where the USA lost the final 5-0 to Mexico) — that boosted their ranking.
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** Peak was 4th (2006); the boost came from the 2009 Confederations Cup.
+
+### Row 45839 — USA (easy) — FAIL
+**Q:** Which 2010s World Cup round of 16 opponent did the USA not face?
+**Answer:** Netherlands
+**Why it fails:** Non-unique: among the options, the USA did NOT face Netherlands NOR Argentina in a 2010s round of 16 (their 2010s R16 opponents were Ghana in 2010 and Belgium in 2014). So 'did not face' applies to two options, not just Netherlands.
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** Make the answer unique (USA faced Ghana 2010, Belgium 2014; Netherlands was 2022, Argentina never).
+
+### Row 45842 — USA (easy) — FAIL
+**Q:** Which 2022 World Cup match did NOT involve a USA player scoring a crucial goal?
+**Answer:** USA vs Netherlands
+**Why it fails:** False: a USA player DID score against the Netherlands — substitute Haji Wright scored in the 76th minute of the 3-1 round-of-16 loss. The match with no USA goal was the 0-0 v England.
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** Haji Wright scored v the Netherlands; the goalless match was v England.
+
+### Row 45864 — USA (easy) — FAIL
+**Q:** Which American was not a US captain at the 2022 World Cup?
+**Answer:** Landon Donovan
+**Why it fails:** Non-unique: Tyler Adams was the 2022 captain, so Donovan, Pulisic AND Howard (all options) were 'not a US captain at the 2022 World Cup' — three options satisfy the question, not just Donovan.
+**Source:** Wikipedia (USMNT / 2024 Copa America / CONCACAF Gold Cup / 2009 Confederations Cup / 2022 WC v Netherlands); ESPN; US Soccer
+**Remedy:** Restructure so exactly one option fits (only Adams captained).
+
+### Row 45945 — USA (easy) — FAIL
+**Q:** Which MLS club was founded before the USA co-hosted the 2026 World Cup?
+**Answer:** Seattle Sounders
+**Why it fails:** Non-unique: all four options — Seattle Sounders (2007), Atlanta United (2017), LAFC (2018) and Inter Miami (2018/2020) — were founded before the 2026 World Cup. The criterion does not single out Seattle.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** Make the criterion unique (e.g. 'founded earliest').
+
+### Row 45957 — USA (easy) — FAIL
+**Q:** Which nation did the USA beat on penalties in the 2019-20 CONCACAF Nations League final?
+**Answer:** Mexico
+**Why it fails:** False: the (2019-20) CONCACAF Nations League final was NOT decided on penalties — the USA beat Mexico 3-2 after extra time (Pulisic's 114th-minute penalty in open play).
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** It was a 3-2 win in extra time, not a penalty shootout.
+
+### Row 45975 — USA (easy) — FAIL
+**Q:** Which nation eliminated the USA in the 2024 Copa América semi-finals?
+**Answer:** Uruguay
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE (Group C: beat Bolivia 2-0, lost Panama 2-1, lost Uruguay 0-1). The Uruguay loss was the final GROUP game that eliminated them; they played no knockout matches.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** The USA exited 2024 Copa in the group stage; the Uruguay game was a group match, not a semi-final.
+
+### Row 46017 — USA (easy) — FAIL
+**Q:** Which player was NOT the USA's key player in a World Cup qualifying campaign?
+**Answer:** Landon Donovan
+**Why it fails:** Flawed/non-unique: Landon Donovan WAS a key USMNT player in World Cup qualifying (2010/2014). And if the intent is 'not the 2022 key player', then Dempsey and Howard (options) also weren't — so the answer is not unique.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** Donovan was a key qualifying player; restructure for a unique answer.
+
+### Row 46024 — USA (easy) — FAIL
+**Q:** Which rival did the USA face in the 2024 Copa América semi-finals?
+**Answer:** Uruguay
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE (Group C: beat Bolivia 2-0, lost Panama 2-1, lost Uruguay 0-1). The Uruguay loss was the final GROUP game that eliminated them; they played no knockout matches.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** The USA exited 2024 Copa in the group stage; the Uruguay game was a group match, not a semi-final.
+
+### Row 46050 — USA (easy) — FAIL
+**Q:** Which team beat the USA in the 2024 Copa América semi-finals?
+**Answer:** Uruguay
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE (Group C: beat Bolivia 2-0, lost Panama 2-1, lost Uruguay 0-1). The Uruguay loss was the final GROUP game that eliminated them; they played no knockout matches.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** The USA exited 2024 Copa in the group stage; the Uruguay game was a group match, not a semi-final.
+
+### Row 46056 — USA (easy) — FAIL
+**Q:** Which team did the USA beat on penalties in the 2020 CONCACAF Nations League final?
+**Answer:** Mexico
+**Why it fails:** False: the (2019-20) CONCACAF Nations League final was NOT decided on penalties — the USA beat Mexico 3-2 after extra time (Pulisic's 114th-minute penalty in open play).
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** It was a 3-2 win in extra time, not a penalty shootout.
+
+### Row 46060 — USA (easy) — FAIL
+**Q:** Which team did the USA lose to in the 2024 Copa América semi-finals?
+**Answer:** Uruguay
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE (Group C: beat Bolivia 2-0, lost Panama 2-1, lost Uruguay 0-1). The Uruguay loss was the final GROUP game that eliminated them; they played no knockout matches.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** The USA exited 2024 Copa in the group stage; the Uruguay game was a group match, not a semi-final.
+
+### Row 46061 — USA (easy) — FAIL
+**Q:** Which team did the USA not face in a 2024 Copa América knockout match?
+**Answer:** Brazil
+**Why it fails:** False premise: the USA played NO knockout matches at the 2024 Copa America (they exited in the group stage). The explanation's 'Uruguay in the semi-final' is wrong — Uruguay was a group-stage opponent.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** The USA had no 2024 Copa knockout matches; fix the premise.
+
+### Row 46062 — USA (easy) — FAIL
+**Q:** Which team eliminated the USA 1-0 in the 2024 Copa América semi-finals?
+**Answer:** Uruguay
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE (Group C: beat Bolivia 2-0, lost Panama 2-1, lost Uruguay 0-1). The Uruguay loss was the final GROUP game that eliminated them; they played no knockout matches.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** The USA exited 2024 Copa in the group stage; the Uruguay game was a group match, not a semi-final.
+
+### Row 46072 — USA (easy) — FAIL
+**Q:** Which Trinidad & Tobago player scored to eliminate the USA from 2018 World Cup qualifying?
+**Answer:** Omar Gonzalez
+**Why it fails:** False: Omar Gonzalez is a USA player, not a Trinidad & Tobago player — the goal was Gonzalez's OWN GOAL (the explanation says so). Trinidad's goal that day was scored by Alvin Jones.
+**Source:** Wikipedia (USMNT / 2024 Copa America / 2019-20 CONCACAF Nations League / Trinidad & Tobago v USA 2017); ESPN; US Soccer
+**Remedy:** Gonzalez (USA) scored an own goal; the T&T scorer was Alvin Jones.
+
+### Row 46136 — USA (easy) — FAIL
+**Q:** Which USA 2026 World Cup venue is NOT in Texas or Florida?
+**Answer:** SoFi Stadium
+**Why it fails:** Non-unique: all four options — SoFi (CA), MetLife (NJ), Mercedes-Benz (GA), Arrowhead (MO) — are NOT in Texas or Florida. The explanation references AT&T (TX) and Hard Rock (FL), but those are not among the options.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Make the options include exactly one TX/FL venue.
+
+### Row 46144 — USA (easy) — FAIL
+**Q:** Which USA coach chose to rest key players for the 2024 Copa América?
+**Answer:** Gregg Berhalter
+**Why it fails:** False: there was no 2024 Gold Cup, and Berhalter did NOT rest key players for the 2024 Copa America — the Copa was the priority; he played his strongest squad and the USA were eliminated in the group stage (after which he was fired).
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** No 2024 Gold Cup; Berhalter did not rest players for the Copa.
+
+### Row 46146 — USA (easy) — FAIL
+**Q:** Which USA coach led the team to the 2024 Gold Cup while also competing in Copa América?
+**Answer:** Gregg Berhalter
+**Why it fails:** False: there was no 2024 CONCACAF Gold Cup (editions are 2021/2023/2025; USA won 2021 and 2023). In 2024 the USA played the Copa America (group-stage exit) and Berhalter was fired after it.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** There was no 2024 Gold Cup.
+
+### Row 46151 — USA (medium) — FAIL
+**Q:** Which USA FIFA ranking followed their 2018 World Cup qualifying failure?
+**Answer:** 34th
+**Why it fails:** Wrong number: after failing to qualify for 2018 the USMNT dropped to about 32nd in the FIFA ranking (per US Soccer/sources), not 34th.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Use ~32nd, not 34th.
+
+### Row 46152 — USA (medium) — FAIL
+**Q:** Which USA FIFA ranking high preceded their 2014 World Cup run?
+**Answer:** 13th
+**Why it fails:** False: 13th was NOT the USMNT's highest FIFA ranking — their peak was 4th (April 2006).
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** All-time high was 4th (2006).
+
+### Row 46171 — USA (easy) — FAIL
+**Q:** Which USA goal preceded their 2026 co-hosting announcement?
+**Answer:** Christian Pulisic vs Iran
+**Why it fails:** False: Pulisic's goal v Iran was at the 2022 World Cup — AFTER the USA was awarded 2026 co-hosting rights (June 2018). The goals that PRECEDED the 2018 award are Donovan v Algeria (2010), Howard v Belgium (2014) and Dempsey (2014).
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Pulisic's 2022 goal came after the 2018 co-host award; pick a pre-2018 goal.
+
+### Row 46227 — USA (easy) — FAIL
+**Q:** Which USA manager was dismissed in 2023 after the Qatar World Cup?
+**Answer:** Gregg Berhalter
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America), not 2023. His contract lapsed after the 2022 World Cup, he was REHIRED in June 2023, and was fired in 2024.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 46228 — USA (easy) — FAIL
+**Q:** Which USA manager was fired after the 2022 World Cup in 2023?
+**Answer:** Gregg Berhalter
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America), not 2023. His contract lapsed after the 2022 World Cup, he was REHIRED in June 2023, and was fired in 2024.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 46229 — USA (easy) — FAIL
+**Q:** Which USA manager was fired during 2026 World Cup qualifying?
+**Answer:** Gregg Berhalter
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America), not 2023. His contract lapsed after the 2022 World Cup, he was REHIRED in June 2023, and was fired in 2024.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 46230 — USA (easy) — FAIL
+**Q:** Which USA manager was fired in 2023 before the 2026 World Cup?
+**Answer:** Gregg Berhalter
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America), not 2023. His contract lapsed after the 2022 World Cup, he was REHIRED in June 2023, and was fired in 2024.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 46231 — USA (easy) — FAIL
+**Q:** Which USA manager was fired in 2023?
+**Answer:** Gregg Berhalter
+**Why it fails:** Wrong year: Gregg Berhalter was fired in JULY 2024 (after the Copa America), not 2023. His contract lapsed after the 2022 World Cup, he was REHIRED in June 2023, and was fired in 2024.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** Berhalter was fired in 2024, not 2023.
+
+### Row 46271 — USA (easy) — FAIL
+**Q:** Which USA player became their youngest World Cup scorer in 2022?
+**Answer:** Christian Pulisic
+**Why it fails:** False: Christian Pulisic is NOT the USA's youngest World Cup scorer. Julian Green (aged 19, v Belgium 2014) holds that, and Donovan scored younger too (20, in 2002). Pulisic was 24.
+**Source:** Wikipedia (USMNT / Gregg Berhalter / CONCACAF Gold Cup / 2026 WC venues / Julian Green / FIFA rankings); ESPN; US Soccer
+**Remedy:** The youngest US WC scorer is Julian Green (2014).
+
+### Row 46323 — USA (easy) — FAIL
+**Q:** Which USA player scored at Education City Stadium in the 2022 World Cup?
+**Answer:** Christian Pulisic
+**Why it fails:** False venue: the USA's 2022 group game v Iran (where Pulisic scored) was at AL THUMAMA STADIUM, not Education City Stadium.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Change venue to Al Thumama Stadium.
+
+### Row 46324 — USA (easy) — FAIL
+**Q:** Which USA player scored at the 2022 World Cup aged 24?
+**Answer:** Christian Pulisic
+**Why it fails:** False: Christian Pulisic is NOT the youngest American to score at a World Cup — Julian Green (aged 19, v Belgium 2014) holds that, and Donovan scored younger too (20, 2002). Pulisic was 24.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** The youngest US WC scorer is Julian Green (2014).
+
+### Row 46358 — USA (easy) — FAIL
+**Q:** Which USA player was 24 when scoring his first World Cup goal in 2022?
+**Answer:** Christian Pulisic
+**Why it fails:** False: Christian Pulisic is NOT the youngest American to score at a World Cup — Julian Green (aged 19, v Belgium 2014) holds that, and Donovan scored younger too (20, 2002). Pulisic was 24.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** The youngest US WC scorer is Julian Green (2014).
+
+### Row 46372 — USA (easy) — FAIL
+**Q:** Which USA player was not a captain at the 2022 FIFA World Cup?
+**Answer:** Christian Pulisic
+**Why it fails:** Non-unique: Tyler Adams was the 2022 captain, so Pulisic, McKennie AND Yedlin (all options) were 'not a captain at the 2022 World Cup' — three options satisfy it, not just Pulisic.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Restructure so exactly one option fits (only Adams captained).
+
+### Row 46374 — USA (easy) — FAIL
+**Q:** Which USA player was not in the 2022 FIFA World Cup squad?
+**Answer:** Clint Dempsey
+**Why it fails:** Non-unique: all four options — Dempsey, Howard, Donovan, Bradley — had retired and were NOT in the 2022 squad. The explanation references Dest/Turner/Adams, but those aren't options.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Make exactly one option a non-squad player.
+
+### Row 46381 — USA (easy) — FAIL
+**Q:** Which USA player was the youngest to score at the 2022 World Cup?
+**Answer:** Christian Pulisic
+**Why it fails:** False: Pulisic was NOT the youngest USA player to score at the 2022 World Cup — Tim Weah (aged 22, v Wales) was younger than Pulisic (24). And the youngest-ever US WC scorer is Julian Green (2014).
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Weah (22) was younger than Pulisic at 2022; Green is the youngest-ever.
+
+### Row 46389 — USA (easy) — FAIL
+**Q:** Which USA player's 2022 goal preceded their 2026 co-host announcement?
+**Answer:** Christian Pulisic
+**Why it fails:** False: Pulisic's 2022 goal came AFTER the USA's 2026 co-host status was awarded (June 2018) and after the host-cities announcement (June 2022). It did not precede the co-host announcement.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Pulisic's 2022 goal followed the 2018 co-host award; use a pre-2018 goal.
+
+### Row 46404 — USA (medium) — FAIL
+**Q:** Which USA result at the 2022 World Cup statistically matched their 2010 Algeria win?
+**Answer:** 0-0 draw with England
+**Why it fails:** False: the 0-0 draw with England did NOT secure the USA's 2022 progression — it was the 1-0 win over Iran that did (analogous to Donovan's 2010 Algeria winner). The Iran option here is also mis-scored as '2-1' (it was 1-0).
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** The progression-securing result was the 1-0 win v Iran, not the England draw.
+
+### Row 46416 — USA (easy) — FAIL
+**Q:** Which USA rival did they beat on penalties in the 2019-20 CONCACAF Nations League final?
+**Answer:** Mexico
+**Why it fails:** False: the (2019-20) CONCACAF Nations League final was NOT decided on penalties — the USA beat Mexico 3-2 after extra time (Pulisic's 114th-minute penalty in open play).
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** It was a 3-2 win in extra time, not a penalty shootout.
+
+### Row 46444 — USA (hard) — FAIL
+**Q:** Which USA tournament win came after their 2022-23 Nations League victory?
+**Answer:** 2024 CONCACAF Gold Cup
+**Why it fails:** False: there was no 2024 CONCACAF Gold Cup (editions are 2021/2023/2025; USA won 2021 & 2023). The USA's 2024 trophy was the CONCACAF Nations League (2023-24 final, March 2024).
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** No 2024 Gold Cup; the USA's 2024 win was the Nations League.
+
+### Row 46445 — USA (easy) — FAIL
+**Q:** Which USA tournament win occurred in 2024?
+**Answer:** CONCACAF Gold Cup
+**Why it fails:** False: there was no 2024 CONCACAF Gold Cup (editions are 2021/2023/2025; USA won 2021 & 2023). The USA's 2024 trophy was the CONCACAF Nations League (2023-24 final, March 2024).
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** No 2024 Gold Cup; the USA's 2024 win was the Nations League.
+
+### Row 46454 — USA (hard) — FAIL
+**Q:** Which USA World Cup qualification saw them top their CONCACAF group: 2010 or 2014?
+**Answer:** 2010
+**Why it fails:** Non-unique: the USA topped their CONCACAF final round for BOTH 2010 and 2014 (they finished 1st in the Hexagonal both times) — another row here (46077) says so. So '2010 or 2014' is not uniquely 2010.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Both 2010 and 2014 saw the USA top CONCACAF; make the answer unique.
+
+### Row 46467 — USA (easy) — FAIL
+**Q:** Which USWNT player debuted at the 2019 FIFA World Cup?
+**Answer:** Tierna Davidson
+**Why it fails:** Non-unique: Rose Lavelle (and Lindsey Horan), both options, also made their World Cup debut at the 2019 tournament alongside Tierna Davidson. Only Rapinoe (2011/2015 veteran) had debuted earlier.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** Several options debuted at the 2019 Women's World Cup; make it unique.
+
+### Row 46481 — USA (hard) — FAIL
+**Q:** Which year marks the USA's highest FIFA ranking?
+**Answer:** 2010
+**Why it fails:** False: the USA's highest FIFA ranking year was 2006 (peak 4th, April 2006), not 2010. The '13th in 2010' figure was not their high.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** The all-time high was 4th in 2006.
+
+### Row 46504 — USA (easy) — FAIL
+**Q:** Why did the USA reach the 2024 Copa América semi-finals?
+**Answer:** They were the hosts
+**Why it fails:** False: the USA did NOT reach the 2024 Copa America semi-finals — they were eliminated in the GROUP STAGE. They reached the semis as hosts in 2016, not 2024.
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** The USA exited 2024 Copa in the group stage; the hosted semi-final run was 2016.
+
+### Row 46505 — USA (easy) — FAIL
+**Q:** Why did the USA win the inaugural 2019-20 CONCACAF Nations League?
+**Answer:** Beat Mexico on penalties
+**Why it fails:** False: the (2019-20) CONCACAF Nations League final was NOT decided on penalties — the USA beat Mexico 3-2 after extra time (Pulisic's 114th-minute penalty in open play).
+**Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
+**Remedy:** It was a 3-2 win in extra time, not a penalty shootout.

@@ -89,7 +89,7 @@ Verdicts route into two files:
 - **`QA_FAILED_LIVENESS_PASSED_OTHERS.md`** — passed mechanical but **failed liveness**
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
-**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **23 countries are
+**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **25 countries are
 now COMPLETE in total** (full table in §4; running counts in §3). Key findings per country:
 
 - **✅ Australia** (2161–3241): 714 ship-ready / 121 dangerous. **✅ Austria** (3242–4282): 626 / 135.
@@ -119,8 +119,13 @@ now COMPLETE in total** (full table in §4; running counts in §3). Key findings
   played at 2018** (he MISSED it with an ACL injury — first WC was 2022), the 2018 decider v Libya scored a goal
   (it was 0-0; the goals were the 4-1 Guinea win), Khazri/Mejbri "played for Espérance" (neither did), and France
   / Saudi Arabia called "CAF teams".
+- **✅ USA** (45515–46518): 611 / 78 — **2026 CO-HOST** (auto-qualified; Pochettino coach since Sept 2024).
+  Recurring errors: "USA reached the 2024 Copa América semis" (they exited in the GROUP STAGE), "won the 2024
+  Gold Cup" (no such tournament — 2024 trophy was the Nations League), "highest FIFA ranking 13th in 2010" (it
+  was 4th in 2006; the post-2018 drop was ~32nd not 34th), "Pulisic youngest American to score at a WC" (Julian
+  Green, 2014), and "Berhalter fired in 2023" (it was July 2024).
 
-The remaining 14 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
+The remaining 13 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -131,15 +136,15 @@ The remaining 14 countries are **not started** (§4). Next sequential not-starte
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **19733** ship-ready.
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **2857** dangerous.
-- **Total ship-ready so far (both methods):** 19865 (132 backfill rows 2–230 + 19733 new method).
-- **24 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **20344** ship-ready.
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **2935** dangerous.
+- **Total ship-ready so far (both methods):** 20476 (132 backfill rows 2–230 + 20344 new method).
+- **25 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
   Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
   Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
   Costa Rica 654/80 · Côte d'Ivoire 463/79 · Croatia 1034/154 · Denmark 859/182 · DR Congo 459/127 ·
   Ecuador 725/57 · Egypt 532/104 · England 1228/87 · France 1237/176 · Germany 1291/65 ·
-  Ghana 783/72 · Italy 1061/225 · Japan 935/62 · Tunisia 500/73.
+  Ghana 783/72 · Italy 1061/225 · Japan 935/62 · Tunisia 500/73 · USA 611/78.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
 
@@ -185,7 +190,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Senegal | 42928–43782 | 855 | 661 | ⬜ not started |
 | Switzerland | 43783–44756 | 974 | 832 | ⬜ not started |
 | Tunisia | 44757–45514 | 758 | 573 | ✅ **COMPLETE** (row 45514) — 500 PASS / 73 FAIL |
-| USA | 45515–46518 | 1004 | 689 | ⬜ not started |
+| USA | 45515–46518 | 1004 | 689 | ✅ **COMPLETE** (row 46518) — 611 PASS / 78 FAIL |
 
 ## 5. How to run the loop (exact procedure, per batch ~25–90 candidate rows)
 

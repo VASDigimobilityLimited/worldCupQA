@@ -2549,3 +2549,61 @@ above are accurate on disk (500 PASS / 73 FAIL = 573, matches QA_PASSED, no over
    (no 1998); Khazri in 2 WC squads not 3; Radès hosted qualifiers long before 2010/2022.
 
 **Tunisia running totals (rows 44757+): 500 PASS-ALL · 73 FAIL-LIVENESS.**
+
+---
+
+# 🇺🇸 USA (rows 45515–46518) — web-verified fact base
+
+- **WC record:** 1930 (3rd — best ever), 1934, 1950 (beat England 1-0, Gaetjens), 1990, 1994 (host, R16),
+  1998, 2002 (**QF** — lost Germany 1-0), 2006, 2010 (R16), 2014 (R16), **MISSED 2018** (lost 2-1 Trinidad),
+  2022 (R16). **2026: CO-HOST** (auto-qualified; 11 US + 3 Mexico + 2 Canada cities; first 48-team WC).
+- **2022 (Berhalter):** Group B — drew Wales 1-1 (Weah), drew England 0-0, **beat Iran 1-0 (Pulisic)** to
+  advance; R16 lost **Netherlands 3-1** (Haji Wright scored). Captain **Tyler Adams** (youngest, 23);
+  2nd-youngest squad (Ghana youngest), avg 25.2. Venues: Wales=Ahmad bin Ali, England=Al Bayt,
+  **Iran=Al Thumama**, Netherlands(R16)=**Khalifa**.
+- **Coaches:** Bradley (2010), Klinsmann (2014), Arena (2016–17, failed 2018), **Berhalter** (Dec 2018–;
+  2022 WC; rehired June 2023; **FIRED July 2024** after Copa America), **Pochettino** (Sept 2024–, for 2026).
+- **CONCACAF:** beat Mexico in **3 recent finals** (2019-20 NL — **3-2 AET, NOT penalties**; 2021 Gold Cup
+  1-0 Miles Robinson ET; 2022-23 NL). **7 Gold Cups** (1991/2002/05/07/13/17/21). Lost 2019 GC final to Mexico.
+  **2024: exited Copa America in the GROUP STAGE** (lost Panama & Uruguay), and won the 2023-24 Nations League.
+- **Records/players:** joint top scorers **Dempsey & Donovan (57)**; Donovan 5 WC goals > Dempsey 4; most caps
+  **Cobi Jones (164)**; Tim Howard **16 saves** v Belgium 2014 (Fonte Nova); **Donovan 91' v Algeria 2010**;
+  youngest US WC scorer is **Julian Green (19, 2014)**, NOT Pulisic. Pulisic (AC Milan, "Captain America"),
+  McKennie (Juventus), Musah (AC Milan), Adams, Dest, Weah (son of George Weah), Gio Reyna (son of Claudio),
+  Balogun (ex-England youth), Matt Turner (GK 2022). 2016 Copa (host): semis, lost 4-0 Argentina.
+- **Rankings:** all-time high **4th (April 2006)**; dropped to ~**32nd** after the 2018 failure. (Dataset's
+  "13th = highest, in 2010" and "34th after 2018" are both wrong.) USWNT: 4 Women's WC titles.
+
+## USA per-batch results (6 batches)
+| Batch | Rows | PASS | FAIL |
+|---|---|---|---|
+| 1 | 45515–45640 | 69 | 13 |
+| 2 | 45641–45790 | 101 | 19 |
+| 3 | 45791–45940 | 83 | 7 |
+| 4 | 45941–46090 | 66 | 11 |
+| 5 | 46091–46280 | 118 | 12 |
+| 6 | 46281–46518 | 174 | 16 |
+| **Total** | **45515–46518** | **611** | **78** |
+
+[On-disk verified: 611 PASS / 78 FAIL = 689, matches QA_PASSED, no overlap/dupes.]
+
+# ✅ USA COMPLETE (rows 45515–46518) — 611 ship-ready · 78 dangerous
+**Recurring dataset defects (high volume):**
+1. **"USA reached the 2024 Copa America semi-finals (lost to Uruguay)"** — false; they exited in the GROUP
+   STAGE (the Uruguay loss was a group game). The hosted Copa semi run was 2016.
+2. **"USA won the 2024 Gold Cup"** — there was no 2024 Gold Cup (2021/2023/2025); the 2024 trophy was the
+   Nations League. Also "Berhalter rested players for the 2024 Copa" (he didn't; he was fired after it).
+3. **"Highest FIFA ranking = 13th, in 2010"** — false; peak was **4th (April 2006)**. **"Dropped to 34th
+   after 2018"** — it was ~32nd.
+4. **"Pulisic = youngest American to score at a WC"** — false (**Julian Green, 19, 2014**); even Weah (22)
+   was younger than Pulisic at 2022.
+5. **"Berhalter fired in 2023"** — he was fired in **July 2024** (rehired June 2023 in between).
+6. **"Beat Mexico on penalties in the 2019-20 Nations League final"** — it was **3-2 AET**.
+7. **Excel score corruption** — 01-Jan=1-1 (Wales), 02-Jan=2-1 (Trinidad), 03-Jan=3-1 (Netherlands).
+8. **Category/venue errors** — England called a "CONCACAF rival"; R16 placed at Al Bayt (it was Khalifa);
+   Iran game placed at Education City (it was Al Thumama); Omar Gonzalez called a Trinidad player (own goal);
+   "SteelStacks Chicago" training centre; Pulisic's 2022 goal "preceding" the June-2018 co-host award.
+9. **Non-unique** — "which was NOT a 2022 captain/squad member" (3 retired/non-captain options); all-MLS-club
+   or all-non-TX/FL-venue options; "topped CONCACAF group 2010 or 2014" (both); 2019 USWNT debut (Lavelle too).
+
+**USA running totals (rows 45515+): 611 PASS-ALL · 78 FAIL-LIVENESS.**
