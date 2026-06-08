@@ -89,7 +89,7 @@ Verdicts route into two files:
 - **`QA_FAILED_LIVENESS_PASSED_OTHERS.md`** — passed mechanical but **failed liveness**
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
-**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **23 countries are
+**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **27 countries are
 now COMPLETE in total** (full table in §4; running counts in §3). Key findings per country:
 
 - **✅ Australia** (2161–3241): 714 ship-ready / 121 dangerous. **✅ Austria** (3242–4282): 626 / 135.
@@ -112,10 +112,12 @@ now COMPLETE in total** (full table in §4; running counts in §3). Key findings
   crediting Füllkrug/Oyarzabal (actually **Wirtz** 89' & **Merino** 119'), "Kroos recalled for 2026" (retired).
 - **✅ Ghana** (29166–30309): 783 / 72. **✅ Italy** (32568–34327): 1061 / 225 — Italy FAILED to qualify for
   2026 (lost the playoff final to **Bosnia**, Gattuso ran the failed campaign — 3rd straight WC miss).
+- **✅ Iran** (30310–31698): 775 / 151. **✅ Iraq** (31699–32567): 425 / 112.
 - **✅ Japan** (34954–36397): 935 / 62 — DID qualify for 2026 (first non-host to qualify, Mar 2025); fails
   incl. "17th FIFA ranking after 2011 Asian Cup" (~19th) and "won their 2010 AFC group" (2nd behind Australia).
+- **✅ Jordan** (36398–37773): 691 / 159. **✅ Mexico** (37774–39364): 901 / 173 — DID qualify for 2026 (co-host).
 
-The remaining 15 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
+The remaining 11 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -126,15 +128,15 @@ The remaining 15 countries are **not started** (§4). Next sequential not-starte
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **19233** ship-ready.
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **2784** dangerous.
-- **Total ship-ready so far (both methods):** 19365 (132 backfill rows 2–230 + 19233 new method).
-- **23 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **22025** ship-ready.
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3379** dangerous.
+- **Total ship-ready so far (both methods):** 22157 (132 backfill rows 2–230 + 22025 new method).
+- **27 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
   Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
   Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
   Costa Rica 654/80 · Côte d'Ivoire 463/79 · Croatia 1034/154 · Denmark 859/182 · DR Congo 459/127 ·
   Ecuador 725/57 · Egypt 532/104 · England 1228/87 · France 1237/176 · Germany 1291/65 ·
-  Ghana 783/72 · Italy 1061/225 · Japan 935/62.
+  Ghana 783/72 · Iran 775/151 · Iraq 425/112 · Italy 1061/225 · Japan 935/62 · Jordan 691/159 · Mexico 901/173.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
 
@@ -143,7 +145,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 
 | Country | CSV rows | total | QA_PASSED | Status / last verified row |
 |---------|----------|------:|----------:|----------------------------|
-| Algeria | 2–1228 | 1227 | 907 | ✅ **COMPLETE** (row 1228) |
+| Algeria | 2–1228 | 1227 | 907 | ✅ **COMPLETE** (row 1228) — 554 PASS / 176 FAIL (new method, 231–1228); rows 2–230 old method: 181 PASS / 48 FAIL |
 | Argentina | 1229–2160 | 932 | 672 | ✅ **COMPLETE** (row 2160) — 562 PASS / 110 FAIL |
 | Australia | 2161–3241 | 1081 | 835 | ✅ **COMPLETE** (row 3241) — 714 PASS / 121 FAIL |
 | Austria | 3242–4282 | 1041 | 761 | ✅ **COMPLETE** (row 4282) — 626 PASS / 135 FAIL |
@@ -165,13 +167,13 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | France | 25402–27324 | 1923 | 1413 | ✅ **COMPLETE** (row 27324) — 1237 PASS / 176 FAIL |
 | Germany | 27325–29165 | 1841 | 1356 | ✅ **COMPLETE** (row 29161) — 1291 PASS / 65 FAIL |
 | Ghana | 29166–30309 | 1144 | 855 | ✅ **COMPLETE** (row 30309) — 783 PASS / 72 FAIL |
-| Iran | 30310–31698 | 1389 | 926 | ⬜ not started |
-| Iraq | 31699–32567 | 869 | 537 | ⬜ not started |
+| Iran | 30310–31698 | 1389 | 926 | ✅ **COMPLETE** (row 31698) — 775 PASS / 151 FAIL |
+| Iraq | 31699–32567 | 869 | 537 | ✅ **COMPLETE** (row 32567) — 425 PASS / 112 FAIL |
 | Italy | 32568–34327 | 1760 | 1286 | ✅ **COMPLETE** (row 34327) — 1061 pass-all / 225 fail-liveness |
 | Jamaica | 34328–34953 | 626 | 424 | ⬜ not started |
 | Japan | 34954–36397 | 1444 | 997 | ✅ **COMPLETE** (row 36397) — 935 PASS / 62 FAIL |
-| Jordan | 36398–37773 | 1376 | 850 | ⬜ not started |
-| Mexico | 37774–39364 | 1591 | 1074 | ⬜ not started |
+| Jordan | 36398–37773 | 1376 | 850 | ✅ **COMPLETE** (row 37773) — 691 PASS / 159 FAIL |
+| Mexico | 37774–39364 | 1591 | 1074 | ✅ **COMPLETE** (row 39364) — 901 PASS / 173 FAIL |
 | Morocco | 39365–40186 | 822 | 558 | ⬜ not started |
 | Netherlands | 40187–41273 | 1087 | 878 | ⬜ not started |
 | New Zealand | 41274–42086 | 813 | 564 | ⬜ not started |
