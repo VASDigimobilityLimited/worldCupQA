@@ -89,23 +89,33 @@ Verdicts route into two files:
 - **`QA_FAILED_LIVENESS_PASSED_OTHERS.md`** — passed mechanical but **failed liveness**
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
-**✅ Algeria is fully complete** (rows 2–1228). **✅ Argentina is also complete** (rows 1229–2160).
-**✅ Brazil is complete** (rows 6097–8182): 1346 ship-ready / 218 dangerous — per-batch tables +
-recurring-defect summary at the bottom of `QA_TC06_LIVE.md`. **✅ Cameroon is complete** (rows
-9574–10745): 681 ship-ready / 57 dangerous — key finding: Cameroon did NOT qualify for 2026 (lost
-the CAF playoff to DR Congo), so the dataset's "Cameroon qualified for 2026" rows fail.
-**✅ Ecuador is complete** (rows 21580–22765): 725 ship-ready / 57 dangerous — key finding: Ecuador
-DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is stale (he was sacked in
-2024; **Sebastián Beccacece** led/clinched qualification).
-**✅ France is complete** (rows 25402–27324): 1237 ship-ready / 176 dangerous — France DID qualify for
-2026; the dataset's recurring errors are "Griezmann 2018 Silver Ball" (he won Bronze), "Lloris in the
-2018 All-Star Team" (Courtois), "France's perfect 10-win Euro 2020 qualifying" (they lost to Turkey),
-"2018 Fair Play → France" (it was Spain), and "lost the 2022 NL final to Spain" (France won the 2021 final).
-**✅ Japan is complete** (rows 34954–36397): 935 ship-ready / 62 dangerous — Japan DID qualify for 2026
-(first non-host team to qualify, Mar 2025); recurring errors are "17th FIFA ranking after the 2011 Asian
-Cup" (it was ~19th; peak ever 9th in 1998), "Japan won their 2010 AFC group" (2nd behind Australia), and
-captaincy mix-ups (Hasebe 2010/14/18 · Yoshida 2022 · Endo from 2023).
-**🔵 Australia is in progress** (rows 2161–3241). The remaining countries are **not started** (§4).
+**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **23 countries are
+now COMPLETE in total** (full table in §4; running counts in §3). Key findings per country:
+
+- **✅ Australia** (2161–3241): 714 ship-ready / 121 dangerous. **✅ Austria** (3242–4282): 626 / 135.
+- **✅ Belgium** (4283–6096): 1135 / 192. **✅ Brazil** (6097–8182): 1346 / 218.
+- **✅ Cabo Verde** (8183–9573): 623 / 73. **✅ Cameroon** (9574–10745): 681 / 57 — Cameroon did NOT
+  qualify for 2026 (lost the CAF playoff to DR Congo), so "Cameroon qualified for 2026" rows fail.
+- **✅ Canada** (10746–12428): 962 / 41. **✅ Chile** (12429–13845): 769 / 191 — Chile FAILED to qualify
+  for 2026 (last in CONMEBOL, Gareca resigned); dataset wrongly credits Reinaldo Rueda with the failed
+  2018 qualifying (actually Pizzi).
+- **✅ Costa Rica** (15528–16571): 654 / 80. **✅ Côte d'Ivoire** (16572–17486): 463 / 79.
+- **✅ Croatia** (17487–19101): 1034 / 154. **✅ Denmark** (19102–20581): 859 / 182.
+- **✅ DR Congo** (20582–21579): 459 / 127. **✅ Ecuador** (21580–22765): 725 / 57 — Ecuador DID qualify
+  for 2026, but "Sánchez Bas is the 2026 manager" is stale (sacked 2024; **Sebastián Beccacece** clinched it).
+- **✅ Egypt** (22766–23686): 532 / 104 — DID qualify for 2026; fails incl. 2010 AFCON final wrongly "on
+  penalties" (1-0 v Ghana), "hosted 2021 AFCON" (hosted 2019), Salah Golden Boot "twice" (actually 4).
+- **✅ England** (23687–25401): 1228 / 87. **✅ France** (25402–27324): 1237 / 176 — DID qualify for 2026;
+  recurring errors "Griezmann 2018 Silver Ball" (Bronze), "Lloris 2018 All-Star Team" (Courtois),
+  "perfect Euro 2020 qualifying" (lost to Turkey), "2018 Fair Play → France" (Spain), "lost 2022 NL final" (won 2021).
+- **✅ Germany** (27325–29161): 1291 / 65 — DID qualify for 2026; very accurate data; fails incl. Euro 2024 QF
+  crediting Füllkrug/Oyarzabal (actually **Wirtz** 89' & **Merino** 119'), "Kroos recalled for 2026" (retired).
+- **✅ Ghana** (29166–30309): 783 / 72. **✅ Italy** (32568–34327): 1061 / 225 — Italy FAILED to qualify for
+  2026 (lost the playoff final to **Bosnia**, Gattuso ran the failed campaign — 3rd straight WC miss).
+- **✅ Japan** (34954–36397): 935 / 62 — DID qualify for 2026 (first non-host to qualify, Mar 2025); fails
+  incl. "17th FIFA ranking after 2011 Asian Cup" (~19th) and "won their 2010 AFC group" (2nd behind Australia).
+
+The remaining 15 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -116,26 +126,15 @@ captaincy mix-ups (Hasebe 2010/14/18 · Yoshida 2022 · Endo from 2023).
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **6040** ship-ready
-  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681 + Ecuador 725 + France 1237 + Japan 935).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **856** dangerous
-  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57 + Ecuador 57 + France 176 + Japan 62).
-- **Total ship-ready so far (both methods):** 6172 (132 backfill rows 2–230 + 6040 new method).
-- **✅ Brazil is COMPLETE** (rows 6097–8182): 1346 ship-ready / 218 dangerous = 1564 candidates
-  (the full Brazil `QA_PASSED.md` pool; on-disk verified, no duplicates). Per-batch tables +
-  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
-- **✅ Cameroon is COMPLETE** (rows 9574–10745): 681 ship-ready / 57 dangerous = 738 candidates
-  (the full Cameroon `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
-  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
-- **✅ Ecuador is COMPLETE** (rows 21580–22765): 725 ship-ready / 57 dangerous = 782 candidates
-  (the full Ecuador `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
-  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
-- **✅ France is COMPLETE** (rows 25402–27324): 1237 ship-ready / 176 dangerous = 1413 candidates
-  (the full France `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
-  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
-- **✅ Japan is COMPLETE** (rows 34954–36397): 935 ship-ready / 62 dangerous = 997 candidates
-  (the full Japan `QA_PASSED.md` pool; on-disk verified, no overlap/dupes). Per-batch tables + fact base +
-  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **19233** ship-ready.
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **2784** dangerous.
+- **Total ship-ready so far (both methods):** 19365 (132 backfill rows 2–230 + 19233 new method).
+- **23 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
+  Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
+  Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
+  Costa Rica 654/80 · Côte d'Ivoire 463/79 · Croatia 1034/154 · Denmark 859/182 · DR Congo 459/127 ·
+  Ecuador 725/57 · Egypt 532/104 · England 1228/87 · France 1237/176 · Germany 1291/65 ·
+  Ghana 783/72 · Italy 1061/225 · Japan 935/62.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
 
@@ -146,29 +145,29 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 |---------|----------|------:|----------:|----------------------------|
 | Algeria | 2–1228 | 1227 | 907 | ✅ **COMPLETE** (row 1228) |
 | Argentina | 1229–2160 | 932 | 672 | ✅ **COMPLETE** (row 2160) — 562 PASS / 110 FAIL |
-| Australia | 2161–3241 | 1081 | 835 | 🔵 **in progress** — resume at row 2161 |
-| Austria | 3242–4282 | 1041 | 761 | ⬜ not started |
-| Belgium | 4283–6096 | 1814 | 1327 | ⬜ not started |
+| Australia | 2161–3241 | 1081 | 835 | ✅ **COMPLETE** (row 3241) — 714 PASS / 121 FAIL |
+| Austria | 3242–4282 | 1041 | 761 | ✅ **COMPLETE** (row 4282) — 626 PASS / 135 FAIL |
+| Belgium | 4283–6096 | 1814 | 1327 | ✅ **COMPLETE** (row 6096) — 1135 PASS / 192 FAIL |
 | Brazil | 6097–8182 | 2086 | 1564 | ✅ **COMPLETE** (row 8182) — 1346 PASS / 218 FAIL |
-| Cabo Verde | 8183–9573 | 1391 | 696 | ⬜ not started |
+| Cabo Verde | 8183–9573 | 1391 | 696 | ✅ **COMPLETE** (row 9573) — 623 PASS / 73 FAIL |
 | Cameroon | 9574–10745 | 1172 | 738 | ✅ **COMPLETE** (row 10745) — 681 PASS / 57 FAIL |
-| Canada | 10746–12428 | 1683 | 1003 | ⬜ not started |
-| Chile | 12429–13847 | 1419 | 960 | ⬜ not started |
+| Canada | 10746–12428 | 1683 | 1003 | ✅ **COMPLETE** (row 12428) — 962 PASS / 41 FAIL |
+| Chile | 12429–13847 | 1419 | 960 | ✅ **COMPLETE** (row 13845) — 769 PASS / 191 FAIL |
 | Colombia | 13848–15527 | 1680 | 1132 | ⬜ not started |
-| Costa Rica | 15528–16571 | 1044 | 734 | ⬜ not started |
-| Côte d'Ivoire | 16572–17486 | 915 | 542 | ⬜ not started |
-| Croatia | 17487–19101 | 1615 | 1188 | ⬜ not started |
-| Denmark | 19102–20581 | 1480 | 1041 | ⬜ not started |
-| DR Congo | 20582–21579 | 998 | 586 | ⬜ not started |
+| Costa Rica | 15528–16571 | 1044 | 734 | ✅ **COMPLETE** (row 16571) — 654 PASS / 80 FAIL |
+| Côte d'Ivoire | 16572–17486 | 915 | 542 | ✅ **COMPLETE** (row 17485) — 463 PASS / 79 FAIL |
+| Croatia | 17487–19101 | 1615 | 1188 | ✅ **COMPLETE** (row 19100) — 1034 PASS / 154 FAIL |
+| Denmark | 19102–20581 | 1480 | 1041 | ✅ **COMPLETE** (row 20580) — 859 PASS / 182 FAIL |
+| DR Congo | 20582–21579 | 998 | 586 | ✅ **COMPLETE** (row 21576) — 459 PASS / 127 FAIL |
 | Ecuador | 21580–22765 | 1186 | 782 | ✅ **COMPLETE** (row 22765) — 725 PASS / 57 FAIL |
-| Egypt | 22766–23686 | 921 | 636 | ⬜ not started |
-| England | 23687–25401 | 1715 | 1315 | ⬜ not started |
+| Egypt | 22766–23686 | 921 | 636 | ✅ **COMPLETE** (row 23686) — 532 PASS / 104 FAIL |
+| England | 23687–25401 | 1715 | 1315 | ✅ **COMPLETE** (row 25401) — 1228 PASS / 87 FAIL |
 | France | 25402–27324 | 1923 | 1413 | ✅ **COMPLETE** (row 27324) — 1237 PASS / 176 FAIL |
-| Germany | 27325–29165 | 1841 | 1356 | ⬜ not started |
-| Ghana | 29166–30309 | 1144 | 855 | ⬜ not started |
+| Germany | 27325–29165 | 1841 | 1356 | ✅ **COMPLETE** (row 29161) — 1291 PASS / 65 FAIL |
+| Ghana | 29166–30309 | 1144 | 855 | ✅ **COMPLETE** (row 30309) — 783 PASS / 72 FAIL |
 | Iran | 30310–31698 | 1389 | 926 | ⬜ not started |
 | Iraq | 31699–32567 | 869 | 537 | ⬜ not started |
-| Italy | 32568–34327 | 1760 | 1286 | ⬜ not started |
+| Italy | 32568–34327 | 1760 | 1286 | ✅ **COMPLETE** (row 34327) — 1061 pass-all / 225 fail-liveness |
 | Jamaica | 34328–34953 | 626 | 424 | ⬜ not started |
 | Japan | 34954–36397 | 1444 | 997 | ✅ **COMPLETE** (row 36397) — 935 PASS / 62 FAIL |
 | Jordan | 36398–37773 | 1376 | 850 | ⬜ not started |
