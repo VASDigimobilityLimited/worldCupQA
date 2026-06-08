@@ -10,8 +10,10 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Last verified row: 3241**  (✅ AUSTRALIA COMPLETE — next sequential country: Austria, resume at row 3242)
+**Last verified row: 30309 — all claimed countries through Ghana verified.**
+**Algeria (2–1228) COMPLETE. Argentina (1229–2160) COMPLETE. Australia (2161–3241) COMPLETE. Austria (3242–4282) COMPLETE. Cabo Verde (8183–9573) COMPLETE. Canada (10746–12428) COMPLETE. Costa Rica (15528–16571) COMPLETE. Côte d'Ivoire (16572–17486) COMPLETE. Croatia (17487–19101) COMPLETE. Denmark (19102–20581) COMPLETE. DR Congo (20582–21579) COMPLETE. England (23687–25401) COMPLETE. Ghana (29166–30309) COMPLETE.**
 **BRAZIL in progress (rows 6097–8182), separate contributor — verified to 6760, resume 6761. Brazil sub-cursor at bottom of file.**
+**Skipped/not started: Belgium, Cameroon, Chile, Colombia, Ecuador, Egypt, France, Germany, and all countries after Ghana. Next unclaimed country: ask the user before beginning a new country.**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -1078,3 +1080,314 @@ qualifying squad is real), and the "first WC under the current name = 2026 / fir
 | **TOTAL** | **459** | **127** |
 
 **✅ DR CONGO COMPLETE (rows 20582–21579): 459 PASS / 127 FAIL of 586 QA_PASSED candidates.**
+# AUSTRIA (rows 3242–4282) — NEW METHOD (only QA_PASSED.md rows)
+
+761 Austria rows are in QA_PASSED.md. Started at user's request (row 3242), skipping
+Argentina & Australia (still unclaimed). Fact base built from live sources:
+- Euro appearances: **2008** (co-host, group exit), **2016** (group exit), **2020** (R16,
+  lost 2-1 to Italy a.e.t.), **2024** (R16). → first-ever Euro group stage = **2008**, not 2016.
+- **Euro 2024:** beat Netherlands **3-2** in the group stage (won Group D), lost R16 to
+  **Türkiye 2-1** (Demiral 2, Gregoritsch). Manager **Ralf Rangnick** (pressing style).
+- Missed the **2018 and 2022** World Cups.
+Sources: [Austria at the Euros (Wikipedia)](https://en.wikipedia.org/wiki/Austria_at_the_UEFA_European_Championship),
+[CBC — Türkiye 2-1 Austria, 2 Jul 2024](https://www.cbc.ca/sports/soccer/european-championship-soccer-roundup-july2-1.7252081).
+
+## Batch rows 3242–3289 (Austria) — 34 candidates. Result: 30 PASS · 4 FAIL.
+
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| 3242,3254,3255,3264 | ✅ PASS | Euro 2024 R16 loss to Türkiye 2-1 |
+| 3243,3258,3263,3272,3278,3280,3282 | ✅ PASS | Rangnick pressing transformation, Euro 2024 |
+| 3244 | ✅ PASS | missed 2018 & 2022 WCs |
+| 3245,3274 | ✅ PASS | Euro 2016 group-stage exit (3274: most recent group-only) |
+| 3250 | ✅ PASS | Euro 2020 R16, lost 2-1 to Italy a.e.t. |
+| 3252,3253,3256,3257,3260,3261,3265,3269,3273,3275,3279,3286,3289 | ✅ PASS | beat Netherlands 3-2, Euro 2024 group stage |
+| 3262 | ✅ PASS | Euro 2024 run ended in R16 |
+| 3285 | ✅ PASS | lost 2-1 in knockout at both Euro 2020 (Italy) & 2024 (Türkiye) |
+| 3251 | ❌ FAIL | answer "03-Feb" = corrupted "3-2" (Excel date mangling) |
+| 3270 | ❌ FAIL | false premise — Austria not at 2022 WC (didn't qualify) |
+| 3276,3277 | ❌ FAIL | first Euro group stage was 2008 (co-host), not 2016 |
+
+**Running totals (new method, rows 231+): 584 PASS-ALL · 180 FAIL-LIVENESS.**
+**Austria so far: 30 PASS · 4 FAIL (rows 3242–3289).**
+
+---
+
+## Batch rows 3291–3460 (Austria) — NEW METHOD. Result: 91 PASS · 31 FAIL.
+
+122 candidates. Recurring FAIL clusters: Excel date-mangled scorelines; "qualified 2026 → 2025";
+non-unique Euro tournament-year questions; first Euro = 2008 not 2016; Rangnick Bayern-rejection
+keyed 2022 (was 2024); Arnautović top-scorer time-bounding; 2022-WC false premises.
+Full per-cluster detail in QA_FAILED_LIVENESS_PASSED_OTHERS.md (this batch's section).
+
+## Batch rows 3461–3660 (Austria) — NEW METHOD. Result: 124 PASS · 45 FAIL.
+
+169 candidates. FAIL rows by cluster:
+| Cluster | Rows |
+|---------|------|
+| Excel date-mangled scoreline (3-2 / 2-1) | 3461,3462,3463,3465,3468 |
+| Euro 2020 keyed 2020 (played 2021) | 3480,3498 |
+| Non-unique tournament-year | 3491,3496,3500,3508,3523 |
+| First Euro was 2008, not 2016 | 3497 |
+| Qualified 2025, not 2026 | 3493,3494,3495 |
+| Rangnick rejected Bayern in 2024, not 2022 | 3505,3518,3519,3547,3548,3549,3554,3583,3584,3586,3591,3592,3593,3594 |
+| Rangnick not in charge of 2022 WC qualifying | 3557 |
+| Arnautović all-time top scorer only from 2025 | 3545,3623,3625,3638,3644 |
+| Wrong/non-unique player-club facts | 3615,3622,3629,3635,3636 |
+| 2022 WC finals false premise (Alaba injury) | 3654,3655,3656,3657 |
+
+## Batch rows 3661–3860 (Austria) — NEW METHOD. Result: 141 PASS · 23 FAIL.
+
+164 candidates. FAIL rows by cluster:
+| Cluster | Rows |
+|---------|------|
+| Wrong manager name "Franz Koller" (is Marcel Koller) | 3719,3747,3773 |
+| Rangnick rejected Bayern in 2024, not 2022 | 3785 |
+| Arnautović all-time top scorer only from 2025 | 3742,3858 |
+| False premise — Austria not at 2022 WC finals | 3661,3679,3682,3683,3720,3839,3843 |
+| Non-unique "not based in the Bundesliga" (Alaba) | 3672,3673,3857,3859 |
+| Sabitzer at Bayern (not Dortmund) in 2022 cycle | 3826 |
+| Non-unique tournament/opponent | 3732,3734 |
+| Internal temporal contradiction | 3675,3807 |
+| False premise — Austria didn't face Germany in 2022 WCQ | 3751 |
+
+## Batch rows 3861–4060 (Austria) — NEW METHOD. Result: 130 PASS · 21 FAIL.
+
+151 candidates. FAIL rows by cluster:
+| Cluster | Rows |
+|---------|------|
+| Alaba had no 100+ caps before 2022 WC (reached 100 on 17 Jun 2023) | 3862 |
+| Non-unique "based in the Bundesliga" (Sabitzer also) | 3867 |
+| "2022 World Cup squad/player" false premise | 3868,3941 |
+| Arnautović all-time top scorer only from 2025 / time-bound | 3875,3878 |
+| Arnautović has no World Cup goal | 3881,3902 |
+| Vienna/Ernst-Happel was not a Euro 2020 host | 3908 |
+| Alaba injury framed around 2022 WC finals (false premise) | 3914,3918,3920,3927 |
+| Austria Wien IS a main Austrian Bundesliga club | 3944 |
+| Rangnick rejected Bayern in 2024, not 2022 | 3945,4026 |
+| Netherlands win was group stage, not a knockout win | 3950 |
+| Non-unique answer | 3955,3960 |
+| Rangnick not in charge of the 2022 WC cycle (Foda was) | 3969,4027 |
+
+## Batch rows 4061–4282 (Austria) — NEW METHOD — FINAL AUSTRIA BATCH. Result: 110 PASS · 11 FAIL.
+
+121 candidates (mostly Euro result/manager duplicates, all correct). FAIL rows by cluster:
+| Cluster | Rows |
+|---------|------|
+| Self-referential answer ("like Austria → Austria") | 4105,4204 |
+| Netherlands win was group stage, not a knockout win | 4140 |
+| Non-unique answer | 4147,4148,4241 |
+| False premise (Austria's first Euros was 2008) + non-unique | 4203 |
+| "Which year did Austria qualify → 2026" (qualified 2025) | 4233,4238,4240 |
+| Answer is a consequence, not a cause ("why qualify") | 4276 |
+
+---
+
+# ✅ AUSTRIA COMPLETE (rows 3242–4282)
+- 761 candidates in QA_PASSED.md pool. **626 PASS** → QA_PASSED_ALL.md · **135 FAIL** → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
+- Per batch: 3242–3289 (30P/4F) · 3291–3460 (91P/31F) · 3461–3660 (124P/45F) · 3661–3860 (141P/23F) · 3861–4060 (130P/21F) · 4061–4282 (110P/11F).
+
+**Running totals (new method, rows 231+): 1180 PASS-ALL · 311 FAIL-LIVENESS.**
+
+---
+
+# CABO VERDE (rows 8183–9573) — NEW METHOD (only QA_PASSED.md rows)
+
+696 Cabo Verde rows are in QA_PASSED.md. Fact base built from live sources:
+- **First-ever FIFA World Cup qualification: 2026** (no earlier finals; contested but did not
+  win the 2022 qualifying campaign). One of the smallest nations (~525,000 pop) ever to qualify
+  — compared to **Iceland**, whose own debut was **2018** (not 2026).
+- **AFCON appearances: 2013, 2021, 2023** (did NOT play 2015). 2013 debut → quarter-finals;
+  **2023 → quarter-finals**, eliminated by **South Africa** (0-0, 2-1 pens) in the **QF**, not the R16.
+- Nicknamed the **Blue Sharks**; peak FIFA ranking **27th** (2014). Manager **Bubista**
+  (= Pedro Leitão Brito). Squad built on the **Portugal-based diaspora / European leagues**,
+  not the domestic Campeonato Caboverdiano. Home: Estádio Nacional, Praia (~15,000).
+Sources: [Cape Verde national football team (Wikipedia)](https://en.wikipedia.org/wiki/Cape_Verde_national_football_team),
+[2023 Africa Cup of Nations (Wikipedia)](https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations).
+
+## Batch rows 8183–8530 (Cabo Verde) — Result: 176 PASS · 16 FAIL.
+## Batch rows 8531–8880 (Cabo Verde) — Result: 190 PASS · 11 FAIL.
+
+## Batch rows 8881–9230 (Cabo Verde) — Result: 87 PASS · 26 FAIL.
+113 candidates. FAIL rows by cluster:
+| Cluster | Rows |
+|---------|------|
+| Self-referential ("like Cabo Verde → Cabo Verde"); 9163 also false 2015-AFCON premise | 8886,8902,9003,9004,9005,9006,9024,9146,9163,9169,9173,9179,9181,9184,9210,9220 |
+| Non-unique answer | 8881,8942,9087,9096 |
+| Wrong answer — WC squad Europe-based, not domestic league | 9048 |
+| Wrong explanation — 2023 AFCON exit was QF, not R16 | 9127,9129 |
+| False premise — no R16 loss to South Africa (was QF) | 9131 |
+| False premise — Iceland's debut was 2018, not 2026 | 9206,9219 |
+
+## Batch rows 9231–9573 (Cabo Verde) — NEW METHOD — FINAL CABO VERDE BATCH. Result: 170 PASS · 20 FAIL.
+190 candidates. FAIL rows by cluster:
+| Cluster | Rows |
+|---------|------|
+| Wrong answer — 2023 AFCON best stage was the QF (keyed R16) | 9286,9287 |
+| False premise — no R16 loss to South Africa (was QF); 9388 also mislabels SA "West African" | 9344,9388,9423 |
+| Wrong explanation — states R16 for the QF exit | 9353,9356,9411,9454 |
+| False premise — Cabo Verde did not play the 2015 AFCON | 9341 |
+| Wrong answer — WC squad Europe-based, not domestic league | 9375 |
+| Self-referential answer (names Cabo Verde) | 9263,9305 |
+| False premise — Iceland's debut was 2018, not 2026 | 9320 |
+| False premise — no 2018/2022 WC qualification (first is 2026) | 9453,9462,9475,9559 |
+| Non-unique answer | 9280,9389 |
+
+---
+
+# ✅ CABO VERDE COMPLETE (rows 8183–9573)
+- 696 candidates in QA_PASSED.md pool. **623 PASS** → QA_PASSED_ALL.md · **73 FAIL** → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
+- Per batch: 8183–8530 (176P/16F) · 8531–8880 (190P/11F) · 8881–9230 (87P/26F) · 9231–9573 (170P/20F).
+- Next unclaimed country: **Cameroon** — NOT started (ask the user before beginning a new country).
+
+**Running totals (new method, rows 231+): 1803 PASS-ALL · 384 FAIL-LIVENESS.**
+
+---
+
+# CANADA (rows 10746–12428) — NEW METHOD (only QA_PASSED.md rows)
+
+1003 Canada rows are in QA_PASSED.md. Fact base built from live sources (Wikipedia
+Canada men's national soccer team + web searches):
+- **2022 World Cup** (ended a **36-year absence**; previous finals 1986): topped the
+  CONCACAF Octagonal (**28 pts**, above Mexico & USA) under **John Herdman**; clinched with a
+  **4-0 win over Jamaica** at BMO Field, Toronto (27 Mar 2022). At the finals lost all three:
+  **1-0 Belgium** (Batshuayi; Davies penalty saved by Courtois), **4-1 Croatia**, **2-1 Morocco**.
+  **Alphonso Davies** scored Canada's **first-ever WC goal** (2nd min vs Croatia).
+- **Key players:** Davies (captain/LB-winger, 2020 UCL with Bayern); **Jonathan David** (Lille,
+  all-time top scorer — reached **25 intl goals in 2023, not by 2022**); **Cyle Larin** (record
+  scorer ~25 by 2022); **Atiba Hutchinson** (most-capped, 100+, retired after 2022);
+  **Milan Borjan** (GK); **Stephen Eustáquio** (creator); **Tajon Buchanan** (winger);
+  **Ismael Koné** (debuted **Jan 2022**, played the 2022 WC — *not* a post-2022/2026-only debut).
+- **Managers:** Herdman 2018–2023 (left for **Toronto FC in 2023**); **Jesse Marsch appointed
+  2024** (first American; high-pressing) — led Canada to the **2024 Copa América semis** (lost
+  **2-0 to Argentina**, 4th place). **2021 Gold Cup → semis.**
+- **FIFA ranking:** reached **33rd in Feb 2022** — but this is **no longer the peak** (31st Dec
+  2024, **26th Sept 2025**), so all-time "highest/peak = 33rd" claims FAIL; year-bounded
+  "33rd in 2022" PASS.
+- **2026:** co-hosts with USA & Mexico (auto-qualify); venues **BMO Field, Toronto (~30,000)**
+  and **BC Place, Vancouver (~54,500)**. Canada Soccer HQ in **Ottawa**. **CPL founded 2019**;
+  **Toronto FC won 2017 MLS Cup**; women won **Tokyo 2020 Olympic gold** (Priestman; Grosso PK).
+Source: [Canada men's national soccer team (Wikipedia)](https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team).
+
+## Batch rows 10746–11085 (Canada) — Result: 228 PASS · 17 FAIL.
+113... see QA_FAILED_LIVENESS_PASSED_OTHERS.md. FAIL clusters: stale ranking superlative (10753,10755,10756,10757,10758,10815,10839,10843,10846,11028,11067); Excel date-mangled scoreline (11071,11072,11079); temporal contradiction/false premise (10747); 2-0 is not a three-goal margin (10805); BMO did not host 2022 WC matches (10995).
+
+## Batch rows 11086–11425 (Canada) — Result: 214 PASS · 11 FAIL.
+FAIL clusters: Marsch appointed 2024 not 2023 (11090,11184,11186); stale ranking superlative (11089,11125,11126,11128,11134); David 25+ goals by/in 2022 premature (11154,11402,11409).
+
+## Batch rows 11426–11765 (Canada) — Result: 227 PASS · 5 FAIL.
+FAIL clusters: Koné debuted 2022 not after/2026 (11663,11664,11710); non-unique (11711 — Davies & Hutchinson both lack 25+ goals); David 25+ by 2022 premature (11717).
+
+## Batch rows 11766–12105 (Canada) — Result: 157 PASS · 5 FAIL.
+FAIL clusters: stale ranking superlative (11810); David 25+ by/during 2022 premature (11791,11890); non-unique CPL founding clubs (11823); non-unique "NOT a top scorer" — Davies & Buchanan (11787).
+
+## Batch rows 12106–12428 (Canada) — FINAL CANADA BATCH. Result: 136 PASS · 3 FAIL.
+FAIL clusters: stale "FIFA ranking peak = 33rd" superlative (12391,12403,12404).
+
+---
+
+# ✅ CANADA COMPLETE (rows 10746–12428)
+- 1003 candidates in QA_PASSED.md pool. **962 PASS** → QA_PASSED_ALL.md · **41 FAIL** → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
+- Per batch: 10746–11085 (228P/17F) · 11086–11425 (214P/11F) · 11426–11765 (227P/5F) · 11766–12105 (157P/5F) · 12106–12428 (136P/3F).
+- Dominant FAIL themes: stale FIFA-ranking superlative (33rd no longer the peak), "Jonathan David 25+ goals by 2022" (he reached 25 in 2023), Marsch appointed 2024 not 2023, Koné debuted 2022 not 2026, Excel date-mangled scorelines, and non-unique options.
+- Cameroon (rows 9574–10745) was **skipped** (not started). Next unclaimed country: ask the user before beginning a new country.
+
+**Running totals (new method, rows 231+): 2765 PASS-ALL · 425 FAIL-LIVENESS.**
+
+---
+
+# ✅ COSTA RICA (rows 15528–16571) — COMPLETE
+
+**Pool:** 734 QA_PASSED candidates across CSV rows 15528–16571. Verified against the Costa Rica men's national team fact base (2014 quarter-final run; 2018 & 2022 group exits; Keylor Navas).
+
+**Fact base:** 2014 WC — topped Group D (beat Uruguay 3-1, Italy 1-0, drew England 0-0, 7 pts), beat Greece on pens (R16), lost QF to Netherlands on pens (0-0, 4-3, van Gaal's Tim Krul sub); manager Jorge Luis Pinto, captain Bryan Ruiz, GK Keylor Navas (→ Real Madrid 2014, 3× UCL 2016–2018, first Central American UCL winner). 2018 WC — group exit under Óscar Ramírez (lost Serbia & Brazil, drew Switzerland). 2022 WC — group exit under Luis Fernando Suárez (1-0 v Japan via Keysher Fuller; 7-0 loss to Spain); qualified via intercontinental playoff v New Zealand. Celso Borges = most-capped (164). Home venue Estadio Nacional, San José (~35,175). Primera División giants: Saprissa, Alajuelense, Herediano.
+
+**Two systematic dataset errors (web-verified):**
+1. **FIFA-ranking peak.** Dataset says highest = **15th (2014)**; actual all-time peak = **13th (Feb 2015)**. → all "highest/peak 15th" claims FAIL.
+2. **2026 World Cup.** Dataset says Costa Rica **qualified** (direct CONCACAF); in reality they were **eliminated 19 Nov 2025** (0-0 v Honduras) and are **not** at the 2026 finals. → all "qualified for 2026" claims FAIL.
+
+| Batch | Rows | Candidates | PASS | FAIL |
+|-------|------|-----------:|-----:|-----:|
+| 1 | 15528–15750 | 156 | 123 | 33 |
+| 2 | 15751–15980 | 122 | 105 | 17 |
+| 3 | 15981–16200 | 174 | 164 | 10 |
+| 4 | 16201–16400 | 149 | 143 | 6 |
+| 5 | 16401–16571 | 133 | 119 | 14 |
+| **Total** | **15528–16571** | **734** | **654** | **80** |
+
+**FAIL themes:** false FIFA-ranking peak (15th vs actual 13th); false 2026 World Cup qualification (eliminated Nov 2025); Excel date-mangled scorelines (3-1→"03-Jan", 4-3→"04-Mar", 3-4→"03-Apr"); non-unique answers (multiple CONCACAF-direct years, multiple "not beaten"/"not conceded 7" teams, all-four Gold-Cup-nation options); self-referential answers (Navas-vs-Navas, stadium-vs-itself, CR-lost-by-larger-margin-than-CR); a wrong answer (New Zealand "qualified" via playoff — they lost); anachronistic cap claim (Borges "150 caps at 2018" — had ~110).
+
+# ✅ COSTA RICA COMPLETE
+
+- Per batch: 15528–15750 (123P/33F) · 15751–15980 (105P/17F) · 15981–16200 (164P/10F) · 16201–16400 (143P/6F) · 16401–16571 (119P/14F).
+- Cameroon (9574–10745), Chile (12429–13847) and Colombia (13848–15527) were **skipped** (not started). Next unclaimed country: ask the user before beginning a new country.
+
+**Running totals (new method, rows 231+): 3419 PASS-ALL · 505 FAIL-LIVENESS.**
+
+---
+
+# ✅ ENGLAND (rows 23687–25401) — COMPLETE
+
+**Pool:** 1315 QA_PASSED candidates across CSV rows 23687–25401 (the largest country processed). Verified against the England men's national team fact base.
+
+**Fact base:** 2010 WC — lost 4-1 to Germany in R16 (Bloemfontein; Lampard's disallowed goal), Capello manager, Gerrard captain. 2014 WC — bottom of group, 1 pt (lost Italy & Uruguay 2-1, drew Costa Rica), Hodgson manager. 2018 WC — 4th place under Southgate (beat Colombia on pens — first WC shootout win, Dier decisive pen; beat Sweden 2-0; lost SF 2-1 to Croatia AET; lost 3rd-place 2-0 Belgium); Kane Golden Boot (6). 2022 WC — beat Iran 6-2, drew USA 0-0, beat Wales 3-0 (Rashford brace), beat Senegal 3-0, lost QF 2-1 France (Kane missed pen). Euro 2016 — lost R16 2-1 Iceland (Hodgson resigned). Euro 2020 — lost final to Italy on pens at Wembley (Shaw scored 2nd min; Rashford/Sancho/Saka missed; Pickford saved pens; beat Germany 2-0 R16; beat Denmark 2-1 SF AET). Euro 2024 — lost final 2-1 to Spain in Berlin (Palmer equalised; Bellingham 95th-min overhead kick vs Slovakia). Southgate resigned Jul 2024 (record 61-18-23 in 102), Carsley interim H2 2024, Tuchel appointed Jan 2025 (3rd non-English mgr). **2026 WC — qualified with a PERFECT 8-win, 0-conceded record (Group K) under Tuchel.** Kane all-time top scorer (broke Rooney's 53 in Mar 2023). Highest FIFA ranking 3rd (2012 & 2017-18). Wembley 90,000 (Europe's 2nd-largest after Camp Nou). St George's Park (opened 2012, 13 pitches, Wembley replica). FA founded 1863.
+
+**Verified corrections (web-sourced):**
+1. **FIFA ranking after 2014 group exit:** dataset says **17th**; actually fell to **20th** (Jul 2014). All "17th in 2014" claims FAIL.
+2. **2022 World Cup squad:** dataset says all 26 were England/Premier-League based; **Jude Bellingham was at Borussia Dortmund** → "all 26 / zero abroad" FAIL.
+3. **Euro 2024 Young Player:** dataset credits **Bellingham**; actually **Lamine Yamal (Spain)** → FAIL.
+4. **Euro 2020 Team of the Tournament:** dataset credits **Pickford**; the GK was **Donnarumma** (England: Walker, Maguire, Sterling) → FAIL. (Caught mid-run; 10 mis-passed rows pulled from PASS_ALL.)
+
+| Batch | Rows | Candidates | PASS | FAIL |
+|-------|------|-----------:|-----:|-----:|
+| 1 | 23687–23920 | 179 | 161 | 18 |
+| 2 | 23921–24170 | 214 | 182 | 32 |
+| 3 | 24171–24420 | 205 | 194 | 11 |
+| 4 | 24421–24700 | 233 | 225 | 8 |
+| 5 | 24701–25050 | 258 | 245 | 13 |
+| 6 | 25051–25401 | 226 | 221 | 5 |
+| **Total** | **23687–25401** | **1315** | **1228** | **87** |
+
+**FAIL themes:** Excel date-mangled scorelines/formations (2-1→"02-Jan", 6-2→"06-Feb", 4-1→"04-Jan", 3-5-2→"03/05/2002", etc.); wrong "17th in 2014" ranking (actual 20th); "Bellingham = Euro 2024 Young Player" (Yamal); "Pickford in Euro 2020 Team of the Tournament" (Donnarumma); "all 26 squad England-based" (Bellingham at Dortmund); temporal errors (Kane as record holder "by/at 2022" — actually Mar 2023; Rooney record holder "during 2014 WC" — actually Charlton until Sept 2015; Henderson "WC debut 2018" — actually 2014); false premises (England "2018 World Cup final"; "did not defeat Hungary" — beat them 4-0; Kane's 54th in "2023 World Cup qualifying" — a Euro 2024 qualifier); non-unique answers (all qualifying groups won; multiple 2-1 WC knockout losses; "Three Lions" = "Football's Coming Home"; etc.); and miscounts (English CL titles 2008-23 = 5 not 6; 2010 qualifying 9W-1L not 9W-1D).
+**Note:** "2026 perfect 8-win qualification," "highest FIFA ranking 3rd (2012 & 2018)," and "Saka 2022 Kopa Trophy nominee" were all web-verified TRUE and PASS.
+
+# ✅ ENGLAND COMPLETE
+
+- Per batch: 23687–23920 (161P/18F) · 23921–24170 (182P/32F) · 24171–24420 (194P/11F) · 24421–24700 (225P/8F) · 24701–25050 (245P/13F) · 25051–25401 (221P/5F).
+- Rows 16572–23686 (Côte d'Ivoire through Egypt) and earlier Cameroon/Chile/Colombia were **skipped** (not started). Next unclaimed country: ask the user before beginning a new country.
+
+**Running totals (new method, rows 231+): 4647 PASS-ALL · 592 FAIL-LIVENESS.**
+
+---
+
+# ✅ GHANA (rows 29166–30309) — COMPLETE
+
+**Pool:** 855 QA_PASSED candidates across CSV rows 29166–30309. Verified against the Ghana men's national team (Black Stars) fact base.
+
+**Fact base:** 2010 WC — QF run under Milovan Rajevac; beat USA 2-1 R16 (Gyan extra-time winner); lost QF to Uruguay on penalties after **Luis Suárez's goal-line handball** and **Gyan's missed penalty**. 2014 WC — group exit under James Kwesi Appiah (**lost USA & Portugal, DREW Germany 2-2**). 2022 WC — group exit under Otto Addo (beat South Korea 3-2 via **Kudus** brace, lost Portugal 3-2, lost Uruguay 2-0 [de Arrascaeta 2]); qualified by beating Nigeria on away goals (1-1 agg); André Ayew captain & most-capped (110+); Inaki Williams switched from Spain (2022); Chris Hughton technical adviser. **2026 WC — qualified (topped CAF Group I under Otto Addo, his 2nd WC qualification).** Asamoah Gyan all-time top scorer (51), once Africa's top WC scorer. 4× AFCON winner; 2015 final lost to Côte d'Ivoire on pens; 2010 AFCON **final** (lost to Egypt); 2017 AFCON semis. Only African FIFA U-20 World Cup winner (2009, Black Satellites). Failed to qualify only for 2018. Avram Grant managed 2014-2017. Venues: Accra Sports Stadium & Baba Yara Stadium (Kumasi), both ~40,000.
+
+**Verified corrections (web-sourced):**
+1. **2014 group results:** dataset says Ghana "lost to USA and Germany"; they actually **drew Germany 2-2** and lost to USA and Portugal.
+2. **2010 AFCON:** dataset says "semi-finals"; Ghana reached the **final** (runners-up to Egypt).
+3. **Mohammed Kudus's club:** dataset says "West Ham at the 2022 World Cup"; he was at **Ajax** in 2022 and moved to **Tottenham in July 2025** — every "Kudus = West Ham" claim is wrong. (Caught mid-run; 4 mis-passed rows pulled from PASS_ALL.)
+4. **Two ~40,000 stadiums:** Accra Sports & Baba Yara are both ~40k, so generic "which ~40k stadium" items with both as options are non-unique. (2 mis-passed rows pulled.)
+5. **2026 qualification = TRUE** (CAF Group I winners).
+
+| Batch | Rows | Candidates | PASS | FAIL |
+|-------|------|-----------:|-----:|-----:|
+| 1 | 29166–29420 | 190 | 163 | 27 |
+| 2 | 29421–29700 | 196 | 185 | 11 |
+| 3 | 29701–29970 | 216 | 203 | 13 |
+| 4 | 29971–30240 | 197 | 177 | 20 |
+| 5 | 30241–30309 | 56 | 55 | 1 |
+| **Total** | **29166–30309** | **855** | **783** | **72** |
+
+**FAIL themes:** "lost to USA and Germany" in 2014 (drew Germany); "2010 AFCON semi-finals" (was the final); Kudus at "West Ham" (Ajax in 2022 / Tottenham now); Excel date-mangled scorelines ("02-Jan"=2-1, "03-Feb"=3-2, "01-Jan"=1-1); "four managers at World Cups" (only three — Grant managed at no WC); non-unique answers (two ~40k stadiums; all-options-are-GPL-clubs; "over 25 caps" all qualify; multiple CONCACAF/qualification years); self-referential "which nation like Ghana…→ Ghana"; and wrong facts (Costa Rica "qualified for 2010" — they missed it; Hughton placed in the 2014 cycle).
+**Note:** "2026 CAF qualification," "Gyan 51 goals / Africa's top WC scorer," "André Ayew most-capped," and "Inaki Williams switched from Spain 2022" were all web-verified TRUE and PASS. Partey-Arsenal rows PASS (Arsenal correct for the 2022 WC; he moved to Villarreal Aug 2025).
+
+# ✅ GHANA COMPLETE
+
+- Per batch: 29166–29420 (163P/27F) · 29421–29700 (185P/11F) · 29701–29970 (203P/13F) · 29971–30240 (177P/20F) · 30241–30309 (55P/1F).
+- Skipped/not started: rows 16572–23686 (Côte d'Ivoire…Egypt), rows 25402–29165 (France, Germany), and earlier Cameroon/Chile/Colombia. Next unclaimed country: ask the user before beginning a new country.
+
+**Running totals (new method, rows 231+): 5430 PASS-ALL · 664 FAIL-LIVENESS.**

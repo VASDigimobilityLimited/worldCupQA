@@ -90,11 +90,13 @@ Verdicts route into two files:
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
 **✅ Algeria** (rows 2–1228), **✅ Argentina** (rows 1229–2160), **✅ Australia** (rows 2161–3241),
-**✅ Côte d'Ivoire** (rows 16572–17486), **✅ Croatia** (rows 17487–19101),
-**✅ Denmark** (rows 19102–20581) and **✅ DR Congo** (rows 20582–21579) are complete.
+**✅ Austria** (rows 3242–4282), **✅ Cabo Verde** (rows 8183–9573), **✅ Canada** (rows 10746–12428),
+**✅ Costa Rica** (rows 15528–16571), **✅ Côte d'Ivoire** (rows 16572–17486), **✅ Croatia** (rows 17487–19101),
+**✅ Denmark** (rows 19102–20581), **✅ DR Congo** (rows 20582–21579), **✅ England** (rows 23687–25401)
+and **✅ Ghana** (rows 29166–30309) are complete.
 **🟨 Brazil is IN PROGRESS** (separate contributor): rows 6097–8182, verified through **row 6760**,
 resume at **6761** — its sub-cursor + per-batch tables live at the bottom of `QA_TC06_LIVE.md`.
-The remaining 34 countries are **not started** (§4). Next sequential country: **Austria** (rows 3242–4282).
+The remaining countries are **not started** (§4). Next sequential not-started country: **Belgium** (rows 4283–6096).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -105,11 +107,18 @@ The remaining 34 countries are **not started** (§4). Next sequential country: *
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **5099** ship-ready
-  (Algeria 554 + Argentina 562 + Australia 714 + Brazil 454 so far + Côte d'Ivoire 463 + Croatia 1034 + Denmark 859 + DR Congo 459).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **1022** dangerous
-  (Algeria 176 + Argentina 110 + Australia 121 + Brazil 73 so far + Côte d'Ivoire 79 + Croatia 154 + Denmark 182 + DR Congo 127).
-- **Total ship-ready so far (both methods):** 5231 (132 backfill rows 2–230 + 5099 new method).
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **9975** ship-ready
+  (Algeria 554 + Argentina 562 + Australia 714 + Austria 626 + Brazil 454 so far + Cabo Verde 623 + Canada 962 + Costa Rica 654 + Côte d'Ivoire 463 + Croatia 1034 + Denmark 859 + DR Congo 459 + England 1228 + Ghana 783).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **1510** dangerous
+  (Algeria 176 + Argentina 110 + Australia 121 + Austria 135 + Brazil 73 so far + Cabo Verde 73 + Canada 41 + Costa Rica 80 + Côte d'Ivoire 79 + Croatia 154 + Denmark 182 + DR Congo 127 + England 87 + Ghana 72).
+- **Total ship-ready so far (both methods):** 10107 (132 backfill rows 2–230 + 9975 new method).
+- **Algeria total ship-ready (both methods):** 686.
+- **Austria complete:** rows 3242–4282 done → 626 PASS / 135 FAIL.
+- **Cabo Verde complete:** rows 8183–9573 done → 623 PASS / 73 FAIL.
+- **Canada complete:** rows 10746–12428 done → 962 PASS / 41 FAIL.
+- **Costa Rica complete:** rows 15528–16571 done → 654 PASS / 80 FAIL. Two systematic dataset errors: "highest FIFA ranking = 15th" (actual peak 13th, Feb 2015) and "qualified for 2026 World Cup" (eliminated 19 Nov 2025).
+- **England complete:** rows 23687–25401 done → 1228 PASS / 87 FAIL (1315 candidates). Verified errors: "fell to 17th in 2014" (actual 20th); "all 26 of 2022 squad England-based" (Bellingham at Dortmund); "Bellingham = Euro 2024 Young Player" (Yamal); "Pickford in Euro 2020 Team of the Tournament" (Donnarumma — 10 rows caught mid-run & pulled from PASS_ALL). Web-verified TRUE: 2026 perfect 8-win qualification, highest ranking 3rd (2012 & 2018), Saka 2022 Kopa nominee.
+- **Ghana complete:** rows 29166–30309 done → 783 PASS / 72 FAIL (855 candidates). Verified errors: "lost to USA and Germany in 2014" (drew Germany 2-2, lost Portugal); "2010 AFCON semi-finals" (reached the final); "Kudus at West Ham" (Ajax in 2022, Tottenham since July 2025 — 4 rows pulled from PASS_ALL); two ~40k stadiums (Accra Sports & Baba Yara) make "which ~40k stadium" non-unique (2 rows pulled); "Costa Rica qualified for 2010" (it didn't). Web-verified TRUE: 2026 CAF qualification (Otto Addo's 2nd), Gyan 51 goals. Note: Partey-Arsenal rows PASS (Arsenal correct for the 2022 WC; he moved to Villarreal Aug 2025).
 - **Brazil is IN PROGRESS** (separate contributor): verified through **row 6760**, resume at 6761
   (last Brazil CSV row = 8182). Brazil sub-cursor + per-batch tables live at the bottom of
   `QA_TC06_LIVE.md`.
@@ -124,25 +133,25 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Algeria | 2–1228 | 1227 | 907 | ✅ **COMPLETE** (row 1228) |
 | Argentina | 1229–2160 | 932 | 672 | ✅ **COMPLETE** (row 2160) — 562 PASS / 110 FAIL |
 | Australia | 2161–3241 | 1081 | 835 | ✅ **COMPLETE** (row 3241) — 714 PASS / 121 FAIL |
-| Austria | 3242–4282 | 1041 | 761 | ⬜ not started |
+| Austria | 3242–4282 | 1041 | 761 | ✅ **COMPLETE** (row 4282) — 626 PASS / 135 FAIL |
 | Belgium | 4283–6096 | 1814 | 1327 | ⬜ not started |
 | Brazil | 6097–8182 | 2086 | 1564 | 🟨 **IN PROGRESS** — verified to row 6760 (454 pass-all / 73 fail-liveness so far) |
-| Cabo Verde | 8183–9573 | 1391 | 696 | ⬜ not started |
+| Cabo Verde | 8183–9573 | 1391 | 696 | ✅ **COMPLETE** (row 9573) — 623 PASS / 73 FAIL |
 | Cameroon | 9574–10745 | 1172 | 738 | ⬜ not started |
-| Canada | 10746–12428 | 1683 | 1003 | ⬜ not started |
+| Canada | 10746–12428 | 1683 | 1003 | ✅ **COMPLETE** (row 12428) — 962 PASS / 41 FAIL |
 | Chile | 12429–13847 | 1419 | 960 | ⬜ not started |
 | Colombia | 13848–15527 | 1680 | 1132 | ⬜ not started |
-| Costa Rica | 15528–16571 | 1044 | 734 | ⬜ not started |
+| Costa Rica | 15528–16571 | 1044 | 734 | ✅ **COMPLETE** (row 16571) — 654 PASS / 80 FAIL |
 | Côte d'Ivoire | 16572–17486 | 915 | 542 | ✅ **COMPLETE** (row 17485) — 463 PASS / 79 FAIL |
 | Croatia | 17487–19101 | 1615 | 1188 | ✅ **COMPLETE** (row 19100) — 1034 PASS / 154 FAIL |
 | Denmark | 19102–20581 | 1480 | 1041 | ✅ **COMPLETE** (row 20580) — 859 PASS / 182 FAIL |
 | DR Congo | 20582–21579 | 998 | 586 | ✅ **COMPLETE** (row 21576) — 459 PASS / 127 FAIL |
 | Ecuador | 21580–22765 | 1186 | 782 | ⬜ not started |
 | Egypt | 22766–23686 | 921 | 636 | ⬜ not started |
-| England | 23687–25401 | 1715 | 1315 | ⬜ not started |
+| England | 23687–25401 | 1715 | 1315 | ✅ **COMPLETE** (row 25401) — 1228 PASS / 87 FAIL |
 | France | 25402–27324 | 1923 | 1413 | ⬜ not started |
 | Germany | 27325–29165 | 1841 | 1356 | ⬜ not started |
-| Ghana | 29166–30309 | 1144 | 855 | ⬜ not started |
+| Ghana | 29166–30309 | 1144 | 855 | ✅ **COMPLETE** (row 30309) — 783 PASS / 72 FAIL |
 | Iran | 30310–31698 | 1389 | 926 | ⬜ not started |
 | Iraq | 31699–32567 | 869 | 537 | ⬜ not started |
 | Italy | 32568–34327 | 1760 | 1286 | ⬜ not started |

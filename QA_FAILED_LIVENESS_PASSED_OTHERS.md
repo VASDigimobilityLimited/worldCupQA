@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **1022** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Australia 121 [✅ COMPLETE through row 3241] · Brazil 6097–6760 so far: 73 · Côte d'Ivoire 16572–17486: 79 [✅ COMPLETE] · Croatia 17487–19101: 154 [✅ COMPLETE] · Denmark 19102–20581: 182 [✅ COMPLETE] · DR Congo 20582–21579: 127 [✅ COMPLETE])
+Total failed-liveness-passed-others so far: **1510** (Algeria 176 · Argentina 110 [✅ COMPLETE] · Australia 121 [✅ COMPLETE] · Austria 135 [✅ COMPLETE] · Brazil 6097–6760 so far: 73 · Cabo Verde 73 [✅ COMPLETE] · Canada 41 [✅ COMPLETE] · Costa Rica 80 [✅ COMPLETE] · Côte d'Ivoire 79 [✅ COMPLETE] · Croatia 154 [✅ COMPLETE] · Denmark 182 [✅ COMPLETE] · DR Congo 127 [✅ COMPLETE] · England 87 [✅ COMPLETE] · Ghana 72 [✅ COMPLETE])
 
 ---
 
@@ -6061,3 +6061,1111 @@ Recurring DR Congo defect clusters: (1) **2023 AFCON = 'quarter-finals'** — th
 **Why it fails:** DR Congo HAVE now qualified for a World Cup under their current name (2026, via the intercontinental playoff), so 'never qualified / failed to qualify under current name' is outdated.
 **Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
 **Remedy:** They qualified for 2026 (first under the name DR Congo).
+<!-- ===== Austria (rows 3242+) — NEW METHOD ===== -->
+
+### Row 3251 — FAIL: spreadsheet date-corruption
+**Q:** At Euro 2024, Austria beat the Netherlands by what scoreline? **A:** 03-Feb (E: "ended 3-2")
+**Why it fails:** The answer cell `03-Feb` is an Excel-mangled `3-2`. The correct scoreline (per the
+explanation and live sources) is **3-2**, but the rendered answer is a corrupted date string.
+**Source:** https://www.cbc.ca/sports/soccer/european-championship-soccer-roundup-july2-1.7252081
+**Remedy:** Restore the answer to `3-2`; flag for a dataset-wide date-corruption sweep.
+
+### Row 3270 — FAIL: 2022 World Cup false premise
+**Q:** At the 2022 World Cup, which Austria player was their star but faced injury problems? **A:** David Alaba
+**Why it fails:** Austria **did not qualify** for the 2022 World Cup, so there was no Austria player "at
+the 2022 World Cup." The premise asserts an event that did not happen. (Alaba is indeed Austria's star,
+but the framing is false.)
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Re-anchor to Euro 2024 (or to qualifying), e.g. "Austria's star at Euro 2024 who faced injury problems."
+
+### Rows 3276, 3277 — FAIL: wrong answer (first Euro group stage was 2008, not 2016)
+- **3276:** "At which European Championship did Austria first reach the group stage? → Euro 2016"
+- **3277:** "At which Euros did Austria's men's team first reach the group stage? → Euro 2016"
+**Why they fail:** Austria's **first** UEFA European Championship appearance (and group stage) was **Euro
+2008**, as co-hosts with Switzerland — not Euro 2016. Worse, **Euro 2008 is offered as a distractor** in
+both rows, so the keyed answer is wrong while a correct option is present.
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_UEFA_European_Championship
+**Remedy:** Change the answer to **Euro 2008**, or reword to "first *qualified on merit*" (Euro 2016) and remove the 2008 distractor.
+
+<!-- ===== Austria batch 3291-3460 ===== -->
+
+### Rows 3291, 3292, 3373, 3450, 3451, 3454, 3455, 3459, 3460 — FAIL: corrupted answer "03-Feb" (= 3-2)
+All ask Austria's scoreline in the Euro 2024 win over the Netherlands; the answer cell is the
+Excel-mangled date **`03-Feb`** instead of **`3-2`** (the explanations all correctly say 3-2).
+**Source:** https://www.skysports.com/football/news/26806/13157522/euro-2024-netherlands-2-3-austria
+**Remedy:** Restore the answer to `3-2`; sweep the dataset for `DD-Mon` date-corrupted scorelines.
+
+### Rows 3319, 3320, 3321 — FAIL: corrupted answer "02-Jan" (= 2-1)
+Ask Austria's scoreline vs Italy (Euro 2020) / Türkiye (Euro 2024); the answer cell is the
+Excel-mangled date **`02-Jan`** instead of **`2-1`**.
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_UEFA_European_Championship
+**Remedy:** Restore the answer to `2-1`.
+
+### Row 3310 — FAIL: false premise + wrong answer
+**Q:** ...Which team beat them 2-1 at the 2018 World Cup? **A:** Croatia (E: "Austria did not qualify for the 2018 World Cup, so no team beat them 2-1")
+**Why it fails:** Austria didn't play at the 2018 WC, so the premise is false and the keyed answer
+"Croatia" directly contradicts the explanation. No option can be correct.
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_FIFA_World_Cup
+**Remedy:** Drop, or re-anchor to a real match.
+
+### Row 3315 — FAIL: non-unique answer
+**Q:** Which nation did Austria NOT face in a Euro knockout stage? **A:** The Netherlands (O: Netherlands | Germany | Italy | Turkey)
+**Why it fails:** Austria's only Euro knockout opponents are **Italy** (2020) and **Türkiye** (2024).
+So **both** "Netherlands" and "Germany" are correct ("not faced") — the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_UEFA_European_Championship
+**Remedy:** Replace one of the unfaced-nation distractors so only one option fits.
+
+### Rows 3341, 3427, 3431 — FAIL: wrong year (Euro 2020 was played in 2021)
+- **3341:** "In which year did Austria reach the Euro 2020 R16? → 2020" (no 2021 option)
+- **3427:** "In which year did Austria lose 2-1 to Italy in extra time? → 2020" (2021 *was* an option)
+- **3431:** "In which year did Austria reach the Euro 2020 round of 16? → 2020"
+**Why they fail:** All Austria's Euro 2020 matches (incl. the R16 loss to Italy) were played in
+**June 2021** (tournament postponed). The dataset's own rows 3307/3317/3426 correctly answer 2021;
+keying 2020 here is internally inconsistent and factually wrong.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Change the answer to **2021**.
+
+### Rows 3344, 3348 — FAIL: 2022 World Cup false premise
+- **3344:** "Austria's **2022 World Cup** midfield quality was provided by which player? → Sabitzer"
+- **3348:** "Austria's **2022 World Cup squad** featured many Bundesliga players. Which year? → 2022"
+**Why they fail:** Austria **did not play at the 2022 World Cup** (failed to qualify), so there was
+no 2022 WC squad/midfield. (Sabitzer and the Bundesliga point are true of the *qualifiers*, but the
+WC framing is a false premise — cf. the parallel "qualifiers" rows which pass.)
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_FIFA_World_Cup
+**Remedy:** Reword to "2022 World Cup **qualifiers**."
+
+### Rows 3376, 3377 — FAIL: wrong fact (top-scorer timing)
+**Q:** Before/by the 2022 World Cup, which Austrian had become the nation's all-time top scorer? **A:** Marko Arnautović
+**Why it fails:** Arnautović became Austria's all-time top scorer on **9 Oct 2025** (passing Toni
+Polster). Before/by 2022 he was **not** yet the record holder — **Polster** still held it. (He did
+become most-*capped* in Sep 2022, but that's caps, not goals.) Also a 2022-WC false premise.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Re-anchor to 2025 (when he became top scorer), or change to most-capped (Sep 2022).
+
+### Rows 3415, 3434, 3436, 3437, 3438 — FAIL: wrong year (Rangnick rejected Bayern in 2024, not 2022)
+All ask the year Rangnick turned down Bayern Munich to stay with Austria; all key **2022** (with
+explanations claiming he did so "that same year" as his appointment). He was appointed in 2022 but
+**rejected Bayern in May 2024** (after Tuchel's exit). 3434/3436 even offer **2024** as a distractor.
+**Source:** https://www.espn.co.uk/football/story/_/id/40067631/rangnick-turns-bayern-munich-stay-austria
+**Remedy:** Change the answer to **2024**; fix the "same year as appointment" explanations.
+
+### Rows 3430, 3439 — FAIL: wrong qualification year (2025, not 2026)
+**Q:** In which year did Austria / Rangnick's Austria qualify for the 2026 World Cup? **A:** 2026
+**Why they fail:** Austria sealed 2026 qualification on **18 Nov 2025** (1-1 v Bosnia in Vienna,
+group winners of UEFA Group H). The year is **2025**, not 2026 — and 2025 isn't even an option.
+**Source:** https://www.nbcsports.com/soccer/news/austria-qualify-for-first-world-cup-in-28-years
+**Remedy:** Change the answer to **2025** (add it as a choice).
+
+### Row 3441 — FAIL: self-referential answer
+**Q:** Under Koller, Austria's peak FIFA ranking was 10th. Which nation also peaked at 10th? **A:** Austria
+**Why it fails:** The answer restates the subject nation — Austria can't be the "other" nation that
+"also" peaked at 10th. Logically broken.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Drop, or supply a genuine other nation whose peak was 10th.
+
+### Rows 3356, 3360 — FAIL: non-unique answer
+- **3356:** "2026 qualification compares to which **earlier Euros qualification**? → Euro 2016" — but
+  Austria also qualified for **Euro 2020** and **Euro 2024** (both offered), so the answer isn't unique.
+- **3360:** "The 3-2 win over the Netherlands occurred **after** which other finals? → Euro 2020" — it
+  occurred after *all* the offered finals (2020, 2016, 2008, 2012), so "after" is satisfied by several.
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_UEFA_European_Championship
+**Remedy:** Tighten the comparison so exactly one option fits (e.g. "most recent" / "immediately preceding").
+
+---
+
+## Austria batch rows 3461-3660 — 45 FAIL
+
+### Rows 3461, 3462, 3463, 3465, 3468 — FAIL: Excel date-corruption of the scoreline
+- **3461, 3462, 3463, 3465:** answer **"03-Feb"** is a mangled **"3-2"** (Austria beat the Netherlands 3-2 at Euro 2024).
+- **3468:** answer **"02-Jan"** is a mangled **"2-1"** (Austria lost 2-1 to Türkiye).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Store scorelines as text (e.g. `'3-2`) so Excel does not auto-convert them to dates.
+
+### Rows 3480, 3498 — FAIL: Euro 2020 keyed "2020" though the match was played in 2021
+- **3480:** "lose 2-1 to Italy in the Euro 2020 round of 16 → 2020" but the match was June 2021, and **2021 is among the options** — so the keyed answer is wrong/non-unique.
+- **3498:** "reach the round of 16 at Euro 2020 → 2020" — self-referential and the R16 tie was played in 2021.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Key postponed Euro 2020 events to 2021, or drop the self-referential year question.
+
+### Rows 3491, 3496, 3500, 3508, 3523 — FAIL: non-unique / wrong tournament-year answer
+- **3491, 3496:** "qualify for / reach a Euro group stage → Euro 2016 / 2016" — Austria reached the group stage at **2008, 2016, 2020 and 2024** (several offered), so not unique.
+- **3500:** "reach the UEFA Euro round of 16 → Euro 2020" — Austria reached the R16 at **both Euro 2020 and Euro 2024** (both offered).
+- **3508:** "**last** reach the Euro group stage → 2016" — their most recent was **Euro 2024**.
+- **3523:** "which **2010s** World Cup did Austria fail to qualify for → 2014" — they missed **2010, 2014 and 2018** (all offered), so not unique.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Rewrite so exactly one option is correct (e.g. "first" / "most recent").
+
+### Row 3497 — FAIL: first Euro was 2008, not 2016
+- "qualify for their **first** UEFA European Championship → Euro 2016" — Austria's first Euro finals was **Euro 2008** (as co-hosts).
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_UEFA_European_Championship
+**Remedy:** Change answer to Euro 2008, or reword to "first qualified-on-merit" if that is the intent.
+
+### Rows 3493, 3494, 3495 — FAIL: Austria qualified in 2025, not 2026
+- "When did Austria qualify for the 2026 FIFA World Cup → 2026" — qualification was secured on **18 Nov 2025**; "2026" is the tournament year, not the year they qualified. The correct year (2025) is not even offered.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Key the qualification year as 2025, or reword to "for which World Cup did Austria qualify".
+
+### Rows 3505, 3518, 3519, 3547, 3548, 3549, 3554, 3583, 3584, 3586, 3591, 3592, 3593, 3594 — FAIL: Rangnick rejected Bayern in 2024, not 2022
+- All key Rangnick's rejection of Bayern Munich to **2022** (in the answer and/or explanation). He was *appointed* Austria manager in 2022, but he **turned down Bayern in 2024**. Rows whose answer is literally "In 2022" (3505, 3518, 3519) have a wrong answer; the rest carry the wrong year in the explanation.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Separate the 2022 appointment from the 2024 Bayern rejection; key the rejection to 2024.
+
+### Row 3557 — FAIL: Rangnick was not in charge for 2022 WC qualifying
+- "introduced a pressing style **for 2022 World Cup qualifying** → Rangnick" — the 2022 WC qualifiers were run by **Franco Foda**; Rangnick was appointed only after that campaign ended.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Tie Rangnick's pressing to the 2026 cycle / Euro 2024, not the 2022 qualifiers.
+
+### Rows 3545, 3623, 3625, 3638, 3644 — FAIL: Arnautović became all-time top scorer in 2025
+- These claim Marko Arnautović was/became Austria's **all-time top scorer "by/before the 2022 World Cup"** (3545, 3623, 3625, 3644) or **"at the 2024 Euros"** (3638). He overtook Toni Polster's record only in **2025**. (3644 additionally has a false premise — Austria did not play the 2022 World Cup.)
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Drop the "by 2022 / at 2024" time-bounding, or use present-tense "is the all-time top scorer".
+
+### Rows 3615, 3622, 3629, 3635, 3636 — FAIL: wrong/non-unique player-club facts
+- **3615:** "midfielder who played for **Borussia Dortmund at the 2022 World Cup** → Sabitzer" — Sabitzer was at **Bayern** then (he joined Dortmund in 2023), and Austria did not play the 2022 WC.
+- **3622, 3635:** "player **NOT based in the Bundesliga** → Alaba" — not unique: **Arnautović** (Bologna, Serie A) was also non-Bundesliga in that period.
+- **3629:** "had **over 100 caps** for the 2022 WC qualifiers → Alaba" — not unique (**Arnautović** also has 100+ caps) and neither had reached 100 caps yet in 2021.
+- **3636:** "player **based in the Bundesliga** → Baumgartner" — not unique: **Schlager** (Wolfsburg) and **Schöpf** (Arminia Bielefeld) were also Bundesliga-based.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Pick a discriminator that singles out exactly one player, and fix the club/era facts.
+
+### Rows 3654, 3655, 3656, 3657 — FAIL: false premise — Austria did not play the 2022 World Cup
+- These frame David Alaba's injury around the **2022 World Cup** itself ("ahead of / availability for / hopes for the 2022 FIFA World Cup"). Austria failed to qualify for the 2022 World Cup, so a finals-participation framing is a false premise.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Reframe to the **2022 World Cup qualifiers** (which Austria did contest) rather than the finals.
+
+---
+
+## Austria batch rows 3661-3860 — 23 FAIL
+
+### Rows 3719, 3747, 3773 — FAIL: wrong manager name "Franz Koller"
+- All key the answer to **"Franz Koller"** for Austria's peak FIFA ranking (10th). The manager was **Marcel Koller**; "Franz Koller" is not a real Austria manager. (In 3747 the correct name is not even an option.)
+**Source:** https://en.wikipedia.org/wiki/Marcel_Koller
+**Remedy:** Correct the name to Marcel Koller.
+
+### Row 3785 — FAIL: Rangnick rejected Bayern in 2024, not 2022
+- "rejected Bayern Munich before 2026 WC qualifiers → Rangnick" but the explanation dates the rejection to **2022**; he was *appointed* in 2022 and **turned down Bayern in 2024**.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Key the Bayern rejection to 2024.
+
+### Rows 3742, 3858 — FAIL: Arnautović became all-time top scorer in 2025
+- **3742:** "holds the all-time scoring record **entering the 2022 WC qualifiers**" and **3858:** "became their all-time top scorer **before the 2022 World Cup**". Arnautović overtook Toni Polster's record only on **9 Oct 2025** (45 goals); Polster held it through 2021.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Drop the pre-2022 time-bounding, or use present tense.
+
+### Rows 3661, 3679, 3682, 3683, 3720, 3839, 3843 — FAIL: false premise — Austria did not play the 2022 World Cup
+- These frame players around the **2022 World Cup finals / squad / availability** (3661 Alaba's "2022 World Cup availability"; 3679/3682/3683 Baumgartner "at/in the 2022 World Cup squad"; 3720 "defender at the 2022 World Cup"; 3839/3843 Sabitzer "2022 World Cup squad"). Austria **failed to qualify** for the 2022 World Cup, so a finals/squad framing is a false premise.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Reframe to the 2022 World Cup **qualifiers**, which Austria contested.
+
+### Rows 3672, 3673, 3857, 3859 — FAIL: non-unique "not based in the Bundesliga"
+- All key "not based in the Bundesliga → David Alaba" (Real Madrid), but **Marko Arnautović** (Bologna in 2021, Inter Milan by 2024 — both Serie A) was also not Bundesliga-based, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Replace Arnautović as a distractor, or add a discriminator unique to Alaba.
+
+### Row 3826 — FAIL: Sabitzer was at Bayern, not Dortmund, during the 2022 cycle
+- "played for Borussia Dortmund **during the 2022 World Cup cycle** → Sabitzer" — he was at **Bayern Munich** then; he only joined Borussia Dortmund in 2023.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Tie the Dortmund spell to 2023 onward (e.g. the 2026 cycle), not 2022.
+
+### Rows 3732, 3734 — FAIL: non-unique tournament/opponent answer
+- **3732:** "Euro 2024 group opponent that **also played at the 2022 World Cup** → Netherlands" — Austria's Euro 2024 group also contained **France and Poland**, both of which also played the 2022 World Cup (3 of 4 options qualify).
+- **3734:** "Euro 2024 opponent they **defeated** → Netherlands" — Austria also **beat Poland 3-1** at Euro 2024, so two offered options are correct.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Rewrite so exactly one option satisfies the condition.
+
+### Rows 3675, 3807 — FAIL: internal temporal contradiction
+- **3675:** "2024 achievement that **followed their 2026 World Cup qualification** → beat Netherlands 3-2" — the win was June 2024, *before* qualification was secured (Nov 2025), so it could not have followed it.
+- **3807:** "manager whose tenure **ended before the 2022 World Cup qualifiers** → Foda" — Foda *oversaw* the 2022 qualifiers (2018-2022); even the explanation says his tenure ended "during" that cycle, contradicting the stem.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Fix the ordering so the stem matches the timeline.
+
+### Row 3751 — FAIL: false premise — Austria did not face Germany in 2022 WC qualifying
+- "manager who **faced Germany in a 2022 World Cup qualifier** → Foda" — Austria and Germany were in **different qualifying groups**; they did not meet in 2022 WC qualifying.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Use a genuine 2022-qualifying opponent (e.g. Denmark, Scotland, Israel).
+
+---
+
+## Austria batch rows 3861-4060 — 21 FAIL
+
+### Rows 3862 — FAIL: Alaba did not have 100+ caps before the 2022 World Cup
+- "had over 100 caps **before the 2022 World Cup** → David Alaba". Alaba reached his 100th cap only on **17 June 2023** (vs Belgium, Euro 2024 qualifying), so he was below 100 caps before the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/David_Alaba
+**Remedy:** Use present tense ("has over 100 caps"), or anchor to Arnautović (100 caps from 6 June 2022).
+
+### Rows 3867 — FAIL: non-unique "based in the Bundesliga"
+- "player in the 2022 WC qualifiers **based in the Bundesliga** → Baumgartner (Hoffenheim)" — not unique: **Marcel Sabitzer** (Bayern Munich from Aug 2021) was also Bundesliga-based during that campaign.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Add a discriminator unique to Baumgartner, or replace Sabitzer as a distractor.
+
+### Rows 3868, 3941 — FAIL: false premise — "2022 World Cup squad/player"
+- **3868:** "Austrian player **in the 2022 World Cup squad** who won the CL with two clubs → Alaba"; **3941:** "Austrian **World Cup 2022 player** who won the CL with Bayern and Real → Alaba". Austria **failed to qualify** for the 2022 World Cup, so a finals-squad/player framing is a false premise.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Drop the "2022 World Cup squad/player" framing (use "2022 WC qualifiers" or no year).
+
+### Rows 3875, 3878 — FAIL: Arnautović became all-time top scorer in 2025
+- **3875:** "all-time top scorer **at the 2022 World Cup** → Arnautović" (also a false premise — Austria did not play it); **3878:** "all-time top scorer, **a status he held during the 2022 World Cup qualifiers**". Arnautović overtook Toni Polster's record only on **9 Oct 2025** (45 goals); Polster held it through 2021-22.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Use present tense ("is the all-time top scorer"); drop the 2022 time-bounding.
+
+### Rows 3881, 3902 — FAIL: Arnautović has never scored a World Cup goal
+- **3881:** "**scored a World Cup goal** and is the nation's all-time top scorer → Arnautović"; **3902:** "**World Cup goal tally** made him their all-time leading scorer → Arnautović". Arnautović has **never played at a World Cup** (Austria last appeared in 1998); his goals come from qualifiers, friendlies and the Euros.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Remove the "World Cup goal" claim; his record is from international goals overall.
+
+### Row 3908 — FAIL: Ernst-Happel-Stadion / Vienna was not a Euro 2020 host
+- "Austrian stadium, **a 2020 Euro host** → Ernst-Happel-Stadion". Euro 2020's host cities were London, Munich, Rome, Baku, Saint Petersburg, Amsterdam, Bucharest, Budapest, Copenhagen, Glasgow and Seville — **Vienna was not among them**.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Anchor the stadium to Euro 2008 (which Vienna did host) or to its capacity, not Euro 2020.
+
+### Rows 3914, 3918, 3920, 3927 — FAIL: false premise — Alaba injury framed around the 2022 World Cup finals
+- These tie David Alaba's injury to the **2022 World Cup** itself: 3914 "injured **before the 2022 FIFA World Cup**", 3918 "**2022 World Cup preparation**", 3920 "**2022 World Cup hopes**", 3927 "**2022 FIFA World Cup squad availability**". Austria did not qualify for the 2022 finals, so a finals/squad-preparation framing is a false premise.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Reframe to the **2022 World Cup qualifiers** (which Austria contested).
+
+### Row 3944 — FAIL: Austria Wien IS a main Austrian Bundesliga club
+- "Which club is **NOT** a main Austrian Bundesliga team? → Austria Wien". **FK Austria Wien** is one of Austria's biggest top-flight clubs (24-time champions) and plays in the Austrian Bundesliga, so it is not the odd one out.
+**Source:** https://en.wikipedia.org/wiki/FK_Austria_Wien
+**Remedy:** Replace the answer with a club that is genuinely not in the Austrian Bundesliga.
+
+### Rows 3945, 4026 — FAIL: Rangnick rejected Bayern in 2024, not 2022
+- Both tie Rangnick's rejection of Bayern Munich to **2022** ("reject to remain Austria manager **in 2022**" / "turned down Bayern to coach Austria **in 2022**"). He was *appointed* Austria manager in 2022 but **turned down Bayern in 2024**.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Separate the 2022 appointment from the 2024 Bayern rejection; key the rejection to 2024.
+
+### Row 3950 — FAIL: the Netherlands win was a group game, and Austria's only knockout match was a loss
+- "Euro 2024 **only knockout win** → Beat Netherlands 3-2". The 3-2 win over the Netherlands was the final **group-stage** match; Austria's only knockout game at Euro 2024 was the **R16 loss (2-1) to Türkiye** — they had no knockout win.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Reframe as a group-stage result, or remove the false "knockout win" claim.
+
+### Rows 3955, 3960 — FAIL: non-unique answer
+- **3955:** "Which Euros did Austria reach the **group stage** in? → Euro 2016" — Austria reached the group stage at **Euro 2008, 2016, 2020 and 2024** (all four offered), so not unique.
+- **3960:** "manager who did **NOT** lead Austria to World Cup qualification → Koller" — **Foda** (failed 2022) and **Constantini** also never led a WC qualification, so three options qualify.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Rewrite so exactly one option satisfies the condition (e.g. "first" / "only").
+
+### Rows 3969, 4027 — FAIL: Rangnick was not in charge of the 2022 World Cup cycle
+- **3969:** "implemented a pressing style **for Austria in 2022 World Cup qualifying** → Rangnick"; **4027:** "appointed to lead Austria **in the 2022 World Cup cycle** → Rangnick". The 2022 WC qualifiers were run by **Franco Foda** (ended Nov 2021); Rangnick was appointed only afterwards for the Euro 2024 / 2026 cycle, so keying the 2022 WC campaign to him is wrong (Foda is the correct manager for that cycle).
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Tie Rangnick to the 2026 cycle / Euro 2024, not the 2022 World Cup campaign.
+
+---
+
+## Austria batch rows 4061-4282 — 11 FAIL
+
+### Rows 4105, 4204 — FAIL: self-referential answer
+- **4105:** "Which nation, **like Austria** under Koller, also reached its best FIFA ranking of 10th? → **Austria**"; **4204:** "Which UEFA nation, **like Austria**, failed to qualify for the 2010/2014/2018/2022 World Cups? → **Austria**". The stem asks for a nation *comparable to* Austria, but the keyed answer is Austria itself — circular and unanswerable as posed.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Either name a genuine peer nation as the answer, or drop the "like Austria" framing and ask about Austria directly.
+
+### Rows 4140 — FAIL: the Netherlands win was a group game, not a knockout win
+- "Which team did Austria beat in the Euro 2024 **knockout stage**? → Netherlands" — the 3-2 win over the Netherlands was a **group-stage** match. Austria's only knockout game at Euro 2024 was the R16 **loss** to Türkiye, so they beat no one in the knockout stage. (The explanation also wrongly says Austria lost to Italy — they did not face Italy at Euro 2024.)
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Reframe as a group-stage result, or remove the false "knockout" premise.
+
+### Rows 4147, 4148, 4241 — FAIL: non-unique answer
+- **4147:** "team Austria did **NOT** beat at Euro 2024 → Türkiye" — Austria also **lost 0-1 to France** (and beat only the Netherlands and Poland), so France is equally a correct answer.
+- **4148:** "team Austria did **NOT** beat in a group-stage upset → Italy" — their only group-stage upset was over the Netherlands, so Germany and France (also offered) are equally "not beaten."
+- **4241:** "year Austria qualified for the Euro **group stage** → 2016" — Austria reached the group stage at **2008, 2016 and 2020** (all offered), so not unique.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Rewrite so exactly one option satisfies the condition.
+
+### Rows 4203 — FAIL: false premise (Austria's first Euros was 2008) and non-unique
+- "Which UEFA nation, **like Austria at Euro 2016, also qualified for their first Euros in 2016**? → Iceland". Austria's **first** Euros was **2008** (as co-host), not 2016 — so the comparison is false. Moreover Iceland, **Wales, Slovakia and Northern Ireland** (all offered) all made their Euro debut in 2016, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop the false Austria comparison and ensure only one option debuted in 2016.
+
+### Rows 4233, 4238, 4240 — FAIL: Austria qualified in 2025, not 2026
+- All ask **which year** Austria qualified and key **2026** ("end their 28-year absence by qualifying", "qualify for the 2026 World Cup under Rangnick", "qualify after a 28-year absence"). Qualification was secured on **18 Nov 2025**; 2026 is the tournament year, and the correct year (2025) is not even offered.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Key the qualification year as 2025, or reword to "for which World Cup did Austria qualify".
+
+### Rows 4276 — FAIL: answer is a consequence, not a reason
+- "**Why** did Austria qualify for the 2026 FIFA World Cup? → Ended a 28-year absence". Ending the absence is a *result* of qualifying, not its cause. Austria qualified by **winning their qualifying group** — an option offered ("Won their qualifying group"), which is the correct causal answer.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Key the answer to "Won their qualifying group", or reword the stem to ask about significance rather than cause.
+
+---
+
+## Cabo Verde batch rows 8183–8530 — 16 FAIL
+
+### Rows 8191, 8368, 8404, 8405 — FAIL: wrong AFCON 2023 stage (it was the quarter-finals)
+- All key the 2023 AFCON exit as the **round of 16**. Cabo Verde actually **won** their round-of-16 tie (1-0 v Mauritania) and were eliminated by **South Africa in the quarter-finals** (0-0, lost 2-1 on penalties). **8191** ("reached which knockout stage → Round of 16") and **8368** ("eliminated in which round → round of 16") have a wrong answer; **8404/8405** ("which 2023 AFCON round did they lose to South Africa → round of 16") are wrong — that loss was the quarter-final.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Key the stage as the quarter-finals.
+
+### Rows 8222, 8223, 8366, 8367, 8450, 8459 — FAIL: false premise / wrong explanation ("lost to South Africa in the 2023 round of 16")
+- **8222/8223** build the stem on "Cabo Verde lost to South Africa in the 2023 AFCON **round of 16**" — false (it was the quarter-final). **8222** also keys "tournament ended → 2023" although the 2023 edition was played Jan–Feb **2024**. **8366/8367** ask who beat/eliminated them "in the 2023 AFCON round of 16 → South Africa" — South Africa beat them in the QF, not the R16. **8450/8459** have correct answers (2023) but explanations that state they "lost to South Africa in the round of 16," which is false.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Drop/replace the round-of-16 premise with the quarter-final; for 8222 reconcile the 2023 vs 2024 dating.
+
+### Rows 8237, 8250 — FAIL: self-referential answer
+- **8237:** "Cabo Verde secured its first World Cup… **which nation also qualified?** → Cabo Verde"; **8250:** "Cabo Verde's 2026 qualification was historic. **Which nation also qualified for its first World Cup?** → Cabo Verde." The stem asks for another nation, but the keyed answer is Cabo Verde itself — circular. (8237 is also non-unique on the looser reading, since Egypt and Senegal also qualified for 2026.)
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Name a genuine other first-time 2026 qualifier (e.g. Jordan or Uzbekistan), or reframe to ask about Cabo Verde directly.
+
+### Rows 8245, 8246, 8289 — FAIL: false premise ("2022 World Cup squad")
+- All reference Cabo Verde's "**2022 World Cup squad**." Cabo Verde did **not** qualify for the 2022 World Cup, so there was no 2022 World Cup (finals) squad. The underlying diaspora fact (many Portugal-based players) is true, but the premise is false.
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Reframe as the "2022 World Cup **qualifying** squad" or drop the tournament reference.
+
+### Row 8402 — FAIL: false geographic premise (Angola is not a West African rival)
+- "In which 2013 AFCON match did Cabo Verde face a **West African rival**? → Group stage vs Angola." Angola is a **Central/Southern** African nation, not West African, and the explanation asserts a "verified West African rivalry fixture," which is false.
+**Source:** https://en.wikipedia.org/wiki/2013_Africa_Cup_of_Nations
+**Remedy:** Remove the "West African" descriptor, or pick a genuine West African opponent.
+
+---
+
+## Cabo Verde batch rows 8531–8880 — 11 FAIL
+
+### Rows 8536, 8689 — FAIL: wrong AFCON 2023 stage (reached the quarter-finals)
+- **8536** ("lost to South Africa in the 2023 knockout stage → Round of 16") and **8689** ("which AFCON 2023 stage did Cabo Verde reach → Round of 16") are wrong. Cabo Verde **won** their 2023 round-of-16 tie and were eliminated by **South Africa in the quarter-finals** (0-0, 2-1 on penalties), the furthest stage they reached. Quarter-finals is an offered option in both.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Key the stage as the quarter-finals.
+
+### Rows 8535, 8618, 8870 — FAIL: false premise / wrong explanation ("lost to South Africa in the 2023 round of 16")
+- **8535** keys the correct year (2023) but its explanation says they "lost to South Africa in the 2023 AFCON round of 16" — false (that loss was the quarter-final). **8618** ("which 2023 round-of-16 opponent did Cabo Verde lose to → South Africa") and **8870** ("which opponent eliminated them in the 2023 round of 16 → South Africa") both rest on the false premise that South Africa beat them in the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Replace "round of 16" with "quarter-finals."
+
+### Rows 8667, 8719 — FAIL: self-referential answer
+- **8667:** "Which 2026 World Cup qualifier is Cabo Verde's greatest sporting achievement? → Cabo Verde"; **8719:** "Which African nation's World Cup qualifying rise mirrors Cabo Verde's? → Cabo Verde" (its explanation even states "the question asks which nation mirrors itself"). Both key the subject nation as the answer — circular.
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Name a genuine comparator nation, or reframe to ask about Cabo Verde directly.
+
+### Row 8620 — FAIL: non-unique / wrong answer (multiple players raised in Portugal)
+- "Which 2026 Cabo Verde World Cup player was raised in Portugal? → Ryan Mendes." The squad is built on the Portugal-raised diaspora, and option **Bebé** (Tiago Correia) was unambiguously born and raised in Portugal — so the condition is not unique to Ryan Mendes (himself Praia-born).
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Reword so exactly one option fits, or name a player uniquely tied to Portugal.
+
+### Row 8740 — FAIL: unverified captaincy + ambiguous position
+- "Which Cabo Verde **centre-back captained** the team during 2022 World Cup qualifying? → Stopira." Stopira's primary position is **left-back**, and option **Varela** (Fernando Varela) is the squad's recognised centre-back, making "centre-back" non-unique; the specific captaincy claim is unverified.
+**Source:** https://en.wikipedia.org/wiki/Fernando_Varela_(Cape_Verdean_footballer)
+**Remedy:** Drop the "centre-back" qualifier and confirm/replace the captaincy claim.
+
+### Row 8865 — FAIL: wrong club (Kenny Rocha Santos never played for Moreirense)
+- "Which Cabo Verde midfielder … played for Moreirense in Europe? → Kenny Rocha Santos." Rocha Santos's European career is in **France** (Saint-Étienne, Rouen) and **Cyprus** (AEZ Zakakiou); there is no Moreirense spell.
+**Source:** https://en.wikipedia.org/wiki/Kenny_Rocha_Santos
+**Remedy:** Remove the Moreirense reference, or name the club he actually played for.
+
+### Row 8875 — FAIL: wrong diaspora (Jamiro Monteiro is Dutch-born)
+- "Which Cabo Verde player qualified … through Portuguese diaspora? → Jamiro Monteiro." Monteiro was born and raised in the **Netherlands**, so he qualifies via the Dutch diaspora, not the Portuguese one; the explanation's "especially from Portugal" is wrong for him.
+**Source:** https://en.wikipedia.org/wiki/Jamiro_Monteiro
+**Remedy:** Pick a genuinely Portugal-raised player, or correct the diaspora.
+
+---
+
+## Cabo Verde batch rows 8881–9230 — 26 FAIL
+
+### Rows 8886, 8902, 9003, 9004, 9005, 9006, 9024, 9146, 9163, 9169, 9173, 9179, 9181, 9184, 9210, 9220 — FAIL: self-referential answer (names the subject nation itself)
+- Each of these asks which *other* nation/team matches, mirrors, or shares a trait with Cabo Verde, but keys **"Cabo Verde"** as the answer — the subject restated. Examples: **9003/9004/9005/9006** ("which CAF nation's ranking rise mirrors Cabo Verde's → Cabo Verde"); **9024** ("which CAF nation's stadium capacity is closest to Cabo Verde's → Cabo Verde"); **9146** ("which nation matched Cabo Verde's 2014 peak of 27th → Cabo Verde"); **9169/9173/9179/9181/9184/9210/9220** ("which nation, like Cabo Verde, … → Cabo Verde"); **8886/8902** likewise key the subject team. Several explanations even admit it ("the question asks which nation's trajectory mirrors its own"). **9163** additionally rests on a false premise — Cabo Verde did **not** qualify for the 2015 AFCON (their AFCON appearances are 2013, 2021, 2023).
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Name a genuine comparator nation (e.g. Iceland for the "tiny debutant" framing), or reframe to ask about Cabo Verde directly.
+
+### Rows 8881, 8942, 9087, 9096 — FAIL: non-unique answer
+- **8881** ("which Cabo Verde player, eligible via Portuguese diaspora, played at AFCON tournaments → Garry Rodrigues"): the condition fits **all four** options — Ryan Mendes, Kenny Rocha Santos and Stopira all featured at AFCON via the same diaspora, so the answer is not unique.
+- **8942** ("which Cabo Verdean team qualified for the 2026 World Cup → The national team"): the distractors **"Cape Verde," "Cabo Verde," "Cape Verde Islands"** are the same nation, so multiple options are equally correct.
+- **9087** ("which manager did **NOT** lead Cabo Verde during early 2026 qualification → Lucio Antunes"): a negative question where **Hervé Renard and Carlos Queiroz** also never led Cabo Verde — only Bubista did — so three options satisfy "did not lead."
+- **9096** ("which manager led Cabo Verde during their 2023 AFCON campaign → Bubista"): option **"Pedro Brito"** is the same man — *Bubista* is the nickname of **Pedro Leitão Brito** — so two options name the correct manager.
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Reword so exactly one option is correct (distinct managers, distinct players, a single spelling of the nation).
+
+### Row 9048 — FAIL: wrong answer (World Cup squad is Europe-based, not the domestic league)
+- "Which domestic league do most Cabo Verde World Cup squad players compete in? → Campeonato Caboverdiano de Futebol." Cabo Verde's 2026 squad is built almost entirely on the Portugal-based diaspora and other European leagues; very few (if any) of the World Cup squad play in the domestic **Campeonato Caboverdiano**. Option **Liga Portugal** is the realistic answer.
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Change the answer to the Portuguese top flight, or reword to ask which league is Cabo Verde's *top domestic* competition (then the Campeonato answer is fine).
+
+### Rows 9127, 9129 — FAIL: wrong explanation (2023 AFCON exit was the quarter-final, not the round of 16)
+- **9127** ("which nation did Cabo Verde face in a 2023 AFCON knockout round → South Africa") and **9129** ("which nation eliminated Cabo Verde from the 2023 AFCON → South Africa"): the keyed answer South Africa is correct, but both explanations say the loss came in the **round of 16**. Cabo Verde won their round-of-16 tie and were eliminated by South Africa in the **quarter-finals** (0-0, 2-1 on penalties).
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Replace "round of 16" with "quarter-finals" in the explanation.
+
+### Row 9131 — FAIL: false premise (no round-of-16 loss to South Africa)
+- "Which nation eliminated Cabo Verde in the 2023 Africa Cup of Nations **round of 16**? → South Africa." The premise is false: South Africa beat Cabo Verde in the **quarter-finals**, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Change "round of 16" to "quarter-finals."
+
+### Rows 9206, 9219 — FAIL: false premise (Iceland's debut was 2018, not 2026)
+- **9206** ("which nation's **2026** World Cup qualification is compared to Cabo Verde's → Iceland") and **9219** ("which nation's **2026** World Cup qualification was compared to Cabo Verde's historic first → Iceland"): Iceland did **not** qualify for 2026; the valid comparison is to Iceland's **2018** debut (the explanations themselves say 2018). The "2026" framing of Iceland's qualification is false.
+**Source:** https://en.wikipedia.org/wiki/Iceland_national_football_team
+**Remedy:** Drop "2026" from the Iceland framing — compare Cabo Verde's 2026 debut to Iceland's 2018 debut.
+
+---
+
+## Cabo Verde batch rows 9231–9573 — 20 FAIL
+
+### Rows 9286, 9287 — FAIL: wrong answer (2023 AFCON best stage was the quarter-finals)
+- Both ask which round Cabo Verde **reached** at the 2023 AFCON and key **"Round of 16."** Cabo Verde won their round-of-16 tie and reached the **quarter-finals** (lost to South Africa 0-0, 2-1 on penalties) — and "Quarter-finals" is an offered option in both.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Change the answer to the quarter-finals.
+
+### Rows 9344, 9388, 9423 — FAIL: false premise (no round-of-16 loss to South Africa)
+- **9344** ("which team beat Cabo Verde in the 2023 AFCON **round of 16** → South Africa"), **9388** ("which West African nation did Cabo Verde lose to in the 2023 AFCON **round of 16** → South Africa") and **9423** ("who eliminated Cabo Verde in the 2023 AFCON **round of 16** → South Africa") all embed the false premise that South Africa beat Cabo Verde in the round of 16 — that loss came in the **quarter-finals**. (9388 also mislabels South Africa, a Southern-African side, as "West African.")
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Replace "round of 16" with "quarter-finals."
+
+### Rows 9353, 9356, 9411, 9454 — FAIL: wrong explanation (states "round of 16" for the quarter-final exit)
+- The keyed answers are right — South Africa (9353, 9356), the year 2023 (9411), "lost in knockout stage" (9454) — but each explanation says Cabo Verde lost in the **round of 16**. Their 2023 AFCON elimination by South Africa was in the **quarter-finals**.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Correct the explanation to "quarter-finals."
+
+### Row 9341 — FAIL: false premise (Cabo Verde did not play the 2015 AFCON)
+- "Which stage did Cabo Verde reach at the **2015** Africa Cup of Nations? → Group stage." Cabo Verde failed to qualify for the 2015 AFCON; their AFCON appearances are 2013, 2021 and 2023. The premise is false.
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Re-anchor to a tournament Cabo Verde actually contested (2013, 2021 or 2023).
+
+### Row 9375 — FAIL: wrong answer (squad is Europe-based, not the domestic league)
+- "Which top domestic league do Cabo Verde's 2022 World Cup squad players compete in? → Campeonato Caboverdiano de Futebol." Cabo Verde's squad is built on the Portugal-based diaspora and other European leagues; option **Liga Portugal** is the realistic answer. (Same defect as row 9048 in the previous batch.)
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Change the answer to the Portuguese top flight, or reword to ask which league is Cabo Verde's *top domestic* competition.
+
+### Rows 9263, 9305 — FAIL: self-referential answer (names the subject nation)
+- **9263** ("which nation's most popular sport is football, like Cabo Verde's → Cabo Verde") and **9305** ("which small nation qualified for its first World Cup in 2026 like Cabo Verde → Cabo Verde") both ask which *other* nation is "like Cabo Verde" yet key Cabo Verde itself.
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Name a genuine comparator nation (e.g. Iceland), or reframe to ask about Cabo Verde directly.
+
+### Row 9320 — FAIL: false premise (Iceland's debut was 2018, not 2026)
+- "Which small nation's **2026** World Cup qualification is compared to Cabo Verde's? → Iceland." Iceland did not qualify for 2026; the valid comparison is to Iceland's **2018** debut (the explanation itself says 2018).
+**Source:** https://en.wikipedia.org/wiki/Iceland_national_football_team
+**Remedy:** Drop "2026" from the Iceland framing — compare Cabo Verde's 2026 debut to Iceland's 2018 debut.
+
+### Rows 9453, 9462, 9475, 9559 — FAIL: false premise (Cabo Verde never qualified for the 2018 or 2022 World Cup)
+- **9453** ("why did Cabo Verde **join Iceland as a 2018 World Cup qualifier** → tiny population"), **9462** ("why did Cabo Verde **qualify for the 2022 World Cup** as a tiny nation"), **9475** ("why did Cabo Verde's **2022 qualification** join Iceland as a World Cup feat") and **9559** ("why was Cabo Verde's **2022 World Cup qualification** so remarkable") all assert a 2018 or 2022 *qualification*. Cabo Verde's first-ever World Cup qualification is **2026** — they reached no earlier finals. (9453's explanation also wrongly gives Iceland a ~500,000 population; it is ~370,000. 9462 additionally ships an empty explanation.)
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Re-anchor to the 2026 qualification, or reframe as the 2022 *qualifying campaign* (which they contested but did not win).
+
+### Rows 9280, 9389 — FAIL: non-unique answer
+- **9280** ("which of these nations has a larger population than Cabo Verde? → Uruguay"): Cabo Verde's population (~525,000) is also smaller than **Trinidad and Tobago** (~1.5M) and **Slovenia** (~2.1M), so three of the four options are larger — not unique. (Only Iceland is smaller.)
+- **9389** ("which West African nation did Cabo Verde **NOT** face in a 2013 or 2023 AFCON match? → Nigeria"): Cabo Verde also did not face **Senegal** in either tournament, so two options satisfy "not faced." (Cabo Verde played Angola in 2013 and South Africa in 2023.)
+**Source:** https://en.wikipedia.org/wiki/Cape_Verde_national_football_team
+**Remedy:** Reword so exactly one option fits.
+
+---
+
+## Canada batch rows 10746–11085 — 17 FAIL
+
+### Rows 10753, 10755, 10756, 10757, 10758, 10815, 10839, 10843, 10846, 11028, 11067 — FAIL: stale superlative ("highest/peak FIFA ranking = 33rd")
+- Each keys Canada's **highest / peak / best** FIFA ranking as **33rd** (or asks the year of that peak → 2022). Canada did reach 33rd in **February 2022**, but that is no longer their high-water mark: they climbed to **31st (Dec 2024)** and peaked at **26th (September 2025)**. So "33rd = highest-ever" and "highest ranking after 2022 qualification = 33rd / reached in 2022" are now false. (Year-bounded variants like "highest ranking *in 2022* → 33rd" remain correct and PASS.)
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Re-anchor to "33rd in 2022" without the all-time superlative, or update the peak to 26th (2025).
+
+### Rows 11071, 11072, 11079 — FAIL: Excel date-mangled scoreline
+- The keyed answers are spreadsheet-corrupted dates: **11071 "04-Jan"** = the 4-1 loss to Croatia; **11072 / 11079 "02-Jan"** = the 2-1 loss to Morocco. The scoreline was mangled into a date by Excel.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Restore the scorelines ("4-1", "2-1").
+
+### Row 10747 — FAIL: internal temporal contradiction + false premise
+- "After Canada's **2020 Olympic gold**, which World Cup did they co-host? → **2015 Women's World Cup**." The answer (2015) predates the stem's anchor event (2020), and the explanation even says "before their gold medal win" — a self-contradiction. (The 2020 Olympic gold was the **women's** team; this is a men's-team item.)
+**Source:** https://en.wikipedia.org/wiki/Canada_women%27s_national_soccer_team
+**Remedy:** Drop the "after 2020 gold" framing; ask plainly which Women's World Cup Canada co-hosted (2015).
+
+### Row 10805 — FAIL: false premise (2-0 is not a "three-goal margin")
+- "Canada lost 2-0 to Argentina in the 2024 Copa semi-final. Which 2022 group opponent **also** beat them by a **three-goal margin**? → Croatia." Croatia (4-1) was indeed a three-goal margin, but Argentina's 2-0 is a **two-goal** margin, so the "also … three-goal" premise (and the explanation "matching Argentina's 2-0 win") is false.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Drop the false equivalence; ask which 2022 opponent beat Canada by three goals (Croatia).
+
+### Row 10995 — FAIL: misleading premise (BMO Field did not host 2022 World Cup matches)
+- "In which two World Cup years will Canada's BMO Field host matches? → **2022 and 2026**." BMO Field hosted a 2022 **qualifier** (the Jamaica clincher), not 2022 World Cup matches — the 2022 finals were in Qatar. BMO Field hosts World Cup matches only in **2026**.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Reword to distinguish the 2022 qualifier from 2026 finals, or key 2026 only.
+
+## Canada batch rows 11086–11425 — 11 FAIL
+
+### Rows 11090, 11184, 11186 — FAIL: wrong Marsch appointment year (2024, not 2023)
+- Each keys Jesse Marsch's appointment as Canada manager to **2023**. Marsch was actually appointed in **May 2024** (the first American to coach Canada, for the 2026 cycle). John Herdman left for Toronto FC in 2023, after which Canada ran an interim before hiring Marsch in 2024.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Correct the appointment year to 2024.
+
+### Rows 11089, 11125, 11126, 11128, 11134 — FAIL: stale superlative ("highest/peak FIFA ranking = 33rd")
+- Same defect as the batch-1 ranking cluster: these key Canada's **highest / peak / best-ever** FIFA ranking as **33rd**, or ask the year of that peak. 33rd was their February 2022 mark only; they later climbed to **31st (Dec 2024)** and peaked at **26th (Sept 2025)**. Year-bounded "in 2022 → 33rd" variants remain correct and PASS.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Drop the all-time superlative or update the peak to 26th (2025).
+
+### Rows 11154, 11402, 11409 — FAIL: "Jonathan David 25+ goals by/in 2022" premature
+- Each credits **Jonathan David** with **25+ international goals by (or in) 2022**. David did not reach 25 international goals until **2023**; at the 2022 World Cup his tally was lower. (Present-tense "David is Canada's top scorer" and "by 2023" variants PASS; Cyle Larin "25+ by 2022" also PASS, as he was the record scorer at ~25 by then.)
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Re-anchor David's 25-goal milestone to 2023, or attribute the 2022 record to Larin.
+
+## Canada batch rows 11426–11765 — 5 FAIL
+
+### Rows 11663, 11664, 11710 — FAIL: false premise (Ismael Koné debuted in 2022, not after)
+- Each claims **Ismael Koné** debuted **for the 2026 cycle / 2026 squad** or **after the 2022 World Cup**: 11663 ("debuted for the 2026 cycle, **not** the 2022 World Cup"), 11664 ("debuted for the 2026 FIFA World Cup squad"), 11710 ("debuted for the national team **after** the 2022 World Cup"). Koné actually debuted in **January 2022** and **played all three group games at the 2022 World Cup** — a fact the same dataset confirms elsewhere (rows 11500 and 11682 in this very pool place Koné in the 2022 squad). Calling him a "2026 prospect" is fine; claiming his debut post-dates 2022 is false.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Reword to "emerging/next-generation" without asserting a post-2022 debut.
+
+### Row 11711 — FAIL: non-unique answer
+- "Which Canadian player did **NOT** have 25+ goals in 2022 World Cup qualifying? → Alphonso Davies." Options are Davies | Jonathan David | Cyle Larin | **Atiba Hutchinson**. Hutchinson (a defensive midfielder with ~9 career international goals) also did **not** have 25+ goals, so two options satisfy the stem — not unique.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Replace Hutchinson with a genuine 25+-goal distractor, or reword.
+
+### Row 11717 — FAIL: "Jonathan David 25+ goals by the 2022 World Cup" premature
+- "Which Canadian player had **25+ international goals by the 2022 World Cup**? → Jonathan David." David did not reach 25 international goals until **2023**; his tally at the 2022 finals was lower. (Same defect as the batch-2 David cluster; present-tense "David has 25+ goals" and "Larin 25+ by 2022" variants PASS.)
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Re-anchor David's 25-goal milestone to 2023, or attribute the 2022 figure to Larin.
+
+## Canada batch rows 11766–12105 — 5 FAIL
+
+### Row 11810 — FAIL: stale superlative ("highest FIFA ranking = 33rd")
+- "Which Canadian player's 2022 World Cup goal preceded their highest FIFA ranking? → Alphonso Davies," with explanation "the same year they reached their **highest FIFA ranking of 33rd**." 33rd was Canada's February 2022 mark only; they later climbed to **31st (Dec 2024)** and peaked at **26th (Sept 2025)**, so "highest = 33rd" is no longer true.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Drop the all-time superlative (say "their 2022 ranking of 33rd") or update the peak to 26th.
+
+### Rows 11791, 11890 — FAIL: "Jonathan David 25+ goals by/during 2022" premature
+- **11791** ("leading scorer with over 25 goals **prior to the 2022 tournament**") and **11890** ("scored over 25 goals **during 2022 World Cup qualifying**") both place David's 25+ international goals in the 2022 window. David did not reach 25 international goals until **2023**. (Present-tense "David has 25+ goals" variants PASS; Larin 25+ by 2022 PASS.)
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Re-anchor the 25-goal milestone to 2023, or attribute the 2022 figure to Larin.
+
+### Row 11823 — FAIL: non-unique answer
+- "Which Canadian Premier League club joined before the 2022 World Cup qualifiers? → Forge FC." Options are Forge FC | Pacific FC | Cavalry FC | Valour FC — **all four** are 2019 CPL founding members, so every option "joined before the 2022 qualifiers." Not unique.
+**Source:** https://en.wikipedia.org/wiki/Canadian_Premier_League
+**Remedy:** Use three distractors that post-date 2022, or reword.
+
+### Row 11787 — FAIL: non-unique answer
+- "Which Canadian player was **NOT** a top scorer in 2022 World Cup qualifying? → Alphonso Davies." Options are Davies | Jonathan David | Cyle Larin | **Tajon Buchanan**. The explanation names David and Larin as the top scorers, leaving **both Davies and Buchanan** as "not a top scorer" — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Replace Buchanan with one of the actual top scorers so exactly one option fits.
+
+## Canada batch rows 12106–12428 — 3 FAIL
+
+### Rows 12391, 12403, 12404 — FAIL: stale superlative ("FIFA ranking peak = 33rd")
+- Each frames **33rd as Canada's FIFA-ranking peak** tied to 2022: 12403's stem ("Why did Canada's FIFA ranking **peak at 33rd** in 2022?"), and the explanations of 12391 ("Canada's FIFA ranking **peak of 33rd** in 2022") and 12404 ("Canada's ranking **peaked** after they qualified"). 33rd was their February 2022 mark only; they later climbed to **31st (Dec 2024)** and peaked at **26th (Sept 2025)**, so "33rd = peak" is no longer true. (The "why" answer — that the rise followed World Cup qualification — is itself fine; the defect is the all-time-peak framing.)
+**Source:** https://en.wikipedia.org/wiki/Canada_men%27s_national_soccer_team
+**Remedy:** Reword to "rose to 33rd in 2022" without the all-time-peak claim, or update the peak to 26th (2025).
+
+---
+
+# ✅ COSTA RICA (rows 15528–16571) — TC-06 liveness fails
+
+**Two systematic, web-verified dataset errors recur throughout Costa Rica:**
+1. **FIFA-ranking peak.** The dataset uniformly asserts Costa Rica's highest/best-ever FIFA ranking was **15th (in 2014)**. The actual all-time peak is **13th, reached in February 2015** ([MLSSoccer](https://www.mlssoccer.com/news/fifa-world-rankings-no-13-costa-rica-achieve-highest-rank-ever-us-slip-no-31), [Tico Times 12 Feb 2015](https://ticotimes.net/2015/02/12/costa-ricas-sele-reaches-its-highest-position-ever-in-fifa-world-ranking)). Any claim that 15th was their highest/peak/best-ever ranking is false.
+2. **2026 World Cup qualification.** The dataset asserts Costa Rica **qualified for the 2026 World Cup directly via CONCACAF**. In reality Costa Rica was **ELIMINATED on 19 Nov 2025** (0-0 draw with Honduras, 3rd in CONCACAF Group C) and is **NOT at the 2026 World Cup** for the first time since 2006 ([Tico Times 19 Nov 2025](https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw), [Tico Times 5 Jun 2026](https://ticotimes.net/2026/06/05/6-things-to-know-as-the-2026-world-cup-kicks-off-without-costa-rica)). Any "qualified for 2026" claim is false.
+
+## Costa Rica batch rows 15528–15750 — 33 FAIL
+
+### Rows 15530, 15533, 15534, 15535, 15539, 15540, 15541, 15546, 15547, 15548, 15633, 15649, 15658 — FAIL: false FIFA-ranking peak ("highest = 15th")
+- Each presents **15th** as Costa Rica's highest/peak/best-ever FIFA ranking (most tie it to 2014). Their actual all-time peak is **13th, reached February 2015**. So "highest/peaked at 15th" is false; the correct best ranking is 13th.
+- 15540 compounds the error: "Which CONCACAF nation **also** peaked at 15th? → **Costa Rica**" is both false (peak 13th) and self-referential (names Costa Rica itself as the "other" nation).
+**Source:** https://www.mlssoccer.com/news/fifa-world-rankings-no-13-costa-rica-achieve-highest-rank-ever-us-slip-no-31
+**Remedy:** Change the peak ranking to 13th (Feb 2015), or reword to a non-superlative "rose into the mid-teens after 2014."
+
+### Rows 15615, 15625, 15626, 15628, 15629, 15630, 15669, 15670, 15700, 15708, 15714, 15715, 15719 — FAIL: false 2026 World Cup qualification
+- Each asserts Costa Rica **qualified for the 2026 World Cup** (directly via CONCACAF). Costa Rica was **eliminated on 19 Nov 2025** and did **not** qualify for 2026. Rows whose answer *is* "2026 / CONCACAF qualification" (15625, 15626, 15629, 15630, 15714, 15715, 15719) have a directly false answer; rows that merely use 2026 qualification as a premise (15615, 15628, 15669, 15670, 15700, 15708) rest on a false premise.
+**Source:** https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw
+**Remedy:** Remove all claims that Costa Rica reached the 2026 World Cup.
+
+### Rows 15601, 15729 — FAIL: Excel date-mangled scoreline
+- Both give the Costa Rica 3-1 win over Uruguay as the corrupt answer "**03-Jan**" (Excel mis-parse of "3-1"). The scoreline is correct (3-1) but the rendered answer string is wrong.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Store scorelines as text so "3-1" is not converted to a date.
+
+### Row 15595 — FAIL: non-unique answer
+- "Costa Rica are regular CONCACAF Gold Cup participants. Which **other** nation is? → United States." Options are United States | Mexico | Canada | Panama — **all four** are regular Gold Cup participants, so every option satisfies the stem.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup
+**Remedy:** Use three non-CONCACAF distractors so only one option is a regular Gold Cup nation.
+
+### Row 15624 — FAIL: wrong answer (New Zealand did not qualify)
+- "Costa Rica qualified for 2022 via a playoff. Which **other** nation qualified via a playoff in 2022? → New Zealand." New Zealand **lost** the intercontinental playoff to Costa Rica and did **not** qualify. (The other intercontinental playoff was won by Australia, not listed.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification
+**Remedy:** Replace the answer with Australia (the actual other intercontinental playoff winner).
+
+### Row 15636 — FAIL: non-unique answer
+- "Costa Rica topped their 2014 group. Which opponent did they **NOT** beat? → England." Options are England | Uruguay | Italy | **Netherlands**. They drew England (not beaten) **and** lost to the Netherlands on penalties (also not beaten), so two options satisfy the stem.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Replace Netherlands with a team Costa Rica actually beat (e.g. Greece).
+
+### Row 15672 — FAIL: non-unique answer
+- "Costa Rica's CONCACAF qualification secured their spot for which World Cup? → 2018 World Cup." Options are 2018 | 2014 | 2022 | **2006**. Costa Rica qualified directly via CONCACAF for **2006, 2014 and 2018** — three of the four options are valid; only 2022 (playoff) is excluded.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Use distractors that were not CONCACAF-direct qualifications.
+
+### Row 15727 — FAIL: self-referential answer
+- "In 2022 qualifying, Costa Rica's primary stadium capacity was closest to which **other** CONCACAF venue? → **Estadio Nacional (CR)**." The answer is Costa Rica's own stadium, not another venue. (The real distractors — Azteca ~87k, BC Place ~54k, NRG ~72k — are all far from Estadio Nacional's ~35,175.)
+**Source:** https://en.wikipedia.org/wiki/Estadio_Nacional_(Costa_Rica)
+**Remedy:** Offer a genuinely separate venue of similar capacity, or reword to drop "other."
+
+## Costa Rica batch rows 15751–15980 — 17 FAIL
+
+### Rows 15793, 15854, 15855 — FAIL: false FIFA-ranking peak ("highest = 15th")
+- All three state Costa Rica's highest FIFA ranking was **15th** (in 2014). Actual all-time peak is **13th, February 2015**.
+**Source:** https://www.mlssoccer.com/news/fifa-world-rankings-no-13-costa-rica-achieve-highest-rank-ever-us-slip-no-31
+**Remedy:** Change peak ranking to 13th (Feb 2015).
+
+### Rows 15790, 15851, 15852, 15853 — FAIL: false 2026 World Cup qualification
+- Each states Costa Rica **qualified for the 2026 World Cup** (in 2026 / via CONCACAF). Costa Rica was **eliminated on 19 Nov 2025** and is not at the 2026 tournament.
+**Source:** https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw
+**Remedy:** Remove all claims that Costa Rica reached the 2026 World Cup.
+
+### Rows 15821, 15822, 15824, 15830, 15832 — FAIL: Excel date-mangled scoreline
+- Corrupt date-formatted answers: 15821 "**03-Apr**" and 15832/15822/15824 "**03-Jan**" (for the 3-1 win over Uruguay), and 15830 "**04-Mar**" (for the 4-3 shootout loss to the Netherlands). The underlying facts (3-1, 3-4/4-3) are right; the rendered answer strings are corrupt.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Store scorelines as text so "3-1" / "4-3" are not converted to dates.
+
+### Row 15788 — FAIL: non-unique answer
+- "In which year did Costa Rica **NOT** qualify for a World Cup via CONCACAF qualification? → 2022." Options 2022 | 2014 | 2018 | **2026**. 2022 was a playoff (not CONCACAF) — but Costa Rica also **failed CONCACAF qualification for 2026** (eliminated), so 2026 equally satisfies "did not qualify via CONCACAF." Two valid answers.
+**Source:** https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw
+**Remedy:** Replace the 2026 option with a year Costa Rica did qualify via CONCACAF.
+
+### Row 15878 — FAIL: contradictory/false explanation
+- "Which 2014 group opponent did Costa Rica not defeat? → England." Correct (they drew England 0-0), but the explanation states they "**did not face England**" — false and self-contradictory, since England was in their group.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Fix the explanation to "drew 0-0 with England."
+
+### Row 15881 — FAIL: non-unique answer
+- "Which 2014 group stage result was a Costa Rica win? → Costa Rica 1-0 Italy." Options also include **Costa Rica 3-1 Uruguay**, which is equally a genuine Costa Rica 2014 group win. Two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Replace the Uruguay option with a non-win so only one option is a real Costa Rica victory.
+
+### Row 15894 — FAIL: non-unique answer
+- "Which 2018 World Cup qualifier, Costa Rica or Panama, reached via CONCACAF? → Costa Rica." **Both** Costa Rica and Panama qualified for the 2018 World Cup directly through CONCACAF (Panama's debut), so both options are valid.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONCACAF)
+**Remedy:** Drop Panama from the options or reword so exactly one nation fits.
+
+### Row 15902 — FAIL: self-referential answer
+- "Which 2022 World Cup team lost by a larger margin than Costa Rica? → **Costa Rica**." The answer is Costa Rica itself; the stem asks for a different team that lost by a larger margin (and none of the listed teams did).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Reword to ask for Costa Rica's loss margin, or supply a team with a genuinely larger-margin defeat.
+
+## Costa Rica batch rows 15981–16200 — 10 FAIL
+
+### Rows 16088, 16113, 16155, 16157, 16163 — FAIL: false FIFA-ranking peak ("15th") in stem/explanation
+- Each ties Costa Rica's post-2014 FIFA-ranking rise to **15th** as their peak (16157 stem/explanation "peak FIFA ranking of 15th"; 16088 "rise to 15th"; 16113/16155/16163 explanations "rise to 15th"). The actual all-time peak is **13th, February 2015**. (The "what caused the rise" answers — the quarter-final run — are themselves correct; the defect is the false 15th figure.) 16088 additionally misattributes the post-WC rise to manager Jorge Luis Pinto, who left in August 2014 before the Feb-2015 peak.
+**Source:** https://www.mlssoccer.com/news/fifa-world-rankings-no-13-costa-rica-achieve-highest-rank-ever-us-slip-no-31
+**Remedy:** Replace 15th with 13th (Feb 2015).
+
+### Rows 16159, 16160 — FAIL: non-unique answer (multiple CONCACAF years)
+- 16159 ("Which CR World Cup qualification was **NOT** via CONCACAF? → 2022," options include **2026**): Costa Rica also failed to qualify via CONCACAF for 2026 (eliminated 19 Nov 2025), so both 2022 and 2026 satisfy the stem.
+- 16160 ("Which CR qualification was via CONCACAF, 2018 or 2022? → 2018," options include **2014**): both 2018 and 2014 were direct CONCACAF qualifications, so two options are valid.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Use option sets where exactly one year matches the stem.
+
+### Row 16119 — FAIL: anachronistic cap count
+- "Which Costa Rica player had **over 150 caps at the 2018 World Cup**? → Celso Borges." At the 2018 World Cup Borges had roughly **110** caps; no Costa Rica player had 150 caps in 2018. Borges only later became the record-holder (164 career caps). (Career-descriptor variants — "the midfielder with over 150 caps" — PASS; this one binds 150 to 2018.)
+**Source:** https://en.wikipedia.org/wiki/Celso_Borges
+**Remedy:** Drop the cap figure or re-anchor it to his later career.
+
+### Row 16179 — FAIL: non-unique answer
+- "Which Costa Rican **forward** debuted before the 2014 World Cup? → Joel Campbell." Bryan Ruiz (a forward, debuted 2005) is also an option and likewise debuted before 2014, so two forward options satisfy the stem.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Replace Ruiz with a forward who debuted after 2014, or reword.
+
+### Row 16053 — FAIL: self-referential answer
+- "Which Costa Rica goalkeeper's 2014 World Cup run is most comparable to **Keylor Navas's**? → Keylor Navas." The answer is Navas himself (the explanation even concedes "the question asks for the Costa Rican goalkeeper, which is Keylor Navas himself").
+**Source:** https://en.wikipedia.org/wiki/Keylor_Navas
+**Remedy:** Reword to ask which goalkeeper starred in 2014 (drop the self-comparison).
+
+## Costa Rica batch rows 16201–16400 — 6 FAIL
+
+### Rows 16272, 16294 — FAIL: false 2026 World Cup qualification
+- 16272 ("Which CR qualification path for the **2026 World Cup** matched their 2014 method? → CONCACAF qualification," explanation "qualified for both 2014 and 2026 directly through CONCACAF") and 16294 (explanation "direct CONCACAF qualification for 2014, 2018, **and 2026**") both assert Costa Rica qualified for 2026. Costa Rica was eliminated on 19 Nov 2025 and did not qualify.
+**Source:** https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw
+**Remedy:** Remove the 2026 qualification claims. (Rows merely noting Navas's aging as a challenge "for the 2026 cycle/transition" — 16227, 16283, 16287, 16289 — PASS, since they do not assert qualification.)
+
+### Row 16304 — FAIL: false FIFA-ranking figure ("15th")
+- "Which FIFA ranking did Costa Rica achieve after the 2014 World Cup? → 15th." Their actual post-2014 peak was **13th (Feb 2015)**.
+**Source:** https://www.mlssoccer.com/news/fifa-world-rankings-no-13-costa-rica-achieve-highest-rank-ever-us-slip-no-31
+**Remedy:** Change the answer to 13th.
+
+### Rows 16367, 16368, 16399 — FAIL: non-unique answer
+- 16367 ("Which nation did Costa Rica **NOT** beat at the 2014 World Cup? → Spain"): they also did not beat the **Netherlands** (lost on penalties), and Netherlands is an option — two valid answers.
+- 16368 ("Which nation did Costa Rica **NOT** face in the 2014 knockout rounds? → Germany"): **Uruguay** (an option) was also not a knockout opponent (group stage only), so two options fit.
+- 16399 ("Which nation, like Costa Rica in 2014, qualified via CONCACAF's direct path? → United States"): **Honduras** (an option) also qualified directly for 2014 via the CONCACAF Hexagonal (only Mexico went via playoff), so two options are valid.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Replace the colliding distractor (Netherlands / Uruguay / Honduras) so exactly one option satisfies each stem.
+
+## Costa Rica batch rows 16401–16571 — 14 FAIL
+
+### Rows 16461, 16465, 16466, 16473, 16538, 16559 — FAIL: false 2026 World Cup qualification
+- Each asserts Costa Rica **qualified for the 2026 World Cup** directly via CONCACAF: 16461 ("2014 **and 2026**"), 16465/16466/16473 (answer = 2026), 16538 ("Why did CR qualify for the 2026 WC?"), and 16559 (presupposes a "2026 World Cup squad"). Costa Rica was eliminated on 19 Nov 2025 and is not at the 2026 tournament.
+**Source:** https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw
+**Remedy:** Remove the 2026-qualification answers/premises. (Rows about Navas being phased out "for the 2026 cycle" — 16498, 16548, 16570 — PASS, as they assert no qualification.)
+
+### Rows 16464, 16467, 16468, 16471 — FAIL: non-unique CONCACAF-qualification answer
+- 16464 ("Which WC did CR **NOT** qualify for via CONCACAF? → 2022," option 2026): CR also failed CONCACAF qualification for 2026, so 2022 and 2026 both fit.
+- 16467 ("through CONCACAF, **not a playoff**? → 2014"), 16468 ("through CONCACAF? → 2014"), 16471 ("via CONCACAF direct placement? → 2018"): both 2014 and 2018 were direct CONCACAF qualifications, so two options are valid in each. (16469/16472, pinned to "via playoff" / "in 2018", PASS.)
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_national_football_team
+**Remedy:** Use option sets where exactly one year matches.
+
+### Row 16470 — FAIL: false 2026 claim in explanation
+- "Which World Cup did Costa Rica qualify for via an intercontinental playoff? → 2022" — answer is correct, but the explanation adds "unlike their direct CONCACAF qualification for 2014, 2018, **and 2026**," which is false (no 2026 qualification).
+**Source:** https://ticotimes.net/2025/11/19/costa-rica-eliminated-from-2026-world-cup-after-honduras-draw
+**Remedy:** Drop "and 2026" from the explanation.
+
+### Rows 16543, 16557 — FAIL: false FIFA-ranking peak ("15th")
+- 16543 ("Why did Costa Rica rise to **15th** in the 2014 FIFA rankings?") and 16557 ("Why did Costa Rica's FIFA ranking **peak at 15th** in 2014?") embed 15th as their ranking. Actual all-time peak is **13th (Feb 2015)**. (The graded answers — "their World Cup performance" — are correct; the 15th figure is the defect.)
+**Source:** https://www.mlssoccer.com/news/fifa-world-rankings-no-13-costa-rica-achieve-highest-rank-ever-us-slip-no-31
+**Remedy:** Replace 15th with 13th.
+
+### Row 16434 — FAIL: non-unique answer
+- "Which team did Costa Rica **NOT** concede seven goals to at the 2022 World Cup? → Germany." Costa Rica conceded seven only to Spain; the other three options (Germany, Netherlands, Brazil) are all teams they did not concede seven to (and did not even play), so three options satisfy the stem.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_E
+**Remedy:** Make Spain the only "conceded 7" team and use distractors Costa Rica actually faced, or reword.
+
+---
+
+# ✅ ENGLAND (rows 23687–25401) — TC-06 liveness fails
+
+**Web-verified fact anchors used throughout England:** highest FIFA ranking = **3rd** (2012 and 2017–18); England qualified for the **2026 World Cup with a perfect 8-win, 0-goals-conceded record** (UEFA Group K) — so "perfect 2026 qualification" and "3rd in 2012 and 2018" claims **PASS**. Recurring dataset error: England's post-2014-World-Cup ranking is stated as **17th**, but they actually fell to **20th (July 2014)** and were **18th by Sept 2014** — 17th is unsupported.
+
+## England batch rows 23687–23920 — 18 FAIL
+
+### Rows 23690, 23692, 23693, 23713, 23714, 23715, 23719, 23720, 23721 — FAIL: wrong FIFA ranking ("fell to 17th in 2014")
+- Each states that after their 2014 World Cup group-stage exit England "fell to **17th**." Post-exit they actually dropped to **20th (July 2014)**, recovering to **18th by September 2014** — 17th does not match the verifiable figures.
+- 23692 also self-references: "which nation **also** fell to 17th? → **England**" names England itself.
+**Source:** http://www.englandfootballonline.com/teamrank/rankfifa.html (England fell to 20th in July 2014)
+**Remedy:** Replace 17th with 20th (July 2014), and give 23692 a genuine second nation.
+
+### Row 23689 — FAIL: Excel date-mangled scoreline
+- England's 2018 World Cup semi-final loss margin is given as the corrupt answer "**02-Jan**" (Excel mis-parse of "2-1"). The scoreline (2-1 to Croatia) is right; the rendered string is corrupt.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Store scorelines as text so "2-1" is not converted to a date.
+
+### Rows 23857, 23894 — FAIL: wrong answer (a 2022 squad player was based abroad)
+- Both claim **all 26** of England's 2022 World Cup squad were at Premier League clubs / **zero** based abroad. **Jude Bellingham** was a Borussia Dortmund (Bundesliga) player at the 2022 World Cup, so at least one was based abroad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Correct the count (≥1 abroad), or reword.
+
+### Row 23748 — FAIL: temporal error (Rooney WAS top scorer during the 2022 WC)
+- "At the 2022 World Cup, which England player was **NOT** the all-time top scorer? → Wayne Rooney." Harry Kane did not overtake Rooney until **March 2023**, so during the Nov–Dec 2022 World Cup Rooney **was** still the record holder. The answer/explanation invert the timeline.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** Re-anchor to a player who genuinely was not the record holder, or move the timeframe past March 2023.
+
+### Row 23787 — FAIL: non-unique answer
+- "At which World Cup year was Wayne Rooney still England's all-time top scorer? → 2018." Rooney was the record holder at **both 2018 and 2022** (Kane broke it March 2023), and 2022 is an option, so two answers are valid.
+**Source:** https://en.wikipedia.org/wiki/Wayne_Rooney
+**Remedy:** Remove 2022 from the options.
+
+### Row 23807 — FAIL: non-unique answer
+- "England finished 1st in which FIFA World Cup qualifying group? → 2018 World Cup group." England topped their qualifying group for **2010, 2014, 2018 and 2022** — all four options are groups they won.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Use distractor years where England did not finish first.
+
+### Row 23812 — FAIL: non-unique answer
+- "Which other World Cup knockout loss was by a 2-1 scoreline? → 2022 quarter-final." The **2018 semi-final** (also an option) was likewise a **2-1** World Cup knockout defeat (to Croatia), so two options fit.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Replace the 2018-semi-final option with a non-2-1 result.
+
+### Rows 23792, 23793 — FAIL: non-unique answer (same song)
+- "Which anthem did England fans famously sing? → Football's Coming Home," with **Three Lions** as a separate option. "Three Lions" *is* the song whose chorus is "Football's coming home" — both options name the same anthem.
+**Source:** https://en.wikipedia.org/wiki/Three_Lions
+**Remedy:** Drop one of the two identical options.
+
+## England batch rows 23921–24170 — 29 FAIL
+
+### Rows 23937, 23940, 23957, 23979, 24142, 24151, 24152, 24157, 24158, 24160, 24161, 24165, 24168, 24169, 24170 — FAIL: Excel date-mangled scoreline
+- Each answer is a corrupt date-formatted score: "06-Feb"=6-2 (Iran, 23937/24151), "04-Jan"=4-1 (Germany 2010, 23940/24170), "02-Jan"=2-1 (Poland 23957/24158/24169; Denmark 23979/24152/24157; Iceland 24142; France 24165), "02-Feb"=2-2 (Scotland, 24160), "03-Jan"=3-1 (Netherlands 2019 NL, 24161), "03-Feb"=3-2 (Euro 2020 shootout, 24168). The underlying scores are correct; the rendered answer strings are corrupt.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Store scorelines as text so e.g. "6-2" is not converted to a date.
+
+### Rows 23986, 24080, 24137, 24138 — FAIL: wrong FIFA ranking ("fell to 17th in 2014")
+- Each gives England's post-2014-World-Cup ranking as **17th**; they actually fell to **20th (July 2014)**. Notably 24137 and 24138 even list **20th** as an option but mark 17th correct.
+**Source:** http://www.englandfootballonline.com/teamrank/rankfifa.html
+**Remedy:** Change the answer to 20th.
+
+### Rows 24092, 24100 — FAIL: non-unique answer (and false "17th" premise)
+- "In which year did England NOT reach / NOT peak at 3rd in the FIFA rankings? → 2014," options including **2022**. England were ~5th in 2022 (not 3rd), so 2022 also satisfies "did not reach 3rd" — two valid answers. Both explanations also repeat the false "17th in 2014" figure.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Replace 2022 with a year England did reach 3rd (2012 or 2018 are already used), or reword.
+
+### Rows 23969, 23972, 23973 — FAIL: wrong answer (a 2022 squad player was based abroad)
+- All claim England's entire 26-man 2022 World Cup squad was at English/Premier League clubs (zero abroad). **Jude Bellingham** played for Borussia Dortmund (Germany) at that tournament.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Correct the claim (≥1 player abroad).
+
+### Row 23927 — FAIL: wrong answer (2010 qualifying had no draws)
+- "England's 2010 UEFA group record was 9 wins and how many draws? → 1 draw." England's record was **9 wins, 0 draws, 1 loss** (they lost the dead-rubber away to Ukraine). The correct answer "0 draws" is even an option.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change the answer to 0 draws (and fix the "9 wins and 1 draw" explanations elsewhere to "9 wins, 1 loss").
+
+### Row 23970 — FAIL: wrong answer (count of English Champions League titles)
+- "How many Champions League titles did English clubs win between 2008 and 2023? → Six." English clubs won **five**: Man United (2008), Chelsea (2012), Liverpool (2019), Chelsea (2021), Man City (2023).
+**Source:** https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals
+**Remedy:** Change the answer to five.
+
+### Row 24060 — FAIL: wrong answer (Henderson's World Cup debut)
+- "In which World Cup did England's Jordan Henderson make his tournament debut? → 2018." Henderson was in (and played at) the **2014** World Cup, so 2018 was not his World Cup debut.
+**Source:** https://en.wikipedia.org/wiki/Jordan_Henderson
+**Remedy:** Change the answer to the 2014 World Cup.
+
+### Row 24103 — FAIL: wrong answer (Euro 2024 Young Player)
+- "In which year did England's Jude Bellingham win the Euro Young Player award? → 2024." The **Euro 2024 Young Player of the Tournament was Lamine Yamal (Spain)**, not Bellingham.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Remove the claim; Bellingham did not win the Euro 2024 young-player award.
+
+### Row 24003 — FAIL: non-unique / nonsensical answer
+- "In which World Cup host nation did England's Leicester City NOT win their 2016 title? → South Africa." Leicester won the title in **England**, so they did not win it in **any** of the listed host nations (South Africa, Germany, Brazil, Russia) — all four options satisfy the stem.
+**Source:** https://en.wikipedia.org/wiki/2015%E2%80%9316_Premier_League
+**Remedy:** Reword; the premise makes every option correct.
+
+## England batch rows 24171–24420 — 5 FAIL
+
+### Row 24192 — FAIL: wrong FIFA ranking ("fell to 17th in 2014")
+- "When did England fall to **17th** in the FIFA rankings after a World Cup group-stage exit? → In 2014." England actually fell to **20th** (July 2014).
+**Source:** http://www.englandfootballonline.com/teamrank/rankfifa.html
+**Remedy:** Change 17th to 20th.
+
+### Rows 24237, 24238, 24259 — FAIL: wrong answer (Euro 2024 Young Player)
+- Each states Jude Bellingham was **Young Player of the Tournament at Euro 2024**. The award went to **Lamine Yamal (Spain)**.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Remove the claim; Bellingham did not win the Euro 2024 young-player award.
+
+### Row 24320 — FAIL: anachronistic/false statistic
+- "Which England captain had **78 goals in 112 caps before the 2022 World Cup**? → Harry Kane." Those are much-later career figures; **before the 2022 World Cup Kane had ~51 goals** (he passed Rooney's 53 only in March 2023). (The sibling row 24321, which compares Kane's career ratio 78/112 to Rooney's 53/120 with no false time anchor, PASSES.)
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** Drop "before the 2022 World Cup" or use Kane's actual pre-2022 tally.
+
+## England batch rows 24421–24700 — 7 FAIL
+
+### Rows 24560, 24561, 24562 — FAIL: wrong answer (Euro 2024 Young Player)
+- Each names Jude Bellingham as **Euro 2024 Young Player of the Tournament**. The award went to **Lamine Yamal (Spain)**.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Remove the claim.
+
+### Row 24593 — FAIL: temporal error (Kane became top scorer in 2023, not "by 2022")
+- "Which England player became their all-time top scorer **by 2022**? → Harry Kane." Kane only passed Wayne Rooney's record in **March 2023**; through 2022 Rooney was still the record holder.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** Change the timeframe to 2023, or reword.
+
+### Row 24687 — FAIL: temporal error (record holder during the 2014 WC was Charlton)
+- "Which England player held the national goalscoring record **during the 2014 World Cup**? → Wayne Rooney." During the 2014 World Cup the record holder was still **Bobby Charlton (49)**; Rooney only passed him in **September 2015**. (Sibling rows anchoring Rooney's record to Euro 2016, the 2018 qualifiers, or "before Kane" PASS, since he held it 2015–2023.)
+**Source:** https://en.wikipedia.org/wiki/Wayne_Rooney
+**Remedy:** Re-anchor to 2016 onward, or change the answer to Bobby Charlton.
+
+### Row 24631 — FAIL: non-unique answer
+- "Which England player did **NOT** score a late equalizer at a major tournament? → Harry Kane." Only Bellingham (Euro 2024) scored a late equalizer among the options, so **Kane, Luke Shaw and Frank Lampard** all "did not" — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Make three of the four options genuine late-equalizer scorers, or reword.
+
+### Row 24648 — FAIL: non-unique answer
+- "Which England player featured at the 2022 World Cup and Euro 2024 while also earning individual award nominations? → Phil Foden." **Saka and Bellingham** (both options) equally featured at both tournaments and earned individual award nominations, so the criteria fit three options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Add a criterion unique to one player, or change the distractors.
+
+## England — CORRECTION: "Pickford in the Euro 2020 Team of the Tournament" (13 rows, batches 2–5)
+
+**Web-verified:** the official UEFA Euro 2020 Team of the Tournament goalkeeper was **Gianluigi Donnarumma** (Italy), and England's representatives were **Kyle Walker, Harry Maguire and Raheem Sterling** — **Jordan Pickford was NOT in it**. Every row asserting Pickford made the Euro 2020 Team of the Tournament is therefore a wrong answer. (Pickford *did* save penalties in the Euro 2020 final shootout — those rows remain PASS.)
+
+- **Rows 24028, 24029, 24123 (batch 2), 24278, 24376, 24388, 24390, 24391, 24392 (batch 3), 24696 (batch 4)** were initially mis-passed and have been **removed from `QA_PASSED_ALL.md`** and counted as FAIL here (batch PASS/FAIL totals corrected accordingly: B2 182P/32F, B3 194P/11F, B4 225P/8F).
+- **Rows 24854, 24906, 24932 (batch 5)** likewise FAIL. 24696/24854/24932 are aggravated: their distractors (Maguire, Walker, Sterling) are the players who *actually* made the Team of the Tournament.
+**Source:** https://www.uefa.com/uefaeuro/history/news/0286-1932cbd2ce99-96c5a8fb4205-1000--uefa-euro-2020-team-of-the-tournament/
+**Remedy:** Change the answer to Donnarumma/Walker/Maguire/Sterling as appropriate, or reword to Pickford's actual Euro 2020 achievement (penalty saves in the final shootout).
+
+## England batch rows 24701–25050 — 13 FAIL (incl. 3 Pickford-ToT above: 24854, 24906, 24932)
+
+### Rows 24884, 24898, 24933 — FAIL: wrong answer (Euro 2024 Young Player)
+- Each names Jude Bellingham as **Euro 2024 Young Player of the Tournament**; the award went to **Lamine Yamal (Spain)**.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Remove the claim.
+
+### Rows 24996, 25017 — FAIL: wrong FIFA ranking ("dropped to 17th in 2014")
+- Both give England's post-2014-group-exit ranking as **17th**; it was **20th** (July 2014). 24996 even lists 20th as an option.
+**Source:** http://www.englandfootballonline.com/teamrank/rankfifa.html
+**Remedy:** Change 17th to 20th.
+
+### Row 25024 — FAIL: wrong answer (a 2022 squad player was based abroad)
+- "Which England World Cup squad had **all 26 players based in England**? → The 2022 squad." **Jude Bellingham** was at Borussia Dortmund (Germany) at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Correct the claim; not all 26 were England-based.
+
+### Row 24878 — FAIL: temporal error (Rooney, not Kane, was record holder at the 2022 WC)
+- "Which England player was their **all-time top scorer at the 2022 World Cup**? → Harry Kane." Kane only passed Rooney's record in **March 2023**; at the Nov–Dec 2022 World Cup Rooney was still the all-time top scorer.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** Change the answer to Wayne Rooney, or move the timeframe to 2023+.
+
+### Row 24764 — FAIL: wrong context (Kane's 54th goal came in a Euro 2024 qualifier)
+- "Which England player scored his 54th international goal in **2023 World Cup qualifying**? → Harry Kane." Kane's record-breaking 54th goal (23 March 2023 vs Italy) came in a **UEFA Euro 2024 qualifier**; there was no World Cup qualifying in 2023 (2026 qualifying began in 2025).
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** Change "2023 World Cup qualifying" to "a Euro 2024 qualifier."
+
+### Row 24781 — FAIL: false premise (England did not play a 2018 World Cup final)
+- "Which England player scored in the Euro 2024 final, **unlike Kane in 2018**? → Cole Palmer," explained as "Kane did not score in the **2018 World Cup final**." England did not reach the 2018 World Cup final (they lost the semi-final and the third-place play-off).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup
+**Remedy:** Drop the false 2018-final comparison.
+
+### Row 24905 — FAIL: non-unique answer
+- "Which England player, unlike Marcus Rashford, scored in the 2022 World Cup but **not against Wales**? → Bukayo Saka." **Kane** (vs Senegal/France) and **Sterling** (vs Iran), both options, also scored in the 2022 World Cup and not against Wales.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_B
+**Remedy:** Use distractors who did not score in the 2022 World Cup.
+
+## England batch rows 25051–25401 — 5 FAIL
+
+### Row 25074 — FAIL: Excel date-mangled formation
+- England's 2018 World Cup semi-final formation is given as the corrupt answer "**03/05/2002**" (Excel mis-parse of "3-5-2"). The formation (3-5-2 / 3-4-3) is right; the rendered string is corrupt.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Store formations as text so "3-5-2" is not converted to a date.
+
+### Row 25116 — FAIL: non-unique answer
+- "Which manager was **NOT** in charge of England at the 2010 World Cup? → Gareth Southgate." Only **Fabio Capello** managed England in 2010; the other three options (Southgate, Roy Hodgson, Sven-Göran Eriksson) were all not in charge then, so three options satisfy the stem.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Make three options the 2010 manager-era figures, or reword so exactly one was not in charge.
+
+### Row 25165 — FAIL: wrong answer (England did beat Hungary)
+- "Which nation did England **NOT defeat** in their 2022 World Cup qualifying campaign? → Hungary." England **beat Hungary 4-0** away (Sept 2021) in that campaign (and drew 1-1 at home); they defeated every group opponent at least once, so no option is correct as stated. (England's *dropped points* — the recurring fact — were draws with Hungary and Poland, which is a different claim.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA_Group_I)
+**Remedy:** Reword to "drew with" / "dropped points to," or use an opponent England genuinely never beat.
+
+### Row 25374 — FAIL: false FIFA-ranking premise ("dropped to 17th in 2014")
+- "Why did England **drop to 17th** in the FIFA rankings in 2014? → Group-stage elimination." The cause (group-stage exit) is right, but England fell to **20th**, not 17th.
+**Source:** http://www.englandfootballonline.com/teamrank/rankfifa.html
+**Remedy:** Change 17th to 20th.
+
+### Row 25399 — FAIL: false premise (2022 squad not entirely Premier League-based)
+- "Why was England's 2022 World Cup squad **entirely Premier League-based**? → all 26 players selected … based at English clubs." **Jude Bellingham** played for Borussia Dortmund (Germany) at that tournament, so the squad was not entirely Premier League-based.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Correct the premise; not all 26 were Premier League-based.
+
+---
+
+# ✅ GHANA (rows 29166–30309) — TC-06 liveness fails
+
+**Web-verified fact anchors:** Ghana **drew Germany 2-2** in the 2014 group stage (and lost to USA and Portugal) — so "lost to USA and Germany" claims FAIL. Ghana reached the **2010 AFCON FINAL** (lost 1-0 to Egypt), not the semi-finals. Ghana **DID qualify for the 2026 World Cup** (topped CAF Group I under Otto Addo, secured 13 Oct 2025) — so "qualified for 2026" claims PASS. 2010 WC QF lost to Uruguay on penalties after the Suárez handball; Gyan (51 goals) is the all-time top scorer; 2022 group exit (beat South Korea 3-2 via Kudus brace, lost Portugal 3-2 & Uruguay 2-0).
+
+## Ghana batch rows 29166–29420 — 26 FAIL
+
+### Rows 29172, 29237, 29331, 29339, 29380, 29411 — FAIL: wrong result ("lost to USA and Germany" in 2014)
+- Each says Ghana **lost to USA and Germany** in the 2014 group stage. Ghana **drew Germany 2-2**; their two defeats were to the **USA (1-2) and Portugal (2-1)**. (29172's answer "USA and Germany" is directly wrong; 29237/29331/29339/29380/29411 carry the false result as a premise.)
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_G
+**Remedy:** Replace "Germany" with "Portugal."
+
+### Rows 29279, 29351, 29409 — FAIL: wrong stage (2010 AFCON final, not semi-finals)
+- Each states Ghana reached the **2010 AFCON semi-finals**; Ghana actually reached the **final** (lost 1-0 to Egypt). 29279 even offers "the final" as an option; 29351/29409 are also non-unique (Ghana reached the AFCON semis in 2008 and 2012 too).
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations
+**Remedy:** Change the answer to "the final" / a year where the semi-final was their actual endpoint.
+
+### Rows 29229, 29253, 29278, 29361, 29362, 29363, 29367, 29368, 29372 — FAIL: Excel date-mangled scoreline
+- Corrupt date-formatted answers: "02-Jan" = 2-1 (Ghana 2-1 USA, 2010 — 29229/29363/29368/29372), "03-Feb" = 3-2 (Ghana 3-2 South Korea, 2022 — 29253/29278/29362/29367), "01-Jan" = 1-1 (1-1 aggregate vs Nigeria — 29361). Underlying scores correct; rendered strings corrupt.
+**Source:** https://en.wikipedia.org/wiki/Ghana_national_football_team
+**Remedy:** Store scorelines as text.
+
+### Rows 29271, 29275, 29277 — FAIL: wrong count (managers AT World Cups)
+- Each answers **Four** for the number of managers who led Ghana **at** the 2010/2014/2022 World Cups. Only **three** managed at those tournaments — Rajevac (2010), Appiah (2014), Addo (2022). Avram Grant managed Ghana between tournaments but at **no** World Cup (Ghana missed 2018). (Sibling row 29232 correctly answers "Three.")
+**Source:** https://en.wikipedia.org/wiki/Ghana_national_football_team
+**Remedy:** Change the answer to three, or reword to "managers in 2010-2022" (which excludes the "at World Cups" qualifier).
+
+### Row 29292 — FAIL: wrong club (Kudus was at Ajax in 2022, not West Ham)
+- "Which star attacker played for **West Ham** during the 2022 World Cup? → Mohammed Kudus." Kudus was an **Ajax** player at the 2022 World Cup; he only joined West Ham in August 2023.
+**Source:** https://en.wikipedia.org/wiki/Mohammed_Kudus
+**Remedy:** Change "West Ham" to "Ajax."
+
+### Rows 29242, 29419 — FAIL: non-unique answer (multiple qualification years)
+- 29242 ("Ghana qualified for the FIFA World Cup in which year? → 2026," options 2026/2010/2014/2022): Ghana qualified for **all four** of those World Cups, so every option is valid.
+- 29419 ("Which 2020s FIFA World Cup did Ghana qualify for? → 2022," option 2026): Ghana qualified for **both** 2022 and 2026.
+**Source:** https://en.wikipedia.org/wiki/Ghana_at_the_FIFA_World_Cup
+**Remedy:** Use option sets where exactly one year fits.
+
+### Row 29283 — FAIL: non-unique answer (all options are Ghana Premier League clubs)
+- "Which Ghanaian club plays in the Ghana Premier League? → Hearts of Oak." All four options — **Hearts of Oak, Asante Kotoko, Medeama SC, Ashanti Gold** — have played in the Ghana Premier League.
+**Source:** https://en.wikipedia.org/wiki/Ghana_Premier_League
+**Remedy:** Use three non-GPL distractors.
+
+### Row 29417 — FAIL: self-referential answer
+- "Which 2017 AFCON semi-finalist matched Ghana's tournament performance? → **Ghana**." The answer is Ghana itself; **Egypt** (an option) was also a 2017 semi-finalist (and finalist).
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations
+**Remedy:** Make the answer a different semi-finalist, or reword to drop the self-comparison.
+
+## Ghana batch rows 29421–29700 — 9 FAIL
+
+### Rows 29423, 29424 — FAIL: false explanation / non-unique (Ghana had no 2022 draws; scored 0 vs Uruguay)
+- 29423 ("Which 2022 opponent did Ghana NOT play to a draw? → Uruguay") claims Ghana "drew 3-3 with Portugal and 2-2 with South Korea" — false; Ghana **lost 3-2 to Portugal, beat South Korea 3-2, and lost 2-0 to Uruguay** (no draws), so all three options satisfy "not a draw."
+- 29424 ("Which match saw Ghana score more than against Uruguay? → South Korea") says Ghana scored "2 against Uruguay" — they scored **0** (2-0 loss); both the South Korea (3) and Portugal (2) matches exceed 0, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_H
+**Remedy:** Fix the results (no draws; 0 vs Uruguay) and the option sets.
+
+### Rows 29514, 29524 — FAIL: wrong club (Kudus was at Ajax in 2022, not the Premier League / West Ham)
+- 29514 ("Which 2022 squad member did NOT play in the Premier League? → Inaki Williams") claims Kudus, Partey and Salisu "were Premier League players" — **Kudus was at Ajax** (Eredivisie) in 2022, so he also was not a PL player (non-unique with Williams).
+- 29524 ("Which attacker starred for **West Ham** at the 2022 World Cup? → Kudus") — Kudus was an **Ajax** player then; he joined West Ham only in August 2023. (Present-tense "Kudus plays for West Ham" rows PASS.)
+**Source:** https://en.wikipedia.org/wiki/Mohammed_Kudus
+**Remedy:** Use Kudus's 2022 club (Ajax); reserve West Ham for present-tense statements.
+
+### Rows 29489, 29490, 29503 — FAIL: self-referential answer
+- Each asks which CAF nation "**like Ghana**" did something, and answers **Ghana** itself: 29489 (qualified for 2014 — Nigeria, Côte d'Ivoire and Cameroon also did), 29490 (failed to qualify for 2018), 29503 (reached the 2010 AFCON semi-finals — and Ghana actually reached the **final**; Nigeria was a genuine 2010 semi-finalist).
+**Source:** https://en.wikipedia.org/wiki/Ghana_national_football_team
+**Remedy:** Make the answer a different nation, not Ghana.
+
+### Row 29533 — FAIL: non-unique answer
+- "Which Ghana campaign was identical to their 2010 route? → 2014 qualification." Ghana also qualified directly through CAF for **2026** (an option), so 2026 is equally "identical to 2010."
+**Source:** https://en.wikipedia.org/wiki/Ghana_at_the_FIFA_World_Cup
+**Remedy:** Remove the 2026 option or specify the distinguishing detail.
+
+### Row 29698 — FAIL: false explanation
+- "Which 2010 Ghana opponent was NOT faced again in 2022? → United States" (correct), but the explanation claims "Ghana faced Uruguay **and South Korea** in both tournaments." Ghana did **not** play South Korea in 2010 (their 2010 opponents were Serbia, Australia, Germany, USA, Uruguay).
+**Source:** https://en.wikipedia.org/wiki/Ghana_at_the_FIFA_World_Cup
+**Remedy:** Drop the false "South Korea in both" claim from the explanation.
+
+## Ghana — CORRECTION: non-unique "~40,000-capacity stadium" rows (batches 1–2)
+
+**Both Accra Sports Stadium (~40,000, capital) and Baba Yara Stadium (~40,000, Kumasi) are ~40k Ghana venues** (the dataset itself calls Baba Yara "the *other* ~40,000 stadium"). Any "which Ghana stadium holds ~40,000?" item that lists **both** as options without a capital/Kumasi disambiguator is non-unique.
+- **Row 29281 (batch 1)** ("which Ghana stadium with 40,000 seats? → Baba Yara"; options also include Accra Sports and "Kumasi Sports Stadium" = Baba Yara's own alias) and **Row 29432 (batch 2)** ("which 40,000-capacity stadium hosts qualifiers? → Baba Yara"; options include Accra Sports) were initially mis-passed and have been **removed from `QA_PASSED_ALL.md`** and counted FAIL here (corrected batch totals: B1 163P/27F, B2 186P/10F).
+- Rows that *do* disambiguate (e.g. "in the capital" → Accra, "in Kumasi"/"like Accra" → Baba Yara) remain PASS.
+**Source:** https://en.wikipedia.org/wiki/Baba_Yara_Stadium
+**Remedy:** Drop one of the two 40k stadiums from the options, or add a city qualifier.
+
+## Ghana batch rows 29701–29970 — 10 FAIL
+
+### Rows 29912, 29915, 29916, 29917 — FAIL: non-unique answer (two ~40,000 stadiums)
+- Each asks which Ghana stadium holds ~40,000 with **both Accra Sports Stadium and Baba Yara Stadium** offered (no city qualifier), so two options are valid. 29915 additionally has a false premise — "Cape Town Stadium's 2010 World Cup capacity of 40,000" (it held ~64,000).
+**Source:** https://en.wikipedia.org/wiki/Baba_Yara_Stadium
+**Remedy:** Offer only one 40k Ghana stadium, or disambiguate by city.
+
+### Rows 29919, 29961, 29970 — FAIL: wrong 2010 AFCON stage (Ghana reached the FINAL)
+- 29919 ("Which stage did Ghana reach at the 2010 AFCON? → the semi-finals") asks their endpoint, which was the **final** (runners-up to Egypt) — and "the final" is an option.
+- 29961 ("Which team reached the 2010 AFCON semi-finals? → Ghana") is non-unique: **Nigeria** (an option, 3rd place) was also a 2010 semi-finalist.
+- 29970 ("Which tournament matched their 2017 AFCON semi-final finish? → 2010 AFCON"): in 2010 Ghana reached the **final**, not a semi-final finish; the matching tournament is **2013** (also a semi-final/4th-place finish).
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations
+**Remedy:** Use "the final" for 2010; pick 2013 for a semi-final-finish match.
+
+### Row 29712 — FAIL: non-unique answer (Kudus also not in the Premier League in 2022)
+- "Which 2022 squad player did NOT play in the Premier League? → Inaki Williams." **Mohammed Kudus** (an option) was at **Ajax** in 2022 (Eredivisie), so he too was not a Premier League player.
+**Source:** https://en.wikipedia.org/wiki/Mohammed_Kudus
+**Remedy:** Replace Kudus with a genuine Premier League player.
+
+### Row 29747 — FAIL: non-unique answer
+- "Which Ghana player had over 25 caps after the 2022 World Cup? → Mohammed Kudus." All four options (Kudus, Partey, André Ayew, Jordan Ayew) had **well over 25 caps**, so every option satisfies the stem.
+**Source:** https://en.wikipedia.org/wiki/Ghana_national_football_team
+**Remedy:** Raise the threshold so only one player qualifies.
+
+### Row 29892 — FAIL: non-unique / nonsensical answer
+- "Which Ghana Premier League club is NOT a national team at the 2021 AFCON? → Asante Kotoko." All four options (Asante Kotoko, Hearts of Oak, Ashanti Gold, Medeama SC) are **clubs, not national teams**, so every option satisfies the (confused) stem.
+**Source:** https://en.wikipedia.org/wiki/Ghana_Premier_League
+**Remedy:** Reword; the premise makes all options correct.
+
+## Ghana — CORRECTION: "Kudus plays for West Ham" (10 rows, batches 1–4)
+
+**Web-verified:** Mohammed Kudus was an **Ajax** player at the 2022 World Cup (not West Ham), and he transferred from West Ham to **Tottenham Hotspur in July 2025** — so *every* "Kudus + West Ham" claim is wrong, whether it places him at West Ham during the 2022 World Cup (he was at Ajax) or states he currently plays for West Ham (he's now at Tottenham).
+- **Rows 29292 (B1), 29524 (B2)** already FAIL (Ajax-in-2022). **Rows 29532 (B2), 29838, 29924, 29931 (B3)** were initially mis-passed and are now **removed from `QA_PASSED_ALL.md`** and counted FAIL (corrected totals: B2 185P/11F, B3 203P/13F). **Rows 29985, 29986, 29987, 30028 (B4)** likewise FAIL.
+- (By contrast, "Thomas Partey plays for Arsenal" rows PASS: Arsenal was correct during the 2022 World Cup that those questions reference, even though Partey later moved to Villarreal in Aug 2025.)
+**Source:** https://en.wikipedia.org/wiki/Mohammed_Kudus
+**Remedy:** Use Kudus's 2022 club (Ajax) for World-Cup-era questions; update present-tense club to Tottenham.
+
+## Ghana batch rows 29971–30240 — 20 FAIL (incl. 4 Kudus-West Ham above: 29985, 29986, 29987, 30028)
+
+### Rows 30185, 30196, 30197, 30205, 30206, 30210 — FAIL: wrong result ("USA and Germany" in 2014)
+- Each says Ghana **lost to USA and Germany** in the 2014 group stage. Ghana **drew Germany 2-2** and lost to **USA and Portugal**. 30185 ("which team did Ghana NOT lose to? → Portugal") is doubly wrong — they *did* lose to Portugal. 30206 even offers the correct "USA and Portugal" as an option.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_G
+**Remedy:** Replace "Germany" with "Portugal."
+
+### Rows 29991, 29992, 29993, 29995 — FAIL: non-unique answer (all options are Ghana Premier League clubs)
+- Each asks which club plays in the Ghana Premier League while listing **multiple GPL clubs** (Hearts of Oak, Asante Kotoko, Ashanti Gold, Great Olympics, Medeama SC, Accra Lions), so several options are valid. (Rows asking specifically for Asante Kotoko's *rival* — Hearts of Oak — are unique and PASS.)
+**Source:** https://en.wikipedia.org/wiki/Ghana_Premier_League
+**Remedy:** Use three non-GPL distractors.
+
+### Row 30029 — FAIL: non-unique answer
+- "Which Ghanaian star had over 25 caps by the 2022 World Cup? → Mohammed Kudus." Partey, Jordan Ayew and Daniel Amartey (all options) also had well over 25 caps.
+**Source:** https://en.wikipedia.org/wiki/Ghana_national_football_team
+**Remedy:** Raise the threshold so only one player qualifies.
+
+### Rows 30108, 30130, 30192, 30193 — FAIL: self-referential answer
+- Each asks which nation/team "**like Ghana**" did something and answers **Ghana** itself: 30108/30130 (won four AFCON titles), 30192 (matched Ghana's "2010 AFCON semi-final run" — which was actually the final), 30193 (reached the 2010 World Cup quarter-finals in South Africa — **Uruguay and Paraguay**, both options, also did).
+**Source:** https://en.wikipedia.org/wiki/Ghana_national_football_team
+**Remedy:** Make the answer a different team, not Ghana.
+
+### Row 30123 — FAIL: wrong answer (Costa Rica did not qualify for 2010)
+- "Which nation, like Ghana, qualified for the 2010, 2014 and 2022 World Cups? → Costa Rica." Costa Rica **failed to qualify for 2010** (lost the playoff to Uruguay). The other options — **Mexico, Uruguay and Portugal** — all qualified for 2010, 2014 and 2022, so the marked answer is wrong and the distractors are correct.
+**Source:** https://en.wikipedia.org/wiki/Costa_Rica_at_the_FIFA_World_Cup
+**Remedy:** Replace Costa Rica with a nation that missed one of those tournaments, or change the answer.
+
+## Ghana batch rows 30241–30309 — 1 FAIL
+
+### Row 30279 — FAIL: wrong dates (Chris Hughton's Ghana role)
+- "Who was Ghana's technical adviser **during the 2014 World Cup cycle**? → Chris Hughton," explained as "Hughton served from 2014 to 2017." Hughton's Ghana involvement began in **2022** (technical adviser, then head coach 2023–2024); 2014–2017 was **Avram Grant's** tenure. (Rows placing Hughton as adviser at/around the 2022 World Cup PASS.)
+**Source:** https://en.wikipedia.org/wiki/Chris_Hughton
+**Remedy:** Re-anchor Hughton to 2022, or change the answer to Avram Grant for the 2014 cycle.
