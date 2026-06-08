@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **2935** (new method 231+, 25 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Italy 225 · Japan 62 · Tunisia 73 · USA 78)
+Total failed-liveness-passed-others so far: **3745** (new method 231+, 31 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117 · Tunisia 73 · USA 78)
 
 ---
 
@@ -17167,3 +17167,5709 @@ group winners of UEFA Group H). The year is **2025**, not 2026 — and 2025 isn'
 **Why it fails:** False: the (2019-20) CONCACAF Nations League final was NOT decided on penalties — the USA beat Mexico 3-2 after extra time (Pulisic's 114th-minute penalty in open play).
 **Source:** Wikipedia (USMNT / 2022 WC venues / 2024 Copa America / CONCACAF Nations League & Gold Cup / USWNT 2019 / FIFA rankings); ESPN; US Soccer
 **Remedy:** It was a 3-2 win in extra time, not a penalty shootout.
+---
+
+## Iran — rows 30310–31698 (liveness on QA_PASSED.md rows) — 151 FAIL
+
+Recurring Iran defect clusters (151 fails of 926 QA_PASSED candidates):
+1. **"2011 Asian Cup round of 16"** (21) — that edition had NO round of 16; Iran went group → QF and exited in the QUARTER-FINAL to South Korea (1-0 a.e.t.).
+2. **"2019 = Iran's best Asian Cup result"** (20) — false; Iran WON the Asian Cup three times (1968/72/76). 2019 was a SF loss (0-3 Japan).
+3. **2023 Asian Cup round confusion** (27) — Iran beat Japan in the QUARTER-FINAL (not SF) and lost the SEMI-FINAL 2-3 to Qatar (not the final); they never reached the final (Qatar 3-1 Jordan).
+4. **Beiranvand saved Ronaldo's "free kick"** (18) — it was a PENALTY (2018 v Portugal).
+5. **"Highest FIFA ranking = 20th"** (11) — Iran's peak is 15th (Aug 2005); '15th' is usually a distractor.
+6. **Taremi outdated/wrong facts** (21) — at Porto (not Inter Milan) in 2022, now at Olympiacos (not Inter); Bola de Prata was 2022-23 / after the WC (not 2021-22 / before); "80 caps in 2022" false (~65); non-unique 80-caps/40-goals.
+7. **Non-unique answers** (14) — all four options are PGPL clubs; "conceded one goal" (Spain AND Portugal); "failed to score" (Argentina AND Nigeria); Wales mislabeled an AFC team; "beat by <4 goals" (USA/Argentina/Spain); group-exit "2014 & 2022" (also 2018).
+8. **Spreadsheet date-corruption** (6) — answer cells '01-Jan' (=1-1) and '06-Feb' (=6-2). Flag for a dataset-wide sweep.
+9. **Misc** (14) — outdated "six WCs" (now 7) / "Iran most successful AFC qualifier" (it's S.Korea); Queiroz led 3 WCs not 2; Wilmots did NOT coach the 2019 Asian Cup (Queiroz did); Ghalenoei's tenure began before/at the 2023 Asian Cup; Ronaldo passed Daei in Sept 2021 (not before 2018 / at 2022); Iran finished 4th not 3rd in 2014 Group F; Persepolis 2018 & 2020 ACL finals were not consecutive editions; "no narrower loss than 2018"; European-academy "first in 2022" unsupported.
+
+### Row 30310 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** After beating Japan in 2023, Iran lost the Asian Cup final to which nation? **A:** Qatar
+**Options:** Qatar | Saudi Arabia | South Korea | United Arab Emirates
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30316 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** After their 2018 World Cup exit, when did Iran next achieve their best Asian Cup result? **A:** 2019
+**Options:** 2019 | 2015 | 2023 | 2011
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30317 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** After winning their 2011 Asian Cup group, which team eliminated Iran in the round of 16? **A:** South Korea
+**Options:** South Korea | Japan | Saudi Arabia | Australia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30318 — Iran (medium) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** After winning their group in 2011, when did Iran's Asian Cup campaign end? **A:** The round of 16
+**Options:** The round of 16 | The semi-finals | The final | The quarter-finals
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30319 — Iran (easy) — FAIL: non-unique — Iran conceded one goal to both Spain AND Portugal in 2018
+**Q:** Against which 2018 World Cup opponent did Iran concede just one goal? **A:** Spain
+**Options:** Spain | Portugal | Morocco | Egypt
+**Why it fails:** At the 2018 World Cup Iran conceded one goal to Spain (lost 0-1) AND one to Portugal (drew 1-1). Both are options, so 'Spain' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Reword so only one opponent fits.
+
+### Row 30320 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Against which 2018 World Cup opponent did Iran's Alireza Beiranvand save a Ronaldo free kick? **A:** Portugal
+**Options:** Portugal | Argentina | Spain | Morocco
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30326 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** At the 2011 Asian Cup, which nation eliminated Iran in the round of 16? **A:** South Korea
+**Options:** South Korea | Japan | Qatar | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30345 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** At the 2019 Asian Cup, what was Iran's best result? **A:** Semi-finals
+**Options:** Semi-finals | Final | Quarter-finals | Round of 16
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30346 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** At the 2019 Asian Cup, which stage did Iran reach? **A:** Semi-finals
+**Options:** Semi-finals | Final | Quarter-finals | Round of 16
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30375 — Iran (easy) — FAIL: non-unique — none of the 2018 Russian venues restricted women
+**Q:** At which 2018 World Cup venue did Iran not restrict women's attendance like Azadi Stadium? **A:** Saint Petersburg Stadium
+**Options:** Saint Petersburg Stadium | Luzhniki Stadium | Kazan Arena | Fisht Olympic Stadium
+**Why it fails:** No 2018 World Cup venue in Russia restricted women's attendance, so Saint Petersburg is not unique among the options (Luzhniki, Kazan, Fisht equally apply).
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Drop — the premise yields multiple valid answers.
+
+### Row 30381 — Iran (medium) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** At which FIFA World Cup did Iran's Alireza Beiranvand save a Cristiano Ronaldo free kick? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2014 World Cup | 2022 World Cup | 2010 World Cup
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30408 — Iran (hard) — FAIL: wrong season — Taremi's Golden Boot was 2022-23, not 2021-22
+**Q:** Before Iran's 2022 World Cup squad, when did Mehdi Taremi win Portugal's Golden Boot? **A:** 2021-22 season
+**Options:** 2021-22 season | 2019-20 season | 2020-21 season | 2022-23 season
+**Why it fails:** Mehdi Taremi won the Primeira Liga top-scorer award (Bola de Prata) in 2022-23 (22 goals), not 2021-22. The 2021-22 top scorer was Darwin Núñez. Correct answer (2022-23) is one of the distractors.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Change to the 2022-23 season.
+
+### Row 30413 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** Before their 2014 World Cup group stage, Iran's highest FIFA ranking was which position? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30417 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** During Iran's 2018 World Cup run, when did they hit their highest FIFA rank? **A:** 2015
+**Options:** 2015 | 2013 | 2017 | 2019
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30418 — Iran (medium) — FAIL: non-unique / unsupported — Iran were the top-ranked AFC side across the whole 2014-18 cycle
+**Q:** During the 2018 FIFA World Cup cycle, when were Iran the top Asian team? **A:** In 2015
+**Options:** In 2015 | In 2017 | In 2019 | In 2014
+**Why it fails:** Iran were the highest-ranked Asian team in the FIFA ranking through essentially the entire 2014-2018 cycle, so singling out '2015' is not unique (2014 and 2017, both options, also apply); the sibling rows' '20th peak' figure is also wrong (peak is 15th).
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Make the timeframe unique or drop; Iran were top AFC side throughout the cycle.
+
+### Row 30450 — Iran (medium) — FAIL: outdated — Iran have now qualified for seven World Cups
+**Q:** How many FIFA World Cups has Iran qualified for? **A:** Six
+**Options:** Six | Four | Five | Seven
+**Why it fails:** With 2026, Iran have qualified for SEVEN World Cups (1978, 1998, 2006, 2014, 2018, 2022, 2026), not six. 'Seven' is one of the distractors.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Update to seven (or scope 'by 2022' = six).
+
+### Row 30455 — Iran (medium) — FAIL: wrong count — Queiroz led Iran at THREE World Cups, not two
+**Q:** How many World Cups did Carlos Queiroz lead Iran at? **A:** Two
+**Options:** Two | One | Three | Four
+**Why it fails:** Carlos Queiroz managed Iran at the 2014, 2018 AND 2022 World Cups (he returned in Sept 2022). The answer is three; 'two' omits 2022, and three is a distractor.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Queiroz
+**Remedy:** Change to three (2014, 2018, 2022).
+
+### Row 30457 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** In 2011, Iran won its Asian Cup group but lost to which nation in the round of 16? **A:** South Korea
+**Options:** South Korea | Japan | Saudi Arabia | United Arab Emirates
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30458 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** In 2018 World Cup qualifying, Iran's highest FIFA ranking was which position? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30462 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** In 2019, Iran's best Asian Cup result was reaching which stage? **A:** The semi-finals
+**Options:** The semi-finals | The final | The quarter-finals | The round of 16
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30463 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** In 2019, Iran's best Asian Cup run ended at which stage? **A:** The semi-finals
+**Options:** The semi-finals | The quarter-finals | The group stage | The final
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30472 — Iran (medium) — FAIL: false — Iran do not have Asia's most successful World Cup qualification record
+**Q:** In 2022, why was Iran's World Cup qualification dominance unmatched in Asia? **A:** Most successful qualification record
+**Options:** Most successful qualification record | Highest FIFA ranking | Most goals scored | Longest unbeaten streak
+**Why it fails:** South Korea (11 appearances, incl. a long unbroken run) have the most World Cup qualifications in Asia, not Iran (7). The premise of unmatched Iranian qualification dominance is false.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Drop or attribute the record to South Korea.
+
+### Row 30480 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In Iran's 2018 match, which keeper saved a Ronaldo free kick? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Manuel Neuer | David de Gea | Thibaut Courtois
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30482 — Iran (medium) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In Iran's 2018 World Cup group stage match against Portugal, which Iranian player saved a Cristiano Ronaldo free kick? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Amir Abedzadeh | Alireza Haghighi | Mehdi Taremi
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30489 — Iran (easy) — FAIL: non-unique — all four options play in the Persian Gulf Pro League
+**Q:** In Iran's 2018 World Cup group, which of these domestic clubs is in the Persian Gulf Pro League? **A:** Persepolis
+**Options:** Persepolis | Esteghlal | Sepahan | Tractor
+**Why it fails:** Persepolis, Esteghlal, Sepahan and Tractor are ALL Persian Gulf Pro League clubs, so 'which club is in the PGPL' has four valid answers.
+**Source:** https://en.wikipedia.org/wiki/Persian_Gulf_Pro_League
+**Remedy:** Use a disambiguator (e.g. which reached the ACL final).
+
+### Row 30490 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In Iran's 2018 World Cup match versus Portugal, which player saved Ronaldo's free kick? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Amir Abedzadeh | Alireza Haghighi | Payam Niazmand
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30491 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In Iran's 2018 World Cup match, who saved Ronaldo's free kick? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Amir Abedzadeh | Ali Beiranvand | Payam Niazmand
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30494 — Iran (easy) — FAIL: wrong stat — Taremi did NOT have 80+ caps at the 2022 World Cup
+**Q:** In Iran's 2022 World Cup group, which striker had over 80 caps? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Karim Ansarifard
+**Why it fails:** At the 2022 World Cup Taremi had roughly 65 caps; he only passed ~100 caps by 2026. He did not 'earn his 80th cap' / have 'over 80 caps' at the 2022 tournament.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Drop the 80-cap claim for the 2022 timeframe.
+
+### Row 30499 — Iran (easy) — FAIL: wrong club — Taremi was at Porto (not Inter Milan) at the 2022 World Cup
+**Q:** In Iran's 2022 World Cup squad, which striker played for Inter Milan? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Ali Daei
+**Why it fails:** During the 2022 World Cup Taremi played for FC Porto. He only joined Inter Milan in July 2024 (and left for Olympiacos in Aug 2025).
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** He played for Porto at the 2022 World Cup.
+
+### Row 30506 — Iran (medium) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** In the 2011 Asian Cup, Iran's group stage win preceded a knockout loss to which nation? **A:** South Korea
+**Options:** South Korea | Japan | Qatar | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30507 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** In the 2011 Asian Cup, which team eliminated Iran in the round of 16? **A:** South Korea
+**Options:** South Korea | Japan | Saudi Arabia | Australia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30509 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** In the 2014 World Cup cycle, Iran's highest FIFA ranking was what position? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30510 — Iran (easy) — FAIL: wrong placing/non-unique — Iran finished 4th (last) in 2014 Group F, and lost to Bosnia too
+**Q:** In the 2014 World Cup, why did Iran fail to advance from their group? **A:** Lost to Argentina
+**Options:** Lost to Argentina | Lost to Nigeria | Drew with Argentina | Lost to Bosnia
+**Why it fails:** Iran finished BOTTOM (4th) of 2014 Group F with one point (Argentina 9, Nigeria 4, Bosnia 3, Iran 1), not third; and their loss to Bosnia (an option) was equally a reason they went out.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4th place; the decisive defeat was 1-3 to Bosnia.
+
+### Row 30517 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** In the 2023 Asian Cup, Iran beat Japan then lost to which nation? **A:** Qatar
+**Options:** Qatar | South Korea | Saudi Arabia | United Arab Emirates
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30518 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** In the 2023 Asian Cup, Iran's semi-final and final opponents were which two nations? **A:** Japan and Qatar
+**Options:** Japan and Qatar | South Korea and Qatar | Saudi Arabia and Japan | Uzbekistan and Qatar
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30519 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** In the 2023 Asian Cup, which team did Iran defeat in the semi-final? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30522 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** In their 2023 Asian Cup run, Iran beat Japan in the semi-final, then lost to which nation? **A:** Qatar
+**Options:** Qatar | Saudi Arabia | South Korea | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30528 — Iran (medium) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** In what year did Iran's 2011 Asian Cup run end in the round of 16? **A:** 2011
+**Options:** 2011 | 2010 | 2012 | 2015
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30530 — Iran (medium) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In which 2018 World Cup group stage match did Iran's Alireza Beiranvand save a Cristiano Ronaldo free kick? **A:** Iran vs Portugal
+**Options:** Iran vs Portugal | Iran vs Spain | Iran vs Morocco | Iran vs Argentina
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30535 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** In which Asian Cup did Iran achieve their best-ever finish? **A:** 2019 Asian Cup
+**Options:** 2019 Asian Cup | 2011 Asian Cup | 2023 Asian Cup | 2015 Asian Cup
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30536 — Iran (hard) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** In which Asian Cup did Iran first reach the semi-finals? **A:** The 2019 Asian Cup
+**Options:** The 2019 Asian Cup | The 2015 Asian Cup | The 2023 Asian Cup | The 2011 Asian Cup
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30539 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In which Iran match did Alireza Beiranvand save Cristiano Ronaldo's free kick at the 2018 World Cup? **A:** Iran vs Portugal
+**Options:** Iran vs Portugal | Iran vs Spain | Iran vs Morocco | Iran vs Argentina
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30540 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** In which round did Iran's 2011 Asian Cup run end? **A:** Round of 16
+**Options:** Round of 16 | Group Stage | Quarter-finals | Semi-finals
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30560 — Iran (hard) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In which World Cup did Iran's Alireza Beiranvand save a Cristiano Ronaldo free kick? **A:** The 2018 World Cup
+**Options:** The 2018 World Cup | The 2014 World Cup | The 2022 World Cup | The 2010 World Cup
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30566 — Iran (hard) — FAIL: incoherent — no Iran World Cup loss is 'narrower' than the 2018 1-0
+**Q:** In which World Cup group stage did Iran suffer a narrower loss than in 2018? **A:** 2022 vs USA
+**Options:** 2022 vs USA | 2006 vs Angola | 2014 vs Argentina | 2018 vs Spain
+**Why it fails:** A 1-0 defeat is the narrowest possible; the 2022 loss to the USA was also 1-0 (equal, not narrower). The premise that some loss was narrower than 2018 is false.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Drop — the comparison is logically impossible.
+
+### Row 30567 — Iran (hard) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** In which World Cup group stage did Iran's Beiranvand save Ronaldo's free kick? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2014 World Cup | 2022 World Cup | 2010 World Cup
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30590 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** In which year did Iran reach their best Asian Cup result? **A:** 2019
+**Options:** 2019 | 2011 | 2015 | 2023
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30594 — Iran (medium) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** In which year did Iran's run to the Asian Cup final begin with a semi-final win over Japan? **A:** 2023
+**Options:** 2023 | 2019 | 2015 | 2011
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30597 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** Iran achieved its best Asian Cup result in what year? **A:** 2019
+**Options:** 2019 | 2011 | 2015 | 2023
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30606 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Iran reached the 2023 Asian Cup final by beating which team? **A:** Japan
+**Options:** Japan | South Korea | Australia | Uzbekistan
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30617 — Iran (easy) — FAIL: misleading/non-unique — Iran's genuine 2018 goal came vs Portugal, not Morocco
+**Q:** Iran's 2022 World Cup win over Wales featured two late goals. Which 2018 opponent did Iran also score against? **A:** Morocco
+**Options:** Morocco | Nigeria | Portugal | Spain
+**Why it fails:** Iran's 'goal' against Morocco was a Morocco own goal, not Iran scoring; Iran's genuine 2018 goal was Ansarifard's penalty against Portugal (an option). So 'Morocco' is the wrong/non-unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** If asking where Iran genuinely scored in 2018, the answer is Portugal.
+
+### Row 30619 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Iran's 2023 Asian Cup run saw them beat Japan, then lose to whom? **A:** Qatar
+**Options:** Qatar | South Korea | Saudi Arabia | United Arab Emirates
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30632 — Iran (medium) — FAIL: false — Persepolis's 2018 and 2020 ACL finals were not consecutive editions
+**Q:** Iran's Persepolis reached the AFC Champions League final in which two consecutive editions? **A:** 2018 and 2020
+**Options:** 2018 and 2020 | 2017 and 2019 | 2019 and 2021 | 2016 and 2018
+**Why it fails:** Persepolis reached the AFC Champions League finals in 2018 and 2020, but the 2019 edition lies between them, so they are NOT consecutive editions (the answer text '2018 and 2020' is presented as consecutive).
+**Source:** https://en.wikipedia.org/wiki/Persepolis_F.C.
+**Remedy:** Drop 'consecutive'; the finals were 2018 and 2020 (non-consecutive).
+
+### Row 30643 — Iran (easy) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** What is Iran's highest FIFA World Cup ranking? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30644 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** What is Iran's highest-ever FIFA ranking position? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30653 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** What is the highest FIFA ranking Iran's national team has achieved? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30656 — Iran (easy) — FAIL: spreadsheet date-corruption in the answer cell
+**Q:** What was Iran's final score against Portugal at the 2018 World Cup? **A:** 01-Jan
+**Options:** 01-Jan | 2-0 | 1-0 | 0-1
+**Why it fails:** The answer cell is Excel date-mangled ('01-Jan' = the score 1-1; '06-Feb' = the score 6-2). The stored answer is therefore a broken non-score string.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Restore the real scoreline (e.g. '1-1', '6-2'); flag for a dataset-wide date-corruption sweep.
+
+### Row 30659 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** What was Iran's highest FIFA ranking before the 2014 World Cup? **A:** 20th
+**Options:** 20th | 18th | 22nd | 24th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30661 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** What was Iran's highest FIFA ranking before the 2022 World Cup? **A:** 20th
+**Options:** 20th | 15th | 25th | 30th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30662 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** What was Iran's highest-ever FIFA ranking position? **A:** 20th
+**Options:** 20th | 15th | 22nd | 18th
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30672 — Iran (easy) — FAIL: spreadsheet date-corruption in the answer cell
+**Q:** What was the final score in Iran's heaviest World Cup defeat, against England in 2022? **A:** 06-Feb
+**Options:** 06-Feb | 5-1 | 4-0 | 3-1
+**Why it fails:** The answer cell is Excel date-mangled ('01-Jan' = the score 1-1; '06-Feb' = the score 6-2). The stored answer is therefore a broken non-score string.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Restore the real scoreline (e.g. '1-1', '6-2'); flag for a dataset-wide date-corruption sweep.
+
+### Row 30677 — Iran (easy) — FAIL: spreadsheet date-corruption in the answer cell
+**Q:** What was the final score when Iran drew with Portugal at the 2018 World Cup? **A:** 01-Jan
+**Options:** 01-Jan | 0-0 | 2-2 | 2-1
+**Why it fails:** The answer cell is Excel date-mangled ('01-Jan' = the score 1-1; '06-Feb' = the score 6-2). The stored answer is therefore a broken non-score string.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Restore the real scoreline (e.g. '1-1', '6-2'); flag for a dataset-wide date-corruption sweep.
+
+### Row 30680 — Iran (easy) — FAIL: spreadsheet date-corruption in the answer cell
+**Q:** What was the final score when Iran lost to England at the 2022 World Cup? **A:** 06-Feb
+**Options:** 06-Feb | 4-1 | 3-0 | 5-1
+**Why it fails:** The answer cell is Excel date-mangled ('01-Jan' = the score 1-1; '06-Feb' = the score 6-2). The stored answer is therefore a broken non-score string.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Restore the real scoreline (e.g. '1-1', '6-2'); flag for a dataset-wide date-corruption sweep.
+
+### Row 30684 — Iran (easy) — FAIL: spreadsheet date-corruption in the answer cell
+**Q:** What was the final score when Iran played Portugal at the 2018 World Cup? **A:** 01-Jan
+**Options:** 01-Jan | 2-1 | 1-0 | 0-0
+**Why it fails:** The answer cell is Excel date-mangled ('01-Jan' = the score 1-1; '06-Feb' = the score 6-2). The stored answer is therefore a broken non-score string.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Restore the real scoreline (e.g. '1-1', '6-2'); flag for a dataset-wide date-corruption sweep.
+
+### Row 30687 — Iran (medium) — FAIL: spreadsheet date-corruption in the answer cell
+**Q:** What was the score when Iran lost to England in the 2022 World Cup opener? **A:** 06-Feb
+**Options:** 06-Feb | 5-1 | 4-0 | 3-1
+**Why it fails:** The answer cell is Excel date-mangled ('01-Jan' = the score 1-1; '06-Feb' = the score 6-2). The stored answer is therefore a broken non-score string.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Restore the real scoreline (e.g. '1-1', '6-2'); flag for a dataset-wide date-corruption sweep.
+
+### Row 30691 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** When did Iran achieve its best Asian Cup result? **A:** 2019
+**Options:** 2019 | 2011 | 2015 | 2023
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30692 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** When did Iran achieve their best Asian Cup result, in 2019 or 2011? **A:** 2019
+**Options:** 2019 | 2011 | 2015 | 2023
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30693 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** When did Iran achieve their best Asian Cup result? **A:** 2019
+**Options:** 2019 | 2011 | 2015 | 2023
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30694 — Iran (medium) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** When did Iran beat Japan in the Asian Cup semi-final? **A:** 2023
+**Options:** 2023 | 2019 | 2015 | 2011
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30704 — Iran (medium) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** When did Iran lose to Qatar in the 2023 Asian Cup final? **A:** 2023
+**Options:** 2023 | 2021 | 2019 | 2015
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30709 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** When did Iran reach its best Asian Cup result? **A:** In 2019
+**Options:** In 2019 | In 2011 | In 2023 | In 2015
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30710 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** When did Iran reach their best Asian Cup semi-final? **A:** 2019
+**Options:** 2019 | 2011 | 2023 | 2015
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30714 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** When did Iran's 2011 Asian Cup campaign end? **A:** Round of 16
+**Options:** Round of 16 | Group stage | Quarter-finals | Semi-finals
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30715 — Iran (medium) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** When did Iran's Alireza Beiranvand save a Cristiano Ronaldo free kick at the World Cup? **A:** 2018
+**Options:** 2018 | 2014 | 2022 | 2010
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30717 — Iran (medium) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** When did Iran's Alireza Beiranvand save a Ronaldo free kick? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2014 World Cup | 2022 World Cup | 2010 World Cup
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 30718 — Iran (medium) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** When did Iran's best Asian Cup result occur? **A:** 2019
+**Options:** 2019 | 2011 | 2023 | 2015
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30719 — Iran (medium) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** When did Iran's national team reach the Asian Cup final? **A:** 2023
+**Options:** 2023 | 2019 | 2015 | 2011
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30730 — Iran (easy) — FAIL: non-unique — Iran failed to score against both Argentina AND Nigeria in 2014
+**Q:** Which 2014 World Cup opponent did Iran fail to score against? **A:** Argentina
+**Options:** Argentina | Nigeria | England | Portugal
+**Why it fails:** At the 2014 World Cup Iran scored 0 against Argentina (lost 0-1) AND 0 against Nigeria (0-0). Both are options, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Reword so only one opponent fits.
+
+### Row 30735 — Iran (medium) — FAIL: non-unique/false premise — Portugal wasn't a 2014 Iran opponent and others also weren't 'nearly beaten'
+**Q:** Which 2014 World Cup team did Iran not nearly beat in a group stage match? **A:** Portugal
+**Options:** Portugal | Argentina | Nigeria | Bosnia and Herzegovina
+**Why it fails:** Iran's 2014 group opponents were Nigeria, Argentina and Bosnia (not Portugal). Iran only 'nearly beat' Argentina, so 'did NOT nearly beat' is true of Nigeria and Bosnia as well — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Drop — multiple options satisfy the question.
+
+### Row 30764 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which 2023 Asian Cup finalist did Iran beat in the semi-finals? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30805 — Iran (medium) — FAIL: wrong figure — Iran's highest FIFA ranking is 15th (Aug 2005), not 20th
+**Q:** Which AFC nation peaked higher in FIFA rankings before 2022: Iran or South Korea? **A:** Iran
+**Options:** Iran | South Korea | Japan | Saudi Arabia
+**Why it fails:** Iran's all-time highest FIFA World Ranking is 15th (August 2005), not 20th. Where '15th' is among the options it is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Iran_national_football_team
+**Remedy:** Change the peak ranking to 15th (August 2005).
+
+### Row 30849 — Iran (easy) — FAIL: false premise — Wales is a UEFA team, not AFC
+**Q:** Which AFC team did Iran beat at the 2022 FIFA World Cup? **A:** Wales
+**Options:** Wales | Morocco | Portugal | Nigeria
+**Why it fails:** Wales (Iran's only 2022 win) is a UEFA nation, not an AFC team. None of Iran's 2022 opponents (England, Wales, USA) are AFC sides.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Remove 'AFC'; Iran beat Wales (UEFA) 2-0.
+
+### Row 30864 — Iran (easy) — FAIL: non-unique/outdated — Saudi Arabia have the same World Cup count as Iran
+**Q:** Which AFC team has qualified for six FIFA World Cups: Iran or Saudi Arabia? **A:** Iran
+**Options:** Iran | Saudi Arabia | South Korea | Japan
+**Why it fails:** By 2022 both Iran and Saudi Arabia had six World Cup appearances; with 2026 both have seven. So 'which has qualified for six: Iran or Saudi' is not unique, and the explanation's 'Saudi five' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Drop — both nations have the same count.
+
+### Row 30888 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which Asian Cup 2023 semi-finalist did Iran beat before facing Qatar in the final? **A:** Japan
+**Options:** Japan | South Korea | Australia | Saudi Arabia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 30889 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** Which Asian Cup result in 2019 was Iran's best-ever finish? **A:** Semi-finals
+**Options:** Semi-finals | Quarter-finals | Group stage | Final
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 30890 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which Asian Cup stage did Iran reach after winning their 2011 group? **A:** Round of 16
+**Options:** Round of 16 | Quarter-finals | Semi-finals | Final
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30922 — Iran (medium) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which Iran 2011 Asian Cup group stage win ended in a round of 16 loss? **A:** South Korea
+**Options:** South Korea | Japan | Saudi Arabia | Australia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 30926 — Iran (easy) — FAIL: non-unique — all four options play in the Persian Gulf Pro League
+**Q:** Which Iran club plays in the top domestic Persian Gulf Pro League? **A:** Persepolis
+**Options:** Persepolis | Esteghlal | Sepahan | Tractor
+**Why it fails:** Persepolis, Esteghlal, Sepahan and Tractor are all PGPL clubs — four valid answers.
+**Source:** https://en.wikipedia.org/wiki/Persian_Gulf_Pro_League
+**Remedy:** Use a disambiguator.
+
+### Row 30976 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** Which Iran manager led the 2019 Asian Cup semi-final run? **A:** Carlos Queiroz
+**Options:** Carlos Queiroz | Marc Wilmots | Dragan Skočić | Branko Ivanković
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 31003 — Iran (easy) — FAIL: wrong timing — Ghalenoei's tenure began before, and included, the 2023 Asian Cup
+**Q:** Which Iran manager's World Cup cycle began after the 2023 Asian Cup? **A:** Amir Ghalenoei
+**Options:** Amir Ghalenoei | Carlos Queiroz (first) | Marc Wilmots | Dragan Skočić
+**Why it fails:** Amir Ghalenoei was appointed in March 2023 and coached Iran AT the 2023 Asian Cup (QF win over Japan, SF loss to Qatar). His cycle did not begin 'after' that tournament.
+**Source:** https://en.wikipedia.org/wiki/Amir_Ghalenoei
+**Remedy:** His tenure began March 2023, before the 2023 Asian Cup.
+
+### Row 31021 — Iran (easy) — FAIL: wrong club — Taremi was at Porto (not Inter Milan) at the 2022 World Cup
+**Q:** Which Iran player in the 2022 World Cup squad was based at Inter Milan? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Karim Ansarifard
+**Why it fails:** During the 2022 World Cup Taremi played for FC Porto; he joined Inter Milan only in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** He played for Porto at the 2022 World Cup.
+
+### Row 31026 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Which Iran player saved Cristiano Ronaldo's 2018 World Cup free kick? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Mehdi Taremi | Jalal Hosseini | Ehsan Hajsafi
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 31064 — Iran (hard) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which Iran squad beat Japan at the 2023 Asian Cup semi-final? **A:** 2023 Asian Cup squad
+**Options:** 2023 Asian Cup squad | 2022 World Cup squad | 2019 Asian Cup squad | 2015 Asian Cup squad
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31074 — Iran (easy) — FAIL: wrong/outdated club — Taremi at Porto in 2022; now at Olympiacos (not Inter)
+**Q:** Which Iran striker at the 2022 World Cup plays for Inter Milan? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Karim Ansarifard
+**Why it fails:** At the 2022 World Cup Taremi was at Porto, not Inter Milan; and the present-tense 'plays for Inter Milan' is outdated — he left Inter for Olympiacos in Aug 2025.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Porto in 2022; as of 2026 he plays for Olympiacos.
+
+### Row 31075 — Iran (easy) — FAIL: wrong stat — Taremi did not have 80+ caps at the 2022 World Cup
+**Q:** Which Iran striker earned his 80th cap at the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Ali Daei
+**Why it fails:** Taremi had ~65 caps at the 2022 World Cup, not 80. He did not earn his 80th cap there.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Drop the 80-cap claim for 2022.
+
+### Row 31109 — Iran (easy) — FAIL: wrong timing — Taremi's top-scorer title came AFTER the 2022 World Cup
+**Q:** Which Iran striker was Portugal's top scorer before the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Karim Ansarifard | Sardar Azmoun | Alireza Jahanbakhsh
+**Why it fails:** Taremi won the Primeira Liga top-scorer award for 2022-23, announced May 2023 — after the Nov-Dec 2022 World Cup, not before it.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** He was top scorer in 2022-23, after the World Cup.
+
+### Row 31118 — Iran (easy) — FAIL: outdated club — Taremi no longer plays for Inter Milan
+**Q:** Which Iran striker with over 80 caps plays for Inter Milan? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Ali Daei
+**Why it fails:** Taremi left Inter Milan for Olympiacos in Aug 2025, so the present-tense 'plays for Inter Milan' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** As of 2026 he plays for Olympiacos.
+
+### Row 31119 — Iran (easy) — FAIL: wrong season — Taremi did not win the 2020-21 Primeira Liga scoring title
+**Q:** Which Iran striker won the 2021 Portuguese Liga scoring title? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Alireza Jahanbakhsh | Karim Ansarifard | Sardar Azmoun
+**Why it fails:** The 2020-21 Primeira Liga top scorer was Pedro Gonçalves (Sporting). Taremi won the Bola de Prata in 2022-23, not 2020-21.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Taremi's scoring title was 2022-23.
+
+### Row 31120 — Iran (easy) — FAIL: wrong timing — Taremi's scoring title came after, not before, the 2022 World Cup
+**Q:** Which Iran striker won the Portuguese scoring title before the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Alireza Jahanbakhsh | Sardar Azmoun | Karim Ansarifard
+**Why it fails:** Taremi won the Primeira Liga scoring title for 2022-23 (May 2023), after the 2022 World Cup, not before it.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** He won it in 2022-23, after the World Cup.
+
+### Row 31121 — Iran (easy) — FAIL: wrong stat — '80 caps' anachronistic for the 2022 World Cup
+**Q:** Which Iran striker, with over 40 goals, was a key target man in their 2022 World Cup attack? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Ali Daei | Alireza Jahanbakhsh
+**Why it fails:** The explanation gives Taremi 'over 80 caps' in a 2022 World Cup context; he had ~65 caps then (he reached ~100 only by 2026).
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Drop the 80-cap claim for the 2022 timeframe.
+
+### Row 31123 — Iran (easy) — FAIL: wrong stat — '80 caps' anachronistic for the 2022 World Cup
+**Q:** Which Iran striker, with over 80 caps and 40+ goals, led their 2022 World Cup attack? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Ali Daei | Alireza Jahanbakhsh
+**Why it fails:** Taremi had ~65 caps at the 2022 World Cup, not over 80.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Drop the 80-cap claim for 2022.
+
+### Row 31150 — Iran (easy) — FAIL: non-unique — all four options play in the Persian Gulf Pro League
+**Q:** Which Iranian club features in the Persian Gulf Pro League? **A:** Persepolis
+**Options:** Persepolis | Esteghlal | Sepahan | Tractor
+**Why it fails:** Persepolis, Esteghlal, Sepahan and Tractor are all PGPL clubs.
+**Source:** https://en.wikipedia.org/wiki/Persian_Gulf_Pro_League
+**Remedy:** Use a disambiguator.
+
+### Row 31151 — Iran (easy) — FAIL: non-unique — Persepolis and Esteghlal (and others) all feature in the PGPL
+**Q:** Which Iranian club is a top feature of the Persian Gulf Pro League? **A:** Persepolis
+**Options:** Persepolis | Esteghlal | Sepahan | Tractor
+**Why it fails:** Multiple options are PGPL clubs; even the explanation names two ('Persepolis and Esteghlal'), so the single answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Persian_Gulf_Pro_League
+**Remedy:** Use a disambiguator.
+
+### Row 31155 — Iran (easy) — FAIL: non-unique — all four options play in the Persian Gulf Pro League
+**Q:** Which Iranian club plays in the Persian Gulf Pro League? **A:** Persepolis
+**Options:** Persepolis | Esteghlal | Sepahan | Tractor
+**Why it fails:** Persepolis, Esteghlal, Sepahan and Tractor are all PGPL clubs.
+**Source:** https://en.wikipedia.org/wiki/Persian_Gulf_Pro_League
+**Remedy:** Use a disambiguator.
+
+### Row 31171 — Iran (easy) — FAIL: non-unique — Persepolis and Esteghlal both supply Iran internationals
+**Q:** Which Iranian club's players often feature in World Cup qualifiers for Iran? **A:** Persepolis
+**Options:** Persepolis | Esteghlal | Sepahan | Tractor
+**Why it fails:** Both Persepolis and Esteghlal (and other PGPL clubs) regularly supply Iran national-team players, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Persian_Gulf_Pro_League
+**Remedy:** Use a disambiguator.
+
+### Row 31189 — Iran (easy) — FAIL: wrong timing — Taremi's top-scorer title came after the 2022 World Cup
+**Q:** Which Iranian forward was Portugal's top scorer before the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Alireza Jahanbakhsh | Karim Ansarifard | Sardar Azmoun
+**Why it fails:** Taremi was Primeira Liga top scorer in 2022-23 (announced May 2023), after the 2022 World Cup, not before it.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** He was top scorer in 2022-23, after the World Cup.
+
+### Row 31190 — Iran (easy) — FAIL: wrong season and timing — Taremi's Bola de Prata was 2022-23, after the World Cup
+**Q:** Which Iranian forward was the Portuguese Liga's top scorer before the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Alireza Jahanbakhsh | Karim Ansarifard | Sardar Azmoun
+**Why it fails:** The explanation says 2021-22; Taremi actually won the Bola de Prata in 2022-23 (May 2023), after the 2022 World Cup. Both 'before the World Cup' and '2021-22' are wrong.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Correct to 2022-23, after the World Cup.
+
+### Row 31202 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Which Iranian goalkeeper saved a Cristiano Ronaldo free kick at the 2018 World Cup? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Amir Abedzadeh | Alireza Haghighi | Rahman Ahmadi
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 31206 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Which Iranian goalkeeper saved Cristiano Ronaldo's free kick at the 2018 FIFA World Cup? **A:** Alireza Beiranvand
+**Options:** Alireza Beiranvand | Amir Abedzadeh | Rashid Mazaheri | Mehdi Rahmati
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 31209 — Iran (easy) — FAIL: wrong club — Taremi was at Porto (not Inter Milan) at the 2022 World Cup
+**Q:** Which Iranian key striker played for Inter Milan at the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Karim Ansarifard | Alireza Jahanbakhsh
+**Why it fails:** Taremi played for Porto at the 2022 World Cup; he joined Inter only in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Porto at the 2022 World Cup.
+
+### Row 31218 — Iran (easy) — FAIL: wrong club — Taremi was at Porto (not Inter Milan) at the 2022 World Cup
+**Q:** Which Iranian player at the 2022 World Cup was based at Inter Milan? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Ali Gholizadeh | Alireza Jahanbakhsh
+**Why it fails:** Taremi played for Porto at the 2022 World Cup; he joined Inter only in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Porto at the 2022 World Cup.
+
+### Row 31251 — Iran (easy) — FAIL: wrong timing — Taremi's top-scorer title came after the 2022 World Cup
+**Q:** Which Iranian player was top scorer for Porto in the Portuguese Liga before the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Alireza Jahanbakhsh | Sardar Azmoun | Karim Ansarifard
+**Why it fails:** Taremi's Primeira Liga top-scorer title was 2022-23 (May 2023), after the 2022 World Cup, not before.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** He won it in 2022-23, after the World Cup.
+
+### Row 31269 — Iran (easy) — FAIL: outdated club — Taremi no longer plays for Inter Milan
+**Q:** Which Iranian striker at the 2022 World Cup plays for Inter Milan? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Karim Ansarifard | Alireza Jahanbakhsh
+**Why it fails:** At the 2022 World Cup Taremi was at Porto; and the present-tense 'plays for Inter Milan' is outdated (he moved to Olympiacos in Aug 2025).
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Porto in 2022; Olympiacos as of 2026.
+
+### Row 31275 — Iran (easy) — FAIL: non-unique — Daei and Azmoun also have 80+ caps and 40+ goals
+**Q:** Which Iranian striker has over 80 caps and 40+ international goals? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Ali Daei | Alireza Jahanbakhsh
+**Why it fails:** Only criteria given are 'over 80 caps and 40+ international goals' — which also fit Ali Daei (149 caps, 109 goals) and Sardar Azmoun, both of whom are options. The answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Add a unique disambiguator (e.g. 'played for Porto then Inter').
+
+### Row 31309 — Iran (easy) — FAIL: outdated club — Taremi no longer plays for Inter Milan
+**Q:** Which Iranian striker was at Inter Milan during the 2026 World Cup cycle? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Karim Ansarifard
+**Why it fails:** The present-tense 'plays for Inter Milan' is outdated; Taremi left Inter for Olympiacos in Aug 2025.
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** As of 2026 he plays for Olympiacos.
+
+### Row 31316 — Iran (easy) — FAIL: outdated club + wrong stat — 'now at Inter' and '80 caps in 2022' both wrong
+**Q:** Which Iranian striker, now at Inter Milan, led their attack at the 2022 World Cup? **A:** Mehdi Taremi
+**Options:** Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh | Ali Daei
+**Why it fails:** Taremi no longer plays for Inter Milan (Olympiacos since Aug 2025), and he did not have 'over 80 caps' at the 2022 World Cup (~65 then).
+**Source:** https://en.wikipedia.org/wiki/Mehdi_Taremi
+**Remedy:** Olympiacos as of 2026; drop the 80-cap-in-2022 claim.
+
+### Row 31322 — Iran (easy) — FAIL: wrong timing — Ronaldo passed Daei's record in 2021, after the 2018 World Cup
+**Q:** Which Iranian striker's goal record was topped by Ronaldo before the 2018 World Cup? **A:** Ali Daei
+**Options:** Ali Daei | Mehdi Taremi | Karim Ansarifard | Sardar Azmoun
+**Why it fails:** Cristiano Ronaldo surpassed Ali Daei's 109-goal record in September 2021 — after, not before, the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Ali_Daei
+**Remedy:** Remove 'before the 2018 World Cup'; it happened in 2021.
+
+### Row 31326 — Iran (easy) — FAIL: wrong timing — Ronaldo passed Daei's record in 2021, not at the 2022 World Cup
+**Q:** Which Iranian striker's international goalscoring record was surpassed by Cristiano Ronaldo at the 2022 World Cup? **A:** Ali Daei
+**Options:** Ali Daei | Mehdi Taremi | Sardar Azmoun | Alireza Jahanbakhsh
+**Why it fails:** Ronaldo surpassed Daei's 109-goal record in a September 2021 qualifier, before the 2022 World Cup, not at the tournament.
+**Source:** https://en.wikipedia.org/wiki/Ali_Daei
+**Remedy:** Remove 'at the 2022 World Cup'; it happened in 2021.
+
+### Row 31343 — Iran (hard) — FAIL: unverified/false — Iran fielded European-developed players well before 2022
+**Q:** Which Iranian World Cup squad first featured a player from a European academy? **A:** 2022 World Cup squad
+**Options:** 2022 World Cup squad | 2018 World Cup squad | 2014 World Cup squad | 2010 World Cup squad
+**Why it fails:** Iran had European-academy/European-developed players in earlier squads (e.g. Saman Ghoddos, Daniel Davari, Steven Beitashour at 2014/2018), so '2022 first featured a European-academy player' is not supportable.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Drop — the claim cannot be verified and is likely false.
+
+### Row 31379 — Iran (easy) — FAIL: wrong manager — Queiroz, not Wilmots, led Iran at the 2019 Asian Cup
+**Q:** Which manager led Iran at the 2019 Asian Cup? **A:** Marc Wilmots
+**Options:** Marc Wilmots | Carlos Queiroz | Dragan Skočić | Amir Ghalenoei
+**Why it fails:** Carlos Queiroz managed Iran at the 2019 Asian Cup (Jan 2019) and resigned after the semi-final loss to Japan. Marc Wilmots was appointed afterwards (May 2019). Queiroz is one of the options.
+**Source:** https://en.wikipedia.org/wiki/Marc_Wilmots
+**Remedy:** Change the answer to Carlos Queiroz.
+
+### Row 31444 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which nation did Iran beat before losing the 2023 Asian Cup final? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31446 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which nation did Iran beat in the 2023 Asian Cup semi-final? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31453 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which nation did Iran lose to in the 2023 Asian Cup final? **A:** Qatar
+**Options:** Qatar | Japan | Saudi Arabia | South Korea
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31459 — Iran (medium) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which nation did Iran NOT play in the 2023 Asian Cup knockout stage? **A:** South Korea
+**Options:** South Korea | Japan | Qatar | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31462 — Iran (medium) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which nation eliminated Iran in the 2011 Asian Cup knockout stage? **A:** South Korea
+**Options:** South Korea | Japan | Qatar | Australia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31510 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Which player's free kick did Iran's Alireza Beiranvand save at the 2018 FIFA World Cup? **A:** Cristiano Ronaldo
+**Options:** Cristiano Ronaldo | Lionel Messi | Neymar | Kevin De Bruyne
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 31517 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which stage did Iran reach in the 2011 Asian Cup? **A:** Round of 16
+**Options:** Round of 16 | Quarter-finals | Semi-finals | Final
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31518 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Which star player did Iran's Alireza Beiranvand NOT save a free kick from at the 2018 World Cup? **A:** Lionel Messi
+**Options:** Lionel Messi | Cristiano Ronaldo | Gareth Bale | Harry Kane
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 31519 — Iran (easy) — FAIL: false event — Beiranvand saved Ronaldo's PENALTY, not a free kick
+**Q:** Which star's free kick did Iran's Alireza Beiranvand save at the 2018 World Cup? **A:** Cristiano Ronaldo
+**Options:** Cristiano Ronaldo | Lionel Messi | Neymar | Harry Kane
+**Why it fails:** At the 2018 World Cup (Iran 1-1 Portugal) Alireza Beiranvand saved a Cristiano Ronaldo PENALTY (53rd min), not a free kick. 'Free kick' mischaracterises the actual event.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_B
+**Remedy:** Change 'free kick' to 'penalty'.
+
+### Row 31531 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which team beat Iran in the 2011 Asian Cup round of 16? **A:** South Korea
+**Options:** South Korea | Japan | Australia | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31538 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which team did Iran beat in the 2023 Asian Cup semi-final? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31539 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which team did Iran beat in the 2023 Asian Cup semi-finals? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Australia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31540 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which team did Iran beat to reach the 2023 Asian Cup final? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | United Arab Emirates
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31552 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which team did Iran lose to in the 2023 Asian Cup final? **A:** Qatar
+**Options:** Qatar | Japan | South Korea | Saudi Arabia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31560 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which team did Iran NOT beat on their way to the 2023 Asian Cup final? **A:** Qatar
+**Options:** Qatar | Japan | South Korea | Uzbekistan
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31561 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Which team did Iran NOT face during their 2023 Asian Cup final run? **A:** South Korea
+**Options:** South Korea | Japan | Qatar | Uzbekistan
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31566 — Iran (easy) — FAIL: non-unique — USA, Argentina and Spain all beat Iran by under 4 goals
+**Q:** Which team did not beat Iran by at least 4 goals at a World Cup? **A:** United States
+**Options:** United States | England | Argentina | Spain
+**Why it fails:** Only England (6-2) ever beat Iran by 4+ at a World Cup; the USA (1-0), Argentina (1-0) and Spain (1-0) — all options — did NOT, so 'which did NOT beat by 4+' has three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Reword so only one option fits.
+
+### Row 31569 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which team eliminated Iran after they topped their 2011 Asian Cup group? **A:** South Korea
+**Options:** South Korea | Japan | Australia | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31570 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which team eliminated Iran from the 2011 Asian Cup? **A:** South Korea
+**Options:** South Korea | Japan | Australia | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31571 — Iran (medium) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which team eliminated Iran in the 2011 Asian Cup knockout stage? **A:** South Korea
+**Options:** South Korea | Japan | Australia | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31577 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which team knocked Iran out of the 2011 Asian Cup round of 16? **A:** South Korea
+**Options:** South Korea | Japan | Australia | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31578 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Which team knocked Iran out of the 2011 Asian Cup? **A:** South Korea
+**Options:** South Korea | Japan | Australia | Saudi Arabia
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31597 — Iran (hard) — FAIL: non-unique — Iran exited the group stage in 2014, 2018 AND 2022
+**Q:** Which two World Cups saw Iran eliminated in the group stage? **A:** 2014 and 2022
+**Options:** 2014 and 2022 | 2010 and 2018 | 2018 and 2022 | 2010 and 2014
+**Why it fails:** Iran were eliminated in the group stage at the 2014, 2018 and 2022 World Cups, so '2014 and 2022' is not unique — '2018 and 2022' (an option) is equally true.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_FIFA_World_Cup
+**Remedy:** Reword; Iran have never advanced past the group stage.
+
+### Row 31657 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** Why did Iran achieve their best Asian Cup result in 2019? **A:** Reached the semi-finals
+**Options:** Reached the semi-finals | Won the tournament | Finished as runners-up | Reached the quarter-finals
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 31667 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Why did Iran reach the 2023 Asian Cup final? **A:** Beat Japan in semi-final
+**Options:** Beat Japan in semi-final | Beat South Korea in semi-final | Beat Australia in semi-final | Beat Saudi Arabia in semi-final
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31669 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** Why did Iran set its Asian Cup best result in 2019? **A:** Reached the semi-finals
+**Options:** Reached the semi-finals | Won the tournament | Finished as runners-up | Reached the quarter-finals
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+### Row 31671 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Why did Iran's 2011 Asian Cup campaign end despite winning their group? **A:** Lost to South Korea
+**Options:** Lost to South Korea | Lost to Japan | Lost to Qatar | Lost to Uzbekistan
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31672 — Iran (easy) — FAIL: false stage — 2011 Asian Cup had no round of 16
+**Q:** Why did Iran's 2011 Asian Cup campaign end in the round of 16? **A:** Lost to South Korea
+**Options:** Lost to South Korea | Lost to Australia | Lost to Japan | Lost to Uzbekistan
+**Why it fails:** The 2011 AFC Asian Cup went straight from the group stage to the quarter-finals — there was NO round of 16. Iran won their group then lost 1-0 (a.e.t.) to South Korea in the QUARTER-FINAL, not the round of 16.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup_knockout_stage
+**Remedy:** Change 'round of 16' to 'quarter-finals'.
+
+### Row 31679 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Why did Iran's 2023 Asian Cup campaign end? **A:** Lost final to Qatar
+**Options:** Lost final to Qatar | Lost final to Japan | Lost final to South Korea | Lost final to Saudi Arabia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31680 — Iran (easy) — FAIL: false rounds — 2023 Asian Cup (Iran beat Japan in the QF, lost the SF to Qatar; no final)
+**Q:** Why did Iran's 2023 Asian Cup campaign finish as runners-up? **A:** Lost final to Qatar
+**Options:** Lost final to Qatar | Lost final to Japan | Lost final to Australia | Lost final to Saudi Arabia
+**Why it fails:** At the 2023 AFC Asian Cup (played Jan-Feb 2024) Iran beat Japan 2-1 in the QUARTER-FINAL, then lost the SEMI-FINAL 3-2 to Qatar. Iran did NOT reach the final (the final was Qatar 3-1 Jordan), so any 'beat Japan in the semi-final', 'lost the final to Qatar', 'reached/runners-up in the final' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_knockout_stage
+**Remedy:** Japan = quarter-final win; Qatar = semi-final loss; Iran did not play the final.
+
+### Row 31694 — Iran (easy) — FAIL: false — 2019 is NOT Iran's best Asian Cup result
+**Q:** Why was Iran's 2019 Asian Cup run their best tournament result? **A:** Reached the semi-finals
+**Options:** Reached the semi-finals | Won the final | Reached the quarter-finals | Won the group stage
+**Why it fails:** Iran's best Asian Cup result is WINNING the title three times (1968, 1972, 1976 — the only side to win three in a row). The 2019 semi-final (lost 0-3 to Japan) is far from their best-ever finish, and 2019 was not the first time they reached the semis.
+**Source:** https://en.wikipedia.org/wiki/Iran_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'best-ever' framing; Iran's best Asian Cup result is three titles (1968/72/76).
+
+
+---
+
+## Iraq — rows 31699–32567 (liveness on QA_PASSED.md rows) — 112 FAIL
+
+Recurring Iraq defect clusters (112 fails of 537 QA_PASSED candidates):
+1. **Younis Mahmoud "all-time top scorer / 70+ goals"** (32) — FALSE; Iraq's record scorer is **Hussein Saeed (≈78)**; Younis Mahmoud had **57** (2nd). Hussein Saeed is frequently a distractor.
+2. **Mohanad Ali "plays in the Saudi Pro League"** (42) — FALSE; he plays for **Dibba (UAE Pro League)** (ex-Al-Shorta/Iraq, Al-Duhail/Qatar); no Saudi spell.
+3. **"Ahmed Ibrahim" experienced midfielder** (9) — no such verifiable player in Iraq's squad. UNVERIFIED → FAIL.
+4. **"One manager / Casas the sole 2026 manager"** (7) — FALSE; Iraq had **two** (Casas, sacked May 2025; then **Graham Arnold**, who completed qualification).
+5. **West-Asian-rival non-unique** (7) — all options (Saudi/Iran/Qatar/Jordan/UAE) are West Asian nations Iraq plays.
+6. **Zico "appointed 2012"** (3) — he was appointed Aug **2011** (managed 2011-2012).
+7. **"Qualified directly through AFC"** (2) — FALSE; Iraq qualified via the **inter-confederation play-off** (beat Bolivia); 'won the play-off' is sometimes the correct distractor.
+8. **"First Gulf Cup hosting in 2023"** (1) — FALSE; Iraq also hosted (and won) the **1979** Gulf Cup; 2023 was first in 44 years.
+9. **Other non-unique / self-referential** (9) — all four options are Iraqi Premier League clubs; "failed in which year (2010-2022)" (all four); Al-Shorta absent from Saudi/Jordan/Kuwait alike; "like Iraq → Iraq"; "did not play in a 2010s SF"; "hosted at home" (UAE 2019/Kuwait 2024 too); "primary sport not football" (India/Australia/Canada).
+
+### Row 31708 — Iraq (medium) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Before the 2026 qualifiers, when did Iraqi striker Younis Mahmoud become his nation's all-time top scorer? **A:** Before 2026
+**Options:** Before 2026 | Before 2018 | Before 2014 | Before 2010
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 31710 — Iraq (easy) — FAIL: non-unique / wrong — others also did not manage the 2014 qualifiers
+**Q:** During Iraq's 2014 World Cup qualifiers, which manager did NOT lead the team? **A:** Zico
+**Options:** Zico | Jesús Casas | Jorvan Vieira | Radhi Shenaishil
+**Why it fails:** Jorvan Vieira (2007) and Jesús Casas (2023+) also did NOT manage Iraq during the 2014 qualifiers, so 'Zico' is not the unique answer; and Zico in fact coached during the 2014 cycle (2011-2012).
+**Source:** https://en.wikipedia.org/wiki/List_of_Iraq_national_football_team_managers
+**Remedy:** Reword for a unique answer.
+
+### Row 31746 — Iraq (medium) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** How many managers did Iraq have during the 2026 FIFA World Cup qualifiers? **A:** One manager
+**Options:** One manager | Two managers | Three managers | Four managers
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31747 — Iraq (hard) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** How many managers did Iraq have during the 2026 World Cup qualification? **A:** One
+**Options:** One | Three | Four | Five
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31748 — Iraq (medium) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** How many managers did Iraq have in their 2026 World Cup qualifying campaign? **A:** One manager
+**Options:** One manager | Two managers | Three managers | Four managers
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31749 — Iraq (medium) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** How many managers did Iraq use in the 2026 World Cup qualifiers? **A:** One
+**Options:** One | Two | Three | Four
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31750 — Iraq (hard) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** How many managers did Iraq use in their 2026 World Cup qualification campaign? **A:** One manager
+**Options:** One manager | Two managers | Three managers | Four managers
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31772 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** In 2026, which Iraqi key attacker plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Amir Al-Ammari | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 31773 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** In 2026, which league did Iraq's Mohanad Ali NOT play in? **A:** Iraqi Premier League
+**Options:** Iraqi Premier League | Saudi Pro League | Qatar Stars League | UAE Pro League
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 31786 — Iraq (medium) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** In the 2026 FIFA World Cup cycle, how many managers did Iraq have? **A:** One manager
+**Options:** One manager | Two managers | Three managers | Four managers
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31788 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** In the 2026 World Cup qualifiers, which Iraqi player's club path reflects the nation's rebuilt youth system? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Jiloan Hamad | Ayman Hussein
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 31790 — Iraq (medium) — FAIL: wrong count — Iraq had TWO managers in the 2026 cycle, not one
+**Q:** In their 2026 World Cup qualifiers, Iraq's manager Jesús Casas was their coach for how many matches? **A:** All qualifiers
+**Options:** All qualifiers | Half the qualifiers | Two qualifiers | One qualifier
+**Why it fails:** Iraq used two managers during the 2026 qualifying cycle: Jesús Casas (sacked May 2025 after a loss to Palestine) and Graham Arnold, who took over and completed qualification (UAE 5th round + the Bolivia play-off). 'One manager / Casas was the sole manager / coached all qualifiers' is false.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Correct to two managers (Casas, then Arnold).
+
+### Row 31817 — Iraq (medium) — FAIL: wrong year — Zico was appointed in 2011, not 2012
+**Q:** In which year did Brazil's Zico become manager of Iraq? **A:** 2012
+**Options:** 2012 | 2010 | 2014 | 2016
+**Why it fails:** Zico was appointed Iraq manager in August 2011 (first match 2 Sept 2011) and resigned in November 2012. So 'appointed / became manager in 2012' is false (he was appointed in 2011), though he did manage during 2012.
+**Source:** https://en.wikipedia.org/wiki/List_of_Iraq_national_football_team_managers
+**Remedy:** His appointment was 2011 (tenure 2011-2012).
+
+### Row 31848 — Iraq (medium) — FAIL: non-unique — Iraq failed to qualify for all four of 2010-2022
+**Q:** Iraq failed to qualify for the World Cup in which year between 2010 and 2022? **A:** 2022
+**Options:** 2022 | 2010 | 2014 | 2018
+**Why it fails:** Iraq failed to qualify for 2010, 2014, 2018 AND 2022, so every option is a year they failed — '2022' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Iraq_at_the_FIFA_World_Cup
+**Remedy:** Reword so only one year fits.
+
+### Row 31892 — Iraq (easy) — FAIL: non-unique — Al-Shorta is absent from the Saudi, Jordanian and Kuwaiti leagues alike
+**Q:** Iraq's top league features Al-Quwa Al-Jawiya. Which nation's top league does NOT feature Al-Shorta? **A:** Saudi Arabia
+**Options:** Saudi Arabia | Iraq | Jordan | Kuwait
+**Why it fails:** Al-Shorta is an Iraqi Premier League club, so it is not in the Saudi, Jordanian OR Kuwaiti leagues — three options satisfy 'does NOT feature Al-Shorta'.
+**Source:** https://en.wikipedia.org/wiki/Iraq_Stars_League
+**Remedy:** Reword for a unique answer.
+
+### Row 31907 — Iraq (medium) — FAIL: wrong year — Zico was appointed in 2011, not 2012
+**Q:** When did Brazil's Zico manage Iraq's World Cup team? **A:** In 2012
+**Options:** In 2012 | In 2010 | In 2014 | In 2016
+**Why it fails:** Zico was appointed Iraq manager in August 2011 (first match 2 Sept 2011) and resigned in November 2012. So 'appointed / became manager in 2012' is false (he was appointed in 2011), though he did manage during 2012.
+**Source:** https://en.wikipedia.org/wiki/List_of_Iraq_national_football_team_managers
+**Remedy:** His appointment was 2011 (tenure 2011-2012).
+
+### Row 31943 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which 2026 Iraq player is based in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Ahmed Yasin | Ayman Hussein
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32015 — Iraq (easy) — FAIL: self-referential — the answer is Iraq itself
+**Q:** Which AFC nation, like Iraq in 2026, qualified for a first World Cup in decades? **A:** Iraq
+**Options:** Iraq | Saudi Arabia | Japan | South Korea
+**Why it fails:** The question asks which AFC nation, 'like Iraq', qualified for a first World Cup in decades — and the answer given is Iraq itself, which cannot be 'like Iraq'.
+**Source:** https://en.wikipedia.org/wiki/Iraq_at_the_FIFA_World_Cup
+**Remedy:** Name a genuinely different nation, or drop.
+
+### Row 32093 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which experienced Iraqi midfielder featured in 2022 World Cup qualifying? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Ahmed Radhi | Ali Adnan | Justin Meram
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32094 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which experienced Iraqi midfielder featured in 2026 World Cup qualifying? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Mohanad Ali | Ali Adnan | Justin Meram
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32095 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which experienced Iraqi midfielder helped in 2026 World Cup qualifying? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Younis Mahmoud | Ali Adnan | Justin Meram
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32097 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which experienced midfielder was in Iraq's 2026 World Cup qualifying squad? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Mohanad Ali | Ali Adnan | Justin Meram
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32110 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker debuted in Saudi Pro League before 2026 World Cup qualifiers? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Amjad Attwan | Ali Adnan
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32114 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker from the Saudi Pro League was key for their 2026 World Cup squad? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Omar Abdulrahman | Son Heung-min | Ali Mabkhout
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32116 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker in the Saudi Pro League is their key man for 2026 World Cup qualifiers? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Al-Hamadi | Aymen Hussein | Hussein Ali
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32119 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Amir Al-Ammari | Ahmed Farhan
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32121 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker, a key player for the 2026 World Cup cycle, plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Younis Mahmoud | Aymen Hussein | Ahmed Ibrahim
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32122 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker, playing in Saudi Arabia, is key for 2026 World Cup qualifiers? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Aymen Hussein | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32123 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker, playing in the Saudi Pro League, is key for the 2026 World Cup cycle? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Younis Mahmoud | Aymen Hussein | Ahmed Ibrahim
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32124 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq attacker, playing in the Saudi Pro League, is their key offensive threat? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Amir Al-Ammari | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32130 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq forward in 2026 World Cup qualifiers does NOT play in Iraq or Gulf leagues? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Amjad Attwan | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32132 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq forward plays in the Saudi Pro League and is their key attacker for 2026 World Cup qualifying? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Jiloan Hamad
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32133 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq forward plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Al-Hamadi | Hussein Ali
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32136 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq key attacker for 2026 World Cup qualifying plays in Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32137 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq key attacker played in the Saudi Pro League for 2026 World Cup qualifying? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Jiloan Hamad
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32138 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq key attacker, preparing for the 2026 World Cup, plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Al-Hamadi | Jiloan Hamad
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32155 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which Iraq midfielder is an experienced veteran in their 2026 World Cup squad? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Ahmed Radhi | Justin Meram | Ali Adnan
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32156 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player became their all-time leading scorer before the 2026 World Cup? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Saeed | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32157 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player became their all-time top scorer before the 2010 World Cup? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Hussein Saeed | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32160 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player has scored over 70 international goals? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Ali | Ahmed Yasin
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32161 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player holds the national record for most international goals? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Ahmed Radhi | Hussein Saeed
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32163 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq player is a key attacker in the Saudi Pro League for the 2026 World Cup? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ayman Hussein | Ahmed Yasin | Ali Adnan
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32164 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq player is a key attacker in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Al-Hamadi | Aymen Hussein | Amir Al-Ammari
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32166 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player is the nation's all-time leading goalscorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Hussein Saeed | Ahmed Radhi | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32167 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player is the nation's all-time leading scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Hussein Saeed | Ahmed Radhi | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32168 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player is the national team's all-time leading scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Saeed | Ahrad Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32169 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player is their all-time leading scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Hussein Saeed | Ahmed Radhi | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32170 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player is their all-time top scorer in international football? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Ahmed Radhi | Hussein Saeed
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32177 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq player, key for 2026 World Cup, plays in Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32178 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq player, scoring in 2026 qualifiers, is a Saudi Pro League attacker? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ahmed Yasin | Amir Al-Ammari
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32179 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq player, with over 70 goals, is his nation's all-time top scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Hussein Saeed | Ali Adnan | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32181 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq player's inclusion in the 2026 squad symbolizes their 40-year World Cup return? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Jalal Al-Hachim | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32182 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which Iraq rival is a West Asian nation they compete against? **A:** Saudi Arabia
+**Options:** Saudi Arabia | Iran | Qatar | Jordan
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32186 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraq star was playing in the Saudi Pro League during 2026 World Cup qualifying? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Aymen Hussein | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32196 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq striker scored over 70 goals before the 2014 World Cup qualifiers? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Aymen Hussein | Justin Meram
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32197 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq striker scored over 70 goals but never reached a FIFA World Cup? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Mohanad Ali | Aymen Hussein
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32198 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq striker scored over 70 goals for the national team? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Mohanad Ali | Aymen Hussein | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32199 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq striker scored over 70 international goals for his country? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Aymen Hussein | Justin Meram
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32200 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraq striker scored over 70 international goals? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Mohanad Ali | Aymen Hussein
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32205 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi 2026 World Cup attacker plays in Saudi Arabia's league? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Younis Mahmoud | Aymen Hussein | Ahmed Radhi
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32208 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker for the 2026 cycle plays in Saudi Arabia? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Younis Mahmoud | Aymen Hussein | Justin Meram
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32210 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker for the 2026 qualifiers plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Al-Hamadi | Aymen Hussein | Amir Al-Ammari
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32212 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker in the Saudi Pro League is their key man for 2026? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Omar Al Somah | Salman Al-Faraj | Sebastián Soria
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32213 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker in the Saudi Pro League was key for their 2026 World Cup squad? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Amir Al-Ammari | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32217 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker played in the Saudi Pro League during the 2026 World Cup qualifiers? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32219 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker scored in the 2026 World Cup qualifiers while playing in Saudi Arabia? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Justin Meram | Ahmed Ibrahim
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32224 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker, playing in Saudi Arabia, is key for their 2026 World Cup campaign? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Ayman Hussein | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32225 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi attacker's Saudi Pro League form boosts 2026 World Cup hopes? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Hussein Ali | Ayman Hussein
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32236 — Iraq (easy) — FAIL: non-unique — all four options are Iraqi Premier League clubs
+**Q:** Which Iraqi club competes in the top domestic league? **A:** Al-Quwa Al-Jawiya
+**Options:** Al-Quwa Al-Jawiya | Al-Zawraa SC | Al-Shorta SC | Al-Talaba SC
+**Why it fails:** Al-Quwa Al-Jawiya, Al-Zawraa, Al-Shorta and Al-Talaba are ALL Iraqi Premier League clubs, so every option 'competes in the top domestic league'.
+**Source:** https://en.wikipedia.org/wiki/Iraq_Stars_League
+**Remedy:** Use foreign clubs as distractors for a unique answer.
+
+### Row 32241 — Iraq (easy) — FAIL: non-unique — all four options are Iraqi Premier League clubs
+**Q:** Which Iraqi club plays in the nation's top domestic league? **A:** Al-Shorta
+**Options:** Al-Shorta | Al-Quwa Al-Jawiya | Al-Zawraa | Al-Talaba
+**Why it fails:** Al-Shorta, Al-Quwa Al-Jawiya, Al-Zawraa and Al-Talaba are ALL Iraqi Premier League clubs, so every option 'plays in the top domestic league'.
+**Source:** https://en.wikipedia.org/wiki/Iraq_Stars_League
+**Remedy:** Use foreign clubs as distractors for a unique answer.
+
+### Row 32262 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi forward from the Saudi Pro League led their 2026 World Cup qualifying attack? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Aymen Hussein | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32263 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi forward is the key attacker playing in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Aymen Hussein | Amir Al-Ammari
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32264 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi forward is the national team's all-time leading scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Saeed | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32270 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi key attacker played in Saudi Arabia before the 2023 Asian Cup? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Ali Adnan | Aymen Hussein | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32272 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi key attacker plays his club football in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32276 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi key attacker, playing in Saudi Arabia, leads their 2026 World Cup hopes? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Ahmed Yasin
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32280 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which Iraqi midfielder anchored their 2026 World Cup qualifying campaign? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Ali Adnan | Justin Meram | Ahmed Radhi
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32281 — Iraq (easy) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which Iraqi midfielder has been an experienced part of the squad? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Younis Mahmoud | Justin Meram | Ali Adnan
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32282 — Iraq (medium) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which Iraqi midfielder was a key veteran during 2022 World Cup qualification? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Younis Mahmoud | Ali Adnan | Justin Meram
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32283 — Iraq (medium) — FAIL: unverified player — no Iraqi midfielder 'Ahmed Ibrahim' in the squad
+**Q:** Which Iraqi midfielder was in the 2026 World Cup qualification squad? **A:** Ahmed Ibrahim
+**Options:** Ahmed Ibrahim | Justin Meram | Ali Adnan | Mohanad Ali
+**Why it fails:** No Iraqi midfielder named 'Ahmed Ibrahim' can be verified in Iraq's 2026 squad (their midfielders include Amir Al-Ammari, Zidane Iqbal, Ibrahim Bayesh and Ahmed Qasem). UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Replace with a real, verifiable Iraqi midfielder.
+
+### Row 32289 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player had over 70 goals by the 2026 World Cup qualifiers? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Ali | Ahmed Yasin
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32290 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player had over 70 goals in his international career? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Hussein Saeed | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32291 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player had over 70 international goals before the 2026 qualifiers? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Daei | Tim Cahill | Sunil Chhetri
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32292 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player has scored over 70 international goals? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Daei | Tim Cahill | Sunil Chhetri
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32293 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player held the national scoring record during the 2018 World Cup qualifiers? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Hussein Saeed | Ahmed Radhi | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32294 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player held the national team scoring record before the 2018 World Cup? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Saeed | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32295 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player holds his nation's all-time scoring record? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Daei | Tim Cahill | Sunil Chhetri
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32296 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player holds the national team's all-time scoring record? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Ali Adnan | Hussein Saeed
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32300 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi player is the key attacker playing in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ahmed Yasin | Ali Adnan
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32301 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player is the national team's all-time leading scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Saeed | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32302 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player retired as the national team's all-time top scorer? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hawar Mulla Mohammed | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32303 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player scored over 70 goals internationally? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ali Adnan | Hussein Saeed | Ahmed Radhi
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32304 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player scored over 70 international goals before 2026? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Hussein Saeed | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32307 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi player was his nation's all-time top scorer during the 2014 World Cup qualifiers? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Hussein Saeed | Ahmed Radhi | Ali Adnan
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32337 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi striker for the 2026 cycle plays in Saudi Arabia? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Younis Mahmoud | Aymen Hussein | Justin Meram
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32338 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi striker for the 2026 cycle plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Younis Mahmoud | Ahmed Radhi
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32339 — Iraq (easy) — FAIL: wrong club — Mohanad Ali does not play in the Saudi Pro League
+**Q:** Which Iraqi striker for the 2026 World Cup qualifiers plays in the Saudi Pro League? **A:** Mohanad Ali
+**Options:** Mohanad Ali | Aymen Hussein | Ali Adnan | Jiloan Hamad
+**Why it fails:** Mohanad Ali does NOT play in the Saudi Pro League — as of 2025-26 he plays for Dibba Al-Fujairah in the UAE Pro League (previously Al-Shorta in Iraq and Al-Duhail in Qatar). He has no Saudi Pro League spell, so any 'plays in the Saudi Pro League' (or 'does not play in a Gulf league') claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohanad_Ali
+**Remedy:** He plays in the UAE Pro League (Dibba), a Gulf league; drop the Saudi claim.
+
+### Row 32347 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi striker scored over 70 goals, more than Ahmed Radhi's World Cup total? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Mohanad Ali | Aymen Hussein | Ahmed Ibrahim
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32348 — Iraq (easy) — FAIL: wrong player/stat — Iraq's all-time top scorer is Hussein Saeed, not Younis Mahmoud
+**Q:** Which Iraqi striker scored over 70 international goals for Iraq? **A:** Younis Mahmoud
+**Options:** Younis Mahmoud | Ahmed Radhi | Aymen Hussein | Mohanad Ali
+**Why it fails:** Iraq's all-time leading scorer is Hussein Saeed (78 international goals); Younis Mahmoud scored 57 and is second — he never reached 'over 70'. Where Hussein Saeed is an option, he is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Hussein_Saeed
+**Remedy:** Use Hussein Saeed (≈78 goals) as the record scorer; Younis Mahmoud had 57.
+
+### Row 32363 — Iraq (medium) — FAIL: wrong year — Zico was appointed in 2011, not 2012
+**Q:** Which manager did Iraq appoint in 2012 during World Cup qualification preparations? **A:** Zico
+**Options:** Zico | Jesús Casas | Jorvan Vieira | Dick Advocaat
+**Why it fails:** Zico was appointed Iraq manager in August 2011 (first match 2 Sept 2011) and resigned in November 2012. So 'appointed / became manager in 2012' is false (he was appointed in 2011), though he did manage during 2012.
+**Source:** https://en.wikipedia.org/wiki/List_of_Iraq_national_football_team_managers
+**Remedy:** His appointment was 2011 (tenure 2011-2012).
+
+### Row 32389 — Iraq (easy) — FAIL: non-unique — Iraq's only 2010s Asian Cup SF was 2015 (vs South Korea)
+**Q:** Which nation did Iraq NOT play in a 2010s Asian Cup semi-final? **A:** Japan
+**Options:** Japan | South Korea | Saudi Arabia | Iran
+**Why it fails:** Iraq's only 2010s Asian Cup semi-final was 2015 against South Korea; they did not play Japan, Saudi Arabia OR Iran in a 2010s semi-final, so three options satisfy 'did NOT play'.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits.
+
+### Row 32410 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which nation is a West Asian rival of Iraq's national team? **A:** Saudi Arabia
+**Options:** Saudi Arabia | Iran | Qatar | Jordan
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32416 — Iraq (medium) — FAIL: non-unique — several listed nations hosted a major tournament at home
+**Q:** Which nation, like Iraq in 2023, hosted a major tournament at home? **A:** Qatar in 2022
+**Options:** Qatar in 2022 | Saudi Arabia in 2027 | United Arab Emirates in 2019 | Kuwait in 2024
+**Why it fails:** Besides Qatar (2022 World Cup), the UAE hosted the 2019 AFC Asian Cup at home and Kuwait hosted the 2024 Gulf Cup — multiple options 'hosted a major tournament at home'.
+**Source:** https://en.wikipedia.org/wiki/2023_Arabian_Gulf_Cup
+**Remedy:** Reword so only one option fits.
+
+### Row 32432 — Iraq (easy) — FAIL: non-unique — football is not the primary sport in several listed nations
+**Q:** Which nation's primary sport is NOT football like Iraq's? **A:** India
+**Options:** India | Australia | Canada | Japan
+**Why it fails:** Football/soccer is not the primary sport in India (cricket), Australia (Australian rules/cricket) OR Canada (ice hockey) — three options have a non-football primary sport.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits.
+
+### Row 32465 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which West Asian nation does Iraq compete against in World Cup qualifiers? **A:** Saudi Arabia
+**Options:** Saudi Arabia | United Arab Emirates | Qatar | Oman
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32467 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which West Asian nation is a regular Iraq rival in FIFA World Cup qualifiers? **A:** Saudi Arabia
+**Options:** Saudi Arabia | Qatar | United Arab Emirates | Syria
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32470 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which West Asian nation is a rival of Iraq? **A:** Saudi Arabia
+**Options:** Saudi Arabia | United Arab Emirates | Qatar | Oman
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32472 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which West Asian nations are Iraq's football rivals? **A:** Iran, Saudi Arabia, Jordan
+**Options:** Iran, Saudi Arabia, Jordan | Kuwait,  Qatar,  UAE | Syria, Lebanon, Oman | Yemen, Palestine
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32475 — Iraq (easy) — FAIL: non-unique — all the options are West Asian nations Iraq plays
+**Q:** Which West Asian rival does Iraq compete against? **A:** Iran
+**Options:** Iran | Saudi Arabia | United Arab Emirates | Qatar
+**Why it fails:** All of the listed options are West Asian nations Iraq competes against (e.g. Saudi Arabia, Iran, Qatar, Jordan, UAE), so 'which West Asian nation/rival' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Iraq_national_football_team
+**Remedy:** Reword so only one option fits (e.g. tie it to a specific match).
+
+### Row 32487 — Iraq (medium) — FAIL: false — 2023 was not Iraq's first time hosting the Gulf Cup
+**Q:** Which year did Iraq host the Gulf Cup for the first time? **A:** 2023
+**Options:** 2023 | 2018 | 2014 | 2021
+**Why it fails:** Iraq also hosted (and won) the 1979 Gulf Cup in Baghdad. The 2023 Basra edition was their first hosting in 44 years, NOT their first ever.
+**Source:** https://en.wikipedia.org/wiki/2023_Arabian_Gulf_Cup
+**Remedy:** It was Iraq's first hosting since 1979, not their first time.
+
+### Row 32500 — Iraq (easy) — FAIL: false — Iraq did NOT qualify directly; they won the inter-confederation play-off
+**Q:** Why did Iraq end their 40-year World Cup drought in 2026? **A:** Successful AFC qualification
+**Options:** Successful AFC qualification | Winning the Asian Cup | A FIFA special invitation | Winning a playoff tournament
+**Why it fails:** Iraq did not qualify directly through AFC qualification: they finished 4th-round runner-up (behind Saudi Arabia), beat UAE in the 5th round, then WON the inter-confederation play-off vs Bolivia 2-1 (31 Mar 2026). 'Qualified directly through AFC' is false; where 'won the inter-confederation play-off' is an option, that is correct.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Iraq qualified via the inter-confederation play-off (beat Bolivia), not directly.
+
+### Row 32534 — Iraq (medium) — FAIL: false — Iraq did NOT qualify directly; they won the inter-confederation play-off
+**Q:** Why did Iraq's 2026 World Cup qualification end a 40-year drought? **A:** Successful AFC qualification campaign
+**Options:** Successful AFC qualification campaign | Host nation automatic entry | Won inter-confederation playoff | Received a continental wildcard
+**Why it fails:** Iraq did not qualify directly through AFC qualification: they finished 4th-round runner-up (behind Saudi Arabia), beat UAE in the 5th round, then WON the inter-confederation play-off vs Bolivia 2-1 (31 Mar 2026). 'Qualified directly through AFC' is false; where 'won the inter-confederation play-off' is an option, that is correct.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Iraq qualified via the inter-confederation play-off (beat Bolivia), not directly.
+
+
+## Jordan — rows 36398–37773 (liveness on QA_PASSED.md rows) — 159 FAIL
+
+### Row 36400 — Jordan (easy) — FAIL: self-referential — stem names Jordan, answer is Jordan
+**Q:** After Jordan's 2022 World Cup qualifiers, which AFC nation's greatest achievement was reaching the 2023 Asian Cup final? **A:** Jordan
+**Options:** Jordan | Qatar | Saudi Arabia | United Arab Emirates
+**Why it fails:** The stem ('After Jordan's 2022 World Cup qualifiers, which AFC nation…') already names Jordan, so the answer (Jordan) is given away by the question itself — a self-referential giveaway. (Factually Jordan is the only option to have reached the 2023 Asian Cup final — Qatar won it, Saudi/UAE did not reach it — but the framing is the defect.)
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Reword so the subject nation is not named in the stem, or make the answer a different nation.
+
+### Row 36401 — Jordan (medium) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** After Jordan's 2026 qualification, which forward plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Mahmoud Al-Mardi
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). None of the four Jordanian options plays for Young Boys (Al-Taamari is at Metz/France; Olwan and Al-Mardi are not at Young Boys), so the premise 'which forward plays for Young Boys' has no valid answer.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Drop the Young Boys premise; tie the player to his actual club (Al-Naimat → Al-Arabi), or ask about a Jordanian who genuinely plays in Europe (e.g. Al-Taamari).
+
+### Row 36453 — Jordan (hard) — FAIL: UNVERIFIED→FAIL — no evidence 'Al-Momani' managed Jordan's 2018 qualifying
+**Q:** Before the 2026 cycle, when did Jordan's manager Al-Momani lead earlier World Cup qualification? **A:** The 2018 cycle
+**Options:** The 2018 cycle | The 2014 cycle | The 2022 cycle | The 2010 cycle
+**Why it fails:** The premise that 'Jordan's manager Al-Momani led earlier (2018-cycle) World Cup qualification' cannot be verified — there is no record of a Mohammad Al-Momani managing Jordan's senior national team during the 2018 World Cup qualifying campaign. With the premise unconfirmed, the answer is unverifiable.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Confirm who actually managed Jordan's 2018 qualifying campaign and rebuild the question around the verified name, or drop it.
+
+### Row 36483 — Jordan (medium) — FAIL: false — Jordan has had coaches of many nationalities, not two
+**Q:** For their 2026 World Cup qualifying campaign, how many different nationalities have managed Jordan? **A:** Two nationalities
+**Options:** Two nationalities | One nationality | Three nationalities | Four nationalities
+**Why it fails:** Jordan's managers span many nationalities — Jordanian plus Portuguese (Vingada), Iraqi (Adnan Hamad), Egyptian (Hossam Hassan), English (Wilkins, Redknapp), Belgian (Put, Borkelmans), Emirati (Mesfer) and Moroccan (Ammouta) — far more than two. The 'local vs foreign' binary used in nearby rows is fine, but 'two nationalities' is false.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the 'both local and foreign' framing, or count the actual nationalities (>4).
+
+### Row 36496 — Jordan (medium) — FAIL: false premise — no Swiss-based player; Al-Naimat is not at Young Boys
+**Q:** How many Swiss-based players were in Jordan's 2026 World Cup squad? **A:** One player
+**Options:** One player | Two players | Three players | Zero players
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys. There is no Young Boys / Swiss-based player in Jordan's 2026 squad, so 'one Swiss-based player' has no basis.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Drop the Swiss-club premise; it stems from the incorrect Al-Naimat/Young Boys claim.
+
+### Row 36511 — Jordan (easy) — FAIL: UNVERIFIED→FAIL — vague unsourced narrative claim
+**Q:** In 2026, which Jordan squad feature shows recent major improvement? **A:** Squad depth
+**Options:** Squad depth | Goalkeeping quality | Set-piece tactics | Attack speed
+**Why it fails:** Singling out 'squad depth' as the one feature showing 'recent major improvement' (over goalkeeping, set-pieces, attack speed) is a subjective, unsourced narrative judgement with no authoritative basis.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a verifiable fact (e.g. peak FIFA ranking, qualification result).
+
+### Row 36512 — Jordan (medium) — FAIL: false/unverifiable manager — no 'Al-Momani' managed Jordan
+**Q:** In a 2018 World Cup qualifier, which Jordan manager oversaw their earlier qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Vital Borkelmans | Adnan Hamad
+**Why it fails:** Jordan's 2018-cycle managers were Ray Wilkins, Paul Put, Abdullah Abu Zema, Harry Redknapp, Abdullah Mesfer and Jamal Abu-Abed. There is no record of a Mohammad Hussein Al-Momani ever managing Jordan's senior team.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a real manager (e.g. the actual 2018-cycle coach) and rebuild the question.
+
+### Row 36515 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** In Jordan's 2026 FIFA World Cup squad, which forward plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys. None of the four options plays for Young Boys, so the premise has no valid answer.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie the player to his actual club, or ask about a Jordanian genuinely playing in Europe (e.g. Al-Taamari at Metz).
+
+### Row 36518 — Jordan (easy) — FAIL: false — 2010 qualifying managed by Vingada, not 'Al-Momani'
+**Q:** In the 2010 FIFA World Cup qualifiers, which Jordan manager led the team's campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** Jordan's 2010 World Cup qualifying was managed by Nelo Vingada (Portugal); no Mohammad Hussein Al-Momani ever managed Jordan. Of the distractors, Adnan Hamad and Ray Wilkins are real Jordan managers but from later periods.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real 2010-cycle manager (Vingada).
+
+### Row 36526 — Jordan (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** In the 2023 Asian Cup final, Jordan lost to Qatar by what scoreline? **A:** 03-Jan
+**Options:** 03-Jan | 2-0 | 2-1 | 1-0
+**Why it fails:** The answer cell reads '03-Jan', an Excel date-corruption of the scoreline 3-1 (Qatar beat Jordan 3-1 in the 2023 Asian Cup final). The rendered answer is therefore broken/unreadable.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Restore the answer to '3-1' and flag the dataset for a date-corruption sweep.
+
+### Row 36536 — Jordan (easy) — FAIL: explanation contradicts answer / non-unique
+**Q:** In the 2023 Asian Cup, Jordan's 2-0 semi-final win over South Korea came after which earlier tournament stage? **A:** The group stage
+**Options:** The group stage | The knockout stage | The quarter-finals | The round of 16
+**Why it fails:** The marked answer is 'the group stage', but the explanation justifies the quarter-finals ('the semi-final directly follows the quarter-finals'). Moreover Jordan's 2023 SF was preceded by the group stage, round of 16 AND quarter-finals — several options are all 'earlier stages', so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Ask specifically for the stage immediately before the semi-final (quarter-final) and align the explanation, or reword to make one option uniquely correct.
+
+### Row 36542 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** In the 2026 World Cup qualifiers, which Jordan star plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Almoez Ali | Akram Afif
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys. The distractors Almoez Ali and Akram Afif are Qatari internationals, not Jordanian, so they are invalid options as well.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie the player to his real club; replace the non-Jordanian distractors.
+
+### Row 36545 — Jordan (easy) — FAIL: false premise — Uruguay is a CONMEBOL team, not AFC
+**Q:** In their 2014 World Cup playoff, which AFC team did Jordan lose to? **A:** Uruguay
+**Options:** Uruguay | Mexico | New Zealand | Costa Rica
+**Why it fails:** The stem asks 'which AFC team did Jordan lose to' in the 2014 playoff, but Jordan lost to Uruguay, a South American (CONMEBOL) side — the 2014 intercontinental playoff was AFC v CONMEBOL. None of the options is an AFC team, so the premise is false.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Drop the 'AFC team' descriptor (it was an intercontinental playoff vs CONMEBOL's Uruguay).
+
+### Row 36600 — Jordan (medium) — FAIL: UNVERIFIED→FAIL — no confirmed senior WAFF Championship hosted by Jordan in 2024
+**Q:** In which year did Jordan host the WAFF Championship? **A:** 2024
+**Options:** 2024 | 2022 | 2023 | 2025
+**Why it fails:** The 2024 WAFF events were the Women's Championship (hosted by Saudi Arabia) and youth tournaments (e.g. U-16 in Zarqa); there is no confirmed senior men's WAFF Championship hosted by Jordan in 2024. The claim is unverifiable as stated.
+**Source:** https://en.wikipedia.org/wiki/WAFF_Championship
+**Remedy:** Confirm the actual year/edition Jordan hosted the senior WAFF Championship, or drop the question.
+
+### Row 36635 — Jordan (easy) — FAIL: self-referential — stem names Jordan, answer is Jordan
+**Q:** Jordan lost a 2014 playoff to Uruguay. Which AFC team also lost a playoff? **A:** Jordan
+**Options:** Jordan | Oman | Bahrain | Syria
+**Why it fails:** The stem states 'Jordan lost a 2014 playoff to Uruguay' then asks 'which AFC team ALSO lost a playoff?' with the answer being Jordan itself — self-referential, and 'also' implies a different team. (Oman/Bahrain/Syria did not lose the 2014 intercontinental playoff.)
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Reword so the answer is a genuinely different team, or remove the self-reference.
+
+### Row 36636 — Jordan (easy) — FAIL: non-unique — Jordan faced none of the four options
+**Q:** Jordan lost a 2014 World Cup playoff to Uruguay. Which nation did they NOT face? **A:** Australia
+**Options:** Australia | Costa Rica | New Zealand | Mexico
+**Why it fails:** In the 2014 playoff Jordan faced only Uruguay, so they did NOT face Australia, Costa Rica, New Zealand OR Mexico — all four options are correct answers to 'which nation did they NOT face'. The explanation also mentions Portugal, which is not an option.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Make exactly one option a team Jordan actually faced so 'did NOT face' has a single answer.
+
+### Row 36643 — Jordan (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** Jordan lost the 2023 Asian Cup final to Qatar by what score? **A:** 03-Jan
+**Options:** 03-Jan | 2-0 | 1-0 | 2-1
+**Why it fails:** The answer cell reads '03-Jan', an Excel date-corruption of the 3-1 scoreline (Qatar beat Jordan 3-1 in the 2023 Asian Cup final). The rendered answer is broken.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Restore the answer to '3-1' and flag the dataset for a date-corruption sweep.
+
+### Row 36649 — Jordan (medium) — FAIL: false premise — the 2014 and 2018 campaigns ended at different stages
+**Q:** Jordan's 2014 & 2018 World Cup qualification both ended in which stage? **A:** Final qualifying stage
+**Options:** Final qualifying stage | Group stage exit | Intercontinental playoff | Direct qualification
+**Why it fails:** The stem assumes both campaigns ended at the same stage. They did not: 2014 ended in the inter-continental playoff (lost to Uruguay), while 2018 ended in the AFC second round — Jordan failed to even reach the final round in 2018 (losing 0-1 to Kyrgyzstan and 1-5 to Australia). 'Final qualifying stage' fits neither cleanly, and 'intercontinental playoff' (an option) is right for 2014 only.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Split into separate questions per cycle, or pick the option that is genuinely common to both.
+
+### Row 36736 — Jordan (medium) — FAIL: UNVERIFIED→FAIL — no confirmed senior WAFF Championship hosted by Jordan in 2024
+**Q:** When did Jordan host the WAFF Championship? **A:** 2024
+**Options:** 2024 | 2022 | 2020 | 2018
+**Why it fails:** The 2024 WAFF events were the Women's Championship (Saudi Arabia) and youth tournaments; there is no confirmed senior men's WAFF Championship hosted by Jordan in 2024. Same unverifiable claim as row 36600.
+**Source:** https://en.wikipedia.org/wiki/WAFF_Championship
+**Remedy:** Confirm the real year/edition Jordan hosted the senior WAFF Championship, or drop it.
+
+### Row 36791 — Jordan (easy) — FAIL: non-unique — Jordan faced none of three options
+**Q:** Which 2014 World Cup playoff opponent did Jordan not face? **A:** Costa Rica
+**Options:** Costa Rica | Uruguay | Mexico | New Zealand
+**Why it fails:** In the 2014 playoff Jordan faced only Uruguay, so they did NOT face Costa Rica, Mexico OR New Zealand — three of the four options are correct answers to 'which opponent did Jordan not face'.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Make exactly one option a team Jordan actually faced (Uruguay) so 'did not face' has a single answer.
+
+### Row 36795 — Jordan (easy) — FAIL: self-referential — 'like Jordan' → answer Jordan
+**Q:** Which 2023 Asian Cup finalist, like Jordan, beat South Korea in the semi-final? **A:** Jordan
+**Options:** Jordan | Qatar | Iran | Japan
+**Why it fails:** The stem asks which 2023 finalist 'like Jordan' beat South Korea in the semi-final, and the answer is Jordan itself — the subject is named in the stem, so the question is self-referential and trivially given away.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Remove the 'like Jordan' self-reference, or make the answer a genuinely different team.
+
+### Row 36799 — Jordan (easy) — FAIL: self-referential — 'like Jordan's' → answer Jordan
+**Q:** Which 2023 Asian Cup team's success, like Jordan's, relied on defensive organization? **A:** Jordan
+**Options:** Jordan | South Korea | Qatar | Uzbekistan
+**Why it fails:** The stem asks which team's success 'like Jordan's' relied on defensive organization, with the answer being Jordan itself — self-referential.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Drop the self-reference or point the answer at a different team.
+
+### Row 36801 — Jordan (easy) — FAIL: non-unique — all four options are the same tournament
+**Q:** Which 2023 tournament did Hussein Ammouta manage Jordan to the final? **A:** Asian Cup
+**Options:** Asian Cup | AFC Asian Cup | Asian Cup 2023 | 2023 Asian Cup
+**Why it fails:** The options 'Asian Cup', 'AFC Asian Cup', 'Asian Cup 2023' and '2023 Asian Cup' all denote the very same competition, so there is no unique correct answer (TC-16 duplicate-meaning distractors).
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Replace the distractors with genuinely different tournaments (Arab Cup, Gulf Cup, WAFF).
+
+### Row 36847 — Jordan (easy) — FAIL: answer wrong — Jordan DID face Australia in WC qualifying
+**Q:** Which AFC nation has Jordan NOT faced in World Cup qualifying since 2008? **A:** Australia
+**Options:** Australia | South Korea | Saudi Arabia | United Arab Emirates
+**Why it fails:** Jordan faced Australia in 2018 World Cup qualifying (Round 2, Group B) and lost 1-5. So 'Australia' is not a team Jordan has never faced in qualifying since 2008 — the answer is false.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Pick a team Jordan genuinely has not met in WC qualifying, or rephrase.
+
+### Row 36867 — Jordan (easy) — FAIL: non-unique — all four options debuted before Jordan
+**Q:** Which AFC nation made its World Cup debut before Jordan's 2026 appearance? **A:** Qatar
+**Options:** Qatar | Saudi Arabia | Iran | South Korea
+**Why it fails:** Qatar (2022), Saudi Arabia (1994), Iran (1978) and South Korea (1954) all made their World Cup debuts before Jordan's 2026 first appearance, so 'which made its debut before Jordan' has four correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Constrain to a single unique answer (e.g. most recent AFC debutant before Jordan).
+
+### Row 36898 — Jordan (easy) — FAIL: non-unique — all four qualified for their first World Cup before Jordan
+**Q:** Which AFC nation, after Jordan's 2026 debut, qualified for their first World Cup earlier? **A:** Qatar
+**Options:** Qatar | Saudi Arabia | Iran | South Korea
+**Why it fails:** Qatar, Saudi Arabia, Iran and South Korea all reached their first World Cup before Jordan's 2026 debut, so the question has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Constrain to one unique answer.
+
+### Row 36899 — Jordan (easy) — FAIL: self-referential — 'like Jordan in 2014' → answer Jordan
+**Q:** Which AFC nation, like Jordan in 2014, lost a World Cup playoff to Uruguay? **A:** Jordan
+**Options:** Jordan | Australia | Saudi Arabia | South Korea
+**Why it fails:** The stem names Jordan ('like Jordan in 2014, lost a World Cup playoff to Uruguay') and the answer is Jordan itself — self-referential and trivially given away.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Make the answer a genuinely different team or drop the self-reference.
+
+### Row 36901 — Jordan (medium) — FAIL: self-referential — 'like Jordan' → answer Jordan
+**Q:** Which AFC nation, like Jordan, reached the 2015 Asian Cup group stage? **A:** Jordan
+**Options:** Jordan | Saudi Arabia | Iran | Japan
+**Why it fails:** The stem says 'which AFC nation, like Jordan, reached the 2015 Asian Cup group stage' and the answer is Jordan — self-referential.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Point the answer at a different team.
+
+### Row 36905 — Jordan (medium) — FAIL: self-referential — answer Jordan, subject named in stem
+**Q:** Which AFC nation's 2026 World Cup qualification surpassed Jordan's Asian Cup final? **A:** Jordan
+**Options:** Jordan | South Korea | Australia | Japan
+**Why it fails:** The stem is about Jordan's 2026 qualification surpassing Jordan's Asian Cup final, and the answer is Jordan itself — self-referential.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Reword so the answer is not the subject team.
+
+### Row 36935 — Jordan (medium) — FAIL: non-unique negative — Jordan beat none of the options in a group stage
+**Q:** Which AFC team did Jordan NOT beat in a major tournament group stage? **A:** South Korea
+**Options:** South Korea | Saudi Arabia | Australia | Japan
+**Why it fails:** The famous SK win was a semi-final, but Jordan also did not beat Saudi Arabia, Australia or Japan in a major-tournament group stage, so 'which did Jordan NOT beat in a group stage' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Make three options teams Jordan genuinely beat in a group stage so the negative has one answer.
+
+### Row 36944 — Jordan (hard) — FAIL: self-referential — 'like Jordan' → answer Jordan
+**Q:** Which AFC team lost a 2014 World Cup playoff 5-0 on aggregate, like Jordan? **A:** Jordan
+**Options:** Jordan | Oman | Uzbekistan | Bahrain
+**Why it fails:** The stem says 'which AFC team lost a 2014 World Cup playoff 5-0 on aggregate, like Jordan' with the answer Jordan itself — self-referential.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Use a different team or remove the self-reference.
+
+### Row 37002 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan attacker at the 2023 Asian Cup plays in Switzerland? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37003 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan attacker from the 2023 Asian Cup plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37005 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan attacker played for Young Boys in Switzerland at the 2023 Asian Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37006 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan attacker plays for Swiss club Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37007 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan attacker starred at the 2023 Asian Cup before moving to Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37008 — Jordan (easy) — FAIL: non-unique — Al-Taamari also starred at the 2023 Asian Cup
+**Q:** Which Jordan attacker starred at the 2023 Asian Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Both Yazan Al-Naimat and Mousa Al-Taamari (also an option) starred for Jordan at the 2023 Asian Cup — they scored Jordan's two goals in the semi-final win over South Korea — so 'which attacker starred' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Anchor to a unique attribute (specific goal/match) or remove the co-star from the options.
+
+### Row 37009 — Jordan (easy) — FAIL: non-unique — Al-Taamari also starred at the 2023 Asian Cup
+**Q:** Which Jordan attacker starred in the 2023 Asian Cup knockout rounds? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Both Yazan Al-Naimat and Mousa Al-Taamari (also an option) starred for Jordan at the 2023 Asian Cup — they scored Jordan's two goals in the semi-final win over South Korea — so 'which attacker starred' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Anchor to a unique attribute (specific goal/match) or remove the co-star from the options.
+
+### Row 37011 — Jordan (easy) — FAIL: non-unique — Al-Taamari also starred at the 2023 Asian Cup
+**Q:** Which Jordan attacker was key at the 2023 Asian Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Both Yazan Al-Naimat and Mousa Al-Taamari (also an option) starred for Jordan at the 2023 Asian Cup — they scored Jordan's two goals in the semi-final win over South Korea — so 'which attacker starred' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Anchor to a unique attribute (specific goal/match) or remove the co-star from the options.
+
+### Row 37012 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan attacker, now at Young Boys, starred at the 2023 Asian Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37034 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward at the 2026 World Cup plays for Swiss club Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37036 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward brought Asian competition experience to 2026 World Cup qualifiers? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazan Al-Naimat | Hamza Al-Dardour | Mousa Al-Taamari
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37038 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward had Asian club experience before 2022 World Cup qualifiers? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37039 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward had experience across Asian competitions by 2026? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazan Al-Naimat | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37041 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has experience across Asian competitions? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37042 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has experience in Asian competitions? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazan Al-Naimat | Hamza Al-Dardour | Mousa Al-Taamari
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37045 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has played across Asian competitions in World Cup qualifying? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Hamza Al-Dardour | Mousa Al-Taamari | Yazan Al-Naimat
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37046 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has played club football in multiple Asian competitions? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37047 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has played for clubs across Asian competitions? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37048 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has played for clubs in multiple Asian competitions? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37049 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has played for clubs in multiple Asian leagues during World Cup qualifying? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazan Al-Naimat | Hamza Al-Dardour | Mousa Al-Taamari
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37050 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward has played in multiple Asian competitions? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37052 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward in the 2023 Asian Cup has played club football in multiple Asian countries? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Hamza Al-Dardour | Yazan Al-Naimat | Mousa Al-Taamari
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37053 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward played across Asian leagues during 2022 World Cup qualifying? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazan Al-Naimat | Hamza Al-Dardour | Mousa Al-Taamari
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37054 — Jordan (easy) — FAIL: non-unique / unverifiable — generic 'Asian competitions' trait, no verifiable 'Ahmad Saleh' forward
+**Q:** Which Jordan forward played for clubs across Asia during 2022 World Cup qualifying? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** 'Experience across Asian competitions / played for clubs across Asian leagues' is a generic trait shared by essentially all the Jordanian options (Al-Taamari, Al-Naimat, Al-Dardour all played in Asian leagues), so there is no unique answer; and 'Ahmad Saleh' is not a verifiable prominent Jordan forward.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a specific, verifiable distinguishing fact and a confirmed player.
+
+### Row 37055 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward played for Swiss club Young Boys during the 2026 World Cup qualifiers? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Oday Dabbagh | Mahmoud Al-Mardi
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37056 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward played for Young Boys in Switzerland ahead of the 2026 World Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi in the Qatar Stars League, not Young Boys (Switzerland). Any premise that he plays in Switzerland / for Young Boys is false (recurring dataset error).
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi); the 'Young Boys' fact is fabricated.
+
+### Row 37057 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward played for Young Boys in Switzerland in 2023? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37058 — Jordan (easy) — FAIL: non-unique / unverifiable — 'Ahmad Saleh' + generic Asian-competition trait
+**Q:** Which Jordan forward played in Asian leagues before 2026 World Cup qualifiers? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** The distinguishing trait ('Asian-league experience' / 'in the WC-qualifying squad') is shared by the other options, and 'Ahmad Saleh' is not a verifiable prominent Jordan forward, so there is no unique correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a confirmed player with a specific distinguishing fact.
+
+### Row 37060 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward plays for Swiss club Young Boys in 2026? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Faisal
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37061 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward plays for Young Boys in Switzerland for the 2026 World Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37062 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward plays for Young Boys in Switzerland? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ali Olwan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37063 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward plays for Young Boys, unlike his rival from Japan? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Musa Al-Taamari | Hamza Al-Dardour | Baha' Faisal
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37066 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward was at Young Boys during 2026 World Cup qualifying? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Baha' Faisal | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37067 — Jordan (easy) — FAIL: non-unique / unverifiable — 'Ahmad Saleh' + generic Asian-competition trait
+**Q:** Which Jordan forward was in their 2022 FIFA World Cup qualifying squad? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazan Al-Naimat | Hamza Al-Dardour | Mousa Al-Taamari
+**Why it fails:** The distinguishing trait ('Asian-league experience' / 'in the WC-qualifying squad') is shared by the other options, and 'Ahmad Saleh' is not a verifiable prominent Jordan forward, so there is no unique correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a confirmed player with a specific distinguishing fact.
+
+### Row 37068 — Jordan (easy) — FAIL: non-unique / unverifiable — 'Ahmad Saleh' + generic Asian-competition trait
+**Q:** Which Jordan forward with Asian experience was in the 2022 World Cup qualifying squad? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** The distinguishing trait ('Asian-league experience' / 'in the WC-qualifying squad') is shared by the other options, and 'Ahmad Saleh' is not a verifiable prominent Jordan forward, so there is no unique correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a confirmed player with a specific distinguishing fact.
+
+### Row 37069 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward, at Young Boys in 2026, made his nation's historic World Cup debut? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Akram Afif | Almoez Ali
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37070 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordan forward, playing for Young Boys in 2026, offers a European attacking option? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys (Switzerland). Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club (Al-Arabi).
+
+### Row 37072 — Jordan (easy) — FAIL: non-unique / unverifiable — 'Ahmad Saleh' + generic Asian-competition trait
+**Q:** Which Jordan forward's Asian club experience led to his 2026 World Cup qualifier selection? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** The distinguishing trait ('Asian-league experience' / 'in the WC-qualifying squad') is shared by the other options, and 'Ahmad Saleh' is not a verifiable prominent Jordan forward, so there is no unique correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a confirmed player with a specific distinguishing fact.
+
+### Row 37073 — Jordan (easy) — FAIL: non-unique / unverifiable — 'Ahmad Saleh' + generic Asian-competition trait
+**Q:** Which Jordan forward's Asian experience aided their 2026 qualifying campaign? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Mousa Al-Taamari | Yazan Al-Naimat | Hamza Al-Dardour
+**Why it fails:** The distinguishing trait ('Asian-league experience' / 'in the WC-qualifying squad') is shared by the other options, and 'Ahmad Saleh' is not a verifiable prominent Jordan forward, so there is no unique correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a confirmed player with a specific distinguishing fact.
+
+### Row 37088 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager coached during earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Ray Wilkins | Vital Borkelmans
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37089 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager during 2018 World Cup qualifying was a local appointment? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Jamal Mahmoud | Adnan Hamad | Ray Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37092 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager for 2026 World Cup qualifiers was a local appointment? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Adnan Hamad | Jamal Abu-Abed | Hussein Ammouta
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37095 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager in 2022 World Cup qualifiers was a local appointment? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Adnan Hamad | Jamal Mahmoud | Vital Borkelmans
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37099 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led the team during earlier World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37101 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led the team during their 2010 FIFA World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37103 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led the team in earlier FIFA World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37105 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led their 2014 World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37108 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led their earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Vital Borkelmans | Adnan Hamad
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37110 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led them during earlier FIFA World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37111 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager led them in earlier FIFA World Cup qualification? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37114 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager oversaw an early World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Vital Borkelmans | Raymond Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37116 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager oversaw their 2014 FIFA World Cup qualifying campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37117 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager oversaw their 2018 FIFA World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37119 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager oversaw their earlier FIFA World Cup qualification attempts? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | James Mrad
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37120 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager oversaw their earlier World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** There is no record of a Mohammad Hussein Al-Momani managing Jordan's senior team. The real managers across these cycles were Vingada/Adnan Hamad (2010/2014), Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018), and Ammouta then Sellami (2026). The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with the real manager for the cited cycle.
+
+### Row 37126 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' ever managed Jordan
+**Q:** Which Jordan manager was in charge during their earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Jamal Mahmoud
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; the real earlier-cycle managers were Vingada/Adnan Hamad and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37149 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player at the 2026 FIFA World Cup is based in the Swiss league? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37152 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player at the 2026 World Cup is a Swiss club's forward? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Akram Afif | Almoez Ali
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37153 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player at the 2026 World Cup is based at Swiss club Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Faisal
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37154 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player at the 2026 World Cup is based in Switzerland? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37156 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player at the 2026 World Cup plays for a Swiss club? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hassan Abdel-Fattah | Ali Olwan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37165 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player competed for Young Boys in 2026 World Cup qualifying? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ali Olwan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37166 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player debuted in 2022 World Cup qualifiers while at a Swiss club? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Faisal
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37168 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player featured at the 2023 Asian Cup and plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37171 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player for the 2026 World Cup does NOT play in a domestic or Middle Eastern league? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ahmad Samir | Ali Olwan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37173 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player for the 2026 World Cup is based in Europe? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Baha' Faisal | Ali Olwan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37175 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player for the 2026 World Cup plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ihsan Haddad | Ali Olwan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37176 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player for the 2026 World Cup squad is based in a European league? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37177 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT Europe/Switzerland-based
+**Q:** Which Jordan player for the 2026 World Cup squad plays in Switzerland? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League) — a Middle Eastern league, not Young Boys/Switzerland/Europe. Where the question asks for the Europe-based player, the correct answer is actually Mousa Al-Taamari (Metz, France), who appears here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Point the 'Europe/Switzerland-based' answer at Al-Taamari, and fix Al-Naimat's club to Al-Arabi.
+
+### Row 37196 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player in the 2026 qualifiers plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Nizar Al-Rashdan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37206 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player represented his nation while at Switzerland's Young Boys in 2026? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Tamer Seyam | Baha' Faisal
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37212 — Jordan (easy) — FAIL: non-unique — Al-Taamari also a key 2023 Asian Cup attacker
+**Q:** Which Jordan player was a key attacker at the 2023 Asian Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Yazan Al-Arab
+**Why it fails:** Both Yazan Al-Naimat and Mousa Al-Taamari (an option) were Jordan's key attackers at the 2023 Asian Cup (they scored the two semi-final goals vs South Korea), so 'which attacker' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Anchor to a unique fact, or drop the co-star from the options.
+
+### Row 37213 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player was at Young Boys for the 2026 FIFA World Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37214 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player was based in Switzerland for the 2026 FIFA World Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37215 — Jordan (easy) — FAIL: non-unique — three options were not the goalkeeper
+**Q:** Which Jordan player was NOT their goalkeeper at the 2023 Asian Cup? **A:** Ahmad Saleh
+**Options:** Ahmad Saleh | Yazeed Abulaila | Yazan Al-Arab | Yazan Al-Naimat
+**Why it fails:** Yazeed Abulaila was Jordan's keeper at the 2023 Asian Cup, so Ahmad Saleh, Yazan Al-Arab AND Yazan Al-Naimat were all 'NOT the goalkeeper' — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Make three options goalkeepers so the negative has one answer.
+
+### Row 37223 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player, at Swiss club Young Boys, will debut at the 2026 World Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Noor Al-Rawabdeh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37224 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player, at the 2026 World Cup, brings Swiss league experience? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Ali Olwan | Nizar Al-Rashdan
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37227 — Jordan (easy) — FAIL: non-unique — Al-Taamari also a key 2023 Asian Cup attacker
+**Q:** Which Jordan player's 2023 Asian Cup form helped them in World Cup qualifiers? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Both Yazan Al-Naimat and Mousa Al-Taamari (an option) were Jordan's key attackers at the 2023 Asian Cup (they scored the two semi-final goals vs South Korea), so 'which attacker' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Anchor to a unique fact, or drop the co-star from the options.
+
+### Row 37229 — Jordan (easy) — FAIL: answer wrong — Al-Naimat is NOT at Young Boys / Switzerland
+**Q:** Which Jordan player's 2026 World Cup debut exemplifies improved squad depth? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Salem Al-Ajalin | Yaseen Al-Bakhit
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar), not Young Boys/Switzerland. Where a Europe-based player is wanted, the correct option is Mousa Al-Taamari (Metz, France), present here as a distractor.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi; point any 'European/Swiss' answer at Al-Taamari.
+
+### Row 37233 — Jordan (easy) — FAIL: non-unique — Al-Taamari also a key 2023 Asian Cup attacker
+**Q:** Which Jordan player's attacking threat helped them reach the 2023 Asian Cup final? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Both Yazan Al-Naimat and Mousa Al-Taamari (an option) were Jordan's key attackers at the 2023 Asian Cup (they scored the two semi-final goals vs South Korea), so 'which attacker' has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Anchor to a unique fact, or drop the co-star from the options.
+
+### Row 37250 — Jordan (easy) — FAIL: non-unique — all four labels describe the same 2026 squad
+**Q:** Which Jordan squad will debut at their first FIFA World Cup in 2026? **A:** The improved depth squad
+**Options:** The improved depth squad | The golden generation | The historic first squad | The qualifying heroes
+**Why it fails:** 'The improved depth squad', 'the golden generation', 'the historic first squad' and 'the qualifying heroes' are all nicknames for Jordan's single 2026 World Cup squad, so there is no unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use genuinely distinct, mutually exclusive options.
+
+### Row 37278 — Jordan (easy) — FAIL: non-unique — three options are not the primary venue
+**Q:** Which Jordan stadium is not their primary FIFA World Cup qualifiers venue? **A:** King Abdullah II Stadium
+**Options:** King Abdullah II Stadium | Amman International Stadium | Prince Mohammed Stadium | Jordan International Stadium
+**Why it fails:** Amman International Stadium is Jordan's primary World Cup-qualifier venue, so King Abdullah II Stadium, Prince Mohammed Stadium AND 'Jordan International Stadium' are all 'NOT the primary venue' — multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Make three options the primary venue / a single clearly-correct odd-one-out.
+
+### Row 37313 — Jordan (easy) — FAIL: answer wrong — the 2-0 SF margin does not exceed the 3-1 final loss
+**Q:** Which Jordan victory in 2023 had a bigger winning margin than their Asian Cup final loss? **A:** Semi-final vs South Korea
+**Options:** Semi-final vs South Korea | Group stage vs Malaysia | Quarter-final vs Tajikistan | Round of 16 vs Iraq
+**Why it fails:** Jordan lost the 2023 final 3-1 (a 2-goal margin). The marked answer, the 2-0 semi-final over South Korea, is also a 2-goal margin — equal, not bigger. Jordan's biggest-margin 2023 win was the 4-0 group-stage victory over Malaysia (an option here), so that is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Mark the 4-0 Malaysia win, or reword the comparison.
+
+### Row 37317 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordanian 2023 Asian Cup attacker plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Yazan Al-Arab | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys. Recurring fabricated 'Young Boys' premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Tie Al-Naimat to his real club; the Young Boys fact is fabricated.
+
+### Row 37330 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordanian attacker at the 2023 Asian Cup plays for Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys/Switzerland. Recurring fabricated premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi.
+
+### Row 37332 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordanian attacker played for Young Boys in Switzerland in 2023? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Baha' Abdel-Rahman
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys/Switzerland. Recurring fabricated premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi.
+
+### Row 37333 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordanian attacker scored at the 2023 Asian Cup before moving to Young Boys? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys/Switzerland. Recurring fabricated premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi.
+
+### Row 37338 — Jordan (easy) — FAIL: non-unique — all four options compete in the Jordanian Pro League
+**Q:** Which Jordanian club competes in the Jordanian Pro League? **A:** Al-Faisaly
+**Options:** Al-Faisaly | Al-Hussein | Al-Jazeera | Al-Ramtha
+**Why it fails:** Al-Faisaly, Al-Hussein (Irbid), Al-Jazeera and Al-Ramtha are all Jordanian Pro League clubs, so 'which competes in the Jordanian Pro League' has four correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordanian_Pro_League
+**Remedy:** Make three options non-Pro-League clubs.
+
+### Row 37341 — Jordan (easy) — FAIL: answer wrong / non-unique — Al-Jazeera IS a Pro League club
+**Q:** Which Jordanian club is NOT a feature of the top domestic league? **A:** Al-Jazeera
+**Options:** Al-Jazeera | Al-Faisaly | Al-Wehdat | Al-Hussein
+**Why it fails:** Al-Jazeera (Amman) is a Jordanian Pro League club, so it is not 'NOT a feature' of the top league; moreover Al-Faisaly, Al-Wehdat and Al-Hussein all also feature, so the negative has no single answer.
+**Source:** https://en.wikipedia.org/wiki/Jordanian_Pro_League
+**Remedy:** Make exactly one option a non-top-league club.
+
+### Row 37351 — Jordan (easy) — FAIL: non-unique — multiple options feature in the top domestic league
+**Q:** Which Jordanian clubs feature in their top domestic league? **A:** Al-Faisaly and Al-Wehdat
+**Options:** Al-Faisaly and Al-Wehdat | Al-Hussein and Al-Ramtha | Al-Jazeera and Al-Baqa'a | Shabab Al-Ordon and That Ras
+**Why it fails:** Al-Faisaly and Al-Wehdat feature in the Jordanian Pro League, but so do Al-Hussein and Al-Ramtha (a distractor pair), so 'which clubs feature in the top league' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Jordanian_Pro_League
+**Remedy:** Ask which clubs are the biggest/most successful (uniquely Al-Faisaly & Al-Wehdat) instead.
+
+### Row 37354 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordanian forward demonstrates their improved squad depth for the 2026 World Cup? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Salem Al-Ajalin | Hamza Al-Dardour
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys/Switzerland. Recurring fabricated premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi.
+
+### Row 37359 — Jordan (easy) — FAIL: answer wrong / false premise — Al-Naimat does NOT play for Young Boys
+**Q:** Which Jordanian forward, a key attacker at the 2023 Asian Cup, plays in Switzerland? **A:** Yazan Al-Naimat
+**Options:** Yazan Al-Naimat | Mousa Al-Taamari | Hamza Al-Dardour | Ahmad Saleh
+**Why it fails:** Yazan Al-Naimat plays for Al-Arabi (Qatar Stars League), not Young Boys/Switzerland. Recurring fabricated premise.
+**Source:** https://en.wikipedia.org/wiki/Yazan_Al-Naimat
+**Remedy:** Fix Al-Naimat's club to Al-Arabi.
+
+### Row 37365 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which Jordanian manager led the team during earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Jamal Abu-Abed
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real earlier-cycle managers were Vingada/Adnan Hamad and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a real manager.
+
+### Row 37425 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager coached Jordan in earlier World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37426 — Jordan (easy) — FAIL: fabricated answer + non-unique negative
+**Q:** Which manager did NOT guide Jordan to a major tournament final? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** Only Hussein Ammouta guided Jordan to a major final (2023 Asian Cup); Adnan Hamad and Vital Borkelmans also did NOT — so the negative has multiple correct answers, and the marked answer 'Mohammad Hussein Al-Momani' is a fabricated manager.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use real managers and make exactly one of them a finalist coach.
+
+### Row 37427 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager guided Jordan during earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Jamal Mahmoud
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37428 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager guided Jordan in earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Jamal Mahmoud
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37431 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan during earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37432 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan during the 2010 FIFA World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37434 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan during their 2011 Asian Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37435 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan during their 2014 FIFA World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37436 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan during their 2018 FIFA World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team. Real managers: 2010 cycle Vingada; 2011 Asian Cup/2014 cycle Adnan Hamad (Iraqi); 2018 cycle Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed. The answer is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle (e.g. Adnan Hamad for 2011/2014).
+
+### Row 37437 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan during their 2018 FIFA World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Adnan Hamad | Ray Wilkins | Jamal Abu-Abed
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37439 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan in earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37440 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan in earlier FIFA World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Jamal Abu-Abed
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37441 — Jordan (easy) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan in their 2014 FIFA World Cup qualifiers? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Ray Wilkins
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37443 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan's 2010 FIFA World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Adnan Hamad | Nizar Mahrous | Vital Borkelmans
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37445 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Which manager led Jordan's earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Vital Borkelmans | Adnan Hamad
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37497 — Jordan (easy) — FAIL: self-referential — 'alongside Jordan' → answer Jordan
+**Q:** Which nation made its FIFA World Cup debut in 2026 alongside Jordan? **A:** Jordan
+**Options:** Jordan | Qatar | Panama | Iceland
+**Why it fails:** The stem asks which nation debuted at the 2026 World Cup 'alongside Jordan' and the answer is Jordan itself — self-referential; 'alongside' implies a different nation.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Name a genuinely different 2026 debutant (e.g. Uzbekistan, Cape Verde).
+
+### Row 37512 — Jordan (easy) — FAIL: non-unique + wrong group — three options were not in Jordan's 2022 group
+**Q:** Which nation was NOT in Jordan's 2022 FIFA World Cup AFC qualifying group? **A:** Saudi Arabia
+**Options:** Saudi Arabia | Australia | China | Oman
+**Why it fails:** Jordan's 2022 World Cup qualifying group (second round, Group B) was Australia, Kuwait, Nepal and Chinese Taipei — not China or Oman, and Jordan never reached the third round. So Saudi Arabia, China AND Oman were all 'NOT in Jordan's group', and the explanation's group is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Use Jordan's real 2022 group and make exactly one option an outsider.
+
+### Row 37520 — Jordan (easy) — FAIL: non-unique — Iraq also hosted a 2023 regional championship
+**Q:** Which nation, like Jordan in 2024, hosted a regional championship in 2023? **A:** Qatar
+**Options:** Qatar | Saudi Arabia | United Arab Emirates | Iraq
+**Why it fails:** Qatar hosted the 2023 Asian Cup, but Iraq also hosted a 2023 regional championship — the 2023 Arabian Gulf Cup in Basra — so the question has more than one correct option. (The 'like Jordan in 2024 WAFF' premise is also unverified.)
+**Source:** https://en.wikipedia.org/wiki/2023_Arabian_Gulf_Cup
+**Remedy:** Make only one option a 2023 host.
+
+### Row 37521 — Jordan (easy) — FAIL: self-referential — 'like Jordan' -> answer Jordan
+**Q:** Which nation, like Jordan, will debut at the 2026 FIFA World Cup? **A:** Jordan
+**Options:** Jordan | Panama | Iceland | Qatar
+**Why it fails:** The stem asks which nation, 'like Jordan', will debut at the 2026 World Cup, with the answer being Jordan — self-referential.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Use a different 2026 debutant.
+
+### Row 37560 — Jordan (easy) — FAIL: temporal contradiction — the 2023 final came AFTER, not before, the 2014 playoff
+**Q:** Which team beat Jordan in a major final before their 2014 World Cup playoff? **A:** Qatar
+**Options:** Qatar | South Korea | Uruguay | Saudi Arabia
+**Why it fails:** The explanation says Qatar beat Jordan in the 2023 Asian Cup final 'before their 2014 World Cup playoff' — but the 2023 final (Feb 2024) was years AFTER the 2014 playoff (Nov 2013). Before 2014 Jordan had never reached a major final, so the premise has no valid answer.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Drop the false 'before 2014' framing.
+
+### Row 37588 — Jordan (easy) — FAIL: non-unique — Jordan did not defeat three of the four options
+**Q:** Which team did Jordan NOT defeat during their 2023 Asian Cup final run? **A:** Qatar
+**Options:** Qatar | South Korea | Uzbekistan | Japan
+**Why it fails:** During the 2023 run Jordan beat South Korea but did NOT defeat Qatar (lost the final), nor Uzbekistan or Japan (never faced them), so 'which did Jordan NOT defeat' has three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Make three options teams Jordan actually beat.
+
+### Row 37613 — Jordan (easy) — FAIL: non-unique — other option pairs also feature in the top league
+**Q:** Which two clubs feature in Jordan's top domestic league? **A:** Al-Faisaly and Al-Wehdat
+**Options:** Al-Faisaly and Al-Wehdat | Al-Jazeera and Shabab Al-Ordon | Al-Hussein and That Ras | Al-Ramtha and Al-Salt
+**Why it fails:** Al-Faisaly and Al-Wehdat feature in the Jordanian Pro League, but so do clubs in the distractor pairs (e.g. Al-Jazeera and Shabab Al-Ordon are also Pro League clubs), so 'which feature in the top league' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Jordanian_Pro_League
+**Remedy:** Ask which clubs are the biggest/most successful (uniquely Al-Faisaly & Al-Wehdat).
+
+### Row 37626 — Jordan (easy) — FAIL: non-unique — other option pairs also feature in the top league
+**Q:** Which two Jordanian clubs feature in their country's top domestic league? **A:** Al-Faisaly and Al-Wehdat
+**Options:** Al-Faisaly and Al-Wehdat | Al-Jazeera and Al-Ramtha | Al-Hussein and Shabab Al-Ordon | Al-Ahli and Al-Wahda
+**Why it fails:** As with 37613, several option pairs contain real Jordanian Pro League clubs, so 'which feature in the top domestic league' has more than one correct answer.
+**Source:** https://en.wikipedia.org/wiki/Jordanian_Pro_League
+**Remedy:** Reframe as 'biggest/most successful' clubs.
+
+### Row 37627 — Jordan (easy) — FAIL: self-referential / incoherent — answer names the subject (Jordan)
+**Q:** Which two nations' contrasting Asian Cup 2023 semi-final results explain Jordan's remarkable 2-0 win? **A:** Jordan and South Korea
+**Options:** Jordan and South Korea | Saudi Arabia and Iran | Australia and Japan | Qatar and Uzbekistan
+**Why it fails:** The answer 'Jordan and South Korea' names the subject team, and the 'contrasting semi-final results' framing is incoherent (Jordan beat South Korea in one semi-final; the other was Qatar v Iran).
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Reword to a coherent, non-self-referential question.
+
+### Row 37636 — Jordan (medium) — FAIL: fabricated premise + a distractor is actually correct
+**Q:** Which type of manager led Jordan in earlier World Cup qualification campaigns? **A:** A local Jordanian manager
+**Options:** A local Jordanian manager | A Moroccan manager | A Portuguese manager | A Dutch manager
+**Why it fails:** Jordan's earlier qualifying campaigns were NOT led by a local Jordanian — the 2010 campaign was under Nelo Vingada (Portuguese) and Adnan Hamad (Iraqi). So 'A Portuguese manager' (a distractor) is actually correct, and the answer relies on the fabricated Al-Momani.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager's nationality for the cited cycle.
+
+### Row 37642 — Jordan (easy) — FAIL: malformed / non-unique — Japan and South Korea are both East Asian
+**Q:** Which West Asian nation does Jordan NOT typically face in World Cup qualifying? **A:** Japan
+**Options:** Japan | Saudi Arabia | Qatar | South Korea
+**Why it fails:** The stem asks for a West Asian nation, but the answer Japan and distractor South Korea are both East Asian, so 'does NOT typically face' fits two options.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Fix the region label; leave one option Jordan does not face.
+
+### Row 37643 — Jordan (easy) — FAIL: false premise — South Korea is not a West Asian nation
+**Q:** Which West Asian nation, a regular Jordan rival in World Cup qualifying, lost to them in the 2023 Asian Cup semi-final? **A:** South Korea
+**Options:** South Korea | Saudi Arabia | Iran | United Arab Emirates
+**Why it fails:** The stem labels Jordan's 2023 semi-final opponent a West Asian nation, but South Korea is East Asian.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_AFC_Asian_Cup
+**Remedy:** Drop the 'West Asian' label.
+
+### Row 37646 — Jordan (medium) — FAIL: non-unique — Jordan failed to qualify for all four listed World Cups
+**Q:** Which World Cup did Jordan fail to qualify for? **A:** 2010 World Cup
+**Options:** 2010 World Cup | 2014 World Cup | 2018 World Cup | 2022 World Cup
+**Why it fails:** Jordan failed to qualify for the 2010, 2014, 2018 AND 2022 World Cups, so the question has four correct answers.
+**Source:** https://en.wikipedia.org/wiki/Jordan_at_the_FIFA_World_Cup
+**Remedy:** Make three options tournaments Jordan qualified for.
+
+### Row 37671 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Who managed Jordan during their 2010 FIFA World Cup qualification campaign? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Vital Borkelmans | Adnan Hamad
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real earlier-cycle managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37675 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Who managed Jordan's squad during their earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Adnan Hamad | Vital Borkelmans
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real earlier-cycle managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37676 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Who managed Jordan's team for their earlier FIFA World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Hussein Ammouta | Vital Borkelmans | Adnan Hamad
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real earlier-cycle managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37678 — Jordan (medium) — FAIL: fabricated manager — no 'Mohammad Hussein Al-Momani' managed Jordan
+**Q:** Who was Jordan's manager during earlier World Cup qualification campaigns? **A:** Mohammad Hussein Al-Momani
+**Options:** Mohammad Hussein Al-Momani | Vital Borkelmans | Adnan Hamad | Hussein Ammouta
+**Why it fails:** No Mohammad Hussein Al-Momani managed Jordan's senior team; real earlier-cycle managers were Vingada (2010), Adnan Hamad (2011/2014) and Wilkins/Put/Abu Zema/Redknapp/Mesfer/Abu-Abed (2018).
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use the real manager for the cited cycle.
+
+### Row 37690 — Jordan (easy) — FAIL: circular answer + unverified WAFF-2024 host premise
+**Q:** Why did Jordan host the 2024 WAFF Championship? **A:** Jordan were the hosts
+**Options:** Jordan were the hosts | Saudi Arabia were the hosts | Qatar were the hosts | UAE were the hosts
+**Why it fails:** The answer ('Jordan were the hosts') merely restates the question, and the premise that Jordan hosted a senior 2024 WAFF Championship is unverified (the 2024 WAFF events were the women's championship in Saudi Arabia and youth tournaments).
+**Source:** https://en.wikipedia.org/wiki/WAFF_Championship
+**Remedy:** Confirm the real host/edition; replace the circular answer.
+
+### Row 37705 — Jordan (easy) — FAIL: UNVERIFIED -> FAIL — 'improved squad depth' is an unsourced narrative cause
+**Q:** Why did Jordan qualify for their first FIFA World Cup in 2026? **A:** Improved squad depth
+**Options:** Improved squad depth | A new star striker | Better coaching tactics | Stronger home support
+**Why it fails:** Attributing Jordan's first-ever qualification to 'improved squad depth' is a soft, unsourced narrative claim (the same genre as 'squad rebuild/age' claims), with no authoritative basis to choose it over the other vague options.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Replace with a verifiable cause (e.g. their 3rd-round group result).
+
+### Row 37720 — Jordan (medium) — FAIL: UNVERIFIED -> FAIL — circular/narrative 'squad depth increased'
+**Q:** Why did Jordan's 2026 World Cup qualification squad improve significantly? **A:** Squad depth increased recently
+**Options:** Squad depth increased recently | More European-based players | New manager appointed | Better youth academy results
+**Why it fails:** 'Why did the squad improve? -> squad depth increased recently' is circular and an unsourced narrative claim.
+**Source:** https://en.wikipedia.org/wiki/Jordan_national_football_team
+**Remedy:** Use a verifiable, specific reason.
+
+
+## Mexico — rows 37774–39364 (liveness on QA_PASSED.md rows) — ✅ COMPLETE: 173 FAIL
+
+### Row 37774 — Mexico (easy) — FAIL: answer wrong — Lozano did NOT return to Liga MX
+**Q:** After his 2022 World Cup, which Mexico forward returned to Liga MX? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Andrés Guardado | Edson Álvarez
+**Why it fails:** After the 2022 World Cup, Hirving Lozano went Napoli -> PSV (2023) -> San Diego FC in MLS (2025); he never returned to Liga MX. None of the listed forwards (Lozano, Jimenez at Fulham, Alvarez at West Ham) returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Drop the Liga MX premise; Lozano plays in MLS.
+
+### Row 37777 — Mexico (easy) — FAIL: answer wrong — Lozano does NOT play in Liga MX
+**Q:** After Mexico's 2022 World Cup, which forward now plays in Liga MX? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Santiago Giménez | Edson Álvarez | Raúl Jiménez
+**Why it fails:** Lozano plays for San Diego FC (MLS), via PSV; he did not return to Liga MX after 2022. The other options (Gimenez, Alvarez, Jimenez) are also Europe/abroad.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 37779 — Mexico (easy) — FAIL: answer wrong — Jaime Lozano, not Aguirre, replaced Cocca
+**Q:** After Mexico's 2023 managerial change, who replaced Diego Cocca? **A:** Javier Aguirre
+**Options:** Javier Aguirre | Miguel Herrera | Juan Carlos Osorio | Gerardo Martino
+**Why it fails:** Diego Cocca was sacked in June 2023 and replaced by Jaime Lozano (interim, then full). Javier Aguirre only took over in 2024 (replacing Jaime Lozano). So Aguirre did not replace Cocca.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Use Jaime Lozano as Cocca's 2023 replacement.
+
+### Row 37780 — Mexico (medium) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** After which FIFA World Cup did Mexico reach their highest ranking of 9th? **A:** 2014 World Cup
+**Options:** 2014 World Cup | 2010 World Cup | 2018 World Cup | 2022 World Cup
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (reached in 1998 and 2006), not 9th. The premise is false.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th, or reword.
+
+### Row 37789 — Mexico (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** At the 2010 World Cup, what was Argentina's score against Mexico in the round of 16? **A:** 03-Jan
+**Options:** 03-Jan | 2-1 | 2-0 | 4-1
+**Why it fails:** The answer cell reads '03-Jan', an Excel date-corruption of the 3-1 scoreline (Argentina beat Mexico 3-1 in the 2010 round of 16).
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Restore '3-1' and flag for a date-corruption sweep.
+
+### Row 37792 — Mexico (medium) — FAIL: false — Chile beat Mexico in the quarter-final, not the group stage
+**Q:** At the 2016 Copa América Centenario, which nation eliminated Mexico from the group stage? **A:** Chile
+**Options:** Chile | Argentina | Uruguay | Colombia
+**Why it fails:** At the 2016 Copa America Centenario Mexico topped their group and were then thrashed 7-0 by Chile in the QUARTER-FINAL. They were not eliminated 'from the group stage'.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Say quarter-final, not group stage.
+
+### Row 37838 — Mexico (easy) — FAIL: non-unique — all four players have the Liga MX -> Europe path
+**Q:** For Mexico's 2026 World Cup squad, which player's career path exemplifies the Liga MX and Europe mix? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Edson Álvarez | Santiago Giménez | Raúl Jiménez
+**Why it fails:** Lozano (Pachuca->PSV/Napoli), Edson Alvarez (America->Ajax/West Ham), Santiago Gimenez (Cruz Azul->Feyenoord/Milan) and Raul Jimenez (America->Benfica/Wolves) all began in Liga MX and moved to Europe, so 'exemplifies the Liga MX and Europe mix' fits every option. (The explanation also wrongly says Lozano returned to Liga MX.)
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Anchor to a unique attribute.
+
+### Row 37855 — Mexico (medium) — FAIL: answer outdated — by end of 2023 Mexico had 9 Gold Cups
+**Q:** How many CONCACAF Gold Cup titles had Mexico won by 2023? **A:** Eight
+**Options:** Eight | Six | Seven | Nine
+**Why it fails:** Mexico won the 2023 Gold Cup (their 9th), so 'by 2023' the count is nine, not eight; 'Nine' is an option.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Specify 'through 2019/2022' (=8) or use nine for 2023.
+
+### Row 37858 — Mexico (medium) — FAIL: stale — Mexico has won TEN Gold Cups, not eight
+**Q:** How many CONCACAF Gold Cup titles has Mexico won? **A:** Eight
+**Options:** Eight | Six | Seven | Nine
+**Why it fails:** Present tense: Mexico has now won 10 Gold Cups (8 through 2019, plus 2023 and 2025). 'Eight' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Update to ten, or time-bound the question (e.g. 'through 2019').
+
+### Row 37859 — Mexico (medium) — FAIL: stale — Mexico has won TEN Gold Cups, not eight
+**Q:** How many CONCACAF Gold Cup titles has Mexico's national team won? **A:** Eight titles
+**Options:** Eight titles | Six titles | Seven titles | Nine titles
+**Why it fails:** Mexico's current Gold Cup total is 10 (after the 2023 and 2025 wins), so the present-tense 'eight' is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Update to ten, or time-bound.
+
+### Row 37868 — Mexico (medium) — FAIL: answer wrong — Chicharito scored at THREE World Cups
+**Q:** How many World Cups did Javier Hernández score in for Mexico? **A:** Two
+**Options:** Two | One | Three | Four
+**Why it fails:** Javier Hernandez scored at the 2010, 2014 AND 2018 World Cups (incl. vs South Korea in 2018), i.e. three tournaments, not two. (Row 37869 correctly answers 'Three'.)
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Change the answer to three.
+
+### Row 37903 — Mexico (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** In the 2015 CONCACAF Gold Cup final, Mexico beat Jamaica by what score? **A:** 03-Jan
+**Options:** 03-Jan | 2-0 | 1-0 | 2-1
+**Why it fails:** The answer cell reads '03-Jan', an Excel date-corruption of the 3-1 scoreline (Mexico beat Jamaica 3-1 in the 2015 Gold Cup final).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Restore '3-1' and flag for a date sweep.
+
+### Row 37915 — Mexico (medium) — FAIL: non-unique — Mexico qualified via CONCACAF in 2010, 2018 and 2022
+**Q:** In what year did Mexico qualify for the World Cup via CONCACAF? **A:** 2010
+**Options:** 2010 | 2014 | 2018 | 2022
+**Why it fails:** Mexico qualified directly through CONCACAF for 2010, 2018 AND 2022 (only 2014 was via the inter-confederation playoff), so the year is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Tie the question to a single distinguishing detail.
+
+### Row 37916 — Mexico (medium) — FAIL: non-unique — Mexico won the Gold Cup in 2011, 2015 and 2019
+**Q:** In what year did Mexico win the CONCACAF Gold Cup? **A:** 2011
+**Options:** 2011 | 2015 | 2019 | 2021
+**Why it fails:** Mexico won the CONCACAF Gold Cup in 2011, 2015 AND 2019; only 2021 (a distractor) they lost. Three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Make three options years Mexico did not win.
+
+### Row 37929 — Mexico (medium) — FAIL: false premise — Mexico did NOT exit the group stage in 2016
+**Q:** In which tournament did Mexico's 2024 Copa América group stage exit match their 2016 Copa América Centenario fate? **A:** Copa América Centenario
+**Options:** Copa América Centenario | CONCACAF Gold Cup | FIFA Confederations Cup | Copa América 2024
+**Why it fails:** At the 2016 Copa America Centenario Mexico topped their group and reached the quarter-final (lost 7-0 to Chile). So their 2024 group-stage exit did NOT 'match' a 2016 group-stage exit, and the explanation is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Compare to a real prior group-stage exit, or fix the 2016 description.
+
+### Row 37959 — Mexico (medium) — FAIL: non-unique — Mexico finished 2nd in CONCACAF in 2010 and 2022
+**Q:** In which World Cup qualifying campaign did Mexico finish 2nd in CONCACAF? **A:** 2022 World Cup
+**Options:** 2022 World Cup | 2010 World Cup | 2014 World Cup | 2018 World Cup
+**Why it fails:** Mexico finished 2nd in the CONCACAF final round for both the 2010 (behind USA) and 2022 (behind Canada) cycles, so the year is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Pick a cycle with a unique finishing position.
+
+### Row 37986 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** In which year did Mexico achieve its highest-ever FIFA ranking of 9th? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th, so the '9th (in 2014)' premise is false and the year is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th (1998/2006).
+
+### Row 37987 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** In which year did Mexico achieve its highest-ever FIFA ranking? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th, so the '9th (in 2014)' premise is false and the year is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th (1998/2006).
+
+### Row 37999 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** In which year did Mexico reach 9th in the FIFA rankings? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th, so the '9th (in 2014)' premise is false and the year is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th (1998/2006).
+
+### Row 38000 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** In which year did Mexico reach its highest FIFA ranking of 9th? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th, so the '9th (in 2014)' premise is false and the year is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th (1998/2006).
+
+### Row 38001 — Mexico (medium) — FAIL: non-unique — Mexico reached the round of 16 in 2010, 2014 and 2018
+**Q:** In which year did Mexico reach the round of 16 at the FIFA World Cup? **A:** 2010
+**Options:** 2010 | 2014 | 2018 | 2022
+**Why it fails:** Mexico reached the World Cup round of 16 in 2010, 2014 AND 2018 (only 2022 was a group exit), so three options are correct.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options group-stage exits.
+
+### Row 38011 — Mexico (medium) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** In which year did the Mexico national team peak at 9th in the FIFA World Rankings? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th, so the '9th (in 2014)' premise is false and the year is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th (1998/2006).
+
+### Row 38012 — Mexico (hard) — FAIL: false premise — the Chile 7-0 was the QUARTER-FINAL, not the group stage
+**Q:** In which year was Mexico eliminated in the 2016 Copa América Centenario group stage? **A:** 2016
+**Options:** 2016 | 2015 | 2017 | 2019
+**Why it fails:** At the 2016 Copa America Centenario Mexico won their group (beat Uruguay 3-1 and Jamaica 2-0, drew Venezuela) and the 7-0 loss to Chile came in the quarter-final. 'Group stage' is false.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final, not group stage.
+
+### Row 38041 — Mexico (medium) — FAIL: compounded false premises + non-unique
+**Q:** Mexico lost 7-0 to Chile in the 2016 Copa América. Which team did NOT beat Mexico in a group stage that tournament? **A:** Colombia
+**Options:** Colombia | Jamaica | Uruguay | Venezuela
+**Why it fails:** Mexico did NOT lose in the 2016 group stage: they beat Uruguay 3-1 and Jamaica 2-0 and drew Venezuela (the 7-0 Chile loss was the QF). So 'beat Mexico in the group stage' applies to none of Colombia/Jamaica/Uruguay/Venezuela — the answer is not unique and the explanation is wrong.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Fix the 2016 results and make one option a genuine group-stage win over Mexico.
+
+### Row 38047 — Mexico (medium) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not on penalties
+**Q:** Mexico lost to the USA on penalties in which year's CONCACAF Nations League final? **A:** 2019-20
+**Options:** 2019-20 | 2018-19 | 2020-21 | 2021-22
+**Why it fails:** The USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final (June 2021); it was not decided on penalties.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time, 3-2', not 'on penalties'.
+
+### Row 38054 — Mexico (medium) — FAIL: false premise — the Chile 7-0 was the QUARTER-FINAL, not the group stage
+**Q:** Mexico suffered their worst competitive defeat, 7-0, in the 2016 Copa América group stage against which nation? **A:** Chile
+**Options:** Chile | Argentina | Brazil | Uruguay
+**Why it fails:** At the 2016 Copa America Centenario Mexico won their group (beat Uruguay 3-1 and Jamaica 2-0, drew Venezuela) and the 7-0 loss to Chile came in the quarter-final. 'Group stage' is false.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final, not group stage.
+
+### Row 38058 — Mexico (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** Mexico's 2010 World Cup loss to Argentina was by what scoreline? **A:** 03-Jan
+**Options:** 03-Jan | 2-1 | 2-0 | 7-0
+**Why it fails:** The answer reads '03-Jan', an Excel corruption of 3-1 (Argentina beat Mexico 3-1 in the 2010 round of 16).
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Restore '3-1' and flag for a date sweep.
+
+### Row 38060 — Mexico (medium) — FAIL: false premise — the Chile 7-0 was the QUARTER-FINAL, not the group stage
+**Q:** Mexico's 2011 Gold Cup win preceded which 2016 Copa América group stage loss? **A:** 7-0 to Chile
+**Options:** 7-0 to Chile | 3-0 to Uruguay | 4-0 to Argentina | 2-0 to Colombia
+**Why it fails:** At the 2016 Copa America Centenario Mexico won their group (beat Uruguay 3-1 and Jamaica 2-0, drew Venezuela) and the 7-0 loss to Chile came in the quarter-final. 'Group stage' is false.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final, not group stage.
+
+### Row 38062 — Mexico (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** Mexico's 2015 CONCACAF Gold Cup final win over Jamaica finished with what score? **A:** 03-Jan
+**Options:** 03-Jan | 2-1 | 1-0 | 4-0
+**Why it fails:** The answer reads '03-Jan', an Excel corruption of 3-1 (Mexico beat Jamaica 3-1 in the 2015 Gold Cup final).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Restore '3-1'.
+
+### Row 38064 — Mexico (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** Mexico's 2018 World Cup win over Germany was a 1-0 upset. What was their 2010 World Cup loss to Argentina? **A:** 03-Jan
+**Options:** 03-Jan | 2-1 | 2-0 | 1-0
+**Why it fails:** The answer reads '03-Jan', an Excel corruption of 3-1 (Argentina beat Mexico 3-1 in the 2010 round of 16).
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Restore '3-1' and flag for a date sweep.
+
+### Row 38066 — Mexico (easy) — FAIL: non-unique — Mexico won the 2018 Hexagonal, so 'won the group' is also correct
+**Q:** Mexico's 2022 CONCACAF qualifying finish was 2nd; what was their 2018 finish? **A:** Qualified automatically
+**Options:** Qualified automatically | Lost in playoff | Finished third | Won the group
+**Why it fails:** Mexico finished 1st in the 2018 CONCACAF Hexagonal, so both 'qualified automatically/directly' and 'won the group' (a distractor) describe their 2018 finish.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Leave only one true option.
+
+### Row 38067 — Mexico (medium) — FAIL: date-corruption — answer '02-Jan' is a mangled '2-1'
+**Q:** Mexico's 2022 World Cup group stage win over Saudi Arabia ended with what final score? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** The answer reads '02-Jan', an Excel corruption of 2-1 (Mexico beat Saudi Arabia 2-1 in 2022).
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Restore '2-1'.
+
+### Row 38070 — Mexico (medium) — FAIL: false premise — the Chile 7-0 was the QUARTER-FINAL, not the group stage
+**Q:** Mexico's 7-0 loss in the 2016 Copa América Centenario group stage was to which nation? **A:** Chile
+**Options:** Chile | Brazil | Argentina | Uruguay
+**Why it fails:** Mexico won their 2016 Centenario group and lost 7-0 to Chile in the quarter-final. 'Group stage' is false.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final.
+
+### Row 38073 — Mexico (medium) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** Mexico's highest FIFA ranking, achieved in 2014, was which position? **A:** 9th
+**Options:** 9th | 7th | 11th | 13th
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), so '9th' as a peak/highest is false.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th.
+
+### Row 38077 — Mexico (medium) — FAIL: non-unique / false framing — Mexico has continuously held the Gold Cup record
+**Q:** Through which year did Mexico hold the record for most Gold Cup titles? **A:** Through 2019
+**Options:** Through 2019 | Through a 2015 | Through a 2021 | Through a 2011
+**Why it fails:** Mexico has held the record for most Gold Cup titles continuously, so 'through 2011/2015/2019/2021' are all true; the framing wrongly implies they later lost the record (they still hold it, now with 10).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Reframe as 'how many titles by 2019' or similar.
+
+### Row 38093 — Mexico (medium) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** What was Mexico's highest FIFA ranking in 2014? **A:** 9th
+**Options:** 9th | 7th | 11th | 13th
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), so '9th' as a peak/highest is false.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th.
+
+### Row 38095 — Mexico (easy) — FAIL: date-corruption — answer '03-Jan' is a mangled '3-1'
+**Q:** What was Mexico's losing score to Argentina in the 2010 World Cup round of 16? **A:** 03-Jan
+**Options:** 03-Jan | 2-1 | 2-0 | 1-0
+**Why it fails:** The answer reads '03-Jan', an Excel corruption of 3-1 (Argentina beat Mexico 3-1 in the 2010 round of 16).
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Restore '3-1'.
+
+### Row 38113 — Mexico (easy) — FAIL: date-corruption — answer '02-Jan' is a mangled '2-1'
+**Q:** What was the final score when Mexico lost to Netherlands at the 2014 World Cup? **A:** 02-Jan
+**Options:** 02-Jan | 1-0 | 3-1 | 2-0
+**Why it fails:** The answer reads '02-Jan', an Excel corruption of 2-1 (Netherlands beat Mexico 2-1 in the 2014 round of 16).
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Restore '2-1'.
+
+### Row 38139 — Mexico (medium) — FAIL: non-unique — Mexico finished 2nd in CONCACAF in 2010 and 2022
+**Q:** When did Mexico finish 2nd in CONCACAF World Cup qualifying? **A:** 2022 qualifying
+**Options:** 2022 qualifying | 2018 qualifying | 2014 qualifying | 2010 qualifying
+**Why it fails:** Mexico finished 2nd in the CONCACAF final round for both 2010 (behind USA) and 2022 (behind Canada), so 'when did Mexico finish 2nd' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Tie to a single cycle's detail.
+
+### Row 38151 — Mexico (medium) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not penalties
+**Q:** When did Mexico lose to the USA on penalties in the CONCACAF Nations League final? **A:** 2019-20
+**Options:** 2019-20 | 2018-19 | 2020-21 | 2021-22
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final (June 2021); it was not decided on penalties.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time'.
+
+### Row 38154 — Mexico (easy) — FAIL: non-unique — 'finished 2nd in CONCACAF' also describes Mexico's 2010 route
+**Q:** When did Mexico qualify for the 2010 FIFA World Cup? **A:** Through CONCACAF qualification
+**Options:** Through CONCACAF qualification | Via an intercontinental playoff | As automatic co-hosts | By finishing 2nd in CONCACAF
+**Why it fails:** Mexico qualified for 2010 by finishing 2nd in the CONCACAF Hexagonal, so both 'Through CONCACAF qualification' and the distractor 'By finishing 2nd in CONCACAF' are correct.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make the distractors clearly wrong routes.
+
+### Row 38158 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** When did Mexico reach their highest FIFA ranking of 9th? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), so '9th' as a peak is false.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct to 4th.
+
+### Row 38172 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** When did the Mexico national team reach 9th in the FIFA rankings? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), so '9th' as a peak is false.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct to 4th.
+
+### Row 38206 — Mexico (medium) — FAIL: non-unique — both the USA and Canada are 2026 co-hosts in CONCACAF
+**Q:** Which 2026 FIFA World Cup host nation shares Mexico's CONCACAF confederation? **A:** United States
+**Options:** United States | Canada | Costa Rica | Jamaica
+**Why it fails:** Mexico's 2026 co-hosts are the USA AND Canada, both in CONCACAF and both auto-qualified, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Leave only one valid co-host option.
+
+### Row 38210 — Mexico (easy) — FAIL: non-unique — the Liga-MX-to-Europe youth path fits multiple options
+**Q:** Which 2026 Mexico player debuted after youth development boosted European exports? **A:** Santiago Giménez
+**Options:** Santiago Giménez | Edson Álvarez | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Santiago Gimenez (Cruz Azul->Feyenoord), Edson Alvarez (America->Ajax), Hirving Lozano (Pachuca->PSV) and Raul Jimenez (America->Benfica) all came through Mexican youth systems and moved to Europe, so the trait is shared.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Anchor to a unique attribute.
+
+### Row 38211 — Mexico (easy) — FAIL: non-unique — the Liga-MX-to-Europe youth path fits multiple options
+**Q:** Which 2026 Mexico player's European move exemplifies their youth development trend? **A:** Santiago Giménez
+**Options:** Santiago Giménez | Edson Álvarez | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Santiago Gimenez (Cruz Azul->Feyenoord), Edson Alvarez (America->Ajax), Hirving Lozano (Pachuca->PSV) and Raul Jimenez (America->Benfica) all came through Mexican youth systems and moved to Europe, so the trait is shared.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Anchor to a unique attribute.
+
+### Row 38212 — Mexico (easy) — FAIL: non-unique — the Liga-MX-to-Europe youth path fits multiple options
+**Q:** Which 2026 Mexico player's European move stemmed from their youth development system? **A:** Santiago Giménez
+**Options:** Santiago Giménez | Edson Álvarez | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Santiago Gimenez (Cruz Azul->Feyenoord), Edson Alvarez (America->Ajax), Hirving Lozano (Pachuca->PSV) and Raul Jimenez (America->Benfica) all came through Mexican youth systems and moved to Europe, so the trait is shared.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Anchor to a unique attribute.
+
+### Row 38218 — Mexico (easy) — FAIL: non-unique — both the USA and Canada are 2026 co-hosts in CONCACAF
+**Q:** Which 2026 World Cup co-host qualified automatically, unlike Mexico in 2014? **A:** United States
+**Options:** United States | Canada | Brazil | Argentina
+**Why it fails:** Mexico's 2026 co-hosts are the USA AND Canada, both in CONCACAF and both auto-qualified, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Leave only one valid co-host option.
+
+### Row 38225 — Mexico (medium) — FAIL: answer wrong — the 2009 final (5-0) was a larger margin than 2015 (3-1)
+**Q:** Which CONCACAF Gold Cup final did Mexico win by a larger margin? **A:** 2015 vs Jamaica
+**Options:** 2015 vs Jamaica | 2019 vs USA | 2011 vs USA | 2009 vs USA
+**Why it fails:** Mexico won the 2009 Gold Cup final 5-0 over the USA (a 5-goal margin), larger than the 3-1 (2-goal) win over Jamaica in 2015. '2009 vs USA' is an option.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Mark the 2009 final.
+
+### Row 38231 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not on penalties
+**Q:** Which CONCACAF nation beat Mexico on penalties in the 2020 Nations League final? **A:** USA
+**Options:** USA | Canada | Costa Rica | Panama
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final (June 2021); it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time, 3-2'.
+
+### Row 38296 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not on penalties
+**Q:** Which CONCACAF rival beat Mexico on penalties in the 2019-20 Nations League final? **A:** United States
+**Options:** United States | Costa Rica | Canada | Panama
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final (June 2021); it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time, 3-2'.
+
+### Row 38297 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not on penalties
+**Q:** Which CONCACAF rival beat Mexico on penalties in the 2020 Nations League final? **A:** United States
+**Options:** United States | Costa Rica | Canada | Jamaica
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final (June 2021); it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time, 3-2'.
+
+### Row 38298 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not on penalties
+**Q:** Which CONCACAF rival defeated Mexico in the 2019-20 Nations League final? **A:** United States
+**Options:** United States | Canada | Costa Rica | Panama
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final (June 2021); it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time, 3-2'.
+
+### Row 38317 — Mexico (hard) — FAIL: non-unique — Mexico also exited the group at the 2011 and 2015 Copas
+**Q:** Which Copa América did Mexico fail to advance from the group stage? **A:** 2024 Copa América
+**Options:** 2024 Copa América | 2016 Copa América | 2011 Copa América | 2015 Copa América
+**Why it fails:** Mexico failed to advance from the group stage at the 2011 and 2015 Copa America as well as 2024 (only 2016, a distractor, they reached the QF), so the year is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Use 'last' or a single distinguishing detail.
+
+### Row 38356 — Mexico (easy) — FAIL: answer wrong — Jaime Lozano, not Aguirre, replaced Cocca in 2023
+**Q:** Which manager replaced Diego Cocca as Mexico boss in 2023? **A:** Javier Aguirre
+**Options:** Javier Aguirre | Miguel Herrera | Juan Carlos Osorio | Gerardo Martino
+**Why it fails:** Diego Cocca was replaced by Jaime Lozano (interim then full) in June 2023; Aguirre only took over in 2024.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Use Jaime Lozano.
+
+### Row 38360 — Mexico (easy) — FAIL: non-unique — the Liga-MX-to-Europe youth path fits multiple options
+**Q:** Which Mexican 2026 player's path to Europe exemplifies their youth development? **A:** Santiago Giménez
+**Options:** Santiago Giménez | Edson Álvarez | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Gimenez, Edson Alvarez, Lozano and Raul Jimenez all came through Mexican youth and moved to Europe, so the trait is shared.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Anchor to a unique attribute.
+
+### Row 38378 — Mexico (easy) — FAIL: answer wrong — Lozano was not at the 2014 World Cup
+**Q:** Which Mexican attacker was a key figure at the 2014, 2018, and 2022 World Cups? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Carlos Vela | Raúl Jiménez | Javier Hernández
+**Why it fails:** Hirving Lozano debuted at the 2018 World Cup; he was not in Mexico's 2014 squad, so he was not a key figure across 2014/2018/2022. Among the options, Raul Jimenez (2014, 2018, 2022) fits.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Use a player present at all three (Jimenez).
+
+### Row 38384 — Mexico (easy) — FAIL: answer wrong — Vela was only in the 2018 squad
+**Q:** Which Mexican attacker was in the 2014, 2018, and 2022 World Cup squads? **A:** Carlos Vela
+**Options:** Carlos Vela | Javier Hernández | Andrés Guardado | Guillermo Ochoa
+**Why it fails:** Carlos Vela was in Mexico's 2018 World Cup squad but NOT 2014 (boycott era) or 2022; Andres Guardado and Guillermo Ochoa (distractors) were the ones in all three.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Pick a player actually in all three squads.
+
+### Row 38388 — Mexico (easy) — FAIL: answer wrong — Vela and Lozano were not key at the 2014 World Cup
+**Q:** Which Mexican attackers were key in the 2014, 2018, and 2022 World Cup cycles? **A:** Vela, Lozano, Jiménez
+**Options:** Vela, Lozano, Jiménez | Hernández,  Guardado,  Dos Santos | Chicharito, Corona, Herrera | Álvarez, Sánchez
+**Why it fails:** Of 'Vela, Lozano, Jimenez', only Raul Jimenez featured at the 2014, 2018 AND 2022 World Cups; Vela (2018 only) and Lozano (2018/2022) were not at 2014.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** List players present at all three.
+
+### Row 38389 — Mexico (easy) — FAIL: non-unique — three clubs do not hold the title record
+**Q:** Which Mexican club does NOT hold the record for most Liga MX titles? **A:** Guadalajara (Chivas)
+**Options:** Guadalajara (Chivas) | Club América | Cruz Azul | UNAM
+**Why it fails:** Club America holds the most Liga MX titles, so Guadalajara, Cruz Azul AND UNAM all 'do NOT hold the record' — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Make three options the record holder / one clear odd-one-out.
+
+### Row 38416 — Mexico (easy) — FAIL: answer wrong — Vela and Lozano were not at the 2014 World Cup
+**Q:** Which Mexican forward trio were key attackers at the 2014, 2018, and 2022 FIFA World Cups? **A:** Vela, Lozano, Jiménez
+**Options:** Vela, Lozano, Jiménez | Chicharito,  Guardado,  Dos Santos | Hernández, Corona, Salcido | Borgetti, Márquez
+**Why it fails:** Of 'Vela, Lozano, Jimenez', only Raul Jimenez featured at 2014, 2018 AND 2022; Vela (2018 only) and Lozano (2018/2022) were not at 2014.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** List players present at all three.
+
+### Row 38420 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper made multiple World Cup Teams of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Antonio Carbajal | Oswaldo Sánchez
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38423 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper made the FIFA World Cup Team of the Tournament in 2014? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Alfredo Talavera | José de Jesús Corona | Rodolfo Cota
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38425 — Mexico (easy) — FAIL: answer wrong — Ochoa did not retire after 2022
+**Q:** Which Mexican goalkeeper retired internationally after the 2022 World Cup? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Andrés Guardado | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Ochoa kept playing for Mexico after 2022 (Salernitana, AVS) and is in the 2026 World Cup squad for a record 6th World Cup; he said he will retire only AFTER the 2026 tournament. (Andres Guardado is the one who retired internationally after 2022.)
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Use Guardado, or fix the retirement claim.
+
+### Row 38426 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper was in the 2014 World Cup's Team of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Keylor Navas | Manuel Neuer | Thibaut Courtois
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38428 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper was named in multiple FIFA World Cup Teams of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Oswaldo Sánchez | Antonio Carbajal
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38431 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper was named to the 2014 World Cup Team of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Manuel Neuer | Keylor Navas | Thibaut Courtois
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38433 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper was selected for the 2014 FIFA World Cup Team of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Óscar Pérez | Alfredo Talavera
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38434 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican goalkeeper's performances earned him multiple World Cup Team of the Tournament selections? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Óscar Pérez | Alfredo Talavera
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38435 — Mexico (easy) — FAIL: false / unverified — Ochoa was not in a 2014 World Cup 'Team of the Tournament'
+**Q:** Which Mexican keeper made the 2014 FIFA World Cup Team of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Óscar Pérez | Alfredo Talavera
+**Why it fails:** FIFA did not name an official Team of the Tournament for 2014, and the recognised best-XIs (e.g. the FIFPro World 11) had Neuer in goal, not Ochoa. Ochoa was man of the match vs Brazil but not in any 2014 'Team of the Tournament', and certainly not in 'multiple' such teams.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil' or remove the Team-of-the-Tournament claim.
+
+### Row 38450 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexican midfielder played at the 2014, 2018, and 2022 World Cups? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Carlos Vela | Jesús Corona
+**Why it fails:** Both Hector Herrera and Andres Guardado (a distractor) played at the 2014, 2018 AND 2022 World Cups, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask for the player whose FIRST World Cup was 2014 (uniquely Herrera).
+
+### Row 38451 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexican midfielder played in the 2014, 2018, and 2022 World Cups? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Edson Álvarez | Jesús Manuel Corona
+**Why it fails:** Both Hector Herrera and Andres Guardado (a distractor) played at the 2014, 2018 AND 2022 World Cups, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask for the player whose FIRST World Cup was 2014 (uniquely Herrera).
+
+### Row 38454 — Mexico (medium) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexican midfielder started in the 2014, 2018, and 2022 World Cup group stages? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Edson Álvarez | Carlos Vela
+**Why it fails:** Both Hector Herrera and Andres Guardado (a distractor) played at the 2014, 2018 AND 2022 World Cups, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask for the player whose FIRST World Cup was 2014 (uniquely Herrera).
+
+### Row 38468 — Mexico (easy) — FAIL: stale — the Mexican World Cup-appearance record is now Ochoa's 6, not 5
+**Q:** Which Mexican player holds the record with five World Cup appearances? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Guillermo Ochoa | Andrés Guardado | Cuauhtémoc Blanco
+**Why it fails:** Guillermo Ochoa is in the 2026 squad for a record SIXTH World Cup, so Marquez no longer 'holds the record' with five (Antonio Carbajal also reached five). Marquez played in 5 WCs is true, but the record framing is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Reframe as 'Marquez played in five World Cups' without 'record'.
+
+### Row 38475 — Mexico (easy) — FAIL: answer wrong — Ochoa did not retire after 2022
+**Q:** Which Mexican player retired from international duty after the 2022 World Cup? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Andrés Guardado | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Ochoa kept playing for Mexico after 2022 and is in the 2026 World Cup squad (record 6th WC). Andres Guardado (a distractor) is the one who retired internationally after 2022.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Use Guardado.
+
+### Row 38479 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexican player returned to Liga MX after 2026 World Cup qualifying? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Edson Álvarez | Santiago Giménez | Raúl Jiménez
+**Why it fails:** Hirving Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX, so 'returned to / now in Liga MX' is false.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38493 — Mexico (easy) — FAIL: stale — the Mexican World Cup-appearance record is now Ochoa's 6, not 5
+**Q:** Which Mexican player set a record by playing at five World Cups? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Guillermo Ochoa | Hirving Lozano | Andrés Guardado
+**Why it fails:** Guillermo Ochoa is in the 2026 squad for a record SIXTH World Cup, so Marquez no longer 'holds the record' with five (Antonio Carbajal also reached five). Marquez played in 5 WCs is true, but the record framing is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Reframe as 'Marquez played in five World Cups' without 'record'.
+
+### Row 38494 — Mexico (easy) — FAIL: stale — Ochoa now has SIX World Cups, not five
+**Q:** Which Mexican player shares the record of five World Cup appearances with Guillermo Ochoa? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Andrés Guardado | Javier Hernández | Cuauhtémoc Blanco
+**Why it fails:** The premise that Marquez 'shares the record of five' with Ochoa is outdated: Ochoa reached a sixth World Cup in 2026, so he no longer shares 'five'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Drop the Ochoa 'five' framing.
+
+### Row 38501 — Mexico (easy) — FAIL: non-unique — Lozano (a distractor) was not even at the 2014 World Cup
+**Q:** Which Mexican player was NOT involved in the 2014 'No era penal' controversy? **A:** Javier Hernández
+**Options:** Javier Hernández | Rafael Márquez | Guillermo Ochoa | Hirving Lozano
+**Why it fails:** The 'No era penal' controversy was the 2014 R16; Hirving Lozano was not in the 2014 squad, so he is the clearest player 'not involved', making the marked answer (Hernandez, who played the match) non-unique/weaker.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options players who were in the 2014 match.
+
+### Row 38503 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexican player, now in Liga MX, was in Europe before the 2022 FIFA World Cup? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Edson Álvarez | Santiago Giménez
+**Why it fails:** Hirving Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX, so 'returned to / now in Liga MX' is false.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38518 — Mexico (easy) — FAIL: false premise — Mexico played no 2026 qualifiers (co-host)
+**Q:** Which Mexican stadium hosted a 2026 World Cup qualifier besides Estadio Azteca? **A:** Estadio Jalisco
+**Options:** Estadio Jalisco | Estadio BBVA | Estadio Akron | Estadio Cuauhtémoc
+**Why it fails:** Mexico qualified automatically as a 2026 co-host and did not play 2026 World Cup qualifiers, so there was no '2026 World Cup qualifier' venue.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Refer to 2022/earlier qualifiers, not 2026.
+
+### Row 38536 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexican star returned to Liga MX after the 2022 World Cup? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Andrés Guardado | Edson Álvarez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he is not in Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38568 — Mexico (easy) — FAIL: wrong premise / non-unique — Corona also did not play at 2022
+**Q:** Which Mexican winger did NOT play at the 2022 FIFA World Cup? **A:** Carlos Vela
+**Options:** Carlos Vela | Jesús Corona | Hirving Lozano | Uriel Antuna
+**Why it fails:** Corona missed the 2022 World Cup (injury), so both Vela (not selected) and Corona did NOT play at 2022; the explanation wrongly lists Corona as in the squad.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Make three options players who did play 2022.
+
+### Row 38569 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexican winger played at both the 2018 and 2022 FIFA World Cups? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup, so he was not a key winger at BOTH 2018 and 2022. Hirving Lozano (a distractor) is the winger who played both.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played 2018 and 2022).
+
+### Row 38572 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexican winger was a key player at both the 2018 and 2022 World Cups? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup, so he was not a key winger at BOTH 2018 and 2022. Hirving Lozano (a distractor) is the winger who played both.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played 2018 and 2022).
+
+### Row 38573 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexican winger was a key starter at both the 2018 and 2022 FIFA World Cups? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup, so he was not a key winger at BOTH 2018 and 2022. Hirving Lozano (a distractor) is the winger who played both.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played 2018 and 2022).
+
+### Row 38574 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexican winger was a key starter in both the 2018 and 2022 World Cups? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup, so he was not a key winger at BOTH 2018 and 2022. Hirving Lozano (a distractor) is the winger who played both.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played 2018 and 2022).
+
+### Row 38575 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexican winger was in both the 2018 and 2022 World Cup squads? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup, so he was not a key winger at BOTH 2018 and 2022. Hirving Lozano (a distractor) is the winger who played both.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played 2018 and 2022).
+
+### Row 38576 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexican winger was key across the 2018 and 2022 World Cup cycles? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup, so he was not a key winger at BOTH 2018 and 2022. Hirving Lozano (a distractor) is the winger who played both.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played 2018 and 2022).
+
+### Row 38585 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico 2026 squad player is based in Liga MX? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Edson Álvarez | Santiago Giménez | Raúl Jiménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he is not in Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38587 — Mexico (easy) — FAIL: non-unique — Raul Jimenez is also Europe-based
+**Q:** Which Mexico 2026 World Cup player is based in Europe? **A:** Santiago Giménez
+**Options:** Santiago Giménez | Hirving Lozano | Raúl Jiménez | Andrés Guardado
+**Why it fails:** Both Santiago Gimenez (Italy) and Raul Jimenez (Fulham, England) are based in Europe, so the answer is not unique (the explanation wrongly says the others are in Liga MX/retired).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Leave only one Europe-based option.
+
+### Row 38599 — Mexico (easy) — FAIL: answer wrong — Vela played at the 2018 World Cup
+**Q:** Which Mexico attacker missed the 2018 World Cup by declining call-ups? **A:** Carlos Vela
+**Options:** Carlos Vela | Javier Hernández | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Carlos Vela returned from his boycott and WAS in Mexico's 2018 World Cup squad (he played); he did not 'miss the 2018 World Cup'. He was absent in 2022.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Vela
+**Remedy:** Refer to 2022, not 2018.
+
+### Row 38603 — Mexico (easy) — FAIL: answer wrong — Vela was not at the 2014 World Cup
+**Q:** Which Mexico attacker was a key player at the 2014 FIFA World Cup? **A:** Carlos Vela
+**Options:** Carlos Vela | Javier Hernández | Hirving Lozano | Raúl Jiménez
+**Why it fails:** Carlos Vela was in his boycott period and was NOT in Mexico's 2014 squad; the key 2014 attacker was Hernandez (a distractor).
+**Source:** https://en.wikipedia.org/wiki/Carlos_Vela
+**Remedy:** Use a player actually at the 2014 World Cup.
+
+### Row 38614 — Mexico (easy) — FAIL: stale — the Mexican World Cup record is now Ochoa's 6, not 5
+**Q:** Which Mexico defender played at a record five FIFA World Cups? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Héctor Moreno | Carlos Salcido | Gerardo Torrado
+**Why it fails:** Ochoa is in the 2026 squad for a record SIXTH World Cup, so Marquez's five is no longer 'a record' (and 5 is shared by Carbajal). Marquez did play 5 WCs, but the 'record' framing is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Drop 'record' (just state he played five).
+
+### Row 38615 — Mexico (easy) — FAIL: stale — the Mexican World Cup record is now Ochoa's 6, not 5
+**Q:** Which Mexico defender played at five FIFA World Cups? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Carlos Salcido | Héctor Moreno | Diego Reyes
+**Why it fails:** Ochoa is in the 2026 squad for a record SIXTH World Cup, so Marquez's five is no longer 'a record' (and 5 is shared by Carbajal). Marquez did play 5 WCs, but the 'record' framing is outdated.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Drop 'record' (just state he played five).
+
+### Row 38619 — Mexico (easy) — FAIL: non-unique — Moreno, Reyes and Salcedo were also 2018 defenders
+**Q:** Which Mexico defender was in their squad for the 2018 World Cup? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Héctor Moreno | Diego Reyes | Carlos Salcedo
+**Why it fails:** Hector Moreno, Diego Reyes and Carlos Salcedo were all in Mexico's 2018 squad as defenders, so 'which defender was in the 2018 squad' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options players not in the 2018 squad.
+
+### Row 38621 — Mexico (easy) — FAIL: non-unique — Guardado also reached five World Cups
+**Q:** Which Mexico defender, at the 2018 World Cup, equaled a record for fifth tournament appearance? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Carlos Salcido | Andrés Guardado | Cuauhtémoc Blanco
+**Why it fails:** Andres Guardado (a distractor) also played at five World Cups (2006-2022), so 'equaled the record for a fifth tournament' is not unique to Marquez.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Use distractors with fewer than five World Cups.
+
+### Row 38625 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico forward now plays in Liga MX after European stints? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Andrés Guardado | Edson Álvarez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX (he did not rejoin Pachuca).
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38631 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico forward, after playing in Europe, returned to Liga MX before the 2026 World Cup? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Javier Hernández | Jesús Corona
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX (he did not rejoin Pachuca).
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38632 — Mexico (easy) — FAIL: false — Ochoa was not in a World Cup 'Team of the Tournament'
+**Q:** Which Mexico goalkeeper earned a 2014 World Cup Team of the Tournament place? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Oswaldo Sánchez | Francisco Guillermo Ochoa Magaña
+**Why it fails:** FIFA named no official 2014 Team of the Tournament, and Ochoa is not in any recognised World Cup all-star XI (Neuer was the 2014 keeper). He was man of the match vs Brazil, but not Team of the Tournament, let alone 'multiple'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil'.
+
+### Row 38633 — Mexico (easy) — FAIL: answer wrong — Ochoa did not retire after 2022
+**Q:** Which Mexico goalkeeper ended his international career after the 2022 FIFA World Cup? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Francisco Ochoa | Alfredo Talavera
+**Why it fails:** Ochoa continued for Mexico after 2022 and is in the 2026 World Cup squad (record 6th); he plans to retire only after 2026.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Use Guardado, or fix the retirement claim.
+
+### Row 38637 — Mexico (easy) — FAIL: false — Ochoa was not in a World Cup 'Team of the Tournament'
+**Q:** Which Mexico goalkeeper made multiple FIFA World Cup Teams of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Manuel Neuer | Keylor Navas | Thibaut Courtois
+**Why it fails:** FIFA named no official 2014 Team of the Tournament, and Ochoa is not in any recognised World Cup all-star XI (Neuer was the 2014 keeper). He was man of the match vs Brazil, but not Team of the Tournament, let alone 'multiple'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil'.
+
+### Row 38642 — Mexico (easy) — FAIL: false — Ochoa was not in a World Cup 'Team of the Tournament'
+**Q:** Which Mexico goalkeeper made the 2014 World Cup Team of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Keylor Navas | Manuel Neuer | Thibaut Courtois
+**Why it fails:** FIFA named no official 2014 Team of the Tournament, and Ochoa is not in any recognised World Cup all-star XI (Neuer was the 2014 keeper). He was man of the match vs Brazil, but not Team of the Tournament, let alone 'multiple'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil'.
+
+### Row 38645 — Mexico (easy) — FAIL: answer wrong — Ochoa did not retire after 2022
+**Q:** Which Mexico goalkeeper retired from international duty after the 2022 World Cup? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Alfredo Talavera | Rodolfo Cota | José de Jesús Corona
+**Why it fails:** Ochoa continued for Mexico after 2022 and is in the 2026 World Cup squad (record 6th); he plans to retire only after 2026.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Use Guardado, or fix the retirement claim.
+
+### Row 38646 — Mexico (easy) — FAIL: answer wrong — Ochoa did not retire after 2022
+**Q:** Which Mexico goalkeeper retired internationally after the 2022 World Cup? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Alfredo Talavera | Rodolfo Cota | José de Jesús Corona
+**Why it fails:** Ochoa continued for Mexico after 2022 and is in the 2026 World Cup squad (record 6th); he plans to retire only after 2026.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Use Guardado, or fix the retirement claim.
+
+### Row 38652 — Mexico (easy) — FAIL: false — Ochoa was not in a World Cup 'Team of the Tournament'
+**Q:** Which Mexico goalkeeper was named to multiple World Cup All-Star teams? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Alfredo Talavera | Rodolfo Cota
+**Why it fails:** FIFA named no official 2014 Team of the Tournament, and Ochoa is not in any recognised World Cup all-star XI (Neuer was the 2014 keeper). He was man of the match vs Brazil, but not Team of the Tournament, let alone 'multiple'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil'.
+
+### Row 38654 — Mexico (easy) — FAIL: false — Ochoa was not in a World Cup 'Team of the Tournament'
+**Q:** Which Mexico goalkeeper was selected for a World Cup Team of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Jorge Campos | Óscar Pérez | Alfredo Talavera
+**Why it fails:** FIFA named no official 2014 Team of the Tournament, and Ochoa is not in any recognised World Cup all-star XI (Neuer was the 2014 keeper). He was man of the match vs Brazil, but not Team of the Tournament, let alone 'multiple'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil'.
+
+### Row 38655 — Mexico (easy) — FAIL: false — Ochoa was not in a World Cup 'Team of the Tournament'
+**Q:** Which Mexico goalkeeper was selected for multiple World Cup Teams of the Tournament? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Keylor Navas | Manuel Neuer | Thibaut Courtois
+**Why it fails:** FIFA named no official 2014 Team of the Tournament, and Ochoa is not in any recognised World Cup all-star XI (Neuer was the 2014 keeper). He was man of the match vs Brazil, but not Team of the Tournament, let alone 'multiple'.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Reword to 'man of the match vs Brazil'.
+
+### Row 38667 — Mexico (easy) — FAIL: non-unique — Herrera, Aguirre and Martino all did not lead Mexico at 2018
+**Q:** Which Mexico manager did NOT lead them at a 2018 World Cup? **A:** Gerardo 'Tata' Martino
+**Options:** Gerardo 'Tata' Martino | Juan Carlos Osorio | Miguel Herrera | Javier Aguirre
+**Why it fails:** Only Juan Carlos Osorio led Mexico at the 2018 World Cup, so Martino, Herrera AND Aguirre all 'did NOT lead them at 2018' — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options 2018 managers.
+
+### Row 38713 — Mexico (easy) — FAIL: answer wrong — Aguirre was reappointed in 2024, not 2023
+**Q:** Which Mexico manager was reappointed for a third stint in 2023? **A:** Javier Aguirre
+**Options:** Javier Aguirre | Miguel Herrera | Juan Carlos Osorio | Gerardo Martino
+**Why it fails:** After Cocca (Feb-Jun 2023), Jaime Lozano managed Mexico through 2023-24; Javier Aguirre was reappointed for the 2026 cycle in August 2024, not 2023.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Change the year to 2024.
+
+### Row 38754 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexico midfielder has over 100 caps and played in the 2014, 2018, and 2022 World Cups? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Carlos Vela | Rafael Márquez
+**Why it fails:** Andres Guardado (a distractor) also played at the 2014, 2018 AND 2022 World Cups, so 'which midfielder played all three' is not unique to Herrera.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask which midfielder DEBUTED in 2014 (uniquely Herrera).
+
+### Row 38760 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexico midfielder played at the 2014, 2018, and 2022 World Cups? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Carlos Vela | Edson Álvarez
+**Why it fails:** Andres Guardado (a distractor) also played at the 2014, 2018 AND 2022 World Cups, so 'which midfielder played all three' is not unique to Herrera.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask which midfielder DEBUTED in 2014 (uniquely Herrera).
+
+### Row 38763 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexico midfielder played in the 2014, 2018, and 2022 World Cup campaigns? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Carlos Vela | Hirving Lozano
+**Why it fails:** Andres Guardado (a distractor) also played at the 2014, 2018 AND 2022 World Cups, so 'which midfielder played all three' is not unique to Herrera.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask which midfielder DEBUTED in 2014 (uniquely Herrera).
+
+### Row 38767 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexico midfielder was a key starter at the 2014, 2018, and 2022 World Cups? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Carlos Vela | Edson Álvarez
+**Why it fails:** Andres Guardado (a distractor) also played at the 2014, 2018 AND 2022 World Cups, so 'which midfielder played all three' is not unique to Herrera.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask which midfielder DEBUTED in 2014 (uniquely Herrera).
+
+### Row 38768 — Mexico (easy) — FAIL: non-unique — Guardado also played at 2014, 2018 and 2022
+**Q:** Which Mexico midfielder was in the 2014, 2018, and 2022 World Cup squads? **A:** Héctor Herrera
+**Options:** Héctor Herrera | Andrés Guardado | Carlos Vela | Rafael Márquez
+**Why it fails:** Andres Guardado (a distractor) also played at the 2014, 2018 AND 2022 World Cups, so 'which midfielder played all three' is not unique to Herrera.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Ask which midfielder DEBUTED in 2014 (uniquely Herrera).
+
+### Row 38774 — Mexico (easy) — FAIL: answer wrong — Guardado did not have 180+ caps by 2018
+**Q:** Which Mexico player anchored midfield at the 2018 World Cup with over 180 caps? **A:** Andrés Guardado
+**Options:** Andrés Guardado | Héctor Herrera | Carlos Vela | Rafael Márquez
+**Why it fails:** Guardado had roughly 150 caps at the 2018 World Cup; he passed 180 only around 2022. 'Over 180 caps by 2018' is false (he is the most-capped player overall, but not with 180 by 2018).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Time-bound to 2022, or drop the 180 figure for 2018.
+
+### Row 38778 — Mexico (easy) — FAIL: non-unique — Guardado, Hernandez and Ochoa were also at 2014
+**Q:** Which Mexico player appeared at the 2014 World Cup? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Andrés Guardado | Javier Hernández | Guillermo Ochoa
+**Why it fails:** Andres Guardado, Javier Hernandez and Guillermo Ochoa all appeared at the 2014 World Cup, so 'which player appeared at 2014' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options players not at 2014.
+
+### Row 38779 — Mexico (easy) — FAIL: non-unique / stale — Guardado also reached 5, and the record is now Ochoa's 6
+**Q:** Which Mexico player appeared in a record five FIFA World Cups? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Cuauhtémoc Blanco | Javier Hernández | Andrés Guardado
+**Why it fails:** Andres Guardado (and Ochoa) also reached five World Cups, so a 'record five' is neither unique nor current (Ochoa is at six in 2026).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Use distractors with fewer than 5 WCs and drop 'record'.
+
+### Row 38782 — Mexico (easy) — FAIL: non-unique / stale — Guardado also reached 5, and the record is now Ochoa's 6
+**Q:** Which Mexico player competed at five FIFA World Cups? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Guillermo Ochoa | Andrés Guardado | Cuauhtémoc Blanco
+**Why it fails:** Andres Guardado (and Ochoa) also reached five World Cups, so a 'record five' is neither unique nor current (Ochoa is at six in 2026).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Use distractors with fewer than 5 WCs and drop 'record'.
+
+### Row 38789 — Mexico (easy) — FAIL: non-unique / wrong premise — none of the options is in Liga MX
+**Q:** Which Mexico player for 2026 will not be in Liga MX? **A:** Santiago Giménez
+**Options:** Santiago Giménez | Hirving Lozano | Raúl Jiménez | Edson Álvarez
+**Why it fails:** Gimenez (Italy), Lozano (MLS), Jimenez (Fulham) and Alvarez (West Ham) are all outside Liga MX, so 'which will NOT be in Liga MX' fits all four; the explanation wrongly calls the others Liga MX-based.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Make three options Liga-MX players.
+
+### Row 38790 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico player for the 2026 cycle returned to Liga MX after European stints? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Andrés Guardado | Edson Álvarez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he is not in Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38792 — Mexico (easy) — FAIL: answer wrong — Guardado did not have 180+ caps by 2018
+**Q:** Which Mexico player had over 180 caps by the 2018 World Cup? **A:** Andrés Guardado
+**Options:** Andrés Guardado | Javier Hernández | Guillermo Ochoa | Rafael Márquez
+**Why it fails:** Guardado had roughly 150 caps at the 2018 World Cup; he passed 180 only around 2022. 'Over 180 caps by 2018' is false (he is the most-capped player overall, but not with 180 by 2018).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Time-bound to 2022, or drop the 180 figure for 2018.
+
+### Row 38794 — Mexico (easy) — FAIL: answer wrong — Guardado did not have 180+ caps by 2018
+**Q:** Which Mexico player had over 180 caps for the 2018 World Cup squad? **A:** Andrés Guardado
+**Options:** Andrés Guardado | Javier Hernández | Guillermo Ochoa | Rafael Márquez
+**Why it fails:** Guardado had roughly 150 caps at the 2018 World Cup; he passed 180 only around 2022. 'Over 180 caps by 2018' is false (he is the most-capped player overall, but not with 180 by 2018).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Time-bound to 2022, or drop the 180 figure for 2018.
+
+### Row 38803 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico player in 2026 plays for a Liga MX club? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Edson Álvarez | Santiago Giménez | Raúl Jiménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he is not in Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38814 — Mexico (easy) — FAIL: non-unique — Ochoa and Guardado also reached five World Cups
+**Q:** Which Mexico player participated in five FIFA World Cups? **A:** Rafael Márquez
+**Options:** Rafael Márquez | Guillermo Ochoa | Andrés Guardado | Javier Hernández
+**Why it fails:** Guillermo Ochoa (now 6) and Andres Guardado (5) also played five+ World Cups, so 'participated in five World Cups' is not unique to Marquez.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Use distractors with fewer than five WCs.
+
+### Row 38823 — Mexico (easy) — FAIL: answer wrong — Ochoa did not retire after 2022
+**Q:** Which Mexico player retired internationally after the 2022 World Cup? **A:** Guillermo Ochoa
+**Options:** Guillermo Ochoa | Andrés Guardado | Javier Hernández | Héctor Herrera
+**Why it fails:** Ochoa is in the 2026 World Cup squad (record 6th); Guardado (a distractor) is the one who retired after 2022.
+**Source:** https://en.wikipedia.org/wiki/Guillermo_Ochoa
+**Remedy:** Use Guardado.
+
+### Row 38825 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico player returned to Liga MX after playing in Europe for the 2026 World Cup? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Edson Álvarez | Santiago Giménez | Raúl Jiménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38872 — Mexico (easy) — FAIL: non-unique / wrong premise — Ochoa is also in the 2026 squad; Lozano is in MLS
+**Q:** Which Mexico player will be in their 2026 World Cup squad mix? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Andrés Guardado | Guillermo Ochoa | Javier Aguirre
+**Why it fails:** Ochoa is also a 2026 squad player (so the answer isn't unique among real players), and the explanation wrongly says Lozano is in Liga MX (he is in MLS).
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Fix Lozano's club and remove the other squad member.
+
+### Row 38875 — Mexico (easy) — FAIL: answer wrong — Guardado did not have 180+ caps in 2018
+**Q:** Which Mexico player, after a 2018 World Cup group match, had over 180 caps? **A:** Andrés Guardado
+**Options:** Andrés Guardado | Rafael Márquez | Guillermo Ochoa | Javier Hernández
+**Why it fails:** Guardado had roughly 150 caps at the 2018 World Cup; he passed 180 only around 2022. He is the most-capped player overall, but not with 180 by 2018.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Time-bound to 2022 or drop the 180 figure for 2018.
+
+### Row 38876 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico player, after European stints, now plays in Liga MX for the 2026 cycle? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Edson Álvarez | Santiago Giménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38884 — Mexico (easy) — FAIL: answer wrong — Guardado did not have 180+ caps in 2018
+**Q:** Which Mexico player's 180+ caps made him a 2018 World Cup squad leader? **A:** Andrés Guardado
+**Options:** Andrés Guardado | Javier Hernández | Guillermo Ochoa | Rafael Márquez
+**Why it fails:** Guardado had roughly 150 caps at the 2018 World Cup; he passed 180 only around 2022. He is the most-capped player overall, but not with 180 by 2018.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Time-bound to 2022 or drop the 180 figure for 2018.
+
+### Row 38891 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico player's 2026 squad inclusion follows a return to Liga MX? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Edson Álvarez | Santiago Giménez | Raúl Jiménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38900 — Mexico (medium) — FAIL: non-unique — 2010, 2018 and 2022 were all less dramatic than the 2014 playoff
+**Q:** Which Mexico qualifying campaign was statistically less dramatic than their 2014 playoff? **A:** 2018 CONCACAF qualification
+**Options:** 2018 CONCACAF qualification | 2022 CONCACAF qualification | 2010 CONCACAF qualification | 2006 CONCACAF qualification
+**Why it fails:** Mexico qualified directly via CONCACAF for 2010, 2018 AND 2022 (all less dramatic than the 2014 inter-confederation playoff), so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options equally dramatic campaigns.
+
+### Row 38933 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico star returned to Liga MX after playing in Europe? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Edson Álvarez | Santiago Giménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38934 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico star returned to Liga MX after the 2022 World Cup? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Andrés Guardado | Edson Álvarez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38935 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico star, after 2022, returned to Liga MX unlike other European-based forwards? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Santiago Giménez | Raúl Jiménez | Edson Álvarez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38936 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico star's Liga MX return aids their 2026 World Cup squad? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Raúl Jiménez | Edson Álvarez | Santiago Giménez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38984 — Mexico (hard) — FAIL: answer wrong — Mexico's highest FIFA ranking (4th) was not in 2014
+**Q:** Which Mexico team reached its highest FIFA ranking in 2014? **A:** The 2014 team
+**Options:** The 2014 team | The 2018 team | The 2006 team | The 2022 team
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th in 2014, so the '2014 team' did not reach Mexico's highest ranking.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct the ranking to 4th (1998/2006).
+
+### Row 38985 — Mexico (hard) — FAIL: non-unique — Mexico won both the 2009 and 2011 Gold Cups before 2014
+**Q:** Which Mexico tournament win preceded their 2014 World Cup campaign? **A:** 2011 CONCACAF Gold Cup
+**Options:** 2011 CONCACAF Gold Cup | 2009 CONCACAF Gold Cup | 2013 CONCACAF Gold Cup | 2015 CONCACAF Gold Cup
+**Why it fails:** Mexico won the 2009 AND 2011 Gold Cups, both before the 2014 World Cup, so 'a Gold Cup win preceding 2014' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Make three options non-wins or post-2014.
+
+### Row 38989 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexico winger featured in their 2022 World Cup match against Poland? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup; he did not feature in 2022. Hirving Lozano (a distractor) played both 2018 and 2022.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played both).
+
+### Row 38990 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexico winger played at both the 2018 and 2022 World Cups? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup; he did not feature in 2022. Hirving Lozano (a distractor) played both 2018 and 2022.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played both).
+
+### Row 38992 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico winger played in Europe before returning to Liga MX? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Jesús Corona | Uriel Antuna | Diego Lainez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38993 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico winger plays in Liga MX after European stints? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Jesús Corona | Uriel Antuna | Diego Lainez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38994 — Mexico (easy) — FAIL: answer wrong — Lozano is in MLS, not Liga MX
+**Q:** Which Mexico winger returned to Liga MX for the 2026 World Cup cycle? **A:** Hirving Lozano
+**Options:** Hirving Lozano | Héctor Herrera | Jesús Corona | Diego Lainez
+**Why it fails:** Lozano went Napoli->PSV->San Diego FC (MLS); he never returned to Liga MX.
+**Source:** https://en.wikipedia.org/wiki/Hirving_Lozano
+**Remedy:** Fix Lozano's club (MLS).
+
+### Row 38997 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexico winger was a key player in the 2018 and 2022 World Cup cycles? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Carlos Vela | Diego Lainez
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup; he did not feature in 2022. Hirving Lozano (a distractor) played both 2018 and 2022.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played both).
+
+### Row 38998 — Mexico (easy) — FAIL: answer wrong — Corona missed the 2022 World Cup
+**Q:** Which Mexico winger was a key tactical asset in the 2018 and 2022 World Cups? **A:** Jesús Manuel Corona
+**Options:** Jesús Manuel Corona | Hirving Lozano | Andrés Guardado | Carlos Vela
+**Why it fails:** Jesus 'Tecatito' Corona fractured his fibula in August 2022 and missed the 2022 World Cup; he did not feature in 2022. Hirving Lozano (a distractor) played both 2018 and 2022.
+**Source:** https://en.wikipedia.org/wiki/Jes%C3%BAs_Manuel_Corona
+**Remedy:** Use Lozano (played both).
+
+### Row 39002 — Mexico (medium) — FAIL: malformed — earlier losses (2006, 2010) are among the options
+**Q:** Which Mexico World Cup loss happened first: the 2014 Netherlands defeat or the 2016 Chile 7-0 loss? **A:** 2014 Netherlands defeat
+**Options:** 2014 Netherlands defeat | 2010 Argentina defeat | 2018 Brazil defeat | 2006 Portugal defeat
+**Why it fails:** The question contrasts the 2014 Netherlands loss with the 2016 Chile loss, but the options include the 2006 Portugal and 2010 Argentina World Cup losses, which both predate 2014 — so '2014' is not the earliest option.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Align the options with the binary asked.
+
+### Row 39004 — Mexico (hard) — FAIL: non-unique — 2010, 2014 and 2018 all used the CONCACAF Hexagonal
+**Q:** Which Mexico World Cup qualification path was secured via the CONCACAF Hexagonal? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2010 World Cup | 2014 World Cup | 2022 World Cup
+**Why it fails:** The Hexagonal was the CONCACAF final round for 2010, 2014 AND 2018 (only 2022 used the Octagonal), so 'secured via the Hexagonal' is not unique to 2018.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Use the Octagonal/other rounds as distractors.
+
+### Row 39019 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not penalties
+**Q:** Which nation beat Mexico on penalties in the 2019-20 CONCACAF Nations League final? **A:** USA
+**Options:** USA | Canada | Costa Rica | Jamaica
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final; it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time'.
+
+### Row 39045 — Mexico (easy) — FAIL: explanation wrong — the Chile 7-0 was the quarter-final, not the group stage
+**Q:** Which nation eliminated Mexico 7-0 at the 2016 Copa América? **A:** Chile
+**Options:** Chile | Brazil | Argentina | Uruguay
+**Why it fails:** Chile did beat Mexico 7-0 at the 2016 Centenario, but in the QUARTER-FINAL (Mexico won their group). The explanation wrongly says 'group stage'.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Fix the explanation to 'quarter-final'.
+
+### Row 39089 — Mexico (easy) — FAIL: self-referential / circular — answer is the subject (Mexico)
+**Q:** Which nation was responsible for Mexico co-hosting the 2026 World Cup? **A:** Mexico
+**Options:** Mexico | Canada | United States | Costa Rica
+**Why it fails:** 'Which nation was responsible for Mexico co-hosting the 2026 World Cup -> Mexico' is circular/self-referential.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Reword to a meaningful question (e.g. which nations formed the United bid).
+
+### Row 39127 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not penalties
+**Q:** Which rival beat Mexico in a 2020s CONCACAF final? **A:** USA
+**Options:** USA | Canada | Costa Rica | Panama
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final; it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time'.
+
+### Row 39128 — Mexico (easy) — FAIL: answer wrong — the 2026 Mexican venues are Azteca, BBVA and Akron, not Jalisco
+**Q:** Which stadium besides Estadio Azteca hosted Mexico at the 2026 World Cup? **A:** Estadio Jalisco
+**Options:** Estadio Jalisco | Estadio Nacional | Estadio Maracanã | Estadio Centenario
+**Why it fails:** Mexico's 2026 World Cup host stadiums are Estadio Azteca (Mexico City), Estadio BBVA (Monterrey) and Estadio Akron (Guadalajara) — not Estadio Jalisco.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup
+**Remedy:** Use Estadio Akron or BBVA.
+
+### Row 39129 — Mexico (easy) — FAIL: non-unique — Mexico used Estadio Azteca for 2022 qualifiers
+**Q:** Which stadium did Mexico use for a 2022 World Cup qualifier? **A:** Estadio Jalisco
+**Options:** Estadio Jalisco | Estadio Azteca | Estadio BBVA | Estadio Akron
+**Why it fails:** Mexico played 2022 World Cup qualifiers at Estadio Azteca (a distractor here), so 'which stadium did Mexico use for a 2022 qualifier' is not uniquely Jalisco.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Add 'besides Azteca' / 'in Guadalajara'.
+
+### Row 39137 — Mexico (easy) — FAIL: false premise — Mexico (a 2026 co-host) played no 2026 qualifiers
+**Q:** Which stadium, besides Estadio Azteca, hosts Mexico's 2026 World Cup qualifiers? **A:** Estadio Jalisco
+**Options:** Estadio Jalisco | Estadio BBVA | Estadio Akron | Estadio Cuauhtémoc
+**Why it fails:** Mexico qualified automatically as a 2026 co-host, so there are no 'Mexico 2026 World Cup qualifiers'.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Refer to 2022/earlier qualifiers.
+
+### Row 39152 — Mexico (medium) — FAIL: false premise — the Chile 7-0 was the quarter-final, not the group stage
+**Q:** Which team beat Mexico 7-0 in the 2016 Copa América Centenario group stage? **A:** Chile
+**Options:** Chile | Brazil | Argentina | Uruguay
+**Why it fails:** Mexico won their 2016 Centenario group; the 7-0 to Chile was the quarter-final.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final.
+
+### Row 39156 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not penalties
+**Q:** Which team beat Mexico in the 2019-20 CONCACAF Nations League final? **A:** United States
+**Options:** United States | Costa Rica | Canada | Jamaica
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final; it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time'.
+
+### Row 39192 — Mexico (easy) — FAIL: false — the 2019-20 Nations League final was lost in extra time, not penalties
+**Q:** Which team did Mexico lose to on penalties in the 2019-20 CONCACAF Nations League final? **A:** USA
+**Options:** USA | Argentina | Netherlands | Brazil
+**Why it fails:** USA beat Mexico 3-2 after extra time in the 2019-20 CONCACAF Nations League final; it was not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2019%E2%80%9320_CONCACAF_Nations_League
+**Remedy:** Say 'after extra time'.
+
+### Row 39194 — Mexico (easy) — FAIL: non-unique — Mexico faced none of Brazil, Netherlands or Chile in the 2010 knockout
+**Q:** Which team did Mexico NOT lose to in a 2010 World Cup knockout match? **A:** Brazil
+**Options:** Brazil | Argentina | Netherlands | Chile
+**Why it fails:** Mexico's only 2010 knockout match was the R16 loss to Argentina, so they did NOT lose to Brazil, the Netherlands OR Chile — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options teams Mexico actually lost to.
+
+### Row 39195 — Mexico (easy) — FAIL: non-unique — Mexico did not play Argentina, Brazil or Germany in the 2014 R16
+**Q:** Which team did Mexico NOT play in the 2014 World Cup round of 16? **A:** Argentina
+**Options:** Argentina | Netherlands | Brazil | Germany
+**Why it fails:** Mexico's only 2014 R16 match was vs the Netherlands, so they did NOT play Argentina, Brazil OR Germany — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Make three options teams Mexico actually faced.
+
+### Row 39200 — Mexico (easy) — FAIL: false — the Chile 7-0 was the quarter-final, not the group stage
+**Q:** Which team eliminated Mexico from the 2016 Copa América with a 7-0 win? **A:** Chile
+**Options:** Chile | Argentina | Brazil | Uruguay
+**Why it fails:** Mexico topped their 2016 Centenario group; the 7-0 to Chile was the quarter-final.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final.
+
+### Row 39206 — Mexico (easy) — FAIL: false — the Chile 7-0 was the quarter-final, not the group stage
+**Q:** Which team eliminated Mexico in the 2016 Copa América Centenario? **A:** Chile
+**Options:** Chile | Argentina | Uruguay | Colombia
+**Why it fails:** Mexico topped their 2016 Centenario group; the 7-0 to Chile was the quarter-final.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final.
+
+### Row 39207 — Mexico (medium) — FAIL: false — the Chile 7-0 was the quarter-final, not the group stage
+**Q:** Which team eliminated Mexico in the 2016 Copa América group stage? **A:** Chile
+**Options:** Chile | Argentina | Uruguay | Colombia
+**Why it fails:** Mexico topped their 2016 Centenario group; the 7-0 to Chile was the quarter-final.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final.
+
+### Row 39217 — Mexico (easy) — FAIL: false — the Chile 7-0 was the quarter-final, not the group stage
+**Q:** Which team inflicted Mexico's worst ever competitive defeat in the 2016 Copa América Centenario? **A:** Chile
+**Options:** Chile | Brazil | Argentina | Colombia
+**Why it fails:** Mexico topped their 2016 Centenario group; the 7-0 to Chile was the quarter-final.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Say quarter-final.
+
+### Row 39253 — Mexico (hard) — FAIL: non-unique — Mexico qualified directly via CONCACAF in 2010, 2018 and 2022
+**Q:** Which World Cup did Mexico qualify for directly through CONCACAF qualification? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2010 World Cup | 2014 World Cup | 2022 World Cup
+**Why it fails:** Mexico qualified directly for 2010, 2018 AND 2022 (only 2014 was via playoff), so the year is not unique.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Use a single distinguishing detail.
+
+### Row 39260 — Mexico (medium) — FAIL: answer wrong — Jimenez's first World Cup was 2014, not 2018
+**Q:** Which World Cup did Mexico's Raúl Jiménez play in first? **A:** 2018 World Cup
+**Options:** 2018 World Cup | 2014 World Cup | 2022 World Cup | 2010 World Cup
+**Why it fails:** Raul Jimenez was in Mexico's 2014 World Cup squad (his debut tournament), then 2018 and 2022, so his first World Cup was 2014.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Change the answer to 2014.
+
+### Row 39268 — Mexico (medium) — FAIL: false — Mexico auto-qualified as host in 1970 and 1986, so 2026 is not their first
+**Q:** Which World Cup will be Mexico's first as automatic hosts, not qualifiers? **A:** 2026 World Cup
+**Options:** 2026 World Cup | 2030 World Cup | 2022 World Cup | 2034 World Cup
+**Why it fails:** Mexico hosted (and auto-qualified for) the 1970 and 1986 World Cups, so 2026 is their THIRD time as automatic host, not their first.
+**Source:** https://en.wikipedia.org/wiki/Mexico_at_the_FIFA_World_Cup
+**Remedy:** Drop 'first', or change to 'third'.
+
+### Row 39275 — Mexico (hard) — FAIL: false — Mexico's highest FIFA ranking is 4th, not 9th
+**Q:** Which year did Mexico reach their highest FIFA ranking of 9th? **A:** 2014
+**Options:** 2014 | 2010 | 2018 | 2022
+**Why it fails:** Mexico's highest-ever FIFA ranking is 4th (1998 and 2006), not 9th in 2014.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Correct to 4th (1998/2006).
+
+### Row 39311 — Mexico (easy) — FAIL: stale — Mexico has won more than eight Gold Cups (now 10 after 2023 and 2025)
+**Q:** Why are Mexico the dominant team in CONCACAF Gold Cup history? **A:** Eight tournament titles
+**Options:** Eight tournament titles | Seven tournament titles | Nine tournament titles | Six tournament titles
+**Why it fails:** Mexico had 8 Gold Cup titles only through 2019; they won 2023 (9) and 2025 (10). Present-tense 'eight' is outdated, though Mexico does still hold the record.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup
+**Remedy:** Update the count or time-bound to 'through 2019'.
+
+### Row 39322 — Mexico (easy) — FAIL: false premise — Mexico (a 2026 co-host) played no 2026 qualifiers
+**Q:** Why did Mexico's 2026 World Cup qualifiers feature many South American stars? **A:** Liga MX attracts them
+**Options:** Liga MX attracts them | CONCACAF invited them | They were playing friendlies | FIFA changed its rules
+**Why it fails:** Mexico qualified automatically as a 2026 co-host, so there were no 'Mexico 2026 World Cup qualifiers'.
+**Source:** https://en.wikipedia.org/wiki/Mexico_national_football_team
+**Remedy:** Refer to friendlies or Liga MX, not 2026 qualifiers.
+
+### Row 39327 — Mexico (easy) — FAIL: stale — Mexico has won more than eight Gold Cups (now 10 after 2023 and 2025)
+**Q:** Why does Mexico hold the record for most CONCACAF Gold Cup wins? **A:** They have won eight
+**Options:** They have won eight | They have won seven | They have won nine | They have won six
+**Why it fails:** Mexico had 8 Gold Cup titles only through 2019; they won 2023 (9) and 2025 (10). Present-tense 'eight' is outdated, though Mexico does still hold the record.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup
+**Remedy:** Update the count or time-bound to 'through 2019'.
+
+### Row 39329 — Mexico (easy) — FAIL: stale — Mexico has won more than eight Gold Cups (now 10 after 2023 and 2025)
+**Q:** Why does Mexico lead the CONCACAF Gold Cup in titles? **A:** They have eight wins
+**Options:** They have eight wins | They have six wins | They have seven wins | They have nine wins
+**Why it fails:** Mexico had 8 Gold Cup titles only through 2019; they won 2023 (9) and 2025 (10). Present-tense 'eight' is outdated, though Mexico does still hold the record.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup
+**Remedy:** Update the count or time-bound to 'through 2019'.
+
+### Row 39345 — Mexico (easy) — FAIL: stale — Mexico has won more than eight Gold Cups (now 10 after 2023 and 2025)
+**Q:** Why is Mexico the most successful nation in CONCACAF Gold Cup history? **A:** They have eight titles
+**Options:** They have eight titles | They have seven titles | They have nine titles | They have six titles
+**Why it fails:** Mexico had 8 Gold Cup titles only through 2019; they won 2023 (9) and 2025 (10). Present-tense 'eight' is outdated, though Mexico does still hold the record.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup
+**Remedy:** Update the count or time-bound to 'through 2019'.
+
+### Row 39367 — Morocco (easy) — FAIL
+**Q:** After Morocco's 0-0 draw with Croatia in 2022, which nation conceded the fewest open-play goals in the tournament?
+**Answer:** Morocco
+**Why it fails:** False premise: explanation claims Morocco conceded 'only one goal from open play' in the whole 2022 WC — they conceded open-play goals to France (Theo Hernández, Kolo Muani) and Croatia (Gvardiol, Oršić). Stat as worded is wrong.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Drop/qualify the 'fewest open-play goals' claim; Morocco conceded several open-play goals.
+
+### Row 39368 — Morocco (medium) — FAIL
+**Q:** After Morocco's 2022 World Cup run, what FIFA ranking did they reach?
+**Answer:** 11th
+**Why it fails:** Explanation calls 11th a 'historic high' — false. Morocco were 10th in April 1998 (higher) and reached 7th in June 2026; 11th (Dec 2022) was only their 2nd-best.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Don't call 11th the historic high; it was the post-2022 rank only.
+
+### Row 39369 — Morocco (medium) — FAIL
+**Q:** After Morocco's 2022 World Cup run, what was their highest FIFA ranking?
+**Answer:** 11th
+**Why it fails:** Q asks Morocco's HIGHEST FIFA ranking; answer 11th is wrong — highest is 7th (June 2026), and 10th (April 1998) also bettered 11th.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest ranking = 7th (2026).
+
+### Row 39370 — Morocco (hard) — FAIL
+**Q:** After Morocco's 2022 World Cup run, when did they reach their highest FIFA ranking?
+**Answer:** After 2022 World Cup
+**Why it fails:** Q asks when Morocco reached their HIGHEST ranking; 'after 2022 WC' is wrong — their all-time high (7th) came in June 2026, not 2022 (when they reached only 11th).
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest came June 2026 (7th).
+
+### Row 39374 — Morocco (medium) — FAIL
+**Q:** After the 2022 World Cup, Morocco's FIFA ranking peaked at which position?
+**Answer:** 11th
+**Why it fails:** Q asks the peak FIFA ranking; 11th is not the peak — Morocco peaked at 7th (June 2026); 10th (1998) also beats 11th.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Peak = 7th.
+
+### Row 39375 — Morocco (medium) — FAIL
+**Q:** After the 2022 World Cup, Morocco's highest FIFA ranking was which position?
+**Answer:** 11th
+**Why it fails:** Highest ranking is not 11th — it is 7th (June 2026); 10th in 1998 also higher.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest = 7th.
+
+### Row 39376 — Morocco (medium) — FAIL
+**Q:** After the 2022 World Cup, what was Morocco's highest FIFA ranking?
+**Answer:** 11th
+**Why it fails:** Highest FIFA ranking is not 11th — it is 7th (June 2026); 10th in 1998 also higher.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest = 7th.
+
+### Row 39378 — Morocco (hard) — FAIL
+**Q:** After the 2022 World Cup, when did Morocco reach 11th in the FIFA rankings?
+**Answer:** After 2022
+**Why it fails:** Explanation calls 11th their 'highest-ever' ranking — false (10th in 1998, 7th in 2026). The 'when' (after 2022) is fine but the headline fact is wrong.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Don't label 11th as highest-ever.
+
+### Row 39380 — Morocco (medium) — FAIL
+**Q:** After their 2022 World Cup run, Morocco's FIFA ranking peaked at what position?
+**Answer:** 11th
+**Why it fails:** Q asks where ranking peaked; 11th is not the peak — peak is 7th (June 2026); 10th (1998) also higher.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Peak = 7th.
+
+### Row 39382 — Morocco (hard) — FAIL
+**Q:** After which World Cup did Morocco first reach 11th in FIFA rankings?
+**Answer:** 2022 World Cup
+**Why it fails:** Explanation states Morocco 'achieved its highest FIFA ranking of 11th' after 2022 — false; their highest is 7th (2026), with 10th in 1998 also above 11th.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** 11th was the post-2022 rank, not the highest.
+
+### Row 39383 — Morocco (hard) — FAIL
+**Q:** After which World Cup did Morocco reach 11th in the FIFA rankings?
+**Answer:** 2022 World Cup
+**Why it fails:** Explanation states Morocco's 'highest FIFA ranking of 11th' — false (highest is 7th in 2026; 10th in 1998 also higher).
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Don't label 11th the highest.
+
+### Row 39387 — Morocco (medium) — FAIL
+**Q:** At the 2022 World Cup, Morocco kept 3 clean sheets in 7 matches. How many clean sheets did they keep?
+**Answer:** Three clean sheets
+**Why it fails:** Team clean-sheet count wrong: Morocco kept 4 clean sheets in 7 matches (Croatia, Belgium, Spain, Portugal), not 3 (3 is Bono's personal count, missing the Belgium CS kept by Munir).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Team kept 4 clean sheets.
+
+### Row 39395 — Morocco (easy) — FAIL
+**Q:** At the 2022 World Cup, which team did Morocco NOT face in a knockout match?
+**Answer:** Croatia
+**Why it fails:** False: Morocco DID face Croatia in a knockout match — the 3rd-place play-off (a single-elimination match). Explanation 'only played Croatia in the group stage' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Croatia was a knockout opponent (3rd-place play-off); question has no valid unique answer among the options.
+
+### Row 39404 — Morocco (medium) — FAIL
+**Q:** At which World Cup did Morocco keep 3 clean sheets in 7 matches?
+**Answer:** 2022 World Cup
+**Why it fails:** Team kept 4 clean sheets at the 2022 WC (Croatia, Belgium, Spain, Portugal), not 3.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4 clean sheets.
+
+### Row 39410 — Morocco (medium) — FAIL
+**Q:** How many clean sheets did Morocco keep at the 2022 FIFA World Cup?
+**Answer:** 3 clean sheets
+**Why it fails:** Morocco kept 4 clean sheets (not 3) at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4.
+
+### Row 39411 — Morocco (medium) — FAIL
+**Q:** How many clean sheets did Morocco keep at the 2022 World Cup?
+**Answer:** 3
+**Why it fails:** Morocco kept 4 clean sheets (not 3) at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4.
+
+### Row 39416 — Morocco (medium) — FAIL
+**Q:** How many open-play goals did Morocco concede in the 2022 FIFA World Cup?
+**Answer:** One
+**Why it fails:** Answer 'One' is wrong: Morocco conceded multiple open-play goals (Theo Hernández AND Kolo Muani v France; Gvardiol & Oršić v Croatia). Explanation naming only Theo even ignores Kolo Muani in the same match.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Several open-play goals conceded; remove this item.
+
+### Row 39424 — Morocco (medium) — FAIL
+**Q:** In Morocco's 2022 World Cup group stage win over Canada, which player scored their goal?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong scorer: Morocco's goals v Canada (2-1) were by Ziyech (4') and En-Nesyri (23'), not Boufal. Boufal did not score; also two correct scorers are among the options (non-unique even ignoring Boufal).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Scorers were Ziyech and En-Nesyri.
+
+### Row 39425 — Morocco (hard) — FAIL
+**Q:** In Morocco's 2022 World Cup group stage, what was the scoreline against Canada?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer cell '02-Jan' is a mangled 2-1. Score was Morocco 2-1 Canada.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39429 — Morocco (easy) — FAIL
+**Q:** In Morocco's 2022 World Cup run, when did they concede their only open-play goal?
+**Answer:** In the semi-final
+**Why it fails:** False premise: Morocco's open-play goal conceded was NOT only in the semi-final — France's Kolo Muani (SF) plus Gvardiol and Oršić (3rd-place play-off) were also open play. They conceded more than one open-play goal.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded across SF and 3rd-place match.
+
+### Row 39436 — Morocco (hard) — FAIL
+**Q:** In the 2022 World Cup, Morocco drew 0-0 with Croatia in the group stage but later lost to them with what score?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1. Morocco lost 1-2 to Croatia in the 3rd-place play-off.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39443 — Morocco (easy) — FAIL
+**Q:** In which 2022 World Cup match did Morocco concede their only goal from open play?
+**Answer:** The semi-final
+**Why it fails:** False premise: this was NOT Morocco's only open-play goal conceded — France's Kolo Muani (same SF) plus Gvardiol & Oršić (3rd-place play-off) were also open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Drop 'only' — multiple open-play goals conceded.
+
+### Row 39444 — Morocco (easy) — FAIL
+**Q:** In which 2022 World Cup match did Morocco's Sofiane Boufal score?
+**Answer:** Against Canada
+**Why it fails:** Boufal did NOT score v Canada (Ziyech 4' and En-Nesyri 23' did); Boufal did not score at the 2022 WC at all.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39445 — Morocco (easy) — FAIL
+**Q:** In which 2022 World Cup match did Sofiane Boufal score for Morocco?
+**Answer:** Against Canada
+**Why it fails:** Boufal did NOT score v Canada (Ziyech & En-Nesyri did); he did not score at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39478 — Morocco (medium) — FAIL
+**Q:** In which World Cup qualifying cycle did Morocco fail to reach the finals?
+**Answer:** 2014 World Cup
+**Why it fails:** Non-unique: Morocco failed to qualify for BOTH the 2010 and the 2014 World Cups (also 2002, 2006) — '2010' is also a correct answer among the options.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Rewrite so only one option is a year Morocco missed (they missed 2002, 2006, 2010, 2014).
+
+### Row 39489 — Morocco (medium) — FAIL
+**Q:** In which year did Morocco win the AFCON third-place match?
+**Answer:** 2023
+**Why it fails:** False: Morocco did not win an AFCON third-place match in 2023 — there was no AFCON in 2023, and at the 2023 edition (played Jan 2024) Morocco went out in the Round of 16 (lost 0-2 to South Africa), so they played no third-place match.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Remove — no such result.
+
+### Row 39490 — Morocco (medium) — FAIL
+**Q:** In which year did Morocco win the Arab Cup in Qatar?
+**Answer:** 2022
+**Why it fails:** False: Morocco did NOT win the 2021 FIFA Arab Cup (held in Qatar) — Algeria won it, beating Tunisia 2-0; Algeria knocked Morocco out in the quarter-final. There was no '2022 Arab Cup'.
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 39491 — Morocco (medium) — FAIL
+**Q:** In which year will Morocco co-host the Africa Cup of Nations with Kenya and Tanzania?
+**Answer:** 2025
+**Why it fails:** False premise: Morocco did NOT co-host AFCON 2025 with Kenya and Tanzania — Morocco was the SOLE host of AFCON 2025; Kenya, Tanzania and Uganda jointly host AFCON 2027 ('Pamoja').
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco hosted 2025 alone; Kenya/Tanzania/Uganda host 2027.
+
+### Row 39492 — Morocco (medium) — FAIL
+**Q:** In which year will Morocco co-host the Africa Cup of Nations?
+**Answer:** 2025
+**Why it fails:** False premise: Morocco hosted AFCON 2025 ALONE (no co-hosts). The Kenya/Tanzania/Uganda joint hosting is AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco was sole host of 2025.
+
+### Row 39494 — Morocco (medium) — FAIL
+**Q:** Morocco co-hosted the 2025 AFCON with how many other nations?
+**Answer:** Two
+**Why it fails:** False: Morocco hosted AFCON 2025 alone — it co-hosted with ZERO other nations, not two. Kenya/Tanzania/Uganda co-host 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco was sole 2025 host.
+
+### Row 39495 — Morocco (easy) — FAIL
+**Q:** Morocco co-hosts the 2025 AFCON with which two other nations?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco did not co-host AFCON 2025 with Kenya and Tanzania — it hosted alone; the Kenya/Tanzania/Uganda joint hosting is 2027.
+**Source:** https://en.wikipedia.org/wiki/2027_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 39497 — Morocco (hard) — FAIL
+**Q:** Morocco drew 0-0 with Croatia in the 2022 group stage, but what was the score in their next World Cup match?
+**Answer:** Croatia 2-1 Morocco
+**Why it fails:** Misleading/false: Morocco's NEXT match after the 0-0 group draw with Croatia was v Belgium (won 2-0), not the Croatia 2-1 result (which was the 3rd-place play-off, their last match). Answer doesn't match 'next match'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Next match was Belgium 2-0; rephrase if asking about the 3rd-place play-off.
+
+### Row 39500 — Morocco (medium) — FAIL
+**Q:** Morocco kept how many clean sheets in their 7 matches at the 2022 World Cup?
+**Answer:** 3 clean sheets
+**Why it fails:** Wrong count: Morocco (team) kept 4 clean sheets in 7 matches (Croatia, Belgium, Spain, Portugal), not 3.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Team kept 4 clean sheets.
+
+### Row 39503 — Morocco (medium) — FAIL
+**Q:** Morocco will co-host the 2025 AFCON with how many other nations?
+**Answer:** Two other nations
+**Why it fails:** False: Morocco hosted AFCON 2025 alone (zero co-hosts), not two. Kenya/Tanzania/Uganda co-host 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco was sole 2025 host.
+
+### Row 39504 — Morocco (easy) — FAIL
+**Q:** Morocco will co-host the 2025 AFCON with which two other African nations?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco did not co-host AFCON 2025 with Kenya and Tanzania — sole host; KTU host 2027.
+**Source:** https://en.wikipedia.org/wiki/2027_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 39506 — Morocco (hard) — FAIL
+**Q:** Morocco's 2022 World Cup ended a qualification gap of how many tournaments?
+**Answer:** One tournament
+**Why it fails:** False premise: Morocco did NOT miss the 2018 World Cup — they qualified and played it. 2022 followed 2018 with no gap; their long drought (4 missed: 2002-2014) ended in 2018, not 2022.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; no qualification gap before 2022.
+
+### Row 39507 — Morocco (hard) — FAIL
+**Q:** Morocco's 2022 World Cup group stage included a 0-0 draw with Croatia. How many total clean sheets did they keep?
+**Answer:** Three clean sheets
+**Why it fails:** Wrong count: Morocco (team) kept 4 clean sheets in 7 matches, not 3.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Team kept 4 clean sheets.
+
+### Row 39514 — Morocco (medium) — FAIL
+**Q:** Morocco's 2023 AFCON third-place win came after failing to qualify for which World Cup?
+**Answer:** 2014 World Cup
+**Why it fails:** False premise + non-unique: there was no Morocco AFCON third-place win in 2023 (out in the R16 at the 2023 edition), and Morocco failed to qualify for BOTH 2010 and 2014 (both options), so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No 2023 AFCON third-place win; missed 2002/2006/2010/2014.
+
+### Row 39531 — Morocco (easy) — FAIL
+**Q:** What was the final score when Morocco lost to Croatia in the 2022 World Cup third-place play-off?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1 (Croatia beat Morocco 2-1 in the 3rd-place play-off).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39533 — Morocco (medium) — FAIL
+**Q:** What was the score when Morocco lost to Croatia in the 2022 World Cup third-place match?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1 (3rd-place play-off).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39555 — Morocco (easy) — FAIL
+**Q:** When did Morocco concede their only open-play goal at the 2022 World Cup?
+**Answer:** In the semi-final
+**Why it fails:** False premise: not Morocco's only open-play goal conceded — France's Kolo Muani (same SF) plus Gvardiol & Oršić (3rd place) were also open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 39561 — Morocco (hard) — FAIL
+**Q:** When did Morocco first reach 11th in the FIFA rankings?
+**Answer:** After 2022 World Cup
+**Why it fails:** Explanation states Morocco's 'highest FIFA ranking of 11th' — false: their highest is 7th (June 2026), and 10th (April 1998) also bettered 11th. (They did first reach 11th after 2022, but it was not their highest.)
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** 11th was the post-2022 rank, not the highest (7th).
+
+### Row 39570 — Morocco (medium) — FAIL
+**Q:** When did Morocco next play at the FIFA World Cup after failing to qualify in 2018?
+**Answer:** 2022
+**Why it fails:** False premise: Morocco did NOT fail to qualify for 2018 — they qualified and played the 2018 WC. So 2022 was not 'their first since failing 2018'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; their long drought (2002-2014) ended in 2018.
+
+### Row 39578 — Morocco (medium) — FAIL
+**Q:** When did Morocco win the AFCON third-place match?
+**Answer:** 2023
+**Why it fails:** False: Morocco did not win an AFCON third-place match in 2023 — there was no AFCON in 2023; at the 2023 edition (Jan 2024) they went out in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No such result.
+
+### Row 39579 — Morocco (medium) — FAIL
+**Q:** When did Morocco win the Africa Cup of Nations third-place match?
+**Answer:** 2023
+**Why it fails:** False: no Morocco AFCON third-place win in 2023 — they exited the 2023 edition (Jan 2024) in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No such result.
+
+### Row 39580 — Morocco (medium) — FAIL
+**Q:** When did Morocco win the Arab Cup in Qatar?
+**Answer:** 2022
+**Why it fails:** False: Morocco never won the Arab Cup — Algeria won the 2021 FIFA Arab Cup in Qatar (beat Tunisia 2-0; Algeria knocked Morocco out in the QF).
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 39616 — Morocco (easy) — FAIL
+**Q:** Which 2022 World Cup quarter-finalist did Morocco fail to qualify with for the 2018 World Cup?
+**Answer:** Portugal
+**Why it fails:** False premise: Morocco DID qualify for the 2018 WC (drawn with Portugal in Group B). The explanation's claim that Morocco didn't qualify for 2018 is wrong.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played the 2018 WC alongside Portugal.
+
+### Row 39643 — Morocco (easy) — FAIL
+**Q:** Which African nation matched Morocco's 2022 World Cup semi-final run?
+**Answer:** Morocco
+**Why it fails:** Self-referential answer: the question asks which African nation matched Morocco's run, and the answer is 'Morocco' itself — nonsensical.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Answer should be 'None'; remove Morocco as the answer.
+
+### Row 39680 — Morocco (easy) — FAIL
+**Q:** Which emerging Moroccan talent is a product of the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Manchester City (and Málaga) academy product, NOT a Real Madrid academy product. The genuine Real Madrid academy (La Fábrica) graduate among the options is Achraf Hakimi.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39681 — Morocco (easy) — FAIL
+**Q:** Which emerging Morocco talent came from the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz came through Man City's academy, not Real Madrid's; Hakimi (an option) is the actual Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39682 — Morocco (easy) — FAIL
+**Q:** Which emerging Real Madrid academy talent was in Morocco's 2022 World Cup squad?
+**Answer:** Ibrahim Díaz
+**Why it fails:** False: Brahim Díaz was NOT in Morocco's 2022 World Cup squad — he switched his allegiance from Spain to Morocco only in March 2024. He is also a Man City academy product, not Real Madrid.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz joined Morocco in 2024; not in the 2022 squad.
+
+### Row 39688 — Morocco (hard) — FAIL
+**Q:** Which FIFA World Cup did Morocco fail to qualify for in African qualification?
+**Answer:** 2014 World Cup
+**Why it fails:** Non-unique: Morocco failed to qualify for BOTH 2010 and 2014 (also 2002, 2006); '2010' is also correct among the options.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one missed-year option should be present.
+
+### Row 39692 — Morocco (easy) — FAIL
+**Q:** Which formation did Morocco use under Regragui at the 2022 World Cup?
+**Answer:** 04/03/2003
+**Why it fails:** Excel date-corruption: answer '04/03/2003' is a mangled 4-3-3 formation.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 4-3-3.
+
+### Row 39694 — Morocco (easy) — FAIL
+**Q:** Which France player scored Morocco's only open-play goal conceded at the 2022 World Cup?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: Theo Hernández was NOT Morocco's only open-play goal conceded — France's Kolo Muani (same SF) and Croatia's Gvardiol & Oršić (3rd place) also scored from open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Drop 'only open-play goal'.
+
+### Row 39699 — Morocco (easy) — FAIL
+**Q:** Which manager did not directly precede Walid Regragui as Morocco's coach?
+**Answer:** Hervé Renard
+**Why it fails:** Non-unique: Regragui directly succeeded Halilhodžić, so THREE options (Renard, Badou Zaki, José Faria) all 'did not directly precede' him — the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Only one option should be a non-predecessor.
+
+### Row 39704 — Morocco (easy) — FAIL
+**Q:** Which manager is NOT leading Morocco for the 2026 World Cup campaign?
+**Answer:** Vahid Halilhodžić
+**Why it fails:** Non-unique 'NOT' question: only Regragui leads Morocco for 2026, so THREE options (Halilhodžić, Renard, Mourinho) are all 'not leading'.
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Make three options current/plausible leaders so only one is excluded.
+
+### Row 39747 — Morocco (easy) — FAIL
+**Q:** Which Moroccan club did not lose a FIFA Club World Cup final to Bayern Munich?
+**Answer:** Wydad Casablanca
+**Why it fails:** Non-unique (and duplicate options): Raja lost the 2013 CWC final to Bayern, so Wydad, FAR Rabat AND AS FAR all 'did not' — three valid answers, and FAR Rabat = AS FAR are the same club.
+**Source:** https://en.wikipedia.org/wiki/2013_FIFA_Club_World_Cup
+**Remedy:** Use distinct clubs; only one non-loser option.
+
+### Row 39810 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player had over 70 international caps by the 2022 World Cup?
+**Answer:** Achraf Hakimi
+**Why it fails:** Doubtful/likely false cap count: Hakimi had roughly 60 caps by the 2022 WC, not 'over 70'; Saïss (debuted 2012) had more international caps than Hakimi by then, so the answer is also misattributed/non-unique.
+**Source:** https://en.wikipedia.org/wiki/Achraf_Hakimi
+**Remedy:** Verify caps; ~60 for Hakimi by 2022, not 70+.
+
+### Row 39811 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player is a product of the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Manchester City (Málaga) academy product, not Real Madrid; the genuine Real Madrid academy (La Fábrica) graduate among the options is Achraf Hakimi.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39818 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player is an emerging attacking talent from Real Madrid's academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong: Brahim Díaz is a Man City academy product, not Real Madrid; Hakimi (an option) is the actual Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39819 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player is an emerging talent from the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong: Brahim Díaz came through Man City's academy, not Real Madrid's; Hakimi is the Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39823 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player scored at the 2022 World Cup and has over 50 caps?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: both Ziyech AND En-Nesyri (an option) scored at the 2022 WC and have 50+ caps, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Make only one option fit (scored + 50+ caps).
+
+### Row 39832 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player, a Real Madrid academy talent, was selected for the 2022 World Cup?
+**Answer:** Ibrahim Díaz
+**Why it fails:** False: Brahim Díaz was NOT in Morocco's 2022 squad (switched to Morocco in March 2024) and is a Man City academy product, not Real Madrid.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz joined Morocco in 2024; not in 2022 squad.
+
+### Row 39840 — Morocco (easy) — FAIL
+**Q:** Which Moroccan talent emerged from Real Madrid's academy before the 2026 World Cup?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong: Brahim Díaz is a Man City academy product, not Real Madrid's.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz is not a Real Madrid academy product.
+
+### Row 39842 — Morocco (easy) — FAIL
+**Q:** Which Moroccan tournament in 2022 ended an absence since 2018 qualifiers?
+**Answer:** FIFA World Cup
+**Why it fails:** False premise: Morocco did NOT fail to qualify for 2018 — they played the 2018 WC, so 2022 did not end any absence 'since 2018 qualifiers'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; no absence before 2022.
+
+### Row 39843 — Morocco (easy) — FAIL
+**Q:** Which Moroccan World Cup talent emerged from Real Madrid's academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Man City academy product, not Real Madrid; Hakimi (an option) is the Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39853 — Morocco (easy) — FAIL
+**Q:** Which Morocco AFCON rival did NOT play at the 2022 World Cup?
+**Answer:** Algeria
+**Why it fails:** Non-unique + wrong explanation: BOTH Algeria and Egypt (an option) failed to qualify for the 2022 WC (Egypt lost the playoff to Senegal); the explanation wrongly says Egypt participated.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Egypt also missed 2022; only one non-qualifier option should be present.
+
+### Row 39873 — Morocco (easy) — FAIL
+**Q:** Which Morocco manager at the 2022 World Cup was NOT Moroccan-born?
+**Answer:** Vahid Halilhodžić
+**Why it fails:** Non-unique: among the options BOTH Halilhodžić (Bosnian-born) and Hervé Renard (French-born) are not Moroccan-born; also neither was the manager actually at the 2022 WC (that was Regragui).
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Only one non-Moroccan-born option should be present.
+
+### Row 39915 — Morocco (easy) — FAIL
+**Q:** Which Morocco manager was not sacked months before a World Cup?
+**Answer:** Hervé Renard
+**Why it fails:** Non-unique 'NOT' question: only Halilhodžić was sacked months before a WC, so Renard, Regragui AND Badou Zaki all 'were not' — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Only one option should have been sacked pre-WC.
+
+### Row 39936 — Morocco (easy) — FAIL
+**Q:** Which Morocco midfielder was not a breakout star at the 2022 World Cup?
+**Answer:** Sofyan Amrabat
+**Why it fails:** Non-unique 'NOT' question: only Ounahi was the 'breakout star', so Amrabat, Sabiri AND Boufal all 'were not' — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Azzedine_Ounahi
+**Remedy:** Only one option should be the breakout star.
+
+### Row 39949 — Morocco (easy) — FAIL
+**Q:** Which Morocco player had over 50 caps when they faced Croatia at the 2022 World Cup?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique 'over 50 caps' claim: Hakimi (an option) had ~60 caps by the 2022 WC, also over 50 — so the answer isn't unique to Ziyech.
+**Source:** https://en.wikipedia.org/wiki/Achraf_Hakimi
+**Remedy:** Pick a uniquely-identifying criterion.
+
+### Row 39954 — Morocco (easy) — FAIL
+**Q:** Which Morocco player is an emerging talent from the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Man City academy product, not Real Madrid; Hakimi (an option) is the Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39958 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored a goal at the 2022 FIFA World Cup?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: Ziyech, En-Nesyri AND Sabiri (all options) scored at the 2022 WC — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a 2022 scorer.
+
+### Row 39965 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored against Canada at the 2022 World Cup?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong: Boufal did NOT score v Canada — Ziyech (4') and En-Nesyri (23') did (both are options); Boufal did not score at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39969 — Morocco (medium) — FAIL
+**Q:** Which Morocco player scored in the 2022 World Cup group stage?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: Ziyech, En-Nesyri AND Sabiri (all options) scored in the 2022 group stage — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a group-stage scorer.
+
+### Row 39983 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored their 2022 World Cup goal versus Canada?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong: Boufal did NOT score v Canada — Ziyech and En-Nesyri (both options) did; Boufal didn't score at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39984 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored their goal against Canada at the 2022 World Cup?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong: Boufal did NOT score v Canada — Ziyech and En-Nesyri (both options) did.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39991 — Morocco (easy) — FAIL
+**Q:** Which Morocco player with over 50 caps scored at the 2022 World Cup?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: both Ziyech AND En-Nesyri (an option) had 50+ caps and scored at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Use a uniquely-identifying criterion.
+
+### Row 40009 — Morocco (easy) — FAIL
+**Q:** Which nation co-hosted the 2025 AFCON with Morocco and Tanzania?
+**Answer:** Kenya
+**Why it fails:** False premise: Morocco was the SOLE host of AFCON 2025 — there was no co-hosting with Kenya/Tanzania (that is AFCON 2027).
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco hosted 2025 alone; KTU host 2027.
+
+### Row 40056 — Morocco (easy) — FAIL
+**Q:** Which nation scored Morocco's only open-play goal at the 2022 World Cup?
+**Answer:** France
+**Why it fails:** False premise + non-unique: not Morocco's 'only' open-play goal — Croatia (an option) also scored open-play goals (Gvardiol, Oršić) in the 3rd-place play-off, and France scored two (Theo + Kolo Muani).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 40063 — Morocco (easy) — FAIL
+**Q:** Which nation will co-host the 2025 AFCON with Morocco and Kenya?
+**Answer:** Tanzania
+**Why it fails:** False premise: Morocco was the SOLE host of AFCON 2025 — no co-hosting with Kenya/Tanzania (that is AFCON 2027).
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco hosted 2025 alone; KTU host 2027.
+
+### Row 40064 — Morocco (easy) — FAIL
+**Q:** Which nation will co-host the 2025 AFCON with Morocco and Tanzania?
+**Answer:** Kenya
+**Why it fails:** False premise: Morocco hosted AFCON 2025 alone — Kenya/Tanzania co-hosting is AFCON 2027, not 2025.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40089 — Morocco (easy) — FAIL
+**Q:** Which player scored France's only open-play goal against Morocco in 2022?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: Theo was NOT France's only open-play goal v Morocco — Kolo Muani also scored from open play in the same semi-final.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** France scored two open-play goals (Theo + Kolo Muani).
+
+### Row 40091 — Morocco (easy) — FAIL
+**Q:** Which player scored Morocco's only 2022 World Cup open-play goal conceded?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: not Morocco's 'only' open-play goal conceded — Kolo Muani (SF) and Gvardiol & Oršić (3rd place) were also open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 40092 — Morocco (easy) — FAIL
+**Q:** Which player scored the only open-play goal against Morocco at the 2022 World Cup?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: not the 'only' open-play goal against Morocco — France's Kolo Muani and Croatia's Gvardiol & Oršić also scored from open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 40093 — Morocco (easy) — FAIL
+**Q:** Which Real Madrid academy attacker was in Morocco's 2022 World Cup squad?
+**Answer:** Ibrahim Díaz
+**Why it fails:** False: Brahim Díaz was NOT in Morocco's 2022 squad (switched to Morocco in 2024) and is a Man City academy product, not Real Madrid.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz joined Morocco in 2024; not in 2022 squad.
+
+### Row 40099 — Morocco (easy) — FAIL
+**Q:** Which tactical system did Morocco's Walid Regragui NOT use at the 2022 World Cup?
+**Answer:** A 3-5-2 formation
+**Why it fails:** Non-unique 'NOT' question: Regragui used 4-3-3/4-1-4-1, so BOTH '3-5-2' and 'defensive 4-4-2' are formations he did not use — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a non-used formation.
+
+### Row 40131 — Morocco (easy) — FAIL
+**Q:** Which three nations co-hosted the 2025 Africa Cup of Nations with Morocco?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco was the SOLE host of AFCON 2025 (no co-hosts); the Kenya/Tanzania/Uganda joint hosting is AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40138 — Morocco (easy) — FAIL
+**Q:** Which three nations will co-host the 2025 Africa Cup of Nations with Morocco?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco hosted AFCON 2025 alone; the Kenya/Tanzania co-hosting is AFCON 2027, not 2025.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40140 — Morocco (hard) — FAIL
+**Q:** Which tournament did Morocco win in Qatar just before the 2022 World Cup?
+**Answer:** The 2022 Arab Cup
+**Why it fails:** False: Morocco did NOT win the Arab Cup in Qatar — Algeria won the 2021 FIFA Arab Cup (beat Tunisia); there was no '2022 Arab Cup'.
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 40141 — Morocco (easy) — FAIL
+**Q:** Which trophy did Morocco win in Qatar in 2022?
+**Answer:** The Arab Cup
+**Why it fails:** False: Morocco did not win the Arab Cup in Qatar — Algeria won the 2021 edition.
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 40146 — Morocco (easy) — FAIL
+**Q:** Which two nations co-hosted the 2025 AFCON with Morocco?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco was the sole host of AFCON 2025; Kenya/Tanzania co-host AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40154 — Morocco (medium) — FAIL
+**Q:** Which World Cup did Morocco fail to qualify for in African preliminaries?
+**Answer:** 2014 World Cup
+**Why it fails:** Non-unique: Morocco failed African preliminaries for BOTH 2010 and 2014 (also 2002, 2006); '2010' is also correct among the options.
+**Source:** https://en.wikipedia.org/wiki/Morocco_national_football_team
+**Remedy:** Only one missed-year option should be present.
+
+### Row 40155 — Morocco (hard) — FAIL
+**Q:** Which World Cup did Morocco qualify for after missing three consecutive tournaments?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** False premise: Morocco did NOT miss 2018 — they qualified and played the 2018 WC. They missed 2002, 2006, 2010 and 2014 before 2018, not '2010/2014/2018 before 2022'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; the drought ended in 2018.
+
+### Row 40160 — Morocco (medium) — FAIL
+**Q:** Which year did Morocco win the Africa Cup of Nations third-place match?
+**Answer:** 2023
+**Why it fails:** False: there was no Morocco AFCON third-place win in 2023 — no AFCON took place in 2023, and at the 2023 edition (Jan 2024) Morocco went out in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No such result.
+
+### Row 40177 — Morocco (easy) — FAIL
+**Q:** Why did Morocco co-host the 2025 Africa Cup of Nations?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False premise: Morocco did NOT co-host AFCON 2025 — it was the sole host; Kenya/Tanzania co-host AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40180 — Morocco (easy) — FAIL
+**Q:** Why did Morocco miss the 2010, 2014, and 2018 World Cups?
+**Answer:** Failed to qualify
+**Why it fails:** False premise: Morocco did NOT miss the 2018 World Cup — they qualified and played it. They missed 2002, 2006, 2010 and 2014.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; drop it from the 'missed' list.
+
+### Row 40186 — Morocco (medium) — FAIL
+**Q:** Why was Morocco's 2022 FIFA World Cup appearance notable?
+**Answer:** Missed 2018 qualification
+**Why it fails:** False premise: Morocco's 2022 appearance was NOT notable for 'missing 2018 qualification' — they qualified for and played the 2018 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; the notable point was reaching the SF.
+
+### Row 40188 — Netherlands (medium) — FAIL
+**Q:** After failing to qualify for the 2018 World Cup, the Netherlands dropped to which FIFA ranking in 2016?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands' record-low 36th came in August 2017 (after 2018 WC qualifying failed in Oct 2017), not 2016 — the stated 2016/causal timing is contradictory.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was Aug 2017.
+
+### Row 40192 — Netherlands (medium) — FAIL
+**Q:** After reaching the 2010 World Cup final, what was the Netherlands' highest FIFA ranking in 2011?
+**Answer:** 3rd
+**Why it fails:** Wrong: the Netherlands' highest FIFA ranking was 1st (Aug-Sep 2011), not 3rd.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Highest = 1st (2011).
+
+### Row 40194 — Netherlands (medium) — FAIL
+**Q:** After the 2010 World Cup, the Netherlands reached what FIFA ranking in 2011?
+**Answer:** 3rd
+**Why it fails:** Wrong: the Netherlands reached 1st in 2011 (not 3rd) — that was their highest-ever FIFA ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Highest = 1st (2011).
+
+### Row 40197 — Netherlands (medium) — FAIL
+**Q:** After their 2010 World Cup final, the Netherlands rose to what FIFA ranking in 2011?
+**Answer:** 3rd
+**Why it fails:** Wrong: the Netherlands rose to 1st in 2011 (not 3rd).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Highest = 1st (2011).
+
+### Row 40200 — Netherlands (hard) — FAIL
+**Q:** After which World Cup did the Netherlands reach their highest FIFA ranking?
+**Answer:** 2010 World Cup
+**Why it fails:** Explanation wrong: it says the Netherlands reached '3rd in 2011' — they actually reached 1st (their highest-ever). (The 'after the 2010 WC' timing is right.)
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 40208 — Netherlands (medium) — FAIL
+**Q:** At the 2014 World Cup, how many goals did the Netherlands score in their first three matches?
+**Answer:** 12 goals
+**Why it fails:** Wrong count: the Netherlands scored 10 goals in their 2014 group stage (Spain 5-1, Australia 3-2, Chile 2-0 = 10), not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40209 — Netherlands (medium) — FAIL
+**Q:** At the 2014 World Cup, Netherlands beat Spain by what score in the group stage?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: answer '05-Jan' is a mangled 5-1 (Netherlands beat Spain 5-1).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40228 — Netherlands (medium) — FAIL
+**Q:** At which FIFA World Cup did the Netherlands score 12 goals in their first 3 matches?
+**Answer:** 2014 World Cup
+**Why it fails:** Wrong count: the Netherlands scored 10 goals in their first 3 (2014 group) matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40239 — Netherlands (hard) — FAIL
+**Q:** Before which FIFA World Cup did the Netherlands first base at KNVB Campus?
+**Answer:** The 2010 World Cup
+**Why it fails:** Unverified/likely false: the KNVB centre in Zeist has been the national team base for decades (long before 2010), so '2010' as when they 'first based' there is not supportable.
+**Source:** https://en.wikipedia.org/wiki/KNVB_Campus
+**Remedy:** Zeist predates 2010 as the base.
+
+### Row 40242 — Netherlands (medium) — FAIL
+**Q:** For which FIFA World Cup did the Netherlands win their UEFA qualifying group?
+**Answer:** 2010 World Cup
+**Why it fails:** Non-unique: the Netherlands WON their UEFA qualifying group for 2010, 2014 AND 2022 (only 2018 they failed) — three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Make only one year a group win.
+
+### Row 40260 — Netherlands (medium) — FAIL
+**Q:** In 2016, the Netherlands fell to what FIFA ranking low?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands' record-low 36th was August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40277 — Netherlands (medium) — FAIL
+**Q:** In the 2019 Nations League semi-final, the Netherlands beat England by what score after extra time?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer '03-Jan' is a mangled 3-1 (Netherlands beat England 3-1 a.e.t. in the 2019 NL SF).
+**Source:** https://en.wikipedia.org/wiki/2019_UEFA_Nations_League_Finals
+**Remedy:** Fix to 3-1.
+
+### Row 40282 — Netherlands (hard) — FAIL
+**Q:** In their 2022 World Cup group stage, how many different European top leagues did Netherlands squad players represent?
+**Answer:** Four
+**Why it fails:** Unverified/undercount: the Netherlands' 2022 squad also included Eredivisie-based players (e.g. Gakpo at PSV, Berghuis/Klaassen at Ajax), so 'four' top leagues is too low.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Count is higher (Eredivisie included).
+
+### Row 40293 — Netherlands (medium) — FAIL
+**Q:** In which FIFA World Cup did the Netherlands score 12 goals in their first 3 matches?
+**Answer:** 2014
+**Why it fails:** False count: the Netherlands scored 10 goals in their 2014 group stage (5+3+2), not 12 — the '12' premise is wrong.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40295 — Netherlands (medium) — FAIL
+**Q:** In which FIFA World Cup was Dutch star Arjen Robben named best player?
+**Answer:** 2010
+**Why it fails:** False: Robben was NOT named best player of the 2010 WC — the Golden Ball went to Diego Forlán (Sneijder won the Silver Ball).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40300 — Netherlands (hard) — FAIL
+**Q:** In which World Cup did Arjen Robben win best player for the Netherlands?
+**Answer:** 2010 FIFA World Cup
+**Why it fails:** False: Robben was not named best player of the 2010 WC — Diego Forlán won the Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40305 — Netherlands (medium) — FAIL
+**Q:** In which World Cup did Dutch winger Arjen Robben win the Silver Ball?
+**Answer:** 2010 World Cup
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — that went to Wesley Sneijder (Golden Ball: Forlán).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40307 — Netherlands (medium) — FAIL
+**Q:** In which World Cup did Netherlands score 12 goals in their first three matches?
+**Answer:** 2014 World Cup
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40336 — Netherlands (medium) — FAIL
+**Q:** In which World Cup tournament did the Netherlands first lose a knockout match to Argentina?
+**Answer:** 2014 World Cup
+**Why it fails:** False 'first': the Netherlands' first WC knockout loss to Argentina was the 1978 final (lost 1-3 a.e.t.), not the 2014 SF.
+**Source:** https://en.wikipedia.org/wiki/1978_FIFA_World_Cup_Final
+**Remedy:** 1978 final was the first.
+
+### Row 40338 — Netherlands (medium) — FAIL
+**Q:** In which World Cup tournament was Dutch forward Cody Gakpo named to the Team of the Tournament?
+**Answer:** 2022 World Cup
+**Why it fails:** Unverified/likely false: there was no single official FIFA 'Team of the Tournament' for 2022, and the Netherlands exited in the QF — the claim Gakpo was named to it is not supportable.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40343 — Netherlands (medium) — FAIL
+**Q:** In which year did Netherlands lose 2-0 to Czech Republic at Euro 2020?
+**Answer:** 2020
+**Why it fails:** Wrong year: the Netherlands' Euro 2020 R16 loss to the Czech Republic was played on 27 June 2021 (Euro 2020 was held in 2021), not 2020 — and 2021 isn't even an option.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** The match was in 2021.
+
+### Row 40348 — Netherlands (hard) — FAIL
+**Q:** In which year did the Netherlands drop to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands' 36th low was August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40350 — Netherlands (hard) — FAIL
+**Q:** In which year did the Netherlands fall to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands fell to 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40355 — Netherlands (hard) — FAIL
+**Q:** In which year did the Netherlands reach 3rd in FIFA rankings?
+**Answer:** 2011
+**Why it fails:** False premise: the Netherlands' peak in 2011 was 1st, not 3rd — the explanation undersells/misstates it as '3rd'.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 40364 — Netherlands (hard) — FAIL
+**Q:** The Netherlands scored 12 goals in their first three 2014 World Cup group stage matches. Which tournament was this?
+**Answer:** 2014 FIFA World Cup
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40370 — Netherlands (easy) — FAIL
+**Q:** What was the final score when Netherlands beat Spain in 2014?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: answer '05-Jan' is a mangled 5-1 (Netherlands 5-1 Spain, 2014).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40372 — Netherlands (easy) — FAIL
+**Q:** What was the final score when Netherlands lost to Argentina in the 2022 World Cup quarter-final?
+**Answer:** 02-Feb
+**Why it fails:** Excel date-corruption: answer '02-Feb' is a mangled 2-2 (Netherlands 2-2 Argentina a.e.t., 2022 QF).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Fix to 2-2.
+
+### Row 40374 — Netherlands (easy) — FAIL
+**Q:** What was the final score when the Netherlands beat England in the 2019 Nations League semi-final?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer '03-Jan' is a mangled 3-1 (Netherlands 3-1 England a.e.t., 2019 NL SF).
+**Source:** https://en.wikipedia.org/wiki/2019_UEFA_Nations_League_Finals
+**Remedy:** Fix to 3-1.
+
+### Row 40376 — Netherlands (easy) — FAIL
+**Q:** What was the final score when the Netherlands lost to England in the Euro 2024 semi-final?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1 (Netherlands 1-2 England, Euro 2024 SF).
+**Source:** https://en.uefa.com/euro2024/
+**Remedy:** Fix to 2-1.
+
+### Row 40378 — Netherlands (medium) — FAIL
+**Q:** What was the Netherlands' group stage score against Spain at the 2014 World Cup?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: '05-Jan' is a mangled 5-1 (Netherlands 5-1 Spain, 2014).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40380 — Netherlands (easy) — FAIL
+**Q:** What was the Netherlands' score against Spain at the 2014 World Cup?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: '05-Jan' is a mangled 5-1 (Netherlands 5-1 Spain, 2014).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40381 — Netherlands (medium) — FAIL
+**Q:** What was the score when Netherlands lost to Belgium in the 2018 Nations League?
+**Answer:** 2-0
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the 2018 Nations League — their League A group was France & Germany; they never played Belgium in the NL.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40387 — Netherlands (medium) — FAIL
+**Q:** When did Dutch winger Arjen Robben win the World Cup Silver Ball?
+**Answer:** 2010
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — that went to Wesley Sneijder (Golden Ball: Forlán).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40390 — Netherlands (hard) — FAIL
+**Q:** When did Netherlands fall to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands fell to 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40403 — Netherlands (hard) — FAIL
+**Q:** When did the Netherlands drop to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands dropped to 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40413 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands last host a World Cup qualifier at De Kuip?
+**Answer:** 2022
+**Why it fails:** Wrong year: the Netherlands' De Kuip qualifier v Norway that sent them to the 2022 WC was on 16 Nov 2021, not 2022 (all UEFA 2022 qualifiers were in 2021).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** The Norway game was Nov 2021.
+
+### Row 40416 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands lose 2-0 to Belgium in the Nations League?
+**Answer:** 2018
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the Nations League — they were never in a NL group with Belgium (2018-19 group was France & Germany).
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40423 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands qualify by winning their UEFA group for the World Cup?
+**Answer:** 2010
+**Why it fails:** Non-unique: the Netherlands won their UEFA group for 2006, 2010 AND 2014 — three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Make only one year a group win.
+
+### Row 40426 — Netherlands (hard) — FAIL
+**Q:** When did the Netherlands reach 3rd in the FIFA rankings after the 2010 World Cup?
+**Answer:** 2011
+**Why it fails:** False premise: the Netherlands reached 1st (not 3rd) in 2011 — that was their highest-ever FIFA ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 40432 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands score 12 goals in their first three World Cup matches?
+**Answer:** 2014 World Cup
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40462 — Netherlands (easy) — FAIL
+**Q:** Which Dutch 2010 World Cup finalist was a De Toekomst academy graduate?
+**Answer:** Wesley Sneijder
+**Why it fails:** Non-unique: both Sneijder AND Rafael van der Vaart (both 2010 squad members) came through Ajax's De Toekomst academy — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Rafael_van_der_Vaart
+**Remedy:** Only one De Toekomst graduate should be an option.
+
+### Row 40465 — Netherlands (easy) — FAIL
+**Q:** Which Dutch 2022 World Cup starter debuted after leaving the Eredivisie?
+**Answer:** Cody Gakpo
+**Why it fails:** False: Gakpo did NOT debut after leaving the Eredivisie — he debuted in June 2021 while still at PSV (Eredivisie) and only moved to Liverpool in Jan 2023 (after the 2022 WC).
+**Source:** https://en.wikipedia.org/wiki/Cody_Gakpo
+**Remedy:** Gakpo debuted while at PSV.
+
+### Row 40514 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie club did Virgil van Dijk play for before his 2018 World Cup call-up?
+**Answer:** Feyenoord
+**Why it fails:** False: Van Dijk's Eredivisie club was FC Groningen (then Celtic/Southampton), not Feyenoord; also the Netherlands missed the 2018 WC (no '2018 WC call-up').
+**Source:** https://en.wikipedia.org/wiki/Virgil_van_Dijk
+**Remedy:** Van Dijk played for Groningen.
+
+### Row 40515 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie club had players in the Netherlands' 2022 World Cup squad?
+**Answer:** Ajax
+**Why it fails:** Non-unique: both Ajax (Berghuis, Klaassen, Timber) AND PSV (Gakpo) had players in the 2022 squad — more than one option is correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Multiple Eredivisie clubs supplied 2022 players.
+
+### Row 40517 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie export played in the 2022 World Cup qualifying campaign?
+**Answer:** Matthijs de Ligt
+**Why it fails:** Non-unique: De Ligt, De Jong, Van Dijk AND Depay are all Eredivisie products who played in the 2022 WC qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Use a uniquely-identifying trait.
+
+### Row 40518 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie export starred for his nation in the 2022 World Cup qualifiers?
+**Answer:** Frenkie de Jong
+**Why it fails:** Non-unique: De Jong, Van Dijk, Depay AND Dumfries are all Eredivisie-developed players who featured in the 2022 qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Use a uniquely-identifying trait.
+
+### Row 40521 — Netherlands (hard) — FAIL
+**Q:** Which Dutch FIFA ranking low came during 2018 World Cup qualifying?
+**Answer:** 36th in 2016
+**Why it fails:** Wrong year in the answer: the 36th low was August 2017, not 2016 ('36th in 2016').
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40523 — Netherlands (easy) — FAIL
+**Q:** Which Dutch forward joined Sneijder as a World Cup Team of Tournament honoree in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: there was no official FIFA 'Team of the Tournament' for 2022, and the Netherlands exited in the QF — Gakpo being named to it is not supportable (Sneijder was long retired).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40525 — Netherlands (easy) — FAIL
+**Q:** Which Dutch forward was in the World Cup Team of the Tournament in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: FIFA did not name an official 'Team of the Tournament' for Qatar 2022, so Gakpo's selection to it cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40532 — Netherlands (easy) — FAIL
+**Q:** Which Dutch keeper did Van Gaal NOT bring on for the 2014 World Cup shootout?
+**Answer:** Maarten Stekelenburg
+**Why it fails:** Non-unique 'NOT' question: only Krul was brought on, so Stekelenburg, Cillessen AND Vorm all 'were not brought on' — multiple valid answers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a keeper who came on.
+
+### Row 40585 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player made the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: there was no official FIFA 'Team of the Tournament' for 2022; Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40604 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player scored a hat-trick against Spain in 2014?
+**Answer:** Robin van Persie
+**Why it fails:** False: Van Persie scored a BRACE (2 goals), not a hat-trick, in the 5-1 v Spain (2014) — Robben also scored 2 and De Vrij 1.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Van Persie scored 2, not 3.
+
+### Row 40633 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was in the 2014 World Cup squad after scoring 50 international goals?
+**Answer:** Robin van Persie
+**Why it fails:** False: Van Persie had not scored 50 international goals before the 2014 WC — he reached 50 only later in his career (~41 entering 2014); 50 was his final career total.
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** He had <50 before 2014.
+
+### Row 40635 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was in the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40636 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was in the squad that lost the 2010 World Cup final?
+**Answer:** Wesley Sneijder
+**Why it fails:** Non-unique: Sneijder, Van Persie, Robben AND Van der Vaart were all in the 2010 final squad — all four options are correct.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Final
+**Remedy:** Only one squad member should be an option.
+
+### Row 40639 — Netherlands (medium) — FAIL
+**Q:** Which Dutch player was NOT a 2010 Ballon d'Or nominee after the World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique/dubious: Gakpo (an option) was obviously not a 2010 nominee either, and Robben was a top-2010 player likely on the shortlist — the 'NOT nominated' answer isn't cleanly unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Player_of_the_Year
+**Remedy:** Fix the options.
+
+### Row 40640 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was selected for the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40641 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was the best player at the 2010 World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was NOT named best player of the 2010 WC — the Golden Ball went to Diego Forlán.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40644 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player won both the Silver Ball and made the All-Star Team in 2010?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — Sneijder did (Golden Ball: Forlán). (Both were in the All-Star Team.)
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40645 — Netherlands (medium) — FAIL
+**Q:** Which Dutch player won the 2010 World Cup Golden Ball?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Golden Ball — that went to Diego Forlán.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40646 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player won the 2010 World Cup Silver Ball award?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Wesley Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40647 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player won the Silver Ball at the 2010 FIFA World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40653 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's 2010 World Cup performance earned him the Silver Ball award?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did (the Silver Ball is the award referenced).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40659 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's 2022 World Cup displays earned him Team of the Tournament selection?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40661 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's 2022 World Cup performance earned him Team of the Tournament honors?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40668 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's World Cup goal helped earn him a 2022 Team of Tournament spot?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40681 — Netherlands (easy) — FAIL
+**Q:** Which Dutch stadium hosted the Netherlands vs Germany 2022 World Cup qualifier?
+**Answer:** De Kuip
+**Why it fails:** False: the Netherlands did NOT play Germany in 2022 WC qualifying — their group (G) was Turkey, Norway, Montenegro, Latvia, Gibraltar. No NL v Germany qualifier occurred.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** No NL v Germany 2022 qualifier.
+
+### Row 40702 — Netherlands (medium) — FAIL
+**Q:** Which Dutch star's World Cup 2010 Silver Ball came before his Ballon d'Or nomination?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — Wesley Sneijder did (Golden Ball: Forlán).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40709 — Netherlands (hard) — FAIL
+**Q:** Which Dutch World Cup qualification campaign also saw them top their UEFA group: 2010 or .?
+**Answer:** 2010
+**Why it fails:** Malformed + non-unique: the Netherlands topped their UEFA group for 2010, 2014, 2022 AND 2026 — all four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Fix the question/options.
+
+### Row 40711 — Netherlands (easy) — FAIL
+**Q:** Which Dutch World Cup star was produced by Ajax's De Toekomst academy?
+**Answer:** Dennis Bergkamp
+**Why it fails:** Non-unique: both Dennis Bergkamp AND Wesley Sneijder came through Ajax's De Toekomst academy — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Wesley_Sneijder
+**Remedy:** Only one De Toekomst graduate should be an option.
+
+### Row 40721 — Netherlands (medium) — FAIL
+**Q:** Which FIFA ranking did the Netherlands drop to in 2016?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands' 36th low was August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40722 — Netherlands (medium) — FAIL
+**Q:** Which FIFA ranking low did the Netherlands hit in 2016?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands hit 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40724 — Netherlands (hard) — FAIL
+**Q:** Which goalkeeper did Netherlands NOT substitute on for penalty shootouts at the 2014 World Cup?
+**Answer:** Jasper Cillessen
+**Why it fails:** Non-unique 'NOT' question: only Krul was brought on, so Cillessen (subbed off), Vorm AND Stekelenburg were all 'not brought on' — multiple valid answers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a keeper who came on.
+
+### Row 40754 — Netherlands (easy) — FAIL
+**Q:** Which nation beat the Netherlands 2-0 in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the 2018 Nations League — their NL group was France & Germany; they never played Belgium.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40755 — Netherlands (easy) — FAIL
+**Q:** Which nation beat the Netherlands 2-1 in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False: no Netherlands 2-1 loss to Belgium in the Nations League — they were not in a NL group with Belgium.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40762 — Netherlands (easy) — FAIL
+**Q:** Which nation did NOT defeat Netherlands in a World Cup semi-final?
+**Answer:** Spain
+**Why it fails:** Non-unique: BOTH Spain and Portugal failed to beat the Netherlands in a WC semi-final, and Brazil DID (1998 SF) — the options don't yield a unique 'did not'.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Brazil beat NL in the 1998 SF; fix options.
+
+### Row 40807 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands 2010 World Cup finalist is a graduate of Ajax's De Toekomst academy?
+**Answer:** Wesley Sneijder
+**Why it fails:** Non-unique: both Sneijder AND Van der Vaart (both 2010 finalists) are Ajax De Toekomst graduates.
+**Source:** https://en.wikipedia.org/wiki/Rafael_van_der_Vaart
+**Remedy:** Only one De Toekomst graduate should be an option.
+
+### Row 40810 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands attacker has scored over 45 international goals?
+**Answer:** Memphis Depay
+**Why it fails:** Non-unique: both Depay AND Van Persie (an option) have scored over 45 international goals (Van Persie 50).
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** Add a constraint to make it unique.
+
+### Row 40825 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands centre-back started all 5 matches at the 2022 FIFA World Cup?
+**Answer:** Nathan Aké
+**Why it fails:** Non-unique/false: captain Van Dijk (an option) started all five 2022 matches too; Aké missed the Senegal opener — so 'started all 5 = Aké' is wrong/non-unique.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Van Dijk started all 5.
+
+### Row 40828 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands centre-back was in the 2014 and 2022 World Cup squads?
+**Answer:** Stefan de Vrij
+**Why it fails:** Non-unique: both Stefan de Vrij AND Daley Blind (both options) were in the 2014 and 2022 squads.
+**Source:** https://en.wikipedia.org/wiki/Daley_Blind
+**Remedy:** Only one option should fit both squads.
+
+### Row 40847 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands defender made his World Cup debut in 2022?
+**Answer:** Nathan Aké
+**Why it fails:** Non-unique: Aké, De Ligt, Van Dijk AND Dumfries all made their WC debut at the 2022 tournament (the Netherlands missed 2018 and none played 2014) — all four options fit.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a 2022 WC debutant.
+
+### Row 40848 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands defender played at both the 2014 and 2022 World Cups?
+**Answer:** Daley Blind
+**Why it fails:** Non-unique: both Daley Blind AND Stefan de Vrij (both options) played at the 2014 and 2022 WCs.
+**Source:** https://en.wikipedia.org/wiki/Daley_Blind
+**Remedy:** Only one option should fit both tournaments.
+
+### Row 40862 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands forward made the FIFA World Cup Team of the Tournament in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40865 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands forward was in the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40879 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands manager did NOT lead them at a FIFA World Cup?
+**Answer:** Dick Advocaat
+**Why it fails:** False: Dick Advocaat DID lead the Netherlands at a World Cup — he managed them at the 1994 WC (QF). All four options led NL at a WC, so there's no valid answer.
+**Source:** https://en.wikipedia.org/wiki/Dick_Advocaat
+**Remedy:** Advocaat led NL at the 1994 WC.
+
+### Row 40900 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands manager oversaw the team scoring 12 goals in their first three 2014 World Cup matches?
+**Answer:** Louis van Gaal
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12 (the answer Van Gaal aside, the '12 goals' premise is wrong).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40971 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player has scored 45+ goals since the 2006 World Cup?
+**Answer:** Memphis Depay
+**Why it fails:** Non-unique: both Depay AND Van Persie (50 goals, an option) have scored 45+ for the Netherlands since 2006.
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** Add a constraint to make it unique.
+
+### Row 40986 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player made the 2010 All-Star Team and won the Silver Ball?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — Sneijder did (Golden Ball: Forlán). (Both were in the All-Star Team.)
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40987 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player made the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40988 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player missed a penalty in the 2022 World Cup quarter-final?
+**Answer:** Virgil van Dijk
+**Why it fails:** Non-unique: both Van Dijk AND Berghuis (both options) had their penalties saved by E. Martínez in the 2022 QF shootout.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Two NL players missed.
+
+### Row 40989 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player missed the final penalty in the 2022 World Cup quarter-final shootout?
+**Answer:** Teun Koopmeiners
+**Why it fails:** False: Koopmeiners did not miss the final penalty — Martínez saved Van Dijk and Berghuis, and the shootout ended on Argentina's successful kick (Koopmeiners scored).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Van Dijk & Berghuis were the saved penalties.
+
+### Row 41000 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored 45+ international goals by the 2024 Euros?
+**Answer:** Memphis Depay
+**Why it fails:** Non-unique: both Depay AND Van Persie (50, an option) had 45+ goals by the 2024 Euros.
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** Add a constraint to make it unique.
+
+### Row 41020 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored a hat-trick against Spain at the 2014 World Cup?
+**Answer:** Robin van Persie
+**Why it fails:** False: Van Persie scored a BRACE (2), not a hat-trick, in the 5-1 v Spain (2014) — he scored 2, Robben 2, De Vrij 1.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Van Persie scored 2, not 3.
+
+### Row 41036 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored in both the 2010 World Cup final loss and the 2014 5-1 group win against Spain?
+**Answer:** Robin van Persie
+**Why it fails:** False: the Netherlands did NOT score in the 2010 final (lost 1-0 to Spain) — so Van Persie did not 'score the only goal in the 2010 final'.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Final
+**Remedy:** NL scored 0 in the 2010 final.
+
+### Row 41038 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored in both their 2022 World Cup round of 16 and quarter-final matches?
+**Answer:** Denzel Dumfries
+**Why it fails:** False: Dumfries did NOT score in the 2022 QF — both NL goals v Argentina were Weghorst's; Dumfries scored only in the R16.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Weghorst scored both QF goals.
+
+### Row 41047 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored in their 12-goal start to the 2014 World Cup?
+**Answer:** Robin van Persie
+**Why it fails:** False premise: the Netherlands scored 10 goals (not 12) in their first three 2014 matches; the '12-goal start' is wrong (Van Persie did score, but the premise is false).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 41086 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player was named best player at the 2010 FIFA World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was NOT named best player of the 2010 WC — the Golden Ball went to Diego Forlán.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 41088 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player was named in the 2022 FIFA World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 41089 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player was the 2010 World Cup's best player?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was not the 2010 WC's best player — Diego Forlán won the Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 41094 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player won the 2010 World Cup's best player award?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was not the 2010 WC best player — Diego Forlán won the Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 41095 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player won the Silver Ball at the 2010 World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 41100 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player's 2010 World Cup displays earned him the Silver Ball?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 41117 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands stadium hosted a 2022 World Cup qualifier vs Turkey?
+**Answer:** De Kuip
+**Why it fails:** Wrong venue: the Netherlands' 6-1 win over Turkey in 2022 qualifying (Sep 2021) was at the Johan Cruyff Arena in Amsterdam, not De Kuip.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Turkey 6-1 was in Amsterdam.
+
+### Row 41124 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star played at both the 2010 and 2014 FIFA World Cups?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: Robben, Sneijder AND Van Persie all played at both the 2010 and 2014 WCs.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Three options fit.
+
+### Row 41129 — Netherlands (medium) — FAIL
+**Q:** Which Netherlands star scored in both the 2010 and 2014 World Cup group stages?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: both Robben AND Van Persie scored in the 2010 and 2014 group stages.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Two options fit.
+
+### Row 41130 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star was a key player at both the 2010 and 2014 World Cups?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: Robben, Sneijder AND Van Persie were all key at both the 2010 and 2014 WCs.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Three options fit.
+
+### Row 41131 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star was key in both the 2010 and 2014 World Cups?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: Robben, Van Persie AND Sneijder were all key at both 2010 and 2014.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Three options fit.
+
+### Row 41133 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star, developed in the Eredivisie, scored in the 2014 World Cup semi-final?
+**Answer:** Wesley Sneijder
+**Why it fails:** False: nobody scored in the Netherlands' 2014 semi-final v Argentina — it finished 0-0 (NL lost on penalties), so Sneijder did not 'score the goal'.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** The 2014 SF was 0-0.
+
+### Row 41156 — Netherlands (easy) — FAIL
+**Q:** Which stadium did the Netherlands NOT use for a 2022 World Cup qualifier?
+**Answer:** Philips Stadion
+**Why it fails:** Non-unique/dubious: the KNVB Campus (a training centre) was also never a qualifier venue, so 'did NOT use' isn't unique to the Philips Stadion.
+**Source:** https://en.wikipedia.org/wiki/KNVB_Campus
+**Remedy:** KNVB Campus is also not a venue.
+
+### Row 41158 — Netherlands (easy) — FAIL
+**Q:** Which stadium hosted the Netherlands' 2-1 loss to Belgium in the 2018 Nations League?
+**Answer:** King Baudouin Stadium
+**Why it fails:** False: the Netherlands never played Belgium in the 2018 Nations League (their group was France & Germany), so there was no such match/venue.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 41160 — Netherlands (easy) — FAIL
+**Q:** Which stadium hosted the Netherlands' 2022 World Cup qualifier against Turkey?
+**Answer:** De Kuip
+**Why it fails:** Wrong venue: the 2022-qualifying win over Turkey (6-1) was at the Johan Cruyff Arena, Amsterdam, not De Kuip.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Turkey game was in Amsterdam.
+
+### Row 41172 — Netherlands (easy) — FAIL
+**Q:** Which team beat Netherlands 2-0 in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the 2018 Nations League — they were grouped with France & Germany, not Belgium.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 41189 — Netherlands (easy) — FAIL
+**Q:** Which team did the Netherlands not defeat in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False/non-unique: the Netherlands never played Belgium in the 2018 Nations League (group was France & Germany); they also didn't play Spain/Argentina/Portugal there, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 41226 — Netherlands (medium) — FAIL
+**Q:** Which two World Cups did the Netherlands qualify for by winning their UEFA group?
+**Answer:** 2010 and 2014
+**Why it fails:** Non-unique: the Netherlands also won their UEFA group for 2006 (and 2022), so 'and 2006 and 2010' is equally correct — more than one option is true.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** 2006 group also won.
+
+### Row 41243 — Netherlands (medium) — FAIL
+**Q:** Which World Cup did the Netherlands first qualify for by winning their UEFA group: 2010 or 2014?
+**Answer:** 2010
+**Why it fails:** False 'first': the Netherlands won their UEFA group for 2006 too (an option) — earlier than 2010 — so 2010 was not the first group win among the options.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** 2006 group win was earlier.
+
+### Row 41244 — Netherlands (hard) — FAIL
+**Q:** Which World Cup performance caused Netherlands to reach 3rd in FIFA rankings in 2011?
+**Answer:** 2010 World Cup final
+**Why it fails:** False premise: the 2010 final lifted the Netherlands to 1st in 2011 (not 3rd) — their highest-ever FIFA ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 41249 — Netherlands (hard) — FAIL
+**Q:** Which year did the Netherlands reach 3rd in FIFA rankings after the 2010 World Cup?
+**Answer:** 2011
+**Why it fails:** False premise: the Netherlands reached 1st in 2011 (not 3rd) — that was their highest-ever ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
