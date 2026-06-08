@@ -26,7 +26,7 @@ explanations). Per-fact verification of all 46k rows against external sources
 is NOT something this script can do; rows that clear every mechanizable test
 are passed with that caveat recorded in the report header.
 """
-import csv, json, re, unicodedata, collections
+import csv, json, re, unicodedata, collections, argparse
 
 SRC = "Pre-worldcup-clean.csv"
 VALID_DIFF = {"easy", "medium", "hard"}
@@ -78,6 +78,24 @@ ADJ = {
  "Tunisia": ["tunisia", "carthage eagles"],
  "USA": ["usa", "u.s.", "united states", "american", "usmnt", "uswnt", "stars and stripes"],
  "Côte d'Ivoire": ["côte d'ivoire", "cote d'ivoire", "ivory coast", "ivorian", "ivoirian", "elephants"],
+ # --- batch 2 additions (countries not present in batch 1) ---
+ "Bosnia and Herzegovina": ["bosnia", "herzegovina", "bosnian", "zmajevi", "dragons"],
+ "Curaçao": ["curaçao", "curacao"],
+ "Czechia": ["czechia", "czech", "czech republic"],
+ "Haiti": ["haiti", "haitian", "grenadiers"],
+ "Norway": ["norway", "norwegian", "norse"],
+ "Panama": ["panama", "panamanian", "canaleros"],
+ "Portugal": ["portugal", "portuguese", "seleção", "selecao", "quinas"],
+ "Qatar": ["qatar", "qatari", "al-annabi", "the maroon"],
+ "Saudi Arabia": ["saudi arabia", "saudi", "green falcons", "al-akhdar"],
+ "Scotland": ["scotland", "scottish", "scots", "tartan army"],
+ "South Africa": ["south africa", "south african", "bafana"],
+ "South Korea": ["south korea", "korea republic", "republic of korea", "korean", "taeguk"],
+ "Spain": ["spain", "spanish", "españa", "espana", "la roja", "la furia roja"],
+ "Sweden": ["sweden", "swedish", "swedes", "blågult", "blagult"],
+ "Türkiye": ["türkiye", "turkiye", "turkey", "turkish"],
+ "Uruguay": ["uruguay", "uruguayan", "la celeste", "charrúas", "charruas"],
+ "Uzbekistan": ["uzbekistan", "uzbek", "white wolves"],
 }
 
 def norm(s):
@@ -122,14 +140,21 @@ def fmt_problem(choices):
                 "uneven structure" % (max(wc), min(wc)))
     return ""
 
-def load():
-    with open(SRC, newline="", encoding="utf-8") as f:
+def load(src=SRC):
+    with open(src, newline="", encoding="utf-8") as f:
         r = csv.reader(f); next(r)
         return [row for row in r]
 
-def main():
-    rows = load()
+def main(src=SRC, passed_out="QA_PASSED.md", failed_out="QA_FAILED.md"):
+    rows = load(src)
     flags = collections.defaultdict(dict)   # rowno -> {test: reason}
+
+    # warn about countries with no entry in the ADJ keyword map — they fall back
+    # to [country.lower()] and will mostly false-fail TC-03 (not self-contained).
+    unknown = sorted({row[1] for row in rows if row[1] not in ADJ})
+    if unknown:
+        print("WARNING: %d country/countries not in ADJ map (TC-03 may false-fail): %s"
+              % (len(unknown), ", ".join(unknown)))
 
     # ---- TC-01 near-dup clusters within (country, normalized answer) ----
     dup_of = {}   # rowno -> kept rowno
@@ -273,7 +298,7 @@ def main():
     passed = [i for i in range(2, len(rows) + 2) if not flags[i]]
     failed = [i for i in range(2, len(rows) + 2) if flags[i]]
 
-    with open("QA_PASSED.md", "w", encoding="utf-8") as f:
+    with open(passed_out, "w", encoding="utf-8") as f:
         f.write("# QA — Passed Questions\n\n")
         f.write("Total passed: %d of %d\n\n" % (len(passed), len(rows)))
         f.write("> Cleared every mechanizable test (TC-01/03/04/05/06-proxy/08/09/10/"
@@ -297,7 +322,7 @@ def main():
 
     order = ["TC-01", "TC-04", "TC-03", "TC-05", "TC-06", "TC-08", "TC-09", "TC-10",
              "TC-11", "TC-13", "TC-14", "TC-15", "TC-16", "GEN-RULE"]
-    with open("QA_FAILED.md", "w", encoding="utf-8") as f:
+    with open(failed_out, "w", encoding="utf-8") as f:
         f.write("# QA — Failed Questions\n\n")
         f.write("Total failed: %d of %d\n\n" % (len(failed), len(rows)))
         f.write("> Each entry lists every failing test and a concrete remedy. TC-06 here "
@@ -334,4 +359,9 @@ def main():
             print("  %-9s %d" % (t, counts[t]))
 
 if __name__ == "__main__":
-    main()
+    ap = argparse.ArgumentParser(description="Mechanical+heuristic QA review runner.")
+    ap.add_argument("--src", default=SRC, help="input CSV (dataset schema)")
+    ap.add_argument("--passed", default="QA_PASSED.md", help="output md for passed rows")
+    ap.add_argument("--failed", default="QA_FAILED.md", help="output md for failed rows")
+    a = ap.parse_args()
+    main(a.src, a.passed, a.failed)
