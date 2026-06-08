@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **618** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57 · Ecuador 21580–22765 COMPLETE: 57)
+Total failed-liveness-passed-others so far: **794** (Algeria 176 · Argentina 110 [COMPLETE through row 2160] · Brazil 6097–8182 COMPLETE: 218 · Cameroon 9574–10745 COMPLETE: 57 · Ecuador 21580–22765 COMPLETE: 57 · France 25402–27324 COMPLETE: 176)
 
 ---
 
@@ -3549,3 +3549,1235 @@ opponent) also did not beat them in a group match — multiple valid options (cf
 **Why it fails:** False: Valencia did NOT score all of Ecuador's last five WC goals — Caicedo scored their most recent one (v Senegal, 2022).
 **Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
 **Remedy:** Drop — Caicedo also scored.
+
+### Row 25402 — France (medium) — FAIL
+**Q:** After a 2010 squad mutiny, France fell to what FIFA ranking?
+**Answer:** 25th
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'. The specific 25th figure isn't supported.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify the figure; the documented low is 27th (2013).
+
+### Row 25403 — France (hard) — FAIL
+**Q:** After a 2010 World Cup squad mutiny, when did France fall to 25th in FIFA rankings?
+**Answer:** in 2010
+**Why it fails:** Unverified: the '25th in 2010' premise isn't supported (documented low was 27th in 2013).
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th in 2013.
+
+### Row 25408 — France (easy) — FAIL
+**Q:** After France's 2018 World Cup win, which PSG signing was already at the club?
+**Answer:** Neymar
+**Why it fails:** False premise: Mbappé did NOT join PSG after the 2018 WC — he was at PSG from 2017 (loan), playing the 2017-18 season. So both Neymar AND Mbappé were already at PSG; the distinguishing claim is wrong.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — Mbappé was already at PSG before the 2018 WC.
+
+### Row 25414 — France (medium) — FAIL
+**Q:** After their 2010 mutiny, what was France's lowest FIFA ranking position?
+**Answer:** 25th
+**Why it fails:** Wrong: France's lowest FIFA ranking was 27th (2013), not 25th — and 27th isn't even an option.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Change to 27th (2013).
+
+### Row 25416 — France (medium) — FAIL
+**Q:** After their 2010 squad mutiny, how low did France fall in the FIFA rankings?
+**Answer:** 25th
+**Why it fails:** Unverified: '25th in 2010' not supported (documented low 27th in 2013).
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th in 2013.
+
+### Row 25417 — France (medium) — FAIL
+**Q:** After their 2010 World Cup squad mutiny, France fell to which FIFA ranking?
+**Answer:** 25th
+**Why it fails:** Unverified: '25th after the 2010 mutiny' not supported (documented low 27th in 2013).
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th in 2013.
+
+### Row 25434 — France (easy) — FAIL
+**Q:** At Euro 2020, France lost to Switzerland after leading by what score?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer: '03-Jan' is a mangled '3-1' (France's lead v Switzerland).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix the answer to '3-1'.
+
+### Row 25436 — France (easy) — FAIL
+**Q:** At Euro 2020, what score did France lead Switzerland by in the 80th minute?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer: '03-Jan' = '3-1'.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix the answer to '3-1'.
+
+### Row 25437 — France (easy) — FAIL
+**Q:** At Euro 2020, what was France's lead over Switzerland in the 80th minute before their elimination?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer: '03-Jan' = '3-1'.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix the answer to '3-1'.
+
+### Row 25443 — France (easy) — FAIL
+**Q:** At the 2018 FIFA World Cup final, what was France's winning scoreline against Croatia?
+**Answer:** 04-Feb
+**Why it fails:** Corrupted answer: '04-Feb' is a mangled '4-2' (2018 final v Croatia).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Final
+**Remedy:** Fix the answer to '4-2'.
+
+### Row 25447 — France (easy) — FAIL
+**Q:** At the 2018 World Cup qualifiers, which French stadium also hosted Euro 2016 matches?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique/false explanation: besides the Vélodrome, the Stade de France (hosted the final) AND the Parc des Princes also hosted Euro 2016 matches.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple option-stadiums hosted Euro 2016.
+
+### Row 25467 — France (easy) — FAIL
+**Q:** At the 2022 World Cup, why did France's UEFA Nations League title defense fail?
+**Answer:** Lost to Spain
+**Why it fails:** False: France WON the 2021 Nations League final v Spain (2-1); there was no '2022 NL final lost to Spain' (and NL finals are single-leg, not aggregate). Their 2022-23 defence failed in the group stage.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 NL final.
+
+### Row 25473 — France (medium) — FAIL
+**Q:** At which FIFA World Cup did France win the Fair Play Award?
+**Answer:** 2018 World Cup
+**Why it fails:** False: the 2018 World Cup FIFA Fair Play Award went to SPAIN, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Change answer — Spain won the 2018 Fair Play Award.
+
+### Row 25476 — France (easy) — FAIL
+**Q:** At which host nation's World Cup did France win the FIFA Fair Play Award?
+**Answer:** Russia
+**Why it fails:** False: Spain (not France) won the 2018 World Cup Fair Play Award. (The 'Russia hosted 2018' part is right, but the premise is wrong.)
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — France did not win the 2018 Fair Play Award.
+
+### Row 25482 — France (medium) — FAIL
+**Q:** At which World Cup did France's Antoine Griezmann win the Silver Ball award?
+**Answer:** 2018 World Cup
+**Why it fails:** Wrong award: Griezmann won the BRONZE Ball at 2018; the Silver Ball went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change to Bronze Ball (Silver was Hazard).
+
+### Row 25510 — France (medium) — FAIL
+**Q:** For which major tournament did France have a perfect 10-win qualifying record?
+**Answer:** Euro 2020
+**Why it fails:** False: France did NOT win all 10 Euro 2020 qualifiers — they lost 0-2 to Turkey (and drew 1-1), finishing 8W-1D-1L (25 pts).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25511 — France (medium) — FAIL
+**Q:** For which tournament did France win all 10 qualifying matches?
+**Answer:** Euro 2020
+**Why it fails:** False: France did NOT win all 10 Euro 2020 qualifiers (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25518 — France (medium) — FAIL
+**Q:** France beat Iceland 4-0 in a 2018 qualifier. When did France next achieve a perfect qualifying record?
+**Answer:** For Euro 2020
+**Why it fails:** False: France did NOT have a perfect Euro 2020 qualifying record (lost 0-2 to Turkey).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25526 — France (easy) — FAIL
+**Q:** France earned 18 points to win their 2022 World Cup qualifying group. Which other UEFA nation won theirs with 18?
+**Answer:** None
+**Why it fails:** Unverified uniqueness: 'no other UEFA group winner earned 18 points' is not supported (several 5-team groups had 8-game winners on ~18).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Drop — uniqueness unverified.
+
+### Row 25527 — France (medium) — FAIL
+**Q:** France fell to what FIFA ranking in 2010 after their squad mutiny?
+**Answer:** 25th
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25534 — France (hard) — FAIL
+**Q:** France lost the 2022 Nations League final to which nation on aggregate?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 Nations League final v Spain (2-1); there was no '2022 NL final lost to Spain' (and NL finals are single matches, not aggregate).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 NL final.
+
+### Row 25535 — France (hard) — FAIL
+**Q:** France lost the 2022 World Cup final on penalties. What was the score after extra time?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (2022 final score after extra time).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Fix to '3-3'.
+
+### Row 25554 — France (hard) — FAIL
+**Q:** France's 2014 World Cup playoff win over Ukraine had what aggregate score?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer: '03-Feb' = '3-2' (2014 playoff aggregate v Ukraine).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Fix to '3-2'.
+
+### Row 25564 — France (easy) — FAIL
+**Q:** France's Euro 2016 semi-final win vs Germany was which score?
+**Answer:** 1-0
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 25567 — France (medium) — FAIL
+**Q:** France's perfect 10-win Euro 2020 qualifying campaign preceded which FIFA World Cup?
+**Answer:** 2022 World Cup
+**Why it fails:** False premise: France's Euro 2020 qualifying was NOT a perfect 10-win campaign (lost 0-2 to Turkey).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25575 — France (medium) — FAIL
+**Q:** From 2012-13 to 2023-24, when did PSG NOT win the French Ligue 1 title?
+**Answer:** 2020-21
+**Why it fails:** Non-unique: PSG also did NOT win 2016-17 (Monaco), so '2020-21' (Lille) is not the only season they missed in that span.
+**Source:** https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.
+**Remedy:** Drop — Monaco 2016-17 also.
+
+### Row 25615 — France (medium) — FAIL
+**Q:** How many matches did France win in Euro 2020 qualifying?
+**Answer:** 10
+**Why it fails:** False: France won 8 (not 10) of their Euro 2020 qualifiers (lost 0-2 to Turkey, drew 1-1).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Change to 8 wins.
+
+### Row 25616 — France (medium) — FAIL
+**Q:** How many matches did France win in their perfect Euro 2020 qualifying campaign?
+**Answer:** 10 matches
+**Why it fails:** False: France did NOT have a perfect Euro 2020 qualifying campaign (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Change to 8 wins.
+
+### Row 25621 — France (medium) — FAIL
+**Q:** How many qualifying matches did France win for Euro 2020?
+**Answer:** 10 matches
+**Why it fails:** False: France won 8 of their 10 Euro 2020 qualifiers (lost 0-2 to Turkey).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Change to 8 wins.
+
+### Row 25633 — France (easy) — FAIL
+**Q:** In 2018, which award did the France national team win alongside the World Cup trophy?
+**Answer:** FIFA Fair Play Award
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to SPAIN, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won the 2018 Fair Play Award.
+
+### Row 25430 — France (medium) — FAIL
+**Q:** At Euro 2016, France beat Germany by what exact scoreline?
+**Answer:** 1-0
+**Why it fails:** Wrong score: France beat Germany **2-0** (Griezmann brace) in the Euro 2016 semi-final, not 1-0. [Correction: this row was initially mis-passed in batch 25402–25500 and moved here.]
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix the answer to 2-0.
+
+### Row 25642 — France (easy) — FAIL
+**Q:** In France, PSG won 9 of 10 Ligue 1 titles from 2012-13 to 2023-24. Which other French club won the remaining title?
+**Answer:** Lille
+**Why it fails:** Non-unique: PSG did NOT win TWO seasons in that span — Monaco (2016-17) also won, besides Lille (2020-21). Monaco is an option.
+**Source:** https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.
+**Remedy:** Drop — Monaco 2016-17 also.
+
+### Row 25646 — France (hard) — FAIL
+**Q:** In France's 2022 final vs Argentina, what was the score after extra time?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer: '03-Mar' = '3-3' (2022 final after ET).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Fix to '3-3'.
+
+### Row 25656 — France (easy) — FAIL
+**Q:** In France's Euro 2020 collapse, what was their lead before Switzerland tied?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer: '03-Jan' = '3-1' (lead v Switzerland).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix to '3-1'.
+
+### Row 25657 — France (easy) — FAIL
+**Q:** In the 2018 final, France beat Croatia by what scoreline?
+**Answer:** 04-Feb
+**Why it fails:** Corrupted answer: '04-Feb' = '4-2' (2018 final).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Final
+**Remedy:** Fix to '4-2'.
+
+### Row 25659 — France (easy) — FAIL
+**Q:** In the 2018 World Cup final, France beat Croatia by what score?
+**Answer:** 04-Feb
+**Why it fails:** Corrupted answer: '04-Feb' = '4-2' (2018 final).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Final
+**Remedy:** Fix to '4-2'.
+
+### Row 25663 — France (easy) — FAIL
+**Q:** In the 2021 Nations League semis, France beat Belgium by what score?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer: '03-Feb' = '3-2' (2021 NL semi v Belgium).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Fix to '3-2'.
+
+### Row 25668 — France (easy) — FAIL
+**Q:** In the 2022 World Cup final, which France player scored their third goal to make it 3-3?
+**Answer:** Randal Kolo Muani
+**Why it fails:** Wrong: Mbappé scored France's third goal (his hat-trick, 118' pen) to make it 3-3 — NOT Kolo Muani (whose late shot was saved).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change answer to Mbappé.
+
+### Row 25686 — France (medium) — FAIL
+**Q:** In which FIFA World Cup final did French forward Randal Kolo Muani score France's third goal?
+**Answer:** 2022 World Cup
+**Why it fails:** False premise: Kolo Muani did NOT score France's third goal in the 2022 final — Mbappé did (hat-trick).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Drop — Mbappé scored it.
+
+### Row 25698 — France (medium) — FAIL
+**Q:** In which tournament did France beat Germany 1-0 in the semi-final?
+**Answer:** Euro 2016
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 25717 — France (medium) — FAIL
+**Q:** In which World Cup did France win the FIFA Fair Play Award?
+**Answer:** 2018 World Cup
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to Spain, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won it.
+
+### Row 25753 — France (medium) — FAIL
+**Q:** In which year did France beat Germany 1-0 in a Euro semi-final?
+**Answer:** 2016
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 25757 — France (hard) — FAIL
+**Q:** In which year did France fall to 25th in FIFA rankings after a squad mutiny?
+**Answer:** 2010
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25759 — France (hard) — FAIL
+**Q:** In which year did France fall to 25th in the FIFA rankings?
+**Answer:** 2010
+**Why it fails:** Unverified: '25th in 2010' not supported (documented low 27th in 2013).
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low 27th (2013).
+
+### Row 25762 — France (hard) — FAIL
+**Q:** In which year did France lose the Nations League final to Spain on aggregate?
+**Answer:** 2022
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate'.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 NL final.
+
+### Row 25768 — France (medium) — FAIL
+**Q:** In which year did France win all 10 of their Euro qualifying matches?
+**Answer:** 2020
+**Why it fails:** False: France did NOT win all 10 Euro 2020 qualifiers — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25818 — France (medium) — FAIL
+**Q:** What was France's exact scoreline in the 2018 World Cup final?
+**Answer:** 04-Feb
+**Why it fails:** Corrupted answer (Excel date): the real score is '4-2' (2018 final).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Final
+**Remedy:** Fix to '4-2'.
+
+### Row 25819 — France (easy) — FAIL
+**Q:** What was France's lead against Switzerland in the Euro 2020 round of 16?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer (Excel date): the real score is '3-1' (lead v Switzerland).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix to '3-1'.
+
+### Row 25820 — France (easy) — FAIL
+**Q:** What was France's lead in the 80th minute of their Euro 2020 loss to Switzerland?
+**Answer:** 03-Jan
+**Why it fails:** Corrupted answer (Excel date): the real score is '3-1' (lead v Switzerland).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Fix to '3-1'.
+
+### Row 25822 — France (medium) — FAIL
+**Q:** What was France's low FIFA ranking in 2010 after a squad mutiny?
+**Answer:** 25th
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25823 — France (medium) — FAIL
+**Q:** What was France's lowest FIFA ranking after their 2010 World Cup mutiny?
+**Answer:** 25th
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25824 — France (medium) — FAIL
+**Q:** What was France's lowest FIFA ranking in 2010?
+**Answer:** 25th
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25825 — France (hard) — FAIL
+**Q:** What was France's penalty shootout score in the 2022 World Cup final?
+**Answer:** 04-Feb
+**Why it fails:** Corrupted answer (Excel date): the real score is '4-2' (2022 final pen shootout).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Fix to '4-2'.
+
+### Row 25827 — France (medium) — FAIL
+**Q:** What was France's score after extra time in the 2022 World Cup final?
+**Answer:** 03-Mar
+**Why it fails:** Corrupted answer (Excel date): the real score is '3-3' (2022 final after ET).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Fix to '3-3'.
+
+### Row 25828 — France (easy) — FAIL
+**Q:** What was France's scoreline against Germany in the Euro 2016 semi-final?
+**Answer:** 1-0
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 25832 — France (easy) — FAIL
+**Q:** What was France's winning score against England in the 2022 World Cup quarter-final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date): the real score is '2-1' (v England, 2022 QF).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Fix to '2-1'.
+
+### Row 25837 — France (easy) — FAIL
+**Q:** What was the final score when France beat Belgium in the 2021 Nations League semi-final?
+**Answer:** 03-Feb
+**Why it fails:** Corrupted answer (Excel date): the real score is '3-2' (2021 NL semi v Belgium).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Fix to '3-2'.
+
+### Row 25838 — France (easy) — FAIL
+**Q:** What was the final score when France beat Croatia in the 2018 World Cup final?
+**Answer:** 04-Feb
+**Why it fails:** Corrupted answer (Excel date): the real score is '4-2' (2018 final).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Final
+**Remedy:** Fix to '4-2'.
+
+### Row 25839 — France (easy) — FAIL
+**Q:** What was the final score when France beat England in the 2022 World Cup quarter-final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date): the real score is '2-1' (v England, 2022 QF).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Fix to '2-1'.
+
+### Row 25840 — France (easy) — FAIL
+**Q:** What was the final score when France beat Spain in the 2021 Nations League final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date): the real score is '2-1' (2021 NL final v Spain).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Fix to '2-1'.
+
+### Row 25842 — France (easy) — FAIL
+**Q:** What was the final score when France lost to Spain in the Euro 2024 semi-final?
+**Answer:** 02-Jan
+**Why it fails:** Corrupted answer (Excel date): the real score is '2-1' (Euro 2024 SF v Spain).
+**Source:** https://en.wikipedia.org/wiki/France_national_football_team
+**Remedy:** Fix to '2-1'.
+
+### Row 25845 — France (medium) — FAIL
+**Q:** What was the score when France beat Argentina in the 2018 World Cup round of 16?
+**Answer:** 04-Mar
+**Why it fails:** Corrupted answer (Excel date): the real score is '4-3' (v Argentina, 2018 R16).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Fix to '4-3'.
+
+### Row 25848 — France (medium) — FAIL
+**Q:** What was the score when France beat Germany in the Euro 2016 semi-final?
+**Answer:** 1-0
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 25859 — France (medium) — FAIL
+**Q:** When did France beat Germany 1-0 in a Euro semi-final?
+**Answer:** 2016
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 25868 — France (hard) — FAIL
+**Q:** When did France fall to 25th in FIFA rankings?
+**Answer:** 2010
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25869 — France (hard) — FAIL
+**Q:** When did France fall to 25th in the FIFA rankings after a squad mutiny?
+**Answer:** In 2010
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25870 — France (hard) — FAIL
+**Q:** When did France fall to 25th in the FIFA rankings after a World Cup mutiny?
+**Answer:** 2010
+**Why it fails:** Unverified/likely wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 25882 — France (hard) — FAIL
+**Q:** When did France lose the Nations League final to Spain on aggregate?
+**Answer:** 2022
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate'.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 NL final.
+
+### Row 25883 — France (medium) — FAIL
+**Q:** When did France lose the UEFA Nations League final to Spain?
+**Answer:** 2022
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate'.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 NL final.
+
+### Row 25903 — France (medium) — FAIL
+**Q:** When did France win all 10 Euro qualifiers?
+**Answer:** For Euro 2020
+**Why it fails:** False: France did NOT win all 10 Euro 2020 qualifiers — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25904 — France (medium) — FAIL
+**Q:** When did France win all 10 Euro qualifying matches?
+**Answer:** Euro 2020
+**Why it fails:** False: France did NOT win all 10 Euro 2020 qualifiers — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25905 — France (medium) — FAIL
+**Q:** When did France win the FIFA Fair Play Award at a World Cup?
+**Answer:** 2018
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to Spain, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won it.
+
+### Row 25906 — France (medium) — FAIL
+**Q:** When did France win the FIFA Fair Play Award?
+**Answer:** 2018 World Cup
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to Spain, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won it.
+
+### Row 25920 — France (medium) — FAIL
+**Q:** When did France's men's team win all 10 UEFA Euro qualifiers?
+**Answer:** For Euro 2020
+**Why it fails:** False: France did NOT win all 10 Euro 2020 qualifiers — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 25923 — France (easy) — FAIL
+**Q:** When did France's Randal Kolo Muani score in the 2022 World Cup final?
+**Answer:** France's third goal
+**Why it fails:** False: Kolo Muani did NOT score France's third goal in the 2022 final — Mbappé did (his hat-trick). Kolo Muani's late shot was saved.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to Mbappé.
+
+### Row 25928 — France (medium) — FAIL
+**Q:** When did French forward Randal Kolo Muani score in the World Cup final?
+**Answer:** 2022
+**Why it fails:** False premise: Kolo Muani did NOT score in the 2022 final — Mbappé scored France's third goal.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Drop — Mbappé scored it.
+
+### Row 25954 — France (medium) — FAIL
+**Q:** When was French keeper Hugo Lloris named to the World Cup All-Star Team?
+**Answer:** 2018
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 25964 — France (easy) — FAIL
+**Q:** Which 2014 World Cup playoff opponent did France not face?
+**Answer:** Ireland
+**Why it fails:** Non-unique negative: France's 2014 playoff was v Ukraine, so among the options they did NOT face Ireland, Spain OR Portugal in it.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Drop — three options fit.
+
+### Row 25968 — France (easy) — FAIL
+**Q:** Which 2018 World Cup match did France NOT win?
+**Answer:** Germany 1-0 France
+**Why it fails:** Non-unique negative: among the options France did NOT win BOTH Germany 1-0 (a 2014 loss) and Portugal 1-0 (Euro 2016 loss) — and neither was a 2018 WC match.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Drop — two options fit.
+
+### Row 25992 — France (easy) — FAIL
+**Q:** Which FIFA award did France win at the 2018 World Cup?
+**Answer:** FIFA Fair Play Award
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to Spain, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won it.
+
+### Row 26000 — France (easy) — FAIL
+**Q:** Which formation did France use in the 2022 World Cup final to maximize Mbappé's pace?
+**Answer:** 04/03/2003
+**Why it fails:** Corrupted answer: '04/03/2003' is a mangled '4-3-3' (formation turned into a date).
+**Source:** https://en.wikipedia.org/wiki/Didier_Deschamps
+**Remedy:** Fix to '4-3-3'.
+
+### Row 26015 — France (easy) — FAIL
+**Q:** Which France captain was in the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26017 — France (easy) — FAIL
+**Q:** Which France captain's performances earned him a 2018 World Cup All-Star Team spot?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26023 — France (medium) — FAIL
+**Q:** Which France coach achieved a perfect 10-win Euro 2020 qualification?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT achieve a perfect 10-win Euro 2020 qualification (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26051 — France (easy) — FAIL
+**Q:** Which France goalkeeper made the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26056 — France (easy) — FAIL
+**Q:** Which France goalkeeper was named in the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26057 — France (easy) — FAIL
+**Q:** Which France goalkeeper was selected for the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26058 — France (easy) — FAIL
+**Q:** Which France goalkeeper's performances earned him a 2018 World Cup All-Star Team place?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Golden Glove winner Thibaut Courtois was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26059 — France (easy) — FAIL
+**Q:** Which France manager achieved a perfect 10-win qualifying record for Euro 2020?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT win all 10 Euro 2020 qualifiers (lost 0-2 to Turkey).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26085 — France (easy) — FAIL
+**Q:** Which France manager led the team to win all 10 Euro 2020 qualifiers?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26096 — France (easy) — FAIL
+**Q:** Which France manager oversaw a perfect 10-win Euro 2020 qualifying campaign?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26102 — France (easy) — FAIL
+**Q:** Which France manager oversaw the perfect 10-win Euro 2020 qualifying campaign?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26108 — France (easy) — FAIL
+**Q:** Which France manager oversaw their perfect Euro 2020 qualifying campaign?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26194 — France (easy) — FAIL
+**Q:** Which France player joined PSG after their Qatari takeover, in 2017?
+**Answer:** Neymar
+**Why it fails:** False: Neymar is Brazilian, not a 'France player' — and Mbappé (who IS French) also joined PSG in 2017. The answer is miscategorized and non-unique.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop or reword — Neymar isn't French; Mbappé also joined in 2017.
+
+### Row 26195 — France (easy) — FAIL
+**Q:** Which France player made the 2018 World Cup All-Star Team, unlike Germany's Manuel Neuer?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26196 — France (easy) — FAIL
+**Q:** Which France player made the FIFA World Cup All-Star Team in 2018?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26228 — France (easy) — FAIL
+**Q:** Which France player scored four goals in the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a hat-trick (3) in the 2022 final, not 'four goals' (8 across the whole tournament).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 26232 — France (easy) — FAIL
+**Q:** Which France player scored more goals in the 2018 World Cup round of 16 than Antoine Griezmann's total tournament goals?
+**Answer:** Kylian Mbappé
+**Why it fails:** Self-contradictory/false: Mbappé scored 2 in the 2018 R16, which is FEWER than Griezmann's 4 total tournament goals — the premise is impossible.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — the comparison is false.
+
+### Row 26245 — France (easy) — FAIL
+**Q:** Which France player scored their third goal in the 2022 World Cup final?
+**Answer:** Randal Kolo Muani
+**Why it fails:** False: Mbappé scored France's third goal (his hat-trick) in the 2022 final — NOT Kolo Muani (whose late shot was saved).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to Mbappé.
+
+### Row 26274 — France (easy) — FAIL
+**Q:** Which France player was named second-best at the 2018 World Cup?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball; the Silver Ball went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change to Bronze Ball.
+
+### Row 26300 — France (medium) — FAIL
+**Q:** Which France player won the Euro 2016 Golden Boot and the 2018 World Cup Silver Ball?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball; the Silver Ball went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change to Bronze Ball.
+
+### Row 26303 — France (easy) — FAIL
+**Q:** Which France player won the Silver Ball at the 2018 World Cup?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball; the Silver Ball went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change to Bronze Ball.
+
+### Row 26348 — France (medium) — FAIL
+**Q:** Which France team had a perfect 10-win qualifying campaign?
+**Answer:** Euro 2020 qualifiers
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26350 — France (medium) — FAIL
+**Q:** Which France team won all 10 qualifiers for Euro 2020?
+**Answer:** The 2021 squad
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign — they lost 0-2 to Turkey (8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26392 — France (easy) — FAIL
+**Q:** Which French captain was in the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26408 — France (easy) — FAIL
+**Q:** Which French club broke PSG's run of 9 titles in 10 years?
+**Answer:** Lille
+**Why it fails:** Non-unique: Monaco (2016-17, an option) also won Ligue 1 in that span, not just Lille (2020-21).
+**Source:** https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.
+**Remedy:** Drop — Monaco 2016-17 also.
+
+### Row 26409 — France (easy) — FAIL
+**Q:** Which French club broke PSG's run of Ligue 1 titles between 2012-13 and 2023-24?
+**Answer:** Lille
+**Why it fails:** Non-unique: Monaco (2016-17, an option) also won Ligue 1 in that span, not just Lille (2020-21).
+**Source:** https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.
+**Remedy:** Drop — Monaco 2016-17 also.
+
+### Row 26429 — France (easy) — FAIL
+**Q:** Which French club won Ligue 1 during PSG's 2012-2024 dominance?
+**Answer:** Lille
+**Why it fails:** Non-unique: Monaco (2016-17, an option) also won Ligue 1 in that span, not just Lille (2020-21).
+**Source:** https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.
+**Remedy:** Drop — Monaco 2016-17 also.
+
+### Row 26472 — France (easy) — FAIL
+**Q:** Which French Euro 2016 stadium is not a regular home for France's World Cup qualifiers?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique: besides the Vélodrome, the Parc des Princes AND Stade de Lyon also hosted Euro 2016 yet aren't France's regular qualifier home.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple options fit.
+
+### Row 26493 — France (easy) — FAIL
+**Q:** Which French goalkeeper did Deschamps select for the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26494 — France (easy) — FAIL
+**Q:** Which French goalkeeper from the 2016 Euros was in the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26496 — France (easy) — FAIL
+**Q:** Which French goalkeeper made the 2018 FIFA World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26502 — France (easy) — FAIL
+**Q:** Which French goalkeeper was named in the 2018 FIFA World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26504 — France (easy) — FAIL
+**Q:** Which French goalkeeper's 2018 World Cup performance earned him an All-Star Team spot?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26515 — France (easy) — FAIL
+**Q:** Which French manager led the team to a perfect 10-win Euro 2020 qualifying campaign?
+**Answer:** Didier Deschamps
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26551 — France (easy) — FAIL
+**Q:** Which French midfielder debuted for the national team in the 2026 World Cup cycle?
+**Answer:** Eduardo Camavinga
+**Why it fails:** False: Camavinga debuted for France in September 2020 (and at a World Cup in 2022), NOT in the 2023/2026 cycle.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Camavinga
+**Remedy:** Reword — he emerged earlier; debut was 2020.
+
+### Row 26552 — France (easy) — FAIL
+**Q:** Which French midfielder debuted in the 2026 World Cup cycle?
+**Answer:** Eduardo Camavinga
+**Why it fails:** False: Camavinga debuted for France in September 2020 (and at a World Cup in 2022), NOT in the 2023/2026 cycle.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Camavinga
+**Remedy:** Reword — he emerged earlier; debut was 2020.
+
+### Row 26553 — France (easy) — FAIL
+**Q:** Which French midfielder did NOT start the 2022 World Cup final?
+**Answer:** Paul Pogba
+**Why it fails:** Non-unique: both Pogba AND Kanté (an option) missed the 2022 WC through injury, so neither 'started the 2022 final'.
+**Source:** https://en.wikipedia.org/wiki/N%27Golo_Kant%C3%A9
+**Remedy:** Drop — Kanté also didn't start.
+
+### Row 26594 — France (easy) — FAIL
+**Q:** Which French midfielder's World Cup debut post-2023 marked a generational shift?
+**Answer:** Eduardo Camavinga
+**Why it fails:** False: Camavinga debuted for France in September 2020 (and at a World Cup in 2022), NOT in the 2023/2026 cycle.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Camavinga
+**Remedy:** Reword — he emerged earlier; debut was 2020.
+
+### Row 26648 — France (easy) — FAIL
+**Q:** Which French player did NOT become France's all-time top scorer at the 2022 World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** Non-unique negative: Giroud became France's top scorer at 2022, so among the options Mbappé, Benzema AND Griezmann all did NOT.
+**Source:** https://en.wikipedia.org/wiki/Olivier_Giroud
+**Remedy:** Drop — three options fit.
+
+### Row 26649 — France (easy) — FAIL
+**Q:** Which French player did NOT surpass Thierry Henry's scoring record at the 2022 World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** Non-unique negative: Giroud became France's top scorer at 2022, so among the options Mbappé, Benzema AND Griezmann all did NOT.
+**Source:** https://en.wikipedia.org/wiki/Olivier_Giroud
+**Remedy:** Drop — three options fit.
+
+### Row 26653 — France (medium) — FAIL
+**Q:** Which French player finished second in the 2018 World Cup Golden Ball vote?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball / finished 3rd; the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26654 — France (easy) — FAIL
+**Q:** Which French player finished second in the 2018 World Cup player rankings?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball / finished 3rd; the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26661 — France (easy) — FAIL
+**Q:** Which French player made the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26680 — France (easy) — FAIL
+**Q:** Which French player scored 4 goals in the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a HAT-TRICK (3) in the 2022 final, not four goals (8 across the whole tournament).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 26681 — France (easy) — FAIL
+**Q:** Which French player scored 4 of France's 16 goals in the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a HAT-TRICK (3) in the 2022 final, not four goals (8 across the whole tournament).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 26704 — France (easy) — FAIL
+**Q:** Which French player scored four goals in the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a HAT-TRICK (3) in the 2022 final, not four goals (8 across the whole tournament).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 26770 — France (easy) — FAIL
+**Q:** Which French player was in the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26782 — France (easy) — FAIL
+**Q:** Which French player was second-best at the 2018 FIFA World Cup?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26783 — France (easy) — FAIL
+**Q:** Which French player was the 2018 World Cup's second-best, winning the Silver Ball?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26798 — France (easy) — FAIL
+**Q:** Which French player won Euro 2016's top award before the 2018 World Cup Silver Ball?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26802 — France (easy) — FAIL
+**Q:** Which French player won the 2018 World Cup Silver Ball as second-best player?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26803 — France (medium) — FAIL
+**Q:** Which French player won the 2018 World Cup Silver Ball, but not the Golden Boot?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26820 — France (easy) — FAIL
+**Q:** Which French player won the Silver Ball at the 2018 FIFA World Cup?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26825 — France (easy) — FAIL
+**Q:** Which French player, besides Mbappé, won a World Cup Silver Ball in 2018?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26827 — France (easy) — FAIL
+**Q:** Which French player, unlike Mbappé and Griezmann, was named to the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26832 — France (easy) — FAIL
+**Q:** Which French player's 2018 World Cup performances earned him a spot in the tournament's All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 26843 — France (easy) — FAIL
+**Q:** Which French player's Euro 2016 form earned him the 2018 World Cup Silver Ball?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26845 — France (easy) — FAIL
+**Q:** Which French player's four final goals drove their 2022 World Cup total to 16?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a hat-trick (3) in the 2022 final, not four goals (8 across the tournament; the 16 was the team total).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 26846 — France (easy) — FAIL
+**Q:** Which French player's four final goals drove their high 2022 World Cup total?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a hat-trick (3) in the 2022 final, not four goals (8 across the tournament; the 16 was the team total).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 26853 — France (easy) — FAIL
+**Q:** Which French player's performances earned him the 2018 World Cup Silver Ball?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26869 — France (medium) — FAIL
+**Q:** Which French semi-final win had a lower scoreline: 2018 World Cup or Euro 2016?
+**Answer:** Euro 2016
+**Why it fails:** Wrong: France's 2018 SF (1-0 v Belgium) had a LOWER scoreline than the Euro 2016 SF (2-0 v Germany) — so the answer should be the 2018 WC. The explanation is doubly wrong (Euro 2016 was 2-0, not 1-0; 2018 SF was 1-0, not 4-2).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Change answer to the 2018 World Cup.
+
+### Row 26870 — France (medium) — FAIL
+**Q:** Which French squad event caused their 2010 FIFA ranking to drop to 25th?
+**Answer:** The squad mutiny
+**Why it fails:** Unverified/wrong premise: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 26872 — France (easy) — FAIL
+**Q:** Which French stadium besides Stade de France hosted Euro 2016 matches?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique: several option-stadiums all hosted Euro 2016 (Stade de France, Vélodrome, Parc des Princes, Stade de Lyon/Pierre-Mauroy etc.).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple options hosted Euro 2016.
+
+### Row 26883 — France (easy) — FAIL
+**Q:** Which French stadium hosted a Euro 2016 match?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique: several option-stadiums all hosted Euro 2016 (Stade de France, Vélodrome, Parc des Princes, Stade de Lyon/Pierre-Mauroy etc.).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple options hosted Euro 2016.
+
+### Row 26884 — France (easy) — FAIL
+**Q:** Which French stadium hosted a Euro 2016 quarter-final match?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique: several option-stadiums all hosted Euro 2016 (Stade de France, Vélodrome, Parc des Princes, Stade de Lyon/Pierre-Mauroy etc.).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple options hosted Euro 2016.
+
+### Row 26888 — France (easy) — FAIL
+**Q:** Which French stadium hosted Euro 2016 matches but not the final?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique: several option-stadiums all hosted Euro 2016 (Stade de France, Vélodrome, Parc des Princes, Stade de Lyon/Pierre-Mauroy etc.).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple options hosted Euro 2016.
+
+### Row 26890 — France (easy) — FAIL
+**Q:** Which French stadium hosted matches at Euro 2016?
+**Answer:** Stade Vélodrome
+**Why it fails:** Non-unique: several option-stadiums all hosted Euro 2016 (Stade de France, Vélodrome, Parc des Princes, Stade de Lyon/Pierre-Mauroy etc.).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Drop — multiple options hosted Euro 2016.
+
+### Row 26905 — France (easy) — FAIL
+**Q:** Which French star did PSG NOT sign in their 2017-18 mega-spree?
+**Answer:** Antoine Griezmann
+**Why it fails:** Non-unique: PSG signed neither Griezmann NOR Bernardo Silva (an option) in 2017-18 — they signed Neymar & Mbappé.
+**Source:** https://en.wikipedia.org/wiki/Paris_Saint-Germain_F.C.
+**Remedy:** Drop — two options weren't signed.
+
+### Row 26907 — France (easy) — FAIL
+**Q:** Which French star joined PSG in 2017, before the 2018 World Cup?
+**Answer:** Neymar
+**Why it fails:** False: Neymar is Brazilian, not a 'French star' — and Mbappé (French) also joined PSG in 2017.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — Neymar isn't French.
+
+### Row 26915 — France (easy) — FAIL
+**Q:** Which French star won Euro 2016's top award and a 2018 World Cup Silver Ball?
+**Answer:** Antoine Griezmann
+**Why it fails:** Wrong award: Griezmann won the 2018 World Cup BRONZE Ball (3rd); the Silver Ball (2nd) went to Eden Hazard.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Change — Griezmann was 3rd/Bronze.
+
+### Row 26923 — France (easy) — FAIL
+**Q:** Which French star's record 2017 transfer preceded the 2018 World Cup?
+**Answer:** Neymar
+**Why it fails:** False: Neymar is Brazilian, not a 'French [World Cup 2018] star'.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — Neymar isn't French.
+
+### Row 26949 — France (easy) — FAIL
+**Q:** Which French team had a perfect 10-win qualifying campaign for Euro 2020?
+**Answer:** The men's national team
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26950 — France (medium) — FAIL
+**Q:** Which French team won all 10 matches for Euro 2020 qualification?
+**Answer:** The senior men's team
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 26968 — France (easy) — FAIL
+**Q:** Which French World Cup 2018 star did PSG sign in 2017 for a world-record €222 million?
+**Answer:** Neymar
+**Why it fails:** False: Neymar is Brazilian, not a 'French [World Cup 2018] star'.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — Neymar isn't French.
+
+### Row 26969 — France (easy) — FAIL
+**Q:** Which French World Cup 2018 star was signed by PSG for a world-record fee in 2017?
+**Answer:** Neymar
+**Why it fails:** False: Neymar is Brazilian, not a 'French [World Cup 2018] star'.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — Neymar isn't French.
+
+### Row 26975 — France (easy) — FAIL
+**Q:** Which French World Cup star did PSG sign for a world-record €222 million in 2017?
+**Answer:** Neymar from Barcelona
+**Why it fails:** False: Neymar is Brazilian, not a 'French [World Cup 2018] star'.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Drop — Neymar isn't French.
+
+### Row 26989 — France (easy) — FAIL
+**Q:** Which manager did not lead France at a World Cup in Qatar?
+**Answer:** Laurent Blanc
+**Why it fails:** Non-unique negative: besides Laurent Blanc, Domenech AND Guy Stéphan (an option, the assistant) also did NOT lead France at Qatar 2022 — only Deschamps did.
+**Source:** https://en.wikipedia.org/wiki/Didier_Deschamps
+**Remedy:** Drop — multiple options fit.
+
+### Row 27010 — France (easy) — FAIL
+**Q:** Which nation beat France in the 2022 UEFA Nations League final?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate' (the 2022-23 final was Spain-Croatia, 2023).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 final.
+
+### Row 27013 — France (hard) — FAIL
+**Q:** Which nation beat France on aggregate in the 2022 Nations League final?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate' (the 2022-23 final was Spain-Croatia, 2023).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 final.
+
+### Row 27016 — France (easy) — FAIL
+**Q:** Which nation did France beat 1-0 in the 2016 Euro semi-final?
+**Answer:** Germany
+**Why it fails:** Wrong score: France beat Germany 2-0 (Griezmann brace) in the Euro 2016 SF, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Fix to 2-0.
+
+### Row 27048 — France (easy) — FAIL
+**Q:** Which nation did France lose to in the 2022 UEFA Nations League final?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate' (the 2022-23 final was Spain-Croatia, 2023).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 final.
+
+### Row 27052 — France (easy) — FAIL
+**Q:** Which nation did France NOT face in a 2014 World Cup playoff?
+**Answer:** Republic of Ireland
+**Why it fails:** Non-unique negative: France's 2014 playoff was v Ukraine, so among the options they did NOT face Ireland, Spain OR Italy in it.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_FIFA_World_Cup
+**Remedy:** Drop — three options fit.
+
+### Row 27097 — France (easy) — FAIL
+**Q:** Which nation, besides France, won a Fair Play award at the 2018 World Cup?
+**Answer:** None of these
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to Spain, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won it.
+
+### Row 27149 — France (easy) — FAIL
+**Q:** Which team beat France in the 2022 UEFA Nations League final?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate'.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 final.
+
+### Row 27153 — France (hard) — FAIL
+**Q:** Which team beat France on aggregate in the 2022 UEFA Nations League final?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate'.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 final.
+
+### Row 27197 — France (easy) — FAIL
+**Q:** Which team, like France for Euro 2020, also won all 10 qualifying matches?
+**Answer:** France
+**Why it fails:** False/self-referential: France did NOT win all 10 Euro 2020 qualifiers (lost 0-2 to Turkey), and the answer is France itself.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record; circular.
+
+### Row 27201 — France (medium) — FAIL
+**Q:** Which tournament did France achieve a perfect 10-win qualifying record?
+**Answer:** Euro 2020
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 27203 — France (medium) — FAIL
+**Q:** Which tournament saw France achieve a perfect 10-win qualifying record?
+**Answer:** Euro 2020
+**Why it fails:** False premise: France did NOT have a perfect 10-win Euro 2020 qualifying campaign (lost 0-2 to Turkey; 8W-1D-1L).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** Drop — no perfect record.
+
+### Row 27241 — France (medium) — FAIL
+**Q:** Which year did France drop to 25th in FIFA's rankings?
+**Answer:** 2010
+**Why it fails:** Unverified/wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 27253 — France (easy) — FAIL
+**Q:** Who did France lose to in the 2022 Nations League final?
+**Answer:** Spain
+**Why it fails:** False: France WON the 2021 NL final v Spain; there was no '2022 NL final lost to Spain on aggregate'.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Drop — France beat Spain in the 2021 final.
+
+### Row 27261 — France (easy) — FAIL
+**Q:** Who scored four goals in the final for France at the 2022 World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** False: Mbappé scored a hat-trick (3) in the 2022 final, not four goals (8 across the tournament; 16 was the team total).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Change to three.
+
+### Row 27281 — France (medium) — FAIL
+**Q:** Why did France fall to 25th in the FIFA rankings in 2010?
+**Answer:** World Cup squad mutiny
+**Why it fails:** Unverified/wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).
+
+### Row 27299 — France (easy) — FAIL
+**Q:** Why did France win the FIFA Fair Play Award at the 2018 World Cup?
+**Answer:** Lowest disciplinary points
+**Why it fails:** False: the 2018 World Cup Fair Play Award went to Spain, not France.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/articles/fair-play-award-winners
+**Remedy:** Drop — Spain won it.
+
+### Row 27321 — France (easy) — FAIL
+**Q:** Why was France's Hugo Lloris named in the 2018 World Cup All-Star Team?
+**Answer:** His tournament performance
+**Why it fails:** False: Lloris was NOT in the 2018 World Cup All-Star Team — Courtois (Golden Glove) was the keeper selected.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup_awards
+**Remedy:** Drop — Courtois, not Lloris.
+
+### Row 27324 — France (easy) — FAIL
+**Q:** Why was the French team ranked 25th in 2010?
+**Answer:** World Cup squad mutiny
+**Why it fails:** Unverified/wrong: France's documented FIFA-ranking low was 27th (2013), not '25th in 2010'.
+**Source:** https://www.squawka.com/en/features/every-nation-highest-lowest-fifa-ranking/
+**Remedy:** Verify; low was 27th (2013).

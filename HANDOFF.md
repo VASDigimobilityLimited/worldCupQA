@@ -97,6 +97,10 @@ the CAF playoff to DR Congo), so the dataset's "Cameroon qualified for 2026" row
 **✅ Ecuador is complete** (rows 21580–22765): 725 ship-ready / 57 dangerous — key finding: Ecuador
 DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is stale (he was sacked in
 2024; **Sebastián Beccacece** led/clinched qualification).
+**✅ France is complete** (rows 25402–27324): 1237 ship-ready / 176 dangerous — France DID qualify for
+2026; the dataset's recurring errors are "Griezmann 2018 Silver Ball" (he won Bronze), "Lloris in the
+2018 All-Star Team" (Courtois), "France's perfect 10-win Euro 2020 qualifying" (they lost to Turkey),
+"2018 Fair Play → France" (it was Spain), and "lost the 2022 NL final to Spain" (France won the 2021 final).
 **🔵 Australia is in progress** (rows 2161–3241). The remaining countries are **not started** (§4).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
@@ -108,11 +112,11 @@ DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is st
 ## 3. Running totals (update these every session)
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **3868** ship-ready
-  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681 + Ecuador 725).
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **618** dangerous
-  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57 + Ecuador 57).
-- **Total ship-ready so far (both methods):** 4000 (132 backfill rows 2–230 + 3868 new method).
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **5105** ship-ready
+  (Algeria 554 + Argentina 562 + Brazil 1346 + Cameroon 681 + Ecuador 725 + France 1237).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **794** dangerous
+  (Algeria 176 + Argentina 110 + Brazil 218 + Cameroon 57 + Ecuador 57 + France 176).
+- **Total ship-ready so far (both methods):** 5237 (132 backfill rows 2–230 + 5105 new method).
 - **✅ Brazil is COMPLETE** (rows 6097–8182): 1346 ship-ready / 218 dangerous = 1564 candidates
   (the full Brazil `QA_PASSED.md` pool; on-disk verified, no duplicates). Per-batch tables +
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
@@ -121,6 +125,9 @@ DID qualify for 2026, but the dataset's "Sánchez Bas is the 2026 manager" is st
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 - **✅ Ecuador is COMPLETE** (rows 21580–22765): 725 ship-ready / 57 dangerous = 782 candidates
   (the full Ecuador `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
+  recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
+- **✅ France is COMPLETE** (rows 25402–27324): 1237 ship-ready / 176 dangerous = 1413 candidates
+  (the full France `QA_PASSED.md` pool; on-disk verified). Per-batch tables + fact base +
   recurring-defect summary at the bottom of `QA_TC06_LIVE.md`.
 
 ## 4. Per-country status (THE coordination table — pick from here, then update it)
@@ -149,7 +156,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Ecuador | 21580–22765 | 1186 | 782 | ✅ **COMPLETE** (row 22765) — 725 PASS / 57 FAIL |
 | Egypt | 22766–23686 | 921 | 636 | ⬜ not started |
 | England | 23687–25401 | 1715 | 1315 | ⬜ not started |
-| France | 25402–27324 | 1923 | 1413 | ⬜ not started |
+| France | 25402–27324 | 1923 | 1413 | ✅ **COMPLETE** (row 27324) — 1237 PASS / 176 FAIL |
 | Germany | 27325–29165 | 1841 | 1356 | ⬜ not started |
 | Ghana | 29166–30309 | 1144 | 855 | ⬜ not started |
 | Iran | 30310–31698 | 1389 | 926 | ⬜ not started |

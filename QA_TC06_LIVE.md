@@ -1278,3 +1278,204 @@ Manager/result/altitude/club duplicates + a large stale-2026-manager cluster.
   Excel score corruption ("01-Jan"=1-1, "02-Jan"=2-1); non-unique negatives (Ecuador had exactly one
   2022 draw, so "which did Ecuador not draw with" is non-unique); Caicedo's Chelsea move mis-timed to
   2022 (it was Aug 2023); Sarmiento wrongly said to have missed 2022 (he subbed in all 3 games).
+
+---
+
+# ===== FRANCE (rows 25402–27324) — NEW METHOD (only QA_PASSED.md rows) =====
+Separate contributor, started 2026-06-07. Country range 25402–27324 (1923 rows; 1413 in QA_PASSED.md — large).
+
+## France fact base (web-verified, reused across batches)
+- **WC honours:** 1998 champions (home, 3-0 v Brazil) · 2006 runners-up (lost to Italy on pens; Zidane
+  headbutt) · 2018 **champions** (beat Croatia **4-2**; beat Argentina 4-3 in R16, Belgium 1-0 SF;
+  Mbappé 4 goals aged 19) · 2022 **runners-up** (final v Argentina **3-3, lost 4-2 on pens**; Mbappé
+  hat-trick — 2nd in a WC final after Hurst 1966; beat England 2-1 QF (Giroud winner), Morocco SF).
+  · 2014 QF (lost 1-0 to Germany) · 2010 group-stage exit (Anelka sent home, squad mutiny/boycott).
+  **✅ France qualified for 2026** (UEFA group winner) — so 2026-qualification rows are TRUE.
+- **Coaches:** Domenech (2010) → **Laurent Blanc (2010–12, Euro 2012 QF)** → **Didier Deschamps
+  (2012– , won 2018, runner-up 2022; contract extended through 2026)**.
+- **All-time top scorer: OLIVIER GIROUD (57)** — passed Henry (51) during the 2022 WC (his 52nd v
+  Poland R16); retired from int'l football July 2024. **Mbappé became 2nd all-time in 2025** (passed
+  Henry), behind Giroud. So "France's all-time top scorer" = Giroud, not Mbappé/Henry.
+- **Mbappé:** France **captain since Sept 2023** (youngest since Platini); **Real Madrid since 2024**
+  (PSG before, since 2017); 2022 WC Golden Boot (8 goals).
+- **Key players:** Lloris (record 145 caps, captain 2012–22, retired) → Maignan (GK from 2023);
+  Griezmann (Euro 2016 Player of Tournament; **2018 WC Bronze Ball**); Pogba, Kanté, Varane, Benzema
+  (recalled 2021; 2022 Ballon d'Or), Tchouaméni, Camavinga, Thuram, Dembélé, Kolo Muani.
+- **Euros/NL:** Euro 2016 runners-up (hosts; lost final 1-0 to Portugal, at Stade de France) · Euro
+  2020 R16 exit (blew 3-1 lead v Switzerland, lost on pens; Mbappé missed decisive pen) · **2021
+  Nations League winners** (beat Spain 2-1 in the final) · Euro 2024 SF (lost to Spain).
+- **⚠️ Watch:** 2018 **Fair Play Award went to SPAIN** (not France); 2018 Silver Ball = Hazard (Griezmann
+  = Bronze); France's lowest FIFA ranking was **27th (2013)**, not "25th in 2010"; Excel score
+  corruption ("03-Jan"=3-1, "04-Feb"=4-2).
+- **Stadiums:** Stade de France (Saint-Denis, national stadium) · Parc des Princes · Stade Vélodrome —
+  all hosted Euro 2016 (so "which ALSO hosted Euro 2016" is often non-unique). Clairefontaine = training base.
+
+## Batch rows 25402–25500 (France) — 76 candidates — **61 PASS · 15 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (61 rows) | ✅ PASS | 2018/2022 WC, Euros, Mbappé/Giroud/Deschamps, 2026 qualify |
+| 25402,25403,25414,25416,25417 | ❌ FAIL | "25th in 2010" ranking unverified/wrong (low was 27th, 2013) |
+| 25473,25476 | ❌ FAIL | 2018 Fair Play Award went to Spain, not France |
+| 25482 | ❌ FAIL | Griezmann won the 2018 BRONZE Ball (Silver = Hazard) |
+| 25467 | ❌ FAIL | France WON the 2021 NL final v Spain (no "2022 final lost to Spain") |
+| 25447 | ❌ FAIL | non-unique (Stade de France & Parc des Princes also hosted Euro 2016) |
+| 25408 | ❌ FAIL | Mbappé was already at PSG (from 2017), not "joined after 2018 WC" |
+| 25434,25436,25437 | ❌ FAIL | "03-Jan" = corrupted "3-1" (v Switzerland) |
+| 25443 | ❌ FAIL | "04-Feb" = corrupted "4-2" (2018 final) |
+
+**France running totals (rows 25402+): 61 PASS-ALL · 15 FAIL-LIVENESS.**
+**France sub-cursor: last verified row 25500 — resume at 25501.**
+
+> **Correction:** row **25430** ("Euro 2016 France beat Germany 1-0") was initially mis-passed in this
+> batch but the score was **2-0** (Griezmann brace) — moved to the FAIL file. Batch 1 net: **60 PASS · 16 FAIL**.
+
+## Batch rows 25501–25640 (France) — 100 candidates — **85 PASS · 15 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (85 rows) | ✅ PASS | 2018/2022 WC, Euros, NL 2021, Mbappé/Giroud/Griezmann, qualifying |
+| 25510,25511,25518,25567,25615,25616,25621 | ❌ FAIL | false "France won all 10 Euro 2020 qualifiers" (lost 0-2 to Turkey; 8W-1D-1L) |
+| 25564 | ❌ FAIL | Euro 2016 SF was 2-0 (Griezmann brace), not 1-0 |
+| 25527 | ❌ FAIL | "25th in 2010" ranking unverified (low was 27th, 2013) |
+| 25633 | ❌ FAIL | 2018 Fair Play Award went to Spain, not France |
+| 25534 | ❌ FAIL | France WON the 2021 NL final v Spain (no "2022 final lost to Spain") |
+| 25575 | ❌ FAIL | non-unique (PSG also missed 2016-17, Monaco) |
+| 25526 | ❌ FAIL | unverified "no other UEFA group winner had 18 points" |
+| 25554,25535 | ❌ FAIL | "03-Feb"=3-2 (Ukraine agg); "03-Mar"=3-3 (2022 final) |
+
+## Batch rows 25641–25780 (France) — 107 candidates — **92 PASS · 15 FAIL**
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (92 rows) | ✅ PASS | 2018/2022 WC, Euros, NL 2021, Mbappé/Giroud/Deschamps/Benzema/Varane |
+| 25668,25686 | ❌ FAIL | Kolo Muani did NOT score France's 3rd goal in 2022 final (Mbappé's hat-trick) |
+| 25698,25753 | ❌ FAIL | Euro 2016 SF was 2-0 v Germany, not 1-0 |
+| 25642 | ❌ FAIL | non-unique (Monaco 2016-17 also won Ligue 1, besides Lille) |
+| 25717 | ❌ FAIL | 2018 Fair Play Award went to Spain |
+| 25762 | ❌ FAIL | France WON the 2021 NL final v Spain (no "2022 final lost") |
+| 25768 | ❌ FAIL | false "France won all 10 Euro 2020 qualifiers" (lost 0-2 to Turkey) |
+| 25757,25759 | ❌ FAIL | "25th in 2010" ranking unverified (low was 27th, 2013) |
+| 25646,25656,25657,25659,25663 | ❌ FAIL | Excel score corruption (03-Mar/03-Jan/04-Feb/03-Feb) |
+
+## Batch rows 25781–25920 (France) — 114 candidates — **86 PASS · 28 FAIL** (defect-dense)
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (86 rows) | ✅ PASS | manager/result/Euro/NL/qualifying duplicates vs fact base |
+| 25818,25819,25820,25825,25827,25832,25837,25838,25839,25840,25842,25845 | ❌ FAIL | Excel score corruption (04-Feb/03-Jan/04-Mar/02-Jan/03-Feb/03-Mar) |
+| 25822,25823,25824,25868,25869,25870 | ❌ FAIL | "25th in 2010" ranking unverified (low was 27th, 2013) |
+| 25828,25848,25859 | ❌ FAIL | Euro 2016 SF was 2-0 v Germany, not 1-0 |
+| 25905,25906 | ❌ FAIL | 2018 Fair Play Award went to Spain |
+| 25882,25883 | ❌ FAIL | France WON the 2021 NL final v Spain (no "2022 final lost") |
+| 25903,25904,25920 | ❌ FAIL | false "France won all 10 Euro 2020 qualifiers" (lost 0-2 to Turkey) |
+
+## Batch rows 25921–26060 (France) — 102 candidates — **87 PASS · 15 FAIL**
+Heavy Lloris/Deschamps/Varane/Thuram/Saliba/Umtiti duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (87 rows) | ✅ PASS | captain/manager/defender/forward identity duplicates vs fact base |
+| 25954,26015,26017,26051,26056,26057,26058 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois was the GK) |
+| 25923,25928 | ❌ FAIL | Kolo Muani did NOT score France's 3rd goal in 2022 final (Mbappé hat-trick) |
+| 25992 | ❌ FAIL | 2018 Fair Play Award went to Spain |
+| 26023,26059 | ❌ FAIL | false "perfect 10-win Euro 2020 qualifying" (lost 0-2 to Turkey) |
+| 26000 | ❌ FAIL | "04/03/2003" = corrupted "4-3-3" formation |
+| 25964,25968 | ❌ FAIL | non-unique negatives ("not faced in 2014 playoff"/"2018 match not won") |
+
+## Batch rows 26061–26200 (France) — 115 candidates — **108 PASS · 7 FAIL**
+Overwhelmingly Deschamps manager duplicates (longest-serving / 100+ wins / 2026 contract / 4-3-3).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (108 rows) | ✅ PASS | Deschamps/Domenech/Blanc + Pogba/Tchouaméni/Koundé/Mbappé/Giroud/Kolo Muani duplicates |
+| 26085,26096,26102,26108 | ❌ FAIL | false "perfect 10-win Euro 2020 qualifying" (lost 0-2 to Turkey) |
+| 26195,26196 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois was GK) |
+| 26194 | ❌ FAIL | Neymar isn't French; Mbappé (French) also joined PSG in 2017 |
+
+## Batch rows 26201–26340 (France) — 108 candidates — **102 PASS · 6 FAIL**
+Heavy player duplicates (Mbappé/Giroud/Griezmann/Lloris/Anelka-2010/Henry-handball/Kolo Muani).
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (102 rows) | ✅ PASS | player identity/award/2010-mutiny duplicates vs fact base |
+| 26245 | ❌ FAIL | Kolo Muani did NOT score France's 3rd goal in 2022 final (Mbappé hat-trick) |
+| 26228 | ❌ FAIL | Mbappé scored a hat-trick (3) in the 2022 final, not "four goals" |
+| 26274,26300,26303 | ❌ FAIL | Griezmann won the 2018 BRONZE Ball (Silver = Hazard) |
+| 26232 | ❌ FAIL | self-contradictory (Mbappé's 2 R16 goals < Griezmann's 4 total) |
+
+## Batch rows 26341–26480 (France) — 106 candidates — **99 PASS · 7 FAIL**
+Club (PSG/Lille/Monaco/Lyon)/assistant/Benzema/Varane duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (99 rows) | ✅ PASS | club/Guy Stéphan/Lloris/Varane/Benzema/Mbappé-Monaco duplicates |
+| 26348,26350 | ❌ FAIL | false "perfect 10-win Euro 2020 qualifying" (lost 0-2 to Turkey) |
+| 26392 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois was GK) |
+| 26408,26409,26429 | ❌ FAIL | non-unique "broke PSG's run" (Monaco 2016-17 also; only 2020-21-scoped rows pass) |
+| 26472 | ❌ FAIL | non-unique (Parc des Princes & Stade de Lyon also hosted Euro 2016, not qualifier homes) |
+
+## Batch rows 26481–26620 (France) — 98 candidates — **88 PASS · 10 FAIL**
+Lloris/Deschamps/Guy Stéphan + Tchouaméni/Camavinga/Kanté/Pogba midfielder duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (88 rows) | ✅ PASS | GK/manager/midfielder identity duplicates vs fact base |
+| 26493,26494,26496,26502,26504 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois was GK) |
+| 26551,26552,26594 | ❌ FAIL | Camavinga debuted for France in 2020 (WC 2022), not the 2023/2026 cycle |
+| 26515 | ❌ FAIL | false "perfect 10-win Euro 2020 qualifying" |
+| 26553 | ❌ FAIL | non-unique (both Pogba & Kanté missed the 2022 WC; neither started the final) |
+
+## Batch rows 26621–26760 (France) — 96 candidates — **88 PASS · 8 FAIL**
+Giroud/Mbappé/Griezmann/Lloris/Benzema duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (88 rows) | ✅ PASS | top-scorer/award/captain/2018-2022 duplicates vs fact base |
+| 26680,26681,26704 | ❌ FAIL | Mbappé scored a hat-trick (3) in the 2022 final, not "four" |
+| 26653,26654 | ❌ FAIL | Griezmann was 3rd/Bronze Ball at 2018, not 2nd/Silver |
+| 26648,26649 | ❌ FAIL | non-unique "did not become top scorer" (Mbappé, Benzema & Griezmann all didn't) |
+| 26661 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois was GK) |
+
+## Batch rows 26761–26920 (France) — 119 candidates — **95 PASS · 24 FAIL** (defect-dense)
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (95 rows) | ✅ PASS | player/stadium identity duplicates vs fact base |
+| 26782,26783,26798,26802,26803,26820,26825,26843,26853,26915 | ❌ FAIL | "Griezmann 2018 Silver Ball" — he won BRONZE (Silver = Hazard) |
+| 26770,26827,26832 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois) |
+| 26872,26883,26884,26888,26890 | ❌ FAIL | non-unique "which stadium hosted Euro 2016" (multiple venues did) |
+| 26845,26846 | ❌ FAIL | Mbappé scored a hat-trick (3) in the 2022 final, not "four" |
+| 26869 | ❌ FAIL | 2018 SF (1-0) was lower than Euro 2016 SF (2-0); explanation garbled |
+| 26870 | ❌ FAIL | "25th in 2010" ranking unverified (low was 27th, 2013) |
+| 26905,26907 | ❌ FAIL | non-unique PSG-signing (Bernardo Silva too); Neymar isn't French |
+
+## Batch rows 26921–27080 (France) — 113 candidates — **101 PASS · 12 FAIL**
+Opponent/result/striker duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (101 rows) | ✅ PASS | result/opponent/striker duplicates vs fact base |
+| 26923,26968,26969,26975 | ❌ FAIL | "Neymar = French star" (he's Brazilian) |
+| 27010,27013,27048 | ❌ FAIL | France WON the 2021 NL final v Spain (no "2022 final lost") |
+| 26949,26950 | ❌ FAIL | false "perfect 10-win Euro 2020 qualifying" |
+| 27016 | ❌ FAIL | Euro 2016 SF was 2-0 v Germany, not 1-0 |
+| 26989,27052 | ❌ FAIL | non-unique negatives ("not lead at Qatar"/"not face in 2014 playoff") |
+
+## Batch rows 27081–27324 (France) — 159 candidates — **146 PASS · 13 FAIL** — FINAL BATCH
+Opponent/qualifier/stadium duplicates.
+| Row | Verdict | Note |
+|----:|:-------:|------|
+| (146 rows) | ✅ PASS | result/opponent/qualifier/stadium duplicates vs fact base |
+| 27197,27201,27203 | ❌ FAIL | false "perfect 10-win Euro 2020 qualifying" |
+| 27149,27153,27253 | ❌ FAIL | France WON the 2021 NL final v Spain (no "2022 final lost") |
+| 27241,27281,27324 | ❌ FAIL | "25th in 2010" ranking unverified (low was 27th, 2013) |
+| 27097,27299 | ❌ FAIL | 2018 Fair Play Award went to Spain, not France |
+| 27321 | ❌ FAIL | Lloris NOT in the 2018 WC All-Star Team (Courtois) |
+| 27261 | ❌ FAIL | Mbappé scored a hat-trick (3) in the 2022 final, not "four" |
+
+**France running totals (rows 25402+): 1237 PASS-ALL · 176 FAIL-LIVENESS.**
+
+# ✅ FRANCE COMPLETE (rows 25402–27324)
+- New method (QA_PASSED.md pool only): **1237 ship-ready** (QA_PASSED_ALL.md) + **176 dangerous**
+  (QA_FAILED_LIVENESS_PASSED_OTHERS.md) = 1413 candidates checked (matches QA_PASSED count).
+  [NB: row 25430, initially mis-passed, was corrected to FAIL — net counts above are accurate on disk.]
+- **France DID qualify for 2026** (UEFA group winner), so 2026-qualification rows pass.
+- **Recurring dataset defects (high volume):** (1) "**Griezmann 2018 Silver Ball**" — he won the BRONZE
+  (Silver = Hazard); (2) "**Lloris in the 2018 All-Star Team**" — Courtois (Golden Glove) was the GK;
+  (3) "**France perfect 10-win Euro 2020 qualifying**" — they lost 0-2 to Turkey (8W-1D-1L); (4) "**2018
+  Fair Play Award → France**" — it went to Spain; (5) "**France lost the 2022 Nations League final to
+  Spain**" — France WON the 2021 NL final v Spain; (6) "**25th in 2010 FIFA ranking**" — documented low
+  was 27th (2013); (7) "**Euro 2016 SF France 1-0 Germany**" — it was 2-0 (Griezmann brace); (8) "**Mbappé
+  4 goals in the 2022 final**" — it was a hat-trick (3); (9) "**Kolo Muani scored France's 3rd in the 2022
+  final**" — Mbappé did (Kolo Muani's shot was saved); (10) "**Neymar = French star**" (he's Brazilian);
+  (11) Excel score corruption (03-Jan/04-Feb/03-Mar/02-Jan/04-Mar/04/03/2003); (12) non-unique "broke
+  PSG's run" (Monaco 2016-17 also) and "which stadium hosted Euro 2016" (multiple venues).
