@@ -15,6 +15,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 Cursor lives in `QA_TC06_LIVE.md`.
 
 Total failed-liveness-passed-others so far: **3594** (new method 231+, 29 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117)
+Total failed-liveness-passed-others so far: **2582** (Algeria 176 · Argentina 110 [✅ COMPLETE] · Australia 121 [✅ COMPLETE] · Austria 135 [✅ COMPLETE] · Belgium 192 [✅ COMPLETE] · Brazil 6097–6760 so far: 73 · Cabo Verde 73 [✅ COMPLETE] · Canada 41 [✅ COMPLETE] · Chile 191 [✅ COMPLETE] · Colombia 146 [✅ COMPLETE] · Costa Rica 80 [✅ COMPLETE] · Côte d'Ivoire 79 [✅ COMPLETE] · Croatia 154 [✅ COMPLETE] · Denmark 182 [✅ COMPLETE] · DR Congo 127 [✅ COMPLETE] · Egypt 104 [✅ COMPLETE] · England 87 [✅ COMPLETE] · Germany 65 [✅ COMPLETE] · Ghana 72 [✅ COMPLETE] · Italy 225 [✅ COMPLETE] · Paraguay 149 [✅ COMPLETE])
 
 ---
 
@@ -21817,3 +21818,2069 @@ Recurring Iraq defect clusters (112 fails of 537 QA_PASSED candidates):
 **Why it fails:** False premise: the Netherlands reached 1st in 2011 (not 3rd) — that was their highest-ever ranking.
 **Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
 **Remedy:** They reached 1st in 2011.
+## Rows 42204–42927 (Paraguay)
+
+### Row 42208 — Paraguay (medium) — FAIL: wrong answer (FIFA ranking)
+**Q:** After the 2010 World Cup, Paraguay achieved its highest-ever FIFA ranking of what?
+**Answer:** 15th
+**Why it fails:** Paraguay's highest-ever FIFA ranking is 8th (reached in 2001), not 15th; the 2010 quarter-final run did not set a ranking record.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Change answer to 8th (2001).
+
+### Row 42216 — Paraguay (easy) — FAIL: false premise (Ecuador)
+**Q:** At the 2010 World Cup, Paraguay matched which other CONMEBOL nation's best quarter-final finish?
+**Answer:** Ecuador
+**Why it fails:** Ecuador's best World Cup result is the round of 16 (2006), not a quarter-final, so Paraguay did not match an 'Ecuador quarter-final finish'.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Ecuador never reached a WC quarter-final; rewrite (Peru reached the QF in 1970, for example).
+
+### Row 42224 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** At the 2010 World Cup, why was Paraguay's squad so experienced in major tournaments?
+**Answer:** Regular Copa América participants
+**Why it fails:** The distractor 'Frequent World Cup qualifiers' is also true — Paraguay had qualified for four consecutive World Cups (1998-2010) — so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Remove the 'frequent World Cup qualifiers' distractor or rewrite the question.
+
+### Row 42231 — Paraguay (easy) — FAIL: wrong venue
+**Q:** At which 2010 World Cup venue did Paraguay achieve their best-ever finish?
+**Answer:** Loftus Versfeld Stadium
+**Why it fails:** Paraguay's 2010 quarter-final (their best-ever finish) was played at Ellis Park Stadium, Johannesburg, not Loftus Versfeld (that was the R16 v Japan).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Change venue to Ellis Park Stadium, Johannesburg.
+
+### Row 42242 — Paraguay (medium) — FAIL: false premise
+**Q:** Before the 2022 World Cup, how many Copa América tournaments had Paraguay participated in?
+**Answer:** Every edition
+**Why it fails:** Paraguay has NOT competed in every Copa America (they debuted in 1921 and missed several editions); the options are also non-distinct (every/most/several/many).
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_Copa_Am%C3%A9rica
+**Remedy:** The 'every edition' premise is false; rewrite with a concrete, verifiable count.
+
+### Row 42253 — Paraguay (medium) — FAIL: wrong count
+**Q:** How many Copa América tournaments has Paraguay participated in between 2007 and 2024?
+**Answer:** Six tournaments
+**Why it fails:** Copa America editions from 2007 to 2024 number seven (2007, 2011, 2015, 2016, 2019, 2021, 2024), not six; Paraguay played in all.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_Copa_Am%C3%A9rica
+**Remedy:** Change answer to seven tournaments.
+
+### Row 42261 — Paraguay (medium) — FAIL: stale (2026 qualified)
+**Q:** How many World Cups has Paraguay qualified for since 2010?
+**Answer:** Zero
+**Why it fails:** Paraguay qualified for the 2026 World Cup (6th in CONMEBOL), so the count of World Cups qualified for since 2010 is one, not zero.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Update — Paraguay qualified for 2026 (answer is now One).
+
+### Row 42264 — Paraguay (easy) — FAIL: incoherent premise
+**Q:** In a 2010 FIFA World Cup match, Paraguay's coach considered which stadium's capacity for tactical planning?
+**Answer:** Estadio Defensores del Chaco
+**Why it fails:** The 2010 World Cup was played in South Africa, so a coach considering Estadio Defensores del Chaco's capacity 'in a 2010 World Cup match' has no factual basis.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Rewrite; the premise is nonsensical.
+
+### Row 42266 — Paraguay (easy) — FAIL: wrong debut order
+**Q:** In Paraguay's 2022 World Cup qualifying, which key Newcastle midfielder debuted before Gustavo Gómez?
+**Answer:** Miguel Almirón
+**Why it fails:** Gustavo Gomez debuted on 7 Sept 2013, before Miguel Almiron (Sept 2015), so Almiron did NOT debut before Gomez; the explanation's '2016' for Gomez is also wrong.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_G%C3%B3mez
+**Remedy:** Reverse — Gomez (2013) debuted before Almiron (2015).
+
+### Row 42267 — Paraguay (easy) — FAIL: false/unverified squad age
+**Q:** In Paraguay's 2026 World Cup squad, what is the average player age?
+**Answer:** Under 25 years
+**Why it fails:** Paraguay's 2026 squad is not under 25 on average — it features veterans such as Gustavo Gomez (32), Almiron (32) and Sanabria; the average is roughly 27-28.
+**Source:** https://www.fourfourtwo.com/team/paraguay-world-cup-2026-squad
+**Remedy:** Remove or correct the age claim.
+
+### Row 42277 — Paraguay (medium) — FAIL: wrong debut
+**Q:** In which FIFA World Cup tournament did Paraguay's defensive leader Gustavo Gómez make his debut?
+**Answer:** 2010 World Cup
+**Why it fails:** Gustavo Gomez debuted for Paraguay on 7 Sept 2013 (v Bolivia), not at the 2010 World Cup — he was not in that squad.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_G%C3%B3mez
+**Remedy:** Correct the debut to 2013 (a friendly, not the World Cup).
+
+### Row 42298 — Paraguay (medium) — FAIL: wrong debut year
+**Q:** In which World Cup year did Paraguay's Miguel Almirón make his senior debut?
+**Answer:** 2018
+**Why it fails:** Miguel Almiron made his senior debut in September 2015, not 2018; 2015 is not even among the options.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Change answer to 2015.
+
+### Row 42301 — Paraguay (medium) — FAIL: non-unique year
+**Q:** In which year did Paraguay host a 2010 World Cup qualifier at Estadio Defensores del Chaco?
+**Answer:** 2009
+**Why it fails:** Paraguay hosted 2010 World Cup home qualifiers across 2007, 2008 and 2009, so options 2007, 2008 and 2009 are all correct — the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Narrow the question to a specific match (e.g. 'the Brazil home qualifier') so only one year is correct.
+
+### Row 42302 — Paraguay (medium) — FAIL: non-unique year
+**Q:** In which year did Paraguay host a 2022 World Cup qualifier at Estadio Defensores del Chaco?
+**Answer:** 2021
+**Why it fails:** Paraguay hosted 2022 World Cup home qualifiers across 2020, 2021 and 2022, so options 2020, 2021 and 2022 are all correct — the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Tie the question to a specific fixture.
+
+### Row 42305 — Paraguay (medium) — FAIL: stale (2026 qualified)
+**Q:** In which year did Paraguay last qualify for the FIFA World Cup?
+**Answer:** 2010
+**Why it fails:** Paraguay's most recent World Cup qualification is 2026 (6th in CONMEBOL), not 2010.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Update answer to 2026.
+
+### Row 42316 — Paraguay (easy) — FAIL: false comparison
+**Q:** Paraguay hosted a 2010 World Cup qualifier at Estadio Defensores del Chaco because its capacity exceeds what other CONMEBOL stadium?
+**Answer:** Estadio Centenario (Uruguay)
+**Why it fails:** Estadio Centenario (Montevideo, ~60,000) is LARGER than Defensores del Chaco (~42,354), so the claim that Defensores' capacity exceeds Centenario is false; the causal premise is also spurious.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Centenario
+**Remedy:** The premise is false — Centenario is larger; rewrite.
+
+### Row 42317 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Paraguay is a regular Copa América participant, but which CONMEBOL nation also consistently participates?
+**Answer:** Argentina
+**Why it fails:** Every CONMEBOL nation plays every Copa America, so Chile, Uruguay and Brazil (all options) are equally valid — the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** Rewrite; all distractors are also correct.
+
+### Row 42319 — Paraguay (easy) — FAIL: fabricated premise
+**Q:** Paraguay lost 1-0 to Spain in the 2010 World Cup quarter-final. Which team beat Spain in the 2015 Copa América?
+**Answer:** Chile
+**Why it fails:** Spain has never played in the Copa America (a CONMEBOL tournament), so 'Chile beat Spain 2-0 in the 2015 Copa America' never happened.
+**Source:** https://en.wikipedia.org/wiki/2015_Copa_Am%C3%A9rica
+**Remedy:** Remove — Spain did not compete in Copa America 2015.
+
+### Row 42321 — Paraguay (hard) — FAIL: non-unique answer
+**Q:** Paraguay lost 3-0 to Uruguay in the 2011 Copa América final. Since then, their World Cup form has declined because they failed to qualify for which tournament?
+**Answer:** 2018 FIFA World Cup
+**Why it fails:** Paraguay failed to qualify for 2014, 2018 AND 2022, so options 2014, 2018 and 2022 are all correct — not unique.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Specify a single tournament or use a unique premise.
+
+### Row 42327 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Paraguay qualified for the 2026 FIFA World Cup through CONMEBOL. Which team also qualified?
+**Answer:** Argentina
+**Why it fails:** Brazil, Uruguay and Colombia (all options) also qualified directly for 2026 alongside Argentina and Paraguay, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rewrite; multiple options qualified for 2026.
+
+### Row 42328 — Paraguay (hard) — FAIL: non-unique answer
+**Q:** Paraguay qualified for the 2026 World Cup but failed to qualify for which previous tournament?
+**Answer:** The 2018 World Cup
+**Why it fails:** Paraguay failed to qualify for 2014, 2018 and 2022, so options 2014, 2018 and 2022 are all correct.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Specify a single missed tournament uniquely.
+
+### Row 42329 — Paraguay (easy) — FAIL: self-referential / non-unique
+**Q:** Paraguay qualified for the 2026 World Cup; which other CONMEBOL team qualified in 2010?
+**Answer:** Paraguay
+**Why it fails:** The answer is Paraguay itself (so not an 'other' team), and among the options Chile also qualified for 2010 — non-unique and self-referential.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Rewrite to avoid naming the subject team and ensure a unique answer.
+
+### Row 42330 — Paraguay (easy) — FAIL: self-referential / non-unique
+**Q:** Paraguay qualified for the 2026 World Cup. Which CONMEBOL nation also qualified for 2010 and 2026?
+**Answer:** Paraguay
+**Why it fails:** Argentina and Brazil also qualified for both 2010 and 2026, so the answer is not unique; it also names the subject team (Paraguay) itself.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rewrite for uniqueness; avoid self-reference.
+
+### Row 42332 — Paraguay (medium) — FAIL: non-unique answer
+**Q:** Paraguay qualified for which FIFA World Cup through CONMEBOL?
+**Answer:** 2010 World Cup
+**Why it fails:** Paraguay qualified via CONMEBOL for both 2006 and 2010, so options 2010 and 2006 are both correct — not unique.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Remove the 2006 option or specify the edition.
+
+### Row 42334 — Paraguay (hard) — FAIL: false premise
+**Q:** Paraguay's 2010 qualification ended a streak of how many consecutive World Cups?
+**Answer:** One
+**Why it fails:** Paraguay did NOT miss the 2006 World Cup — they qualified for it. Their 2010 qualification extended a streak of four straight (1998-2010); it did not end a one-WC gap.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Fix — Paraguay qualified for 2006; the streak was four consecutive.
+
+### Row 42335 — Paraguay (easy) — FAIL: false claim
+**Q:** Paraguay's 2010 quarter-final was its best finish. Which nation also achieved its best World Cup result in 2010?
+**Answer:** Uruguay
+**Why it fails:** Uruguay's 2010 fourth place was not their best-ever World Cup result (they are two-time champions, 1930 & 1950); no listed nation achieved a best-ever result in 2010.
+**Source:** https://en.wikipedia.org/wiki/Uruguay_at_the_FIFA_World_Cup
+**Remedy:** Rewrite; the premise of an 'also best-ever in 2010' nation is false among the options.
+
+### Row 42337 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Paraguay's 2022 World Cup qualifiers were primarily at Estadio Defensores del Chaco. Which CONMEBOL rival's home stadium has a larger capacity?
+**Answer:** Estadio Monumental
+**Why it fails:** Multiple listed grounds exceed Defensores del Chaco's ~42,354: Estadio Centenario (~60,000), Estadio Metropolitano Barranquilla (~46,000) and Estadio Nacional (~48,000), so 'larger capacity' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Centenario
+**Remedy:** Ask for the largest, and remove the other larger-capacity distractors.
+
+### Row 42339 — Paraguay (medium) — FAIL: non-unique answer
+**Q:** Paraguay's 2026 World Cup qualification was via CONMEBOL. Which other nation qualified the same way?
+**Answer:** Argentina
+**Why it fails:** Brazil, Uruguay and Colombia (all options) also qualified for 2026 via CONMEBOL alongside Argentina — non-unique.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rewrite; multiple options qualified.
+
+### Row 42343 — Paraguay (easy) — FAIL: self-referential
+**Q:** Paraguay's primary stadium holds 42,354. Which CONMEBOL nation's main stadium has a similar capacity?
+**Answer:** Paraguay
+**Why it fails:** The answer is Paraguay itself, so the question 'which CONMEBOL nation's main stadium has a similar capacity' is self-referential and incoherent.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Defensores_del_Chaco
+**Remedy:** Name a genuinely different nation/stadium of comparable size.
+
+### Row 42344 — Paraguay (easy) — FAIL: wrong capacity
+**Q:** Paraguay's primary stadium holds about 42,354, similar to which 2014 World Cup host venue?
+**Answer:** Estádio Nacional Mané Garrincha
+**Why it fails:** Estadio Nacional Mane Garrincha held about 69,000 for the 2014 World Cup (capacity ~72,000), not 42,500, so it is not of similar capacity to Defensores del Chaco.
+**Source:** https://en.wikipedia.org/wiki/Est%C3%A1dio_Nacional_Mane_Garrincha
+**Remedy:** Pick a ~42,000-capacity venue; Mane Garrincha is far larger.
+
+### Row 42358 — Paraguay (easy) — FAIL: unverified squad age
+**Q:** What was Paraguay's average squad age at the 2022 FIFA World Cup qualifiers?
+**Answer:** 25.8 years
+**Why it fails:** A precise '25.8 years' average squad age for the 2022 qualifying campaign cannot be confirmed from any authoritative source (and the dataset gives conflicting ages elsewhere).
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Remove the unverifiable average-age figure.
+
+### Row 42362 — Paraguay (hard) — FAIL: Excel date-corruption
+**Q:** What was Paraguay's penalty shootout score versus Japan in 2010?
+**Answer:** 05-Mar
+**Why it fails:** The answer cell reads '05-Mar' — a spreadsheet-mangled rendering of the 5-3 shootout score. The answer is broken.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Restore the answer to '5-3'.
+
+### Row 42374 — Paraguay (medium) — FAIL: unverified cap milestone
+**Q:** When did Paraguay captain Gustavo Gómez make his 80th cap in World Cup qualifiers?
+**Answer:** 2022
+**Why it fails:** That Gustavo Gomez reached his 80th cap specifically during the 2022 qualifying cycle cannot be verified — he debuted in 2013 and the precise milestone date is unsupported (and likely later than 2022).
+**Source:** https://en.wikipedia.org/wiki/Gustavo_G%C3%B3mez
+**Remedy:** Remove the unverifiable cap-milestone claim.
+
+### Row 42378 — Paraguay (medium) — FAIL: stale (2026 qualified)
+**Q:** When did Paraguay last qualify for the FIFA World Cup?
+**Answer:** 2010
+**Why it fails:** Paraguay last qualified for a World Cup in 2026 (CONMEBOL), not 2010.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Update answer to 2026.
+
+### Row 42386 — Paraguay (medium) — FAIL: non-unique answer
+**Q:** When did Paraguay qualify for the FIFA World Cup via CONMEBOL?
+**Answer:** 2010
+**Why it fails:** Paraguay qualified via CONMEBOL for both 2006 and 2010, so options 2010 and 2006 are both correct.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Remove the 2006 option or specify the edition.
+
+### Row 42395 — Paraguay (medium) — FAIL: unverified narrative
+**Q:** When did Paraguay's coach first select a majority youth squad for World Cup qualifiers?
+**Answer:** 2022 qualification cycle
+**Why it fails:** A claim that the coach 'first selected a majority youth squad' in the 2022 cycle is a soft, unsourced narrative that cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Remove or replace with a verifiable fact.
+
+### Row 42400 — Paraguay (medium) — FAIL: unverified narrative
+**Q:** When did Paraguay's younger generation first appear in a World Cup?
+**Answer:** 2026 qualifiers
+**Why it fails:** The 'younger generation first appeared' timing is an unsourced narrative and conflicts with the dataset's own '2022 cycle' transition claims; not verifiable.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Remove the unverifiable narrative claim.
+
+### Row 42401 — Paraguay (medium) — FAIL: unverified narrative
+**Q:** When was Óscar Romero a key attacker for Paraguay's World Cup qualifying?
+**Answer:** 2026 qualifying
+**Why it fails:** That Oscar Romero was a 'key attacker' specifically in the 2026 qualifying campaign is unverifiable and doubtful — Alfaro's key attackers were Almiron, Sanabria and Enciso; Romero was a fringe figure by then.
+**Source:** https://en.wikipedia.org/wiki/%C3%93scar_Romero_(footballer,_born_1992)
+**Remedy:** Remove the unverifiable 'key attacker' framing.
+
+### Row 42417 — Paraguay (easy) — FAIL: unverified squad-age
+**Q:** Which 2026 CONMEBOL qualifier has an older squad than Paraguay?
+**Answer:** Uruguay
+**Why it fails:** A claim that Uruguay's 2026 squad is 'older' than Paraguay's is an unverifiable, soft comparison with no authoritative source.
+**Source:** https://en.wikipedia.org/wiki/Uruguay_national_football_team
+**Remedy:** Remove the unverifiable squad-age comparison.
+
+### Row 42432 — Paraguay (easy) — FAIL: flawed/unverified premise
+**Q:** Which CONMEBOL nation had a younger average squad age than Paraguay for the 2022 FIFA World Cup?
+**Answer:** Ecuador
+**Why it fails:** Paraguay had no 2022 World Cup squad (they failed to qualify), so a 'younger than Paraguay for the 2022 World Cup' age comparison is ill-posed and unverifiable.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rewrite; Paraguay did not feature at the 2022 World Cup.
+
+### Row 42438 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL nation has Paraguay matched for most Copa América tournament participations since 2006?
+**Answer:** Uruguay
+**Why it fails:** Every CONMEBOL nation plays every Copa America, so Argentina, Brazil and Chile (all options) have matched Paraguay's participation since 2006 — not unique.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** Rewrite; all distractors are equally valid.
+
+### Row 42439 — Paraguay (medium) — FAIL: vague/non-unique
+**Q:** Which CONMEBOL nation has Paraguay matched in World Cup qualification tradition?
+**Answer:** Uruguay
+**Why it fails:** 'Matched in World Cup qualification tradition' is a soft, undefined comparison; Colombia, Chile and Peru (options) all have comparable World Cup histories, so it is not uniquely Uruguay.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Replace with a concrete, measurable comparison.
+
+### Row 42440 — Paraguay (easy) — FAIL: false explanation
+**Q:** Which CONMEBOL nation has Paraguay qualified for more FIFA World Cups than since 2006?
+**Answer:** Chile
+**Why it fails:** The explanation claims Paraguay qualified for 2006, 2010 AND 2014 — but Paraguay FAILED to qualify for 2014. The rationale is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Correct — Paraguay did not qualify for 2014 (they made 2006 and 2010 only in that span).
+
+### Row 42441 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL nation has Paraguay qualified for more World Cups than?
+**Answer:** Ecuador
+**Why it fails:** Paraguay (8-9 World Cups) has qualified for more than Ecuador (4-5), Colombia (6-7) AND Peru (5) — three of the four options — so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Rewrite for a unique comparison.
+
+### Row 42443 — Paraguay (easy) — FAIL: wrong answer
+**Q:** Which CONMEBOL nation has qualified for more FIFA World Cups, Paraguay or Chile?
+**Answer:** Paraguay
+**Why it fails:** Chile has nine World Cup appearances versus Paraguay's eight (nine with 2026), so Paraguay has NOT qualified for more than Chile — the answer is false.
+**Source:** https://en.wikipedia.org/wiki/Chile_at_the_FIFA_World_Cup
+**Remedy:** Reverse — Chile has at least as many appearances as Paraguay.
+
+### Row 42448 — Paraguay (easy) — FAIL: false premise
+**Q:** Which CONMEBOL nation is NOT a regular Copa América participant like Paraguay?
+**Answer:** Venezuela
+**Why it fails:** Venezuela IS a regular Copa America participant (every edition since 1967), so calling it 'not a regular participant' is false; all ten CONMEBOL nations are ever-present.
+**Source:** https://en.wikipedia.org/wiki/Venezuela_national_football_team
+**Remedy:** Remove — no CONMEBOL nation fits the 'not regular' premise.
+
+### Row 42452 — Paraguay (easy) — FAIL: self-referential
+**Q:** Which CONMEBOL nation matched Paraguay's 2010 quarter-final best result?
+**Answer:** Paraguay
+**Why it fails:** The answer is Paraguay itself, so 'which CONMEBOL nation matched Paraguay's best result' is self-referential and incoherent.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Name a genuinely different nation or rewrite.
+
+### Row 42479 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL nation, alongside Paraguay, has been a regular Copa América participant since 2006?
+**Answer:** Uruguay
+**Why it fails:** Ecuador, Bolivia and Venezuela (all options) have likewise played every Copa America since 2006, so 'alongside Paraguay' is not uniquely Uruguay.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** Rewrite; all distractors are also correct.
+
+### Row 42480 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL nation's 2010 World Cup home venue had a larger capacity than Paraguay's Estadio Defensores del Chaco?
+**Answer:** Argentina
+**Why it fails:** Uruguay's Estadio Centenario (~60,000) and Chile's Estadio Nacional (~48,000) also exceed Defensores del Chaco's ~42,354, so a 'larger capacity' answer is not unique to Argentina.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Centenario
+**Remedy:** Ask for the largest and remove the other larger-capacity distractors.
+
+### Row 42481 — Paraguay (easy) — FAIL: unverified narrative
+**Q:** Which CONMEBOL nation's 2026 squad transition is most like Paraguay's younger shift?
+**Answer:** Ecuador
+**Why it fails:** 'Most like Paraguay's younger shift' is a soft, unsourced narrative comparison that cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Replace with a verifiable fact.
+
+### Row 42498 — Paraguay (easy) — FAIL: false premise (confederation)
+**Q:** Which CONMEBOL rival did Paraguay beat to reach their 2010 quarter-final?
+**Answer:** Japan
+**Why it fails:** Japan is an AFC nation, not a CONMEBOL rival, so 'which CONMEBOL rival did Paraguay beat' is self-contradictory (the team they beat was Japan).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Drop 'CONMEBOL' — Japan is Asian.
+
+### Row 42499 — Paraguay (easy) — FAIL: vague/non-unique
+**Q:** Which CONMEBOL rival has Paraguay struggled to beat in World Cup qualifying since 2010?
+**Answer:** Uruguay
+**Why it fails:** 'Struggled to beat since 2010' is an unquantified narrative; Paraguay struggled against several CONMEBOL sides, so it is not uniquely Uruguay.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Replace with a specific, sourced head-to-head record.
+
+### Row 42500 — Paraguay (easy) — FAIL: false premise
+**Q:** Which CONMEBOL rival's loss helped Paraguay qualify for the 2010 World Cup?
+**Answer:** Argentina
+**Why it fails:** Argentina did NOT lose to Uruguay in the final 2010 qualifier — Argentina won 1-0 (Bolatti). Paraguay had already qualified, so no rival's loss was needed.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Remove — the asserted Argentina defeat never happened.
+
+### Row 42508 — Paraguay (easy) — FAIL: false premise (confederation)
+**Q:** Which CONMEBOL team did Paraguay face in the 2010 World Cup quarter-finals?
+**Answer:** Spain
+**Why it fails:** Spain is a UEFA nation, not a CONMEBOL team, so 'which CONMEBOL team did Paraguay face in the 2010 QF' is self-contradictory.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Drop 'CONMEBOL' — Spain is European.
+
+### Row 42510 — Paraguay (medium) — FAIL: dubious/non-unique
+**Q:** Which CONMEBOL team ended Paraguay's 2014 World Cup qualification streak?
+**Answer:** Peru
+**Why it fails:** Paraguay finished last (9th) in 2014 CONMEBOL qualifying, behind eight nations — singling out Peru as the team that 'ended the streak' is arbitrary and not uniquely true.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rewrite; the streak ended via overall standings, not a single rival.
+
+### Row 42526 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL teams finished above Paraguay in 2014 World Cup qualifying?
+**Answer:** Argentina, Colombia, Chile
+**Why it fails:** Paraguay finished last (9th) in 2014 CONMEBOL qualifying, so every other nation finished above them — the option set 'Peru, Bolivia, Venezuela' is also entirely above Paraguay, making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ask specifically for the three automatic qualifiers, or rewrite.
+
+### Row 42531 — Paraguay (easy) — FAIL: incoherent / fabricated name
+**Q:** Which manager did not coach Paraguay after their 2010 FIFA World Cup campaign?
+**Answer:** Alfaro Moreno
+**Why it fails:** All four listed managers coached Paraguay at some point after 2010 (Martino into 2011, Arce, Berizzo, and Gustavo Alfaro for 2026), so none uniquely 'did not'; the answer also uses the fabricated name 'Alfaro Moreno' for Gustavo Alfaro.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Rewrite; the premise yields no unique answer and the manager is Gustavo Alfaro.
+
+### Row 42532 — Paraguay (easy) — FAIL: self-contradictory / fabricated name
+**Q:** Which manager did NOT coach Paraguay for a World Cup cycle after 2010?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro DID coach a post-2010 World Cup cycle (2026), so 'did not coach for a cycle after 2010' is self-contradictory; the answer also misnames him 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Fix the premise; the 2026 manager is Gustavo Alfaro.
+
+### Row 42533 — Paraguay (easy) — FAIL: self-contradictory / fabricated name
+**Q:** Which manager did NOT lead Paraguay in World Cup qualifying after 2010?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro led Paraguay's 2026 qualifying (after 2010), so the 'did not lead after 2010' premise is false; the answer also misnames him 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Rewrite; the 2026 manager is Gustavo Alfaro.
+
+### Row 42534 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which manager did NOT lead Paraguay's 2026 World Cup qualifying campaign?
+**Answer:** Gerardo Martino
+**Why it fails:** Martino, Berizzo and Osorio all did NOT lead Paraguay's 2026 qualifying (only Gustavo Alfaro did), so three options satisfy the question — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Rewrite for a unique answer.
+
+### Row 42536 — Paraguay (medium) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager guided Paraguay's 2026 World Cup qualification campaign?
+**Answer:** Alfaro Moreno
+**Why it fails:** Paraguay's 2026 manager is Gustavo Alfaro, which is listed as a separate option here; the keyed answer 'Alfaro Moreno' is a fabricated name and the correct choice (Gustavo Alfaro) was not selected.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42537 — Paraguay (easy) — FAIL: fabricated name
+**Q:** Which manager is leading Paraguay's 2026 FIFA World Cup qualifying campaign?
+**Answer:** Alfaro Moreno
+**Why it fails:** Paraguay's 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno' (a fabricated name).
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42539 — Paraguay (medium) — FAIL: fabricated name
+**Q:** Which manager is leading Paraguay's 2026 World Cup qualification campaign?
+**Answer:** Alfaro Moreno
+**Why it fails:** The 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42540 — Paraguay (medium) — FAIL: fabricated name
+**Q:** Which manager is tasked with Paraguay's 2026 World Cup qualification?
+**Answer:** Alfaro Moreno
+**Why it fails:** The 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42544 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager leads Paraguay's 2026 FIFA World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro (the real 2026 manager) is listed as a separate option; the keyed answer 'Alfaro Moreno' is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42546 — Paraguay (medium) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager leads Paraguay's 2026 World Cup qualification campaign?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated and the correct choice was not selected.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42552 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager led Paraguay for the 2026 World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42553 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager led Paraguay in the 2026 World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42559 — Paraguay (medium) — FAIL: fabricated name
+**Q:** Which manager led Paraguay's 2026 FIFA World Cup qualification campaign?
+**Answer:** Alfaro Moreno
+**Why it fails:** The 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42560 — Paraguay (medium) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager led Paraguay's 2026 World Cup qualification after Gerardo Martino's 2010 cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated and the correct choice was not selected.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42562 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager led Paraguay's team for the 2026 FIFA World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42564 — Paraguay (easy) — FAIL: fabricated name
+**Q:** Which manager succeeded Paraguay's unstable post-2011 coaching era for 2026?
+**Answer:** Alfaro Moreno
+**Why it fails:** The manager who succeeded the post-2011 instability for 2026 is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42565 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which manager was appointed to lead Paraguay for the 2026 World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42579 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which nation did Paraguay defeat at Estadio Defensores del Chaco in a 2010 World Cup qualifier?
+**Answer:** Argentina
+**Why it fails:** Paraguay beat BOTH Argentina (1-0) and Brazil (2-0) at Defensores del Chaco in 2010 qualifying, so the answer is not unique among the options.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Specify the opponent or scoreline so only one is correct.
+
+### Row 42587 — Paraguay (easy) — FAIL: false claim
+**Q:** Which nation matched Paraguay's best World Cup finish of 2010 by also reaching a quarter-final?
+**Answer:** Uruguay
+**Why it fails:** Uruguay finished 4th (semi-finalists) at the 2010 World Cup, which exceeds a quarter-final — they did not 'match' Paraguay's QF finish.
+**Source:** https://en.wikipedia.org/wiki/Uruguay_at_the_FIFA_World_Cup
+**Remedy:** Argentina or Brazil were eliminated at the 2010 QF stage; Uruguay went further.
+
+### Row 42588 — Paraguay (easy) — FAIL: self-referential
+**Q:** Which nation reached a World Cup quarter-final before Paraguay's decline?
+**Answer:** Paraguay
+**Why it fails:** The answer is Paraguay itself, making the question self-referential and trivial.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Name a different nation or rewrite.
+
+### Row 42599 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay attacker was a key starter in both the 2018 and 2022 World Cup qualifying campaigns?
+**Answer:** Óscar Romero
+**Why it fails:** Miguel Almiron (an option) was also a key attacker in both the 2018 and 2022 qualifying cycles — arguably the primary one — so Oscar Romero is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Rewrite; Almiron equally fits.
+
+### Row 42600 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay attacker was key in 2018 World Cup qualifying?
+**Answer:** Óscar Romero
+**Why it fails:** Miguel Almiron (an option) was also a key attacker in 2018 qualifying, so Oscar Romero is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Rewrite; Almiron equally fits.
+
+### Row 42601 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay attacker was key in 2022 World Cup qualifying?
+**Answer:** Óscar Romero
+**Why it fails:** Miguel Almiron (an option) was Paraguay's standout attacker in 2022 qualifying, so Oscar Romero is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Rewrite; Almiron equally fits.
+
+### Row 42603 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay attacker was key to their 2022 World Cup qualifying campaign?
+**Answer:** Óscar Romero
+**Why it fails:** Miguel Almiron (an option) was a key attacker in the 2022 campaign, so Oscar Romero is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Rewrite; Almiron equally fits.
+
+### Row 42605 — Paraguay (easy) — FAIL: non-unique / wrong
+**Q:** Which Paraguay captain had over 80 caps before the 2022 World Cup?
+**Answer:** Gustavo Gómez
+**Why it fails:** Roque Santa Cruz (an option) is a former Paraguay captain with ~100 caps; Gustavo Gomez had not yet reached 80 caps before the 2022 World Cup, so the answer is both non-unique and dubious.
+**Source:** https://en.wikipedia.org/wiki/Roque_Santa_Cruz
+**Remedy:** Rewrite; Santa Cruz also fits 'captain with 80+ caps'.
+
+### Row 42606 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay captain had over 80 caps by 2026?
+**Answer:** Gustavo Gómez
+**Why it fails:** Roque Santa Cruz (an option) was also a Paraguay captain with well over 80 caps, so 'captain with 80+ caps' is not unique to Gomez.
+**Source:** https://en.wikipedia.org/wiki/Roque_Santa_Cruz
+**Remedy:** Rewrite for uniqueness.
+
+### Row 42607 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay captain had over 80 caps for the national team?
+**Answer:** Gustavo Gómez
+**Why it fails:** Roque Santa Cruz (an option) captained Paraguay and had ~100 caps, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Roque_Santa_Cruz
+**Remedy:** Rewrite for uniqueness.
+
+### Row 42616 — Paraguay (easy) — FAIL: unverified squad composition
+**Q:** Which Paraguay club contributed more players to the 2010 World Cup qualifying squad?
+**Answer:** Cerro Porteño
+**Why it fails:** A claim that Cerro Porteno contributed more players than Olimpia to the specific 2010 qualifying squad cannot be verified from any reliable source.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Remove the unverifiable club-count claim.
+
+### Row 42617 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay club from División de Honor featured in their 2010 World Cup qualifying squad?
+**Answer:** Cerro Porteño
+**Why it fails:** Cerro Porteno, Libertad and Olimpia (all options) are Division de Honor clubs that supplied squad players, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Paraguayan_Primera_Divisi%C3%B3n
+**Remedy:** Rewrite; multiple options are top-flight clubs.
+
+### Row 42628 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay defender captained the team at the 2022 FIFA World Cup?
+**Answer:** Gustavo Gómez
+**Why it fails:** Paraguay did NOT play at the 2022 FIFA World Cup (they failed to qualify), so no one 'captained the team at the 2022 World Cup' — Gomez captained only the qualifiers.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change 'at the 2022 World Cup' to 'in 2022 qualifying'.
+
+### Row 42643 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay forward played at the 2010 FIFA World Cup?
+**Answer:** Roque Santa Cruz
+**Why it fails:** Nelson Haedo Valdez (an option) also played at the 2010 World Cup (he scored v Slovakia), so 'which forward played at 2010' is not unique to Santa Cruz.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Make the descriptor unique (e.g. caps) so only Santa Cruz fits.
+
+### Row 42648 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay goalkeeper saved a penalty in the 2010 World Cup shootout vs Japan?
+**Answer:** Justo Villar
+**Why it fails:** No penalty was saved in the 2010 shootout v Japan — Japan's miss was Yuichi Komano striking the crossbar. Villar's famous penalty save came in the QF v Spain, not the Japan shootout.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Reword — Villar saved a penalty against Spain; Japan's miss hit the bar.
+
+### Row 42652 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Which Paraguay manager is leading the team for the 2026 World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro (the real 2026 manager) is a separate option; the keyed 'Alfaro Moreno' is a fabricated name and the correct choice was not selected.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42661 — Paraguay (easy) — FAIL: soft/non-unique
+**Q:** Which Paraguay manager oversaw the 2026 squad's transition to younger players?
+**Answer:** Daniel Garnero
+**Why it fails:** 'Oversaw the 2026 squad's transition to younger players' is a soft narrative; Gustavo Alfaro (an option) led the squad that actually qualified for 2026, so the answer is not uniquely Garnero.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Replace with a verifiable, unique fact.
+
+### Row 42666 — Paraguay (medium) — FAIL: wrong answer
+**Q:** Which Paraguay manager secured their 2026 World Cup qualification?
+**Answer:** Daniel Garnero
+**Why it fails:** Gustavo Alfaro, not Daniel Garnero, secured Paraguay's 2026 qualification — Garnero was replaced by Alfaro in August 2024 (and Alfaro is not even listed).
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42675 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay midfielder made his World Cup debut in 2018?
+**Answer:** Miguel Almirón
+**Why it fails:** Almiron did not make a 'World Cup debut in 2018' — Paraguay failed to qualify for the 2018 (and 2022) World Cups, so he had no World Cup appearance before 2026.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Remove — Almiron's first World Cup is 2026.
+
+### Row 42678 — Paraguay (easy) — FAIL: stale (club)
+**Q:** Which Paraguay midfielder plays for Newcastle United?
+**Answer:** Miguel Almirón
+**Why it fails:** Almiron left Newcastle for Atlanta United in January 2025, so the present-tense 'plays for Newcastle United' is no longer true.
+**Source:** https://www.espn.com/soccer/story/_/id/43584627/miguel-almiron-completes-move-atlanta-united-newcastle
+**Remedy:** Update his club to Atlanta United.
+
+### Row 42680 — Paraguay (easy) — FAIL: unverified goal
+**Q:** Which Paraguay midfielder scored in the 2022 WC qualifier against Colombia?
+**Answer:** Miguel Almirón
+**Why it fails:** That Almiron scored specifically against Colombia in 2022 qualifying could not be verified from any reliable source.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Confirm the scorer/fixture or remove.
+
+### Row 42695 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay player captained the squad at the 2022 World Cup?
+**Answer:** Gustavo Gómez
+**Why it fails:** Paraguay did not play at the 2022 FIFA World Cup (they failed to qualify), so no one 'captained the squad at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change to '2022 qualifying' or '2021 Copa America'.
+
+### Row 42701 — Paraguay (easy) — FAIL: unverified
+**Q:** Which Paraguay player debuted in the 2010 World Cup after playing for Cerro Porteño?
+**Answer:** Jonathan Santana
+**Why it fails:** That Jonathan Santana made his World Cup debut in 2010 'after playing for Cerro Porteno' could not be confirmed from any reliable source.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Verify Santana's club/debut details or remove.
+
+### Row 42702 — Paraguay (easy) — FAIL: wrong debut year
+**Q:** Which Paraguay player debuted in the 2022 World Cup qualifiers?
+**Answer:** Júnior Alonso
+**Why it fails:** Junior Alonso made his senior Paraguay debut on 6 March 2013 (friendly v Costa Rica), not in the 2022 qualifiers; Gomez and Sanabria also debuted ~2013, so the answer is wrong and non-unique.
+**Source:** https://en.wikipedia.org/wiki/J%C3%BAnior_Alonso
+**Remedy:** Correct the debut to 2013.
+
+### Row 42704 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay player featured in the 3-0 Copa América final loss to Uruguay in 2011?
+**Answer:** Justo Villar
+**Why it fails:** Cristian Riveros and Oscar Cardozo (both options) also featured in the 2011 Copa America final, so Justo Villar is not the unique answer (Lugano is the Uruguayan opponent).
+**Source:** https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica_Final
+**Remedy:** Rewrite for a unique answer.
+
+### Row 42706 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay player featured in their 2010 World Cup quarter-final?
+**Answer:** Justo Villar
+**Why it fails:** Claudio Morel, Paulo da Silva and Antolin Alcaraz (all options) also played in Paraguay's 2010 quarter-final, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Make the descriptor unique (e.g. 'goalkeeper').
+
+### Row 42707 — Paraguay (easy) — FAIL: wrong club
+**Q:** Which Paraguay player from División de Honor's Olimpia played in the 2010 World Cup?
+**Answer:** Roque Santa Cruz
+**Why it fails:** At the 2010 World Cup Roque Santa Cruz played for Manchester City, not Olimpia — he left Olimpia for Bayern in 1999. The 'Olimpia / Division de Honor' premise is false.
+**Source:** https://en.wikipedia.org/wiki/Roque_Santa_Cruz
+**Remedy:** Santa Cruz was not an Olimpia player in 2010; rewrite.
+
+### Row 42722 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay player participated in their 2010 penalty win and also their 2006 World Cup?
+**Answer:** Justo Villar
+**Why it fails:** Roque Santa Cruz and Paulo da Silva (both options) also played at the 2006 World Cup and in the 2010 R16 shootout, so the answer is not unique to Villar.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Make the descriptor unique (e.g. 'goalkeeper').
+
+### Row 42724 — Paraguay (easy) — FAIL: wrong fact
+**Q:** Which Paraguay player retired after their 2010 World Cup qualifier at Defensores del Chaco?
+**Answer:** Carlos Gamarra
+**Why it fails:** Carlos Gamarra retired from the national team during the 2006 World Cup (last cap 2006), so he did not retire after a 2010 qualifier — he never played the 2010 qualifying campaign.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Gamarra
+**Remedy:** Correct — Gamarra retired in 2006.
+
+### Row 42725 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay player saved two penalties in the 2010 World Cup shootout?
+**Answer:** Justo Villar
+**Why it fails:** Villar saved zero penalties in the Japan shootout — Paraguay won 5-3 because Komano hit the crossbar; Endo scored. Villar did not save from Komano or Endo.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Remove — no Japan penalties were saved (Komano hit the bar).
+
+### Row 42726 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay player scored his penalty to help beat Japan in the 2010 World Cup round of 16?
+**Answer:** Oscar Cardozo
+**Why it fails:** Paraguay scored all five of its penalties v Japan, so Barrios and Valdez (options) also 'scored their penalty' — not unique to Cardozo.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Ask for the decisive/final penalty to make Cardozo unique.
+
+### Row 42727 — Paraguay (hard) — FAIL: non-unique answer
+**Q:** Which Paraguay player scored in the 2010 World Cup penalty shootout win over Japan?
+**Answer:** Oscar Cardozo
+**Why it fails:** All five Paraguay takers (incl. options Barrios and Valdez) scored in the shootout, so 'scored in the shootout' is not unique to Cardozo.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Specify the decisive penalty.
+
+### Row 42728 — Paraguay (medium) — FAIL: wrong scorer
+**Q:** Which Paraguay player scored in their 2010 World Cup group stage match?
+**Answer:** Nelson Valdez
+**Why it fails:** Nelson Valdez did NOT score in the 2010 group stage — Paraguay's group goals came from Alcaraz (v Italy) and Vera & Riveros (v Slovakia). The explanation also wrongly credits Valdez with the Italy goal (Alcaraz scored).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_F
+**Remedy:** None of the options scored in the group stage; rewrite with a correct scorer.
+
+### Row 42729 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay player scored in their 2010 World Cup quarter-final?
+**Answer:** Antolín Alcaraz
+**Why it fails:** Paraguay scored ZERO goals in the 2010 quarter-final (lost 1-0 to Spain), so no Paraguay player scored. Alcaraz's goal came v Italy in the group stage.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Remove — Paraguay did not score in the QF.
+
+### Row 42734 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguay player started the 2011 Copa América final loss?
+**Answer:** Justo Villar
+**Why it fails:** Santa Cruz, Riveros and Ortigoza (all options) also started the 2011 Copa America final, so the answer is not unique to Villar.
+**Source:** https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica_Final
+**Remedy:** Make the descriptor unique (e.g. 'goalkeeper').
+
+### Row 42737 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay player was captain at the 2022 FIFA World Cup?
+**Answer:** Gustavo Gómez
+**Why it fails:** Paraguay did not play at the 2022 FIFA World Cup, so there was no captain 'at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change to '2022 qualifying'.
+
+### Row 42740 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay player was sent off against Spain in the 2010 World Cup quarter-final?
+**Answer:** Antolín Alcaraz
+**Why it fails:** No Paraguay player was sent off in the 2010 QF v Spain — there was no red card in the match (Alcaraz conceded a penalty but was not dismissed).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Remove — no sending-off occurred.
+
+### Row 42742 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay player's goal sent them to the 2010 World Cup quarter-finals?
+**Answer:** Nelson Valdez
+**Why it fails:** No goal sent Paraguay to the 2010 QF — the R16 v Japan was 0-0 and decided on penalties (Cardozo's spot-kick). Valdez did not score a 'winning goal' against Japan.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Reword — it was a penalty shootout, not a goal.
+
+### Row 42746 — Paraguay (medium) — FAIL: unverified narrative
+**Q:** Which Paraguay squad marked the start of a younger generation?
+**Answer:** The 2026 squad
+**Why it fails:** 'Which squad marked the start of a younger generation' is a soft, unsourced narrative claim (and the dataset elsewhere attributes the transition to the 2022 cycle).
+**Source:** https://en.wikipedia.org/wiki/Paraguay_national_football_team
+**Remedy:** Replace with a verifiable fact.
+
+### Row 42747 — Paraguay (medium) — FAIL: false/unverified
+**Q:** Which Paraguay squad transition caused their 2026 qualification struggle?
+**Answer:** A younger generation
+**Why it fails:** Paraguay did not 'struggle' to a failed 2026 campaign — they qualified (6th); their early slump was reversed by appointing Gustavo Alfaro, not caused by a 'younger generation'.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Remove the unsupported causal claim.
+
+### Row 42748 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay stadium held 42,354 fans for a 2015 Copa America match?
+**Answer:** Estadio Defensores del Chaco
+**Why it fails:** The 2015 Copa America was hosted in Chile, so no 2015 Copa match was played at Estadio Defensores del Chaco in Asuncion.
+**Source:** https://en.wikipedia.org/wiki/2015_Copa_Am%C3%A9rica
+**Remedy:** Remove — Defensores del Chaco hosted no 2015 Copa match.
+
+### Row 42752 — Paraguay (easy) — FAIL: wrong fact
+**Q:** Which Paraguay star debuted at the 2019 Copa América?
+**Answer:** Miguel Almirón
+**Why it fails:** Almiron's Copa America debut was the 2016 Centenario (he started two matches), not 2019.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Correct the Copa debut to 2016.
+
+### Row 42754 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguay star made his FIFA World Cup debut in 2018?
+**Answer:** Miguel Almirón
+**Why it fails:** Almiron did not make a 2018 World Cup debut — Paraguay failed to qualify for 2018; his first World Cup is 2026.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Remove — no 2018 World Cup appearance.
+
+### Row 42760 — Paraguay (easy) — FAIL: wrong club
+**Q:** Which Paraguayan 2010 World Cup player featured for domestic club Olimpia?
+**Answer:** Roque Santa Cruz
+**Why it fails:** At the 2010 World Cup Roque Santa Cruz played for Manchester City, not Olimpia — he left Olimpia in 1999. No listed player 'featured for Olimpia' in 2010.
+**Source:** https://en.wikipedia.org/wiki/Roque_Santa_Cruz
+**Remedy:** The Olimpia premise is false; rewrite.
+
+### Row 42762 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguayan attacker was a key player in 2018 World Cup qualifying?
+**Answer:** Óscar Romero
+**Why it fails:** Miguel Almiron (an option) was also a key attacker in 2018 qualifying — arguably the primary one — so Oscar Romero is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Rewrite; Almiron equally fits.
+
+### Row 42764 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguayan attacker was key in 2022 World Cup qualifying?
+**Answer:** Óscar Romero
+**Why it fails:** Miguel Almiron (an option) was Paraguay's standout attacker in 2022 qualifying, so Oscar Romero is not uniquely correct.
+**Source:** https://en.wikipedia.org/wiki/Miguel_Almir%C3%B3n
+**Remedy:** Rewrite; Almiron equally fits.
+
+### Row 42770 — Paraguay (easy) — FAIL: wrong cap count
+**Q:** Which Paraguayan centre-back had over 80 caps in 2022?
+**Answer:** Gustavo Gómez
+**Why it fails:** Gustavo Gomez did not have 'over 80 caps in 2022' — he reached ~88 only by 2026, so he had roughly 60-65 caps in 2022.
+**Source:** https://theanalyst.com/players/10588/gustavo-gomez/national
+**Remedy:** Correct or drop the '80 caps in 2022' figure.
+
+### Row 42771 — Paraguay (easy) — FAIL: wrong cap count
+**Q:** Which Paraguayan centre-back, with over 80 caps, captained the 2022 World Cup qualifying squad?
+**Answer:** Gustavo Gómez
+**Why it fails:** Gomez had ~60-65 caps during the 2022 qualifiers (he reached ~88 by 2026), so 'over 80 caps' is false for that period.
+**Source:** https://theanalyst.com/players/10588/gustavo-gomez/national
+**Remedy:** Drop the '80 caps' figure.
+
+### Row 42776 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguayan club league's players formed the core of their 2010 World Cup squad?
+**Answer:** División de Honor
+**Why it fails:** Paraguay's 2010 squad was overwhelmingly Europe/abroad-based (Santa Cruz at Man City, Valdez at Dortmund, Cardozo at Benfica, etc.), so Division de Honor players did not form its 'core'.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Reword — the 2010 core played abroad.
+
+### Row 42780 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguayan defender captained the team at the 2022 FIFA World Cup?
+**Answer:** Gustavo Gómez
+**Why it fails:** Paraguay did not play at the 2022 FIFA World Cup, so no one captained them 'at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change to '2022 qualifying'.
+
+### Row 42782 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguayan defender provided defensive leadership at the 2022 World Cup?
+**Answer:** Gustavo Gómez
+**Why it fails:** Paraguay did not feature 'at the 2022 World Cup' (they failed to qualify), so the premise is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change to '2022 qualifying'.
+
+### Row 42788 — Paraguay (easy) — FAIL: wrong club
+**Q:** Which Paraguayan División de Honor club did a 2026 World Cup qualifier manager previously coach?
+**Answer:** Cerro Porteño
+**Why it fails:** Paraguay's 2026 managers (Garnero, then Gustavo Alfaro) did not coach Cerro Porteno — Garnero coached Olimpia and Libertad (both options), not Cerro.
+**Source:** https://en.wikipedia.org/wiki/Daniel_Garnero
+**Remedy:** Change the answer to Olimpia or Libertad.
+
+### Row 42789 — Paraguay (easy) — FAIL: wrong club
+**Q:** Which Paraguayan División de Honor club did Roque Santa Cruz play for during 2010 World Cup qualifying?
+**Answer:** Olimpia
+**Why it fails:** During 2010 qualifying Roque Santa Cruz played for Manchester City (he left Olimpia in 1999), so he did not play for Olimpia in that period.
+**Source:** https://en.wikipedia.org/wiki/Roque_Santa_Cruz
+**Remedy:** The Olimpia premise is false; rewrite.
+
+### Row 42790 — Paraguay (easy) — FAIL: non-unique / incoherent
+**Q:** Which Paraguayan División de Honor club participated in the 2010 World Cup qualifiers?
+**Answer:** Cerro Porteño
+**Why it fails:** All four options (Cerro Porteno, Olimpia, Libertad, Nacional) are Paraguayan top-flight clubs; clubs do not 'participate' in World Cup qualifiers, and any could supply players, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Paraguayan_Primera_Divisi%C3%B3n
+**Remedy:** Rewrite; the premise is incoherent and non-unique.
+
+### Row 42795 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguayan forward played at the 2010 World Cup and also the 2006 edition?
+**Answer:** Roque Santa Cruz
+**Why it fails:** Nelson Haedo Valdez (an option) also played at both the 2006 and 2010 World Cups, so the answer is not unique to Santa Cruz.
+**Source:** https://en.wikipedia.org/wiki/Nelson_Valdez
+**Remedy:** Make the descriptor unique (e.g. caps).
+
+### Row 42796 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguayan forward played at the 2010 World Cup, unlike fellow forward Salvador Cabañas?
+**Answer:** Roque Santa Cruz
+**Why it fails:** Valdez, Cardozo and Barrios (all options) also played at the 2010 World Cup, so 'played at 2010 unlike Cabanas' is satisfied by every option.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Rewrite for a unique answer.
+
+### Row 42797 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguayan forward scored in the 2010 World Cup round of 16?
+**Answer:** Roque Santa Cruz
+**Why it fails:** No Paraguay player scored in the 2010 round of 16 — the match v Japan was 0-0 and decided on penalties. Santa Cruz did not score.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Remove — the R16 was goalless (won on penalties).
+
+### Row 42798 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which Paraguayan forward was in their 2010 FIFA World Cup squad?
+**Answer:** Roque Santa Cruz
+**Why it fails:** Valdez, Barrios and Cardozo (all options) were also in Paraguay's 2010 squad, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Make the descriptor unique.
+
+### Row 42803 — Paraguay (easy) — FAIL: unverified / non-unique
+**Q:** Which Paraguayan league clubs featured in the 2010 World Cup qualifiers?
+**Answer:** Olimpia and Cerro Porteño
+**Why it fails:** Paraguay's 2010 squad was mostly foreign-based, and several Paraguayan clubs (incl. Libertad, where Cardozo played) supplied players, so 'Olimpia and Cerro Porteno' is not a verifiable, unique answer.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Remove the unverifiable club-composition claim.
+
+### Row 42808 — Paraguay (easy) — FAIL: unverified comparison
+**Q:** Which Paraguayan midfielder scored more 2022 WCQ goals than Argentina's De Paul?
+**Answer:** Miguel Almirón
+**Why it fails:** That Almiron outscored De Paul in 2022 qualifying cannot be verified — Paraguay scored very few goals and Almiron was not a notable 2022-qualifying scorer; the 'top scorer' claim is unsupported.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Remove the unverifiable scoring comparison.
+
+### Row 42809 — Paraguay (easy) — FAIL: false premise
+**Q:** Which Paraguayan midfielder was Newcastle's only player at the 2022 World Cup?
+**Answer:** Miguel Almirón
+**Why it fails:** Paraguay (and Almiron) did not play at the 2022 World Cup, and Newcastle had several players there (Guimaraes, Botman, Trippier, etc.), so 'Newcastle's only player at the 2022 World Cup' is doubly false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Remove — false on both counts.
+
+### Row 42821 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which regular Copa América participants were Paraguay's 2022 World Cup qualifying group rivals?
+**Answer:** Argentina, Brazil, Uruguay
+**Why it fails:** CONMEBOL qualifying is a single all-play-all group, so the option sets 'Colombia, Chile, Peru' and 'Bolivia, Ecuador, Venezuela' were also Paraguay's group rivals — not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Rewrite; all CONMEBOL nations were rivals.
+
+### Row 42822 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which rival did Paraguay host at their primary stadium in 2022 World Cup qualifying?
+**Answer:** Uruguay
+**Why it fails:** In the single CONMEBOL group Paraguay hosted every rival once, so Argentina, Brazil, Uruguay and Chile (all options) were all hosted at Defensores del Chaco — not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Specify a fixture/scoreline for uniqueness.
+
+### Row 42828 — Paraguay (easy) — FAIL: false/non-unique
+**Q:** Which stadium had the larger capacity for Paraguay's 2010 World Cup qualifiers?
+**Answer:** Estadio Defensores del Chaco
+**Why it fails:** Defensores del Chaco (~42,354) is NOT the larger-capacity option — Chile's Estadio Nacional (48,665) and Uruguay's Centenario (60,235) are bigger; the explanation itself concedes this.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Centenario
+**Remedy:** Reword to ask for Paraguay's home venue, not 'the larger capacity'.
+
+### Row 42836 — Paraguay (easy) — FAIL: false premise
+**Q:** Which stadium hosted Paraguay's 2015 Copa America matches?
+**Answer:** Estadio Defensores del Chaco
+**Why it fails:** The 2015 Copa America was held in Chile, so Paraguay's 2015 Copa matches were not played at Defensores del Chaco.
+**Source:** https://en.wikipedia.org/wiki/2015_Copa_Am%C3%A9rica
+**Remedy:** Remove — Defensores hosted no 2015 Copa match.
+
+### Row 42844 — Paraguay (easy) — FAIL: wrong score
+**Q:** Which team beat Paraguay 4-0 in a 2022 World Cup qualifier?
+**Answer:** Brazil
+**Why it fails:** Brazil beat Paraguay 2-0 (not 4-0) in 2022 qualifying (8 June 2021, Neymar & Paqueta); no team beat Paraguay 4-0 in that campaign.
+**Source:** https://www.espn.com/soccer/match/_/gameId/561061/brazil-paraguay
+**Remedy:** Correct the score to 2-0.
+
+### Row 42854 — Paraguay (medium) — FAIL: non-unique answer
+**Q:** Which team did Paraguay NOT play in the 2010 World Cup knockout stage?
+**Answer:** Uruguay
+**Why it fails:** Paraguay did not play Portugal (an option) in the 2010 knockout stage either, so 'which team did Paraguay NOT play' is satisfied by both Uruguay and Portugal.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Remove Portugal or reword for a unique answer.
+
+### Row 42860 — Paraguay (easy) — FAIL: non-unique answer
+**Q:** Which two Paraguayan clubs faced off in a 2022 División de Honor match?
+**Answer:** Olimpia and Cerro Porteño
+**Why it fails:** Libertad and Guarani (an option) are also Division de Honor clubs that faced off in 2022, so 'Olimpia and Cerro Porteno' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Paraguayan_Primera_Divisi%C3%B3n
+**Remedy:** Rewrite; multiple Paraguayan pairings are valid.
+
+### Row 42864 — Paraguay (easy) — FAIL: wrong scorer
+**Q:** Which Uruguayan player scored twice in the 2011 Copa América final against Paraguay?
+**Answer:** Luis Suárez
+**Why it fails:** It was Diego Forlan (an option) who scored twice in the 2011 Copa America final (41', 89'); Luis Suarez scored only once (11').
+**Source:** https://en.wikipedia.org/wiki/2011_Copa_Am%C3%A9rica_final
+**Remedy:** Change the answer to Diego Forlan.
+
+### Row 42867 — Paraguay (hard) — FAIL: non-unique answer
+**Q:** Which World Cup did Paraguay's national team fail to qualify for after 2010?
+**Answer:** 2018 FIFA World Cup
+**Why it fails:** Paraguay failed to qualify for 2014, 2018 AND 2022, so options 2014, 2018 and 2022 are all correct.
+**Source:** https://en.wikipedia.org/wiki/Paraguay_at_the_FIFA_World_Cup
+**Remedy:** Specify a single tournament uniquely.
+
+### Row 42884 — Paraguay (easy) — FAIL: fabricated name
+**Q:** Who is managing Paraguay for the 2026 FIFA World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Paraguay's 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno' (a fabricated name).
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42886 — Paraguay (easy) — FAIL: fabricated name
+**Q:** Who is managing Paraguay's team for the 2026 World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** The 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42888 — Paraguay (easy) — FAIL: fabricated name
+**Q:** Who is the manager tasked with leading Paraguay to the 2026 World Cup?
+**Answer:** Alfaro Moreno
+**Why it fails:** The manager tasked with the 2026 campaign is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42892 — Paraguay (easy) — FAIL: fabricated name (Gustavo Alfaro is the answer)
+**Q:** Who managed Paraguay for the 2026 World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** Gustavo Alfaro (the real 2026 manager) is listed as a separate option; the keyed 'Alfaro Moreno' is fabricated and the correct choice was not selected.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42893 — Paraguay (easy) — FAIL: fabricated name
+**Q:** Who manages Paraguay for the 2026 FIFA World Cup cycle?
+**Answer:** Alfaro Moreno
+**Why it fails:** The 2026 manager is Gustavo Alfaro, not 'Alfaro Moreno'.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Change the answer to Gustavo Alfaro.
+
+### Row 42898 — Paraguay (easy) — FAIL: wrong scorer
+**Q:** Who scored Paraguay's goal in their 2010 World Cup draw with Italy?
+**Answer:** Roque Santa Cruz
+**Why it fails:** Antolin Alcaraz, not Roque Santa Cruz, scored Paraguay's goal in the 1-1 draw with Italy at the 2010 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_F
+**Remedy:** Change the answer to Antolin Alcaraz.
+
+### Row 13848 — Colombia (easy) — FAIL: false premise (wrong score) + non-unique
+**Q:** After Colombia beat Japan 1-0 in 2014, which Colombian winger was also key in 2018?
+**Answer:** Juan Cuadrado
+**Why it fails:** The premise 'Colombia beat Japan 1-0 in 2014' is false — Colombia won 4-1. Also both Cuadrado and James Rodríguez (a listed option) were key in 2014 and 2018, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Fix the score to 4-1 and re-anchor uniquely, e.g. 'Which Colombian right-winger started both the 2014 and 2018 World Cups?' → Juan Cuadrado.
+
+### Row 13854 — Colombia (easy) — FAIL: wrong score in explanation
+**Q:** Against which nation did Colombia win in the 2014 World Cup but lose to in 2018?
+**Answer:** Japan
+**Why it fails:** The nation answer 'Japan' is correct (Colombia beat them in 2014, lost in 2018), but the explanation's score is wrong: Colombia beat Japan 4-1 in 2014 (not 1-0), and lost 2-1 in 2018.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the explanation to 'beat Japan 4-1 in 2014 but lost 2-1 to them in 2018.'
+
+### Row 13882 — Colombia (easy) — FAIL: wrong explanation
+**Q:** At the 2018 World Cup, which Colombian player scored in every knockout match?
+**Answer:** Yerry Mina
+**Why it fails:** Colombia played only one knockout match at the 2018 World Cup (R16 v England) and scored only one knockout goal (Mina's). The explanation 'scored all three of Colombia's goals in the 2018 knockout stage' is false — Mina's three goals came across the group stage and the single R16 match.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Drop or rephrase: 'Which Colombian was their top scorer at the 2018 World Cup?' → Yerry Mina (3 goals).
+
+### Row 13894 — Colombia (easy) — FAIL: non-unique answer
+**Q:** At the 2024 Copa América, which Colombian attacker scored a goal?
+**Answer:** Luis Díaz
+**Why it fails:** Multiple listed Colombian attackers scored at the 2024 Copa América — Luis Díaz (brace v Panama) AND James Rodríguez (penalty v Panama), plus Jhon Córdoba — so 'which attacker scored a goal' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Make it unique, e.g. 'Which Colombian scored a brace in the 5-0 quarter-final v Panama?' → Luis Díaz.
+
+### Row 13903 — Colombia (medium) — FAIL: wrong tournament
+**Q:** At which Copa América did Colombian forward Carlos Bacca score important goals?
+**Answer:** 2015 Copa América
+**Why it fails:** Carlos Bacca's important Colombia goals came at the 2016 Copa América Centenario (header v Paraguay; winner v USA in the third-place match), not the 2015 Copa América, where Colombia scored only once (Murillo v Brazil).
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the answer to 2016 Copa América Centenario.
+
+### Row 13904 — Colombia (medium) — FAIL: false premise (match never occurred)
+**Q:** At which FIFA World Cup did Colombia lose 3-0 to Argentina?
+**Answer:** 2014 World Cup
+**Why it fails:** Colombia never lost 3-0 to Argentina at any World Cup — the two nations have never met at a World Cup finals (Colombia did not even play in 2010 or 2022).
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Drop — the asserted event did not happen.
+
+### Row 13914 — Colombia (medium) — FAIL: false premise (match never occurred)
+**Q:** At which World Cup did Colombia lose 3-0 to Argentina with Messi scoring?
+**Answer:** 2014 World Cup
+**Why it fails:** Colombia never lost 3-0 to Argentina at a World Cup with Messi scoring — the two nations have never met at a World Cup finals. The only Argentina 3-0 win over Colombia was a CONMEBOL qualifier on 15 Nov 2016.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Drop — the asserted World Cup match did not happen.
+
+### Row 13918 — Colombia (medium) — FAIL: wrong explanation
+**Q:** At which World Cup did Colombia's Yerry Mina score in every knockout match?
+**Answer:** 2018 World Cup
+**Why it fails:** Colombia played only one knockout match in 2018 (R16 v England); the explanation 'scored Colombia's three knockout stage goals' is false — Mina's three goals came across two group games and that single R16 match.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to 'Which World Cup saw Mina score 3 goals?' → 2018, with a correct explanation.
+
+### Row 13938 — Colombia (easy) — FAIL: false premise (no 2014 Argentina 3-0)
+**Q:** Colombia lost 3-0 to Argentina in 2014, but which 2018 opponent also beat them?
+**Answer:** England
+**Why it fails:** The premise 'Colombia lost 3-0 to Argentina in 2014' is false — that 3-0 was a CONMEBOL qualifier on 15 Nov 2016, and the two never met in 2014. The answer (England beat Colombia in 2018) is correct, but the question asserts a non-event.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Drop the false 2014 clause; ask 'Which team beat Colombia in the 2018 World Cup round of 16?' → England.
+
+### Row 13939 — Colombia (easy) — FAIL: false premise (result reversed)
+**Q:** Colombia lost the 2021 Copa América third-place match to which nation?
+**Answer:** Peru
+**Why it fails:** Colombia did not lose the 2021 Copa América third-place match — they WON it 3-2 against Peru (Luis Díaz brace, 94th-minute winner).
+**Source:** https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+**Remedy:** Rephrase to 'Which nation did Colombia beat 3-2 in the 2021 Copa América third-place match?' → Peru.
+
+### Row 13940 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Colombia lost the 2024 Copa América final to Argentina by what scoreline?
+**Answer:** 1-0
+**Why it fails:** Both the keyed '1-0' and the distractor '1-0 (AET)' describe the same correct scoreline (the 2024 final was 1-0 after extra time), so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica_final
+**Remedy:** Replace the '1-0 (AET)' distractor with a wrong scoreline (e.g. 2-1).
+
+### Row 13942 — Colombia (easy) — FAIL: false descriptor
+**Q:** Colombia lost to Brazil in the 2014 World Cup quarter-finals. Which other 2014 quarter-finalist did they beat?
+**Answer:** Uruguay
+**Why it fails:** Uruguay was not a 2014 World Cup quarter-finalist — Colombia eliminated them in the round of 16. Colombia beat no 2014 quarter-finalist (their only QF opponent, Brazil, beat them).
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Rephrase to 'Which team did Colombia beat in the 2014 round of 16?' → Uruguay.
+
+### Row 13951 — Colombia (easy) — FAIL: date-corruption answer
+**Q:** Colombia's 2018 World Cup knockout match vs England ended with what score after 90 minutes?
+**Answer:** 01-Jan
+**Why it fails:** The answer '01-Jan' is an Excel date-mangled '1-1'. The match was 1-1 after 90 minutes, but the stored answer is corrupted.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Fix the answer to '1-1' and flag for a dataset-wide date-corruption sweep.
+
+### Row 14007 — Colombia (medium) — FAIL: wrong caps figure
+**Q:** How many goals did Colombia's Radamel Falcao score in 97 international caps?
+**Answer:** 36 goals
+**Why it fails:** Falcao's 36 goals (correct) did not come 'in 97 international caps' — he earned 105 caps for Colombia. The keyed goal total is right but the appearance figure is wrong.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps, or drop the caps figure: 'How many goals did Falcao score for Colombia?' → 36.
+
+### Row 14025 — Colombia (easy) — FAIL: non-unique answer
+**Q:** In 2018 World Cup qualifiers, Colombia played at 2,640m. Which nation's stadium is lower?
+**Answer:** Brazil
+**Why it fails:** All four options (Brazil, Argentina, Chile, Peru) host home matches well below Bogotá's 2,640 m — Buenos Aires, Santiago and Lima are all low/sea-level — so 'which nation's stadium is lower' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Estadio_El_Camp%C3%ADn
+**Remedy:** Ask the inverse uniquely, e.g. 'Which CONMEBOL nation hosts qualifiers higher than Bogotá?' → Bolivia (and make Ecuador not an option).
+
+### Row 14030 — Colombia (medium) — FAIL: wrong number
+**Q:** In 2022 World Cup qualifying, Colombia finished 6th in CONMEBOL. How many points behind 4th place were they?
+**Answer:** One point
+**Why it fails:** Colombia (23 pts, 6th) finished 3 points behind 4th-placed Ecuador (26 pts), not one. They were one point behind 5th-placed Peru. The answer 'One point' is wrong for the 4th-place gap.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Either change the answer to 'Three points', or rephrase to the 5th-place/playoff gap (one point).
+
+### Row 14041 — Colombia (easy) — FAIL: non-unique answer
+**Q:** In a 2018 World Cup qualifier, Colombia won at their 2,640m high Bogotá stadium. Which other CONMEBOL nation hosts qualifiers at a higher altitude?
+**Answer:** Bolivia
+**Why it fails:** Both Bolivia (La Paz, ~3,600 m) AND Ecuador (Quito, ~2,850 m) host qualifiers higher than Bogotá's 2,640 m, and Ecuador is a listed option — so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Hernando_Siles
+**Remedy:** Replace Ecuador with a low-altitude nation so Bolivia is the only higher-altitude host.
+
+### Row 14047 — Colombia (medium) — FAIL: wrong stage (false premise)
+**Q:** In Colombia's 2018 World Cup group stage match versus England, when did Yerry Mina equalize?
+**Answer:** The 93rd minute
+**Why it fails:** Colombia did not face England in the 2018 group stage — they met in the round of 16, where Mina's 93rd-minute equaliser came. The question mislabels the match as a group-stage game.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Change 'group stage match' to 'round of 16 match'.
+
+### Row 14050 — Colombia (easy) — FAIL: non-unique answer
+**Q:** In Colombia's 2026 World Cup plans, which forward is a key option?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz (a listed option and Colombia's primary attacking threat) is also a key forward option for 2026, so 'which forward is a key option' is not unique to Jhon Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Luis_D%C3%ADaz
+**Remedy:** Make it specific, e.g. 'Which Colombian centre-forward, who plays in Russia, is a 2026 option?' → Jhon Córdoba (Krasnodar).
+
+### Row 14068 — Colombia (medium) — FAIL: wrong number (false clean sheet)
+**Q:** In their 2014 World Cup win, Colombia conceded how many goals against Japan?
+**Answer:** Zero
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) in the 2014 group stage and conceded one goal (Okazaki), so the answer 'Zero' and the explanation's '1-0 clean sheet' are both wrong.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Change the answer to 'One' and fix the score to 4-1.
+
+### Row 14071 — Colombia (medium) — FAIL: wrong start year
+**Q:** In what year did Colombia's 28-match unbeaten run under Lorenzo begin?
+**Answer:** 2023
+**Why it fails:** Colombia's 28-match unbeaten run under Lorenzo began in February 2022, not 2023 (it ran Feb 2022 – Jul 2024).
+**Source:** https://en.wikipedia.org/wiki/N%C3%A9stor_Lorenzo
+**Remedy:** Change the answer to 2022.
+
+### Row 14090 — Colombia (medium) — FAIL: false premise (result reversed)
+**Q:** In which Copa América did Colombia first lose a third-place match?
+**Answer:** 2021 Copa América
+**Why it fails:** Colombia did not lose the 2021 third-place match — they beat Peru 3-2. They have never lost a Copa América third-place match in this era (they also won the 2016 Centenario play-off).
+**Source:** https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+**Remedy:** Drop — the asserted defeat did not happen.
+
+### Row 14092 — Colombia (hard) — FAIL: false premise (result reversed)
+**Q:** In which Copa América did Colombia lose the third-place play-off?
+**Answer:** 2016 Copa América Centenario
+**Why it fails:** Colombia won the 2016 Copa América Centenario third-place play-off 1-0 over the USA (Bacca), finishing 3rd — they did not lose it.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario
+**Remedy:** Drop — Colombia won the 2016 third-place match.
+
+### Row 14094 — Colombia (medium) — FAIL: wrong explanation + non-unique
+**Q:** In which Copa América did Colombia reach the third-place match?
+**Answer:** 2021 Copa América
+**Why it fails:** Colombia reached the third-place match in BOTH 2016 and 2021 (both listed), so the answer isn't unique; and the explanation 'where they lost to Peru' is false — they beat Peru 3-2 in 2021.
+**Source:** https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+**Remedy:** Specify uniquely (e.g. 'won 3-2 over Peru') and fix the explanation.
+
+### Row 14095 — Colombia (hard) — FAIL: wrong tournament
+**Q:** In which Copa América did Colombia's Carlos Bacca score important goals?
+**Answer:** The 2015 Copa América
+**Why it fails:** Carlos Bacca's important goals came at the 2016 Copa América Centenario (v Paraguay; winner v USA), not the 2015 edition where Colombia scored only once.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the answer to the 2016 Copa América Centenario.
+
+### Row 14130 — Colombia (hard) — FAIL: wrong score
+**Q:** In which World Cup did Colombia beat Japan 1-0 in the group stage?
+**Answer:** 2014 FIFA World Cup
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) in the 2014 group stage; no World Cup featured a Colombia 1-0 win over Japan. The keyed year is right but the score is false.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the score to 4-1.
+
+### Row 14137 — Colombia (medium) — FAIL: false premise (match never occurred)
+**Q:** In which World Cup did Colombia lose 3-0 to Argentina?
+**Answer:** 2014 World Cup
+**Why it fails:** Colombia never lost 3-0 to Argentina at a World Cup — the nations have never met at a World Cup. The only Argentina 3-0 win over Colombia was a 2016 CONMEBOL qualifier.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Drop — the asserted World Cup match did not happen.
+
+### Row 14152 — Colombia (medium) — FAIL: false premise (only one knockout match)
+**Q:** In which World Cup did Colombian Yerry Mina score all three knockout goals?
+**Answer:** 2018 World Cup
+**Why it fails:** Colombia played only one knockout match in 2018 (R16 v England), so Mina could not have scored 'all three knockout goals' — his three goals came across two group games and that single R16 match.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to 'scored 3 goals at the 2018 World Cup' → 2018.
+
+### Row 14192 — Colombia (medium) — FAIL: wrong start year
+**Q:** In which year did Colombia's 28-match unbeaten run begin?
+**Answer:** 2023
+**Why it fails:** Colombia's 28-match unbeaten run began in February 2022, not 2023 (it ran Feb 2022 – Jul 2024).
+**Source:** https://en.wikipedia.org/wiki/N%C3%A9stor_Lorenzo
+**Remedy:** Change the answer to 2022.
+
+### Row 14217 — Colombia (easy) — FAIL: non-unique answer
+**Q:** What is Colombia's top domestic football league called?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** All four options name Colombia's top division: 'Categoría Primera A' is its official name and 'Liga BetPlay Dimayor' its current sponsor name (both currently valid); 'Liga Águila' and 'Liga Postobón' are former sponsor names of the same league.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors (e.g. Liga MX, MLS, Brasileirão).
+
+### Row 14228 — Colombia (medium) — FAIL: date-corruption answer
+**Q:** What was Colombia's final score after extra time against England in the 2018 World Cup?
+**Answer:** 01-Jan
+**Why it fails:** The answer '01-Jan' is an Excel-mangled '1-1'. The 2018 R16 v England was 1-1 (after extra time) before Colombia lost on penalties.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Fix the answer to '1-1' and flag for a date-corruption sweep.
+
+### Row 14232 — Colombia (easy) — FAIL: wrong score
+**Q:** What was Colombia's margin of victory over Japan at the 2014 World Cup?
+**Answer:** 1-0
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) at the 2014 World Cup; their margin was 3 goals.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Change the answer to 4-1.
+
+### Row 14237 — Colombia (easy) — FAIL: wrong score
+**Q:** What was the final score when Colombia beat Japan at the 2014 World Cup?
+**Answer:** 1-0
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) at the 2014 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Change the answer to 4-1.
+
+### Row 14241 — Colombia (easy) — FAIL: date-corruption answer
+**Q:** What was the final score when Colombia lost to England in the 2018 World Cup round of 16?
+**Answer:** 01-Jan
+**Why it fails:** The answer '01-Jan' is an Excel-mangled '1-1'. The 2018 R16 v England finished 1-1 before England won on penalties.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Fix the answer to '1-1' and flag for a date-corruption sweep.
+
+### Row 14251 — Colombia (medium) — FAIL: wrong score
+**Q:** When did Colombia beat Japan 1 - 0 at the FIFA World Cup?
+**Answer:** 2014
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) at the 2014 World Cup; no World Cup featured a 1-0 Colombia win over Japan.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the score to 4-1.
+
+### Row 14252 — Colombia (medium) — FAIL: wrong score
+**Q:** When did Colombia beat Japan 1-0 at the FIFA World Cup?
+**Answer:** 2014 World Cup
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) at the 2014 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the score to 4-1.
+
+### Row 14253 — Colombia (hard) — FAIL: wrong score
+**Q:** When did Colombia beat Japan 1-0 in a World Cup group stage?
+**Answer:** 2014
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) in the 2014 group stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the score to 4-1.
+
+### Row 14264 — Colombia (medium) — FAIL: wrong placement
+**Q:** When did Colombia finish fourth at the Copa América Centenario?
+**Answer:** 2016
+**Why it fails:** Colombia finished THIRD at the 2016 Copa América Centenario (beat the USA 1-0 in the third-place match), not fourth.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario
+**Remedy:** Change the premise to 'finish third' (the USA finished fourth).
+
+### Row 14268 — Colombia (medium) — FAIL: wrong explanation
+**Q:** When did Colombia last reach a Copa América third-place match?
+**Answer:** 2021
+**Why it fails:** The answer year 2021 is right (last third-place match), but the explanation 'where they lost to Peru' is false — Colombia won that match 3-2.
+**Source:** https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+**Remedy:** Fix the explanation: Colombia beat Peru 3-2 in the 2021 third-place match.
+
+### Row 14274 — Colombia (medium) — FAIL: false premise (result reversed)
+**Q:** When did Colombia lose the 2016 Copa América Centenario third-place play-off?
+**Answer:** 2016
+**Why it fails:** Colombia won the 2016 Copa América Centenario third-place play-off 1-0 over the USA — they did not lose it.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario
+**Remedy:** Drop — Colombia won the 2016 third-place match.
+
+### Row 14297 — Colombia (medium) — FAIL: wrong start year
+**Q:** When did Colombia's 28-match unbeaten run under Lorenzo begin?
+**Answer:** 2023
+**Why it fails:** Colombia's 28-match unbeaten run began in February 2022, not 2023.
+**Source:** https://en.wikipedia.org/wiki/N%C3%A9stor_Lorenzo
+**Remedy:** Change the answer to 2022.
+
+### Row 14310 — Colombia (medium) — FAIL: false premise (only one knockout match)
+**Q:** When did Colombia's Yerry Mina score in every knockout match?
+**Answer:** 2018 World Cup
+**Why it fails:** Colombia had only one 2018 knockout match (R16 v England); Mina could not have 'scored all three goals in the knockout rounds' — his three goals spanned two group games and the single R16 match.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to 'scored 3 goals at the 2018 World Cup' → 2018.
+
+### Row 14312 — Colombia (medium) — FAIL: false premise (only one knockout match)
+**Q:** When did Colombian defender Yerry Mina score three World Cup knockout goals?
+**Answer:** 2018
+**Why it fails:** Mina did not score 'three World Cup knockout goals in every knockout match' — Colombia played one 2018 knockout match and Mina scored once in it; his three goals included two group-stage goals.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → 2018.
+
+### Row 14353 — Colombia (easy) — FAIL: unverified/false premise (Medellín qualifier)
+**Q:** Where did Colombia host a 2014 World Cup qualifier in Medellín?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia's 2014-cycle CONMEBOL home qualifiers were played in Barranquilla (Estadio Metropolitano), their exclusive qualifier home since 2007; there is no record of a 2014 World Cup qualifier hosted at Medellín's Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Re-anchor to Barranquilla's Estadio Metropolitano, or drop the Medellín premise.
+
+### Row 14354 — Colombia (easy) — FAIL: unverified/false premise (Medellín qualifier)
+**Q:** Where did Colombia host a 2018 World Cup qualifier besides Barranquilla?
+**Answer:** Medellín
+**Why it fails:** Colombia played their 2018 CONMEBOL home qualifiers in Barranquilla, not Medellín; there is no record of a 2018 qualifier hosted 'besides Barranquilla' at Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop — the premise of a non-Barranquilla 2018 qualifier is unsupported.
+
+### Row 14381 — Colombia (easy) — FAIL: non-unique + stale explanation
+**Q:** Which 2026 World Cup Colombia player is based in Europe?
+**Answer:** Luis Díaz
+**Why it fails:** Richard Ríos (a listed option) joined Benfica in July 2025, so he is also Europe-based, making the answer non-unique. The explanation is also stale: Luis Díaz left Liverpool for Bayern Munich in July 2025.
+**Source:** https://en.wikipedia.org/wiki/Richard_R%C3%ADos
+**Remedy:** Make the European-based player unique (use South-America-based distractors) and update Díaz's club to Bayern Munich.
+
+### Row 14382 — Colombia (easy) — FAIL: false premise (match never occurred)
+**Q:** Which Argentina player scored against Colombia at the 2014 World Cup?
+**Answer:** Lionel Messi
+**Why it fails:** Argentina and Colombia never met at the 2014 World Cup (or any World Cup), so no Argentine scored against Colombia there. The 3-0 Messi-inspired win was a 2016 CONMEBOL qualifier.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2016 qualifier, or drop.
+
+### Row 14385 — Colombia (easy) — FAIL: false premise (match never occurred)
+**Q:** Which Argentina player scored in their 3-0 win over Colombia at the 2014 World Cup?
+**Answer:** Lionel Messi
+**Why it fails:** There was no Argentina 3-0 win over Colombia at the 2014 World Cup — they never met at a World Cup. The 3-0 was a 2016 CONMEBOL qualifier.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2016 qualifier, or drop.
+
+### Row 14411 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia attacker scored a goal at the 2024 Copa América?
+**Answer:** Luis Díaz
+**Why it fails:** Multiple listed players scored at the 2024 Copa América — Luis Díaz, James Rodríguez and Jhon Córdoba all scored — so 'which attacker scored' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Make it specific (e.g. brace v Panama → Luis Díaz).
+
+### Row 14412 — Colombia (medium) — FAIL: false premise + non-unique
+**Q:** Which Colombia attacker scored at the 2024 Copa América, unlike the 2014 World Cup Golden Boot winner?
+**Answer:** Luis Díaz
+**Why it fails:** The framing implies the 2014 Golden Boot winner (James Rodríguez) did not score at the 2024 Copa, but he did (penalty v Panama), so both Díaz and James scored — the answer is not unique and the premise is false.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Remove the false contrast; specify a unique feat.
+
+### Row 14413 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia attacker scored at the 2024 Copa América?
+**Answer:** Luis Díaz
+**Why it fails:** Luis Díaz, James Rodríguez and Jhon Córdoba all scored at the 2024 Copa América, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Make the scoring feat specific to one player.
+
+### Row 14421 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia defender at the 2026 World Cup provides crucial defensive experience?
+**Answer:** Yerry Mina
+**Why it fails:** Davinson Sánchez (a listed option) is also an experienced Colombia centre-back with 2018 World Cup experience, so 'which defender provides crucial defensive experience' is not unique to Mina.
+**Source:** https://en.wikipedia.org/wiki/Davinson_S%C3%A1nchez
+**Remedy:** Replace Davinson Sánchez with a non-defender or inexperienced option.
+
+### Row 14424 — Colombia (easy) — FAIL: stale club (wrong premise)
+**Q:** Which Colombia defender for the 2026 cycle provides experience at Fiorentina?
+**Answer:** Yerry Mina
+**Why it fails:** Yerry Mina is not at Fiorentina — he made only 4 appearances there before joining Cagliari in February 2024, where he remains. The 'at Fiorentina' premise is false.
+**Source:** https://en.wikipedia.org/wiki/Yerry_Mina
+**Remedy:** Update the club to Cagliari.
+
+### Row 14433 — Colombia (easy) — FAIL: false premise (only one knockout match)
+**Q:** Which Colombia defender scored all their 2018 World Cup knockout goals?
+**Answer:** Yerry Mina
+**Why it fails:** Colombia played one 2018 knockout match (R16 v England); Mina did not 'score all their 2018 knockout goals' across multiple matches — his three goals included two group-stage goals.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → Yerry Mina.
+
+### Row 14434 — Colombia (easy) — FAIL: false premise (only one knockout match)
+**Q:** Which Colombia defender scored all three of their 2018 World Cup knockout goals?
+**Answer:** Yerry Mina
+**Why it fails:** Mina did not score in 'every knockout match' of 2018 across multiple games — Colombia had a single knockout match; his three goals were mostly group-stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → Yerry Mina.
+
+### Row 14438 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia forward is a key attacking option for the 2026 World Cup?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz and Jhon Durán (both listed) are also key attacking options for 2026, so 'a key attacking option' is not unique to Jhon Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Specify the role uniquely or use non-forward distractors.
+
+### Row 14447 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia forward scored at the 2024 Copa América but not the 2022 World Cup?
+**Answer:** Luis Díaz
+**Why it fails:** Jhon Córdoba (a listed option) also scored at the 2024 Copa América, and Colombia missed the 2022 World Cup (so 'not the 2022 World Cup' distinguishes nothing) — the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Make the scoring feat specific to Luis Díaz.
+
+### Row 14448 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombia forward scored crucial goals at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Carlos Bacca's important goals came at the 2016 Copa América Centenario, not 2015 (Colombia scored only once in 2015).
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the answer to the 2016 Copa América Centenario.
+
+### Row 14449 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombia forward scored important goals at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Bacca's notable goals were at the 2016 Centenario, not the 2015 Copa América.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the answer to 2016 Copa América Centenario.
+
+### Row 14450 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombia forward scored key goals at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Bacca scored his key goals at the 2016 Centenario, not the 2015 Copa América.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the answer to 2016 Copa América Centenario.
+
+### Row 14451 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia forward was a key option in 2026 World Cup qualifiers?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz (a listed option) is also a key forward option for 2026, so the answer is not unique to Jhon Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Use non-forward distractors or specify the role uniquely.
+
+### Row 14466 — Colombia (easy) — FAIL: false premise (Colombia missed 2022 WC)
+**Q:** Which Colombia goalkeeper was first-choice at the 2022 World Cup?
+**Answer:** Camilo Vargas
+**Why it fails:** Colombia failed to qualify for the 2022 World Cup, so no goalkeeper was 'first-choice at the 2022 World Cup'. Vargas became first-choice from 2022 onwards, but Colombia did not attend the tournament.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to '2024 Copa América' or 'from 2022 onwards' rather than the 2022 World Cup.
+
+### Row 14529 — Colombia (easy) — FAIL: wrong answer (false premise)
+**Q:** Which Colombia manager's tenure ended before the 2022 World Cup qualifiers?
+**Answer:** Carlos Queiroz
+**Why it fails:** Queiroz's tenure did NOT end before the 2022 qualifiers — he managed Colombia's first four 2022 CONMEBOL qualifiers (Oct–Nov 2020) before being sacked in December 2020. The manager whose tenure ended before the qualifiers began was Pékerman (2018).
+**Source:** https://en.wikipedia.org/wiki/Carlos_Queiroz
+**Remedy:** Change the answer to José Pékerman, or rephrase.
+
+### Row 14545 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia midfielder was in their squad for the 2024 Copa América?
+**Answer:** Richard Ríos
+**Why it fails:** James Rodríguez and Jefferson Lerma (both listed) were also midfielders in Colombia's 2024 Copa América squad, so 'which midfielder was in their squad' is not unique to Ríos.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Ask for the 'emerging/debutant midfielder' → Richard Ríos.
+
+### Row 14546 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia midfielder was key at the 2024 Copa América?
+**Answer:** Jefferson Lerma
+**Why it fails:** Richard Ríos (a listed option) was also a key midfielder for Colombia at the 2024 Copa América (a breakout performer), so 'key midfielder' is not unique to Lerma.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify the role (e.g. 'defensive anchor') to make it unique.
+
+### Row 14547 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia midfielder was key in their 2024 Copa América campaign?
+**Answer:** Jefferson Lerma
+**Why it fails:** Richard Ríos (a listed option) was also a key midfielder in Colombia's 2024 Copa América campaign, so the answer is not unique to Lerma.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify a unique role.
+
+### Row 14557 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player featured in both the 2014 and 2018 FIFA World Cups?
+**Answer:** James Rodríguez
+**Why it fails:** James Rodríguez, Juan Cuadrado AND David Ospina (all listed) featured in both the 2014 and 2018 World Cups, so the answer is not unique (only Falcao, who missed 2014, is the odd one out).
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Make the distractors players who did not appear in both tournaments.
+
+### Row 14558 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player featured in both their 2014 quarter-final and 2018 round of 16 exit?
+**Answer:** Juan Cuadrado
+**Why it fails:** James Rodríguez and Carlos Sánchez (both listed) also played in both the 2014 QF and the 2018 R16, so the answer is not unique to Cuadrado.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Use distractors who featured in only one of the two tournaments.
+
+### Row 14559 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player featured in their 2014 World Cup quarter-final run?
+**Answer:** Juan Cuadrado
+**Why it fails:** Carlos Sánchez and James Rodríguez (both listed) also featured in Colombia's 2014 World Cup run, so the answer is not unique to Cuadrado.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Use a player who missed 2014 (e.g. Yerry Mina, who debuted in 2016) as the only correct/incorrect distinction.
+
+### Row 14561 — Colombia (easy) — FAIL: non-unique + stale explanation
+**Q:** Which Colombia player for 2026 World Cup qualifying plays in Europe?
+**Answer:** Luis Díaz
+**Why it fails:** Richard Ríos (a listed option) joined Benfica in July 2025, so he is also Europe-based — the answer is not unique. The explanation also wrongly says Díaz plays for Liverpool; he joined Bayern Munich in July 2025.
+**Source:** https://en.wikipedia.org/wiki/Richard_R%C3%ADos
+**Remedy:** Use only South-America-based distractors and update Díaz's club to Bayern.
+
+### Row 14563 — Colombia (easy) — FAIL: stale fact (no longer EPL)
+**Q:** Which Colombia player for the 2026 cycle is based in the English Premier League?
+**Answer:** Luis Díaz
+**Why it fails:** Luis Díaz is no longer in the English Premier League — he transferred from Liverpool to Bayern Munich (Bundesliga) in July 2025, so 'based in the English Premier League' is false.
+**Source:** https://en.wikipedia.org/wiki/Luis_D%C3%ADaz
+**Remedy:** Update to Bayern Munich/Bundesliga, or use Daniel Muñoz (Crystal Palace) for an EPL answer.
+
+### Row 14564 — Colombia (easy) — FAIL: stale fact (no longer in England)
+**Q:** Which Colombia player for the 2026 World Cup is based in England?
+**Answer:** Luis Díaz
+**Why it fails:** Luis Díaz is based in Germany (Bayern Munich) since July 2025, not England, so the answer and the 'Liverpool' explanation are out of date.
+**Source:** https://en.wikipedia.org/wiki/Luis_D%C3%ADaz
+**Remedy:** Update to Bayern Munich, or pick an England-based Colombian (e.g. Daniel Muñoz).
+
+### Row 14569 — Colombia (easy) — FAIL: wrong caps figure
+**Q:** Which Colombia player had 36 goals in 97 caps?
+**Answer:** Radamel Falcao
+**Why it fails:** Falcao scored 36 goals (correct) but in 105 caps, not 97; the appearance figure is wrong.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps, or drop the caps figure.
+
+### Row 14570 — Colombia (easy) — FAIL: wrong caps figure
+**Q:** Which Colombia player has scored 36 goals in 97 caps?
+**Answer:** Radamel Falcao
+**Why it fails:** Falcao's 36 goals came in 105 caps, not 97.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps, or remove the caps detail.
+
+### Row 14604 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player scored a goal at the 2024 Copa América?
+**Answer:** Luis Díaz
+**Why it fails:** James Rodríguez (a listed option) also scored at the 2024 Copa América, so 'which player scored' is not unique to Luis Díaz.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify a unique scoring feat.
+
+### Row 14612 — Colombia (easy) — FAIL: false premise (only one knockout match)
+**Q:** Which Colombia player scored all their 2018 World Cup knockout goals?
+**Answer:** Yerry Mina
+**Why it fails:** Colombia had one 2018 knockout match (R16 v England); Mina did not score 'all their knockout goals' across multiple games — his three goals were mostly group-stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → Yerry Mina.
+
+### Row 14613 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombia player scored at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Carlos Bacca's notable goals came at the 2016 Copa América Centenario, not the 2015 Copa América.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the tournament to the 2016 Centenario.
+
+### Row 14614 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player scored at the 2024 Copa América?
+**Answer:** Luis Díaz
+**Why it fails:** James Rodríguez and Jhon Córdoba (both listed) also scored at the 2024 Copa América, so the answer is not unique to Luis Díaz.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify a unique scoring feat.
+
+### Row 14615 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombia player scored important goals at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Bacca's important goals were at the 2016 Centenario, not the 2015 Copa América.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the tournament to the 2016 Centenario.
+
+### Row 14616 — Colombia (easy) — FAIL: false premise (only one knockout match)
+**Q:** Which Colombia player scored in every 2018 World Cup knockout match?
+**Answer:** Yerry Mina
+**Why it fails:** Colombia played one 2018 knockout match, so Mina could not 'score in every knockout match' across multiple games; his three goals were mostly group-stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → Yerry Mina.
+
+### Row 14618 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player scored key goals in 2014 and 2018 World Cup qualifiers?
+**Answer:** James Rodríguez
+**Why it fails:** Radamel Falcao (a listed option) was Colombia's leading scorer in the 2014/2018 qualifying campaigns, so 'scored key goals in qualifying' is not unique to James.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Use distractors who were not prolific qualifying scorers.
+
+### Row 14619 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player scored key goals in 2018 World Cup qualifying?
+**Answer:** James Rodríguez
+**Why it fails:** Radamel Falcao (a listed option) was Colombia's top scorer in 2018 qualifying, so the answer is not unique to James.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Use non-scorer distractors.
+
+### Row 14628 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player was a key scorer in their 2014 and 2018 World Cup qualifying campaigns?
+**Answer:** James Rodríguez
+**Why it fails:** Radamel Falcao (a listed option) was a key/leading scorer in Colombia's 2014 and 2018 qualifying campaigns, so the answer is not unique to James.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Use non-scorer distractors.
+
+### Row 14629 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombia player was a key scorer in their 2014 World Cup qualifying?
+**Answer:** James Rodríguez
+**Why it fails:** Radamel Falcao (a listed option) was Colombia's leading scorer in 2014 qualifying, so 'key scorer in 2014 qualifying' is not unique to James.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Use non-scorer distractors.
+
+### Row 14701 — Colombia (easy) — FAIL: false premise (Medellín 2022 qualifier)
+**Q:** Which Colombia stadium hosted a 2022 World Cup qualifier due to its location in Medellín?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia played their 2022 CONMEBOL home qualifiers in Barranquilla, not Medellín — there is no record of a 2022 qualifier hosted at the Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Re-anchor to Barranquilla's Estadio Metropolitano, or drop the Medellín premise.
+
+### Row 14715 — Colombia (easy) — FAIL: wrong caps figure
+**Q:** Which Colombia striker had 36 goals in 97 caps before the 2018 World Cup?
+**Answer:** Radamel Falcao
+**Why it fails:** Falcao's 36 goals came in 105 caps, not 97.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps or drop the caps figure.
+
+### Row 14735 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian attacker scored at the 2024 Copa América?
+**Answer:** Luis Díaz
+**Why it fails:** James Rodríguez and Jhon Córdoba (both listed) also scored at the 2024 Copa América, so the answer is not unique to Luis Díaz.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify a unique scoring feat.
+
+### Row 14748 — Colombia (easy) — FAIL: false premise (Medellín 2018 qualifier)
+**Q:** Which Colombian city's stadium hosted a 2018 World Cup qualifier?
+**Answer:** Medellín
+**Why it fails:** Colombia played their 2018 CONMEBOL home qualifiers in Barranquilla, not Medellín; there is no record of a 2018 qualifier hosted at the Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Re-anchor to Barranquilla, or drop the Medellín premise.
+
+### Row 14764 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian defender brings experience to the 2026 World Cup squad?
+**Answer:** Yerry Mina
+**Why it fails:** Davinson Sánchez (a listed option) is also an experienced Colombia centre-back, so 'which defender brings experience' is not unique to Mina.
+**Source:** https://en.wikipedia.org/wiki/Davinson_S%C3%A1nchez
+**Remedy:** Replace Davinson Sánchez with a non-defender or uncapped option.
+
+### Row 14768 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian defender from the 2026 squad provides World Cup experience?
+**Answer:** Yerry Mina
+**Why it fails:** Davinson Sánchez (a listed option) is also an experienced Colombia defender with World Cup experience, so the answer is not unique to Mina.
+**Source:** https://en.wikipedia.org/wiki/Davinson_S%C3%A1nchez
+**Remedy:** Use uncapped/younger defenders as distractors.
+
+### Row 14775 — Colombia (easy) — FAIL: false premise (only one knockout match)
+**Q:** Which Colombian defender scored in every 2018 World Cup knockout match?
+**Answer:** Yerry Mina
+**Why it fails:** Colombia had one 2018 knockout match (R16 v England); Mina did not 'score in every knockout match' across multiple games — his three goals were mostly group-stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → Yerry Mina.
+
+### Row 14779 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian domestic league is the nation's top division?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** All four options name Colombia's top division: Categoría Primera A is its official name and Liga BetPlay Dimayor / Liga Águila / Liga Postobón are successive sponsor names of the same competition.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14780 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian domestic league produces players for their 2022 World Cup team?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Liga Águila, Categoría Primera A and Copa Mustang are all names/sponsor names of the same Colombian top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use foreign leagues as distractors.
+
+### Row 14781 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian domestic league supplied players for their 2018 World Cup qualifiers?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Liga Postobón, Categoría Primera A and Liga Águila are all names of the same top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14782 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian domestic league supplies players for World Cup squads?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Liga Águila, Liga Postobón and Categoría Primera all name the same Colombian top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14786 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian forward became key for the 2026 World Cup cycle?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz (a listed option) is also a key forward for the 2026 cycle, so the answer is not unique to Jhon Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Use non-forward distractors.
+
+### Row 14787 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian forward is a key attacking option for the 2026 World Cup cycle?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz (a listed option) is also a key attacking option for 2026, so the answer is not unique to Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Use non-forward distractors.
+
+### Row 14793 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian forward is key for the 2026 World Cup cycle?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz (a listed option) is also a key forward for 2026, so the answer is not unique to Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Use non-forward distractors.
+
+### Row 14796 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombian forward scored at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Carlos Bacca's notable goals came at the 2016 Copa América Centenario, not the 2015 Copa América.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the tournament to the 2016 Centenario.
+
+### Row 14797 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombian forward scored important goals at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Bacca's important goals were at the 2016 Centenario, not 2015.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the tournament to the 2016 Centenario.
+
+### Row 14810 — Colombia (easy) — FAIL: false premise (Colombia missed 2022 WC)
+**Q:** Which Colombian goalkeeper was first-choice at the 2022 World Cup?
+**Answer:** Camilo Vargas
+**Why it fails:** Colombia failed to qualify for the 2022 World Cup, so no keeper was 'first-choice at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Re-anchor to 'from 2022 onwards' or the 2024 Copa América.
+
+### Row 14819 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian league was the nation's top domestic competition during the 2022 World Cup?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Copa Mustang, Categoría Primera A and Liga Águila are all names of the same Colombian top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use foreign leagues as distractors.
+
+### Row 14820 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian league's clubs supply players for World Cup qualifiers?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Liga Águila, Liga Postobón and Copa Mustang all name the same top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14821 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian league's development nurtured players for the 2014 World Cup?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Liga Águila, Copa Mustang and Primera A all name the same top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14822 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian league's players qualify for the 2026 FIFA World Cup?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Liga Postobón, Categoría Primera A and Copa Mustang all name the same top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14823 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian league's players were selected for the 2022 World Cup qualifiers?
+**Answer:** Liga BetPlay Dimayor
+**Why it fails:** Copa Mustang, Primera A and Categoría Primera all name the same top division as Liga BetPlay Dimayor.
+**Source:** https://en.wikipedia.org/wiki/Categor%C3%ADa_Primera_A
+**Remedy:** Use unrelated leagues as distractors.
+
+### Row 14846 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian midfielder played at the 2024 Copa América?
+**Answer:** Richard Ríos
+**Why it fails:** James Rodríguez and Jefferson Lerma (both listed) were also midfielders for Colombia at the 2024 Copa América, so the answer is not unique to Ríos.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Ask for the emerging/debutant midfielder → Ríos.
+
+### Row 14848 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian midfielder was a key part of their 2024 Copa América squad?
+**Answer:** Jefferson Lerma
+**Why it fails:** Richard Ríos (a listed option) was also a key midfielder in Colombia's 2024 Copa América squad, so the answer is not unique to Lerma.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify a unique role.
+
+### Row 14850 — Colombia (easy) — FAIL: non-unique / wrong premise
+**Q:** Which Colombian midfielder was a key starter at the 2024 Copa América, but not at the 2021 edition?
+**Answer:** Jefferson Lerma
+**Why it fails:** Richard Ríos (a listed option) unambiguously fits 'key at 2024 but not at 2021' (he debuted in 2024), so the answer is not unique to Lerma — who was also in Colombia's 2021 Copa squad.
+**Source:** https://en.wikipedia.org/wiki/Richard_R%C3%ADos
+**Remedy:** Make Richard Ríos the keyed answer, or specify a unique trait.
+
+### Row 14858 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian player appeared at both the 2014 and 2018 FIFA World Cups?
+**Answer:** James Rodríguez
+**Why it fails:** Juan Cuadrado and David Ospina (both listed) also appeared at both the 2014 and 2018 World Cups, so the answer is not unique to James (only Falcao, who missed 2014, is the odd one out).
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Use distractors who appeared in only one of the two tournaments.
+
+### Row 14861 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian player did NOT set a Copa América assists record in 2024?
+**Answer:** Juan Cuadrado
+**Why it fails:** Three of the four options (Cuadrado, Luis Díaz, Falcao) did NOT set the 2024 assist record (only James did), so 'which did NOT' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Reframe positively: 'Who set the 2024 Copa América assist record?' → James Rodríguez.
+
+### Row 14863 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian player featured at both the 2014 and 2018 World Cups?
+**Answer:** Juan Cuadrado
+**Why it fails:** James Rodríguez and Carlos Sánchez (both listed) also featured at both the 2014 and 2018 World Cups, so the answer is not unique to Cuadrado.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Use a player (e.g. Yerry Mina) who appeared at only one tournament for contrast.
+
+### Row 14864 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian player for 2026 World Cup qualifying is based in Europe?
+**Answer:** Daniel Muñoz
+**Why it fails:** Richard Ríos (Benfica) is also Europe-based, and Jhon Córdoba plays in Russia, so 'based in Europe' is not unique to Daniel Muñoz.
+**Source:** https://en.wikipedia.org/wiki/Richard_R%C3%ADos
+**Remedy:** Use only South-America-based distractors.
+
+### Row 14867 — Colombia (easy) — FAIL: wrong caps figure
+**Q:** Which Colombian player had 36 goals in 97 caps?
+**Answer:** Radamel Falcao
+**Why it fails:** Falcao's 36 goals came in 105 caps, not 97.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps, or drop the caps figure.
+
+### Row 14871 — Colombia (easy) — FAIL: wrong caps figure
+**Q:** Which Colombian player has scored 36 goals in 97 caps?
+**Answer:** Radamel Falcao
+**Why it fails:** The premise '36 goals in 97 caps' is wrong — Falcao's 36 goals came in 105 caps.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps, or drop the caps figure.
+
+### Row 14902 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian player scored at the 2024 Copa América?
+**Answer:** Luis Díaz
+**Why it fails:** Jhon Córdoba and Jefferson Lerma (both listed) also scored at the 2024 Copa América (Lerma scored the semi-final winner v Uruguay), so the answer is not unique to Luis Díaz.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Specify a unique scoring feat.
+
+### Row 14903 — Colombia (easy) — FAIL: false premise (only one knockout match)
+**Q:** Which Colombian player scored in every 2018 World Cup knockout match?
+**Answer:** Yerry Mina
+**Why it fails:** Colombia had one 2018 knockout match (R16 v England), so Mina did not 'score in every knockout match' across multiple games; his three goals were mostly group-stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2018_FIFA_World_Cup
+**Remedy:** Rephrase to '3 goals at the 2018 World Cup' → Yerry Mina.
+
+### Row 14904 — Colombia (easy) — FAIL: wrong tournament
+**Q:** Which Colombian player scored key goals at the 2015 Copa América?
+**Answer:** Carlos Bacca
+**Why it fails:** Carlos Bacca's important goals came at the 2016 Copa América Centenario, not the 2015 edition.
+**Source:** https://en.wikipedia.org/wiki/Carlos_Bacca
+**Remedy:** Change the tournament to the 2016 Centenario.
+
+### Row 14916 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian player was a key figure at the 2014 World Cup?
+**Answer:** Juan Cuadrado
+**Why it fails:** James Rodríguez (a listed option and the 2014 Golden Boot winner) was unquestionably a key figure at the 2014 World Cup, so 'a key figure' is not unique to Cuadrado.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Specify a unique role/feat.
+
+### Row 14919 — Colombia (medium) — FAIL: non-unique answer
+**Q:** Which Colombian player was a key scorer during their 2014 World Cup qualification?
+**Answer:** James Rodríguez
+**Why it fails:** Radamel Falcao (a listed option) was Colombia's leading scorer in the 2014 qualifying campaign, so 'key scorer in 2014 qualification' is not unique to James.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Use non-scorer distractors.
+
+### Row 15002 — Colombia (easy) — FAIL: wrong premise (debut year)
+**Q:** Which Colombian right-back debuted at the 2024 Copa América?
+**Answer:** Daniel Muñoz
+**Why it fails:** Daniel Muñoz did not debut at the 2024 Copa América — he had been a Colombia international since 2021 (he played the 2021 Copa). The 'debuted' premise is false.
+**Source:** https://en.wikipedia.org/wiki/Daniel_Mu%C3%B1oz
+**Remedy:** Rephrase to 'was the key right-back at the 2024 Copa América' → Daniel Muñoz.
+
+### Row 15019 — Colombia (easy) — FAIL: wrong caps figure / false premise
+**Q:** Which Colombian scorer reached 97 caps by the 2024 Copa América?
+**Answer:** Radamel Falcao
+**Why it fails:** Falcao's 36 goals came in 105 caps, not 97, and he had retired from the national team before the 2024 Copa América (he did not 'reach 97 caps by' it).
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Drop the caps/2024 framing; Falcao is the all-time scorer with 36 goals in 105 caps.
+
+### Row 15031 — Colombia (easy) — FAIL: false premise (Medellín 2014 qualifier)
+**Q:** Which Colombian stadium hosted a 2014 World Cup qualifier before Estadio Metropolitano?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia's 2014-cycle home qualifiers were played at Barranquilla's Estadio Metropolitano, already their established home; there is no record of a 2014 qualifier at Medellín's Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop the Medellín premise.
+
+### Row 15032 — Colombia (easy) — FAIL: false premise (Medellín 2014 qualifier)
+**Q:** Which Colombian stadium hosted a 2014 World Cup qualifier?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia played their 2014 home qualifiers in Barranquilla, not Medellín; no 2014 qualifier was hosted at the Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Re-anchor to Barranquilla, or drop.
+
+### Row 15033 — Colombia (easy) — FAIL: false premise (Medellín 2018 qualifier)
+**Q:** Which Colombian stadium hosted a 2018 World Cup qualifier besides Estadio Metropolitano?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia's 2018 home qualifiers were in Barranquilla; there is no record of a 2018 qualifier hosted at Medellín's Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop the Medellín premise.
+
+### Row 15041 — Colombia (easy) — FAIL: false premise (Medellín 2018 qualifier)
+**Q:** Which Colombian stadium in Medellín hosted a 2018 World Cup qualifier?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia's 2018 home qualifiers were in Barranquilla, not Medellín; there is no record of a 2018 qualifier at the Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop the 2018-Medellín premise.
+
+### Row 15042 — Colombia (easy) — FAIL: false premise (Medellín 2022 qualifier)
+**Q:** Which Colombian stadium in Medellín hosted a 2022 World Cup qualifier?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia's 2022 home qualifiers were in Barranquilla, not Medellín; no 2022 qualifier was hosted at the Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop the 2022-Medellín premise.
+
+### Row 15058 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian star missed the 2010 World Cup but played in 2014 and 2018?
+**Answer:** James Rodríguez
+**Why it fails:** Juan Cuadrado and David Ospina (both listed) also missed 2010 (Colombia didn't qualify) and played 2014 and 2018, so the criterion is not unique to James (only Falcao, who missed 2014, is excluded).
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Use distractors who didn't play both 2014 and 2018.
+
+### Row 15063 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which Colombian star was a key scorer in both the 2014 and 2018 World Cup qualifiers?
+**Answer:** James Rodríguez
+**Why it fails:** Radamel Falcao (a listed option) was also a key scorer in the 2014/2018 qualifying campaigns, so the answer is not unique to James.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Use non-scorer distractors.
+
+### Row 15086 — Colombia (easy) — FAIL: wrong caps figure
+**Q:** Which Colombian striker, with 36 goals in 97 caps, missed the 2014 World Cup?
+**Answer:** Radamel Falcao
+**Why it fails:** Falcao's 36 goals came in 105 caps, not 97.
+**Source:** https://en.wikipedia.org/wiki/Radamel_Falcao
+**Remedy:** Change to 105 caps, or drop the caps figure.
+
+### Row 15200 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL nation's capital stadium is at a higher altitude than Colombia's Bogotá venue?
+**Answer:** Bolivia
+**Why it fails:** Ecuador's capital stadium (Quito, ~2,850 m) is also higher than Bogotá's El Campín (2,640 m), so both Bolivia and Ecuador are correct.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Ol%C3%ADmpico_Atahualpa
+**Remedy:** Replace Ecuador with a low-altitude nation.
+
+### Row 15201 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which CONMEBOL nation's capital stadium, like Colombia's Bogotá, is above 2,500m?
+**Answer:** Bolivia
+**Why it fails:** Ecuador's capital stadium (Quito, ~2,850 m) is also above 2,500 m, so both Bolivia and Ecuador satisfy the criterion.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Ol%C3%ADmpico_Atahualpa
+**Remedy:** Replace Ecuador with a low-altitude nation.
+
+### Row 15210 — Colombia (easy) — FAIL: false premise (result reversed)
+**Q:** Which CONMEBOL rival beat Colombia in the 2021 Copa América third-place match?
+**Answer:** Peru
+**Why it fails:** Colombia won the 2021 Copa América third-place match 3-2 over Peru — they did not lose it.
+**Source:** https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+**Remedy:** Rephrase to 'Which nation did Colombia beat 3-2 in the 2021 third-place match?' → Peru.
+
+### Row 15219 — Colombia (easy) — FAIL: false premise (result reversed)
+**Q:** Which CONMEBOL team did Colombia lose to in the 2021 Copa América third-place match?
+**Answer:** Peru
+**Why it fails:** Colombia beat Peru 3-2 in the 2021 Copa América third-place match — they did not lose to them.
+**Source:** https://en.wikipedia.org/wiki/2021_Copa_Am%C3%A9rica
+**Remedy:** Rephrase to a win over Peru.
+
+### Row 15259 — Colombia (easy) — FAIL: stale club (wrong premise)
+**Q:** Which experienced Colombian defender for 2026 plays for Fiorentina?
+**Answer:** Yerry Mina
+**Why it fails:** Yerry Mina does not play for Fiorentina — he joined Cagliari in February 2024 after only 4 Fiorentina appearances and remains there.
+**Source:** https://en.wikipedia.org/wiki/Yerry_Mina
+**Remedy:** Update the club to Cagliari.
+
+### Row 15260 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which experienced Colombian defender is key for the 2026 World Cup cycle?
+**Answer:** Yerry Mina
+**Why it fails:** Davinson Sánchez (a listed option) is also an experienced Colombia centre-back, so 'experienced defender' is not unique to Mina.
+**Source:** https://en.wikipedia.org/wiki/Davinson_S%C3%A1nchez
+**Remedy:** Use uncapped/younger defenders as distractors.
+
+### Row 15262 — Colombia (easy) — FAIL: non-unique answer
+**Q:** Which forward is a key attacking option for Colombia's 2026 World Cup squad?
+**Answer:** Jhon Córdoba
+**Why it fails:** Luis Díaz (a listed option) is also a key attacking option for 2026, so the answer is not unique to Jhon Córdoba.
+**Source:** https://en.wikipedia.org/wiki/Colombia_national_football_team
+**Remedy:** Use non-forward distractors.
+
+### Row 15400 — Colombia (easy) — FAIL: false premise (Medellín 2018 qualifier)
+**Q:** Which stadium in Medellín hosted Colombia's 2018 World Cup qualifiers?
+**Answer:** Estadio Atanasio Girardot
+**Why it fails:** Colombia's 2018 home qualifiers were in Barranquilla, not Medellín; there is no record of a 2018 qualifier at the Atanasio Girardot.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop the 2018-Medellín premise.
+
+### Row 15410 — Colombia (easy) — FAIL: false premise (result reversed)
+**Q:** Which team beat Colombia in the 2016 Copa América third-place play-off?
+**Answer:** United States
+**Why it fails:** Colombia WON the 2016 Copa América Centenario third-place match 1-0 over the USA — the USA did not beat them.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica_Centenario
+**Remedy:** Rephrase to 'Which team did Colombia beat in the 2016 third-place match?' → United States.
+
+### Row 15416 — Colombia (easy) — FAIL: wrong score
+**Q:** Which team did Colombia beat 1-0 at the 2014 World Cup?
+**Answer:** Japan
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) at the 2014 World Cup; no 2014 group win was 1-0.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the score to 4-1.
+
+### Row 15424 — Colombia (medium) — FAIL: wrong score
+**Q:** Which team did Colombia defeat 1-0 in the 2014 World Cup group stage?
+**Answer:** Japan
+**Why it fails:** Colombia beat Japan 4-1 (not 1-0) in the 2014 group stage.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the score to 4-1.
+
+### Row 15460 — Colombia (easy) — FAIL: false premise (match never occurred)
+**Q:** Which two nations beat Colombia in the 2014 World Cup?
+**Answer:** Brazil and Argentina
+**Why it fails:** Colombia did not lose to Argentina at the 2014 World Cup — they never met there. Colombia's only 2014 defeat was 2-1 to Brazil; they won all three group games. The '3-0 to Argentina' is a fabricated event.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Only Brazil beat Colombia at 2014; drop Argentina.
+
+### Row 15467 — Colombia (hard) — FAIL: wrong score in explanation
+**Q:** Which World Cup did Colombia beat Japan in the group stage?
+**Answer:** 2014 World Cup
+**Why it fails:** The year (2014) is right, but the explanation's score is wrong: Colombia beat Japan 4-1, not 1-0.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_2014_FIFA_World_Cup
+**Remedy:** Correct the explanation to 4-1.
+
+### Row 15484 — Colombia (medium) — FAIL: false premise (match never occurred)
+**Q:** Which year did Colombia lose 3-0 to Argentina at the World Cup, but beat them in the 2019 Copa América?
+**Answer:** 2014
+**Why it fails:** Colombia never lost 3-0 to Argentina at any World Cup — they never met at a World Cup. The 2-0 win over Argentina in the 2019 Copa is real, but the World Cup loss is fabricated (the 3-0 was a 2016 qualifier).
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Drop the false World Cup clause.
+
+### Row 15499 — Colombia (easy) — FAIL: false premise (match never occurred)
+**Q:** Who scored for Argentina in their 2014 World Cup win over Colombia?
+**Answer:** Lionel Messi
+**Why it fails:** Argentina and Colombia never met at the 2014 World Cup, so Messi did not score against Colombia there. The Messi-inspired 3-0 was a 2016 CONMEBOL qualifier.
+**Source:** https://en.wikipedia.org/wiki/Colombia_at_the_FIFA_World_Cup
+**Remedy:** Re-anchor to the 2016 qualifier, or drop.
+
+### Row 15509 — Colombia (easy) — FAIL: false premise (Medellín 2018 qualifier)
+**Q:** Why did Colombia host a 2018 World Cup qualifier at Estadio Atanasio Girardot?
+**Answer:** It hosts Colombia matches.
+**Why it fails:** Colombia's 2018 home qualifiers were in Barranquilla, not Medellín; the premise that a 2018 qualifier was hosted at the Atanasio Girardot is unsupported.
+**Source:** https://en.wikipedia.org/wiki/Estadio_Metropolitano_Roberto_Mel%C3%A9ndez
+**Remedy:** Drop the Medellín premise.
