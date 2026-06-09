@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **3594** (new method 231+, 29 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117)
+Total failed-liveness-passed-others so far: **3805** (new method 231+, 32 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Jamaica 43 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117 · New Zealand 166 · Nigeria 2)
 
 ---
 
@@ -21817,3 +21817,179 @@ Recurring Iraq defect clusters (112 fails of 537 QA_PASSED candidates):
 **Why it fails:** False premise: the Netherlands reached 1st in 2011 (not 3rd) — that was their highest-ever ranking.
 **Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
 **Remedy:** They reached 1st in 2011.
+---
+
+# ✅ JAMAICA (rows 34328–34953) — TC-06 liveness fails
+
+**Web-verified fact anchors:** Jamaica **did NOT qualify for the 2026 World Cup** — they finished runner-up in CONCACAF Group B (Curaçao won it, 0-0 vs Jamaica, 18 Nov 2025), advanced to the **March 2026 intercontinental playoff, and lost the final 1-0 (aet) to DR Congo**. So every "Jamaica qualified for 2026" claim is false. Their two Gold Cup finals had **different coaches**: Winfried Schäfer (2015, lost 3-1 to Mexico) and Theodore Whitmore (2017, lost 2-1 to USA). Steve McClaren coached the **2026** qualifying campaign (from 2024), not the 2022 qualifiers. Both **Michail Antonio** (2021) and **Demarai Gray** (26 England U21 caps, switched 2023) moved from England to Jamaica.
+
+## Jamaica batch rows 34328–34650 — 27 FAIL
+
+### Rows 34361, 34362, 34363, 34364, 34365, 34409, 34423, 34466, 34467, 34468, 34469, 34546 — FAIL: false 2026 World Cup qualification
+- Each states Jamaica **qualified for the 2026 World Cup** (most say "directly via CONCACAF"). Jamaica did **not** qualify: they lost the intercontinental playoff final 1-0 (aet) to DR Congo in March 2026 (and even the route is wrong — they reached the playoff as a runner-up, not a direct CONCACAF qualifier). 34546 ("which CONCACAF team qualified for 2026 like Jamaica? → Jamaica") is also self-referential.
+**Source:** https://www.concacaf.com/competitions/fifa-world-cup/news/jamaica-ends-world-cup-aspirations-with-loss-to-dr-congo
+**Remedy:** Remove all claims that Jamaica reached the 2026 World Cup; their last (and only) appearance remains 1998.
+
+### Rows 34556, 34586, 34649 — FAIL: wrong coach (no single coach led both Gold Cup finals)
+- 34556/34586 credit **Winfried Schäfer** with "consecutive 2015 and 2017" finals — Schäfer coached only **2015**. 34649 credits **Theodore Whitmore** with the consecutive finals — Whitmore coached only **2017**.
+**Source:** https://en.wikipedia.org/wiki/Theodore_Whitmore
+**Remedy:** Attribute 2015 to Schäfer and 2017 to Whitmore, or reword to a single year.
+
+### Row 34552 — FAIL: wrong coach/era (Steve McClaren did not coach the 2022 qualifiers)
+- "Which European country's ex-manager coached Jamaica for the **2022 qualifiers**? → England (Steve McLaren)." Steve McClaren became Jamaica's coach in **2024** (for the 2026 cycle); the 2022 qualifiers were under Theodore Whitmore.
+**Source:** https://jamaica-gleaner.com/article/news/20251108/rico-henry-earns-first-reggae-boyz-call-mcclaren-names-26-man-squad-final
+**Remedy:** Re-anchor McClaren to the 2026 cycle, or name the actual 2022 coach.
+
+### Row 34589 — FAIL: wrong manager + false qualification
+- "Which manager oversaw Jamaica's **2026 World Cup qualification**? → Heimir Hallgrímsson." Hallgrímsson left for Ireland in 2024; **Steve McClaren** led the 2026 campaign — and Jamaica did **not** qualify.
+**Source:** https://en.wikipedia.org/wiki/Jamaica_national_football_team
+**Remedy:** Remove the false qualification; the 2026 campaign was led by McClaren.
+
+### Rows 34554, 34564, 34566, 34567, 34570, 34602 — FAIL: non-unique answer (Demarai Gray also switched from England)
+- Each asks which Jamaica player previously played for/switched from England (at youth level) and answers **Michail Antonio**, but **Demarai Gray** (an option) is a genuine England youth international (26 U21 caps) who switched to Jamaica in 2023. 34554's explanation even claims "**only** Michail Antonio" — false. (Rows pinned to the **2022 qualifiers / a 2021 debut** PASS, since Gray did not switch until 2023; and Antonio's actual England link was a senior call-up / England C, not youth.)
+**Source:** https://en.wikipedia.org/wiki/Demarai_Gray
+**Remedy:** Remove Gray from the options, or pin the question to 2021/2022.
+
+### Rows 34391, 34393, 34394 — FAIL: Excel date-mangled scoreline
+- Corrupt date-formatted answers: "03-Jan" = 3-1 (the 2015 Gold Cup final loss to Mexico, 34391) and "02-Jan" = 2-1 (the 2017 final loss to the USA, 34393/34394). The scores are correct; the rendered strings are corrupt.
+**Source:** https://en.wikipedia.org/wiki/Jamaica_national_football_team
+**Remedy:** Store scorelines as text.
+
+### Row 34334 — FAIL: false premise (no World Cup fell between the 2015 and 2017 finals)
+- "Which World Cup year fell **between** Jamaica's consecutive Gold Cup finals (2015 and 2017)? → 2018." 2018 is **after** the 2017 final, not between the finals; no World Cup falls between 2015 and 2017.
+**Source:** https://en.wikipedia.org/wiki/2015_CONCACAF_Gold_Cup
+**Remedy:** Reword; the premise has no valid answer.
+
+## Jamaica batch rows 34651–34953 — 16 FAIL
+
+### Rows 34671, 34681, 34685, 34687, 34688, 34689, 34690, 34698, 34699, 34763, 34765, 34817, 34818 — FAIL: non-unique answer (Demarai Gray also switched from England)
+- Each asks which Jamaica player previously played for / switched from England (youth) and answers **Michail Antonio**, with **Demarai Gray** offered as a distractor. Gray was an England U21 international (26 caps) who switched to Jamaica in **June 2023**, so for any non-2022-pinned context (2023, 2026, or undated), both fit. (Antonio's actual England link was a senior call-up / England C rather than the youth teams; rows pinned to the **2022 qualifiers / 2021 debut**, or that specify "**West Ham**", PASS, since Gray had not yet switched / is not at West Ham.)
+**Source:** https://en.wikipedia.org/wiki/Demarai_Gray
+**Remedy:** Remove Gray from the options or pin the question to 2021/2022.
+
+### Rows 34861, 34921, 34937 — FAIL: false 2026 World Cup qualification
+- 34861 ("which manager secured Jamaica's 2026 World Cup qualification? → Heimir Hallgrímsson"), 34921 ("which year did Jamaica qualify for 2026? → 2026, first in 28 years") and 34937 ("why did Jamaica qualify for 2026? → CONCACAF qualification path") all assert Jamaica reached the 2026 World Cup. Jamaica **lost the intercontinental playoff final to DR Congo** and did not qualify; 34861 also misnames the coach (Hallgrímsson left in 2024; Steve McClaren led the 2026 campaign).
+**Source:** https://www.concacaf.com/competitions/fifa-world-cup/news/jamaica-ends-world-cup-aspirations-with-loss-to-dr-congo
+**Remedy:** Remove the false 2026 qualification claims.
+
+## New Zealand batch rows 41274–42086 — 166 FAIL
+
+### Rows 41331, 41334, 41402, 41438, 41439, 41490, 41491, 41492, 41602, 41879, 42023, 42025, 42032, 42068 — FAIL: 2026 qualification was DIRECT — there was no intercontinental playoff
+- New Zealand qualified for the 2026 World Cup by **winning the OFC final 3-0 over New Caledonia at Eden Park (24 Mar 2025)** for the confederation's first-ever **direct** slot. The runner-up (New Caledonia) took the inter-confederation play-off place. Every row here asserts NZ qualified for 2026 'via OFC **and** an intercontinental playoff' (41602 even invents a 2026 playoff win over Costa Rica).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(OFC)
+**Remedy:** Replace 'intercontinental playoff' with 'direct OFC qualification' for 2026; the playoff path describes 2010, not 2026.
+
+### Rows 41324, 41353, 41511, 41512, 41554, 41815, 41830, 41840, 41932, 41937, 41938, 41943, 41944, 41960, 41961, 41963, 41964, 41966, 41967, 41968, 42063, 42064, 42070 — FAIL: NZ's 2022 World Cup qualifying was played entirely in Qatar — no home qualifiers
+- Due to COVID, the OFC 2022 qualifying tournament (Mar 2022) and the inter-confederation play-off vs Costa Rica (Jun 2022, Ahmad bin Ali Stadium) were **all hosted in Qatar**. New Zealand hosted **zero** 2022 World Cup qualifiers, so claims that Eden Park or Wellington Regional Stadium hosted a NZ 2022 qualifier are false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(OFC)
+**Remedy:** Remove the NZ-stadium attribution for 2022 qualifiers; all NZ 2022 qualifiers were in Qatar.
+
+### Rows 41307, 41398, 41436, 41475, 41479, 41551, 41552, 41768, 41816, 41817, 41820, 41829, 41831, 41833, 41836, 41837, 41838, 41880, 41939, 41940, 41945, 41950, 41951, 41955, 42062, 42073 — FAIL: Eden Park did not host NZ's 2010/2014 World Cup qualifiers or playoff legs (home legs were at Wellington/Westpac)
+- NZ's home play-off legs for 2010 (vs Bahrain, 14 Nov 2009), 2014 (vs Mexico) and 2018 (vs Peru) were at **Westpac Stadium, Wellington** — not Eden Park. Eden Park's first men's World Cup qualifier was the 2026 OFC final (Mar 2025). These rows fabricate a '50,000-capacity Eden Park' hosting earlier qualifiers/playoffs (41768 invents a goal there; the send-off venues are unverified).
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** Correct the venue to Westpac/Wellington Regional Stadium for the 2010/2014/2018 home legs.
+
+### Rows 41301, 41304, 41369, 41707, 41709, 41796, 41798, 41799, 41802, 41850, 41853, 41855, 41871, 41874, 42036 — FAIL: False premise: New Zealand did not play at the 2022 World Cup
+- NZ **failed to qualify** for the 2022 World Cup (lost the play-off to Costa Rica). Rows premised on a player being 'at the 2022 World Cup', captaining/scoring 'at the 2022 World Cup', or NZ having a 2022 World Cup match squad are false-premise.
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** Reword to '2022 World Cup qualifying'; NZ were not at the 2022 finals.
+
+### Rows 41280, 41282, 41570, 41571, 41572, 41573, 41585, 41680, 41702, 41703, 42044, 42045, 42046, 42047 — FAIL: Manager-succession answers non-unique or wrong (immediate successor to Herbert was Anthony Hudson, 2014)
+- After Ricki Herbert (2005–2013), NZ were managed by **Anthony Hudson (2014–17), Fritz Schmid (2018–19), Danny Hay (2019–22) and Darren Bazeley (2023–)**. Rows answering 'Danny Hay' to 'who managed/succeeded Herbert after 2010' are non-unique (Hudson/Schmid/Bazeley also did) or wrong (the immediate successor was Hudson). 41280 ('next appointed 2019') and 41282 ('next WC-qualifying manager = Hay') are likewise wrong — the next appointment was Hudson in 2014.
+**Source:** https://en.wikipedia.org/wiki/List_of_New_Zealand_men's_national_football_team_managers
+**Remedy:** Make the answer unique, or correct it to Anthony Hudson for 'immediate successor / next appointed (2014)'.
+
+### Rows 41278, 41682 — FAIL: False: Ricki Herbert continued to manage NZ after the 2010 World Cup
+- Herbert managed New Zealand **2005–2013**, including the 2014 qualifying campaign. The claim that he 'did not lead them after [the 2010 World Cup]' is false.
+**Source:** https://en.wikipedia.org/wiki/List_of_New_Zealand_men's_national_football_team_managers
+**Remedy:** Herbert led NZ until 2013; pick a manager who genuinely did not serve post-2010.
+
+### Rows 41495, 41980, 42011, 42033 — FAIL: OFC Nations Cup record errors (NZ won it six times: 1973, 1998, 2002, 2008, 2016, 2024)
+- NZ has **six** OFC Nations Cup titles. So 2016 was not their 'second' title (41495), 2008 was not their 'first' (42033), and the 2008 title fed the **2010** qualifying cycle, not a 2018 play-off (42011). 41980 also invents a '2008 OFC Nations Cup final 3-1 vs New Caledonia' (2008 was a round-robin).
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_at_the_OFC_Nations_Cup
+**Remedy:** Correct the title count/sequence; the 2008 win was part of 2010 qualifying.
+
+### Rows 41476, 41929, 41930, 41995, 42001, 42027 — FAIL: Spain was NOT unbeaten at the 2010 World Cup — New Zealand was the only unbeaten team
+- Spain **lost to Switzerland** in the 2010 group stage. New Zealand (three draws) was the **only** team that left the tournament undefeated; rows claiming Spain was 'unbeaten alongside NZ' are false.
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** Remove 'Spain'/'alongside Spain'; NZ was the sole unbeaten team.
+
+### Rows 41708, 41730, 41731, 41736, 41742, 41743, 41748, 42040 — FAIL: Chris Wood has no World Cup finals goals — he is the all-time *overall* top scorer, not a World Cup scorer
+- Wood is New Zealand's all-time leading scorer (overall), but he has **scored no goals at a World Cup finals** (NZ's 2010 scorers were Smeltz and Reid; NZ missed 2014/18/22). Rows calling him NZ/OFC's 'top World Cup scorer' or comparing his 'World Cup goals' are false.
+**Source:** https://en.wikipedia.org/wiki/Chris_Wood_(footballer,_born_1991)
+**Remedy:** Reword to 'all-time leading scorer' (overall); Wood has no WC-finals goals.
+
+### Rows 41284, 41285, 41290, 41291, 41312, 41509, 41515, 42007 — FAIL: 2010 group-stage 'which team did NZ draw' — non-unique answers (NZ drew all three) + Paraguay was 0-0
+- NZ drew **all three** 2010 group games (Italy 1-1, Slovakia 1-1, Paraguay 0-0). 'Which two nations did NZ draw with' / 'which other nation did they draw' / 'which stadium did they draw at' therefore have multiple correct options. Several explanations also wrongly state the Paraguay match was 1-1 (it was 0-0).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_F
+**Remedy:** Disambiguate (e.g. 'famously', 'in the opener'), and fix the Paraguay scoreline to 0-0.
+
+### Rows 41407, 41408, 41565, 42005, 42018, 42019 — FAIL: 'Which World Cup did NZ fail to reach' — non-unique (they missed 2014, 2018 AND 2022)
+- After 2010 New Zealand missed **three** consecutive World Cups (2014, 2018, 2022), so a single-answer question without 'first/next' is non-unique (42005 also lists 2006/1998, also failures).
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** Add 'first/next', or list all three.
+
+### Rows 41517, 41548, 41633, 41639 — FAIL: Self-referential answer (the answer names New Zealand itself)
+- Questions of the form 'which nation, like New Zealand, …' answered 'New Zealand' are self-referential.
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** Rework so the answer is a different team, or remove the self-reference.
+
+### Rows 41341, 41482 — FAIL: Stale: New Zealand's most recent World Cup qualification is now 2026
+- NZ qualified for the **2026** World Cup (Mar 2025). So 'last qualified = 2010' (41482) and 'zero qualifications since 2010' (41341) are out of date.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(OFC)
+**Remedy:** Update: NZ's last/again qualification is 2026.
+
+### Rows 41568, 41675, 41678 — FAIL: Stale league: the NZ Football Championship was replaced by the NZ National League in 2021
+- The semi-professional NZ Football Championship was **discontinued after 2020–21** and replaced by the **New Zealand National League** as the top tier. Where 'National League' is offered as an option, 'NZ Football Championship' is the outdated answer.
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_National_League
+**Remedy:** Update the top-tier league to the NZ National League.
+
+### Rows 41450, 41452, 41455, 41497 — FAIL: Excel date-corrupted answers
+- Scoreline/date answers were mangled by spreadsheet date conversion: '01-Jan' = the 1-1 draw with Italy (41450/41452/41455); 'Jun-22' = June 2022 (41497, which also wrongly says NZ 'qualified' in that June play-off they lost).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_F
+**Remedy:** Store scorelines/dates as text; fix 41497's false qualification.
+
+### Rows 41726, 41727, 41728, 41729, 41766 — FAIL: Domestic-squad / club attribution errors (Wellington Phoenix is in the A-League, not the NZFC)
+- Wellington Phoenix play in the **Australian A-League**, not the NZ Football Championship, and Shane Smeltz was at Gold Coast United (A-League) in 2010 — so 'NZFC player in the 2010 squad' attributions are wrong. 41728 also claims a goal in the 2016 OFC Nations Cup final, which was **0-0 (won on penalties)**; 41766 mis-assigns Smeltz's goal (he scored vs Italy, not Slovakia).
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** Fix the club/league attributions; the 2016 final had no goal in normal/extra time.
+
+### Rows 41313, 41516, 41539, 41641, 41987 — FAIL: 2010 group-stage factual errors
+- 41313: NZ played Paraguay at **Peter Mokaba (Polokwane)**, not Royal Bafokeng. 41516: Italy were defending champions, **not the 2010 host** (South Africa hosted). 41539: many teams were unbeaten in the group stage — Netherlands was not 'the only other'. 41641: Italy did **not** draw all three (they lost 3-2 to Slovakia). 41987: NZ **did** draw Paraguay (0-0); the team they did not play was South Africa.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_F
+**Remedy:** Correct each factual claim per the Group F record.
+
+### Rows 41942, 41949, 41965 — FAIL: Degenerate options — the same venue listed twice under different names
+- Wellington Regional Stadium = Westpac Stadium = Sky Stadium ('the Cake Tin'). 41942/41949/41965 list two or more names for the **same** venue as separate options, so the answer is not unique (41942/41965 also rest on the false 2022/2026 home-qualifier premise).
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** De-duplicate the venue names in the options.
+
+### Rows 41330, 41340, 41437, 41456, 41457, 41461, 41496, 41634, 41720, 41860, 41864, 41881, 42058, 42080 — FAIL: other individual factual errors
+- **Row 41330:** 2026 OFC final was at **Eden Park (Auckland)**, not Wellington, and it was the OFC World Cup qualifying final, not an 'OFC Nations Cup final'.
+- **Row 41340:** Claims NZ 'qualified for 2010 and 2022 as OFC champions' — NZ did **not** qualify for 2022 (lost the play-off).
+- **Row 41437:** False premise 'NZ's 2022 World Cup squad' (they did not qualify) and the 'last qualified 2010' framing is now stale (2026).
+- **Row 41456:** Wood became NZ's all-time top scorer in **March 2022** (vs Fiji), not 2023.
+- **Row 41457:** Unverifiable narrative that Wood 'became key striker in 2016'; no authoritative source pins this.
+- **Row 41461:** Ricki Herbert was appointed NZ coach in **2005**, not 2007 (2005 is one of the options).
+- **Row 41496:** NZ first reached a World Cup in **1982**, not 2010.
+- **Row 41634:** Australia did **not** reach 2010 via an intercontinental playoff (they qualified directly through the AFC); **Uruguay** (an option) is the team that reached 2010 via the CONMEBOL–OFC play-off.
+- **Row 41720:** Wood's senior international debut was in **2009**, not at the 2010 World Cup (2010 was his World Cup debut).
+- **Row 41860:** The 2022 play-off vs Costa Rica was a 1-0 regulation loss — there was **no penalty shootout**.
+- **Row 41864:** NZ's 2022 OFC qualifying final was vs **Solomon Islands** (won 5-0), not Australia (Australia left the OFC in 2006).
+- **Row 41881:** Unverifiable comparison of '2010 vs 2022' squad domestic-composition; both squads were largely overseas-based.
+- **Row 42058:** NZ drew **three** group games (not 'both'), and the Paraguay draw was **0-0** not 1-1.
+- **Row 42080:** There was no '2023 OFC Nations Cup final' at Eden Park; the Eden Park showpiece was the **2026 OFC qualifying final (Mar 2025)**.
+**Source:** https://en.wikipedia.org/wiki/New_Zealand_men's_national_football_team
+**Remedy:** See per-row notes.
+
+## Nigeria batch rows 42087–42203 — 2 FAIL
+
+### Row 42108 — Nigeria (medium) — FAIL: non-unique / stale — Nigeria also failed to qualify for **2026**
+- "In which year did Nigeria fail to qualify for the World Cup? → 2022" offers **2026** as a distractor, but Nigeria **also failed to qualify for 2026** — they lost the CAF play-off final to **DR Congo on penalties (Nov 2025)**. With 2026 an option, the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Remove 2026 from the options, or pin the question to the Ghana play-off (2022).
+
+### Row 42172 — Nigeria (medium) — FAIL: non-unique — all four options were in Nigeria's 2018 World Cup squad
+- "Which player was in Nigeria's 2018 World Cup group-stage squad? → Ahmed Musa" lists **Ighalo, Iheanacho and Ndidi** as distractors, but **all three also made the final 23**. Three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Nigeria_at_the_2018_FIFA_World_Cup
+**Remedy:** Replace the distractors with players who were NOT in the 2018 squad.
