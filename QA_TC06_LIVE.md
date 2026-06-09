@@ -10,9 +10,9 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Sequentially verified through row 13847 (Algeria→Chile contiguous COMPLETE). Next sequential gap: Colombia (13848–15527).**
-**ALL COMPLETE countries (27): Algeria · Argentina · Australia · Austria · Belgium · Brazil · Cabo Verde · Cameroon · Canada · Chile · Costa Rica · Côte d'Ivoire · Croatia · Denmark · DR Congo · Ecuador · Egypt · England · France · Germany · Ghana · Iran · Iraq · Italy · Japan · Jordan · Mexico. Per-country fact bases + per-batch tables are below. (Iran/Iraq/Jordan/Mexico completed by separate contributor azibabari.)**
-**NOT STARTED (11): Colombia · Jamaica · Morocco · Netherlands · New Zealand · Nigeria · Paraguay · Senegal · Switzerland · Tunisia · USA. Ask the user before beginning a new country (see §4 in HANDOFF.md).**
+**Sequentially verified through row 13847 (Algeria→Chile contiguous COMPLETE). Next sequential gap: Colombia (13848–15527) — now COMPLETE (see below). Jamaica, New Zealand & Nigeria also COMPLETE (verified by a separate contributor — see their fact bases below).**
+**ALL COMPLETE countries (32): Algeria · Argentina · Australia · Austria · Belgium · Brazil · Cabo Verde · Cameroon · Canada · Chile · Colombia · Costa Rica · Côte d'Ivoire · Croatia · Denmark · DR Congo · Ecuador · Egypt · England · France · Germany · Ghana · Iran · Iraq · Italy · Jamaica · Japan · Jordan · Mexico · New Zealand · Nigeria · Paraguay. Per-country fact bases + per-batch tables are below. (Iran/Iraq/Jordan/Mexico completed by separate contributor azibabari; Jamaica/New Zealand/Nigeria by another contributor.)**
+**NOT STARTED (6): Morocco · Netherlands · Senegal · Switzerland · Tunisia · USA. Ask the user before beginning a new country (see §4 in HANDOFF.md).**
 **Last verified row: 30309 — all claimed countries through Ghana verified (plus out-of-sequence completes below).**
 **Algeria (2–1228) COMPLETE. Argentina (1229–2160) COMPLETE. Australia (2161–3241) COMPLETE. Austria (3242–4282) COMPLETE. Belgium (4283–6096) COMPLETE. Cabo Verde (8183–9573) COMPLETE. Canada (10746–12428) COMPLETE. Chile (12429–13845) COMPLETE. Colombia (13848–15527) COMPLETE. Costa Rica (15528–16571) COMPLETE. Côte d'Ivoire (16572–17486) COMPLETE. Croatia (17487–19101) COMPLETE. Denmark (19102–20581) COMPLETE. DR Congo (20582–21579) COMPLETE. Egypt (22766–23686) COMPLETE. England (23687–25401) COMPLETE. Germany (27325–29161) COMPLETE. Ghana (29166–30309) COMPLETE. Italy (32568–34327) COMPLETE. Paraguay (42204–42927) COMPLETE.**
 **BRAZIL in progress (rows 6097–8182), separate contributor — verified to 6760, resume 6761. Brazil sub-cursor at bottom of file.**
@@ -23,7 +23,10 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 **✅ GERMANY COMPLETE (rows 27325–29161): 1291 ship-ready / 65 failed-liveness — see bottom of file.**
 **✅ ITALY COMPLETE (rows 32568–34327): 1061 ship-ready / 225 failed-liveness — see bottom of file.**
 **✅ PARAGUAY COMPLETE (rows 42204–42927): 356 ship-ready / 149 failed-liveness — see bottom of file.**
-**Skipped/not started: Cameroon, Ecuador, France, Iran, Iraq, Jamaica, Japan, Jordan, Mexico, Morocco, Netherlands, New Zealand, Nigeria, Senegal, Switzerland, Tunisia, USA. Next unclaimed country: ask the user before beginning a new country.**
+**✅ JAMAICA COMPLETE (rows 34328–34953): 381 ship-ready / 43 failed-liveness — see bottom of file.**
+**✅ NEW ZEALAND COMPLETE (rows 41274–42086): 398 ship-ready / 166 failed-liveness — see bottom of file.**
+**✅ NIGERIA COMPLETE (rows 42087–42203): 91 ship-ready / 2 failed-liveness — see bottom of file.**
+**Skipped/not started: Morocco, Netherlands, Senegal, Switzerland, Tunisia, USA. Next unclaimed country: ask the user before beginning a new country.**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -2502,6 +2505,122 @@ PASS → QA_PASSED_ALL.md, FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
 
 ---
 
+# 🇹🇳 TUNISIA (rows 44757–45514) — web-verified fact base
+
+- **WC record:** appeared 1978, 1998, 2002, 2006, 2018, 2022 (= **6 played**), and **qualified for 2026**
+  (CAF Group H winners — perfect campaign 9W-1D, 22 scored / 0 conceded), so **now SEVEN qualifications**.
+  **Never advanced past the group stage.** First African/Arab team to win a WC match (beat **Mexico 3-1, 1978**).
+- **2022 (Jalel Kadri):** Group D — **beat France 1-0** (Khazri 58'), drew Denmark 0-0 (opener), lost Australia
+  0-1 (Duke **header** 23'). 4 pts, finished **3rd** (France 6 · Australia 6 · Tunisia 4 · Denmark 1). Out.
+- **2018 (Nabil Maâloul):** beat Panama **2-1** (Ben Youssef equaliser 51', **Khazri** winner 66' — first WC win
+  since 1978); lost England 2-1 (Kane 90+1) and Belgium 5-2 (Bronn + Khazri scored). Group exit.
+- **Qualifying:** 2018 clinched by a **0-0 draw v Libya** (11 Nov 2017); the scoring win was **4-1 v Guinea
+  (Msakni hat-trick)**. 2022 via CAF playoff v **Mali** (won 1-0, a **Sissako own goal**) under Kadri (Kebaier
+  led the group stage, sacked Jan 2022). 2026 under **Sami Trabelsi** (then Sabri Lamouchi appointed Jan 2026).
+- **AFCON:** **1 title — 2004** (hosted, beat Morocco 2-1). Runners-up 1965, 1996; 2019 semi-finalists (lost
+  1-0 to Senegal; beat Madagascar 3-0 in QF). Qualified for **every AFCON 2006–2025** (11 editions).
+- **Key players:** Khazri (France winner; ~74 caps/25 goals; France-based — Rennes/Montpellier; retired post-2022),
+  **Msakni** (talisman — **MISSED 2018 with an ACL injury**, first WC was 2022), Skhiri (**1. FC Köln**, NOT
+  Freiburg), Laïdouni (**Ferencváros** in 2022, not domestic), Talbi (Lorient), Bronn (Gent 2018 / Salernitana
+  2022), Meriah (Espérance — domestic), Issam Jemaa (all-time top scorer, 36). Hannibal Mejbri came through
+  Paris FC/Monaco → Man Utd (**never** Espérance).
+- **Misc:** home venue **Stade Olympique de Radès (~60,000)** — opened 2001, used for qualifiers since the 2000s.
+  **Espérance de Tunis** = 4 CAF Champions Leagues (1994, 2011, 2018, 2019). 2022 squad = Europe + domestic mix.
+
+## Tunisia per-batch results (5 batches)
+| Batch | Rows | PASS | FAIL |
+|---|---|---|---|
+| 1 | 44757–44890 | 100 | 13 |
+| 2 | 44891–45030 | 93 | 7 |
+| 3 | 45031–45180 | 75 | 9 |
+| 4 | 45181–45340 | 106 | 31 |
+| 5 | 45341–45514 | 126 | 13 |
+| **Total** | **44757–45514** | **500** | **73** |
+
+[NB: batch-1 row 44880 and batch-2 row 44995 were initially mis-passed and corrected to FAIL — the net counts
+above are accurate on disk (500 PASS / 73 FAIL = 573, matches QA_PASSED, no overlap/dupes).]
+
+# ✅ TUNISIA COMPLETE (rows 44757–45514) — 500 ship-ready · 73 dangerous
+**Recurring dataset defects (high volume):**
+1. **"Tunisia has qualified for SIX World Cups"** — stale; they now have **seven** (incl. 2026, which the
+   dataset itself counts in row 44811). Present-tense/"by 2026" six fails; time-bounded "by 2022/2024" passes.
+2. **"Msakni played at / was key in 2018 (and multiple World Cups)"** — false; he **missed 2018** (ACL) and has
+   played only 2022. Khazri/Skhiri are the ones who played both 2018 and 2022. (Big cluster in batch 4.)
+3. **Wrong clubs** — Skhiri at **Köln** not Freiburg; Laïdouni at **Ferencváros** not domestic Espérance;
+   Hannibal Mejbri & Khazri **never played for Espérance**; Bronn at Gent (2018) not Espérache.
+4. **2018 qualifier scoring myths** — the decider v Libya was **0-0** (no goal); the goals were the 4-1 Guinea
+   win. Rows crediting a Msakni/Khazri goal "v Libya" to clinch fail.
+5. **2018 Panama** — Tunisia **won 2-1** (no "3-2 loss"); **Khazri** scored the winner (Ben Youssef the equaliser,
+   once — not twice).
+6. **2022 details** — Duke's goal was a **header**, not a penalty (no Bronn penalty); the Mali playoff goal was a
+   **Sissako own goal**, not Khazri.
+7. **Category / confederation errors** — France & Saudi Arabia called "CAF teams"; Argentina called the 2022
+   "defending champions" (France were); France called "European champion" (they were World champions).
+8. **Non-unique / self-referential** — "which nation, like Tunisia, …" answered "Tunisia"; all four options
+   qualified for 2018 (45118) or 2026 (45413); Germany/Mexico also "won a group game but exited".
+9. **Other stats** — Egypt did NOT have more AFCONs than Tunisia (Egypt missed 2012/13/15); Morocco's pre-2018
+   gap was 20 years not 12; Al Bayt Stadium ~68,000 (not 45,000); Espérance CL titles 1994/2011/2018/2019
+   (no 1998); Khazri in 2 WC squads not 3; Radès hosted qualifiers long before 2010/2022.
+
+**Tunisia running totals (rows 44757+): 500 PASS-ALL · 73 FAIL-LIVENESS.**
+
+---
+
+# 🇺🇸 USA (rows 45515–46518) — web-verified fact base
+
+- **WC record:** 1930 (3rd — best ever), 1934, 1950 (beat England 1-0, Gaetjens), 1990, 1994 (host, R16),
+  1998, 2002 (**QF** — lost Germany 1-0), 2006, 2010 (R16), 2014 (R16), **MISSED 2018** (lost 2-1 Trinidad),
+  2022 (R16). **2026: CO-HOST** (auto-qualified; 11 US + 3 Mexico + 2 Canada cities; first 48-team WC).
+- **2022 (Berhalter):** Group B — drew Wales 1-1 (Weah), drew England 0-0, **beat Iran 1-0 (Pulisic)** to
+  advance; R16 lost **Netherlands 3-1** (Haji Wright scored). Captain **Tyler Adams** (youngest, 23);
+  2nd-youngest squad (Ghana youngest), avg 25.2. Venues: Wales=Ahmad bin Ali, England=Al Bayt,
+  **Iran=Al Thumama**, Netherlands(R16)=**Khalifa**.
+- **Coaches:** Bradley (2010), Klinsmann (2014), Arena (2016–17, failed 2018), **Berhalter** (Dec 2018–;
+  2022 WC; rehired June 2023; **FIRED July 2024** after Copa America), **Pochettino** (Sept 2024–, for 2026).
+- **CONCACAF:** beat Mexico in **3 recent finals** (2019-20 NL — **3-2 AET, NOT penalties**; 2021 Gold Cup
+  1-0 Miles Robinson ET; 2022-23 NL). **7 Gold Cups** (1991/2002/05/07/13/17/21). Lost 2019 GC final to Mexico.
+  **2024: exited Copa America in the GROUP STAGE** (lost Panama & Uruguay), and won the 2023-24 Nations League.
+- **Records/players:** joint top scorers **Dempsey & Donovan (57)**; Donovan 5 WC goals > Dempsey 4; most caps
+  **Cobi Jones (164)**; Tim Howard **16 saves** v Belgium 2014 (Fonte Nova); **Donovan 91' v Algeria 2010**;
+  youngest US WC scorer is **Julian Green (19, 2014)**, NOT Pulisic. Pulisic (AC Milan, "Captain America"),
+  McKennie (Juventus), Musah (AC Milan), Adams, Dest, Weah (son of George Weah), Gio Reyna (son of Claudio),
+  Balogun (ex-England youth), Matt Turner (GK 2022). 2016 Copa (host): semis, lost 4-0 Argentina.
+- **Rankings:** all-time high **4th (April 2006)**; dropped to ~**32nd** after the 2018 failure. (Dataset's
+  "13th = highest, in 2010" and "34th after 2018" are both wrong.) USWNT: 4 Women's WC titles.
+
+## USA per-batch results (6 batches)
+| Batch | Rows | PASS | FAIL |
+|---|---|---|---|
+| 1 | 45515–45640 | 69 | 13 |
+| 2 | 45641–45790 | 101 | 19 |
+| 3 | 45791–45940 | 83 | 7 |
+| 4 | 45941–46090 | 66 | 11 |
+| 5 | 46091–46280 | 118 | 12 |
+| 6 | 46281–46518 | 174 | 16 |
+| **Total** | **45515–46518** | **611** | **78** |
+
+[On-disk verified: 611 PASS / 78 FAIL = 689, matches QA_PASSED, no overlap/dupes.]
+
+# ✅ USA COMPLETE (rows 45515–46518) — 611 ship-ready · 78 dangerous
+**Recurring dataset defects (high volume):**
+1. **"USA reached the 2024 Copa America semi-finals (lost to Uruguay)"** — false; they exited in the GROUP
+   STAGE (the Uruguay loss was a group game). The hosted Copa semi run was 2016.
+2. **"USA won the 2024 Gold Cup"** — there was no 2024 Gold Cup (2021/2023/2025); the 2024 trophy was the
+   Nations League. Also "Berhalter rested players for the 2024 Copa" (he didn't; he was fired after it).
+3. **"Highest FIFA ranking = 13th, in 2010"** — false; peak was **4th (April 2006)**. **"Dropped to 34th
+   after 2018"** — it was ~32nd.
+4. **"Pulisic = youngest American to score at a WC"** — false (**Julian Green, 19, 2014**); even Weah (22)
+   was younger than Pulisic at 2022.
+5. **"Berhalter fired in 2023"** — he was fired in **July 2024** (rehired June 2023 in between).
+6. **"Beat Mexico on penalties in the 2019-20 Nations League final"** — it was **3-2 AET**.
+7. **Excel score corruption** — 01-Jan=1-1 (Wales), 02-Jan=2-1 (Trinidad), 03-Jan=3-1 (Netherlands).
+8. **Category/venue errors** — England called a "CONCACAF rival"; R16 placed at Al Bayt (it was Khalifa);
+   Iran game placed at Education City (it was Al Thumama); Omar Gonzalez called a Trinidad player (own goal);
+   "SteelStacks Chicago" training centre; Pulisic's 2022 goal "preceding" the June-2018 co-host award.
+9. **Non-unique** — "which was NOT a 2022 captain/squad member" (3 retired/non-captain options); all-MLS-club
+   or all-non-TX/FL-venue options; "topped CONCACAF group 2010 or 2014" (both); 2019 USWNT debut (Lavelle too).
+
+**USA running totals (rows 45515+): 611 PASS-ALL · 78 FAIL-LIVENESS.**
 ## Iran (rows 30310–31698) — separate contributor (azibabari)
 
 Liveness run on the **926** Iran rows in `QA_PASSED.md`. Fact base: Iran (Team Melli) — WC
@@ -2932,3 +3051,56 @@ appointed June 2022), so "qualified for / will feature at 2026" rows pass. Manag
 | **"Mina scored all 2018 knockout goals / in every knockout match"** | Colombia had **one** 2018 knockout match (R16); his 3 goals were mostly group-stage. |
 | **Misc wrong facts** | "unbeaten run began 2023" (began **2022**); "Bacca scored at 2015 Copa" (was **2016 Centenario**); "missed 2022 by 1 pt behind 4th" (1 pt behind **5th** Peru; 3 behind 4th); 2018 group "vs England" (was **R16**); Queiroz "tenure ended before 2022 qualifiers" (he ran the **first 4**); Muñoz "debuted at 2024 Copa" (debuted **2021**). |
 | **Excel date-corruption** | "01-Jan" answers = mangled **1-1** (2018 R16 v England, after 90/ET). |
+
+---
+
+# ✅ JAMAICA (rows 34328–34953) — COMPLETE
+
+**Pool:** 424 QA_PASSED candidates across CSV rows 34328–34953. Verified against the Jamaica men's national team (Reggae Boyz) fact base.
+
+**Fact base:** Only World Cup appearance = **1998** (still their only one). **2015 CONCACAF Gold Cup final** — lost 3-1 to Mexico (coach Winfried Schäfer); **2017 Gold Cup final** — lost 2-1 to USA (coach Theodore Whitmore). Home venue Independence Park / National Stadium, Kingston (~35,000). Key players: Leon Bailey (Aston Villa winger), Michail Antonio (West Ham; chose Jamaica over England, debut 2021), André Blake (MLS goalkeeper), Bobby Decordova-Reid (Fulham), Demarai Gray (switched from England 2023, 26 England U21 caps). Jamaica Premier League = top domestic league. Football competes with athletics & cricket for attention. **2026 World Cup: Jamaica did NOT qualify** — finished runner-up to Curaçao in CONCACAF Group B, reached the March 2026 intercontinental playoff, and **lost the final 1-0 (aet) to DR Congo** (Tuanzebe 100'). Steve McClaren coached the 2026 campaign (from 2024, after Heimir Hallgrímsson left for Ireland).
+
+**Verified corrections (web-sourced):**
+1. **2026 qualification = FALSE.** The dataset claims Jamaica qualified for 2026 (often "directly via CONCACAF, first in 28 years"); they lost the intercontinental playoff to DR Congo. All explicit "qualified for 2026" claims FAIL.
+2. **Gold Cup coaches differ:** Schäfer (2015) and Whitmore (2017) — no single coach led both consecutive finals.
+3. **Steve McClaren** coached the **2026** campaign (2024+), not the 2022 qualifiers.
+4. **Demarai Gray** also switched from England (2023, England U21) — non-2022-pinned "Antonio played England youth" rows with Gray as an option are non-unique.
+
+| Batch | Rows | Candidates | PASS | FAIL |
+|-------|------|-----------:|-----:|-----:|
+| 1 | 34328–34650 | 190 | 163 | 27 |
+| 2 | 34651–34953 | 234 | 218 | 16 |
+| **Total** | **34328–34953** | **424** | **381** | **43** |
+
+**FAIL themes:** false 2026 World Cup qualification (lost playoff to DR Congo); wrong/conflated Gold Cup coaches (Schäfer 2015 vs Whitmore 2017; "Steve McLaren coached the 2022 qualifiers"); non-unique "switched from England" answers (Demarai Gray also qualifies); Excel date-mangled scorelines ("03-Jan"=3-1, "02-Jan"=2-1); and one false "between" premise (no WC fell between the 2015 and 2017 finals).
+**Note:** "Reggae Boyz," the 2015/2017 Gold Cup final results, Independence Park, Leon Bailey (Aston Villa), Michail Antonio (West Ham, chose Jamaica over England), André Blake (MLS) and the Jamaica Premier League were all web-verified TRUE and PASS. Lenient on loose "2026 World Cup [squad/cycle]" framing where the gradeable fact is a correct player/squad detail.
+
+# ✅ JAMAICA COMPLETE
+
+- Per batch: 34328–34650 (163P/27F) · 34651–34953 (218P/16F).
+
+# ✅ NEW ZEALAND (rows 41274–42086) — COMPLETE
+
+**Pool:** 564 QA_PASSED candidates across CSV rows 41274–42086 → **398 PASS / 166 FAIL**. Verified against the New Zealand men's national team (All Whites) fact base.
+
+**Fact base:**
+- **World Cup appearances:** 1982, 2010, and **2026** (upcoming). At **2010** NZ were the tournament's **only unbeaten team** — three group draws: **Italy 1-1** (Smeltz 27', vs defending champions, at Mbombela/Nelspruit), **Slovakia 1-1** (Winston Reid 93', at Royal Bafokeng/Rustenburg), **Paraguay 0-0** (at Peter Mokaba/Polokwane). Captain Ryan Nelsen; GK Mark Paston.
+- **2026 qualification = DIRECT** (OFC's first automatic slot): NZ won the OFC final **3-0 vs New Caledonia at Eden Park, 24 Mar 2025**. **No intercontinental playoff** — New Caledonia (runner-up) took the play-off slot.
+- **Play-off losses (the 2014/2018/2022 drought):** Mexico (Nov 2013, home leg Wellington), Peru (Nov 2017, home leg Wellington), **Costa Rica 1-0** (14 Jun 2022, Ahmad bin Ali Stadium, **Qatar** — Joel Campbell scored). The 2010 berth came via beating **Bahrain** 1-0 (home leg Westpac/Wellington, 14 Nov 2009).
+- **2022 OFC qualifying was entirely in Qatar** (COVID-centralised) → NZ hosted **no** 2022 qualifiers.
+- **Managers:** Ricki Herbert (2005–2013, incl. 2010 WC) → Anthony Hudson (2014–17) → Fritz Schmid (2018–19) → Danny Hay (2019–22) → Darren Bazeley (2023–).
+- **Records:** Chris Wood = all-time leading scorer (overall; passed Vaughan Coveny **Mar 2022**) — but **0 World Cup finals goals**. OFC Nations Cup titles ×6 (1973, 1998, 2002, 2008, 2016, 2024). Top league: **NZ National League** (replaced the NZ Football Championship in 2021). Eden Park ≈50,000.
+
+**Systematic FAIL clusters:** (1) 2026 "via intercontinental playoff" — was direct; (2) "2022 qualifiers hosted at NZ stadiums" — were in Qatar; (3) "Eden Park 50k hosted 2010/2014 qualifiers/playoffs" — home legs were Wellington; (4) "at the 2022 World Cup" — NZ didn't qualify; (5) manager-succession non-uniqueness; (6) "Spain unbeaten in 2010" — Spain lost to Switzerland; (7) Wood "World Cup scorer" — 0 finals goals; (8) OFC Nations Cup count; (9) NZFC stale. Details + per-row grouping in `QA_FAILED_LIVENESS_PASSED_OTHERS.md`.
+
+**Running totals (new method, rows 231+, all contributors): 10754 PASS-ALL · 1719 FAIL-LIVENESS.**
+
+# ✅ NIGERIA (rows 42087–42203) — COMPLETE
+
+**Pool:** 93 QA_PASSED candidates across CSV rows 42087–42203 → **91 PASS / 2 FAIL** (smallest country, very clean). Verified against the Nigeria men's national team (Super Eagles) fact base.
+
+**Fact base:** **6 World Cup appearances** (1994, 1998, 2002, 2010, 2014, 2018). **2010** (Group B): lost 1-0 to Argentina (Ellis Park, Joburg) and 2-1 to Greece, drew South Korea 2-2 → out. **2014** (Group F): Musa brace in the 3-2 loss to Argentina, reached R16, lost **2-0 to France**; **Joseph Yobo captained** the R16 (his 100th cap, scored an OG); manager Stephen Keshi. **2018** (Group D, **youngest squad** in the tournament, manager Gernot Rohr, captain Mikel): lost **0-2 to Croatia** (Kaliningrad), beat **Iceland 2-0** (Ahmed Musa x2), lost **1-2 to Argentina** (Marcos Rojo 86'). **2022:** failed to qualify — lost the CAF play-off to **Ghana on away goals** (1-1 agg, Mar 2022). **2026:** also failed — lost the CAF play-off final to **DR Congo on penalties (Nov 2025)**.
+
+**The 2 fails:** 42108 (non-unique — Nigeria also failed 2026, an option) and 42172 (non-unique — Musa, Ighalo, Iheanacho AND Ndidi were all in the 2018 squad). Everything else (Musa braces, Rojo's winner, the Ghana away-goals exit, the youngest-squad fact, Yobo/Mikel captaincies) web-verified TRUE.
+
+**Running totals (new method, rows 231+, all contributors): 10845 PASS-ALL · 1721 FAIL-LIVENESS.**
