@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **3379** (new method 231+, 27 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Japan 62 · Jordan 159 · Mexico 173)
+Total failed-liveness-passed-others so far: **3594** (new method 231+, 29 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117)
 
 ---
 
@@ -20313,3 +20313,1507 @@ Recurring Iraq defect clusters (112 fails of 537 QA_PASSED candidates):
 **Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup
 **Remedy:** Update the count or time-bound to 'through 2019'.
 
+### Row 39367 — Morocco (easy) — FAIL
+**Q:** After Morocco's 0-0 draw with Croatia in 2022, which nation conceded the fewest open-play goals in the tournament?
+**Answer:** Morocco
+**Why it fails:** False premise: explanation claims Morocco conceded 'only one goal from open play' in the whole 2022 WC — they conceded open-play goals to France (Theo Hernández, Kolo Muani) and Croatia (Gvardiol, Oršić). Stat as worded is wrong.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Drop/qualify the 'fewest open-play goals' claim; Morocco conceded several open-play goals.
+
+### Row 39368 — Morocco (medium) — FAIL
+**Q:** After Morocco's 2022 World Cup run, what FIFA ranking did they reach?
+**Answer:** 11th
+**Why it fails:** Explanation calls 11th a 'historic high' — false. Morocco were 10th in April 1998 (higher) and reached 7th in June 2026; 11th (Dec 2022) was only their 2nd-best.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Don't call 11th the historic high; it was the post-2022 rank only.
+
+### Row 39369 — Morocco (medium) — FAIL
+**Q:** After Morocco's 2022 World Cup run, what was their highest FIFA ranking?
+**Answer:** 11th
+**Why it fails:** Q asks Morocco's HIGHEST FIFA ranking; answer 11th is wrong — highest is 7th (June 2026), and 10th (April 1998) also bettered 11th.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest ranking = 7th (2026).
+
+### Row 39370 — Morocco (hard) — FAIL
+**Q:** After Morocco's 2022 World Cup run, when did they reach their highest FIFA ranking?
+**Answer:** After 2022 World Cup
+**Why it fails:** Q asks when Morocco reached their HIGHEST ranking; 'after 2022 WC' is wrong — their all-time high (7th) came in June 2026, not 2022 (when they reached only 11th).
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest came June 2026 (7th).
+
+### Row 39374 — Morocco (medium) — FAIL
+**Q:** After the 2022 World Cup, Morocco's FIFA ranking peaked at which position?
+**Answer:** 11th
+**Why it fails:** Q asks the peak FIFA ranking; 11th is not the peak — Morocco peaked at 7th (June 2026); 10th (1998) also beats 11th.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Peak = 7th.
+
+### Row 39375 — Morocco (medium) — FAIL
+**Q:** After the 2022 World Cup, Morocco's highest FIFA ranking was which position?
+**Answer:** 11th
+**Why it fails:** Highest ranking is not 11th — it is 7th (June 2026); 10th in 1998 also higher.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest = 7th.
+
+### Row 39376 — Morocco (medium) — FAIL
+**Q:** After the 2022 World Cup, what was Morocco's highest FIFA ranking?
+**Answer:** 11th
+**Why it fails:** Highest FIFA ranking is not 11th — it is 7th (June 2026); 10th in 1998 also higher.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Highest = 7th.
+
+### Row 39378 — Morocco (hard) — FAIL
+**Q:** After the 2022 World Cup, when did Morocco reach 11th in the FIFA rankings?
+**Answer:** After 2022
+**Why it fails:** Explanation calls 11th their 'highest-ever' ranking — false (10th in 1998, 7th in 2026). The 'when' (after 2022) is fine but the headline fact is wrong.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Don't label 11th as highest-ever.
+
+### Row 39380 — Morocco (medium) — FAIL
+**Q:** After their 2022 World Cup run, Morocco's FIFA ranking peaked at what position?
+**Answer:** 11th
+**Why it fails:** Q asks where ranking peaked; 11th is not the peak — peak is 7th (June 2026); 10th (1998) also higher.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Peak = 7th.
+
+### Row 39382 — Morocco (hard) — FAIL
+**Q:** After which World Cup did Morocco first reach 11th in FIFA rankings?
+**Answer:** 2022 World Cup
+**Why it fails:** Explanation states Morocco 'achieved its highest FIFA ranking of 11th' after 2022 — false; their highest is 7th (2026), with 10th in 1998 also above 11th.
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** 11th was the post-2022 rank, not the highest.
+
+### Row 39383 — Morocco (hard) — FAIL
+**Q:** After which World Cup did Morocco reach 11th in the FIFA rankings?
+**Answer:** 2022 World Cup
+**Why it fails:** Explanation states Morocco's 'highest FIFA ranking of 11th' — false (highest is 7th in 2026; 10th in 1998 also higher).
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** Don't label 11th the highest.
+
+### Row 39387 — Morocco (medium) — FAIL
+**Q:** At the 2022 World Cup, Morocco kept 3 clean sheets in 7 matches. How many clean sheets did they keep?
+**Answer:** Three clean sheets
+**Why it fails:** Team clean-sheet count wrong: Morocco kept 4 clean sheets in 7 matches (Croatia, Belgium, Spain, Portugal), not 3 (3 is Bono's personal count, missing the Belgium CS kept by Munir).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Team kept 4 clean sheets.
+
+### Row 39395 — Morocco (easy) — FAIL
+**Q:** At the 2022 World Cup, which team did Morocco NOT face in a knockout match?
+**Answer:** Croatia
+**Why it fails:** False: Morocco DID face Croatia in a knockout match — the 3rd-place play-off (a single-elimination match). Explanation 'only played Croatia in the group stage' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Croatia was a knockout opponent (3rd-place play-off); question has no valid unique answer among the options.
+
+### Row 39404 — Morocco (medium) — FAIL
+**Q:** At which World Cup did Morocco keep 3 clean sheets in 7 matches?
+**Answer:** 2022 World Cup
+**Why it fails:** Team kept 4 clean sheets at the 2022 WC (Croatia, Belgium, Spain, Portugal), not 3.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4 clean sheets.
+
+### Row 39410 — Morocco (medium) — FAIL
+**Q:** How many clean sheets did Morocco keep at the 2022 FIFA World Cup?
+**Answer:** 3 clean sheets
+**Why it fails:** Morocco kept 4 clean sheets (not 3) at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4.
+
+### Row 39411 — Morocco (medium) — FAIL
+**Q:** How many clean sheets did Morocco keep at the 2022 World Cup?
+**Answer:** 3
+**Why it fails:** Morocco kept 4 clean sheets (not 3) at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Correct to 4.
+
+### Row 39416 — Morocco (medium) — FAIL
+**Q:** How many open-play goals did Morocco concede in the 2022 FIFA World Cup?
+**Answer:** One
+**Why it fails:** Answer 'One' is wrong: Morocco conceded multiple open-play goals (Theo Hernández AND Kolo Muani v France; Gvardiol & Oršić v Croatia). Explanation naming only Theo even ignores Kolo Muani in the same match.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Several open-play goals conceded; remove this item.
+
+### Row 39424 — Morocco (medium) — FAIL
+**Q:** In Morocco's 2022 World Cup group stage win over Canada, which player scored their goal?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong scorer: Morocco's goals v Canada (2-1) were by Ziyech (4') and En-Nesyri (23'), not Boufal. Boufal did not score; also two correct scorers are among the options (non-unique even ignoring Boufal).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Scorers were Ziyech and En-Nesyri.
+
+### Row 39425 — Morocco (hard) — FAIL
+**Q:** In Morocco's 2022 World Cup group stage, what was the scoreline against Canada?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer cell '02-Jan' is a mangled 2-1. Score was Morocco 2-1 Canada.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39429 — Morocco (easy) — FAIL
+**Q:** In Morocco's 2022 World Cup run, when did they concede their only open-play goal?
+**Answer:** In the semi-final
+**Why it fails:** False premise: Morocco's open-play goal conceded was NOT only in the semi-final — France's Kolo Muani (SF) plus Gvardiol and Oršić (3rd-place play-off) were also open play. They conceded more than one open-play goal.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded across SF and 3rd-place match.
+
+### Row 39436 — Morocco (hard) — FAIL
+**Q:** In the 2022 World Cup, Morocco drew 0-0 with Croatia in the group stage but later lost to them with what score?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1. Morocco lost 1-2 to Croatia in the 3rd-place play-off.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39443 — Morocco (easy) — FAIL
+**Q:** In which 2022 World Cup match did Morocco concede their only goal from open play?
+**Answer:** The semi-final
+**Why it fails:** False premise: this was NOT Morocco's only open-play goal conceded — France's Kolo Muani (same SF) plus Gvardiol & Oršić (3rd-place play-off) were also open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Drop 'only' — multiple open-play goals conceded.
+
+### Row 39444 — Morocco (easy) — FAIL
+**Q:** In which 2022 World Cup match did Morocco's Sofiane Boufal score?
+**Answer:** Against Canada
+**Why it fails:** Boufal did NOT score v Canada (Ziyech 4' and En-Nesyri 23' did); Boufal did not score at the 2022 WC at all.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39445 — Morocco (easy) — FAIL
+**Q:** In which 2022 World Cup match did Sofiane Boufal score for Morocco?
+**Answer:** Against Canada
+**Why it fails:** Boufal did NOT score v Canada (Ziyech & En-Nesyri did); he did not score at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39478 — Morocco (medium) — FAIL
+**Q:** In which World Cup qualifying cycle did Morocco fail to reach the finals?
+**Answer:** 2014 World Cup
+**Why it fails:** Non-unique: Morocco failed to qualify for BOTH the 2010 and the 2014 World Cups (also 2002, 2006) — '2010' is also a correct answer among the options.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Rewrite so only one option is a year Morocco missed (they missed 2002, 2006, 2010, 2014).
+
+### Row 39489 — Morocco (medium) — FAIL
+**Q:** In which year did Morocco win the AFCON third-place match?
+**Answer:** 2023
+**Why it fails:** False: Morocco did not win an AFCON third-place match in 2023 — there was no AFCON in 2023, and at the 2023 edition (played Jan 2024) Morocco went out in the Round of 16 (lost 0-2 to South Africa), so they played no third-place match.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Remove — no such result.
+
+### Row 39490 — Morocco (medium) — FAIL
+**Q:** In which year did Morocco win the Arab Cup in Qatar?
+**Answer:** 2022
+**Why it fails:** False: Morocco did NOT win the 2021 FIFA Arab Cup (held in Qatar) — Algeria won it, beating Tunisia 2-0; Algeria knocked Morocco out in the quarter-final. There was no '2022 Arab Cup'.
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 39491 — Morocco (medium) — FAIL
+**Q:** In which year will Morocco co-host the Africa Cup of Nations with Kenya and Tanzania?
+**Answer:** 2025
+**Why it fails:** False premise: Morocco did NOT co-host AFCON 2025 with Kenya and Tanzania — Morocco was the SOLE host of AFCON 2025; Kenya, Tanzania and Uganda jointly host AFCON 2027 ('Pamoja').
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco hosted 2025 alone; Kenya/Tanzania/Uganda host 2027.
+
+### Row 39492 — Morocco (medium) — FAIL
+**Q:** In which year will Morocco co-host the Africa Cup of Nations?
+**Answer:** 2025
+**Why it fails:** False premise: Morocco hosted AFCON 2025 ALONE (no co-hosts). The Kenya/Tanzania/Uganda joint hosting is AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco was sole host of 2025.
+
+### Row 39494 — Morocco (medium) — FAIL
+**Q:** Morocco co-hosted the 2025 AFCON with how many other nations?
+**Answer:** Two
+**Why it fails:** False: Morocco hosted AFCON 2025 alone — it co-hosted with ZERO other nations, not two. Kenya/Tanzania/Uganda co-host 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco was sole 2025 host.
+
+### Row 39495 — Morocco (easy) — FAIL
+**Q:** Morocco co-hosts the 2025 AFCON with which two other nations?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco did not co-host AFCON 2025 with Kenya and Tanzania — it hosted alone; the Kenya/Tanzania/Uganda joint hosting is 2027.
+**Source:** https://en.wikipedia.org/wiki/2027_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 39497 — Morocco (hard) — FAIL
+**Q:** Morocco drew 0-0 with Croatia in the 2022 group stage, but what was the score in their next World Cup match?
+**Answer:** Croatia 2-1 Morocco
+**Why it fails:** Misleading/false: Morocco's NEXT match after the 0-0 group draw with Croatia was v Belgium (won 2-0), not the Croatia 2-1 result (which was the 3rd-place play-off, their last match). Answer doesn't match 'next match'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Next match was Belgium 2-0; rephrase if asking about the 3rd-place play-off.
+
+### Row 39500 — Morocco (medium) — FAIL
+**Q:** Morocco kept how many clean sheets in their 7 matches at the 2022 World Cup?
+**Answer:** 3 clean sheets
+**Why it fails:** Wrong count: Morocco (team) kept 4 clean sheets in 7 matches (Croatia, Belgium, Spain, Portugal), not 3.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Team kept 4 clean sheets.
+
+### Row 39503 — Morocco (medium) — FAIL
+**Q:** Morocco will co-host the 2025 AFCON with how many other nations?
+**Answer:** Two other nations
+**Why it fails:** False: Morocco hosted AFCON 2025 alone (zero co-hosts), not two. Kenya/Tanzania/Uganda co-host 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco was sole 2025 host.
+
+### Row 39504 — Morocco (easy) — FAIL
+**Q:** Morocco will co-host the 2025 AFCON with which two other African nations?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco did not co-host AFCON 2025 with Kenya and Tanzania — sole host; KTU host 2027.
+**Source:** https://en.wikipedia.org/wiki/2027_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 39506 — Morocco (hard) — FAIL
+**Q:** Morocco's 2022 World Cup ended a qualification gap of how many tournaments?
+**Answer:** One tournament
+**Why it fails:** False premise: Morocco did NOT miss the 2018 World Cup — they qualified and played it. 2022 followed 2018 with no gap; their long drought (4 missed: 2002-2014) ended in 2018, not 2022.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; no qualification gap before 2022.
+
+### Row 39507 — Morocco (hard) — FAIL
+**Q:** Morocco's 2022 World Cup group stage included a 0-0 draw with Croatia. How many total clean sheets did they keep?
+**Answer:** Three clean sheets
+**Why it fails:** Wrong count: Morocco (team) kept 4 clean sheets in 7 matches, not 3.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Team kept 4 clean sheets.
+
+### Row 39514 — Morocco (medium) — FAIL
+**Q:** Morocco's 2023 AFCON third-place win came after failing to qualify for which World Cup?
+**Answer:** 2014 World Cup
+**Why it fails:** False premise + non-unique: there was no Morocco AFCON third-place win in 2023 (out in the R16 at the 2023 edition), and Morocco failed to qualify for BOTH 2010 and 2014 (both options), so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No 2023 AFCON third-place win; missed 2002/2006/2010/2014.
+
+### Row 39531 — Morocco (easy) — FAIL
+**Q:** What was the final score when Morocco lost to Croatia in the 2022 World Cup third-place play-off?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1 (Croatia beat Morocco 2-1 in the 3rd-place play-off).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39533 — Morocco (medium) — FAIL
+**Q:** What was the score when Morocco lost to Croatia in the 2022 World Cup third-place match?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1 (3rd-place play-off).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 2-1.
+
+### Row 39555 — Morocco (easy) — FAIL
+**Q:** When did Morocco concede their only open-play goal at the 2022 World Cup?
+**Answer:** In the semi-final
+**Why it fails:** False premise: not Morocco's only open-play goal conceded — France's Kolo Muani (same SF) plus Gvardiol & Oršić (3rd place) were also open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 39561 — Morocco (hard) — FAIL
+**Q:** When did Morocco first reach 11th in the FIFA rankings?
+**Answer:** After 2022 World Cup
+**Why it fails:** Explanation states Morocco's 'highest FIFA ranking of 11th' — false: their highest is 7th (June 2026), and 10th (April 1998) also bettered 11th. (They did first reach 11th after 2022, but it was not their highest.)
+**Source:** https://inside.fifa.com/fifa-world-ranking/MAR
+**Remedy:** 11th was the post-2022 rank, not the highest (7th).
+
+### Row 39570 — Morocco (medium) — FAIL
+**Q:** When did Morocco next play at the FIFA World Cup after failing to qualify in 2018?
+**Answer:** 2022
+**Why it fails:** False premise: Morocco did NOT fail to qualify for 2018 — they qualified and played the 2018 WC. So 2022 was not 'their first since failing 2018'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; their long drought (2002-2014) ended in 2018.
+
+### Row 39578 — Morocco (medium) — FAIL
+**Q:** When did Morocco win the AFCON third-place match?
+**Answer:** 2023
+**Why it fails:** False: Morocco did not win an AFCON third-place match in 2023 — there was no AFCON in 2023; at the 2023 edition (Jan 2024) they went out in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No such result.
+
+### Row 39579 — Morocco (medium) — FAIL
+**Q:** When did Morocco win the Africa Cup of Nations third-place match?
+**Answer:** 2023
+**Why it fails:** False: no Morocco AFCON third-place win in 2023 — they exited the 2023 edition (Jan 2024) in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No such result.
+
+### Row 39580 — Morocco (medium) — FAIL
+**Q:** When did Morocco win the Arab Cup in Qatar?
+**Answer:** 2022
+**Why it fails:** False: Morocco never won the Arab Cup — Algeria won the 2021 FIFA Arab Cup in Qatar (beat Tunisia 2-0; Algeria knocked Morocco out in the QF).
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 39616 — Morocco (easy) — FAIL
+**Q:** Which 2022 World Cup quarter-finalist did Morocco fail to qualify with for the 2018 World Cup?
+**Answer:** Portugal
+**Why it fails:** False premise: Morocco DID qualify for the 2018 WC (drawn with Portugal in Group B). The explanation's claim that Morocco didn't qualify for 2018 is wrong.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played the 2018 WC alongside Portugal.
+
+### Row 39643 — Morocco (easy) — FAIL
+**Q:** Which African nation matched Morocco's 2022 World Cup semi-final run?
+**Answer:** Morocco
+**Why it fails:** Self-referential answer: the question asks which African nation matched Morocco's run, and the answer is 'Morocco' itself — nonsensical.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Answer should be 'None'; remove Morocco as the answer.
+
+### Row 39680 — Morocco (easy) — FAIL
+**Q:** Which emerging Moroccan talent is a product of the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Manchester City (and Málaga) academy product, NOT a Real Madrid academy product. The genuine Real Madrid academy (La Fábrica) graduate among the options is Achraf Hakimi.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39681 — Morocco (easy) — FAIL
+**Q:** Which emerging Morocco talent came from the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz came through Man City's academy, not Real Madrid's; Hakimi (an option) is the actual Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39682 — Morocco (easy) — FAIL
+**Q:** Which emerging Real Madrid academy talent was in Morocco's 2022 World Cup squad?
+**Answer:** Ibrahim Díaz
+**Why it fails:** False: Brahim Díaz was NOT in Morocco's 2022 World Cup squad — he switched his allegiance from Spain to Morocco only in March 2024. He is also a Man City academy product, not Real Madrid.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz joined Morocco in 2024; not in the 2022 squad.
+
+### Row 39688 — Morocco (hard) — FAIL
+**Q:** Which FIFA World Cup did Morocco fail to qualify for in African qualification?
+**Answer:** 2014 World Cup
+**Why it fails:** Non-unique: Morocco failed to qualify for BOTH 2010 and 2014 (also 2002, 2006); '2010' is also correct among the options.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one missed-year option should be present.
+
+### Row 39692 — Morocco (easy) — FAIL
+**Q:** Which formation did Morocco use under Regragui at the 2022 World Cup?
+**Answer:** 04/03/2003
+**Why it fails:** Excel date-corruption: answer '04/03/2003' is a mangled 4-3-3 formation.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Fix answer cell to 4-3-3.
+
+### Row 39694 — Morocco (easy) — FAIL
+**Q:** Which France player scored Morocco's only open-play goal conceded at the 2022 World Cup?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: Theo Hernández was NOT Morocco's only open-play goal conceded — France's Kolo Muani (same SF) and Croatia's Gvardiol & Oršić (3rd place) also scored from open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Drop 'only open-play goal'.
+
+### Row 39699 — Morocco (easy) — FAIL
+**Q:** Which manager did not directly precede Walid Regragui as Morocco's coach?
+**Answer:** Hervé Renard
+**Why it fails:** Non-unique: Regragui directly succeeded Halilhodžić, so THREE options (Renard, Badou Zaki, José Faria) all 'did not directly precede' him — the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Only one option should be a non-predecessor.
+
+### Row 39704 — Morocco (easy) — FAIL
+**Q:** Which manager is NOT leading Morocco for the 2026 World Cup campaign?
+**Answer:** Vahid Halilhodžić
+**Why it fails:** Non-unique 'NOT' question: only Regragui leads Morocco for 2026, so THREE options (Halilhodžić, Renard, Mourinho) are all 'not leading'.
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Make three options current/plausible leaders so only one is excluded.
+
+### Row 39747 — Morocco (easy) — FAIL
+**Q:** Which Moroccan club did not lose a FIFA Club World Cup final to Bayern Munich?
+**Answer:** Wydad Casablanca
+**Why it fails:** Non-unique (and duplicate options): Raja lost the 2013 CWC final to Bayern, so Wydad, FAR Rabat AND AS FAR all 'did not' — three valid answers, and FAR Rabat = AS FAR are the same club.
+**Source:** https://en.wikipedia.org/wiki/2013_FIFA_Club_World_Cup
+**Remedy:** Use distinct clubs; only one non-loser option.
+
+### Row 39810 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player had over 70 international caps by the 2022 World Cup?
+**Answer:** Achraf Hakimi
+**Why it fails:** Doubtful/likely false cap count: Hakimi had roughly 60 caps by the 2022 WC, not 'over 70'; Saïss (debuted 2012) had more international caps than Hakimi by then, so the answer is also misattributed/non-unique.
+**Source:** https://en.wikipedia.org/wiki/Achraf_Hakimi
+**Remedy:** Verify caps; ~60 for Hakimi by 2022, not 70+.
+
+### Row 39811 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player is a product of the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Manchester City (Málaga) academy product, not Real Madrid; the genuine Real Madrid academy (La Fábrica) graduate among the options is Achraf Hakimi.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39818 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player is an emerging attacking talent from Real Madrid's academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong: Brahim Díaz is a Man City academy product, not Real Madrid; Hakimi (an option) is the actual Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39819 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player is an emerging talent from the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong: Brahim Díaz came through Man City's academy, not Real Madrid's; Hakimi is the Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39823 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player scored at the 2022 World Cup and has over 50 caps?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: both Ziyech AND En-Nesyri (an option) scored at the 2022 WC and have 50+ caps, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Make only one option fit (scored + 50+ caps).
+
+### Row 39832 — Morocco (easy) — FAIL
+**Q:** Which Moroccan player, a Real Madrid academy talent, was selected for the 2022 World Cup?
+**Answer:** Ibrahim Díaz
+**Why it fails:** False: Brahim Díaz was NOT in Morocco's 2022 squad (switched to Morocco in March 2024) and is a Man City academy product, not Real Madrid.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz joined Morocco in 2024; not in 2022 squad.
+
+### Row 39840 — Morocco (easy) — FAIL
+**Q:** Which Moroccan talent emerged from Real Madrid's academy before the 2026 World Cup?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong: Brahim Díaz is a Man City academy product, not Real Madrid's.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz is not a Real Madrid academy product.
+
+### Row 39842 — Morocco (easy) — FAIL
+**Q:** Which Moroccan tournament in 2022 ended an absence since 2018 qualifiers?
+**Answer:** FIFA World Cup
+**Why it fails:** False premise: Morocco did NOT fail to qualify for 2018 — they played the 2018 WC, so 2022 did not end any absence 'since 2018 qualifiers'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; no absence before 2022.
+
+### Row 39843 — Morocco (easy) — FAIL
+**Q:** Which Moroccan World Cup talent emerged from Real Madrid's academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Man City academy product, not Real Madrid; Hakimi (an option) is the Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39853 — Morocco (easy) — FAIL
+**Q:** Which Morocco AFCON rival did NOT play at the 2022 World Cup?
+**Answer:** Algeria
+**Why it fails:** Non-unique + wrong explanation: BOTH Algeria and Egypt (an option) failed to qualify for the 2022 WC (Egypt lost the playoff to Senegal); the explanation wrongly says Egypt participated.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Egypt also missed 2022; only one non-qualifier option should be present.
+
+### Row 39873 — Morocco (easy) — FAIL
+**Q:** Which Morocco manager at the 2022 World Cup was NOT Moroccan-born?
+**Answer:** Vahid Halilhodžić
+**Why it fails:** Non-unique: among the options BOTH Halilhodžić (Bosnian-born) and Hervé Renard (French-born) are not Moroccan-born; also neither was the manager actually at the 2022 WC (that was Regragui).
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Only one non-Moroccan-born option should be present.
+
+### Row 39915 — Morocco (easy) — FAIL
+**Q:** Which Morocco manager was not sacked months before a World Cup?
+**Answer:** Hervé Renard
+**Why it fails:** Non-unique 'NOT' question: only Halilhodžić was sacked months before a WC, so Renard, Regragui AND Badou Zaki all 'were not' — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Walid_Regragui
+**Remedy:** Only one option should have been sacked pre-WC.
+
+### Row 39936 — Morocco (easy) — FAIL
+**Q:** Which Morocco midfielder was not a breakout star at the 2022 World Cup?
+**Answer:** Sofyan Amrabat
+**Why it fails:** Non-unique 'NOT' question: only Ounahi was the 'breakout star', so Amrabat, Sabiri AND Boufal all 'were not' — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Azzedine_Ounahi
+**Remedy:** Only one option should be the breakout star.
+
+### Row 39949 — Morocco (easy) — FAIL
+**Q:** Which Morocco player had over 50 caps when they faced Croatia at the 2022 World Cup?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique 'over 50 caps' claim: Hakimi (an option) had ~60 caps by the 2022 WC, also over 50 — so the answer isn't unique to Ziyech.
+**Source:** https://en.wikipedia.org/wiki/Achraf_Hakimi
+**Remedy:** Pick a uniquely-identifying criterion.
+
+### Row 39954 — Morocco (easy) — FAIL
+**Q:** Which Morocco player is an emerging talent from the Real Madrid academy?
+**Answer:** Ibrahim Díaz
+**Why it fails:** Wrong + non-unique: Brahim Díaz is a Man City academy product, not Real Madrid; Hakimi (an option) is the Real Madrid academy graduate.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Hakimi is the Real Madrid academy product.
+
+### Row 39958 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored a goal at the 2022 FIFA World Cup?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: Ziyech, En-Nesyri AND Sabiri (all options) scored at the 2022 WC — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a 2022 scorer.
+
+### Row 39965 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored against Canada at the 2022 World Cup?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong: Boufal did NOT score v Canada — Ziyech (4') and En-Nesyri (23') did (both are options); Boufal did not score at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39969 — Morocco (medium) — FAIL
+**Q:** Which Morocco player scored in the 2022 World Cup group stage?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: Ziyech, En-Nesyri AND Sabiri (all options) scored in the 2022 group stage — three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a group-stage scorer.
+
+### Row 39983 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored their 2022 World Cup goal versus Canada?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong: Boufal did NOT score v Canada — Ziyech and En-Nesyri (both options) did; Boufal didn't score at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39984 — Morocco (easy) — FAIL
+**Q:** Which Morocco player scored their goal against Canada at the 2022 World Cup?
+**Answer:** Sofiane Boufal
+**Why it fails:** Wrong: Boufal did NOT score v Canada — Ziyech and En-Nesyri (both options) did.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Canada scorers were Ziyech and En-Nesyri.
+
+### Row 39991 — Morocco (easy) — FAIL
+**Q:** Which Morocco player with over 50 caps scored at the 2022 World Cup?
+**Answer:** Hakim Ziyech
+**Why it fails:** Non-unique: both Ziyech AND En-Nesyri (an option) had 50+ caps and scored at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Use a uniquely-identifying criterion.
+
+### Row 40009 — Morocco (easy) — FAIL
+**Q:** Which nation co-hosted the 2025 AFCON with Morocco and Tanzania?
+**Answer:** Kenya
+**Why it fails:** False premise: Morocco was the SOLE host of AFCON 2025 — there was no co-hosting with Kenya/Tanzania (that is AFCON 2027).
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco hosted 2025 alone; KTU host 2027.
+
+### Row 40056 — Morocco (easy) — FAIL
+**Q:** Which nation scored Morocco's only open-play goal at the 2022 World Cup?
+**Answer:** France
+**Why it fails:** False premise + non-unique: not Morocco's 'only' open-play goal — Croatia (an option) also scored open-play goals (Gvardiol, Oršić) in the 3rd-place play-off, and France scored two (Theo + Kolo Muani).
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 40063 — Morocco (easy) — FAIL
+**Q:** Which nation will co-host the 2025 AFCON with Morocco and Kenya?
+**Answer:** Tanzania
+**Why it fails:** False premise: Morocco was the SOLE host of AFCON 2025 — no co-hosting with Kenya/Tanzania (that is AFCON 2027).
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco hosted 2025 alone; KTU host 2027.
+
+### Row 40064 — Morocco (easy) — FAIL
+**Q:** Which nation will co-host the 2025 AFCON with Morocco and Tanzania?
+**Answer:** Kenya
+**Why it fails:** False premise: Morocco hosted AFCON 2025 alone — Kenya/Tanzania co-hosting is AFCON 2027, not 2025.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40089 — Morocco (easy) — FAIL
+**Q:** Which player scored France's only open-play goal against Morocco in 2022?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: Theo was NOT France's only open-play goal v Morocco — Kolo Muani also scored from open play in the same semi-final.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** France scored two open-play goals (Theo + Kolo Muani).
+
+### Row 40091 — Morocco (easy) — FAIL
+**Q:** Which player scored Morocco's only 2022 World Cup open-play goal conceded?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: not Morocco's 'only' open-play goal conceded — Kolo Muani (SF) and Gvardiol & Oršić (3rd place) were also open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 40092 — Morocco (easy) — FAIL
+**Q:** Which player scored the only open-play goal against Morocco at the 2022 World Cup?
+**Answer:** Theo Hernández
+**Why it fails:** False premise: not the 'only' open-play goal against Morocco — France's Kolo Muani and Croatia's Gvardiol & Oršić also scored from open play.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Multiple open-play goals conceded.
+
+### Row 40093 — Morocco (easy) — FAIL
+**Q:** Which Real Madrid academy attacker was in Morocco's 2022 World Cup squad?
+**Answer:** Ibrahim Díaz
+**Why it fails:** False: Brahim Díaz was NOT in Morocco's 2022 squad (switched to Morocco in 2024) and is a Man City academy product, not Real Madrid.
+**Source:** https://en.wikipedia.org/wiki/Brahim_D%C3%ADaz
+**Remedy:** Díaz joined Morocco in 2024; not in 2022 squad.
+
+### Row 40099 — Morocco (easy) — FAIL
+**Q:** Which tactical system did Morocco's Walid Regragui NOT use at the 2022 World Cup?
+**Answer:** A 3-5-2 formation
+**Why it fails:** Non-unique 'NOT' question: Regragui used 4-3-3/4-1-4-1, so BOTH '3-5-2' and 'defensive 4-4-2' are formations he did not use — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a non-used formation.
+
+### Row 40131 — Morocco (easy) — FAIL
+**Q:** Which three nations co-hosted the 2025 Africa Cup of Nations with Morocco?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco was the SOLE host of AFCON 2025 (no co-hosts); the Kenya/Tanzania/Uganda joint hosting is AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40138 — Morocco (easy) — FAIL
+**Q:** Which three nations will co-host the 2025 Africa Cup of Nations with Morocco?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco hosted AFCON 2025 alone; the Kenya/Tanzania co-hosting is AFCON 2027, not 2025.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40140 — Morocco (hard) — FAIL
+**Q:** Which tournament did Morocco win in Qatar just before the 2022 World Cup?
+**Answer:** The 2022 Arab Cup
+**Why it fails:** False: Morocco did NOT win the Arab Cup in Qatar — Algeria won the 2021 FIFA Arab Cup (beat Tunisia); there was no '2022 Arab Cup'.
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 40141 — Morocco (easy) — FAIL
+**Q:** Which trophy did Morocco win in Qatar in 2022?
+**Answer:** The Arab Cup
+**Why it fails:** False: Morocco did not win the Arab Cup in Qatar — Algeria won the 2021 edition.
+**Source:** https://en.wikipedia.org/wiki/2021_FIFA_Arab_Cup
+**Remedy:** Algeria won the 2021 Arab Cup.
+
+### Row 40146 — Morocco (easy) — FAIL
+**Q:** Which two nations co-hosted the 2025 AFCON with Morocco?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False: Morocco was the sole host of AFCON 2025; Kenya/Tanzania co-host AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40154 — Morocco (medium) — FAIL
+**Q:** Which World Cup did Morocco fail to qualify for in African preliminaries?
+**Answer:** 2014 World Cup
+**Why it fails:** Non-unique: Morocco failed African preliminaries for BOTH 2010 and 2014 (also 2002, 2006); '2010' is also correct among the options.
+**Source:** https://en.wikipedia.org/wiki/Morocco_national_football_team
+**Remedy:** Only one missed-year option should be present.
+
+### Row 40155 — Morocco (hard) — FAIL
+**Q:** Which World Cup did Morocco qualify for after missing three consecutive tournaments?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** False premise: Morocco did NOT miss 2018 — they qualified and played the 2018 WC. They missed 2002, 2006, 2010 and 2014 before 2018, not '2010/2014/2018 before 2022'.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; the drought ended in 2018.
+
+### Row 40160 — Morocco (medium) — FAIL
+**Q:** Which year did Morocco win the Africa Cup of Nations third-place match?
+**Answer:** 2023
+**Why it fails:** False: there was no Morocco AFCON third-place win in 2023 — no AFCON took place in 2023, and at the 2023 edition (Jan 2024) Morocco went out in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** No such result.
+
+### Row 40177 — Morocco (easy) — FAIL
+**Q:** Why did Morocco co-host the 2025 Africa Cup of Nations?
+**Answer:** Kenya and Tanzania
+**Why it fails:** False premise: Morocco did NOT co-host AFCON 2025 — it was the sole host; Kenya/Tanzania co-host AFCON 2027.
+**Source:** https://en.wikipedia.org/wiki/2025_Africa_Cup_of_Nations
+**Remedy:** Morocco sole host 2025; KTU host 2027.
+
+### Row 40180 — Morocco (easy) — FAIL
+**Q:** Why did Morocco miss the 2010, 2014, and 2018 World Cups?
+**Answer:** Failed to qualify
+**Why it fails:** False premise: Morocco did NOT miss the 2018 World Cup — they qualified and played it. They missed 2002, 2006, 2010 and 2014.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; drop it from the 'missed' list.
+
+### Row 40186 — Morocco (medium) — FAIL
+**Q:** Why was Morocco's 2022 FIFA World Cup appearance notable?
+**Answer:** Missed 2018 qualification
+**Why it fails:** False premise: Morocco's 2022 appearance was NOT notable for 'missing 2018 qualification' — they qualified for and played the 2018 WC.
+**Source:** https://en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup
+**Remedy:** Morocco played 2018; the notable point was reaching the SF.
+
+### Row 40188 — Netherlands (medium) — FAIL
+**Q:** After failing to qualify for the 2018 World Cup, the Netherlands dropped to which FIFA ranking in 2016?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands' record-low 36th came in August 2017 (after 2018 WC qualifying failed in Oct 2017), not 2016 — the stated 2016/causal timing is contradictory.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was Aug 2017.
+
+### Row 40192 — Netherlands (medium) — FAIL
+**Q:** After reaching the 2010 World Cup final, what was the Netherlands' highest FIFA ranking in 2011?
+**Answer:** 3rd
+**Why it fails:** Wrong: the Netherlands' highest FIFA ranking was 1st (Aug-Sep 2011), not 3rd.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Highest = 1st (2011).
+
+### Row 40194 — Netherlands (medium) — FAIL
+**Q:** After the 2010 World Cup, the Netherlands reached what FIFA ranking in 2011?
+**Answer:** 3rd
+**Why it fails:** Wrong: the Netherlands reached 1st in 2011 (not 3rd) — that was their highest-ever FIFA ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Highest = 1st (2011).
+
+### Row 40197 — Netherlands (medium) — FAIL
+**Q:** After their 2010 World Cup final, the Netherlands rose to what FIFA ranking in 2011?
+**Answer:** 3rd
+**Why it fails:** Wrong: the Netherlands rose to 1st in 2011 (not 3rd).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Highest = 1st (2011).
+
+### Row 40200 — Netherlands (hard) — FAIL
+**Q:** After which World Cup did the Netherlands reach their highest FIFA ranking?
+**Answer:** 2010 World Cup
+**Why it fails:** Explanation wrong: it says the Netherlands reached '3rd in 2011' — they actually reached 1st (their highest-ever). (The 'after the 2010 WC' timing is right.)
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 40208 — Netherlands (medium) — FAIL
+**Q:** At the 2014 World Cup, how many goals did the Netherlands score in their first three matches?
+**Answer:** 12 goals
+**Why it fails:** Wrong count: the Netherlands scored 10 goals in their 2014 group stage (Spain 5-1, Australia 3-2, Chile 2-0 = 10), not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40209 — Netherlands (medium) — FAIL
+**Q:** At the 2014 World Cup, Netherlands beat Spain by what score in the group stage?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: answer '05-Jan' is a mangled 5-1 (Netherlands beat Spain 5-1).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40228 — Netherlands (medium) — FAIL
+**Q:** At which FIFA World Cup did the Netherlands score 12 goals in their first 3 matches?
+**Answer:** 2014 World Cup
+**Why it fails:** Wrong count: the Netherlands scored 10 goals in their first 3 (2014 group) matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40239 — Netherlands (hard) — FAIL
+**Q:** Before which FIFA World Cup did the Netherlands first base at KNVB Campus?
+**Answer:** The 2010 World Cup
+**Why it fails:** Unverified/likely false: the KNVB centre in Zeist has been the national team base for decades (long before 2010), so '2010' as when they 'first based' there is not supportable.
+**Source:** https://en.wikipedia.org/wiki/KNVB_Campus
+**Remedy:** Zeist predates 2010 as the base.
+
+### Row 40242 — Netherlands (medium) — FAIL
+**Q:** For which FIFA World Cup did the Netherlands win their UEFA qualifying group?
+**Answer:** 2010 World Cup
+**Why it fails:** Non-unique: the Netherlands WON their UEFA qualifying group for 2010, 2014 AND 2022 (only 2018 they failed) — three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Make only one year a group win.
+
+### Row 40260 — Netherlands (medium) — FAIL
+**Q:** In 2016, the Netherlands fell to what FIFA ranking low?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands' record-low 36th was August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40277 — Netherlands (medium) — FAIL
+**Q:** In the 2019 Nations League semi-final, the Netherlands beat England by what score after extra time?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer '03-Jan' is a mangled 3-1 (Netherlands beat England 3-1 a.e.t. in the 2019 NL SF).
+**Source:** https://en.wikipedia.org/wiki/2019_UEFA_Nations_League_Finals
+**Remedy:** Fix to 3-1.
+
+### Row 40282 — Netherlands (hard) — FAIL
+**Q:** In their 2022 World Cup group stage, how many different European top leagues did Netherlands squad players represent?
+**Answer:** Four
+**Why it fails:** Unverified/undercount: the Netherlands' 2022 squad also included Eredivisie-based players (e.g. Gakpo at PSV, Berghuis/Klaassen at Ajax), so 'four' top leagues is too low.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Count is higher (Eredivisie included).
+
+### Row 40293 — Netherlands (medium) — FAIL
+**Q:** In which FIFA World Cup did the Netherlands score 12 goals in their first 3 matches?
+**Answer:** 2014
+**Why it fails:** False count: the Netherlands scored 10 goals in their 2014 group stage (5+3+2), not 12 — the '12' premise is wrong.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40295 — Netherlands (medium) — FAIL
+**Q:** In which FIFA World Cup was Dutch star Arjen Robben named best player?
+**Answer:** 2010
+**Why it fails:** False: Robben was NOT named best player of the 2010 WC — the Golden Ball went to Diego Forlán (Sneijder won the Silver Ball).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40300 — Netherlands (hard) — FAIL
+**Q:** In which World Cup did Arjen Robben win best player for the Netherlands?
+**Answer:** 2010 FIFA World Cup
+**Why it fails:** False: Robben was not named best player of the 2010 WC — Diego Forlán won the Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40305 — Netherlands (medium) — FAIL
+**Q:** In which World Cup did Dutch winger Arjen Robben win the Silver Ball?
+**Answer:** 2010 World Cup
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — that went to Wesley Sneijder (Golden Ball: Forlán).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40307 — Netherlands (medium) — FAIL
+**Q:** In which World Cup did Netherlands score 12 goals in their first three matches?
+**Answer:** 2014 World Cup
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40336 — Netherlands (medium) — FAIL
+**Q:** In which World Cup tournament did the Netherlands first lose a knockout match to Argentina?
+**Answer:** 2014 World Cup
+**Why it fails:** False 'first': the Netherlands' first WC knockout loss to Argentina was the 1978 final (lost 1-3 a.e.t.), not the 2014 SF.
+**Source:** https://en.wikipedia.org/wiki/1978_FIFA_World_Cup_Final
+**Remedy:** 1978 final was the first.
+
+### Row 40338 — Netherlands (medium) — FAIL
+**Q:** In which World Cup tournament was Dutch forward Cody Gakpo named to the Team of the Tournament?
+**Answer:** 2022 World Cup
+**Why it fails:** Unverified/likely false: there was no single official FIFA 'Team of the Tournament' for 2022, and the Netherlands exited in the QF — the claim Gakpo was named to it is not supportable.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40343 — Netherlands (medium) — FAIL
+**Q:** In which year did Netherlands lose 2-0 to Czech Republic at Euro 2020?
+**Answer:** 2020
+**Why it fails:** Wrong year: the Netherlands' Euro 2020 R16 loss to the Czech Republic was played on 27 June 2021 (Euro 2020 was held in 2021), not 2020 — and 2021 isn't even an option.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** The match was in 2021.
+
+### Row 40348 — Netherlands (hard) — FAIL
+**Q:** In which year did the Netherlands drop to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands' 36th low was August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40350 — Netherlands (hard) — FAIL
+**Q:** In which year did the Netherlands fall to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands fell to 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40355 — Netherlands (hard) — FAIL
+**Q:** In which year did the Netherlands reach 3rd in FIFA rankings?
+**Answer:** 2011
+**Why it fails:** False premise: the Netherlands' peak in 2011 was 1st, not 3rd — the explanation undersells/misstates it as '3rd'.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 40364 — Netherlands (hard) — FAIL
+**Q:** The Netherlands scored 12 goals in their first three 2014 World Cup group stage matches. Which tournament was this?
+**Answer:** 2014 FIFA World Cup
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40370 — Netherlands (easy) — FAIL
+**Q:** What was the final score when Netherlands beat Spain in 2014?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: answer '05-Jan' is a mangled 5-1 (Netherlands 5-1 Spain, 2014).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40372 — Netherlands (easy) — FAIL
+**Q:** What was the final score when Netherlands lost to Argentina in the 2022 World Cup quarter-final?
+**Answer:** 02-Feb
+**Why it fails:** Excel date-corruption: answer '02-Feb' is a mangled 2-2 (Netherlands 2-2 Argentina a.e.t., 2022 QF).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Fix to 2-2.
+
+### Row 40374 — Netherlands (easy) — FAIL
+**Q:** What was the final score when the Netherlands beat England in the 2019 Nations League semi-final?
+**Answer:** 03-Jan
+**Why it fails:** Excel date-corruption: answer '03-Jan' is a mangled 3-1 (Netherlands 3-1 England a.e.t., 2019 NL SF).
+**Source:** https://en.wikipedia.org/wiki/2019_UEFA_Nations_League_Finals
+**Remedy:** Fix to 3-1.
+
+### Row 40376 — Netherlands (easy) — FAIL
+**Q:** What was the final score when the Netherlands lost to England in the Euro 2024 semi-final?
+**Answer:** 02-Jan
+**Why it fails:** Excel date-corruption: answer '02-Jan' is a mangled 2-1 (Netherlands 1-2 England, Euro 2024 SF).
+**Source:** https://en.uefa.com/euro2024/
+**Remedy:** Fix to 2-1.
+
+### Row 40378 — Netherlands (medium) — FAIL
+**Q:** What was the Netherlands' group stage score against Spain at the 2014 World Cup?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: '05-Jan' is a mangled 5-1 (Netherlands 5-1 Spain, 2014).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40380 — Netherlands (easy) — FAIL
+**Q:** What was the Netherlands' score against Spain at the 2014 World Cup?
+**Answer:** 05-Jan
+**Why it fails:** Excel date-corruption: '05-Jan' is a mangled 5-1 (Netherlands 5-1 Spain, 2014).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Fix to 5-1.
+
+### Row 40381 — Netherlands (medium) — FAIL
+**Q:** What was the score when Netherlands lost to Belgium in the 2018 Nations League?
+**Answer:** 2-0
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the 2018 Nations League — their League A group was France & Germany; they never played Belgium in the NL.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40387 — Netherlands (medium) — FAIL
+**Q:** When did Dutch winger Arjen Robben win the World Cup Silver Ball?
+**Answer:** 2010
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — that went to Wesley Sneijder (Golden Ball: Forlán).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40390 — Netherlands (hard) — FAIL
+**Q:** When did Netherlands fall to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands fell to 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40403 — Netherlands (hard) — FAIL
+**Q:** When did the Netherlands drop to 36th in FIFA rankings?
+**Answer:** 2016
+**Why it fails:** Wrong year: the Netherlands dropped to 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40413 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands last host a World Cup qualifier at De Kuip?
+**Answer:** 2022
+**Why it fails:** Wrong year: the Netherlands' De Kuip qualifier v Norway that sent them to the 2022 WC was on 16 Nov 2021, not 2022 (all UEFA 2022 qualifiers were in 2021).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** The Norway game was Nov 2021.
+
+### Row 40416 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands lose 2-0 to Belgium in the Nations League?
+**Answer:** 2018
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the Nations League — they were never in a NL group with Belgium (2018-19 group was France & Germany).
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40423 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands qualify by winning their UEFA group for the World Cup?
+**Answer:** 2010
+**Why it fails:** Non-unique: the Netherlands won their UEFA group for 2006, 2010 AND 2014 — three of the four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Make only one year a group win.
+
+### Row 40426 — Netherlands (hard) — FAIL
+**Q:** When did the Netherlands reach 3rd in the FIFA rankings after the 2010 World Cup?
+**Answer:** 2011
+**Why it fails:** False premise: the Netherlands reached 1st (not 3rd) in 2011 — that was their highest-ever FIFA ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 40432 — Netherlands (medium) — FAIL
+**Q:** When did the Netherlands score 12 goals in their first three World Cup matches?
+**Answer:** 2014 World Cup
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40462 — Netherlands (easy) — FAIL
+**Q:** Which Dutch 2010 World Cup finalist was a De Toekomst academy graduate?
+**Answer:** Wesley Sneijder
+**Why it fails:** Non-unique: both Sneijder AND Rafael van der Vaart (both 2010 squad members) came through Ajax's De Toekomst academy — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Rafael_van_der_Vaart
+**Remedy:** Only one De Toekomst graduate should be an option.
+
+### Row 40465 — Netherlands (easy) — FAIL
+**Q:** Which Dutch 2022 World Cup starter debuted after leaving the Eredivisie?
+**Answer:** Cody Gakpo
+**Why it fails:** False: Gakpo did NOT debut after leaving the Eredivisie — he debuted in June 2021 while still at PSV (Eredivisie) and only moved to Liverpool in Jan 2023 (after the 2022 WC).
+**Source:** https://en.wikipedia.org/wiki/Cody_Gakpo
+**Remedy:** Gakpo debuted while at PSV.
+
+### Row 40514 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie club did Virgil van Dijk play for before his 2018 World Cup call-up?
+**Answer:** Feyenoord
+**Why it fails:** False: Van Dijk's Eredivisie club was FC Groningen (then Celtic/Southampton), not Feyenoord; also the Netherlands missed the 2018 WC (no '2018 WC call-up').
+**Source:** https://en.wikipedia.org/wiki/Virgil_van_Dijk
+**Remedy:** Van Dijk played for Groningen.
+
+### Row 40515 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie club had players in the Netherlands' 2022 World Cup squad?
+**Answer:** Ajax
+**Why it fails:** Non-unique: both Ajax (Berghuis, Klaassen, Timber) AND PSV (Gakpo) had players in the 2022 squad — more than one option is correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Multiple Eredivisie clubs supplied 2022 players.
+
+### Row 40517 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie export played in the 2022 World Cup qualifying campaign?
+**Answer:** Matthijs de Ligt
+**Why it fails:** Non-unique: De Ligt, De Jong, Van Dijk AND Depay are all Eredivisie products who played in the 2022 WC qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Use a uniquely-identifying trait.
+
+### Row 40518 — Netherlands (easy) — FAIL
+**Q:** Which Dutch Eredivisie export starred for his nation in the 2022 World Cup qualifiers?
+**Answer:** Frenkie de Jong
+**Why it fails:** Non-unique: De Jong, Van Dijk, Depay AND Dumfries are all Eredivisie-developed players who featured in the 2022 qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Use a uniquely-identifying trait.
+
+### Row 40521 — Netherlands (hard) — FAIL
+**Q:** Which Dutch FIFA ranking low came during 2018 World Cup qualifying?
+**Answer:** 36th in 2016
+**Why it fails:** Wrong year in the answer: the 36th low was August 2017, not 2016 ('36th in 2016').
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40523 — Netherlands (easy) — FAIL
+**Q:** Which Dutch forward joined Sneijder as a World Cup Team of Tournament honoree in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: there was no official FIFA 'Team of the Tournament' for 2022, and the Netherlands exited in the QF — Gakpo being named to it is not supportable (Sneijder was long retired).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40525 — Netherlands (easy) — FAIL
+**Q:** Which Dutch forward was in the World Cup Team of the Tournament in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: FIFA did not name an official 'Team of the Tournament' for Qatar 2022, so Gakpo's selection to it cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40532 — Netherlands (easy) — FAIL
+**Q:** Which Dutch keeper did Van Gaal NOT bring on for the 2014 World Cup shootout?
+**Answer:** Maarten Stekelenburg
+**Why it fails:** Non-unique 'NOT' question: only Krul was brought on, so Stekelenburg, Cillessen AND Vorm all 'were not brought on' — multiple valid answers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a keeper who came on.
+
+### Row 40585 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player made the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: there was no official FIFA 'Team of the Tournament' for 2022; Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40604 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player scored a hat-trick against Spain in 2014?
+**Answer:** Robin van Persie
+**Why it fails:** False: Van Persie scored a BRACE (2 goals), not a hat-trick, in the 5-1 v Spain (2014) — Robben also scored 2 and De Vrij 1.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Van Persie scored 2, not 3.
+
+### Row 40633 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was in the 2014 World Cup squad after scoring 50 international goals?
+**Answer:** Robin van Persie
+**Why it fails:** False: Van Persie had not scored 50 international goals before the 2014 WC — he reached 50 only later in his career (~41 entering 2014); 50 was his final career total.
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** He had <50 before 2014.
+
+### Row 40635 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was in the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40636 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was in the squad that lost the 2010 World Cup final?
+**Answer:** Wesley Sneijder
+**Why it fails:** Non-unique: Sneijder, Van Persie, Robben AND Van der Vaart were all in the 2010 final squad — all four options are correct.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Final
+**Remedy:** Only one squad member should be an option.
+
+### Row 40639 — Netherlands (medium) — FAIL
+**Q:** Which Dutch player was NOT a 2010 Ballon d'Or nominee after the World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique/dubious: Gakpo (an option) was obviously not a 2010 nominee either, and Robben was a top-2010 player likely on the shortlist — the 'NOT nominated' answer isn't cleanly unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Player_of_the_Year
+**Remedy:** Fix the options.
+
+### Row 40640 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was selected for the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40641 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player was the best player at the 2010 World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was NOT named best player of the 2010 WC — the Golden Ball went to Diego Forlán.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40644 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player won both the Silver Ball and made the All-Star Team in 2010?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — Sneijder did (Golden Ball: Forlán). (Both were in the All-Star Team.)
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40645 — Netherlands (medium) — FAIL
+**Q:** Which Dutch player won the 2010 World Cup Golden Ball?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Golden Ball — that went to Diego Forlán.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 40646 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player won the 2010 World Cup Silver Ball award?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Wesley Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40647 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player won the Silver Ball at the 2010 FIFA World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40653 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's 2010 World Cup performance earned him the Silver Ball award?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did (the Silver Ball is the award referenced).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40659 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's 2022 World Cup displays earned him Team of the Tournament selection?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40661 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's 2022 World Cup performance earned him Team of the Tournament honors?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40668 — Netherlands (easy) — FAIL
+**Q:** Which Dutch player's World Cup goal helped earn him a 2022 Team of Tournament spot?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official 2022 Team of the Tournament — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40681 — Netherlands (easy) — FAIL
+**Q:** Which Dutch stadium hosted the Netherlands vs Germany 2022 World Cup qualifier?
+**Answer:** De Kuip
+**Why it fails:** False: the Netherlands did NOT play Germany in 2022 WC qualifying — their group (G) was Turkey, Norway, Montenegro, Latvia, Gibraltar. No NL v Germany qualifier occurred.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** No NL v Germany 2022 qualifier.
+
+### Row 40702 — Netherlands (medium) — FAIL
+**Q:** Which Dutch star's World Cup 2010 Silver Ball came before his Ballon d'Or nomination?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — Wesley Sneijder did (Golden Ball: Forlán).
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40709 — Netherlands (hard) — FAIL
+**Q:** Which Dutch World Cup qualification campaign also saw them top their UEFA group: 2010 or .?
+**Answer:** 2010
+**Why it fails:** Malformed + non-unique: the Netherlands topped their UEFA group for 2010, 2014, 2022 AND 2026 — all four options are correct.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Fix the question/options.
+
+### Row 40711 — Netherlands (easy) — FAIL
+**Q:** Which Dutch World Cup star was produced by Ajax's De Toekomst academy?
+**Answer:** Dennis Bergkamp
+**Why it fails:** Non-unique: both Dennis Bergkamp AND Wesley Sneijder came through Ajax's De Toekomst academy — two valid answers.
+**Source:** https://en.wikipedia.org/wiki/Wesley_Sneijder
+**Remedy:** Only one De Toekomst graduate should be an option.
+
+### Row 40721 — Netherlands (medium) — FAIL
+**Q:** Which FIFA ranking did the Netherlands drop to in 2016?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands' 36th low was August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40722 — Netherlands (medium) — FAIL
+**Q:** Which FIFA ranking low did the Netherlands hit in 2016?
+**Answer:** 36th
+**Why it fails:** Wrong year: the Netherlands hit 36th in August 2017, not 2016.
+**Source:** https://www.dutchnews.nl/2017/10/dutch-rise-in-to-20th-in-latest-fifa-ranking/
+**Remedy:** 36th low was 2017.
+
+### Row 40724 — Netherlands (hard) — FAIL
+**Q:** Which goalkeeper did Netherlands NOT substitute on for penalty shootouts at the 2014 World Cup?
+**Answer:** Jasper Cillessen
+**Why it fails:** Non-unique 'NOT' question: only Krul was brought on, so Cillessen (subbed off), Vorm AND Stekelenburg were all 'not brought on' — multiple valid answers.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a keeper who came on.
+
+### Row 40754 — Netherlands (easy) — FAIL
+**Q:** Which nation beat the Netherlands 2-0 in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the 2018 Nations League — their NL group was France & Germany; they never played Belgium.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40755 — Netherlands (easy) — FAIL
+**Q:** Which nation beat the Netherlands 2-1 in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False: no Netherlands 2-1 loss to Belgium in the Nations League — they were not in a NL group with Belgium.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 40762 — Netherlands (easy) — FAIL
+**Q:** Which nation did NOT defeat Netherlands in a World Cup semi-final?
+**Answer:** Spain
+**Why it fails:** Non-unique: BOTH Spain and Portugal failed to beat the Netherlands in a WC semi-final, and Brazil DID (1998 SF) — the options don't yield a unique 'did not'.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** Brazil beat NL in the 1998 SF; fix options.
+
+### Row 40807 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands 2010 World Cup finalist is a graduate of Ajax's De Toekomst academy?
+**Answer:** Wesley Sneijder
+**Why it fails:** Non-unique: both Sneijder AND Van der Vaart (both 2010 finalists) are Ajax De Toekomst graduates.
+**Source:** https://en.wikipedia.org/wiki/Rafael_van_der_Vaart
+**Remedy:** Only one De Toekomst graduate should be an option.
+
+### Row 40810 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands attacker has scored over 45 international goals?
+**Answer:** Memphis Depay
+**Why it fails:** Non-unique: both Depay AND Van Persie (an option) have scored over 45 international goals (Van Persie 50).
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** Add a constraint to make it unique.
+
+### Row 40825 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands centre-back started all 5 matches at the 2022 FIFA World Cup?
+**Answer:** Nathan Aké
+**Why it fails:** Non-unique/false: captain Van Dijk (an option) started all five 2022 matches too; Aké missed the Senegal opener — so 'started all 5 = Aké' is wrong/non-unique.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Van Dijk started all 5.
+
+### Row 40828 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands centre-back was in the 2014 and 2022 World Cup squads?
+**Answer:** Stefan de Vrij
+**Why it fails:** Non-unique: both Stefan de Vrij AND Daley Blind (both options) were in the 2014 and 2022 squads.
+**Source:** https://en.wikipedia.org/wiki/Daley_Blind
+**Remedy:** Only one option should fit both squads.
+
+### Row 40847 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands defender made his World Cup debut in 2022?
+**Answer:** Nathan Aké
+**Why it fails:** Non-unique: Aké, De Ligt, Van Dijk AND Dumfries all made their WC debut at the 2022 tournament (the Netherlands missed 2018 and none played 2014) — all four options fit.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Only one option should be a 2022 WC debutant.
+
+### Row 40848 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands defender played at both the 2014 and 2022 World Cups?
+**Answer:** Daley Blind
+**Why it fails:** Non-unique: both Daley Blind AND Stefan de Vrij (both options) played at the 2014 and 2022 WCs.
+**Source:** https://en.wikipedia.org/wiki/Daley_Blind
+**Remedy:** Only one option should fit both tournaments.
+
+### Row 40862 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands forward made the FIFA World Cup Team of the Tournament in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40865 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands forward was in the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40879 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands manager did NOT lead them at a FIFA World Cup?
+**Answer:** Dick Advocaat
+**Why it fails:** False: Dick Advocaat DID lead the Netherlands at a World Cup — he managed them at the 1994 WC (QF). All four options led NL at a WC, so there's no valid answer.
+**Source:** https://en.wikipedia.org/wiki/Dick_Advocaat
+**Remedy:** Advocaat led NL at the 1994 WC.
+
+### Row 40900 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands manager oversaw the team scoring 12 goals in their first three 2014 World Cup matches?
+**Answer:** Louis van Gaal
+**Why it fails:** False count: the Netherlands scored 10 goals in their first three 2014 matches, not 12 (the answer Van Gaal aside, the '12 goals' premise is wrong).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 40971 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player has scored 45+ goals since the 2006 World Cup?
+**Answer:** Memphis Depay
+**Why it fails:** Non-unique: both Depay AND Van Persie (50 goals, an option) have scored 45+ for the Netherlands since 2006.
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** Add a constraint to make it unique.
+
+### Row 40986 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player made the 2010 All-Star Team and won the Silver Ball?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did NOT win the 2010 Silver Ball — Sneijder did (Golden Ball: Forlán). (Both were in the All-Star Team.)
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 40987 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player made the 2022 World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 40988 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player missed a penalty in the 2022 World Cup quarter-final?
+**Answer:** Virgil van Dijk
+**Why it fails:** Non-unique: both Van Dijk AND Berghuis (both options) had their penalties saved by E. Martínez in the 2022 QF shootout.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Two NL players missed.
+
+### Row 40989 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player missed the final penalty in the 2022 World Cup quarter-final shootout?
+**Answer:** Teun Koopmeiners
+**Why it fails:** False: Koopmeiners did not miss the final penalty — Martínez saved Van Dijk and Berghuis, and the shootout ended on Argentina's successful kick (Koopmeiners scored).
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Van Dijk & Berghuis were the saved penalties.
+
+### Row 41000 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored 45+ international goals by the 2024 Euros?
+**Answer:** Memphis Depay
+**Why it fails:** Non-unique: both Depay AND Van Persie (50, an option) had 45+ goals by the 2024 Euros.
+**Source:** https://en.wikipedia.org/wiki/Robin_van_Persie
+**Remedy:** Add a constraint to make it unique.
+
+### Row 41020 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored a hat-trick against Spain at the 2014 World Cup?
+**Answer:** Robin van Persie
+**Why it fails:** False: Van Persie scored a BRACE (2), not a hat-trick, in the 5-1 v Spain (2014) — he scored 2, Robben 2, De Vrij 1.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Van Persie scored 2, not 3.
+
+### Row 41036 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored in both the 2010 World Cup final loss and the 2014 5-1 group win against Spain?
+**Answer:** Robin van Persie
+**Why it fails:** False: the Netherlands did NOT score in the 2010 final (lost 1-0 to Spain) — so Van Persie did not 'score the only goal in the 2010 final'.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Final
+**Remedy:** NL scored 0 in the 2010 final.
+
+### Row 41038 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored in both their 2022 World Cup round of 16 and quarter-final matches?
+**Answer:** Denzel Dumfries
+**Why it fails:** False: Dumfries did NOT score in the 2022 QF — both NL goals v Argentina were Weghorst's; Dumfries scored only in the R16.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Weghorst scored both QF goals.
+
+### Row 41047 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player scored in their 12-goal start to the 2014 World Cup?
+**Answer:** Robin van Persie
+**Why it fails:** False premise: the Netherlands scored 10 goals (not 12) in their first three 2014 matches; the '12-goal start' is wrong (Van Persie did score, but the premise is false).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** 10 goals, not 12.
+
+### Row 41086 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player was named best player at the 2010 FIFA World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was NOT named best player of the 2010 WC — the Golden Ball went to Diego Forlán.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 41088 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player was named in the 2022 FIFA World Cup Team of the Tournament?
+**Answer:** Cody Gakpo
+**Why it fails:** Unverified/false: no official FIFA Team of the Tournament for 2022 — Gakpo's selection cannot be verified.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** No official 2022 ToT.
+
+### Row 41089 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player was the 2010 World Cup's best player?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was not the 2010 WC's best player — Diego Forlán won the Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 41094 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player won the 2010 World Cup's best player award?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben was not the 2010 WC best player — Diego Forlán won the Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Forlán won the Golden Ball.
+
+### Row 41095 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player won the Silver Ball at the 2010 World Cup?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 41100 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands player's 2010 World Cup displays earned him the Silver Ball?
+**Answer:** Arjen Robben
+**Why it fails:** False: Robben did not win the 2010 Silver Ball — Sneijder did.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_awards
+**Remedy:** Sneijder won the Silver Ball.
+
+### Row 41117 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands stadium hosted a 2022 World Cup qualifier vs Turkey?
+**Answer:** De Kuip
+**Why it fails:** Wrong venue: the Netherlands' 6-1 win over Turkey in 2022 qualifying (Sep 2021) was at the Johan Cruyff Arena in Amsterdam, not De Kuip.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Turkey 6-1 was in Amsterdam.
+
+### Row 41124 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star played at both the 2010 and 2014 FIFA World Cups?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: Robben, Sneijder AND Van Persie all played at both the 2010 and 2014 WCs.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Three options fit.
+
+### Row 41129 — Netherlands (medium) — FAIL
+**Q:** Which Netherlands star scored in both the 2010 and 2014 World Cup group stages?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: both Robben AND Van Persie scored in the 2010 and 2014 group stages.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Two options fit.
+
+### Row 41130 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star was a key player at both the 2010 and 2014 World Cups?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: Robben, Sneijder AND Van Persie were all key at both the 2010 and 2014 WCs.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Three options fit.
+
+### Row 41131 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star was key in both the 2010 and 2014 World Cups?
+**Answer:** Arjen Robben
+**Why it fails:** Non-unique: Robben, Van Persie AND Sneijder were all key at both 2010 and 2014.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** Three options fit.
+
+### Row 41133 — Netherlands (easy) — FAIL
+**Q:** Which Netherlands star, developed in the Eredivisie, scored in the 2014 World Cup semi-final?
+**Answer:** Wesley Sneijder
+**Why it fails:** False: nobody scored in the Netherlands' 2014 semi-final v Argentina — it finished 0-0 (NL lost on penalties), so Sneijder did not 'score the goal'.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_at_the_FIFA_World_Cup
+**Remedy:** The 2014 SF was 0-0.
+
+### Row 41156 — Netherlands (easy) — FAIL
+**Q:** Which stadium did the Netherlands NOT use for a 2022 World Cup qualifier?
+**Answer:** Philips Stadion
+**Why it fails:** Non-unique/dubious: the KNVB Campus (a training centre) was also never a qualifier venue, so 'did NOT use' isn't unique to the Philips Stadion.
+**Source:** https://en.wikipedia.org/wiki/KNVB_Campus
+**Remedy:** KNVB Campus is also not a venue.
+
+### Row 41158 — Netherlands (easy) — FAIL
+**Q:** Which stadium hosted the Netherlands' 2-1 loss to Belgium in the 2018 Nations League?
+**Answer:** King Baudouin Stadium
+**Why it fails:** False: the Netherlands never played Belgium in the 2018 Nations League (their group was France & Germany), so there was no such match/venue.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 41160 — Netherlands (easy) — FAIL
+**Q:** Which stadium hosted the Netherlands' 2022 World Cup qualifier against Turkey?
+**Answer:** De Kuip
+**Why it fails:** Wrong venue: the 2022-qualifying win over Turkey (6-1) was at the Johan Cruyff Arena, Amsterdam, not De Kuip.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Turkey game was in Amsterdam.
+
+### Row 41172 — Netherlands (easy) — FAIL
+**Q:** Which team beat Netherlands 2-0 in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False: the Netherlands did not lose 2-0 to Belgium in the 2018 Nations League — they were grouped with France & Germany, not Belgium.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 41189 — Netherlands (easy) — FAIL
+**Q:** Which team did the Netherlands not defeat in the 2018 Nations League?
+**Answer:** Belgium
+**Why it fails:** False/non-unique: the Netherlands never played Belgium in the 2018 Nations League (group was France & Germany); they also didn't play Spain/Argentina/Portugal there, so the answer isn't unique.
+**Source:** https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Nations_League_A
+**Remedy:** No NL game v Belgium.
+
+### Row 41226 — Netherlands (medium) — FAIL
+**Q:** Which two World Cups did the Netherlands qualify for by winning their UEFA group?
+**Answer:** 2010 and 2014
+**Why it fails:** Non-unique: the Netherlands also won their UEFA group for 2006 (and 2022), so 'and 2006 and 2010' is equally correct — more than one option is true.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** 2006 group also won.
+
+### Row 41243 — Netherlands (medium) — FAIL
+**Q:** Which World Cup did the Netherlands first qualify for by winning their UEFA group: 2010 or 2014?
+**Answer:** 2010
+**Why it fails:** False 'first': the Netherlands won their UEFA group for 2006 too (an option) — earlier than 2010 — so 2010 was not the first group win among the options.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** 2006 group win was earlier.
+
+### Row 41244 — Netherlands (hard) — FAIL
+**Q:** Which World Cup performance caused Netherlands to reach 3rd in FIFA rankings in 2011?
+**Answer:** 2010 World Cup final
+**Why it fails:** False premise: the 2010 final lifted the Netherlands to 1st in 2011 (not 3rd) — their highest-ever FIFA ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.
+
+### Row 41249 — Netherlands (hard) — FAIL
+**Q:** Which year did the Netherlands reach 3rd in FIFA rankings after the 2010 World Cup?
+**Answer:** 2011
+**Why it fails:** False premise: the Netherlands reached 1st in 2011 (not 3rd) — that was their highest-ever ranking.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_national_football_team
+**Remedy:** They reached 1st in 2011.

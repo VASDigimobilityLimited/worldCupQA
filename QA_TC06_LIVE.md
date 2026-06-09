@@ -2685,3 +2685,130 @@ Azteca (~87,523). Club América = most Liga MX titles.
 | 39267–39364 | 62 | 7 |
 
 **✅ MEXICO COMPLETE (rows 37774–39364): 901 PASS / 173 FAIL of 1074.** Integrity verified: 0 overlap, union = 1074 = pool.
+# ===== MOROCCO (rows 39365–40186) — NEW METHOD (only QA_PASSED.md rows) =====
+IN PROGRESS (started 2026-06-08). Country range 39365–40186 (822 rows total; **558 in QA_PASSED.md**).
+PASS → QA_PASSED_ALL.md, FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
+
+## Morocco fact base (web-verified, reused across the batch)
+- **WC 2026 qualification:** Morocco **QUALIFIED** — *first* nation in the world to qualify for 2026, won CAF
+  Group E (Eritrea withdrew), clinched with 2 games to spare. **3rd successive WC**, **7th overall**. El Kaabi top
+  scorer in qualifying (4). ⇒ all "Morocco qualified for / will feature at 2026 WC" rows PASS.
+  (Source: cafonline.com, fifa.com)
+- **2022 WC (4th place, historic SF run, mgr Walid Regragui):** Group F — drew Croatia **0-0**, beat Belgium **2-0**
+  (Sabiri 73', Aboukhlal 90+2'), beat Canada **2-1** (Ziyech 4', En-Nesyri 23'; Aguerd OG). R16 beat **Spain 0-0
+  (3-0 pens**, Hakimi Panenka winner, Bono saved pens). QF beat **Portugal 1-0** (En-Nesyri header). SF lost
+  **France 0-2** (Theo Hernández 5', Kolo Muani 79'). 3rd place lost **Croatia 1-2** (Dari; Gvardiol, Oršić).
+  First African/Arab team to reach a WC semi-final. (Source: en.wikipedia.org/wiki/Morocco_at_the_FIFA_World_Cup)
+- **Clean sheets 2022:** TEAM kept **4** (Croatia group, Belgium, Spain, Portugal). **Bono personally kept 3**
+  (Croatia, Spain, Portugal — he sat out Belgium; Munir El Kajoui kept that one). ⇒ "Morocco kept **3** clean
+  sheets" (team) = FALSE→4; "**Bono** kept 3" = TRUE. (Source: aljazeera, fifa.com)
+- **Goals conceded 2022:** 5 total (Aguerd OG v Canada; Theo Hernández + Kolo Muani v France; Gvardiol + Oršić v
+  Croatia). ⇒ "conceded only ONE open-play goal in the tournament" / "only open-play goal was Theo in the SF" =
+  FALSE (Kolo Muani in same SF + 2 v Croatia were open play).
+- **FIFA ranking:** rose to **11th in Dec 2022** after the WC (from 22nd) — this was their **2nd-best ever** at the
+  time (10th in **April 1998** was higher). **All-time high = 7th (June 2026)**; 8th in Jan 2026. ⇒ "reached 11th
+  after the 2022 WC" = TRUE; but "**highest/peak/historic-high** FIFA ranking is 11th" = **FALSE** (10th in 1998,
+  and 7th now). (Source: inside.fifa.com, fifa.com ranking June 2026)
+- **AFCON:** titles — **1976** (1st). **AFCON 2025** hosted by Morocco (21 Dec 2025–18 Jan 2026); Senegal won the
+  final 1-0 on the pitch but CAF appeals board (18 Mar 2026) **awarded Morocco a 3-0 forfeit win** after Senegal's
+  walk-off ⇒ officially Morocco's **2nd AFCON title** (Senegal appealing to CAS). **AFCON 2023 (played Jan 2024)**:
+  Morocco lost **R16 to South Africa 0-2**. (Source: euronews, ESPN, wikipedia)
+- **Manager:** **Walid Regragui** appointed **Aug 2022** (replaced Vahid Halilhodžić, sacked ~3 months before the
+  2022 WC); first African/Arab manager to a WC SF.
+- **Key players & 2026 clubs:** Achraf Hakimi (captain, **PSG**), Yassine Bono/Bounou (**Al-Hilal**), Youssef
+  En-Nesyri (**Al-Ittihad**), Brahim Díaz (Real Madrid), Sofyan Amrabat, Azzedine Ounahi, Nayef Aguerd
+  (**Marseille**), Hakim Ziyech (often injured/out of squad). 2030 WC co-host (with Spain & Portugal).
+- **Club World Cup hosting:** Morocco hosted FIFA Club World Cup **2013, 2014, and the 2022 edition (played Feb
+  2023)** = 3 times. Raja Casablanca lost the **2013** CWC final to Bayern Munich.
+- **Watch for Excel date-corruption** in score answers (02-Jan=2-1, 01-Jan=1-0/1-1, etc.) → FAIL each.
+
+## Per-batch tally (cursor advances here)
+| Batch | Rows | PASS | FAIL |
+|------|------|-----:|-----:|
+| 1 | 39365–39429 | 30 | 20 |
+| 2 | 39431–39507 | 53 | 17 |
+| 3 | 39508–39587 | 61 | 9 |
+| 4 | 39588–39700 | 42 | 9 |
+| 5 | 39701–39800 | 73 | 2 |
+| 6 | 39801–39907 | 64 | 11 |
+| 7 | 39910–40022 | 67 | 11 |
+| 8 | 40024–40130 | 36 | 8 |
+| 9 | 40131–40186 | 34 | 11 |
+
+**Morocco sub-cursor: COMPLETE at row 40186.** (Morocco's QA_PASSED rows span 39365–40186; all **558 checked** = **460 pass-all / 98 fail-liveness**.) Next sequential not-started country after Morocco: Netherlands (40187–41273).
+
+## Morocco fail clusters (98 total) — full per-row entries in QA_FAILED_LIVENESS_PASSED_OTHERS.md
+| Cluster | Note |
+|---|------|
+| **"11th = Morocco's highest/peak FIFA ranking"** | FALSE — 11th was only the post-2022 rank (Dec 2022); their record is **7th (June 2026)**, and **10th (April 1998)** already bettered 11th. Rows asserting 11th as the *highest/peak/historic-high* (or whose explanation says so) fail; "reached 11th after 2022 WC" rows pass. |
+| **"Morocco missed/failed to qualify for 2018"** | FALSE — Morocco **played the 2018 WC** (Group B w/ Portugal, Spain, Iran; Renard qualified them). Rows claiming a gap/absence "since 2018" or "missed 2010/2014/2018" fail. They actually missed 2002, 2006, 2010, 2014. |
+| **"Morocco co-hosted AFCON 2025 (with Kenya & Tanzania)"** | FALSE — Morocco was the **SOLE host** of AFCON 2025 (Dec 2025–Jan 2026). The Kenya/Tanzania/**Uganda** joint hosting ("Pamoja") is **AFCON 2027**. |
+| **"Team kept 3 clean sheets" (2022)** | FALSE for the team — Morocco kept **4** clean sheets (Croatia, Belgium, Spain, Portugal). The "3" is **Bono's personal** count (he sat out the Belgium CS, kept by Munir) — Bono-specific rows pass; team-count rows fail. |
+| **"Only ONE open-play goal conceded / only Theo Hernández"** | FALSE — Morocco conceded open-play goals to France (Theo **and** Kolo Muani, SF) and Croatia (Gvardiol & Oršić, 3rd place). All "only open-play goal" rows fail. |
+| **"Boufal scored vs Canada"** | FALSE — Canada (2-1) scorers were **Ziyech (4')** and **En-Nesyri (23')**; Boufal did not score at the 2022 WC. |
+| **"Morocco won the Arab Cup"** | FALSE — **Algeria** won the 2021 FIFA Arab Cup in Qatar (beat Tunisia; knocked Morocco out in the QF). No "2022 Arab Cup" existed. |
+| **"Morocco won an AFCON third-place match in 2023"** | FALSE — no AFCON in 2023; at the 2023 edition (played Jan 2024) Morocco exited in the **R16** (0-2 to South Africa). |
+| **"Brahim/Ibrahim Díaz = Real Madrid academy / in 2022 squad"** | FALSE — Díaz is a **Manchester City** academy product (Málaga before) and switched to Morocco only in **March 2024** (not in the 2022 squad). The genuine Real Madrid academy graduate is **Hakimi**. (Row 39829 "NOT a 2022 hero = Díaz" PASSES.) |
+| **Non-unique "NOT/which" questions** | e.g. "which manager NOT leading 2026" (3 options not leading), "which formation NOT used" (3-5-2 AND 4-4-2), "AFCON rival that missed 2022" (Algeria AND Egypt both missed), "player who scored at 2022" (Ziyech/En-Nesyri/Sabiri all did), "over 50 caps + scored" (Ziyech AND En-Nesyri), failed to qualify "2010/2014" (both). |
+| **Excel date-corruption** | 02-Jan = 2-1 (Croatia 3rd place), 04/03/2003 = 4-3-3 formation. |
+| **Misc false premise** | "faced Croatia only in group" (also 3rd-place knockout); "next match after Croatia draw = Croatia 2-1" (was Belgium 2-0); "self-referential 'Morocco matched Morocco'"; "Hakimi >70 caps by 2022" (~60). |
+
+# ===== NETHERLANDS (rows 40187–41273) — NEW METHOD (only QA_PASSED.md rows) =====
+IN PROGRESS (started 2026-06-08). Country range 40187–41273 (1087 rows total; **878 in QA_PASSED.md**).
+PASS → QA_PASSED_ALL.md, FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
+
+## Netherlands fact base (web-verified, reused across the batch)
+- **WC 2026 qualification:** **QUALIFIED** — won UEFA **Group G** unbeaten (20 pts, 6W 2D, +23 GD; ahead of Poland),
+  clinched with a **4-0 win over Lithuania** in the final qualifier. Manager **Ronald Koeman**. At the WC in **Group F**
+  with Japan, Sweden, Tunisia. ⇒ all "Netherlands qualified for / will play 2026 WC" rows PASS. (fifa.com, beinsports)
+- **2022 WC (QF, mgr Louis van Gaal):** Group A winners — beat Senegal **2-0**, drew Ecuador **1-1**, beat Qatar
+  **2-0**. R16 beat **USA 3-1** (Depay, Blind, Dumfries). **QF lost to Argentina** — 2-2 a.e.t. (**Weghorst** brace:
+  83' header + 90+11' free-kick routine; Argentina had led 2-0 via Molina & Messi pen), **Argentina won the shootout
+  4-3** (Van Dijk & Berghuis missed, saved by E. Martínez). ⇒ shootout score is **4-3 to Argentina** (watch for "3-4"
+  / Excel corruption). (espn.com, skysports)
+- **Euro 2024 (SF, mgr Koeman):** lost SF to **England 1-2** (Xavi Simons 7'; Kane pen; **Watkins 90'** winner, in
+  Dortmund). Beat Turkey 2-1 in QF; beat Romania 3-0 in R16. ⇒ "reached Euro 2024 semi-final" PASS; "won Euro 2024" /
+  "beat England in SF" FAIL. (uefa.com, skysports)
+- **Euro 2020 (R16, mgr Frank de Boer):** lost R16 **0-2 to Czech Republic** (De Ligt sent off); de Boer resigned after.
+- **History:** Euro **1988 champions** (only major title). WC **runners-up 1974, 1978, 2010** (3 lost finals, never won
+  the WC). **2014 WC = 3rd place** (Van Gaal). **MISSED the 2018 WC** (3rd in group behind France & Sweden) and missed
+  Euro 2016. ⇒ "Netherlands missed/failed to qualify for 2018" is TRUE.
+- **Top scorers:** **Memphis Depay all-time top scorer = 55** (passed **Robin van Persie's 50** in 2025, brace v
+  Lithuania Sep 2025). Then Van Persie 50, Huntelaar, Kluivert (40), Bergkamp, Robben, Sneijder.
+- **Key players & 2026 clubs:** **Virgil van Dijk** (captain, **Liverpool**), Memphis Depay (forward), **Frenkie de
+  Jong** (Barcelona), **Cody Gakpo** (Liverpool), **Denzel Dumfries** (Inter), **Nathan Aké** (Man City), **Tijjani
+  Reijnders** (Man City from 2025), **Ryan Gravenberch** (Liverpool), **Xavi Simons**, Matthijs de Ligt, Jeremie Frimpong.
+- **Watch for Excel date-corruption** in score answers (02-Jan=2-1, 03-Jan=3-1, 01-Jan=1-1, etc.) → FAIL each.
+
+## Per-batch tally (cursor advances here)
+| Batch | Rows | PASS | FAIL |
+|------|------|-----:|-----:|
+| 1 | 40188–40282 | 67 | 13 |
+| 2 | 40283–40376 | 66 | 16 |
+| 3 | 40377–40471 | 69 | 13 |
+| 4 | 40472–40562 | 74 | 8 |
+| 5 | 40563–40677 | 66 | 16 |
+| 6 | 40678–40779 | 72 | 10 |
+| 7 | 40780–40883 | 73 | 9 |
+| 8 | 40884–40978 | 83 | 2 |
+| 9 | 40979–41092 | 76 | 12 |
+| 10 | 41093–41192 | 74 | 14 |
+| 11 | 41193–41273 | 41 | 4 |
+
+**Netherlands sub-cursor: COMPLETE at row 41273.** (Netherlands' QA_PASSED rows span 40187–41273; all **878 checked** = **761 pass-all / 117 fail-liveness**.) Next sequential not-started country after the Netherlands: New Zealand (41274–42086).
+
+## Netherlands fail clusters (117 total) — full per-row entries in QA_FAILED_LIVENESS_PASSED_OTHERS.md
+| Cluster | Note |
+|---|------|
+| **"Highest FIFA ranking = 3rd in 2011"** | FALSE — the Netherlands reached **1st** (Aug–Sep 2011), their highest-ever. Any row stating their 2011 peak/highest was 3rd fails. |
+| **"36th in 2016"** | The record-low 36th came in **August 2017** (after 2018 qualifying failed), not 2016. (Rows asking only the *rank* '36th' pass; rows tying it to 2016 fail.) |
+| **"Robben won the 2010 Golden/Silver Ball / best player"** | FALSE — Diego **Forlán** won the Golden Ball; **Sneijder** won the Silver Ball. Robben won neither (both Robben & Sneijder were in the 2010 **All-Star Team**, which DID exist — rows about that pass). |
+| **"Gakpo in the 2022 World Cup Team of the Tournament"** | FALSE/unverifiable — FIFA named **no official Team of the Tournament for 2022**, and the Netherlands exited in the QF. |
+| **"12 goals in the first 3 [2014] matches"** | FALSE — the Netherlands scored **10** (Spain 5-1, Australia 3-2, Chile 2-0). |
+| **"Netherlands lost 2-0/2-1 to Belgium in the 2018 Nations League"** | FALSE — their NL group was **France & Germany**; they never played Belgium in the Nations League. |
+| **Van Persie myths** | "hat-trick v Spain 2014" (it was a **brace**); "scored the only goal in the 2010 final" (NL scored **0** — lost 1-0); "50 goals before 2014" (he reached 50 only later). |
+| **2022 penalty-shootout errors** | Van Dijk AND Berghuis both had pens saved (non-unique "who missed"); Koopmeiners **scored** (didn't miss the decisive kick); Dumfries did **not** score the QF (both NL goals were Weghorst's). |
+| **Sneijder "scored the 2014 SF"** | FALSE — the 2014 SF v Argentina was **0-0** (NL lost on pens); nobody scored. |
+| **Wrong club/venue** | "Van Dijk played for Feyenoord" (→ **Groningen**); "Advocaat never led NL at a WC" (he led them at **1994**); De Kuip "hosted the 2022 Turkey 6-1" (it was the **Johan Cruyff Arena, Amsterdam**); "Euro 2020 loss in 2020" (played **2021**). |
+| **Non-unique "which/NOT" traps** | "won UEFA group" (2006/2010/2014/2022 all wins); "played/key/scored at both 2010 & 2014" (Robben, Sneijder, Van Persie all fit); "De Toekomst graduate" (Sneijder & Van der Vaart; Bergkamp & Sneijder); "WC debut 2022" (Aké/De Ligt/Van Dijk/Dumfries all); "over 45 goals" (Depay & Van Persie); "played both 2014 & 2022" (Blind & De Vrij); "NOT brought on for the shootout" (3 keepers); "first knockout loss to Argentina" (1978, not 2014); "did NOT beat NL in a WC SF" (Spain & Portugal, and Brazil DID in 1998). |
+| **Soft/unverified** | "KNVB Campus first base before 2010"; "four top leagues in the 2022 squad" (undercount). |
