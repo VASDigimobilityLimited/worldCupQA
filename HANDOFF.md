@@ -163,11 +163,11 @@ The remaining 11 countries are **not started** (§4). Next sequential not-starte
 - **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **22025** ship-ready.
 - **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3379** dangerous.
 - **Total ship-ready so far (both methods):** 22157 (132 backfill rows 2–230 + 22025 new method).
-- **🎯 GRAND TOTAL ship-ready (all three tracks):** **22157** =
-  batch 1 `QA_PASSED_ALL.md` **22157** + batch 2 `QA_PASSED_ALL_b2.md` **0** +
-  cleaned `QA_PASSED_ALL_cleaned.md` **0**. *Batch-2 and cleaned liveness loops have not started
-  (see §9); their pools are 39,321 and 393 respectively. Re-sum this line every session as those
-  loops advance — count `### Row` entries in each of the three files.*
+- **🎯 GRAND TOTAL ship-ready (all three tracks):** **24487** =
+  batch 1 `QA_PASSED_ALL.md` **22157** + batch 2 `QA_PASSED_ALL_b2.md` **2330** +
+  cleaned `QA_PASSED_ALL_cleaned.md` **0**. *Batch-2 liveness: Algeria (269/159) + Argentina (662/167)
+  + Colombia (607/168) + Costa Rica (792/139) done = 2330 ship-ready / 633 dangerous; cleaned not started. Pools are 39,321 and 393 respectively.
+  Re-sum this line every session as those loops advance — count `### Row`/`- **Row` entries in each file.*
 - **27 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
   Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
   Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
@@ -365,8 +365,8 @@ Row numbers are **lines in `Pre-worldcup2.csv`** (header = line 1) and match `QA
 
 | Country | CSV rows | total | QA_PASSED_b2 | Status / last verified row |
 |---------|----------|------:|----------:|----------------------------|
-| Algeria | 2–513 | 512 | 428 | ⬜ not started |
-| Argentina | 514–1543 | 1030 | 829 | ⬜ not started |
+| Algeria | 2–513 | 512 | 428 | ✅ **COMPLETE** (row 513) — 269 PASS / 159 FAIL |
+| Argentina | 514–1543 | 1030 | 829 | ✅ **COMPLETE** (row 1543) — 662 PASS / 167 FAIL |
 | Australia | 1544–2400 | 857 | 716 | ⬜ not started |
 | Austria | 2401–3241 | 841 | 740 | ⬜ not started |
 | Belgium | 3242–4191 | 950 | 788 | ⬜ not started |
@@ -376,8 +376,8 @@ Row numbers are **lines in `Pre-worldcup2.csv`** (header = line 1) and match `QA
 | Cameroon | 7108–7820 | 713 | 592 | ⬜ not started |
 | Canada | 7821–9330 | 1510 | 1129 | ⬜ not started |
 | Chile | 9331–10795 | 1465 | 1193 | ⬜ not started |
-| Colombia | 10796–11736 | 941 | 775 | ⬜ not started |
-| Costa Rica | 11737–12858 | 1122 | 931 | ⬜ not started |
+| Colombia | 10796–11736 | 941 | 775 | ✅ **COMPLETE** (row 11736) — 607 PASS / 168 FAIL |
+| Costa Rica | 11737–12858 | 1122 | 931 | ✅ **COMPLETE** (row 12858) — 792 PASS / 139 FAIL |
 | Croatia | 12859–14120 | 1262 | 1029 | ⬜ not started |
 | Curaçao | 14121–16003 | 1883 | 1159 | ⬜ not started |
 | Czechia | 16004–16893 | 890 | 702 | ⬜ not started |
@@ -415,9 +415,9 @@ Row numbers are **lines in `Pre-worldcup2.csv`** (header = line 1) and match `QA
 | Uzbekistan | 50154–51062 | 909 | 622 | ⬜ not started |
 
 ### (e) Batch-2 running totals (update every session)
-- **`QA_PASSED_ALL_b2.md` (ship-ready):** 0 *(liveness not started; pool = 39,321 across 48 countries)*
-- **`QA_FAILED_LIVENESS_b2.md` (dangerous):** 0
-- **Countries COMPLETE (batch 2):** 0 of 48. Next sequential not-started: **Algeria** (rows 2–513).
+- **`QA_PASSED_ALL_b2.md` (ship-ready):** 2330 *(Algeria 269 + Argentina 662 + Colombia 607 + Costa Rica 792; pool = 39,321 across 48 countries)*
+- **`QA_FAILED_LIVENESS_b2.md` (dangerous):** 633 *(Algeria 159 + Argentina 167 + Colombia 168 + Costa Rica 139)*
+- **Countries COMPLETE (batch 2):** 4 of 48 (Algeria 269/159, Argentina 662/167, Colombia 607/168, Costa Rica 792/139). Next sequential not-started: **Australia** (rows 1544–2400).
 
 ### (f) Cleaned-track status
 393 rows passed re-check (`QA_PASSED_cleaned.md`), scattered across countries — small enough to do
