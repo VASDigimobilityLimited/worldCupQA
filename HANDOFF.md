@@ -119,7 +119,7 @@ batch 1:
 - **`QA_FAILED_LIVENESS_PASSED_OTHERS.md`** — passed mechanical but **failed liveness**
   (the dangerous "looks clean but is factually wrong" rows). Each entry has reason + source URL + remedy.
 
-**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **29 countries are
+**✅ Algeria** (rows 2–1228) and **✅ Argentina** (rows 1229–2160) are complete, and **32 countries are
 now COMPLETE in total** (full table in §4; running counts in §3). Key findings per country:
 
 - **✅ Australia** (2161–3241): 714 ship-ready / 121 dangerous. **✅ Austria** (3242–4282): 626 / 135.
@@ -154,8 +154,13 @@ now COMPLETE in total** (full table in §4; running counts in §3). Key findings
   incl. "highest FIFA ranking = 3rd in 2011" (actually **1st**), "Robben won the 2010 Golden/Silver Ball" (Forlán
   Golden, **Sneijder** Silver), Van Persie "scored in the 2010 final" (NL scored 0), 2022 shootout errors (Van Dijk
   & Berghuis both missed).
+- **✅ Jamaica** (34328–34953): 381 ship-ready / 43 dangerous — **did NOT qualify for 2026** (lost the
+  intercontinental playoff final 1-0 aet to DR Congo; 1998 remains their only WC). **✅ New Zealand**
+  (41274–42086): 398 / 166 — high fail rate from systematic dataset errors (2026 qualification fabricated
+  as "via intercontinental playoff" — NZ qualified **directly** as the first OFC direct slot). **✅ Nigeria**
+  (42087–42203): 91 / 2 — smallest country, very clean. (Jamaica/New Zealand/Nigeria verified by a separate contributor.)
 
-The remaining 9 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
+The remaining 6 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -168,22 +173,22 @@ The remaining 9 countries are **not started** (§4). Next sequential not-started
 **Batch 1** (batch-2 totals are in §9(e), cleaned in §9(f); the grand-total line below spans all three):
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **23246** ship-ready.
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3594** dangerous.
-- **Total ship-ready so far (both methods):** 23378 (132 backfill rows 2–230 + 23246 new method).
-- **🎯 GRAND TOTAL ship-ready (all three tracks):** **26067** =
-  batch 1 `QA_PASSED_ALL.md` **23378** + batch 2 `QA_PASSED_ALL_b2.md` **2330** +
-  cleaned `QA_PASSED_ALL_cleaned.md` **359**. *Batch-1 liveness: 29 countries complete (incl. Morocco 460/98,
-  Netherlands 761/117). Batch-2 liveness: Algeria (269/159) + Argentina (662/167) + Colombia (607/168) +
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **24116** ship-ready.
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3805** dangerous.
+- **Total ship-ready so far (both methods):** 24248 (132 backfill rows 2–230 + 24116 new method).
+- **🎯 GRAND TOTAL ship-ready (all three tracks):** **26937** =
+  batch 1 `QA_PASSED_ALL.md` **24248** + batch 2 `QA_PASSED_ALL_b2.md` **2330** +
+  cleaned `QA_PASSED_ALL_cleaned.md` **359**. *Batch-1 liveness: 32 countries complete (incl. Morocco, Netherlands,
+  Jamaica, New Zealand, Nigeria). Batch-2 liveness: Algeria (269/159) + Argentina (662/167) + Colombia (607/168) +
   Costa Rica (792/139) = 2330 ship-ready / 633 dangerous. Cleaned liveness **COMPLETE** (359 ship-ready /
   34 dangerous of 393). Pools: batch-2 39,321; cleaned 393. Re-sum every session — count `### Row`/`- **Row` entries in each file.*
-- **29 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
+- **32 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
   Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
   Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
   Costa Rica 654/80 · Côte d'Ivoire 463/79 · Croatia 1034/154 · Denmark 859/182 · DR Congo 459/127 ·
   Ecuador 725/57 · Egypt 532/104 · England 1228/87 · France 1237/176 · Germany 1291/65 ·
-  Ghana 783/72 · Iran 775/151 · Iraq 425/112 · Italy 1061/225 · Japan 935/62 · Jordan 691/159 ·
-  Mexico 901/173 · Morocco 460/98 · Netherlands 761/117.
+  Ghana 783/72 · Iran 775/151 · Iraq 425/112 · Italy 1061/225 · Jamaica 381/43 · Japan 935/62 ·
+  Jordan 691/159 · Mexico 901/173 · Morocco 460/98 · Netherlands 761/117 · New Zealand 398/166 · Nigeria 91/2.
 
 ## 4. Batch-1 per-country status (THE batch-1 coordination table — batch 2 is in §9(d))
 
@@ -217,14 +222,14 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Iran | 30310–31698 | 1389 | 926 | ✅ **COMPLETE** (row 31698) — 775 PASS / 151 FAIL |
 | Iraq | 31699–32567 | 869 | 537 | ✅ **COMPLETE** (row 32567) — 425 PASS / 112 FAIL |
 | Italy | 32568–34327 | 1760 | 1286 | ✅ **COMPLETE** (row 34327) — 1061 pass-all / 225 fail-liveness |
-| Jamaica | 34328–34953 | 626 | 424 | ⬜ not started |
+| Jamaica | 34328–34953 | 626 | 424 | ✅ **COMPLETE** (row 34953) — 381 PASS / 43 FAIL |
 | Japan | 34954–36397 | 1444 | 997 | ✅ **COMPLETE** (row 36397) — 935 PASS / 62 FAIL |
 | Jordan | 36398–37773 | 1376 | 850 | ✅ **COMPLETE** (row 37773) — 691 PASS / 159 FAIL |
 | Mexico | 37774–39364 | 1591 | 1074 | ✅ **COMPLETE** (row 39364) — 901 PASS / 173 FAIL |
 | Morocco | 39365–40186 | 822 | 558 | ✅ **COMPLETE** (row 40186) — 460 pass-all / 98 fail-liveness |
 | Netherlands | 40187–41273 | 1087 | 878 | ✅ **COMPLETE** (row 41273) — 761 pass-all / 117 fail-liveness |
-| New Zealand | 41274–42086 | 813 | 564 | ⬜ not started |
-| Nigeria | 42087–42203 | 117 | 93 | ⬜ not started |
+| New Zealand | 41274–42086 | 813 | 564 | ✅ **COMPLETE** (row 42086) — 398 PASS / 166 FAIL |
+| Nigeria | 42087–42203 | 117 | 93 | ✅ **COMPLETE** (row 42203) — 91 PASS / 2 FAIL |
 | Paraguay | 42204–42927 | 724 | 505 | ⬜ not started |
 | Senegal | 42928–43782 | 855 | 661 | ⬜ not started |
 | Switzerland | 43783–44756 | 974 | 832 | ⬜ not started |

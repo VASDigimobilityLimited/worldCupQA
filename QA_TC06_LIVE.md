@@ -10,9 +10,9 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Sequentially verified through row 13847 (Algeria→Chile contiguous COMPLETE). Next sequential gap: Colombia (13848–15527).**
-**ALL COMPLETE countries (27): Algeria · Argentina · Australia · Austria · Belgium · Brazil · Cabo Verde · Cameroon · Canada · Chile · Costa Rica · Côte d'Ivoire · Croatia · Denmark · DR Congo · Ecuador · Egypt · England · France · Germany · Ghana · Iran · Iraq · Italy · Japan · Jordan · Mexico. Per-country fact bases + per-batch tables are below. (Iran/Iraq/Jordan/Mexico completed by separate contributor azibabari.)**
-**NOT STARTED (11): Colombia · Jamaica · Morocco · Netherlands · New Zealand · Nigeria · Paraguay · Senegal · Switzerland · Tunisia · USA. Ask the user before beginning a new country (see §4 in HANDOFF.md).**
+**Sequentially verified through row 13847 (Algeria→Chile contiguous COMPLETE). Next sequential gap: Colombia (13848–15527). Jamaica, New Zealand & Nigeria also COMPLETE (verified by a separate contributor — see their fact bases below).**
+**ALL COMPLETE countries (30): Algeria · Argentina · Australia · Austria · Belgium · Brazil · Cabo Verde · Cameroon · Canada · Chile · Costa Rica · Côte d'Ivoire · Croatia · Denmark · DR Congo · Ecuador · Egypt · England · France · Germany · Ghana · Iran · Iraq · Italy · Jamaica · Japan · Jordan · Mexico · New Zealand · Nigeria. Per-country fact bases + per-batch tables are below. (Iran/Iraq/Jordan/Mexico completed by separate contributor azibabari; Jamaica/New Zealand/Nigeria by another contributor.)**
+**NOT STARTED (8): Colombia · Morocco · Netherlands · Paraguay · Senegal · Switzerland · Tunisia · USA. Ask the user before beginning a new country (see §4 in HANDOFF.md).**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -2812,3 +2812,55 @@ PASS → QA_PASSED_ALL.md, FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
 | **Wrong club/venue** | "Van Dijk played for Feyenoord" (→ **Groningen**); "Advocaat never led NL at a WC" (he led them at **1994**); De Kuip "hosted the 2022 Turkey 6-1" (it was the **Johan Cruyff Arena, Amsterdam**); "Euro 2020 loss in 2020" (played **2021**). |
 | **Non-unique "which/NOT" traps** | "won UEFA group" (2006/2010/2014/2022 all wins); "played/key/scored at both 2010 & 2014" (Robben, Sneijder, Van Persie all fit); "De Toekomst graduate" (Sneijder & Van der Vaart; Bergkamp & Sneijder); "WC debut 2022" (Aké/De Ligt/Van Dijk/Dumfries all); "over 45 goals" (Depay & Van Persie); "played both 2014 & 2022" (Blind & De Vrij); "NOT brought on for the shootout" (3 keepers); "first knockout loss to Argentina" (1978, not 2014); "did NOT beat NL in a WC SF" (Spain & Portugal, and Brazil DID in 1998). |
 | **Soft/unverified** | "KNVB Campus first base before 2010"; "four top leagues in the 2022 squad" (undercount). |
+---
+
+# ✅ JAMAICA (rows 34328–34953) — COMPLETE
+
+**Pool:** 424 QA_PASSED candidates across CSV rows 34328–34953. Verified against the Jamaica men's national team (Reggae Boyz) fact base.
+
+**Fact base:** Only World Cup appearance = **1998** (still their only one). **2015 CONCACAF Gold Cup final** — lost 3-1 to Mexico (coach Winfried Schäfer); **2017 Gold Cup final** — lost 2-1 to USA (coach Theodore Whitmore). Home venue Independence Park / National Stadium, Kingston (~35,000). Key players: Leon Bailey (Aston Villa winger), Michail Antonio (West Ham; chose Jamaica over England, debut 2021), André Blake (MLS goalkeeper), Bobby Decordova-Reid (Fulham), Demarai Gray (switched from England 2023, 26 England U21 caps). Jamaica Premier League = top domestic league. Football competes with athletics & cricket for attention. **2026 World Cup: Jamaica did NOT qualify** — finished runner-up to Curaçao in CONCACAF Group B, reached the March 2026 intercontinental playoff, and **lost the final 1-0 (aet) to DR Congo** (Tuanzebe 100'). Steve McClaren coached the 2026 campaign (from 2024, after Heimir Hallgrímsson left for Ireland).
+
+**Verified corrections (web-sourced):**
+1. **2026 qualification = FALSE.** The dataset claims Jamaica qualified for 2026 (often "directly via CONCACAF, first in 28 years"); they lost the intercontinental playoff to DR Congo. All explicit "qualified for 2026" claims FAIL.
+2. **Gold Cup coaches differ:** Schäfer (2015) and Whitmore (2017) — no single coach led both consecutive finals.
+3. **Steve McClaren** coached the **2026** campaign (2024+), not the 2022 qualifiers.
+4. **Demarai Gray** also switched from England (2023, England U21) — non-2022-pinned "Antonio played England youth" rows with Gray as an option are non-unique.
+
+| Batch | Rows | Candidates | PASS | FAIL |
+|-------|------|-----------:|-----:|-----:|
+| 1 | 34328–34650 | 190 | 163 | 27 |
+| 2 | 34651–34953 | 234 | 218 | 16 |
+| **Total** | **34328–34953** | **424** | **381** | **43** |
+
+**FAIL themes:** false 2026 World Cup qualification (lost playoff to DR Congo); wrong/conflated Gold Cup coaches (Schäfer 2015 vs Whitmore 2017; "Steve McLaren coached the 2022 qualifiers"); non-unique "switched from England" answers (Demarai Gray also qualifies); Excel date-mangled scorelines ("03-Jan"=3-1, "02-Jan"=2-1); and one false "between" premise (no WC fell between the 2015 and 2017 finals).
+**Note:** "Reggae Boyz," the 2015/2017 Gold Cup final results, Independence Park, Leon Bailey (Aston Villa), Michail Antonio (West Ham, chose Jamaica over England), André Blake (MLS) and the Jamaica Premier League were all web-verified TRUE and PASS. Lenient on loose "2026 World Cup [squad/cycle]" framing where the gradeable fact is a correct player/squad detail.
+
+# ✅ JAMAICA COMPLETE
+
+- Per batch: 34328–34650 (163P/27F) · 34651–34953 (218P/16F).
+
+# ✅ NEW ZEALAND (rows 41274–42086) — COMPLETE
+
+**Pool:** 564 QA_PASSED candidates across CSV rows 41274–42086 → **398 PASS / 166 FAIL**. Verified against the New Zealand men's national team (All Whites) fact base.
+
+**Fact base:**
+- **World Cup appearances:** 1982, 2010, and **2026** (upcoming). At **2010** NZ were the tournament's **only unbeaten team** — three group draws: **Italy 1-1** (Smeltz 27', vs defending champions, at Mbombela/Nelspruit), **Slovakia 1-1** (Winston Reid 93', at Royal Bafokeng/Rustenburg), **Paraguay 0-0** (at Peter Mokaba/Polokwane). Captain Ryan Nelsen; GK Mark Paston.
+- **2026 qualification = DIRECT** (OFC's first automatic slot): NZ won the OFC final **3-0 vs New Caledonia at Eden Park, 24 Mar 2025**. **No intercontinental playoff** — New Caledonia (runner-up) took the play-off slot.
+- **Play-off losses (the 2014/2018/2022 drought):** Mexico (Nov 2013, home leg Wellington), Peru (Nov 2017, home leg Wellington), **Costa Rica 1-0** (14 Jun 2022, Ahmad bin Ali Stadium, **Qatar** — Joel Campbell scored). The 2010 berth came via beating **Bahrain** 1-0 (home leg Westpac/Wellington, 14 Nov 2009).
+- **2022 OFC qualifying was entirely in Qatar** (COVID-centralised) → NZ hosted **no** 2022 qualifiers.
+- **Managers:** Ricki Herbert (2005–2013, incl. 2010 WC) → Anthony Hudson (2014–17) → Fritz Schmid (2018–19) → Danny Hay (2019–22) → Darren Bazeley (2023–).
+- **Records:** Chris Wood = all-time leading scorer (overall; passed Vaughan Coveny **Mar 2022**) — but **0 World Cup finals goals**. OFC Nations Cup titles ×6 (1973, 1998, 2002, 2008, 2016, 2024). Top league: **NZ National League** (replaced the NZ Football Championship in 2021). Eden Park ≈50,000.
+
+**Systematic FAIL clusters:** (1) 2026 "via intercontinental playoff" — was direct; (2) "2022 qualifiers hosted at NZ stadiums" — were in Qatar; (3) "Eden Park 50k hosted 2010/2014 qualifiers/playoffs" — home legs were Wellington; (4) "at the 2022 World Cup" — NZ didn't qualify; (5) manager-succession non-uniqueness; (6) "Spain unbeaten in 2010" — Spain lost to Switzerland; (7) Wood "World Cup scorer" — 0 finals goals; (8) OFC Nations Cup count; (9) NZFC stale. Details + per-row grouping in `QA_FAILED_LIVENESS_PASSED_OTHERS.md`.
+
+**Running totals (new method, rows 231+, all contributors): 10754 PASS-ALL · 1719 FAIL-LIVENESS.**
+
+# ✅ NIGERIA (rows 42087–42203) — COMPLETE
+
+**Pool:** 93 QA_PASSED candidates across CSV rows 42087–42203 → **91 PASS / 2 FAIL** (smallest country, very clean). Verified against the Nigeria men's national team (Super Eagles) fact base.
+
+**Fact base:** **6 World Cup appearances** (1994, 1998, 2002, 2010, 2014, 2018). **2010** (Group B): lost 1-0 to Argentina (Ellis Park, Joburg) and 2-1 to Greece, drew South Korea 2-2 → out. **2014** (Group F): Musa brace in the 3-2 loss to Argentina, reached R16, lost **2-0 to France**; **Joseph Yobo captained** the R16 (his 100th cap, scored an OG); manager Stephen Keshi. **2018** (Group D, **youngest squad** in the tournament, manager Gernot Rohr, captain Mikel): lost **0-2 to Croatia** (Kaliningrad), beat **Iceland 2-0** (Ahmed Musa x2), lost **1-2 to Argentina** (Marcos Rojo 86'). **2022:** failed to qualify — lost the CAF play-off to **Ghana on away goals** (1-1 agg, Mar 2022). **2026:** also failed — lost the CAF play-off final to **DR Congo on penalties (Nov 2025)**.
+
+**The 2 fails:** 42108 (non-unique — Nigeria also failed 2026, an option) and 42172 (non-unique — Musa, Ighalo, Iheanacho AND Ndidi were all in the 2018 squad). Everything else (Musa braces, Rojo's winner, the Ghana away-goals exit, the youngest-squad fact, Yobo/Mikel captaincies) web-verified TRUE.
+
+**Running totals (new method, rows 231+, all contributors): 10845 PASS-ALL · 1721 FAIL-LIVENESS.**
