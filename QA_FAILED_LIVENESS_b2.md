@@ -3,7 +3,7 @@
 > Rows that cleared `QA_PASSED_b2.md` mechanically but are **factually wrong** on the live
 > TC-06 check. Each entry: reason + source + concrete remedy. See HANDOFF.md §6/§7.
 
-**Total dangerous: 997** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858)
+**Total dangerous: 1295** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876)
 
 ---
 
@@ -3217,3 +3217,2097 @@
 **Why it fails:** Bosnia's 2014 qualifier vs Greece (3-1) was played at Bilino Polje in Zenica, NOT the Koševo Stadium in Sarajevo. The premise that it was held at Koševo for capacity is false.
 **Source:** https://athlet.org/football/world-cup/2014/qualifiers/uefa/group-g/2013-03-22-bosniaandherzegovina-greece.html
 **Remedy:** The Greece qualifier was at Bilino Polje (Zenica).
+
+## Ecuador — rows 17346–18086 (liveness on QA_PASSED_b2.md rows) — 143 FAIL
+
+**Fact base (sourced):** Ecuador finished **4th in CONMEBOL qualifying for BOTH 2014 and 2022** (so "4th place"/"group-stage exit" answers are non-unique). The 2014/2022 home qualifiers were at **Casa Blanca / Estadio Atahualpa in Quito**, **NOT** Guayaquil's **Estadio Monumental**. **Enner Valencia** scored **all 3** of Ecuador's 2022 goals (Ecuador scored 4 total across the group, not 2). **Moisés Caicedo**'s move to Chelsea was **Aug 2023** (after the 2022 WC, a **British** record, after Enzo Fernández's Jan 2023 fee — not a world record). **Independiente del Valle** won the **Copa Sudamericana in Oct 2022**, AFTER World Cup qualifying ended (March 2022). Defenders **Estupiñán, Torres, Preciado, Hincapié** all started, so "which defender started" is non-unique. Several rows carry Excel **date-corruption** in the answer cell. Sources: Wikipedia (Ecuador NT, 2022 WC Group A, CONMEBOL qualifying), transfer reporting.
+
+### Row 17348 — Ecuador (hard) — FAIL: wrong points (2022~26, 2026~29, not 19->26)
+**Q:** After losing 0-4 to Uruguay in 2022 qualifying, Ecuador improved their CONMEBOL points total by how many in the 2026 cycle?
+**Answer:** 7 points
+**Why it fails:** Ecuador's CONMEBOL points were ~26 in the 2022 cycle (4th) and ~29 in the 2026 cycle (2nd, their best-ever finish, after a 3-point deduction). The claim of '19 for 2022' and '26 for 2026' (a 7-point increase) is wrong on both figures — the real improvement was roughly 26->29 (~3 points).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Use the actual totals (~26 in 2022, ~29 in 2026).
+
+### Row 17356 — Ecuador (easy) — FAIL: wrong stadium (Brazil qualifier was in Quito)
+**Q:** At the 2022 World Cup qualifiers, which Ecuador stadium hosted a key match against Brazil?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's home 2022 qualifier vs Brazil (1-1, 27 Jan 2022) was played in QUITO at the Estadio Rodrigo Paz Delgado (Casa Blanca) — Ecuador use Quito's altitude for qualifiers — NOT the sea-level Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change the answer to Estadio Rodrigo Paz Delgado (Quito).
+
+### Row 17366 — Ecuador (hard) — FAIL: non-unique (Valencia scored 3 at both 2014 and 2022)
+**Q:** At which 2014 World Cup did Ecuador's Enner Valencia score three goals?
+**Answer:** 2014 FIFA World Cup
+**Why it fails:** Enner Valencia scored THREE goals at the 2014 World Cup (1 v Switzerland, 2 v Honduras) AND three at the 2022 World Cup (2 v Qatar, 1 v Netherlands) — his record 6 WC goals split 3+3. So 'which WC did he score three goals' is non-unique (2014 and 2022 both qualify).
+**Source:** https://en.wikipedia.org/wiki/Enner_Valencia
+**Remedy:** He scored 3 at both 2014 and 2022; make it unique.
+
+### Row 17370 — Ecuador (medium) — FAIL: non-unique (Valencia scored 3 at both 2014 and 2022)
+**Q:** At which FIFA World Cup did Ecuador's Enner Valencia score three goals?
+**Answer:** 2014 World Cup
+**Why it fails:** Valencia scored 3 WC goals at 2014 AND 3 at 2022, so 'at which World Cup did he score three goals' has two valid answers among the options.
+**Source:** https://en.wikipedia.org/wiki/Enner_Valencia
+**Remedy:** He scored 3 at both 2014 and 2022.
+
+### Row 17374 — Ecuador (easy) — FAIL: wrong timing (Caicedo->Chelsea was Aug 2023, after the 2022 WC)
+**Q:** Before Ecuador's 2022 World Cup, which Chelsea signing was a record transfer?
+**Answer:** Moisés Caicedo
+**Why it fails:** Moisés Caicedo's record move to Chelsea was in August 2023 — AFTER the 2022 World Cup, not before. At the 2022 World Cup he was a Brighton player. The 'before the 2022 World Cup' framing is false.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Caicedo joined Chelsea in 2023, after the 2022 WC.
+
+### Row 17375 — Ecuador (easy) — FAIL: wrong stadium (qualifiers in Quito, not Guayaquil)
+**Q:** During 2022 World Cup qualifying, which Ecuador stadium held key home matches?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's home 2022 World Cup qualifiers were played in Quito (Estadio Rodrigo Paz Delgado, altitude ~2,800m) to exploit altitude — NOT the sea-level Estadio Monumental in Guayaquil. The Monumental is the largest stadium but was not the key qualifier venue.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Change to a Quito venue (Estadio Rodrigo Paz Delgado / Atahualpa).
+
+### Row 17376 — Ecuador (hard) — FAIL: false (highest FIFA ranking was 10th in 2013, not 30th)
+**Q:** Ecuador achieved their highest FIFA ranking after which successful CONMEBOL qualifying campaign?
+**Answer:** The 2022 cycle
+**Why it fails:** Ecuador's highest-ever FIFA ranking was 10th (June 2013), not 30th, and it came around the 2014 qualifying cycle — not the 2022 cycle. Both the '30th' figure and the '2022 cycle' attribution are wrong.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Ecuador peaked at 10th (June 2013).
+
+### Row 17377 — Ecuador (easy) — FAIL: non-unique (both Senegal and Netherlands beat Qatar)
+**Q:** Ecuador beat Qatar 2-0 in the 2022 opener. Which other 2022 host group opponent also beat Qatar?
+**Answer:** Senegal
+**Why it fails:** Qatar lost all three Group A games — to Ecuador, Senegal (3-1) AND the Netherlands (2-0). Both Senegal and the Netherlands are listed options, so 'which other group opponent also beat Qatar' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Both Senegal and the Netherlands beat Qatar.
+
+### Row 17385 — Ecuador (medium) — FAIL: false premise (Honduras is CONCACAF, not CONMEBOL)
+**Q:** Ecuador qualified for the 2014 World Cup. Which CONMEBOL nation did they beat 2-1 in the 2014 group stage?
+**Answer:** Honduras
+**Why it fails:** Ecuador did beat Honduras 2-1 at the 2014 World Cup, but Honduras is a CONCACAF nation, not CONMEBOL. The 'which CONMEBOL nation' framing is false, and none of the options are a CONMEBOL side Ecuador beat 2-1.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_E
+**Remedy:** Drop 'CONMEBOL' (Honduras is CONCACAF).
+
+### Row 17387 — Ecuador (medium) — FAIL: non-unique (Ecuador finished 4th in both 2014 and 2022)
+**Q:** Ecuador qualified for which World Cup by finishing 4th in CONMEBOL?
+**Answer:** 2022 World Cup
+**Why it fails:** Ecuador finished 4th in CONMEBOL qualifying for BOTH the 2014 and 2022 World Cups (Uruguay 5th in each). With both years as options, 'which World Cup did Ecuador qualify for by finishing 4th' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ecuador also finished 4th for 2014; add a distinguishing detail.
+
+### Row 17396 — Ecuador (easy) — FAIL: false premise (no 2023 Copa America)
+**Q:** Ecuador's 2022 World Cup loss to Senegal occurred before which 2023 continental final?
+**Answer:** Copa America final
+**Why it fails:** There was no 2023 Copa América — the tournament was held in 2021 and 2024. So 'the 2023 Copa America final' did not exist; the answer is to a non-event.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** No Copa America final occurred in 2023.
+
+### Row 17399 — Ecuador (easy) — FAIL: false (Ecuador drew Brazil 1-1, did not win 2-0)
+**Q:** Ecuador's 2022 World Cup qualifier win over Brazil was at which high-altitude stadium?
+**Answer:** Estadio Rodrigo Paz Delgado
+**Why it fails:** Ecuador did NOT beat Brazil 2-0 in 2022 qualifying — their home game (27 Jan 2022, in Quito) was a 1-1 draw, and the away game was a 0-2 loss. There was no 2-0 win over Brazil. (The Quito venue is correct, but the result is wrong.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** It was a 1-1 draw, not a 2-0 win.
+
+### Row 17400 — Ecuador (hard) — FAIL: false (2026 was Ecuadors 5th qualification, not 3rd)
+**Q:** Ecuador's 2026 World Cup qualification was their third successful CONMEBOL campaign after which years?
+**Answer:** 2014 and 2022
+**Why it fails:** Ecuador have qualified for five World Cups via CONMEBOL — 2002, 2006, 2014, 2022 and 2026 — so 2026 is their FIFTH successful campaign, not their third. The answer '2014 and 2022' omits 2002 and 2006.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Ecuador also qualified for 2002 and 2006; 2026 is the 5th.
+
+### Row 17410 — Ecuador (medium) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** For which FIFA World Cup did Ecuador qualify by finishing 4th in CONMEBOL?
+**Answer:** 2022 World Cup
+**Why it fails:** Ecuador finished 4th in CONMEBOL for both 2014 and 2022, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ecuador also finished 4th for 2014.
+
+### Row 17416 — Ecuador (medium) — FAIL: wrong count (7 Copas since 2007, not 6)
+**Q:** How many Copa Américas has Ecuador played in since 2006?
+**Answer:** Six tournaments
+**Why it fails:** Ecuador has played in SEVEN Copa Américas since 2006 — 2007, 2011, 2015, 2016 (Centenario), 2019, 2021 and 2024 — not six. (Row 17415 correctly says seven.)
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The count is seven.
+
+### Row 17417 — Ecuador (medium) — FAIL: non-unique threshold (49 goals also satisfies 45+)
+**Q:** How many goals has Ecuador's Enner Valencia scored?
+**Answer:** 40+ goals
+**Why it fails:** Enner Valencia has ~49 international goals, which satisfies the '45+' option as well as '40+' (and 35+, 30+). With 45+ also a listed option and true, the answer is non-unique — '45+' is the tighter correct bound.
+**Source:** https://en.wikipedia.org/wiki/Enner_Valencia
+**Remedy:** Use 45+ (he has ~49); avoid nested thresholds.
+
+### Row 17420 — Ecuador (medium) — FAIL: wrong count (5 home wins, not 6)
+**Q:** In 2022 FIFA World Cup qualifying, Ecuador's home record in Quito was how many wins?
+**Answer:** Six wins
+**Why it fails:** Ecuador had FIVE home wins in 2022 CONMEBOL qualifying (with home draws v Brazil and Argentina and one home defeat), not six. (Row 17421 correctly says five; 17422 wrongly says seven.)
+**Source:** https://www.aljazeera.com/sports/2022/11/13/world-cup-2022-ecuador
+**Remedy:** It was five home wins.
+
+### Row 17422 — Ecuador (medium) — FAIL: wrong count (5 home wins, not 7 of 8)
+**Q:** In 2022 World Cup qualifying, Ecuador's home record in Quito was how many wins?
+**Answer:** Seven wins
+**Why it fails:** Ecuador won FIVE home qualifiers in the 2022 cycle, not seven — and there were nine home games (not eight). They drew at home v Brazil and Argentina.
+**Source:** https://www.aljazeera.com/sports/2022/11/13/world-cup-2022-ecuador
+**Remedy:** It was five home wins out of nine home games.
+
+### Row 17423 — Ecuador (easy) — FAIL: false (Brazil drew 1-1 in Quito, did not lose)
+**Q:** In 2022 World Cup qualifying, which CONMEBOL team struggled in Ecuador's high-altitude Quito?
+**Answer:** Brazil
+**Why it fails:** Brazil did NOT lose to Ecuador in Quito in 2022 qualifying — the game was a 1-1 draw (27 Jan 2022). Brazil were unbeaten throughout 2022 CONMEBOL qualifying.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** It was a 1-1 draw; Brazil lost no qualifier.
+
+### Row 17428 — Ecuador (medium) — FAIL: self-referential + British (not world) record
+**Q:** In a 2022 World Cup group stage match, Ecuador faced the Netherlands. Which CONMEBOL nation's player later made a world-record transfer?
+**Answer:** Ecuador
+**Why it fails:** The question's answer is 'Ecuador' — the very nation it's describing (self-referential). Also, Caicedo's £115m move to Chelsea was a BRITISH transfer record, not a world record (the world record is Neymar's €222m).
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Reframe; Caicedo's was a British record, not a world record.
+
+### Row 17438 — Ecuador (medium) — FAIL: false (England beat Iran 6-2, not 2-0)
+**Q:** In the 2022 World Cup group stage, Ecuador beat Qatar 2-0. Which other team won their opening match 2-0?
+**Answer:** England
+**Why it fails:** England did NOT win their 2022 opener 2-0 — they beat Iran 6-2. The team that won its 2022 opener 2-0 was Brazil (2-0 v Serbia), a listed option.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change the answer to Brazil (2-0 v Serbia); England won 6-2.
+
+### Row 17439 — Ecuador (medium) — FAIL: self-referential + non-unique
+**Q:** In the 2022 World Cup group stage, Ecuador drew 1-1 with the Netherlands. Which CONMEBOL nation has been a regular Copa América participant?
+**Answer:** Ecuador
+**Why it fails:** The answer 'Ecuador' is self-referential (the subject of the question), and all four options — Ecuador, Paraguay, Colombia, Peru — are regular Copa América participants, so the answer is also non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Reframe; the trait is shared by all options.
+
+### Row 17449 — Ecuador (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** In which 2022 World Cup qualifier did Ecuador first use Estadio Rodrigo Paz Delgado?
+**Answer:** 2021-10-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime serial '2021-10-01 00:00:00' (Excel corruption). The intended answer (per the explanation, vs Bolivia in October 2021) is not rendered as a clean option.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Restore the answer to a clean date/label (October 2021).
+
+### Row 17453 — Ecuador (medium) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** In which CONMEBOL World Cup qualifying cycle did Ecuador achieve their highest final position?
+**Answer:** 2022 qualifying
+**Why it fails:** Ecuador's highest CONMEBOL finish among the listed cycles is tied — they finished 4th in BOTH 2014 and 2022 (and 2nd in 2026, not listed). So '2022' is not their uniquely highest position among the options.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** 2014 was also 4th; their best was actually 2026 (2nd).
+
+### Row 17454 — Ecuador (medium) — FAIL: false (top-4 finishes in 2002/2006/2014, not first in 2022)
+**Q:** In which CONMEBOL World Cup qualifying cycle did Ecuador first finish in the top four?
+**Answer:** The 2022 cycle
+**Why it fails:** Ecuador's first top-four CONMEBOL finish was NOT the 2022 cycle — they qualified 2nd in 2002, 3rd in 2006 and 4th in 2014, all top-four finishes before 2022.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Their first top-four was 2002 (2nd).
+
+### Row 17455 — Ecuador (hard) — FAIL: non-unique (reached group stage in 2014 and 2022)
+**Q:** In which FIFA World Cup did Ecuador reach the group stage?
+**Answer:** 2014 World Cup
+**Why it fails:** Ecuador reached the group stage in both 2014 and 2022 (both listed options), so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** They reached the group stage in 2014 and 2022 (and 2002, 2006).
+
+### Row 17458 — Ecuador (hard) — FAIL: non-unique (group-stage exit in 2014 and 2022)
+**Q:** In which FIFA World Cup edition was Ecuador eliminated in the group stage?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** Ecuador were eliminated in the group stage in both 2014 and 2022 (and 2002), so with both years as options the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Group-stage exits came in 2002, 2014 and 2022.
+
+### Row 17463 — Ecuador (medium) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** In which World Cup did Ecuador qualify by finishing 4th in CONMEBOL?
+**Answer:** 2022
+**Why it fails:** Ecuador finished 4th in CONMEBOL for both 2014 and 2022 — both options — so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** 2014 was also a 4th-place finish.
+
+### Row 17471 — Ecuador (hard) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** In which World Cup qualifiers did Ecuador finish 4th in CONMEBOL?
+**Answer:** 2022 World Cup qualifiers
+**Why it fails:** Ecuador finished 4th in CONMEBOL for both 2014 and 2022, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** 2014 was also a 4th-place finish.
+
+### Row 17472 — Ecuador (hard) — FAIL: wrong cycle (altitude first decisive in 2002, not 2006)
+**Q:** In which World Cup qualifiers did Ecuador's altitude in Quito first prove decisive?
+**Answer:** 2006 World Cup qualifiers
+**Why it fails:** Ecuador's Quito altitude advantage FIRST proved decisive in the 2002 qualifying cycle — when they first qualified, famously beating Brazil and Argentina at home in Quito — not 2006.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** It first proved decisive in the 2002 cycle.
+
+### Row 17475 — Ecuador (hard) — FAIL: wrong cycle (first used Rodrigo Paz Delgado for 2022, not 2006)
+**Q:** In which World Cup qualifying cycle did Ecuador first use Estadio Rodrigo Paz Delgado?
+**Answer:** 2006 World Cup qualifiers
+**Why it fails:** Ecuador's national team historically played in Quito at the Estadio Olímpico Atahualpa; they switched to the Estadio Rodrigo Paz Delgado (Casa Blanca) for the 2022 qualifiers because Atahualpa was being demolished (~2020). So they first used Rodrigo Paz Delgado in the 2022 cycle, not 2006.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** They first used Rodrigo Paz Delgado for the 2022 cycle.
+
+### Row 17476 — Ecuador (hard) — FAIL: wrong cycle (altitude major factor from 2002, not 2006)
+**Q:** In which World Cup qualifying cycle did Ecuador's altitude advantage in Quito become a major factor?
+**Answer:** 2006 World Cup qualifiers
+**Why it fails:** Ecuador's Quito altitude advantage became a major factor in the 2002 qualifying cycle (their first qualification), not 2006.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** It became a major factor in the 2002 cycle.
+
+### Row 17481 — Ecuador (medium) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** In which year did Ecuador host a 2022 World Cup qualifier at their largest stadium?
+**Answer:** 2021
+**Why it fails:** Ecuador's 2022 World Cup qualifiers were hosted at the Casa Blanca (Estadio Rodrigo Paz Delgado) in Quito for altitude — NOT the Estadio Monumental in Guayaquil. (They only used the Monumental in the later 2026 cycle.)
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2022 qualifiers were in Quito (Rodrigo Paz Delgado).
+
+### Row 17485 — Ecuador (medium) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** In which year did Ecuador's largest stadium, Estadio Monumental, host a key World Cup qualifier?
+**Answer:** 2022
+**Why it fails:** The Estadio Monumental (Guayaquil) did NOT host Ecuador's key 2022 World Cup qualifiers — those were at the Casa Blanca (Rodrigo Paz Delgado) in Quito. The Monumental was used only for the later 2026 cycle.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17493 — Ecuador (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What score did Ecuador lose by to Senegal in the 2022 World Cup?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. Ecuador lost 1-2 to Senegal (Senegal won 2-1).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Restore the score (Ecuador 1-2 Senegal).
+
+### Row 17498 — Ecuador (medium) — FAIL: false (2022 qualifiers were in Quito, not the Monumental)
+**Q:** When did Ecuador host a 2022 World Cup qualifier at Estadio Monumental?
+**Answer:** 2021
+**Why it fails:** Ecuador's 2022 World Cup home qualifiers were at the Casa Blanca (Rodrigo Paz Delgado) in Quito for altitude, not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17501 — Ecuador (medium) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** When did Ecuador qualify by finishing 4th in CONMEBOL?
+**Answer:** 2022 World Cup
+**Why it fails:** Ecuador finished 4th in CONMEBOL for both 2014 and 2022 (both options), so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** 2014 was also a 4th-place finish.
+
+### Row 17502 — Ecuador (medium) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** When did Ecuador qualify for the World Cup by finishing 4th in CONMEBOL?
+**Answer:** 2022 World Cup
+**Why it fails:** Ecuador finished 4th in CONMEBOL for both 2014 and 2022, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** 2014 was also a 4th-place finish.
+
+### Row 17508 — Ecuador (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Ecuador's Moisés Caicedo set a South American midfield transfer record?
+**Answer:** 2023-08-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2023-08-01 00:00:00' instead of a clean date. Caicedo's move was completed in August 2023.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Restore the answer to 'August 2023'.
+
+### Row 17519 — Ecuador (easy) — FAIL: false (2022 qualifiers were in Quito, not the Monumental)
+**Q:** Where did Ecuador's coach make a 2022 World Cup qualifying tactical decision for home advantage at their largest stadium?
+**Answer:** Estadio Monumental
+**Why it fails:** The Estadio Monumental (Guayaquil) is Ecuador's largest stadium but was NOT the venue for their 2022 World Cup home qualifiers — those were at the Casa Blanca (Rodrigo Paz Delgado) in Quito for altitude advantage.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2022 home-advantage venue was Quito (Rodrigo Paz Delgado).
+
+### Row 17520 — Ecuador (easy) — FAIL: non-unique (Ecuador also did not lose to Qatar)
+**Q:** Which 2022 World Cup group opponent did Ecuador not lose to?
+**Answer:** Netherlands
+**Why it fails:** Ecuador beat Qatar, drew the Netherlands and lost to Senegal — so they 'did not lose to' BOTH Qatar and the Netherlands (both options), making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Ask which they drew (Netherlands) to make it unique.
+
+### Row 17537 — Ecuador (easy) — FAIL: false (Netherlands is UEFA, not CONMEBOL; game was 1-1)
+**Q:** Which CONMEBOL nation faced Ecuador at the 2022 FIFA World Cup?
+**Answer:** Netherlands
+**Why it fails:** The Netherlands is a UEFA nation, not CONMEBOL — no CONMEBOL side was in Ecuador's 2022 group (Qatar/Senegal/Netherlands). The explanation also wrongly says Ecuador 'lost 2-0' — it was a 1-1 draw.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Drop 'CONMEBOL'; the Netherlands is European, and the result was 1-1.
+
+### Row 17541 — Ecuador (medium) — FAIL: non-unique (Ecuador 8th; all options finished above)
+**Q:** Which CONMEBOL nation finished above Ecuador for 2018 WC qualification?
+**Answer:** Peru
+**Why it fails:** Ecuador finished 8th in 2018 CONMEBOL qualifying, so Peru, Colombia, Chile AND Paraguay (all options) finished above them — the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ask which took the last (5th) spot (Peru) to make it unique.
+
+### Row 17553 — Ecuador (easy) — FAIL: non-unique (all options are Copa regulars)
+**Q:** Which CONMEBOL nation is a regular Copa América participant alongside Ecuador?
+**Answer:** Brazil
+**Why it fails:** All four options — Brazil, Paraguay, Chile, Uruguay — are regular Copa América participants, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** The trait is shared by every CONMEBOL nation.
+
+### Row 17554 — Ecuador (easy) — FAIL: non-unique (Venezuela also reached the 2016 QF)
+**Q:** Which CONMEBOL nation matched Ecuador's 2016 Copa América quarter-final run?
+**Answer:** Peru
+**Why it fails:** Both Peru AND Venezuela (listed options) reached the quarter-finals of the 2016 Copa América Centenario, so 'which matched Ecuador's QF run' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Venezuela also reached the 2016 QF.
+
+### Row 17558 — Ecuador (easy) — FAIL: false (Chile missed the 2006 World Cup)
+**Q:** Which CONMEBOL nation qualified for the 2006 and 2014 World Cups like Ecuador?
+**Answer:** Chile
+**Why it fails:** Chile did NOT qualify for the 2006 World Cup — they were absent (their WCs around then were 1998, 2010, 2014). So 'Chile qualified for 2006 and 2014 like Ecuador' is false; no listed option qualified for both 2006 and 2014.
+**Source:** https://en.wikipedia.org/wiki/Chile_at_the_FIFA_World_Cup
+**Remedy:** Chile missed 2006; the teams in both 2006 & 2014 were Brazil, Argentina, Ecuador.
+
+### Row 17561 — Ecuador (easy) — FAIL: non-unique (Colombia also qualified for 2018)
+**Q:** Which CONMEBOL nation qualified for the 2018 World Cup instead of Ecuador?
+**Answer:** Peru
+**Why it fails:** Both Peru (5th, via playoff) AND Colombia (4th, direct) qualified for the 2018 World Cup while Ecuador did not — so 'which qualified instead of Ecuador' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Colombia also qualified for 2018.
+
+### Row 17568 — Ecuador (easy) — FAIL: self-referential (answer is Ecuador itself)
+**Q:** Which CONMEBOL nation, like Ecuador in 2022, qualified for a World Cup by finishing 4th?
+**Answer:** Ecuador
+**Why it fails:** The question asks which CONMEBOL nation, LIKE Ecuador, finished 4th — but the answer is 'Ecuador' itself, which is self-referential.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** The answer must be a different nation.
+
+### Row 17570 — Ecuador (easy) — FAIL: non-unique (all options are Copa regulars)
+**Q:** Which CONMEBOL nation, like Ecuador, has also been a regular Copa América participant since 2006?
+**Answer:** Colombia
+**Why it fails:** Colombia, Bolivia, Venezuela and Paraguay are all regular Copa América participants since 2006, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** The trait is shared by all CONMEBOL nations.
+
+### Row 17588 — Ecuador (medium) — FAIL: non-unique (Chile and Paraguay also finished ahead)
+**Q:** Which CONMEBOL team finished ahead of Ecuador for 2010 World Cup qualification?
+**Answer:** Uruguay
+**Why it fails:** Ecuador finished 6th in 2010 CONMEBOL qualifying; Chile (2nd), Paraguay (3rd) AND Uruguay (5th) — all listed options — finished ahead of them, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ask which took the last (5th) spot (Uruguay) to make it unique.
+
+### Row 17593 — Ecuador (easy) — FAIL: false (Uruguay drew Ghana 1-1 and WON on penalties)
+**Q:** Which CONMEBOL team, like Ecuador in 2022, also lost 2-1 to an African side in a World Cup?
+**Answer:** Uruguay
+**Why it fails:** Uruguay did NOT lose 2-1 to Ghana in the 2010 quarter-final — the game was 1-1 after extra time and Uruguay WON 4-2 on penalties (Suárez handball, Gyan missed pen). So there is no Uruguay '2-1 loss to an African side'.
+**Source:** https://en.wikipedia.org/wiki/Uruguay_v_Ghana_(2010_FIFA_World_Cup)
+**Remedy:** Uruguay beat Ghana on penalties; the premise is false.
+
+### Row 17606 — Ecuador (easy) — FAIL: non-unique (all options are 2026 CB starters)
+**Q:** Which Ecuador centre-back was a tactical starter for the 2026 World Cup cycle?
+**Answer:** Piero Hincapié
+**Why it fails:** All four options — Hincapié, Arboleda, Félix Torres, William Pacho — are Ecuador centre-backs; both Hincapié and Pacho are key 2026-cycle starters, so 'which CB was a tactical starter' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Use non-CB distractors to make it unique.
+
+### Row 17616 — Ecuador (easy) — FAIL: non-unique (all options first played a WC in 2022)
+**Q:** Which Ecuador defender debuted at the 2022 FIFA World Cup?
+**Answer:** Piero Hincapié
+**Why it fails:** All four options — Hincapié, Estupiñán, Félix Torres, Arboleda — made their World Cup debut at the 2022 tournament (none played in 2014), so 'which defender debuted at the 2022 WC' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Use distractors who debuted at a different WC.
+
+### Row 17617 — Ecuador (easy) — FAIL: false framing (both debuted at the same 2022 WC)
+**Q:** Which Ecuador defender debuted at the 2022 World Cup, before Estupiñán's first?
+**Answer:** Piero Hincapié
+**Why it fails:** Hincapié and Estupiñán BOTH made their World Cup debut at the 2022 tournament — so 'Hincapié debuted before Estupiñán's first' is false; their WC debuts were simultaneous.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Both debuted at the 2022 WC; remove the 'before' framing.
+
+### Row 17619 — Ecuador (easy) — FAIL: non-unique (Estupinan also debuted at 2022)
+**Q:** Which Ecuador defender made his World Cup debut in 2022?
+**Answer:** Piero Hincapié
+**Why it fails:** Both Hincapié and Estupiñán (a defender, listed option) made their World Cup debut at the 2022 tournament, so 'which defender debuted in 2022' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Use non-defender distractors or a CB-specific trait.
+
+### Row 17625 — Ecuador (easy) — FAIL: non-unique (Estupinan & Torres also started)
+**Q:** Which Ecuador defender started a 2022 World Cup match for tactical defensive quality?
+**Answer:** Piero Hincapié
+**Why it fails:** Ecuador's settled 2022 back line (Preciado-Hincapié-Torres-Estupiñán) all started — both Estupiñán and Félix Torres (listed options) started for 'defensive quality' too, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use a Hincapie-specific trait (e.g. Leverkusen, centre-back).
+
+### Row 17626 — Ecuador (easy) — FAIL: non-unique (Estupinan also started v Senegal)
+**Q:** Which Ecuador defender started against Senegal in the 2022 World Cup?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán (a listed option) also started against Senegal, so 'which defender started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use non-defender distractors.
+
+### Row 17627 — Ecuador (easy) — FAIL: non-unique (Torres & Preciado also started all 3)
+**Q:** Which Ecuador defender started all group matches at the 2022 FIFA World Cup?
+**Answer:** Piero Hincapié
+**Why it fails:** Both Félix Torres and Ángelo Preciado (listed options) also started all three 2022 group matches, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use distractors who did not start all three.
+
+### Row 17628 — Ecuador (easy) — FAIL: non-unique (Hincapie & Torres also started all 3)
+**Q:** Which Ecuador defender started all three 2022 World Cup matches?
+**Answer:** Pervis Estupiñán
+**Why it fails:** Estupiñán did start all three, but so did Hincapié and Félix Torres (both listed options) — the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use distractors who did not start all three.
+
+### Row 17629 — Ecuador (easy) — FAIL: non-unique (Estupinan & Torres also started)
+**Q:** Which Ecuador defender started at the 2022 FIFA World Cup?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán and Félix Torres (listed options) also started at the 2022 World Cup, so 'which defender started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use non-defender distractors.
+
+### Row 17630 — Ecuador (easy) — FAIL: non-unique (Preciado also started the 2024 Copa)
+**Q:** Which Ecuador defender started at the 2024 Copa America?
+**Answer:** Piero Hincapié
+**Why it fails:** Ángelo Preciado (a listed defender option) also started for Ecuador at the 2024 Copa América, so 'which defender started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2024_Copa_Am%C3%A9rica
+**Remedy:** Use non-defender distractors.
+
+### Row 17631 — Ecuador (medium) — FAIL: non-unique (Estupinan also started)
+**Q:** Which Ecuador defender started in the 2022 World Cup group stage?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán (a listed option) also started in the 2022 group stage, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use non-defender distractors.
+
+### Row 17632 — Ecuador (easy) — FAIL: non-unique (Estupinan & Torres also started v Qatar)
+**Q:** Which Ecuador defender started in their 2022 World Cup win over Qatar?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán and Félix Torres (listed options) also started in the 2-0 win over Qatar, so 'which defender started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use non-defender distractors.
+
+### Row 17633 — Ecuador (easy) — FAIL: false (Hincapie & Estupinan each started all 3 - tied)
+**Q:** Which Ecuador defender started more World Cup 2022 matches, Hincapié or Estupiñán?
+**Answer:** Piero Hincapié
+**Why it fails:** Hincapié and Estupiñán each started all three of Ecuador's 2022 matches, so neither started 'more' — they are tied. The answer 'Hincapié' is wrong.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** They started an equal number (3 each).
+
+### Row 17634 — Ecuador (easy) — FAIL: non-unique (Estupinan & Torres also started v Senegal)
+**Q:** Which Ecuador defender started the 2022 World Cup match against Senegal?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán and Félix Torres (listed options) also started against Senegal, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use non-defender distractors.
+
+### Row 17635 — Ecuador (easy) — FAIL: non-unique (Estupinan also started v Netherlands)
+**Q:** Which Ecuador defender started versus the Netherlands in the 2022 World Cup?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán (a listed option) also started against the Netherlands, so 'which defender started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Use non-defender distractors.
+
+### Row 17636 — Ecuador (easy) — FAIL: non-unique (Estupinan also a 2026 defender)
+**Q:** Which Ecuador defender was selected for the 2026 World Cup squad?
+**Answer:** Piero Hincapié
+**Why it fails:** Estupiñán (a listed option) is also a defender in Ecuador's 2026 squad, so 'which defender was selected' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Use non-defender distractors or a CB-specific trait.
+
+### Row 17643 — Ecuador (easy) — FAIL: wrong stadium (2014 qualifiers were at Atahualpa)
+**Q:** Which Ecuador home qualifier for the 2014 World Cup leveraged their high-altitude stadium advantage?
+**Answer:** Estadio Rodrigo Paz Delgado
+**Why it fails:** For the 2014 qualifiers, Ecuador's national team played in Quito at the Estadio Olímpico Atahualpa — they only switched to the Rodrigo Paz Delgado (Casa Blanca) for the 2022 cycle (when Atahualpa was being demolished). So the 2014 altitude venue was Atahualpa, not Rodrigo Paz Delgado.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2014 home venue was the Estadio Olimpico Atahualpa.
+
+### Row 17645 — Ecuador (easy) — FAIL: duplicate option (Rodrigo Paz Delgado = Estadio de Liga)
+**Q:** Which Ecuador home stadium for 2022 qualifiers is highest above sea level?
+**Answer:** Estadio Rodrigo Paz Delgado
+**Why it fails:** 'Estadio Rodrigo Paz Delgado' and 'Estadio de Liga Deportiva Universitaria' are the SAME stadium (LDU Quito's Casa Blanca). Both being options makes the 'highest altitude' answer non-unique / duplicated. (Atahualpa is also high-altitude.)
+**Source:** https://en.wikipedia.org/wiki/Estadio_Rodrigo_Paz_Delgado
+**Remedy:** Remove the duplicate-name option.
+
+### Row 17669 — Ecuador (easy) — FAIL: false (Pekerman, not Rueda, coached Colombia at 2015 Copa)
+**Q:** Which Ecuador manager at the 2014 World Cup also coached Colombia at Copa America 2015?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Rueda managed Ecuador at the 2014 World Cup, but he did NOT coach Colombia at the 2015 Copa América — that was José Pékerman (a listed option). Rueda coached Colombia only from 2018.
+**Source:** https://en.wikipedia.org/wiki/Reinaldo_Rueda
+**Remedy:** Colombia's 2015 Copa coach was Pekerman.
+
+### Row 17686 — Ecuador (easy) — FAIL: false (Alfaro coached AT the 2022 WC, left after)
+**Q:** Which Ecuador manager left before the 2022 World Cup?
+**Answer:** Gustavo Alfaro
+**Why it fails:** Gustavo Alfaro did NOT leave before the 2022 World Cup — he managed Ecuador AT the tournament in Qatar and departed afterward (late 2022). The 'left before the 2022 World Cup' claim is false.
+**Source:** https://en.wikipedia.org/wiki/Gustavo_Alfaro
+**Remedy:** Alfaro coached at the 2022 WC and left after it.
+
+### Row 17695 — Ecuador (easy) — FAIL: false (Bolillo Gomez was appointed earlier, for 2002)
+**Q:** Which Ecuador manager was appointed earliest for his World Cup cycle?
+**Answer:** Reinaldo Rueda
+**Why it fails:** Among the options, Hernán Darío 'Bolillo' Gómez was appointed earliest — he managed Ecuador's 2002 World Cup cycle (from 1999), before Rueda's 2014 cycle. So Rueda was not 'appointed earliest'.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Bolillo Gomez (2002 cycle) was appointed earlier than Rueda.
+
+### Row 17709 — Ecuador (easy) — FAIL: wrong timing (transfer was 2023, after the 2022 WC)
+**Q:** Which Ecuador midfielder was selected for the 2022 World Cup after his record transfer?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's record transfer to Chelsea was August 2023 — AFTER the 2022 World Cup. He was a Brighton player at the 2022 WC, so he was not 'selected after his record transfer'.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** His Chelsea move came after the 2022 WC.
+
+### Row 17719 — Ecuador (easy) — FAIL: contradiction (a 2023 transfer cannot be 'before the 2022 WC')
+**Q:** Which Ecuador midfielder's 2023 transfer fee was a record before the 2022 World Cup?
+**Answer:** Moisés Caicedo
+**Why it fails:** The question is self-contradictory: Caicedo's transfer was in 2023, which cannot have been 'a record before the 2022 World Cup'. The move came after the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** The transfer was 2023, after the 2022 WC.
+
+### Row 17724 — Ecuador (easy) — FAIL: overstated (most expensive SA MIDFIELDER, not overall)
+**Q:** Which Ecuador midfielder's 2023 transfer was the most expensive for a South American?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's £115m move was the most expensive transfer for a South American MIDFIELDER — NOT the most expensive for a South American overall (Neymar's ~€222m move is far higher). The question drops 'midfielder', making the claim false.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Add 'midfielder'; Neymar's SA transfer is more expensive.
+
+### Row 17727 — Ecuador (easy) — FAIL: non-unique (Caicedo was also at Brighton in 2022)
+**Q:** Which Ecuador player at the 2022 World Cup plays for Brighton?
+**Answer:** Pervis Estupiñán
+**Why it fails:** At the 2022 World Cup, BOTH Estupiñán and Caicedo (a listed option) were Brighton players — Caicedo only moved to Chelsea in 2023. So 'which player plays for Brighton' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Caicedo was also a Brighton player at the 2022 WC.
+
+### Row 17728 — Ecuador (easy) — FAIL: non-unique (Preciado & Caicedo also European-based)
+**Q:** Which Ecuador player at the 2022 World Cup represented the squad's European growth?
+**Answer:** Pervis Estupiñán
+**Why it fails:** Multiple listed options were European-based at the 2022 World Cup — Estupiñán (Brighton), Preciado (Genk) and Caicedo (Brighton) — so 'which player represented the squad's European growth' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The trait is shared by several squad members.
+
+### Row 17729 — Ecuador (easy) — FAIL: non-unique (Caicedo & Estupinan also European-based)
+**Q:** Which Ecuador player at the 2022 World Cup represents their growing European-based squad?
+**Answer:** Piero Hincapié
+**Why it fails:** Hincapié (Leverkusen), Caicedo (Brighton) and Estupiñán (Brighton) were all European-based at the 2022 World Cup, so 'which player represents the growing European-based squad' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The trait is shared by several squad members.
+
+### Row 17736 — Ecuador (easy) — FAIL: wrong timing (transfer 2023, after his 2022 WC debut)
+**Q:** Which Ecuador player debuted at the 2022 World Cup after a record transfer?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's record transfer (Chelsea, Aug 2023) came AFTER his 2022 World Cup debut, so 'debuted at the 2022 WC after a record transfer' is false — he was a Brighton player at that tournament.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** His record transfer came after, not before, the 2022 WC.
+
+### Row 17739 — Ecuador (easy) — FAIL: non-unique (Caicedo also debuted in the 2022 qualifiers)
+**Q:** Which Ecuador player debuted in the 2022 World Cup qualifiers?
+**Answer:** Jeremy Sarmiento
+**Why it fails:** Caicedo (a listed option) debuted in October 2020 during the 2022 qualifying cycle, the same campaign as Sarmiento — so 'which player debuted in the 2022 WC qualifiers' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Caicedo also debuted during the 2022 qualifiers.
+
+### Row 17743 — Ecuador (easy) — FAIL: non-unique (Gruezo also featured at 2016 Copa)
+**Q:** Which Ecuador player featured at the 2016 Copa América Centenario quarter-finals?
+**Answer:** Antonio Valencia
+**Why it fails:** Multiple listed players featured for Ecuador at the 2016 Copa América Centenario (Antonio Valencia AND Carlos Gruezo were both regulars), so 'which player featured' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** Use a captain-specific or distinguishing trait.
+
+### Row 17757 — Ecuador (easy) — FAIL: non-unique (Caicedo & Hincapie also not 'emerging')
+**Q:** Which Ecuador player is not an emerging talent for the 2026 World Cup cycle?
+**Answer:** Enner Valencia
+**Why it fails:** Among the options, only Jeremy Sarmiento is an 'emerging talent' — Valencia, Caicedo AND Hincapié are all established players, so 'which is NOT an emerging talent' has three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Only one option should be the established player.
+
+### Row 17762 — Ecuador (easy) — FAIL: wrong year (Caicedo joined Chelsea in 2023, not 2022)
+**Q:** Which Ecuador player joined Chelsea for a record fee in 2022?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo joined Chelsea in August 2023, not 2022. At the 2022 World Cup he was still a Brighton player.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** The transfer was 2023.
+
+### Row 17765 — Ecuador (easy) — FAIL: false (Caicedo's record move was after the 2022 WC)
+**Q:** Which Ecuador player made a record transfer before the 2022 World Cup?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's record transfer to Chelsea was August 2023 — AFTER the 2022 World Cup, not before. No Ecuador player made a record transfer before the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** His record move came after the 2022 WC.
+
+### Row 17767 — Ecuador (easy) — FAIL: non-unique (all options missed 2010 & 2018)
+**Q:** Which Ecuador player missed both the 2010 and 2018 World Cups?
+**Answer:** Enner Valencia
+**Why it fails:** Ecuador failed to qualify for both 2010 and 2018, so EVERY player of that era 'missed' those World Cups — Antonio Valencia, Felipe Caicedo and Christian Noboa (all options) missed them too. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Use a player-specific distinguishing trait.
+
+### Row 17774 — Ecuador (easy) — FAIL: wrong stadium (opener was at Al Bayt, not Lusail)
+**Q:** Which Ecuador player scored at the 2022 FIFA World Cup venue Lusail Stadium?
+**Answer:** Enner Valencia
+**Why it fails:** Ecuador's 2022 opener vs Qatar (where Valencia scored both goals) was at the Al Bayt Stadium in Al Khor — NOT the Lusail Stadium. So Valencia did not score 'at Lusail Stadium'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** The opener was at Al Bayt Stadium.
+
+### Row 17775 — Ecuador (easy) — FAIL: non-unique (Caicedo also scored at 2022)
+**Q:** Which Ecuador player scored at the 2022 FIFA World Cup?
+**Answer:** Enner Valencia
+**Why it fails:** Both Valencia (3 goals) and Caicedo (1, vs Senegal) scored at the 2022 World Cup, and Caicedo is a listed option — so 'which player scored at the 2022 WC' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Caicedo also scored at 2022 (vs Senegal).
+
+### Row 17783 — Ecuador (easy) — FAIL: false (Caicedo, not Valencia, scored v Senegal)
+**Q:** Which Ecuador player scored in their 2022 World Cup loss to Senegal?
+**Answer:** Enner Valencia
+**Why it fails:** Ecuador's goal in the 1-2 loss to Senegal was scored by Moisés Caicedo (67'), NOT Enner Valencia. (The dataset's own row 17781 correctly credits Caicedo.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Change the scorer to Caicedo.
+
+### Row 17784 — Ecuador (easy) — FAIL: false (Messi scored 7 at 2022, more than Valencia's 3)
+**Q:** Which Ecuador player scored more 2022 World Cup goals than Lionel Messi?
+**Answer:** Enner Valencia
+**Why it fails:** Messi scored SEVEN goals at the 2022 World Cup (Golden Ball winner) — more than Valencia's 3. The claim only holds for the group stage (Messi 2), but the question asks about '2022 World Cup goals' overall.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Restrict to the group stage, or the claim is false overall.
+
+### Row 17793 — Ecuador (easy) — FAIL: wrong year (Delgados first WC goal was 2002 v Mexico)
+**Q:** Which Ecuador player scored their first World Cup goal in 2006?
+**Answer:** Agustín Delgado
+**Why it fails:** Agustín Delgado scored Ecuador's FIRST-EVER World Cup goal in 2002 (v Mexico), not 2006 v Costa Rica. The '2006 / Costa Rica / first-ever' framing is wrong.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Ecuador's first WC goal was Delgado v Mexico in 2002.
+
+### Row 17799 — Ecuador (easy) — FAIL: false (Caicedo scored Ecuadors most recent WC goal)
+**Q:** Which Ecuador player scored their nation's last five World Cup goals?
+**Answer:** Enner Valencia
+**Why it fails:** Valencia did NOT score Ecuador's last five World Cup goals — Moisés Caicedo scored their most recent WC goal (v Senegal, 2022). So the run of 'last five' is broken by Caicedo's goal.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Caicedo scored the last one (v Senegal); reword.
+
+### Row 17813 — Ecuador (easy) — FAIL: non-unique (several 2006 players missed 2010)
+**Q:** Which Ecuador player was in their 2006 squad but missed the 2010 World Cup?
+**Answer:** Iván Hurtado
+**Why it fails:** Ecuador failed to qualify for 2010, so multiple 2006 squad members 'missed' it — Iván Hurtado, Agustín Delgado and Ulises de la Cruz (all listed) were 2006 players who did not play at a 2010 World Cup. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Use a player-specific distinguishing trait.
+
+### Row 17816 — Ecuador (easy) — FAIL: non-unique (Caicedo & Hincapie also not 'emerging')
+**Q:** Which Ecuador player was NOT an emerging talent at the 2022 World Cup?
+**Answer:** Enner Valencia
+**Why it fails:** Among the options only Sarmiento was an 'emerging talent' — Valencia, Caicedo AND Hincapié were all established players at 2022, so 'which was NOT an emerging talent' has three valid answers.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** Only one option should be an emerging talent.
+
+### Row 17817 — Ecuador (easy) — FAIL: false (Caicedo WAS in the 2022 squad)
+**Q:** Which Ecuador player was not in their 2022 FIFA World Cup squad?
+**Answer:** Moisés Caicedo
+**Why it fails:** Moisés Caicedo WAS in Ecuador's 2022 World Cup squad — he started matches and scored against Senegal. The claim that he was 'not in the 2022 squad' is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Caicedo played at the 2022 WC; pick a player who genuinely wasn't there.
+
+### Row 17837 — Ecuador (easy) — FAIL: false (British record, not a world record)
+**Q:** Which Ecuador player's 2023 transfer was a world-record fee?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's £115m move to Chelsea was a BRITISH transfer record, not a world record (the world record is Neymar's ~€222m). The explanation itself says 'British transfer record'.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** It was a British record, not a world record.
+
+### Row 17842 — Ecuador (easy) — FAIL: false (Valencia helped qualify for at most 3 WCs)
+**Q:** Which Ecuador player's goals helped them qualify for four World Cups?
+**Answer:** Enner Valencia
+**Why it fails:** Enner Valencia debuted in 2012, so he could only have contributed to qualifying for 2014, 2022 and 2026 — at most THREE World Cups, not four. He had no role in the 2002/2006 qualifications.
+**Source:** https://en.wikipedia.org/wiki/Enner_Valencia
+**Remedy:** He helped qualify for 3 WCs (2014, 2022, 2026), not four.
+
+### Row 17845 — Ecuador (easy) — FAIL: false (transfer was 2023, fee went to Brighton)
+**Q:** Which Ecuador player's record transfer helped fund their 2022 World Cup campaign?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's record transfer was August 2023 — AFTER the 2022 World Cup — and the fee went to Brighton (his club), not Ecuador's federation. It did not 'fund their 2022 World Cup campaign'.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** The transfer was 2023 and the fee went to Brighton.
+
+### Row 17854 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium did coach Gustavo Alfaro select for the crucial 2022 World Cup qualifier against Uruguay?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 home qualifiers (including vs Uruguay) were at the Casa Blanca (Rodrigo Paz Delgado) in Quito for altitude — NOT the sea-level Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito (Casa Blanca).
+
+### Row 17855 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium hosted a 2022 World Cup qualifier with record attendance?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at the Casa Blanca in Quito, not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17856 — Ecuador (easy) — FAIL: false (2014 qualifiers were at Atahualpa, Quito)
+**Q:** Which Ecuador stadium hosted the 2014 World Cup qualifier vs Argentina with the largest capacity?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2014 home qualifiers (including vs Argentina) were at the Estadio Olímpico Atahualpa in Quito for altitude — not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2014 qualifiers were at Atahualpa (Quito).
+
+### Row 17857 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium hosted the 2022 World Cup qualifier against Argentina?
+**Answer:** Estadio Monumental
+**Why it fails:** The 2022 Argentina qualifier was hosted in Quito (Casa Blanca), not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17858 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium hosted the 2022 World Cup qualifiers and holds 57,267 fans?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at Casa Blanca (Quito), not the 57,267-capacity Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17859 — Ecuador (easy) — FAIL: false (Colombia game in Quito; 'win' vs 0-0 draw contradiction)
+**Q:** Which Ecuador stadium hosted the 2022 World Cup qualifying win over Colombia?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were in Quito, not the Monumental. The row is also internally inconsistent — it asks about a 'win over Colombia' while the explanation describes a 0-0 draw (the actual win, 6-1, was in Quito).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 Colombia games were in Quito; fix the win/draw mismatch.
+
+### Row 17860 — Ecuador (easy) — FAIL: false premise (no Copa America qualifiers / no 2023 Copa)
+**Q:** Which Ecuador stadium hosted the 2023 Copa América qualifiers due to its capacity?
+**Answer:** Estadio Monumental
+**Why it fails:** There are no 'Copa América qualifiers' — the Copa has no qualifying round — and there was no 2023 Copa América. The premise is a non-event.
+**Source:** https://en.wikipedia.org/wiki/Copa_Am%C3%A9rica
+**Remedy:** Remove the false premise.
+
+### Row 17861 — Ecuador (easy) — FAIL: false (2014 qualifiers were at Atahualpa, Quito)
+**Q:** Which Ecuador stadium hosted their 2014 World Cup qualifier vs Uruguay?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2014 qualifier vs Uruguay was in Quito (Atahualpa), not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2014 qualifiers were at Atahualpa (Quito).
+
+### Row 17862 — Ecuador (easy) — FAIL: false (2022 Brazil qualifier was in Quito, 1-1)
+**Q:** Which Ecuador stadium hosted their 2022 World Cup qualifier against Brazil?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifier vs Brazil (1-1) was at the Casa Blanca in Quito, not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 Brazil qualifier was in Quito.
+
+### Row 17863 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium hosted their 2022 World Cup qualifiers due to its large capacity?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at Casa Blanca (Quito), not the Estadio Monumental.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17864 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium hosted their 2022 World Cup qualifying match against Argentina?
+**Answer:** Estadio Monumental
+**Why it fails:** The 2022 Argentina qualifier was in Quito (Casa Blanca), not the Estadio Monumental.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17869 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium, capacity ~57,267, hosted 2022 World Cup qualifiers?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at Casa Blanca (Quito), not the 57,267-capacity Estadio Monumental.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17871 — Ecuador (easy) — FAIL: false (the 6-1 Colombia win was in Quito)
+**Q:** Which Ecuador stadium, its largest, hosted their record 2022 World Cup qualifying win?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's record 6-1 win over Colombia in 2022 qualifying was in Quito (altitude), not the Estadio Monumental in Guayaquil.
+**Source:** https://www.aljazeera.com/sports/2022/11/13/world-cup-2022-ecuador
+**Remedy:** The 6-1 win was in Quito.
+
+### Row 17874 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium, with a 57,267 capacity, hosted a key 2022 World Cup qualifier?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at Casa Blanca (Quito), not the 57,267-capacity Estadio Monumental.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17876 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuador stadium, with a 57,267 capacity, was their largest for 2022 World Cup qualifiers?
+**Answer:** Estadio Monumental
+**Why it fails:** The Estadio Monumental is Ecuador's largest stadium but was NOT used for the 2022 qualifiers — those were at the Casa Blanca (Rodrigo Paz Delgado) in Quito.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifier venue was Casa Blanca (Quito).
+
+### Row 17877 — Ecuador (easy) — FAIL: false premise (Ecuador qualified directly, no 2022 playoff)
+**Q:** Which Ecuador stadium's large capacity made it the 2022 World Cup playoff host?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador qualified for 2022 DIRECTLY by finishing 4th in CONMEBOL — they did NOT play an inter-confederation play-off. So there was no '2022 World Cup playoff' for any stadium to host.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ecuador qualified directly; there was no play-off.
+
+### Row 17881 — Ecuador (easy) — FAIL: non-unique (several stars missed both 2010 & 2018)
+**Q:** Which Ecuador star missed both the 2010 and 2018 World Cups?
+**Answer:** Antonio Valencia
+**Why it fails:** Ecuador failed to qualify for both 2010 and 2018, so multiple players active across that span 'missed both' — Antonio Valencia, Felipe Caicedo and Christian Noboa (all options) all did. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Use a player-specific distinguishing trait.
+
+### Row 17882 — Ecuador (easy) — FAIL: non-unique (Antonio Valencia also in the 2014 squad)
+**Q:** Which Ecuador star was in their 2014 World Cup squad?
+**Answer:** Enner Valencia
+**Why it fails:** Both Enner Valencia AND Antonio Valencia (a listed option, the captain) were in Ecuador's 2014 World Cup squad — so 'which star was in the 2014 squad' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_E
+**Remedy:** Antonio Valencia was also in the 2014 squad.
+
+### Row 17883 — Ecuador (easy) — FAIL: false (transfer was 2023; fee went to Brighton)
+**Q:** Which Ecuador star's 2023 sale funded their 2022 World Cup squad development?
+**Answer:** Moisés Caicedo
+**Why it fails:** Caicedo's record sale was August 2023 — after the 2022 World Cup — and the fee went to Brighton, not Ecuador. It did not 'fund their 2022 World Cup squad development'.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** The 2023 sale couldn't fund the 2022 squad.
+
+### Row 17899 — Ecuador (easy) — FAIL: false (Plata did not score at the 2022 WC)
+**Q:** Which Ecuador winger scored a goal at the 2022 World Cup?
+**Answer:** Gonzalo Plata
+**Why it fails:** Gonzalo Plata did NOT score at the 2022 World Cup — Ecuador's only scorers were Valencia (3) and Caicedo (1, vs Senegal). Plata scored none.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Plata did not score; Ecuador's scorers were Valencia and Caicedo.
+
+### Row 17904 — Ecuador (hard) — FAIL: non-unique (every campaign relied on Quitos altitude)
+**Q:** Which Ecuador World Cup qualification campaign relied on their high-altitude Quito stadium?
+**Answer:** 2022 qualification
+**Why it fails:** EVERY Ecuador qualifying campaign relied on Quito's high altitude (Atahualpa through 2018, Casa Blanca for 2022) — so 'which campaign relied on the high-altitude Quito stadium' is non-unique among the options.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** All campaigns used Quito; make it specific.
+
+### Row 17908 — Ecuador (easy) — FAIL: non-unique (all options are LigaPro clubs)
+**Q:** Which Ecuadorian club is a classic LigaPro member?
+**Answer:** Barcelona SC
+**Why it fails:** Barcelona SC, LDU Quito, Emelec AND Independiente del Valle are all LigaPro clubs, so 'which is a classic LigaPro member' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuadorian_Serie_A
+**Remedy:** All four are LigaPro members.
+
+### Row 17917 — Ecuador (easy) — FAIL: anachronism (IDV won Oct 2022, after qualifying)
+**Q:** Which Ecuadorian club's 2022 continental success boosted their players' World Cup qualifying experience?
+**Answer:** Independiente del Valle
+**Why it fails:** Independiente del Valle won the 2022 Copa Sudamericana on 1 October 2022 — AFTER Ecuador's WC qualifying had already ended (March 2022). So the win could not have 'boosted their players' World Cup qualifying experience'.
+**Source:** https://en.wikipedia.org/wiki/2022_Copa_Sudamericana
+**Remedy:** The Sudamericana win came after qualifying.
+
+### Row 17918 — Ecuador (medium) — FAIL: anachronism (IDV won Oct 2022, after qualifying)
+**Q:** Which Ecuadorian club's 2022 continental title boosted the nation's FIFA ranking before World Cup qualifying?
+**Answer:** Independiente del Valle
+**Why it fails:** IDV's 2022 Copa Sudamericana win (Oct 2022) came AFTER Ecuador's 2022 WC qualifying ended (March 2022), so it cannot have boosted the FIFA ranking 'before World Cup qualifying'.
+**Source:** https://en.wikipedia.org/wiki/2022_Copa_Sudamericana
+**Remedy:** The win came after qualifying, not before.
+
+### Row 17919 — Ecuador (easy) — FAIL: anachronism (IDV won Oct 2022, after qualifiers)
+**Q:** Which Ecuadorian club's 2022 continental win boosted morale before the 2022 FIFA World Cup qualifiers?
+**Answer:** Independiente del Valle
+**Why it fails:** IDV's 2022 Copa Sudamericana win (1 Oct 2022) came AFTER the 2022 WC qualifiers (ended March 2022), so it could not have boosted morale 'before the 2022 qualifiers'.
+**Source:** https://en.wikipedia.org/wiki/2022_Copa_Sudamericana
+**Remedy:** The win came after the qualifiers.
+
+### Row 17923 — Ecuador (medium) — FAIL: anachronism (IDV win Oct 2022, after qualifying)
+**Q:** Which Ecuadorian club's 2022 Sudamericana win boosted their FIFA ranking for World Cup qualifying?
+**Answer:** Independiente del Valle
+**Why it fails:** IDV's Sudamericana win (Oct 2022) came after WC qualifying ended (March 2022), so it cannot have boosted the FIFA ranking 'for World Cup qualifying'.
+**Source:** https://en.wikipedia.org/wiki/2022_Copa_Sudamericana
+**Remedy:** The win came after qualifying.
+
+### Row 17942 — Ecuador (medium) — FAIL: wrong timing (Paez debuted 2023, before 2026 qualification)
+**Q:** Which Ecuadorian player debuted after their 2026 World Cup qualification?
+**Answer:** Kendry Páez
+**Why it fails:** Kendry Páez made his Ecuador debut in June 2023 — at the START of the 2026 cycle, roughly two years BEFORE Ecuador secured 2026 qualification (2025). He did not debut 'after' qualification.
+**Source:** https://en.wikipedia.org/wiki/Kendry_P%C3%A1ez
+**Remedy:** Paez debuted in 2023, before qualification was secured.
+
+### Row 17944 — Ecuador (easy) — FAIL: false (Estupinan was at Brighton, not IDVs squad)
+**Q:** Which Ecuadorian player from Independiente del Valle's 2022 Copa Sudamericana win started in the 2022 FIFA World Cup opener?
+**Answer:** Pervis Estupiñán
+**Why it fails:** Pervis Estupiñán was a Brighton player at the 2022 World Cup — he was NOT part of Independiente del Valle's 2022 Copa Sudamericana-winning squad (he came through IDV's academy years earlier but had long since moved to Europe).
+**Source:** https://en.wikipedia.org/wiki/Pervis_Estupi%C3%B1%C3%A1n
+**Remedy:** Estupinan was not in IDV's 2022 squad.
+
+### Row 17950 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which Ecuadorian stadium, capacity 57,267, hosted a 2022 World Cup qualifier?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at Casa Blanca (Quito), not the 57,267-capacity Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 17951 — Ecuador (easy) — FAIL: false (2014 qualifiers were at Atahualpa, Quito)
+**Q:** Which Ecuadorian stadium, with a 57,267 capacity, hosted their 2014 World Cup qualifier wins?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2014 qualifier wins were at the Estadio Olímpico Atahualpa in Quito, not the Estadio Monumental in Guayaquil.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_national_football_team
+**Remedy:** The 2014 qualifiers were at Atahualpa (Quito).
+
+### Row 17963 — Ecuador (easy) — FAIL: false (Caicedo's move came AFTER Enzo's, not before)
+**Q:** Which Ecuadorian's record transfer occurred before Enzo Fernández's in 2023?
+**Answer:** Moisés Caicedo
+**Why it fails:** Enzo Fernández moved to Chelsea in January 2023 (then a British record); Caicedo moved in August 2023 and BROKE Enzo's record. So Caicedo's transfer came AFTER Enzo's, not before.
+**Source:** https://en.wikipedia.org/wiki/Mois%C3%A9s_Caicedo
+**Remedy:** Caicedo's move (Aug 2023) was after Enzo's (Jan 2023).
+
+### Row 17977 — Ecuador (easy) — FAIL: wrong club (Valencia came from Emelec, was at Fenerbahce in 2022)
+**Q:** Which LigaPro club did Ecuador's 2022 World Cup captain Enner Valencia play for?
+**Answer:** Barcelona SC
+**Why it fails:** Enner Valencia's LigaPro club was Emelec (a listed option), not Barcelona SC — and at the 2022 World Cup he played for Fenerbahçe in Turkey. He never played for Barcelona SC.
+**Source:** https://en.wikipedia.org/wiki/Enner_Valencia
+**Remedy:** Change to Emelec (his Ecuadorian club).
+
+### Row 17978 — Ecuador (medium) — FAIL: false premise (Ecuador did not qualify for 2010)
+**Q:** Which LigaPro club's 2008 continental title preceded Ecuador's 2010 World Cup qualification?
+**Answer:** LDU Quito
+**Why it fails:** Ecuador FAILED to qualify for the 2010 World Cup, so LDU's 2008 Libertadores title did not 'precede Ecuador's 2010 World Cup qualification' — there was no 2010 qualification.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Ecuador did not qualify for 2010.
+
+### Row 18002 — Ecuador (easy) — FAIL: false (Sarr scored once; Koulibaly scored the other)
+**Q:** Which Senegal player scored twice in their 2022 World Cup win over Ecuador?
+**Answer:** Ismaïla Sarr
+**Why it fails:** Sarr did NOT score twice — Senegal's two goals vs Ecuador were Sarr (penalty) and Koulibaly. Neither player scored twice.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Sarr scored once; Koulibaly scored the winner.
+
+### Row 18008 — Ecuador (easy) — FAIL: false (opener was at Al Bayt, not all at Khalifa)
+**Q:** Which stadium hosted Ecuador's 2022 FIFA World Cup matches?
+**Answer:** Khalifa International Stadium
+**Why it fails:** Ecuador did NOT play all their 2022 matches at Khalifa — their opener vs Qatar was at the Al Bayt Stadium (a listed option). Only the Netherlands and Senegal games were at Khalifa.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** The opener was at Al Bayt; matches were split.
+
+### Row 18009 — Ecuador (easy) — FAIL: false (2022 qualifiers were at Casa Blanca, Quito)
+**Q:** Which stadium hosted Ecuador's 2022 World Cup qualifiers with the largest capacity?
+**Answer:** Estadio Monumental
+**Why it fails:** Ecuador's 2022 qualifiers were at Casa Blanca (Quito), not the Estadio Monumental. (The other options are stadiums in Peru and Colombia.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito.
+
+### Row 18019 — Ecuador (easy) — FAIL: non-unique (Ecuador 4th, above all four options)
+**Q:** Which team did Ecuador finish above in the 2022 World Cup qualifying table?
+**Answer:** Colombia
+**Why it fails:** Ecuador finished 4th in 2022 qualifying, above Peru (5th), Colombia (6th), Chile (7th) AND Paraguay (8th) — all four options. 'Which did Ecuador finish above' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** Ask which finished directly below (Peru, 5th).
+
+### Row 18020 — Ecuador (easy) — FAIL: non-unique / wrong (they DID face the Netherlands)
+**Q:** Which team did Ecuador NOT face in their decisive 2022 World Cup group match?
+**Answer:** Netherlands
+**Why it fails:** In their decisive final group match Ecuador faced Senegal — so they did NOT face the Netherlands, Qatar OR Germany in that match (non-unique). And overall Ecuador DID face the Netherlands in the group, so 'not faced' is misleading.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Reframe; the only team never faced was Germany.
+
+### Row 18021 — Ecuador (medium) — FAIL: non-unique (Ecuador also did not lose to Qatar)
+**Q:** Which team did Ecuador NOT lose to in the 2022 FIFA World Cup group stage?
+**Answer:** The Netherlands
+**Why it fails:** Ecuador beat Qatar, drew the Netherlands and lost to Senegal — so they did NOT lose to BOTH Qatar and the Netherlands (both listed). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Ask which they drew (Netherlands).
+
+### Row 18039 — Ecuador (medium) — FAIL: non-unique (4th in both 2014 and 2022)
+**Q:** Which World Cup did Ecuador reach by finishing 4th in CONMEBOL qualifiers?
+**Answer:** 2022 World Cup
+**Why it fails:** Ecuador finished 4th in CONMEBOL for both 2014 and 2022 (both listed options), so 'which World Cup did Ecuador reach by finishing 4th' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** 2014 was also a 4th-place finish.
+
+### Row 18042 — Ecuador (hard) — FAIL: non-unique (group-stage exit in 2014 and 2022)
+**Q:** Which World Cup saw Ecuador eliminated in the group stage?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** Ecuador were eliminated in the group stage in both 2014 and 2022 (both listed), so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ecuador_at_the_FIFA_World_Cup
+**Remedy:** Group-stage exits came in 2002, 2014 and 2022.
+
+### Row 18051 — Ecuador (easy) — FAIL: false (Ecuador scored 4 at 2022; Valencia 3, Caicedo 1)
+**Q:** Who scored both of Ecuador's goals at the 2022 FIFA World Cup?
+**Answer:** Enner Valencia
+**Why it fails:** Ecuador scored FOUR goals at the 2022 World Cup — Valencia (3) and Caicedo (1, vs Senegal) — not two. So Valencia did not score 'both' of Ecuador's goals.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Valencia scored 3 of Ecuadors 4 goals; Caicedo scored vs Senegal.
+
+### Row 18054 — Ecuador (easy) — FAIL: false (2016 QF was 2-1 USA; Valencia didnt score)
+**Q:** Who scored Ecuador's goal in their 2016 Copa América quarter-final?
+**Answer:** Enner Valencia
+**Why it fails:** Ecuador's 2016 Copa América Centenario QF loss to the USA was 2-1, not 4-1, and Ecuador's goal was not scored by Enner Valencia (Michael Arroyo scored it; Valencia did not feature as the scorer).
+**Source:** https://en.wikipedia.org/wiki/2016_Copa_Am%C3%A9rica_Centenario
+**Remedy:** The QF was 2-1; the scorer was not Valencia.
+
+### Row 18064 — Ecuador (easy) — FAIL: backwards (Gakpo gave the lead; Valencia equalized)
+**Q:** Why did Ecuador draw 1-1 with the Netherlands at the 2022 World Cup?
+**Answer:** Cody Gakpo equalized
+**Why it fails:** Cody Gakpo did NOT score the equalizer — he scored the OPENING goal to put the Netherlands 1-0 up; Enner Valencia then equalized for Ecuador (1-1). The 'Gakpo equalized' framing is reversed.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_A
+**Remedy:** Gakpo scored first; Valencia equalized.
+
+### Row 18072 — Ecuador (easy) — FAIL: false (2022 qualifiers were in Quito, not Guayaquil)
+**Q:** Why did Ecuador's 2022 World Cup coach choose to play key qualifiers in Guayaquil?
+**Answer:** Largest stadium's home support
+**Why it fails:** Ecuador played their key 2022 qualifiers in QUITO (Casa Blanca, altitude) — NOT in Guayaquil at the Estadio Monumental. The premise that the coach chose Guayaquil is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CONMEBOL)
+**Remedy:** The 2022 qualifiers were in Quito for altitude.
+
+### Row 18079 — Ecuador (hard) — FAIL: nonsensical (clubs do not enter WC qualifiers)
+**Q:** Why did Independiente del Valle enter the 2023 FIFA World Cup qualifiers for Ecuador?
+**Answer:** Won 2022 Copa Sudamericana
+**Why it fails:** Clubs do not 'enter FIFA World Cup qualifiers' — only national teams do. Independiente del Valle won the 2022 Copa Sudamericana (a club competition); this has nothing to do with entering World Cup qualifiers, and the explanation's reasoning is incoherent.
+**Source:** https://en.wikipedia.org/wiki/2022_Copa_Sudamericana
+**Remedy:** Remove the false premise; clubs don't play WC qualifiers.
+
+## Egypt — rows 18087–18876 (liveness on QA_PASSED_b2.md rows) — 155 FAIL
+
+**Fact base (sourced):** Egypt **FAILED to qualify for the 2022 World Cup** (lost the Senegal playoff on penalties), so every "at the 2022 World Cup / 2022 squad / captained at 2022 / coached at 2022 / secured 2022 qualification" claim is a **false premise**. The **2010 AFCON final was a 1-0 win over Ghana (Gedo, open play) — NOT a penalty shootout**, so all "won on penalties / scored the winning penalty in 2010" rows are false. **Salah was NOT Egypt's 2018 captain** (El-Hadary/Elmohamady were) and **did not take a penalty in the 2021 AFCON final** (he was the 5th taker; Egypt's misses were Abdelmonem & Lasheen) — he **did** miss the first kick in the 2022 *qualifying* shootout. The **2021 AFCON was hosted by Cameroon**, not Egypt. Egypt's **2018 home qualifiers were at Borg El Arab (Alexandria, ~86k — larger than Cairo International ~75k)**, not Cairo. **Elneny had ~60 caps at 2018** (not 100+); **Ahmed Hassan's 184 caps** was his 2012 career total (not by 2006/2010); **El-Hadary won 4 AFCONs** (not 7); **Salah played for Arab Contractors, not Al Ahly**; the **2018-19 Golden Boot was shared** with Mané & Aubameyang. Several rows carry Excel **date-corruption** in the answer cell. Sources: Wikipedia (Egypt at the FIFA WC, 2018 CAF qualifying, 2010/2017/2021 AFCON finals, 2022 CAF qualifying, player pages).
+
+### Row 18106 — Egypt (easy) — FAIL: non-unique (all options qualified for 2018)
+**Q:** Egypt beat Congo to qualify for the 2018 World Cup. Which other CAF nation qualified in 2018?
+**Answer:** Senegal
+**Why it fails:** All four options — Senegal, Nigeria, Morocco AND Tunisia — qualified for the 2018 World Cup from CAF (alongside Egypt). So 'which other CAF nation qualified' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** All five CAF nations listed qualified for 2018.
+
+### Row 18121 — Egypt (easy) — FAIL: false (2010 final was 1-0, not on penalties)
+**Q:** Egypt won the 2010 AFCON final by beating which nation on penalties?
+**Answer:** Ghana
+**Why it fails:** Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85') — it was NOT a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win (Gedo), not a shootout.
+
+### Row 18139 — Egypt (medium) — FAIL: non-unique (Salah scored vs Russia too)
+**Q:** Egypt's Mohamed Salah, a two-time Premier League Golden Boot winner, scored in which 2018 World Cup group stage match?
+**Answer:** Egypt vs Saudi Arabia
+**Why it fails:** Salah scored in TWO of Egypt's 2018 group games — vs Saudi Arabia (22') AND vs Russia (73' penalty). Both are listed options, so 'which match did Salah score in' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah also scored vs Russia.
+
+### Row 18146 — Egypt (easy) — FAIL: false (Borg El Arab is larger than Cairo International)
+**Q:** For Egypt's 2018 qualifiers, which stadium held the most fans?
+**Answer:** Cairo International Stadium
+**Why it fails:** Cairo International (~75,000) is NOT Egypt's largest stadium — Borg El Arab in Alexandria (~86,000, a listed option) is bigger. So it did not 'hold the most fans'.
+**Source:** https://en.wikipedia.org/wiki/Borg_El_Arab_Stadium
+**Remedy:** Borg El Arab (~86,000) is larger.
+
+### Row 18147 — Egypt (medium) — FAIL: false (2018 group stage was in Russia, not Cairo)
+**Q:** For Egypt's 2018 World Cup group stage, which stadium was the primary venue?
+**Answer:** Cairo International Stadium
+**Why it fails:** The 2018 World Cup GROUP STAGE was hosted in Russia — Egypt played in Yekaterinburg, Saint Petersburg and Volgograd. Cairo International was not a 2018 World Cup venue.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** The 2018 finals were in Russia; Cairo hosted qualifiers only.
+
+### Row 18150 — Egypt (easy) — FAIL: false (FNB and Borg El Arab are larger than Cairo)
+**Q:** For Egypt's 2022 World Cup qualifiers, which stadium's capacity was larger?
+**Answer:** Cairo International Stadium
+**Why it fails:** Cairo International (~75,000) is not the largest among the options — FNB Stadium (Johannesburg, ~94,000) and Borg El Arab (~86,000) both have larger capacities.
+**Source:** https://en.wikipedia.org/wiki/Borg_El_Arab_Stadium
+**Remedy:** FNB Stadium is the largest of the listed venues.
+
+### Row 18180 — Egypt (easy) — FAIL: non-unique (faced only Senegal in the playoff)
+**Q:** In 2022 FIFA World Cup qualifying, which team did Egypt NOT face in their playoff?
+**Answer:** Nigeria
+**Why it fails:** Egypt's only 2022 World Cup playoff opponent was Senegal — so they did NOT face Nigeria, Cameroon OR Algeria (three of the four options) in the playoff. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Ask which they DID face (Senegal).
+
+### Row 18184 — Egypt (medium) — FAIL: non-unique (Salah scored vs Russia too)
+**Q:** In Egypt's 2018 World Cup group stage, Mohamed Salah scored against which nation?
+**Answer:** Saudi Arabia
+**Why it fails:** Salah scored vs both Saudi Arabia and Russia at the 2018 World Cup — both listed options — so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah also scored vs Russia.
+
+### Row 18186 — Egypt (medium) — FAIL: non-unique (Salah, also an attacker, started)
+**Q:** In Egypt's 2018 World Cup group stage, which key AFCON attacker started?
+**Answer:** Trézéguet
+**Why it fails:** Mohamed Salah (a listed option) is Egypt's key attacker and started at the 2018 World Cup too — so 'which key attacker started' is non-unique with Trézéguet.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah also started as an attacker.
+
+### Row 18187 — Egypt (medium) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** In Egypt's 2018 World Cup group stage, which player was their captain?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah was Egypt's talisman but NOT the captain at the 2018 World Cup — the armband was worn by veterans Essam El-Hadary (a listed option) and Ahmed Elmohamady/Ahmed Fathi. Salah became captain later.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** The 2018 captain was El-Hadary (and Elmohamady), not Salah.
+
+### Row 18192 — Egypt (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** In the 2017 AFCON final, Egypt lost to Cameroon by what score?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. Egypt lost the 2017 AFCON final 2-1 to Cameroon.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Restore the score (2-1).
+
+### Row 18206 — Egypt (medium) — FAIL: false premise (Salah had no 2022 WC appearance)
+**Q:** In which World Cup did Egypt's Mohamed Salah debut, before his 2022 appearance?
+**Answer:** 2018 World Cup
+**Why it fails:** Egypt did not qualify for the 2022 World Cup, so Salah had no '2022 appearance'. He debuted at the 2018 WC; the 'before his 2022 appearance' clause is false.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Salah/Egypt were absent from the 2022 WC.
+
+### Row 18207 — Egypt (medium) — FAIL: false (Salahs first WC goal was vs Russia, not Saudi)
+**Q:** In which World Cup did Egyptian star Mohamed Salah score his first finals goal?
+**Answer:** 2018 World Cup
+**Why it fails:** Salah's first World Cup finals goal came against RUSSIA (19 June 2018, 73' penalty) — chronologically before the Saudi Arabia game (25 June). So his first finals goal was vs Russia, not Saudi Arabia.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** His first WC goal was vs Russia.
+
+### Row 18218 — Egypt (medium) — FAIL: wrong year (Al Ahlys 10th title was 2021, not 2012)
+**Q:** In which year did Egypt's Al Ahly win their 10th CAF Champions League title?
+**Answer:** 2012
+**Why it fails:** Al Ahly's 10th CAF Champions League title came in 2020-21, NOT 2012 — 2012 was their 7th (titles: 1982, 1987, 2001, 2005, 2006, 2008, 2012, 2013, 2019-20, 2020-21, 2022-23, 2023-24).
+**Source:** https://en.wikipedia.org/wiki/List_of_Al_Ahly_SC_records_and_statistics
+**Remedy:** Their 10th title was 2021; 2012 was the 7th.
+
+### Row 18227 — Egypt (medium) — FAIL: false (2010 final was 1-0, not penalties)
+**Q:** When did Egypt beat Ghana on penalties in an AFCON final?
+**Answer:** 2010
+**Why it fails:** Egypt beat Ghana 1-0 in the 2010 AFCON final (Gedo, 85'), NOT on penalties.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win, not a shootout.
+
+### Row 18234 — Egypt (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Egypt lose to Senegal in 2022 World Cup qualifying?
+**Answer:** 2022-03-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2022-03-01 00:00:00' instead of a clean date. Egypt lost the 2nd leg in March 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Restore the answer to 'March 2022'.
+
+### Row 18240 — Egypt (medium) — FAIL: false (2010 final was 1-0, not penalties)
+**Q:** When did Egypt win an AFCON final on penalties, after losing two later finals?
+**Answer:** 2010
+**Why it fails:** Egypt won the 2010 AFCON final 1-0 over Ghana (Gedo), NOT on penalties.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win, not a shootout.
+
+### Row 18241 — Egypt (medium) — FAIL: false (2010 final was 1-0, not penalties)
+**Q:** When did Egypt win the 2010 Africa Cup of Nations final?
+**Answer:** 2010
+**Why it fails:** The 2010 AFCON final was Egypt 1-0 Ghana (Gedo), not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win.
+
+### Row 18242 — Egypt (medium) — FAIL: false (2010 final was 1-0, not penalties)
+**Q:** When did Egypt win the AFCON, beating Ghana on penalties?
+**Answer:** 2010
+**Why it fails:** The 2010 AFCON final was a 1-0 win over Ghana, not a penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win.
+
+### Row 18244 — Egypt (medium) — FAIL: false (Cairo hosted WC qualifiers long before 2009)
+**Q:** When did Egypt's 75,000-capacity Cairo International Stadium first host a World Cup qualifier?
+**Answer:** 2009
+**Why it fails:** Cairo International Stadium opened in 1960 and has hosted Egypt's home World Cup qualifiers for decades (e.g. the 1990 cycle) — so 2009 was NOT the first time it hosted a WC qualifier.
+**Source:** https://en.wikipedia.org/wiki/Cairo_International_Stadium
+**Remedy:** It hosted WC qualifiers from the 1960s-70s onward.
+
+### Row 18251 — Egypt (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Egypt's manager leave before the 2018 FIFA World Cup?
+**Answer:** 2018-06-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2018-06-01 00:00:00' instead of a clean date (Cuper left in June/July 2018).
+**Source:** https://en.wikipedia.org/wiki/H%C3%A9ctor_C%C3%BAper
+**Remedy:** Restore the answer to a clean date.
+
+### Row 18263 — Egypt (easy) — FAIL: false (Ghana won the tie 6-1; Egypt won 2nd leg 2-1)
+**Q:** Where did Egypt host Ghana for a 2014 World Cup qualifier?
+**Answer:** Borg El Arab Stadium
+**Why it fails:** Egypt did NOT win 6-1 over Ghana in the 2014 playoff — GHANA won the first leg 6-1 (Kumasi). Egypt won the second leg only 2-1 and lost the tie 7-3 on aggregate.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Ghana won 6-1; Egypt's 2nd-leg win was 2-1.
+
+### Row 18264 — Egypt (easy) — FAIL: false premise (Egypt qualified directly for 2018, no playoff)
+**Q:** Where did Egypt host their 2018 World Cup qualifying playoff home leg?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt qualified for the 2018 World Cup DIRECTLY by winning CAF Group E — there was no 2018 qualifying play-off. (The play-off was in the 2014 cycle, vs Ghana.)
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** There was no 2018 play-off; Egypt won their group.
+
+### Row 18266 — Egypt (easy) — FAIL: incoherent (2010 final was 1-0, not penalties)
+**Q:** Which 2010 AFCON finalist beat Ghana on penalties, unlike Egypt?
+**Answer:** None of them
+**Why it fails:** The premise is false — the 2010 AFCON final was a 1-0 win, not a penalty shootout — so the whole question ('which finalist beat Ghana on penalties, unlike Egypt') is incoherent.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Egypt beat Ghana 1-0, not on penalties.
+
+### Row 18276 — Egypt (easy) — FAIL: non-unique (all options have fewer than 7)
+**Q:** Which AFCON champion has won fewer titles than Egypt's record seven?
+**Answer:** Cameroon
+**Why it fails:** All four options have fewer AFCON titles than Egypt's 7 — Cameroon (5), Ghana (4), Nigeria (3), Ivory Coast (3). The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** All four have fewer than 7.
+
+### Row 18310 — Egypt (easy) — FAIL: non-unique (all options qualified for 2018)
+**Q:** Which CAF nation qualified for the 2018 World Cup like Egypt?
+**Answer:** Nigeria
+**Why it fails:** Nigeria, Senegal, Morocco AND Tunisia all qualified for the 2018 World Cup from CAF — non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** All four CAF options qualified.
+
+### Row 18311 — Egypt (easy) — FAIL: non-unique (all options qualified for 2018)
+**Q:** Which CAF nation, like Egypt, qualified for the 2018 World Cup?
+**Answer:** Tunisia
+**Why it fails:** Tunisia, Senegal, Nigeria AND Morocco all qualified for the 2018 World Cup from CAF — non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** All four CAF options qualified.
+
+### Row 18318 — Egypt (easy) — FAIL: false (Aboubakar scored once; N'Koulou scored the other)
+**Q:** Which Cameroon player scored twice to beat Egypt in the 2017 AFCON final?
+**Answer:** Vincent Aboubakar
+**Why it fails:** Aboubakar did NOT score twice in the 2017 final — Cameroon's goals were N'Koulou (59') and Aboubakar (88'). Aboubakar scored once.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** N'Koulou scored Cameroon's first goal.
+
+### Row 18320 — Egypt (easy) — FAIL: false (Trezeguet scored ~1 at 2019, not 4)
+**Q:** Which Egypt attacker scored 4 goals at the 2019 Africa Cup of Nations?
+**Answer:** Trézéguet
+**Why it fails:** Trézéguet scored only about one goal at the 2019 AFCON (vs Zimbabwe) — Egypt exited in the R16 having played four games. He did not score 4.
+**Source:** https://en.wikipedia.org/wiki/Tr%C3%A9z%C3%A9guet_(Egyptian_footballer)
+**Remedy:** He scored ~1 at the 2019 AFCON.
+
+### Row 18322 — Egypt (easy) — FAIL: false (Trezeguet scored ~1 at 2021, not 2)
+**Q:** Which Egypt attacker scored twice at the 2021 Africa Cup of Nations?
+**Answer:** Trézéguet
+**Why it fails:** Trézéguet scored about one goal at the 2021 AFCON — the extra-time QF winner vs Morocco. Egypt won three ties on penalties (few open-play goals); he did not score twice.
+**Source:** https://en.wikipedia.org/wiki/Tr%C3%A9z%C3%A9guet_(Egyptian_footballer)
+**Remedy:** He scored ~1 (the Morocco QF winner).
+
+### Row 18323 — Egypt (easy) — FAIL: false (Trezeguet scored ~1 at 2021, not 2)
+**Q:** Which Egypt attacker scored two goals at the 2021 Africa Cup of Nations?
+**Answer:** Trézéguet
+**Why it fails:** Trézéguet scored about one goal at the 2021 AFCON (the QF winner vs Morocco), not two.
+**Source:** https://en.wikipedia.org/wiki/Tr%C3%A9z%C3%A9guet_(Egyptian_footballer)
+**Remedy:** He scored ~1 at the 2021 AFCON.
+
+### Row 18330 — Egypt (medium) — FAIL: non-unique (Salah, also a key attacker, started)
+**Q:** Which Egypt attacker, key at AFCONs, started their 2018 World Cup group stage match?
+**Answer:** Trézéguet
+**Why it fails:** Salah (a listed option) is also a key AFCON attacker who started 2018 group games — so 'which key attacker started' is non-unique with Trézéguet.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah also started as an attacker.
+
+### Row 18331 — Egypt (easy) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** Which Egypt captain at the 2018 World Cup also played for Liverpool?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah played for Liverpool but was NOT Egypt's 2018 World Cup captain — the captains were El-Hadary and Elmohamady.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** The 2018 captain was El-Hadary/Elmohamady.
+
+### Row 18334 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt captain led the team at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play at the 2022 World Cup (lost the playoff to Senegal), so no one captained Egypt 'at the 2022 FIFA World Cup'. (Salah did captain the qualifying campaign.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt did not reach the 2022 finals.
+
+### Row 18336 — Egypt (easy) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** Which Egypt captain played at the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah was not Egypt's captain at the 2018 World Cup — El-Hadary (and Elmohamady) wore the armband.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** The 2018 captain was El-Hadary/Elmohamady.
+
+### Row 18338 — Egypt (easy) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** Which Egypt captain scored more World Cup goals in Russia 2018?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah scored both of Egypt's 2018 goals, but he was NOT the captain — the armband was El-Hadary's/Elmohamady's. Calling him 'Egypt captain' in Russia 2018 is false.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah was the scorer, not the 2018 captain.
+
+### Row 18341 — Egypt (easy) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** Which Egypt captain was their top scorer at the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah was Egypt's top scorer at 2018 but NOT the captain (El-Hadary/Elmohamady wore the armband).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah was the scorer, not captain.
+
+### Row 18342 — Egypt (easy) — FAIL: non-unique (Zamalek also had players in the 2018 squad)
+**Q:** Which Egypt club had players in the 2018 World Cup squad?
+**Answer:** Al Ahly
+**Why it fails:** Both Al Ahly AND Zamalek (e.g. Tarek Hamed) had players in Egypt's 2018 squad — so 'which club had players' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Zamalek also contributed players.
+
+### Row 18344 — Egypt (easy) — FAIL: false (Egypt LOST the 2017 AFCON final)
+**Q:** Which Egypt coach oversaw their 2017 AFCON win?
+**Answer:** Héctor Cúper
+**Why it fails:** Egypt did NOT win the 2017 AFCON — they LOST the final 2-1 to Cameroon. Cúper was the coach, but there was no 2017 'win'.
+**Source:** https://en.wikipedia.org/wiki/2017_Africa_Cup_of_Nations_Final
+**Remedy:** Egypt lost the 2017 final; they last won in 2010.
+
+### Row 18353 — Egypt (medium) — FAIL: false (Salah had ONE Golden Boot before 2018)
+**Q:** Which Egypt forward had won two Premier League Golden Boots before the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Before the June 2018 World Cup, Salah had won only ONE Premier League Golden Boot (2017-18). His second came in 2018-19, AFTER the World Cup.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** He had one Golden Boot before 2018, not two.
+
+### Row 18358 — Egypt (easy) — FAIL: false (Cuper never coached the Argentina national team)
+**Q:** Which Egypt manager at the 2018 World Cup had previously led Argentina?
+**Answer:** Héctor Cúper
+**Why it fails:** Héctor Cúper is Argentine but never managed the Argentina national team — he coached clubs (Valencia, Inter) and national sides Georgia, Uzbekistan, Egypt, DR Congo and Syria.
+**Source:** https://en.wikipedia.org/wiki/H%C3%A9ctor_C%C3%BAper
+**Remedy:** Cuper never led Argentina's NT.
+
+### Row 18360 — Egypt (easy) — FAIL: false (Cuper never coached Argentina)
+**Q:** Which Egypt manager at the 2018 World Cup previously coached Argentina in 2006?
+**Answer:** Héctor Cúper
+**Why it fails:** Cúper did NOT coach Argentina in 2006 (or ever) — Argentina's 2006 coach was José Pékerman. Cúper was at clubs then.
+**Source:** https://en.wikipedia.org/wiki/H%C3%A9ctor_C%C3%BAper
+**Remedy:** Argentina's 2006 coach was Pekerman.
+
+### Row 18363 — Egypt (easy) — FAIL: non-unique (none of the options won 3 in a row)
+**Q:** Which Egypt manager did NOT win three consecutive AFCON titles?
+**Answer:** Héctor Cúper
+**Why it fails:** Only Hassan Shehata (not an option) won three consecutive AFCONs. ALL four options — Cúper, Queiroz, Gharieb, Bradley — did NOT, so 'which did NOT win three' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** None of the listed managers won three in a row.
+
+### Row 18390 — Egypt (easy) — FAIL: false (Elneny had ~60 caps at 2018, not 100+)
+**Q:** Which Egypt midfielder at the 2018 World Cup had over 100 caps?
+**Answer:** Mohamed Elneny
+**Why it fails:** Elneny debuted in 2011 and had only ~55-60 caps at the 2018 World Cup — he reached 100 caps years later. He did not have 'over 100 caps' in 2018.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** He had ~60 caps in 2018.
+
+### Row 18393 — Egypt (easy) — FAIL: false (Elneny had ~60 caps at 2018, not 100+)
+**Q:** Which Egypt midfielder had over 100 caps during the 2018 FIFA World Cup?
+**Answer:** Mohamed Elneny
+**Why it fails:** Elneny had roughly 60 caps at the 2018 World Cup, not over 100. He reached 100 caps much later.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** He had ~60 caps in 2018.
+
+### Row 18394 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt midfielder played for Arsenal at the 2022 World Cup?
+**Answer:** Mohamed Elneny
+**Why it fails:** Egypt did not qualify for the 2022 World Cup, so Elneny did not play 'at the 2022 World Cup'. (He did play the qualifiers.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals; use 'qualifiers'.
+
+### Row 18397 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt midfielder with over 100 caps played for Arsenal at the 2022 World Cup?
+**Answer:** Mohamed Elneny
+**Why it fails:** Egypt did not play the 2022 World Cup, so Elneny did not play 'at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18399 — Egypt (easy) — FAIL: non-unique (Mohsen also played domestically)
+**Q:** Which Egypt player at the 2018 FIFA World Cup played his club football domestically?
+**Answer:** Ahmed Fathy
+**Why it fails:** Both Ahmed Fathy (Al Ahly) and Marwan Mohsen (Al Ahly, a listed option) played domestically at the 2018 WC — so 'which player played domestically' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Several 2018 squad members were domestic-based.
+
+### Row 18400 — Egypt (easy) — FAIL: false (El-Hadary won 4 AFCONs, not 7)
+**Q:** Which Egypt player at the 2018 World Cup had seven AFCON winner's medals?
+**Answer:** Essam El-Hadary
+**Why it fails:** El-Hadary personally won FOUR AFCON titles (1998, 2006, 2008, 2010), not seven. Egypt's record 7 titles include 1957, 1959 and 1986 — before his time.
+**Source:** https://en.wikipedia.org/wiki/Essam_El_Hadary
+**Remedy:** He had 4 AFCON medals.
+
+### Row 18401 — Egypt (easy) — FAIL: false (Hegazi was at West Brom, not domestic)
+**Q:** Which Egypt player at the 2018 World Cup played his club football domestically?
+**Answer:** Ahmed Hegazi
+**Why it fails:** Ahmed Hegazi played for West Bromwich Albion in England at the 2018 World Cup — NOT for Al Ahly domestically.
+**Source:** https://en.wikipedia.org/wiki/Ahmed_Hegazi
+**Remedy:** Hegazi was a West Brom player in 2018.
+
+### Row 18403 — Egypt (easy) — FAIL: false (Egypt absent from 2022 WC; Al-Ittihad is Saudi)
+**Q:** Which Egypt player at the 2022 FIFA World Cup was from the Egyptian Premier League?
+**Answer:** Ahmed Hegazi
+**Why it fails:** Egypt did not play the 2022 World Cup. Also, Hegazi's club Al-Ittihad is a SAUDI club (Jeddah), not in the Egyptian Premier League.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals; Al-Ittihad is Saudi.
+
+### Row 18404 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt player at the 2022 FIFA World Cup was not based in the Egyptian Premier League?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no Egypt player was 'at the 2022 FIFA World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18407 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt player captained the side at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one captained Egypt 'at the 2022 FIFA World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18408 — Egypt (easy) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** Which Egypt player captained the squad at the 2018 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah did not captain Egypt at the 2018 World Cup — El-Hadary (and Elmohamady) wore the armband.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** The 2018 captain was El-Hadary/Elmohamady.
+
+### Row 18416 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt player for the 2022 World Cup was based in the Egyptian Premier League?
+**Answer:** Mostafa Mohamed
+**Why it fails:** Egypt did not play the 2022 World Cup, so no player was 'for/during the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18417 — Egypt (easy) — FAIL: false premise (no Egypt 2022 WC squad)
+**Q:** Which Egypt player from the 2022 FIFA World Cup squad plays for Al Ahly?
+**Answer:** Mohamed El Shenawy
+**Why it fails:** Egypt did not qualify for the 2022 World Cup, so there was no 'Egypt 2022 World Cup squad'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18418 — Egypt (easy) — FAIL: false (Hassans 184 caps was his 2012 career total)
+**Q:** Which Egypt player had 184 caps before the 2006 World Cup?
+**Answer:** Ahmed Hassan
+**Why it fails:** Ahmed Hassan did NOT have 184 caps before the 2006 World Cup — 184 was his career total at his 2012 retirement. By 2006 he had roughly 100-120 caps.
+**Source:** https://en.wikipedia.org/wiki/Ahmed_Hassan_(footballer,_born_1975)
+**Remedy:** 184 was his final (2012) total.
+
+### Row 18419 — Egypt (easy) — FAIL: non-unique (El-Hadary & Aboutrika also had more caps)
+**Q:** Which Egypt player had more caps than Mohamed Salah in 2018?
+**Answer:** Ahmed Hassan
+**Why it fails:** In 2018, multiple Egyptians had more caps than Salah — Ahmed Hassan (184), El-Hadary (~159) and Aboutrika (100) all exceed his ~60. The answer is non-unique. (The explanation's '90 caps' for Salah in 2018 is also too high — he had ~60.)
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** El-Hadary and Aboutrika also had more.
+
+### Row 18420 — Egypt (easy) — FAIL: false (Salah had ~35 goals/~55 caps during 2018 qualifying)
+**Q:** Which Egypt player had over 50 goals and 90 caps during 2018 World Cup qualifying?
+**Answer:** Mohamed Salah
+**Why it fails:** During the 2018 qualifying campaign (2016-17) Salah had roughly 35 goals and ~55 caps — not 'over 50 goals and 90 caps'. He passed 50 goals only around 2021-22.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** He had ~35 goals then.
+
+### Row 18421 — Egypt (easy) — FAIL: non-unique (all options had 90+ caps)
+**Q:** Which Egypt player had over 90 caps by the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** All four options had over 90 caps — Salah (~90), Ahmed Hassan (184), El-Hadary (159), Elneny (~90). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** Several players had 90+ caps.
+
+### Row 18434 — Egypt (medium) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt player matched his 2018 Golden Boot tally at the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so Salah did not 'match his Golden Boot tally at the 2022 World Cup'. (And a comedian, Trevor Noah, is a distractor.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18437 — Egypt (easy) — FAIL: false (Salah did NOT take/miss in the 2021 final)
+**Q:** Which Egypt player missed a penalty in the 2021 AFCON final and 2022 WC qualifying shootout against Senegal?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah missed in the 2022 qualifying shootout, but he did NOT miss in the 2021 AFCON final — he was the 5th designated taker and Egypt lost (4-2) before his turn. Egypt's final misses were Abdelmonem and Lasheen.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** He didn't take a penalty in the AFCON final.
+
+### Row 18442 — Egypt (easy) — FAIL: false (Salah did not take/miss in the 2021 AFCON final)
+**Q:** Which Egypt player missed in the 2021 AFCON final shootout?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah did NOT miss in the 2021 AFCON final shootout — he was the 5th taker and never took one (Egypt lost 4-2 first). The misses were Abdelmonem and Lasheen.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Salah didn't take a penalty in the final.
+
+### Row 18443 — Egypt (easy) — FAIL: false (Salah took no penalty in the 2021 final)
+**Q:** Which Egypt player missed the crucial penalty in the 2021 AFCON final?
+**Answer:** Mohamed Salah
+**Why it fails:** There was no Egyptian '5th penalty' missed by Salah — the shootout ended 4-2 before Egypt's 5th. Egypt's misses were Abdelmonem (post) and Lasheen (saved).
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Egypt's missers were Abdelmonem and Lasheen.
+
+### Row 18445 — Egypt (easy) — FAIL: false (Gabaski was the GK; missers were Abdelmonem & Lasheen)
+**Q:** Which Egypt player missed the decisive penalty in the 2021 AFCON final?
+**Answer:** Mohamed Abou Gabal
+**Why it fails:** Mohamed Abou Gabal (Gabaski) was Egypt's GOALKEEPER in the 2021 final — he did not 'miss the decisive penalty'. Egypt's missed penalties were taken by Abdelmonem and Lasheen.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Egypt's missers were Abdelmonem and Lasheen.
+
+### Row 18451 — Egypt (easy) — FAIL: false (Salah has ~20 WC-qualifying goals, not 56)
+**Q:** Which Egypt player scored 56 goals in FIFA World Cup qualifiers?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah's goals in FIFA World Cup qualifiers are around 20 (he is the all-time top scorer in African WC qualifying) — not 56. The 56 figure is wrong.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** He has ~20 WC-qualifying goals.
+
+### Row 18452 — Egypt (easy) — FAIL: wrong count (Salah scored ~5 in 2022 qualifying, not 8)
+**Q:** Which Egypt player scored 8 goals in 2022 World Cup qualifiers?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah scored roughly 5 goals in Egypt's 2022 CAF qualifying (group + playoff), not 8 — and the dataset's own row 18450 says 5.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** He scored ~5 in 2022 qualifying.
+
+### Row 18456 — Egypt (hard) — FAIL: false (2010 final was 1-0, no shootout)
+**Q:** Which Egypt player scored in the penalty shootout of their 2010 AFCON final win?
+**Answer:** Mohamed Aboutrika
+**Why it fails:** The 2010 AFCON final was a 1-0 win (Gedo), NOT a penalty shootout — so no one 'scored in the shootout'.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** There was no 2010 final shootout.
+
+### Row 18458 — Egypt (easy) — FAIL: false (Salah had ~35 goals by 2018 qualifying)
+**Q:** Which Egypt player scored over 50 goals in 2018 World Cup qualifying?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah did NOT have over 50 international goals by the 2018 qualifying campaign — he had ~35 then, reaching 50 around 2021-22.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** He had ~35 goals by 2018.
+
+### Row 18465 — Egypt (easy) — FAIL: false (2010 final was 1-0 open play, no shootout)
+**Q:** Which Egypt player scored the winning penalty against Ghana in the 2010 AFCON final?
+**Answer:** Mohamed Aboutrika
+**Why it fails:** The 2010 AFCON final was won 1-0 by Gedo in open play — there was NO penalty shootout, so Aboutrika did not score a 'winning penalty'.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Gedo scored the open-play winner; no shootout.
+
+### Row 18466 — Egypt (easy) — FAIL: false (2010 final was 1-0, no shootout)
+**Q:** Which Egypt player scored the winning penalty in the 2010 AFCON final?
+**Answer:** Mohamed Aboutrika
+**Why it fails:** The 2010 AFCON final was a 1-0 win (Gedo), not a penalty shootout — there was no 'winning penalty'.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Gedo scored the winner in open play.
+
+### Row 18471 — Egypt (easy) — FAIL: false (Egypt scored 2 goals at 2018, both Salah)
+**Q:** Which Egypt player scored their only goal at the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt scored TWO goals at the 2018 World Cup — both by Salah (vs Russia and vs Saudi Arabia) — so 'their only goal' (singular) is wrong.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah scored 2; Egypt's goals weren't just one.
+
+### Row 18477 — Egypt (easy) — FAIL: false (Salah did NOT take a penalty in the 2021 final)
+**Q:** Which Egypt player took a penalty in the 2021 AFCON final?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah did not take a penalty in the 2021 AFCON final shootout — he was the 5th designated taker and Egypt lost 4-2 before his turn.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** He never took a penalty in the final.
+
+### Row 18480 — Egypt (easy) — FAIL: false (Salah was not Egypts 2018 captain)
+**Q:** Which Egypt player was captain at the 2018 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah was not Egypt's captain at the 2018 World Cup — El-Hadary/Elmohamady wore the armband.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** The 2018 captain was El-Hadary/Elmohamady.
+
+### Row 18484 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egypt player was the talismanic captain at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one was 'captain at the 2022 FIFA World Cup'. (Salah captained the qualifiers.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18494 — Egypt (easy) — FAIL: duplicate option (Trezequet = Mahmoud Trezeguet)
+**Q:** Which Egypt player was top scorer in their 2022 World Cup qualifying group?
+**Answer:** Mohamed Salah
+**Why it fails:** Two of the options are the same player — 'Trezequet' and 'Mahmoud Trezeguet' — violating the requirement for three distinct distractors.
+**Source:** https://en.wikipedia.org/wiki/Tr%C3%A9z%C3%A9guet_(Egyptian_footballer)
+**Remedy:** Remove the duplicate Trezeguet option.
+
+### Row 18496 — Egypt (easy) — FAIL: false (Salah played for Arab Contractors, not Al Ahly)
+**Q:** Which Egypt player, key to their 2018 World Cup qualifying, benefited from playing for Africa's most successful CAF Champions League club?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah began his career at El Mokawloon (Arab Contractors), NOT Al Ahly — he never played for Al Ahly. The 'played for Al Ahly early in his career' claim is false.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** Salah's first club was Arab Contractors.
+
+### Row 18501 — Egypt (easy) — FAIL: false (Salah had ~60 caps/~35 goals at 2018)
+**Q:** Which Egypt player, with over 90 caps and 50+ goals, was selected for the 2018 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** When selected for the 2018 World Cup, Salah had roughly 60 caps and ~35 goals — NOT 'over 90 caps and 50+ goals'. Those figures came years later.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** His 2018 figures were ~60 caps / ~35 goals.
+
+### Row 18507 — Egypt (easy) — FAIL: false (Egypt LOST to Senegal; 1st leg 1-0 was an own goal)
+**Q:** Which Egypt player's penalty secured their 2022 World Cup qualifying win over Senegal?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did NOT win their 2022 qualifying tie vs Senegal — they lost on penalties (1-1 agg). Their 1-0 first-leg win came from a Saliou Ciss OWN GOAL, not a Salah penalty.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Egypt lost the tie; the 1-0 was an own goal.
+
+### Row 18514 — Egypt (medium) — FAIL: false (2017-18 was his FIRST Golden Boot)
+**Q:** Which Egypt star won his second Premier League Golden Boot in the same year as the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah's 2017-18 Golden Boot (the one concluding in 2018) was his FIRST, not his second — his second came in 2018-19.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** 2017-18 was his first Golden Boot.
+
+### Row 18517 — Egypt (medium) — FAIL: false (Salah had ONE Golden Boot before 2018)
+**Q:** Which Egypt star's Premier League Golden Boot wins preceded his 2018 World Cup campaign?
+**Answer:** Mohamed Salah
+**Why it fails:** Before the 2018 World Cup Salah had won only ONE Premier League Golden Boot (2017-18), not two — the second came 2018-19, after the WC.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** One Golden Boot before 2018, not two.
+
+### Row 18519 — Egypt (medium) — FAIL: false (the 2026 squad is more overseas-based than 2018)
+**Q:** Which Egypt World Cup squad had the most overseas players: 2018 or 2026?
+**Answer:** 2018
+**Why it fails:** Egypt's 2018 squad was domestic-heavy (as the dataset's own rows state), whereas the 2026 squad has more Europe/overseas-based players (Salah, Marmoush, Elneny, etc.). So 2018 did NOT have the most overseas players.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** The 2026 squad is more overseas-based.
+
+### Row 18525 — Egypt (easy) — FAIL: false (Trezeguet WAS in the 2018 squad)
+**Q:** Which Egyptian attacker was key at AFCONs but missed the 2018 World Cup?
+**Answer:** Trézéguet
+**Why it fails:** Trézéguet was IN Egypt's 2018 World Cup squad and played (he started the opener vs Uruguay) — he did NOT miss the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Trezeguet played at the 2018 WC.
+
+### Row 18529 — Egypt (easy) — FAIL: false (Egypt did not play Guinea in 2022 qualifying)
+**Q:** Which Egyptian captain scored a hat-trick in a 2022 World Cup qualifier?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt's 2022 CAF qualifying group (2nd round) was Gabon, Libya and Angola — they did NOT play Guinea. So Salah did not score a hat-trick vs Guinea in a 2022 qualifier. (The options are also garbled.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Egypt's 2022 group had no Guinea.
+
+### Row 18530 — Egypt (medium) — FAIL: false (Egypt did NOT qualify for 2022)
+**Q:** Which Egyptian captain's goals secured their 2022 FIFA World Cup qualification?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt FAILED to qualify for the 2022 World Cup (lost the playoff to Senegal), so no captain's goals 'secured their 2022 qualification'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt did not qualify for 2022.
+
+### Row 18534 — Egypt (easy) — FAIL: false (Elneny was at Arsenal in 2017, not Al Ahly)
+**Q:** Which Egyptian club did Mohamed Elneny play for during the 2017 AFCON?
+**Answer:** Al Ahly
+**Why it fails:** Elneny joined Arsenal in January 2016 — so at the 2017 AFCON he was an Arsenal player, NOT Al Ahly. (He last played for Al Ahly in 2013.)
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** Elneny was at Arsenal in 2017.
+
+### Row 18541 — Egypt (easy) — FAIL: non-unique (Zamalek and Ismaily also won the CAF CL)
+**Q:** Which Egyptian club has won the CAF Champions League?
+**Answer:** Al Ahly
+**Why it fails:** Multiple listed Egyptian clubs have won the CAF Champions League — Al Ahly (12), Zamalek (5) AND Ismaily (1) — so 'which has won' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/CAF_Champions_League
+**Remedy:** Zamalek and Ismaily also won it.
+
+### Row 18556 — Egypt (easy) — FAIL: false (Wydad won the 2021-22 CAF CL, not Al Ahly)
+**Q:** Which Egyptian club's fans saw their team win the 2022 CAF Champions League?
+**Answer:** Al Ahly
+**Why it fails:** Al Ahly did NOT win 'the 2022 CAF Champions League' — Wydad Casablanca beat Al Ahly 2-0 in the 2021-22 final (May 2022). Al Ahly won 2020-21 and 2022-23.
+**Source:** https://en.wikipedia.org/wiki/2021%E2%80%9322_CAF_Champions_League
+**Remedy:** Wydad won the 2022 final.
+
+### Row 18557 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC finals)
+**Q:** Which Egyptian club's players featured at the 2022 FIFA World Cup?
+**Answer:** Al Ahly
+**Why it fails:** Egypt did not play the 2022 World Cup, so no club's players 'featured at the 2022 FIFA World Cup' (the explanation's 'tournament' claim is false).
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18575 — Egypt (easy) — FAIL: false (Elneny had ~35 caps when he joined Arsenal in 2016)
+**Q:** Which Egyptian midfielder debuted for Arsenal in 2016 after over 100 caps?
+**Answer:** Mohamed Elneny
+**Why it fails:** Elneny joined Arsenal in January 2016 with roughly 35-40 caps, NOT 'over 100'. He reached 100 caps years later.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** He had ~35 caps in 2016.
+
+### Row 18582 — Egypt (easy) — FAIL: false (Elneny had ~60 caps at 2018, not 100+)
+**Q:** Which Egyptian midfielder with over 100 caps played for Arsenal and was a key part of their 2018 World Cup squad?
+**Answer:** Mohamed Elneny
+**Why it fails:** Elneny had roughly 60 caps at the 2018 World Cup, not over 100.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** He had ~60 caps in 2018.
+
+### Row 18583 — Egypt (easy) — FAIL: false (Elneny had ~60 caps in 2018, not 100+)
+**Q:** Which Egyptian midfielder with over 100 caps played for Arsenal in 2018?
+**Answer:** Mohamed Elneny
+**Why it fails:** Elneny had ~60 caps at the 2018 World Cup, not over 100.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** He had ~60 caps in 2018.
+
+### Row 18584 — Egypt (easy) — FAIL: false (Elneny had ~60 caps in 2018, not 100+)
+**Q:** Which Egyptian midfielder with over 100 caps started the 2018 World Cup match vs Saudi Arabia?
+**Answer:** Mohamed Elneny
+**Why it fails:** Elneny started vs Saudi Arabia but had ~60 caps at the 2018 World Cup, not 'over 100'.
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Elneny
+**Remedy:** He had ~60 caps in 2018.
+
+### Row 18585 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egyptian player at the 2022 World Cup had over 90 caps?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no Egypt player was 'at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18586 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egyptian player at the 2022 World Cup played for a European club?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no Egypt player was 'at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18587 — Egypt (medium) — FAIL: false (Egypt did NOT qualify for 2022)
+**Q:** Which Egyptian player captained and scored to secure 2022 World Cup qualification?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt FAILED to qualify for the 2022 World Cup (lost the playoff to Senegal), so no captain 'scored to secure 2022 qualification'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt did not qualify for 2022.
+
+### Row 18589 — Egypt (easy) — FAIL: false (El-Hadary captained the Saudi game, not Salah)
+**Q:** Which Egyptian player captained the side against Saudi Arabia at the 2018 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah was not captain at the 2018 World Cup — El-Hadary captained Egypt against Saudi Arabia (where he became the oldest WC player).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** El-Hadary captained the Saudi game.
+
+### Row 18593 — Egypt (easy) — FAIL: false (Salah is a Liverpool player, not Al Ahly/Zamalek)
+**Q:** Which Egyptian player from Al Ahly or Zamalek scored more 2022 World Cup qualifier goals?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah plays for Liverpool, NOT Al Ahly or Zamalek — so 'which player FROM Al Ahly or Zamalek scored more' cannot be Salah. The top Al Ahly/Zamalek scorer would be someone like Mostafa Mohamed (Zamalek).
+**Source:** https://en.wikipedia.org/wiki/Mohamed_Salah
+**Remedy:** Salah isn't from those clubs; reframe.
+
+### Row 18594 — Egypt (easy) — FAIL: false (184 was Hassans 2012 total, not by 2006)
+**Q:** Which Egyptian player had 184 caps before 2006?
+**Answer:** Ahmed Hassan
+**Why it fails:** Ahmed Hassan did NOT have 184 caps before 2006 — 184 was his final total at his 2012 retirement. By 2006 he had ~100-120.
+**Source:** https://en.wikipedia.org/wiki/Ahmed_Hassan_(footballer,_born_1975)
+**Remedy:** 184 was his 2012 career total.
+
+### Row 18595 — Egypt (easy) — FAIL: false (Hassan had ~170 caps by 2010, not 180+)
+**Q:** Which Egyptian player had over 180 caps before 2010?
+**Answer:** Ahmed Hassan
+**Why it fails:** Ahmed Hassan had roughly 170-175 caps by 2010 — he only reached 184 in 2012. He did not have 'over 180' before 2010.
+**Source:** https://en.wikipedia.org/wiki/Ahmed_Hassan_(footballer,_born_1975)
+**Remedy:** He reached 184 in 2012.
+
+### Row 18606 — Egypt (easy) — FAIL: non-unique (El-Hadary & Elneny also not most-capped)
+**Q:** Which Egyptian player is NOT their nation's most-capped player?
+**Answer:** Mohamed Salah
+**Why it fails:** Ahmed Hassan is Egypt's most-capped player, so Salah, El-Hadary AND Elneny (three options) are all 'NOT the most-capped'. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ahmed_Hassan_(footballer,_born_1975)
+**Remedy:** Three options are not the most-capped.
+
+### Row 18612 — Egypt (easy) — FAIL: false (Salah did NOT take/miss in the 2021 final)
+**Q:** Which Egyptian player missed a penalty in the 2021 AFCON final shootout?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah did not miss in the 2021 AFCON final shootout — he was the 5th designated taker and never took one. Egypt's misses were Abdelmonem and Lasheen.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations_final
+**Remedy:** Salah took no penalty in the final.
+
+### Row 18613 — Egypt (easy) — FAIL: false (Salah, not Elneny, missed the first 2022 penalty)
+**Q:** Which Egyptian player missed his penalty in the 2022 World Cup qualifying shootout loss to Senegal?
+**Answer:** Mohamed Elneny
+**Why it fails:** It was MOHAMED SALAH (a listed option) who missed Egypt's FIRST penalty in the 2022 qualifying shootout — not Elneny.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Salah missed the first penalty.
+
+### Row 18614 — Egypt (medium) — FAIL: non-unique (El-Hadary also participated in 2018 qualifying)
+**Q:** Which Egyptian player participated in their 2018 World Cup qualification campaign?
+**Answer:** Mohamed Salah
+**Why it fails:** Both Salah AND El-Hadary (a listed option, the GK) participated in Egypt's 2018 qualifying campaign — so the answer is non-unique. (Amr Zaki and Ahmed Hassan had retired.)
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** El-Hadary also participated.
+
+### Row 18615 — Egypt (easy) — FAIL: false (Ahmed Hassan retired 2012, not before 2010)
+**Q:** Which Egyptian player retired before the 2010 FIFA World Cup era?
+**Answer:** Ahmed Hassan
+**Why it fails:** Ahmed Hassan retired from international football in 2012 — AFTER the 2010 World Cup era (he played in the 2010 qualifying). He did not retire 'before the 2010 World Cup era'.
+**Source:** https://en.wikipedia.org/wiki/Ahmed_Hassan_(footballer,_born_1975)
+**Remedy:** He retired in 2012.
+
+### Row 18620 — Egypt (easy) — FAIL: duplicate option (Mahmoud Trezeguet = Trezeguet)
+**Q:** Which Egyptian player scored in the 2019 AFCON opener hosted by Egypt?
+**Answer:** Mahmoud Trezeguet
+**Why it fails:** Two options are the same player — 'Mahmoud Trezeguet' and 'Trézéguet' — violating the distinct-distractors rule. (He did score the 2019 opener winner vs Zimbabwe.)
+**Source:** https://en.wikipedia.org/wiki/Tr%C3%A9z%C3%A9guet_(Egyptian_footballer)
+**Remedy:** Remove the duplicate Trezeguet option.
+
+### Row 18626 — Egypt (easy) — FAIL: false (Gedos 2010 winner was open play, not a penalty)
+**Q:** Which Egyptian player scored the winning penalty in the 2010 AFCON final?
+**Answer:** Mohamed Nagy (Gedo)
+**Why it fails:** Gedo scored the 2010 AFCON final winner in OPEN PLAY (85'), in a 1-0 win — it was NOT a penalty, and there was no shootout.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** Gedo's goal was open play.
+
+### Row 18628 — Egypt (easy) — FAIL: non-unique (all four started the 2010 final)
+**Q:** Which Egyptian player started in the 2010 AFCON final win?
+**Answer:** Essam El-Hadary
+**Why it fails:** All four options — El-Hadary, Aboutrika, Ahmed Hassan and Wael Gomaa — started Egypt's 2010 AFCON final. So 'which player started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** All four were starters.
+
+### Row 18631 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egyptian player was captain at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one was 'captain at the 2022 FIFA World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18634 — Egypt (easy) — FAIL: false premise (no 2022 squad; non-unique)
+**Q:** Which Egyptian player was in the squad for the 2018 World Cup but not 2022?
+**Answer:** Mohamed Elneny
+**Why it fails:** Egypt had no 2022 World Cup squad (they didn't qualify), so 'in 2018 but not 2022' applies to ALL the listed 2018 players (Salah, Trezeguet, Hegazi too) — the premise is false and the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18636 — Egypt (easy) — FAIL: false premise (Salah wasnt captain; non-unique)
+**Q:** Which Egyptian player was not a World Cup captain in 2018?
+**Answer:** Mohamed Elneny
+**Why it fails:** The premise that 'Salah was Egypt's 2018 captain' is false (El-Hadary/Elmohamady were) — so Salah, Elneny AND Fathy were all 'not captains', making 'which was NOT a captain' non-unique and built on a false claim.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Salah was not the 2018 captain either.
+
+### Row 18637 — Egypt (easy) — FAIL: false premise (no Egypt 2022 squad)
+**Q:** Which Egyptian player was the leading scorer in their 2022 World Cup squad?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not qualify for the 2022 World Cup, so there was no 'Egypt 2022 World Cup squad'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18638 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egyptian player was the team's captain and talisman at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one was 'captain/talisman at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18647 — Egypt (easy) — FAIL: false premise (no Egypt 2010 WC squad)
+**Q:** Which Egyptian player's 184 caps made him their 2010 World Cup squad's most experienced?
+**Answer:** Ahmed Hassan
+**Why it fails:** Egypt FAILED to qualify for the 2010 World Cup — there was no 'Egypt 2010 World Cup squad' for Ahmed Hassan to be the most experienced in.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt did not qualify for 2010.
+
+### Row 18654 — Egypt (medium) — FAIL: false (Egypt did NOT qualify for 2022)
+**Q:** Which Egyptian player's goals secured their 2022 World Cup qualification?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt FAILED to qualify for the 2022 World Cup (lost the playoff to Senegal), so no player's goals 'secured their 2022 qualification'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt did not qualify for 2022.
+
+### Row 18661 — Egypt (easy) — FAIL: false (Egypt LOST to Senegal; 1st leg was an own goal)
+**Q:** Which Egyptian scored two goals vs Senegal to qualify for the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did NOT win both legs or qualify — they drew 1-1 on aggregate and lost on penalties. The 1-0 first leg was a Saliou Ciss OWN GOAL, not a Salah goal, and they lost the 2nd leg 0-1.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Egypt lost the tie; the 1-0 was an own goal.
+
+### Row 18662 — Egypt (easy) — FAIL: false (2018 qualifiers were at Borg El Arab)
+**Q:** Which Egyptian stadium hosted 2018 qualifiers and holds about 75,000 people?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's 2018 World Cup home qualifiers (incl. vs Ghana and Congo) were played at Borg El Arab Stadium in Alexandria — NOT Cairo International. (Borg El Arab ~86,000 is also larger than Cairo's ~75,000.)
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** The 2018 qualifiers were at Borg El Arab.
+
+### Row 18669 — Egypt (easy) — FAIL: false (Ghana 2018 qualifier was at Borg El Arab)
+**Q:** Which Egyptian stadium hosted the 2017 World Cup qualifier vs Ghana, its primary venue?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's qualifier vs Ghana (2-0, Nov 2016) was at Borg El Arab Stadium in Alexandria, NOT Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** It was at Borg El Arab.
+
+### Row 18670 — Egypt (easy) — FAIL: false (Ghana 2018 qualifier was at Borg El Arab)
+**Q:** Which Egyptian stadium hosted the 2018 World Cup qualifier vs Ghana?
+**Answer:** Cairo International Stadium
+**Why it fails:** The Egypt-Ghana 2018 qualifier was at Borg El Arab (Alexandria), not Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** It was at Borg El Arab.
+
+### Row 18676 — Egypt (easy) — FAIL: false (Ghana 2018 qualifier was at Borg El Arab)
+**Q:** Which Egyptian stadium hosted their 2018 World Cup qualifier against Ghana?
+**Answer:** Cairo International Stadium
+**Why it fails:** The Egypt-Ghana 2018 qualifier was at Borg El Arab, not Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** It was at Borg El Arab.
+
+### Row 18678 — Egypt (easy) — FAIL: false (Borg El Arab was the primary 2018 venue)
+**Q:** Which Egyptian stadium was the primary venue for their 2018 World Cup qualifiers?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's 2018 home qualifiers (Ghana, Congo) were at Borg El Arab in Alexandria — that was their primary 2018 qualifier venue, not Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** Borg El Arab was the primary 2018 venue.
+
+### Row 18683 — Egypt (easy) — FAIL: false (2018 qualifiers were at Borg El Arab)
+**Q:** Which Egyptian stadium, capacity near 75,000, hosted 2018 World Cup qualifiers?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's 2018 home qualifiers were at Borg El Arab, not the 75,000-capacity Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** The 2018 qualifiers were at Borg El Arab.
+
+### Row 18684 — Egypt (easy) — FAIL: false (Cairo ~75k is SMALLER than Borg El Arab ~86k)
+**Q:** Which Egyptian stadium, used for 2018 World Cup qualifiers, has a larger capacity than Alexandria's Borg El Arab?
+**Answer:** Cairo International Stadium
+**Why it fails:** Cairo International (~75,000) is NOT larger than Borg El Arab (~86,000) — Borg El Arab is bigger. And the 2018 qualifiers were at Borg El Arab.
+**Source:** https://en.wikipedia.org/wiki/Borg_El_Arab_Stadium
+**Remedy:** Borg El Arab (~86k) is larger.
+
+### Row 18685 — Egypt (easy) — FAIL: false (Cairo ~75k is smaller than Borg El Arab ~86k)
+**Q:** Which Egyptian stadium, used for 2022 World Cup qualifiers, has a larger capacity?
+**Answer:** Cairo International Stadium
+**Why it fails:** Cairo International (~75,000) is smaller than Borg El Arab (~86,000), not larger.
+**Source:** https://en.wikipedia.org/wiki/Borg_El_Arab_Stadium
+**Remedy:** Borg El Arab is larger.
+
+### Row 18686 — Egypt (easy) — FAIL: false (Ghana 2018 qualifier was at Borg El Arab)
+**Q:** Which Egyptian stadium, with a 75,000 capacity, hosted the 2017 World Cup qualifier against Ghana?
+**Answer:** Cairo International Stadium
+**Why it fails:** The Egypt-Ghana 2018 qualifier was at Borg El Arab, not Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** It was at Borg El Arab.
+
+### Row 18687 — Egypt (easy) — FAIL: false (2018 qualifiers were at Borg El Arab)
+**Q:** Which Egyptian stadium's 75,000 capacity was a 2018 World Cup qualifier venue?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's 2018 home qualifiers were at Borg El Arab, not Cairo International.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** The 2018 qualifiers were at Borg El Arab.
+
+### Row 18689 — Egypt (easy) — FAIL: non-unique (Egypt absent from 2010; all 2018 players fit)
+**Q:** Which Egyptian star was in Russia 2018 but not in South Africa 2010?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2010 World Cup, so EVERY 2018 squad member was 'in 2018 but not 2010' — Salah, El-Hadary AND Elneny all fit. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Use a player-specific trait.
+
+### Row 18690 — Egypt (easy) — FAIL: non-unique (El-Hadary & Elneny also in the 2018 squad)
+**Q:** Which Egyptian star was included in their 2018 World Cup squad?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah, El-Hadary AND Elneny (three options) were all in Egypt's 2018 squad — non-unique. (Only Ahmed Hassan, retired, was not.)
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Several options were in the 2018 squad.
+
+### Row 18698 — Egypt (easy) — FAIL: false (Salah not 2018 captain; Egypt absent from 2022 WC)
+**Q:** Which Egyptian talisman captained his side in both the 2018 and 2022 World Cups?
+**Answer:** Mohamed Salah
+**Why it fails:** Salah did not captain Egypt at BOTH the 2018 and 2022 World Cups — he wasn't the 2018 captain (El-Hadary was), and Egypt didn't play the 2022 World Cup at all.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** He wasn't 2018 captain; Egypt missed 2022.
+
+### Row 18699 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Which Egyptian talisman captained his team at the 2022 World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one captained Egypt 'at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18709 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC finals)
+**Q:** Which manager coached Egypt at the 2022 FIFA World Cup?
+**Answer:** Carlos Queiroz
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one 'coached Egypt at the 2022 FIFA World Cup'. (Queiroz coached the qualifying campaign.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18710 — Egypt (easy) — FAIL: non-unique (Queiroz & Bradley also never coached Egypt at a WC)
+**Q:** Which manager did NOT coach Egypt at a FIFA World Cup?
+**Answer:** Hassan Shehata
+**Why it fails:** Only Cúper coached Egypt at a World Cup (2018). Shehata, Queiroz AND Bradley all did NOT — so 'which did NOT coach at a WC' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Egypt_national_football_team
+**Remedy:** Three options never coached Egypt at a WC.
+
+### Row 18714 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC finals)
+**Q:** Which manager led Egypt at the 2022 FIFA World Cup?
+**Answer:** Carlos Queiroz
+**Why it fails:** Egypt did not play the 2022 World Cup finals — Queiroz led only the qualifying campaign.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18719 — Egypt (easy) — FAIL: false (Hossam Hassan led the 2026 qualification, not Vitoria)
+**Q:** Which manager led Egypt to qualify for the 2026 FIFA World Cup?
+**Answer:** Rui Vitória
+**Why it fails:** Rui Vitória departed in 2024; HOSSAM HASSAN (a listed option) took over in Feb 2024 and led Egypt to 2026 World Cup qualification (clinched Oct 2025).
+**Source:** https://en.wikipedia.org/wiki/Hossam_Hassan
+**Remedy:** Change the answer to Hossam Hassan.
+
+### Row 18728 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC finals)
+**Q:** Which manager led Egypt's squad at the 2022 World Cup?
+**Answer:** Carlos Queiroz
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one 'led Egypt's squad at the 2022 World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18735 — Egypt (easy) — FAIL: false premise (no Egypt 2022 WC squad)
+**Q:** Which manager selected Egypt's squad for the 2022 FIFA World Cup?
+**Answer:** Carlos Queiroz
+**Why it fails:** Egypt did not qualify for the 2022 World Cup, so there was no '2022 World Cup squad' to select.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18756 — Egypt (easy) — FAIL: non-unique (none of the four shares Egypts 7)
+**Q:** Which nation does NOT share Egypt's record of seven AFCON titles?
+**Answer:** Senegal
+**Why it fails:** Egypt holds the record alone with 7 AFCON titles — so NONE of Senegal (1), Cameroon (5), Ghana (4) or Nigeria (3) 'shares' it. The 'does not share' answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** None of the four has 7 titles.
+
+### Row 18764 — Egypt (easy) — FAIL: non-unique (all four have fewer than 7)
+**Q:** Which nation has won fewer AFCON titles than Egypt's seven?
+**Answer:** Nigeria
+**Why it fails:** All four options have fewer AFCON titles than Egypt's 7 — Cameroon (5), Ghana (4), Nigeria (3), Ivory Coast (3). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** All four have fewer than 7.
+
+### Row 18765 — Egypt (easy) — FAIL: false (Cameroon never solely held the AFCON record)
+**Q:** Which nation held the record for most AFCON titles before Egypt's seventh win?
+**Answer:** Cameroon
+**Why it fails:** Cameroon did NOT hold the AFCON record before Egypt's 7th — Egypt already led with 6 titles (from 2008), and earlier the most-decorated was Ghana (4 by 1982). Cameroon only reached 5 in 2017, and had just 4 before 2010.
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** Egypt led from 2006; Cameroon never held it alone.
+
+### Row 18767 — Egypt (easy) — FAIL: garbled premise (Egypt hosted 2019, not 2023)
+**Q:** Which nation hosted the 2019 AFCON before Egypt in 2023?
+**Answer:** Cameroon
+**Why it fails:** The question is incoherent — the 2019 AFCON was hosted by EGYPT (reassigned from Cameroon), and Egypt did NOT host in 2023 (the 2023 edition was hosted by Ivory Coast). The 'before Egypt in 2023' framing is false.
+**Source:** https://en.wikipedia.org/wiki/2019_Africa_Cup_of_Nations
+**Remedy:** Egypt hosted 2019; Ivory Coast hosted 2023.
+
+### Row 18773 — Egypt (easy) — FAIL: false premise (2010 final was 1-0, not penalties)
+**Q:** Which nation lost to Egypt on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** Egypt beat Ghana 1-0 in the 2010 final (Gedo) — NOT on penalties. The question's 'on penalties' premise is false.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win.
+
+### Row 18782 — Egypt (easy) — FAIL: self-referential (answer is Egypt itself)
+**Q:** Which nation, like Egypt under Hassan Shehata, won three consecutive AFCON titles?
+**Answer:** Egypt
+**Why it fails:** Egypt is the ONLY nation to win three consecutive AFCONs, so 'which nation, like Egypt, did it' has no distinct answer — the answer is Egypt itself (self-referential/circular).
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** No other nation has done it; rephrase.
+
+### Row 18786 — Egypt (easy) — FAIL: false (Egypt didnt surpass Cameroon with the 7th)
+**Q:** Which nation's record did Egypt surpass by winning a seventh AFCON title?
+**Answer:** Cameroon
+**Why it fails:** Egypt did not surpass 'Cameroon's record' by winning a 7th — Egypt had led since their 5th (2006), and Cameroon had only 4 titles then (their 5th came in 2017). Egypt never shared a record-at-6 with Cameroon.
+**Source:** https://en.wikipedia.org/wiki/Africa_Cup_of_Nations
+**Remedy:** Egypt led from 2006; not a Cameroon record.
+
+### Row 18798 — Egypt (easy) — FAIL: false (Mane scored the deciding penalty, not twice in the legs)
+**Q:** Which Senegal player scored twice to eliminate Egypt in 2022 World Cup qualifying?
+**Answer:** Sadio Mané
+**Why it fails:** Mané did NOT score twice in the two legs — the legs' goals were a Ciss own goal (1st leg) and Boulaye Dia (2nd leg). Mané scored the WINNING PENALTY in the shootout.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Mane scored the shootout winner, not 2 open-play goals.
+
+### Row 18806 — Egypt (easy) — FAIL: false (2018 qualifiers were at Borg El Arab)
+**Q:** Which stadium hosted Egypt's 2018 World Cup qualifiers as its primary 75,000-capacity venue?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's 2018 home qualifiers (Ghana, Congo) were at Borg El Arab — Cairo International was NOT the primary 2018 qualifier venue.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_CAF_third_round
+**Remedy:** Borg El Arab was the 2018 venue.
+
+### Row 18807 — Egypt (easy) — FAIL: false (the 2022 playoff was in Dakar, not Olembe)
+**Q:** Which stadium hosted Egypt's 2021 AFCON final and 2022 WC qualifying losses to Senegal?
+**Answer:** Olembe Stadium
+**Why it fails:** The 2021 AFCON final was at Olembe Stadium (Yaoundé), but the 2022 WC qualifying playoff 2nd leg was at the Stade Abdoulaye Wade in Dakar, NOT Olembe. They were not at the same stadium.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** The 2022 playoff 2nd leg was in Dakar.
+
+### Row 18811 — Egypt (easy) — FAIL: false (the 2021 AFCON was in Cameroon, not Cairo)
+**Q:** Which stadium hosts Egypt's 2021 AFCON matches as their primary venue?
+**Answer:** Cairo International Stadium
+**Why it fails:** Egypt's 2021 AFCON matches were played in CAMEROON (Douala, Yaoundé) — Cameroon hosted that tournament (Jan 2022). Cairo International did NOT host Egypt's 2021 AFCON matches.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations
+**Remedy:** The 2021 AFCON was in Cameroon.
+
+### Row 18816 — Egypt (easy) — FAIL: false (Egypt was NOT the 2021 AFCON host)
+**Q:** Which team beat host nation Egypt in the 2021 AFCON final?
+**Answer:** Senegal
+**Why it fails:** Egypt was not the host of the 2021 AFCON — CAMEROON hosted it. Egypt reached the final but were not the host nation.
+**Source:** https://en.wikipedia.org/wiki/2021_Africa_Cup_of_Nations
+**Remedy:** Cameroon hosted 2021; Egypt hosted 2019.
+
+### Row 18825 — Egypt (easy) — FAIL: false premise (2010 final was 1-0, not penalties)
+**Q:** Which team lost to Egypt on penalties in the 2010 AFCON final?
+**Answer:** Ghana
+**Why it fails:** Egypt beat Ghana 1-0 in the 2010 final (Gedo), NOT on penalties — the 'on penalties' premise is false.
+**Source:** https://en.wikipedia.org/wiki/2010_Africa_Cup_of_Nations_Final
+**Remedy:** It was a 1-0 win.
+
+### Row 18832 — Egypt (medium) — FAIL: incomplete (Egypt lost to THREE, incl. Saudi Arabia)
+**Q:** Which two nations defeated Egypt in the 2018 World Cup group stage?
+**Answer:** Uruguay and Russia
+**Why it fails:** Egypt lost ALL THREE 2018 group games — to Uruguay, Russia AND Saudi Arabia. Naming only 'two' (Uruguay and Russia) omits Saudi Arabia, who also defeated Egypt 2-1.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_A
+**Remedy:** Egypt lost to all three group opponents.
+
+### Row 18839 — Egypt (hard) — FAIL: false (Egypt did not play 2022 qualifiers in 2019)
+**Q:** Which World Cup qualifiers did Egypt host in 2019?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** Egypt, as a seeded team, entered the CAF 2022 qualifying in the second round (2021) — they did NOT play any 2022 World Cup qualifiers in 2019 (the 2019 first round was for lower-ranked teams).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(CAF)
+**Remedy:** Egypt's 2022 qualifying began in 2021.
+
+### Row 18847 — Egypt (easy) — FAIL: false (Egypt did NOT qualify for 2022)
+**Q:** Who captained Egypt to qualify for the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt failed to qualify for the 2022 World Cup, so no one 'captained Egypt to qualify' for it. (Salah captained the failed campaign.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt did not qualify for 2022.
+
+### Row 18849 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Who captained the Egypt team at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so no one captained Egypt 'at the 2022 FIFA World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18858 — Egypt (easy) — FAIL: false premise (Egypt absent from the 2022 WC)
+**Q:** Who was Egypt's captain at the 2022 FIFA World Cup?
+**Answer:** Mohamed Salah
+**Why it fails:** Egypt did not play the 2022 World Cup, so there was no captain 'at the 2022 FIFA World Cup'.
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
+
+### Row 18860 — Egypt (easy) — FAIL: false premise (no Egypt 2022 WC finals squad)
+**Q:** Whose club Al Ahly's 12 Champions League wins aided Egypt's World Cup 2022 squad?
+**Answer:** Al Ahly players
+**Why it fails:** Egypt did not qualify for the 2022 World Cup, so there was no '2022 World Cup squad'. (Al Ahly did supply the core of the qualifying squad.)
+**Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
+**Remedy:** Egypt missed the 2022 finals.
