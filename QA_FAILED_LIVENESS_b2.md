@@ -3,7 +3,7 @@
 > Rows that cleared `QA_PASSED_b2.md` mechanically but are **factually wrong** on the live
 > TC-06 check. Each entry: reason + source + concrete remedy. See HANDOFF.md §6/§7.
 
-**Total dangerous: 1611** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876)
+**Total dangerous: 1895** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Australia 123, rows 1544–2396; Austria 161, rows 2401–3241; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876)
 
 ---
 
@@ -5588,3 +5588,2013 @@
 **Why it fails:** Egypt did not qualify for the 2022 World Cup, so there was no '2022 World Cup squad'. (Al Ahly did supply the core of the qualifying squad.)
 **Source:** https://en.wikipedia.org/wiki/Egypt_at_the_FIFA_World_Cup
 **Remedy:** Egypt missed the 2022 finals.
+
+## Australia (rows 1544–2396)
+
+### Row 1544 — Australia (medium) — FAIL: false premise ("2006 World Cup debut")
+**Q:** After Australia's 2006 World Cup debut, when did they join the AFC?
+**Answer:** 2006
+**Why it fails:** The question calls 2006 Australia's "World Cup debut" — this is factually wrong. Australia's actual World Cup debut was **1974** (West Germany). 2006 was their return after a 32-year absence. Additionally, Australia joined the AFC in **January 2006**, *before* the 2006 World Cup (June–July), not after it, so the causal framing is also reversed.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Rewrite as "In which year did Australia move from the OFC to the AFC?" Answer: 2006.
+
+### Row 1549 — Australia (medium) — FAIL: non-unique answer
+**Q:** After Australia's 2022 World Cup group stage win over Tunisia, which nation also reached the round of 16?
+**Answer:** South Korea
+**Why it fails:** **Three** AFC nations reached the 2022 WC round of 16: Australia, South Korea, **and Japan**. Japan beat Spain 2–1 to win Group E and reach the R16 (lost to Croatia on penalties). South Korea is therefore not the only valid answer — Japan is equally correct, but is not listed as a distractor (it is absent from the options entirely, making the question non-unique and incomplete).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Narrow to a uniquely answerable fact, e.g. "Which AFC nation beat Portugal to reach the 2022 WC R16?" (South Korea) or "Which AFC nation eliminated Croatia on penalties in the 2022 WC R16?" (Japan).
+
+### Row 1555 — Australia (easy) — FAIL: false premise (drew vs won)
+**Q:** After drawing with Tunisia, which team did Australia beat in their 2022 World Cup group?
+**Answer:** Denmark
+**Why it fails:** Australia did **not** draw with Tunisia — they **won 1–0** (Mitchell Duke, 23'). The question's premise "after drawing with Tunisia" is factually false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Replace "drawing with Tunisia" with "beating Tunisia 1–0" — the rest of the question (beating Denmark) is correct.
+
+### Row 1558 — Australia (medium) — FAIL: wrong answer / misleading framing
+**Q:** After their 2022 World Cup run, Australia's best FIFA ranking was which position?
+**Answer:** 14th
+**Why it fails:** Australia's **all-time best ranking of 14th was achieved in September 2009**, not after the 2022 WC. After the 2022 WC, Australia's best ranking was **27th** (end of calendar year 2022, their highest year-end ranking since 2011). The question implies 14th was a post-2022 achievement, which is incorrect.
+**Source:** https://socceroos.com.au/news/socceroos-learn-new-fifa-ranking ; https://www.11v11.com/teams/australia/option/ranking/
+**Remedy:** Either fix to "What is Australia's all-time best FIFA ranking?" (Answer: 14th, from Sept 2009) or "What was Australia's best FIFA ranking after the 2022 World Cup?" (Answer: ~27th).
+
+### Row 1565 — Australia (easy) — FAIL: non-unique answer
+**Q:** Against which nation did Australian Tim Cahill score in 2014 World Cup qualifying?
+**Answer:** Iraq
+**Why it fails:** Tim Cahill scored in 2014 WC AFC qualifying against **both Iraq** (16 Oct 2012) **and Oman** (26 Mar 2013). Iraq is one correct answer but not the only one — Oman is equally valid. The question implies a single nation, making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/List_of_international_goals_scored_by_Tim_Cahill
+**Remedy:** Specify: "Against which nation did Tim Cahill score his first 2014 WC qualifying goal?" (Answer: Iraq, Oct 2012) or add Oman to the distractors and rephrase to "which of the following nations."
+
+### Row 1569 — Australia (medium) — FAIL: false premise / wrong answer
+**Q:** At the 2018 World Cup, which 2015 Asian Cup finalist did Australia face in their group?
+**Answer:** Denmark
+**Why it fails:** The 2015 Asian Cup finalists were **Australia** and **South Korea**. Denmark is a European team and did not participate in the 2015 Asian Cup. At the 2018 WC, Australia was in **Group C (France, Denmark, Peru)** — South Korea was in Group F. No 2015 Asian Cup finalist was in Australia's 2018 WC group.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_C ; https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_Final
+**Remedy:** Drop this question; the premise is unfixable. (No 2015 Asian Cup finalist faced Australia in their 2018 WC group.)
+
+### Row 1571 — Australia (easy) — FAIL: non-unique answer
+**Q:** At the 2022 World Cup in Qatar, which team did Australia beat 1-0?
+**Answer:** Denmark
+**Why it fails:** Australia beat **both Tunisia 1–0** (26 Nov) **and Denmark 1–0** (30 Nov) in the 2022 WC group stage. Both Tunisia and Denmark appear in the option list, making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Specify the match: "Which team did Australia beat 1–0 in their final group game at the 2022 World Cup?" (Answer: Denmark) to make it unique.
+
+---
+
+## Australia chunk 2 (rows 1580–1650)
+
+### Row 1592 — Australia (hard) — FAIL: wrong venue
+**Q:** At which 2014 World Cup stadium did Australian scorer Tim Cahill net his famous volley?
+**Answer:** Arena da Baixada
+**Why it fails:** Tim Cahill's famous volley against the Netherlands on 18 June 2014 was scored at **Estádio Beira-Rio** in Porto Alegre, not Arena da Baixada (which is in Curitiba). The two stadiums are in different cities entirely.
+**Source:** https://www.espn.co.uk/football/match/_/gameId/383286/netherlands-australia
+**Remedy:** Change answer to "Estádio Beira-Rio."
+
+### Row 1593 — Australia (medium) — FAIL: wrong venue
+**Q:** At which 2014 World Cup venue did Tim Cahill score an acrobatic volley for Australia?
+**Answer:** Arena da Baixada
+**Why it fails:** Same error as Row 1592 — Australia vs Netherlands was played at **Estádio Beira-Rio** (Porto Alegre), not Arena da Baixada (Curitiba).
+**Source:** https://www.espn.co.uk/football/match/_/gameId/383286/netherlands-australia
+**Remedy:** Change answer to "Estádio Beira-Rio."
+
+### Row 1604 — Australia (easy) — FAIL: wrong answer
+**Q:** At which World Cup did Australia first reach the round of 16?
+**Answer:** 2022 World Cup
+**Why it fails:** Australia first reached the round of 16 at the **2006 World Cup** (defeated Japan 3–1 in the group stage, then lost to Italy 0–1 on a Totti 95' pen in the R16). The 2022 R16 was their **second** such appearance, not their first.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Change answer to "2006 World Cup."
+
+### Row 1611 — Australia (medium) — FAIL: wrong venue + wrong goal type
+**Q:** At which World Cup venue did Australia's Tim Cahill score his first acrobatic bicycle kick?
+**Answer:** Estádio Nacional Mané Garrincha
+**Why it fails:** Two errors. (1) The famous Cahill 2014 WC goal vs Netherlands was a **volley** (left-foot half-volley), not a bicycle kick. Cahill's bicycle kick was scored in a friendly against China in January 2015, not at a World Cup. (2) The venue was **Estádio Beira-Rio** (Porto Alegre), not Estádio Nacional Mané Garrincha (Brasília).
+**Source:** https://www.espn.co.uk/football/match/_/gameId/383286/netherlands-australia ; https://www.caughtoffside.com/2015/01/22/video-tim-cahill-bicycle-kick-v-china-is-better-than-his-volley-against-the-netherlands/
+**Remedy:** Drop or rewrite as "At which stadium did Cahill score his famous volley vs Netherlands at the 2014 WC?" Answer: Estádio Beira-Rio.
+
+### Row 1613 — Australia (medium) — FAIL: false claim (group stage ≠ knockout match)
+**Q:** Australia beat South Korea 2-1 in the 2015 Asian Cup final. Which other nation did Australia beat in a World Cup knockout match?
+**Answer:** Denmark
+**Why it fails:** Australia beat Denmark 1–0 in the **group stage** of the 2022 WC, not in a knockout match. Australia has **never won a World Cup knockout match** — they lost to Italy in the 2006 R16 and to Argentina in the 2022 R16.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Remove or rewrite entirely; there is no valid answer since Australia has no WC knockout wins.
+
+### Row 1615 — Australia (medium) — FAIL: false premise (goals conceded)
+**Q:** Australia conceded the fewest goals in their group at the 2022 World Cup using which system?
+**Answer:** Defensive organisation and counter-attacking
+**Why it fails:** Australia did **not** concede the fewest goals in Group D — **Tunisia** did (1 goal conceded). Australia conceded 4 goals (all in the 1–4 loss to France). France and Denmark each conceded 2. The premise that Australia conceded the fewest goals is factually false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Rewrite premise: "Despite conceding 4 goals to France, what system did Graham Arnold use to secure results vs Tunisia and Denmark?" or just drop this question.
+
+### Row 1618 — Australia (medium) — FAIL: false premise (inter-confederation WC qualifier)
+**Q:** Australia hosted Argentina in a 2022 World Cup qualifier at which 83,500-capacity Sydney stadium?
+**Answer:** Stadium Australia
+**Why it fails:** Australia (AFC) and Argentina (CONMEBOL) are in different confederations and **never meet in regular World Cup qualification matches**. No such qualifier took place. The question appears to confuse a friendly/exhibition match (if one occurred) with a WC qualifier.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Drop the question; the factual premise is impossible (different confederation qualifying paths).
+
+### Row 1621 — Australia (medium) — FAIL: non-unique answer
+**Q:** Australia played Germany in the 2010 World Cup group stage. Which AFC nation qualified for the 2018 World Cup?
+**Answer:** Saudi Arabia
+**Why it fails:** **Five** AFC nations qualified for the 2018 WC: Australia, Japan, South Korea, Saudi Arabia, and Iran (Iran via direct AFC qualification). Saudi Arabia is one correct answer but Japan, South Korea, Australia, and Iran are equally correct. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Specify: "Which AFC nation qualified for the 2018 World Cup for the first time since 2006?" or name a uniquely identifying fact about Saudi Arabia.
+
+### Row 1622 — Australia (medium) — FAIL: non-unique answer
+**Q:** Australia qualified directly via AFC for which FIFA World Cup?
+**Answer:** The 2014 World Cup
+**Why it fails:** Australia qualified **directly** through AFC qualification for **both the 2010 and 2014 WC** (and 2026). The 2010 WC option appears in the option list and is equally correct. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(AFC) ; https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Narrow to a unique fact, e.g. "In which WC qualifying campaign did Australia first compete as an AFC member?" (Answer: 2010).
+
+### Row 1627 — Australia (easy) — FAIL: non-unique answer
+**Q:** Australia qualified for which FIFA World Cup through AFC qualification?
+**Answer:** 2010 World Cup
+**Why it fails:** Australia also qualified directly through AFC for the **2014 World Cup** (and 2026). The 2014 option appears in the option list, making the answer non-unique between 2010 and 2014.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Specify "first" — "Australia first qualified for which WC through AFC qualification?" (Answer: 2010 WC).
+
+### Row 1631 — Australia (easy) — FAIL: non-unique answer
+**Q:** Australia reached the 2022 World Cup round of 16. Which team did they beat in the group stage to help secure this?
+**Answer:** Denmark
+**Why it fails:** Australia beat **both Tunisia 1–0** and **Denmark 1–0** in the group stage. Both wins contributed to securing their R16 place. Tunisia appears in the option list and is an equally valid answer. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Specify: "Which team did Australia beat in their decisive final group game to clinch R16 qualification?" (Answer: Denmark) — making it unique by specifying it was the final/decisive match.
+
+---
+
+## Australia chunk 3 (rows 1651–1750)
+
+### Row 1654 — Australia (easy) — FAIL: false premise (WC debut)
+**Q:** Australia's growing football infrastructure supported their debut at which World Cup?
+**Answer:** The 2006 World Cup
+**Why it fails:** The question calls 2006 Australia's "debut" at the World Cup, but Australia's actual World Cup debut was in **1974** (West Germany). 2006 was their return after a 32-year absence, not a debut.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Replace "debut" with "return" or "2006 comeback campaign."
+
+### Row 1665 — Australia (medium) — FAIL: wrong cycle for 14th ranking
+**Q:** During which FIFA World Cup cycle did Australia first reach 14th in the FIFA rankings?
+**Answer:** 2006 World Cup cycle
+**Why it fails:** Australia's 14th ranking was achieved in **September 2009**, which falls in the **2010 World Cup cycle** (not 2006). The 2006 WC qualification window was roughly 2004–2005; the 2010 cycle was 2007–2010. September 2009 clearly belongs to the 2010 cycle.
+**Source:** https://socceroos.com.au/news/socceroos-learn-new-fifa-ranking
+**Remedy:** Change answer to "2010 World Cup cycle."
+
+### Row 1672 — Australia (medium) — FAIL: non-unique answer
+**Q:** For which FIFA World Cup did Australia qualify via AFC, unlike 2018?
+**Answer:** 2026 World Cup
+**Why it fails:** Australia qualified directly via AFC (not via intercontinental playoff) for the **2010, 2014, and 2026** WCs. Both 2014 and 2010 are listed in the options and are equally valid. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(AFC) ; https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Specify: "For which WC did Australia qualify directly via AFC for the FIRST time after the 2014 WC, requiring no playoff?" (Answer: 2026 WC).
+
+### Row 1674 — Australia (medium) — FAIL: non-unique answer
+**Q:** For which World Cup did Australia qualify directly through AFC matches?
+**Answer:** The 2014 World Cup
+**Why it fails:** Australia qualified directly through AFC for **both the 2010 and 2014 WCs** (and 2026). The 2010 World Cup option is in the list and is equally correct, making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Specify "which WC did Australia qualify for via direct AFC for the LAST time before needing a playoff?" (Answer: 2014).
+
+### Row 1675 — Australia (medium) — FAIL: non-unique answer
+**Q:** For which World Cup did Australia qualify directly through the AFC?
+**Answer:** 2014
+**Why it fails:** Same as Row 1674 — Australia also qualified directly via AFC for 2010 (both options in the list). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Same as 1674 — add a uniqueness constraint.
+
+### Row 1689 — Australia (easy) — FAIL: non-unique answer
+**Q:** In 2022, Australia lost 4-1 to France but beat which nation 1-0?
+**Answer:** Denmark
+**Why it fails:** Australia beat **both Denmark 1–0 (30 Nov) and Tunisia 1–0 (26 Nov)** in the 2022 WC group stage. Tunisia is listed in the options and is an equally valid answer. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Specify: "In their final group game in 2022, Australia beat which nation 1–0?" (Answer: Denmark).
+
+### Row 1690 — Australia (medium) — FAIL: false premise (Cahill retired at 2014 WC)
+**Q:** In Australia's 2014 World Cup group stage match, which player retired as their all-time leading scorer with 50 goals?
+**Answer:** Tim Cahill
+**Why it fails:** Tim Cahill did **not** retire at or after the 2014 WC. He continued playing until **2018**, scoring his 50th international goal in his farewell match in 2018. The 2014 WC was not his retirement; framing him as retiring there is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Rewrite: "Which Australian player retired in 2018 as the national team's all-time leading scorer with 50 goals?" Answer: Tim Cahill.
+
+### Row 1691 — Australia (medium) — FAIL: wrong number of goals vs Netherlands
+**Q:** In Australia's 2014 World Cup group stage, which player scored two acrobatic goals?
+**Answer:** Tim Cahill
+**Why it fails:** Tim Cahill scored **one** goal against the Netherlands at the 2014 WC — the famous left-foot volley (21'). Australia scored two goals in the match but the second was scored by **Ryan McGowan** (58'). The claim that Cahill scored two acrobatic goals in a single match is wrong.
+**Source:** https://www.givemesport.com/88085354-world-cup-2014-tim-cahill-australia-netherlands/
+**Remedy:** Change to "which player scored the iconic acrobatic volley for Australia against the Netherlands?" Answer: Tim Cahill.
+
+### Row 1698 — Australia (medium) — FAIL: wrong result vs Ghana (drew, not lost)
+**Q:** In the 2010 World Cup group stage, which two teams did Australia lose to?
+**Answer:** Germany and Ghana
+**Why it fails:** Australia **drew** with Ghana 1–1 in the 2010 WC group stage — they did not lose. Their only loss in the group was to **Germany (0–4)**; they also beat Serbia 2–1. The question's premise ("lose to Ghana") is factually false.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_D
+**Remedy:** Change question to "which two teams did Australia fail to beat in the 2010 group stage?" or fix answer to "Germany only."
+
+### Row 1700 — Australia (medium) — FAIL: unverified claim (zero A-League players)
+**Q:** In the 2022 FIFA World Cup, how many Australian players debuted in the A-League?
+**Answer:** Zero players
+**Why it fails:** The claim that the entire 2022 WC squad was overseas-based cannot be confirmed from authoritative sources. Several Australia squad members had recent A-League ties. UNVERIFIED → FAIL.
+**Source:** (no authoritative source for this specific claim)
+**Remedy:** Remove or verify with official squad data; the framing "debuted in the A-League" is also ambiguous.
+
+### Row 1702 — Australia (medium) — FAIL: wrong opponent in question
+**Q:** In their 2022 qualifier, Australia used which venue for the Socceroos' 3-1 win over New Zealand?
+**Answer:** Melbourne Rectangular Stadium
+**Why it fails:** The explanation itself says this match was against **Saudi Arabia** at Melbourne Rectangular Stadium (AAMI Park) in November 2021 — not New Zealand. New Zealand is an OFC nation and was not in Australia's AFC 2026 WC qualifying group. The question contains a factually wrong opponent.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Replace "New Zealand" with "Saudi Arabia" in the question.
+
+### Row 1712 — Australia (medium) — FAIL: wrong World Cup year for 14th ranking
+**Q:** In which FIFA World Cup year did Australia reach 14th in the rankings?
+**Answer:** 2006
+**Why it fails:** Australia's 14th ranking was achieved in **September 2009**, not during the 2006 WC year. The 2006 WC was in June–July 2006. September 2009 falls in the 2010 WC cycle.
+**Source:** https://socceroos.com.au/news/socceroos-learn-new-fifa-ranking
+**Remedy:** Change answer to "2010" (or the answer "2009" in a year-format question — see Row 1733 for correct phrasing).
+
+### Row 1713 — Australia (easy) — FAIL: non-unique answer
+**Q:** In which host nation did Australia NOT compete at the 2022 FIFA World Cup?
+**Answer:** South Africa
+**Why it fails:** The 2022 World Cup was held entirely in **Qatar**. Australia competed in Qatar and did NOT compete in South Africa, Germany, Brazil, or Argentina — all four options are equally valid answers. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Drop or rewrite; any answer from the option list is correct since the 2022 WC was in Qatar.
+
+### Row 1717 — Australia (easy) — FAIL: wrong answer (R16 debut was 2006)
+**Q:** In which World Cup did Australia first reach the round of 16?
+**Answer:** 2022 World Cup
+**Why it fails:** Australia first reached the round of 16 at the **2006 World Cup** (lost to Italy 0–1 on a Totti 95' penalty). The 2022 R16 was their second such appearance. Same error as Row 1604.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Change answer to "2006 World Cup."
+
+### Row 1719 — Australia (easy) — FAIL: false premise (drew Ghana, didn't lose)
+**Q:** In which World Cup did Australia lose to Germany and Ghana in the group stage?
+**Answer:** 2010 FIFA World Cup
+**Why it fails:** Australia **drew** 1–1 with Ghana at the 2010 WC — they did not lose to Ghana. They only lost to Germany (0–4) in that group. Same factual error as Row 1698.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_D
+**Remedy:** Change "lose to Germany and Ghana" to "fail to beat Germany and Ghana" (drew Ghana, lost to Germany).
+
+### Row 1722 — Australia (medium) — FAIL: unverified WC goal
+**Q:** In which World Cup did Australia's Ajdin Hrustic score a goal?
+**Answer:** 2022 World Cup
+**Why it fails:** Ajdin Hrustic is known for scoring in World Cup **qualifying** matches (e.g., the free-kick vs Kuwait), but there is no evidence he scored during the 2022 WC tournament itself. Australia's 2022 WC scorers were Craig Goodwin, Mitchell Duke, Mathew Leckie, and one in the R16. UNVERIFIED → FAIL.
+**Source:** https://en.wikipedia.org/wiki/Ajdin_Hrusti%C4%87
+**Remedy:** Verify against the official 2022 WC match sheets; if incorrect, drop or replace with a confirmed scorer.
+
+### Row 1723 — Australia (easy) — FAIL: wrong World Cup for acrobatic volley
+**Q:** In which World Cup did Australia's Tim Cahill first score his iconic acrobatic volley?
+**Answer:** 2006 FIFA World Cup
+**Why it fails:** Cahill's famous acrobatic left-foot volley was scored against the Netherlands at the **2014 FIFA World Cup**, not 2006. At the 2006 WC, Cahill scored conventional headers/finishes vs Japan.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/tim-cahill-goal-australia-netherlands-2014
+**Remedy:** Change answer to "2014 FIFA World Cup."
+
+### Row 1726 — Australia (medium) — FAIL: wrong match for iconic acrobatic goal
+**Q:** In which World Cup group stage match did Australian Tim Cahill first score an iconic acrobatic goal?
+**Answer:** 2006 vs Japan
+**Why it fails:** Cahill's iconic acrobatic goal (the left-foot volley) was scored at the **2014 WC vs Netherlands**, not 2006 vs Japan. His 2006 goals vs Japan were conventional headed/close-range finishes.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/tim-cahill-goal-australia-netherlands-2014
+**Remedy:** Change answer to "2014 vs Netherlands."
+
+### Row 1730 — Australia (easy) — FAIL: non-unique answer
+**Q:** In which World Cup year did Tim Cahill score for Australia?
+**Answer:** 2006
+**Why it fails:** Tim Cahill scored for Australia at the **2006, 2010, 2014, and 2018** World Cups — all four appear in the option list. Every option is a correct answer, making this question entirely non-unique.
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Rewrite to specify a unique event, e.g. "In which World Cup year did Tim Cahill score his famous acrobatic volley?" (Answer: 2014).
+
+### Row 1731 — Australia (easy) — FAIL: non-existent WC bicycle kick
+**Q:** In which World Cup year did Tim Cahill score his iconic bicycle kick for Australia?
+**Answer:** 2006
+**Why it fails:** Two errors: (1) Cahill's 2014 WC goal vs Netherlands was a **volley**, not a bicycle kick. (2) Cahill's actual bicycle kick was scored in a **January 2015 friendly against China** — not at any World Cup.
+**Source:** https://www.caughtoffside.com/2015/01/22/video-tim-cahill-bicycle-kick-v-china-is-better-than-his-volley-against-the-netherlands/
+**Remedy:** Drop this question; the premise that Cahill scored a WC bicycle kick is factually wrong.
+
+### Row 1734 — Australia (medium) — FAIL: wrong opponent (New Zealand vs Saudi Arabia)
+**Q:** In which year did Australia host a 2022 World Cup qualifier at Melbourne Rectangular Stadium?
+**Answer:** 2021
+**Why it fails:** The question asks about a "qualifier against New Zealand" but the explanation confirms the match at Melbourne Rectangular Stadium in November 2021 was against **Saudi Arabia**, not New Zealand. New Zealand is an OFC nation and was not in Australia's AFC qualifying group.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Replace "New Zealand" with "Saudi Arabia."
+
+### Row 1746 — Australia (medium) — FAIL: stale fact (four is now five)
+**Q:** Since Australia moved to the AFC in 2006, how many World Cups have they qualified for?
+**Answer:** Four
+**Why it fails:** Australia has now qualified for **five** World Cups since joining the AFC: 2010, 2014, 2018, 2022, **and 2026**. The explanation lists only four (up to 2022), but the 2026 qualification is confirmed. Answer "Four" is outdated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Update answer to "Five" (or "Six" if counting the 2006 WC, which Australia attended as AFC member despite qualifying via OFC).
+
+### Row 1747 — Australia (medium) — FAIL: wrong confederation + non-unique
+**Q:** Since Australia moved to the AFC in 2006, which confederation have they faced in World Cup playoffs?
+**Answer:** CONCACAF
+**Why it fails:** Two errors: (1) Australia faced **both CONCACAF** (Honduras, 2018 WC playoff) **and CONMEBOL** (Peru, 2022 WC playoff). (2) The explanation erroneously describes Peru as a "CONCACAF team" — Peru is **CONMEBOL** (South American). Both confederations are correct answers, making the answer non-unique; and the explanation contains a factual geographic error.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_%E2%80%93_inter-confederation_play-offs ; https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_inter-confederation_play-offs
+**Remedy:** Fix answer to "CONCACAF and CONMEBOL" (both); correct explanation to note Peru is CONMEBOL.
+
+### Row 1748 — Australia (medium) — FAIL: unverifiable subjective claim
+**Q:** Since Australia's 2006 AFC move, which nation has dominated Asian World Cup qualifying?
+**Answer:** Australia
+**Why it fails:** The claim that Australia has "dominated" Asian WC qualifying is a subjective assertion without an authoritative source. Japan has also consistently qualified for every WC during this period; South Korea has qualified for all but potentially one. "Domination" is not a definable fact. UNVERIFIED → FAIL.
+**Source:** (no authoritative source)
+**Remedy:** Replace with a specific verifiable claim, e.g. "Which AFC nation topped their qualifying group in both 2010 and 2014 without needing a playoff?"
+
+### Row 1749 — Australia (easy) — FAIL: stale fact (four is now five)
+**Q:** Since joining the AFC, how many FIFA World Cup finals has Australia qualified for?
+**Answer:** Four
+**Why it fails:** Same as Row 1746 — Australia has now qualified for **five** WC finals since joining the AFC (adding 2026). The answer "Four" was accurate before 2026 qualification was confirmed but is now outdated.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Update to "Five."
+
+### Row 1750 — Australia (easy) — FAIL: false claim (group stage exit ≠ contenders)
+**Q:** Since joining the AFC, when did Australia first become Asian Cup contenders?
+**Answer:** 2007 Asian Cup
+**Why it fails:** Australia were **eliminated in the group stage** of the 2007 Asian Cup (1W 1D 1L, did not reach the knockout rounds). Calling them "contenders" at their first Asian Cup is false — they became genuine contenders at the **2011 Asian Cup** (reached the final) and won in 2015.
+**Source:** https://en.wikipedia.org/wiki/2007_AFC_Asian_Cup
+**Remedy:** Change answer to "2011 Asian Cup" (where Australia reached the final for the first time).
+
+### Row 1751 — Australia (medium) — FAIL: stale (four campaigns → now five)
+**Q:** Since moving to the AFC in 2006, how many FIFA World Cup qualifying campaigns have Australia dominated?
+**Answer:** Four campaigns
+**Why it fails:** The explanation cites 2010, 2014, 2018, and 2022 — but Australia also qualified for the **2026 World Cup** via AFC, making it **five campaigns**. Additionally "dominated" overstates 2018 and 2022, both of which required inter-confederation playoffs. Answer is now outdated and count is incorrect.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(AFC)
+**Remedy:** Update answer to "Five campaigns" and revise explanation accordingly.
+
+### Row 1760 — Australia (hard) — FAIL: Excel date corruption
+**Q:** What was Australia's aggregate score against Honduras in their 2018 World Cup playoff?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** The answer is an **Excel date-corruption artifact** — "3-1" was misread by the spreadsheet as 3 January 2026. The correct answer is **3-1** (Australia won the two-legged playoff 3-1 on aggregate). All four options contain the date-corrupted value or other wrong answers.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(inter-confederation_play-offs)
+**Remedy:** Replace answer with "3-1" and remove date-corrupted options.
+
+### Row 1769 — Australia (easy) — FAIL: Excel date corruption
+**Q:** What was Australia's scoreline against South Korea in the 2015 Asian Cup final?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** Excel date corruption — "2-1" was misread as 2 January 2026. The correct answer is **2-1** (Australia beat South Korea 2-1 AET in the 2015 Asian Cup final).
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_Final
+**Remedy:** Replace answer with "2-1" and fix corrupted options.
+
+### Row 1772 — Australia (medium) — FAIL: Excel date corruption
+**Q:** What was the score when Australia beat South Korea in the 2015 Asian Cup final?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** Same Excel date corruption as Row 1769 — "2-1" corrupted to 2 January 2026. Correct answer: **2-1**.
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_Final
+**Remedy:** Replace answer with "2-1" and remove date-corrupted options.
+
+### Row 1773 — Australia (medium) — FAIL: Excel date corruption
+**Q:** What was the score when Australia lost to France in their 2022 World Cup opener?
+**Answer:** 2026-01-04 00:00:00
+**Why it fails:** Excel date corruption — "4-1" corrupted to 4 January 2026. Correct answer: **4-1** (France 4-1 Australia).
+**Source:** https://en.wikipedia.org/wiki/France_v_Australia_(2022_FIFA_World_Cup)
+**Remedy:** Replace answer with "4-1" and remove date-corrupted options.
+
+### Row 1775 — Australia (medium) — FAIL: false claim (joined 2006 ≠ contenders immediately)
+**Q:** What year did Australia join the AFC and become Asian Cup contenders?
+**Answer:** 2006
+**Why it fails:** Australia joined the AFC in 2006 (correct) but were **NOT Asian Cup contenders** at that point — they exited in the group stage of the 2007 AFC Asian Cup. Australia became genuine contenders at the **2011 Asian Cup** (reached the final) and proved it in 2015 (won). The premise "become Asian Cup contenders" tied to 2006 is false.
+**Source:** https://en.wikipedia.org/wiki/2007_AFC_Asian_Cup
+**Remedy:** Either split the question ("When did Australia join the AFC? → 2006") or rewrite to ask when they became genuine contenders (→ 2011).
+
+### Row 1787 — Australia (medium) — FAIL: wrong (first R16 was 2006)
+**Q:** When did Australia first reach the FIFA World Cup round of 16?
+**Answer:** 2022
+**Why it fails:** Australia first reached the World Cup round of 16 in **2006** (lost to Italy 1-0 in the R16 in Kaiserslautern). The explanation also incorrectly states "advanced to the round of 16 for the first time at the 2022 World Cup." 2022 was Australia's **second** R16 appearance.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_2006_FIFA_World_Cup
+**Remedy:** Change answer to "2006" and correct the explanation.
+
+### Row 1788 — Australia (medium) — FAIL: false claim (not regular contenders until 2011)
+**Q:** When did Australia join the AFC and become regular Asian Cup contenders?
+**Answer:** 2006
+**Why it fails:** Australia joined the AFC in 2006 but their first Asian Cup (2007) ended in a group stage elimination. "Regular Asian Cup contenders" is a false premise applied to 2006 — Australia only became regular contenders from **2011** (first final) and confirmed with the 2015 win.
+**Source:** https://en.wikipedia.org/wiki/2007_AFC_Asian_Cup
+**Remedy:** Separate the two claims, or change the question to ask when their "dominant" era began (answer: 2011 or 2015).
+
+### Row 1818 — Australia (medium) — FAIL: qualifying goal ≠ World Cup tournament goal
+**Q:** When did Australian midfielder Ajdin Hrustic score at the FIFA World Cup?
+**Answer:** In 2022
+**Why it fails:** Hrustic scored his notable goal in the **2022 World Cup qualifying campaign** (AFC playoff vs UAE, 7 June 2022), **not during the World Cup tournament itself** in Qatar. His goal helped Australia reach the inter-confederation playoff, but that is a qualifier, not the tournament. No confirmed goal by Hrustic in the Qatar 2022 tournament matches has been found.
+**Source:** https://www.socceroos.com.au/news/watch-hrustic-volley-seals-2-1-victory-over-uae
+**Remedy:** Rewrite to ask when Hrustic scored in WC qualifying (→ "2022 qualifying"); or remove entirely.
+
+### Row 1821 — Australia (medium) — FAIL: wrong (iconic acrobatic WC goal was 2014, not after 2006)
+**Q:** When did Tim Cahill's acrobatic goals become iconic for Australia at World Cups?
+**Answer:** After 2006
+**Why it fails:** Cahill's 2006 WC goals vs Japan were **headers**, not acrobatic goals. His iconic acrobatic WC moment was the stunning **left-foot volley vs Netherlands at the 2014 World Cup** (Estádio Beira-Rio). The explanation incorrectly ties the acrobatic-goal reputation to performances "starting at the 2006 FIFA World Cup." The correct answer would be "After 2014."
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Change answer to "After 2014" and update explanation to reference the 2014 volley vs Netherlands.
+
+### Row 1828 — Australia (medium) — FAIL: timeline impossible (14th ranking was September 2009)
+**Q:** Which 2015 Asian Cup win helped Australia reach a 14th FIFA ranking?
+**Answer:** Australia's continental title
+**Why it fails:** Australia reached 14th in the FIFA rankings in **September 2009** — over **five years before** the 2015 Asian Cup. The 2015 win could not have "helped them reach 14th"; that ranking had already been achieved (and passed) in a previous cycle. The explanation is factually wrong about the causal relationship.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_football_team
+**Remedy:** Remove the causal claim. Either ask which achievement contributed to their 2009 peak ranking, or reframe entirely.
+
+### Row 1842 — Australia (easy) — FAIL: false premise (A-League clubs don't qualify for FIFA WC)
+**Q:** Which A-League club from Australia did NOT qualify for the 2022 FIFA World Cup?
+**Answer:** Western Sydney Wanderers
+**Why it fails:** The question's premise is false — **no A-League club qualifies for the FIFA World Cup**, as it is a national team tournament (the CSV explanation itself concedes this: "No A-League club qualifies for the FIFA World Cup, as it is a national team tournament"). All four options (Melbourne Victory, Sydney FC, WSW, Central Coast Mariners) equally "did not qualify" — the question is unanswerable as asked.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup
+**Remedy:** Delete or completely rewrite; perhaps ask about which Socceroos squad player came from an A-League club.
+
+### Row 1843 — Australia (easy) — FAIL: UNVERIFIED
+**Q:** Which A-League club had a player score for Australia in 2022 World Cup qualifying?
+**Answer:** Melbourne Victory
+**Why it fails:** The explanation claims "Melbourne Victory's Nick D'Agostino scored for Australia in a 2022 World Cup qualifier against Vietnam." This specific claim (D'Agostino, Melbourne Victory, 2022 WC qualifying vs Vietnam) cannot be independently verified. Hrustic's confirmed 2022-qualifying goal was against UAE (not vs Vietnam), and Hrustic was not at Melbourne Victory. UNVERIFIED → FAIL.
+**Source:** No confirmable source found for Nick D'Agostino scoring in 2022 WC qualifying vs Vietnam.
+**Remedy:** Verify D'Agostino's goal or replace with a verifiable example (e.g., Mathew Leckie who was at Hertha Berlin).
+
+### Row 1844 — Australia (easy) — FAIL: anachronistic distractor (Western Sydney Wanderers ≠ 2010)
+**Q:** Which A-League club had players in Australia's 2010 World Cup squad?
+**Answer:** Melbourne Victory
+**Why it fails:** One of the four options — **Western Sydney Wanderers** — was not founded until October 2012, two years after the 2010 World Cup. A club that didn't exist cannot be a valid distractor for a 2010 squad question. The question is structurally compromised by this anachronistic option, making it trivially easy to eliminate one distractor and undermining the question's validity.
+**Source:** https://en.wikipedia.org/wiki/Western_Sydney_Wanderers_FC
+**Remedy:** Replace "Western Sydney Wanderers" distractor with a club that existed in 2010 (e.g., Brisbane Roar, Perth Glory, Adelaide United).
+
+### Row 1849 — Australia (easy) — FAIL: wrong (Japan and Australia each won 2 group matches at 2022 WC)
+**Q:** Which AFC nation had more 2022 World Cup wins than Australia?
+**Answer:** Japan
+**Why it fails:** The explanation states "Japan won two group stage matches in 2022, while Australia won one." This is factually wrong — **Australia also won two group stage matches** (Tunisia 1-0 and Denmark 1-0). Japan won two (Germany and Spain). Both nations won exactly two group matches; Japan did NOT have more wins than Australia.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Correct the explanation and change the question premise, or replace with a factual comparison (e.g., Japan won more knockout matches than Australia historically).
+
+### Row 1850 — Australia (medium) — FAIL: wrong (Australia has 0 WC knockout wins)
+**Q:** Which AFC nation had more knockout stage wins than Australia by 2022?
+**Answer:** Japan
+**Why it fails:** The explanation claims "Australia's only knockout win was in 2006." This is **false** — Australia has **never won a World Cup knockout match**. In 2006 they lost to Italy 1-0 in the R16; in 2022 they lost to Argentina 2-1 in the R16. Australia has zero World Cup knockout wins. Japan, by contrast, has won multiple knockout matches (e.g., 2022: beat Germany and Spain in group, then reached R16; historically beat Yugoslavia in 2002 group stage).
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Fix explanation to reflect Australia's actual knockout record (0 wins). Revise or remove question.
+
+### Row 1872 — Australia (easy) — FAIL: non-unique (South Korea also reached 2022 WC R16)
+**Q:** Which AFC team also reached the 2022 World Cup round of 16 like Australia?
+**Answer:** Japan
+**Why it fails:** The question implies only ONE other AFC team reached the 2022 WC R16. However, **both Japan AND South Korea** reached the Round of 16 (Japan: beat Germany and Spain in group stage, then lost to Croatia; South Korea: beat Portugal, then lost to Brazil). With Japan and South Korea both valid in the option set, the answer is non-unique. CSV explanation ("Japan was the only other AFC team") is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Rewrite to specify "which AFC team beat a European giant to reach the 2022 WC R16" (Japan beat Germany and Spain), or choose a uniquely answerable angle.
+
+### Row 1876 — Australia (easy) — FAIL: non-unique (South Korea also reached 2022 WC R16)
+**Q:** Which AFC team, like Australia in 2022, reached a World Cup round of 16?
+**Answer:** Japan
+**Why it fails:** Same issue as Row 1872 — South Korea ALSO reached the 2022 WC R16 (beat Portugal in the group stage, then lost to Brazil in the R16). Both Japan and South Korea are valid answers; the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Specify a particular achievement that distinguishes Japan from South Korea in the 2022 WC R16 context.
+
+### Row 1885 — Australia (easy) — FAIL: wrong stage (Japan beat Australia in FINAL, not semi-finals)
+**Q:** Which Asian team beat Australia in the 2011 Asian Cup semi-finals?
+**Answer:** Japan
+**Why it fails:** Japan did **NOT** beat Australia in the semi-finals of the 2011 AFC Asian Cup. Australia beat **Uzbekistan 6-0** in the semi-finals. Japan then beat Australia **1-0 in the FINAL**. The question's premise is factually wrong — Japan beat Australia in the final, not the semi-finals.
+**Source:** https://en.wikipedia.org/wiki/2011_AFC_Asian_Cup
+**Remedy:** Change question to "Which team beat Australia in the 2011 Asian Cup final?" (Answer: Japan).
+
+### Row 1891 — Australia (medium) — FAIL: wrong (Popovic, not Arnold, led 2026 WC qualification)
+**Q:** Which Australia coach led their 2026 FIFA World Cup qualification?
+**Answer:** Graham Arnold
+**Why it fails:** Graham Arnold was replaced by **Tony Popovic** in September 2024. Popovic managed Australia through the critical later stages of 2026 WC qualifying (including the match vs Saudi Arabia that clinched qualification) and selected the 2026 WC squad. Arnold managed the early stages but Popovic is the manager who completed the qualification.
+**Source:** https://en.wikipedia.org/wiki/Tony_Popovic
+**Remedy:** Change answer to "Tony Popovic."
+
+### Row 1907 — Australia (easy) — FAIL: stale/wrong (Popovic, not Arnold, is 2026 cycle builder)
+**Q:** Which Australia manager builds his 2026 squad core from A-League and European players?
+**Answer:** Graham Arnold
+**Why it fails:** Arnold was replaced by **Tony Popovic** in September 2024. Popovic is the manager building and selecting the 2026 WC squad. Arnold is no longer managing Australia. CSV explanation ("Graham Arnold is the manager building Australia's squad for the 2026 World Cup cycle") is outdated and factually wrong.
+**Source:** https://en.wikipedia.org/wiki/Tony_Popovic
+**Remedy:** Change answer to "Tony Popovic" and update explanation.
+
+### Row 1927 — Australia (easy) — FAIL: non-unique (multiple managers served shorter than Postecoglou)
+**Q:** Which Australia manager served for a shorter period than Ange Postecoglou's four-year term?
+**Answer:** Holger Osieck
+**Why it fails:** Among the options (Osieck, Arnold, van Marwijk, Popovic), **three** served shorter than Postecoglou's four years: Osieck (~3 years, 2010–2013), van Marwijk (~7 months, 2017–2018), and Popovic (under 2 years, ongoing from 2024). Only Arnold (6 years) served longer. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_football_team
+**Remedy:** Rewrite to ask "Which manager had the shortest tenure?" (Answer: Bert van Marwijk, ~7 months).
+
+### Row 1936 — Australia (easy) — FAIL: qualifying goal ≠ World Cup tournament goal
+**Q:** Which Australia midfielder scored a goal at the 2022 FIFA World Cup in Qatar?
+**Answer:** Ajdin Hrustic
+**Why it fails:** Hrustic's confirmed goal was in the **2022 WC qualifying** (AFC playoff vs UAE, June 2022), NOT during the 2022 FIFA World Cup tournament in Qatar (November–December 2022). No confirmed goal by Hrustic in Qatar tournament matches has been found.
+**Source:** https://www.socceroos.com.au/news/watch-hrustic-volley-seals-2-1-victory-over-uae
+**Remedy:** Remove this row or change to ask about Craig Goodwin (scored vs France) or Mathew Leckie (scored vs Denmark).
+
+### Row 1937 — Australia (easy) — FAIL: non-unique (both Leckie and Maclaren were at Melbourne City A-League)
+**Q:** Which Australia player at the 2022 FIFA World Cup was based in the A-League?
+**Answer:** Mathew Leckie
+**Why it fails:** Both **Mathew Leckie** (Melbourne City, A-League) AND **Jamie Maclaren** (Melbourne City, A-League) were in Australia's 2022 WC squad and based in the A-League at Melbourne City. Both are in the option set, making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/Jamie_Maclaren
+**Remedy:** Reframe question to specifically ask about Mathew Leckie (e.g., "Which Melbourne City A-League player scored the 2022 WC winner vs Denmark?").
+
+### Row 1939 — Australia (easy) — FAIL: Boyle was withdrawn before tournament; Mooy was Scotland-based
+**Q:** Which Australia player at the 2022 World Cup was based in Scotland?
+**Answer:** Martin Boyle
+**Why it fails:** Martin Boyle was **withdrawn from the 2022 WC squad before the tournament began** due to a knee injury (20 November 2022, replaced by Marco Tilio). He did not participate in Qatar. The correct answer is **Aaron Mooy** (Celtic FC, Scotland), who was in the squad and played. Additionally, Boyle had moved to Saudi Arabia (Al-Faisaly) in January 2022, not Scotland.
+**Source:** https://socceroos.com.au/news/martin-boyle-withdrawn-socceroos-fifa-world-cup-qatar-2022tm-squad
+**Remedy:** Change answer to "Aaron Mooy" (Celtic, Scotland).
+
+### Row 1943 — Australia (easy) — FAIL: UNVERIFIED (2026 WC debut is a future event)
+**Q:** Which Australia player debuted at the 2026 World Cup?
+**Answer:** Nestor Irankunda
+**Why it fails:** The 2026 FIFA World Cup had not yet occurred at the time this dataset was created, and Irankunda's debut at that tournament is unverifiable — it is a speculative future claim. UNVERIFIED → FAIL.
+**Source:** No authoritative source can confirm a 2026 WC debut before the tournament.
+**Remedy:** Remove or wait until post-tournament to verify.
+
+### Row 1944 — Australia (easy) — FAIL: wrong year and wrong event
+**Q:** Which Australia player debuted for the Socceroos at AAMI Park in 2016?
+**Answer:** Awer Mabil
+**Why it fails:** Awer Mabil made his Socceroos debut on **16 October 2018** vs Kuwait — **not in 2016**. The CSV explanation also claims "2016 friendly against Greece at Melbourne's AAMI Park" which contradicts the confirmed 2018 debut date.
+**Source:** https://en.wikipedia.org/wiki/Awer_Mabil
+**Remedy:** Correct year to 2018; verify the exact match and venue.
+
+### Row 1946 — Australia (easy) — FAIL: UNVERIFIED
+**Q:** Which Australia player emerged as a new squad pillar after the 2022 World Cup?
+**Answer:** Alessandro Circati
+**Why it fails:** The claim that Circati became a "new squad pillar" after the 2022 WC is unverifiable — it is a soft subjective claim with no authoritative source confirming his prominent role. UNVERIFIED → FAIL.
+**Source:** No source confirming Circati as a squad pillar post-2022.
+**Remedy:** Replace with a verifiable player claim (e.g., a player confirmed to have featured regularly since 2022).
+
+### Row 1954 — Australia (easy) — FAIL: wrong (Okazaki also scored 50 goals — not fewer)
+**Q:** Which Australia player scored 50 goals, more than Japan's Shinji Okazaki at the 2018 World Cup?
+**Answer:** Tim Cahill
+**Why it fails:** Shinji Okazaki scored **50 international goals** in 119 caps for Japan — the **same** as Cahill's 50 goals in 108 caps. Cahill's 50 goals was NOT "more than Okazaki's"; they are equal. The "more than" claim is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/Shinji_Okazaki
+**Remedy:** Change "more than" to "matching Japan's Shinji Okazaki's tally" or pick a comparison where Cahill genuinely exceeded another player.
+
+### Row 1969 — Australia (easy) — FAIL: wrong/misleading (Cahill did not score at 2018 WC)
+**Q:** Which Australia player scored iconic World Cup goals from 2006 to 2018?
+**Answer:** Tim Cahill
+**Why it fails:** Tim Cahill scored at the 2006, 2010, and 2014 World Cups but **did NOT score at the 2018 World Cup** — he appeared only as a substitute in one match (vs Peru, 0-2 loss) and did not find the net. The "to 2018" framing falsely implies he scored at the 2018 tournament.
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Change to "from 2006 to 2014" (where Cahill actually scored at three consecutive tournaments).
+
+### Row 1973 — Australia (easy) — FAIL: wrong (OWN GOAL, not Goodwin)
+**Q:** Which Australia player scored in their 2-1 2022 World Cup loss to Argentina?
+**Answer:** Craig Goodwin
+**Why it fails:** Australia's only goal in the 2-1 R16 loss to Argentina was an own goal by Enzo Fernández (deflected off Goodwin's shot in the 77th minute). It was not officially credited to Goodwin. The premise "Craig Goodwin scored" is factually wrong.
+**Source:** https://www.skysports.com/football/news/11095/12756117
+**Remedy:** Change question to ask "Which Argentina player scored an own goal vs Australia in the 2022 WC R16?" (answer: Enzo Fernández) or remove entirely.
+
+### Row 1979 — Australia (easy) — FAIL: non-unique (multiple 2022 WC winners)
+**Q:** Which Australia player scored the winner at the 2022 FIFA World Cup?
+**Answer:** Mathew Leckie
+**Why it fails:** Both Mitchell Duke (vs Tunisia, 23') and Mathew Leckie (vs Denmark, 60') scored match-winning goals at the 2022 WC. Both are in the option set. Non-unique answer.
+**Source:** https://www.skysports.com/football/news/11095/12755131
+**Remedy:** Specify the match: "scored the winner against Denmark" or "scored the winner against Tunisia" (two separate unambiguous questions).
+
+### Row 1985 — Australia (easy) — FAIL: wrong (no Australian scored in 2022 WC R16)
+**Q:** Which Australia player scored their goal in the 2022 World Cup round of 16?
+**Answer:** Craig Goodwin
+**Why it fails:** Australia's only goal in the R16 (vs Argentina, 77') was an OWN GOAL by Enzo Fernández — no Australian player was credited with a tournament R16 goal. Goodwin scored in the GROUP STAGE (vs France), not the R16. False premise.
+**Source:** https://www.skysports.com/football/news/11095/12756117
+**Remedy:** Remove this question or replace with "Which Australian scored Australia's only group-stage goal against France?" (answer: Craig Goodwin).
+
+### Row 1987 — Australia (easy) — FAIL: wrong (Australia scored multiple 2014 WC goals)
+**Q:** Which Australia player scored their only 2014 World Cup goal?
+**Answer:** Tim Cahill
+**Why it fails:** Australia scored three goals at the 2014 WC, not one: Cahill vs Chile (group stage), Cahill's famous volley vs Netherlands, and Jedinak's penalty vs Netherlands. The premise "only one goal" is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Change to "Which Australia player scored twice at the 2014 World Cup?" (answer: Tim Cahill) or "Who scored Australia's famous volley vs Netherlands in 2014?" (answer: Tim Cahill).
+
+### Row 1989 — Australia (easy) — FAIL: wrong (Troisi scored once, not twice)
+**Q:** Which Australia player scored twice in the 2015 Asian Cup final?
+**Answer:** James Troisi
+**Why it fails:** Troisi scored only ONCE in the 2015 AFC Asian Cup final — the winning goal in the 105th minute of extra time. The equalizer (making it 1-1) was scored by Massimo Luongo. Troisi did not score twice.
+**Source:** https://en.wikipedia.org/wiki/2015_AFC_Asian_Cup_Final
+**Remedy:** Change to "Which Australia player scored the winning goal in the 2015 Asian Cup final?" (answer: James Troisi), or change "scored twice" to "scored the decisive goal."
+
+### Row 1996 — Australia (easy) — FAIL: false premise (no 87th-minute winner by Argentina)
+**Q:** Which Australia player was substituted off just before Argentina's 87th-minute winner in 2022?
+**Answer:** Aziz Behich
+**Why it fails:** Argentina's decisive second goal was scored by Julián Álvarez in the 57th minute, making it 2-0. The only goal scored after the 57th minute was Australia's consolation (own goal by Enzo Fernández, 77'). There was no 87th-minute winner by Argentina. The question's premise is factually wrong.
+**Source:** https://www.skysports.com/football/news/11095/12756117
+**Remedy:** Remove or rephrase around a factually accurate substitution event from the 2022 WC R16 match.
+
+### Row 2007 — Australia (easy) — FAIL: wrong (Duke started vs Tunisia, did not come on as sub)
+**Q:** Which Australia striker was substituted on to score against Tunisia at the 2022 World Cup?
+**Answer:** Mitchell Duke
+**Why it fails:** Mitchell Duke scored with a glancing header in the 23rd minute as a STARTER — he was in the starting XI, not substituted on. The question's premise "substituted on" is factually wrong.
+**Source:** https://www.espn.com/soccer/fifa-world-cup/story/4806892/mitchell-duke-leads-australia-to-world-cup-win-over-tunisia
+**Remedy:** Change to "Which Australia striker headed home to give Australia the lead against Tunisia at the 2022 World Cup?" (answer: Mitchell Duke).
+
+### Row 2009 — Australia (easy) — FAIL: wrong (14th ranking achieved 2009, not 2022)
+**Q:** Which Australia team's 2022 World Cup run helped them reach 14th?
+**Answer:** The Socceroos
+**Why it fails:** Australia reached their all-time best FIFA ranking of 14th in September 2009 — three years after the 2006 WC campaign, not after the 2022 WC. Australia's ranking after the 2022 WC was approximately 27th, well below 14th.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_soccer_team
+**Remedy:** Remove this question or replace with a factually accurate claim linking the 2022 WC R16 run to ranking gains (e.g. "improved to around 27th").
+
+### Row 2010 — Australia (hard) — FAIL: non-unique (both 2010 and 2014 via direct AFC)
+**Q:** Which Australia World Cup qualification was via AFC, 2010 or 2018?
+**Answer:** 2010
+**Why it fails:** Australia qualified DIRECTLY via AFC automatic berths for both 2010 AND 2014. The 2018 and 2022 qualifications required inter-confederation playoffs. With 2014 in the option set, both 2010 and 2014 are valid answers — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_soccer_team#World_Cup_history
+**Remedy:** Rephrase to "Which was the last time Australia qualified for the World Cup directly via AFC without a playoff?" (answer: 2014) or remove the ambiguous option.
+
+### Row 2014 — Australia (easy) — FAIL: non-unique (both Leckie and Maclaren A-League based)
+**Q:** Which Australian 2022 World Cup player is based in the A-League?
+**Answer:** Mathew Leckie
+**Why it fails:** Both Mathew Leckie (Melbourne City) and Jamie Maclaren (Melbourne City) were A-League based at the time of the 2022 WC. Both are in the option set. Non-unique answer.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Specify a player not shared with another A-League option, e.g. "Which Australian 2022 WC captain-candidate was based at Melbourne City?" or split into separate questions.
+
+### Row 2019 — Australia (easy) — FAIL: false premise (no Australian 2023 Asian Cup)
+**Q:** Which Australian 2023 Asian Cup venue holds approximately 83,500 fans?
+**Answer:** Stadium Australia
+**Why it fails:** Australia did NOT host the 2023 AFC Asian Cup — that tournament was held in Qatar (January–February 2024). Australia co-hosted the 2023 FIFA Women's World Cup, not an Asian Cup. The question's premise is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup
+**Remedy:** Change to "Which stadium hosted Australia's 2023 Women's World Cup matches with ~83,500 capacity?" (answer: Stadium Australia) or "Which Australian stadium holds approximately 83,500?"
+
+### Row 2021 — Australia (easy) — FAIL: UNVERIFIED (Hrustic not at Melbourne Victory)
+**Q:** Which Australian A-League club did 2022 World Cup midfielder Ajdin Hrustic play for?
+**Answer:** Melbourne Victory
+**Why it fails:** Hrustic's professional career went directly to European clubs (NEC Nijmegen, then Eintracht Frankfurt, Hellas Verona). He has no confirmed stint at Melbourne Victory. The claim is UNVERIFIED and almost certainly wrong — he was never an A-League player.
+**Source:** https://en.wikipedia.org/wiki/Ajdin_Hrustic
+**Remedy:** Remove this question — Hrustic had no A-League career to reference.
+
+### Row 2026 — Australia (easy) — FAIL: non-unique (multiple clubs existed before 2006)
+**Q:** Which Australian club existed before their 2006 AFC move: Melbourne Victory, Sydney FC, or Western Sydney Wanderers?
+**Answer:** Melbourne Victory
+**Why it fails:** Melbourne Victory (founded 2004), Sydney FC (founded 2004), AND Adelaide United (founded 2003) all existed before Australia's 2006 move to the AFC. All three of those options (plus Adelaide United in the option set) are valid answers — non-unique.
+**Source:** https://en.wikipedia.org/wiki/A-League_Men
+**Remedy:** The only unique answer would be Western Sydney Wanderers (founded 2012, after the AFC move) — the question should ask "Which club did NOT exist before Australia's 2006 AFC move?" instead.
+
+### Row 2030 — Australia (easy) — FAIL: false premise (no 2015 FIFA World Cup)
+**Q:** Which Australian club's 2014 ACL win preceded a 2015 World Cup?
+**Answer:** Western Sydney Wanderers
+**Why it fails:** There was no 2015 FIFA Men's World Cup. The World Cup is held every four years: 2014 and 2018 were the surrounding editions. The premise "preceded a 2015 World Cup" is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup
+**Remedy:** Change to "Which Australian club's 2014 continental win preceded the 2018 FIFA World Cup?" (answer: Western Sydney Wanderers) — Row 2035 already covers this.
+
+### Row 2062 — Australia (easy) — FAIL: non-unique (Irvine also played both 2018 and 2022 WCs)
+**Q:** Which Australian midfielder at the 2022 World Cup also played in the 2018 tournament?
+**Answer:** Aaron Mooy
+**Why it fails:** Jackson Irvine was also in Australia's 2018 WC squad (he appeared as a substitute) AND played at the 2022 WC. Both Mooy and Irvine satisfy the condition. Non-unique answer.
+**Source:** https://en.wikipedia.org/wiki/Jackson_Irvine
+**Remedy:** Narrow the question to a unique fact, e.g. "Which Australian midfielder started every group match at both the 2018 and 2022 World Cups?" (answer: Aaron Mooy).
+
+### Row 2063 — Australia (easy) — FAIL: non-unique (multiple midfielders played at 2022 WC)
+**Q:** Which Australian midfielder played at the 2022 World Cup?
+**Answer:** Jackson Irvine
+**Why it fails:** Jackson Irvine, Aaron Mooy, AND Ajdin Hrustic all played at the 2022 WC — three of the four options are valid answers. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Distinguish by a unique attribute, e.g. "Which Australian midfielder started all three 2022 WC group matches?" (answer: Aaron Mooy) or "Which Australian midfielder scored in 2022 WC qualifying?" (answer: Hrustic).
+
+### Row 2064 — Australia (easy) — FAIL: wrong (Goodwin scored at Al Janoub, not Hrustic)
+**Q:** Which Australian midfielder scored at the Al Janoub Stadium in 2022?
+**Answer:** Ajdin Hrustic
+**Why it fails:** Craig Goodwin scored Australia's goal at Al Janoub Stadium (vs France, 9') at the 2022 World Cup. Hrustic scored in the 2022 WC qualifying playoff vs UAE at a different venue — and in any case, a qualifying goal ≠ a WC tournament goal.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_Group_D
+**Remedy:** Change answer to Craig Goodwin ("Which Australian winger scored at Al Janoub in 2022?") or remove.
+
+### Row 2065 — Australia (easy) — FAIL: wrong (Hrustic did not score at 2022 WC tournament)
+**Q:** Which Australian midfielder scored one goal at the 2022 World Cup?
+**Answer:** Ajdin Hrustic
+**Why it fails:** Hrustic did not score at the 2022 FIFA World Cup tournament. His well-known goal was in the 2022 WC qualifying inter-confederation playoff vs UAE (a qualifying match, not a tournament match). No Australian midfielder scored at the 2022 WC tournament (Australia's goals were Goodwin, Duke, Leckie — all in different positions/context).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove this question entirely or replace with a factually accurate scorer (e.g. "Which Australian player scored in the group stage opener vs France?" → Craig Goodwin).
+
+### Row 2068 — Australia (easy) — FAIL: false premise (Hrustic did not score at 2022 WC)
+**Q:** Which Australian midfielder was key in 2022, unlike the scorer Hrustic?
+**Answer:** Aaron Mooy
+**Why it fails:** The question's framing "unlike the scorer Hrustic" implies Hrustic scored at the 2022 WC tournament, which is false. Hrustic scored in the WC qualifying playoff vs UAE, not at the 2022 WC. The false premise contaminates the question.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove this question. If contrasting Mooy and Hrustic is desired, base it on a factually accurate distinction (e.g. "started every group match" vs "came off the bench").
+
+### Row 2076 — Australia (easy) — FAIL: non-unique (all players made WC debut at 2006)
+**Q:** Which Australian player debuted at the 2006 FIFA World Cup?
+**Answer:** Tim Cahill
+**Why it fails:** Australia last qualified for the World Cup in 1974. All players who appeared for Australia at the 2006 WC (including Cahill, Kewell, Viduka, Schwarzer — all four options) were making their FIRST World Cup appearance in 2006. Non-unique answer.
+**Source:** https://en.wikipedia.org/wiki/Australia_at_the_FIFA_World_Cup
+**Remedy:** Reframe to "Which Australian player scored twice in his first World Cup match in 2006?" (Answer: Cahill) or remove.
+
+### Row 2078 — Australia (medium) — FAIL: non-unique (all options debuted before 2006)
+**Q:** Which Australian player debuted before their first of six straight World Cup qualifications?
+**Answer:** Tim Cahill
+**Why it fails:** Australia's "first of six straight WC qualifications" was 2006. All four options debuted internationally before 2006: Cahill (2004), Kewell (1996), Viduka (1994), Aloisi (1997). The condition is satisfied by all options — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_soccer_team
+**Remedy:** Add a distinguishing qualifier — e.g. "Which player debuted before 2006 AND scored at four consecutive World Cups?" (answer: Cahill, uniquely) or remove.
+
+### Row 2080 — Australia (easy) — FAIL: wrong answer (Cahill DID score at 2014 WC)
+**Q:** Which Australian player did NOT score at the 2014 FIFA World Cup?
+**Answer:** Tim Cahill
+**Why it fails:** Tim Cahill scored TWICE at the 2014 WC: a header vs Chile (group stage) and his famous left-foot volley vs Netherlands (group stage). He also scored from the penalty spot via Jedink... actually Cahill scored the non-penalty goals. The answer "Tim Cahill did NOT score" is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Group_B
+**Remedy:** Change the answer to "Mathew Leckie" (who played but did not score at the 2014 WC), and update the question accordingly. Remove Tim Cahill from the options.
+
+### Row 2092 — Australia (easy) — FAIL: wrong WC years (acrobatic WC goal was 2014, not 2006/2010)
+**Q:** Which Australian player scored acrobatic goals at both the 2006 and 2010 World Cups?
+**Answer:** Tim Cahill
+**Why it fails:** Cahill's celebrated ACROBATIC WC goal was his left-foot volley vs Netherlands at the 2014 WC — not 2006 or 2010. His 2006 goals vs Japan were diving headers, and his 2010 goal vs Serbia was a header. Neither is typically characterized as "acrobatic." The question correctly identifies Cahill but applies the wrong WC years.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/tim-cahill-goal-australia-netherlands-2014
+**Remedy:** Change to "Which Australian player scored an acrobatic volley goal at the 2014 FIFA World Cup?" (Answer: Tim Cahill).
+
+### Row 2099 — Australia (easy) — FAIL: non-unique (three options all scored fewer than 50 goals)
+**Q:** Which Australian player scored fewer than 50 goals for the national team?
+**Answer:** Harry Kewell
+**Why it fails:** Among the options: Kewell (14 goals), Viduka (11 goals), and Aloisi (27 goals) ALL scored fewer than 50 goals. Only Tim Cahill scored exactly 50. Three of the four options are valid answers — non-unique.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kewell
+**Remedy:** Invert: "Which Australian player scored exactly 50 goals?" (Answer: Tim Cahill) — already covered by many other rows. Alternatively, remove.
+
+### Row 2102 — Australia (easy) — FAIL: wrong WC years (iconic acrobatic goals were 2006 headers and 2014 volley)
+**Q:** Which Australian player scored iconic acrobatic goals at the 2006 and 2010 World Cups?
+**Answer:** Tim Cahill
+**Why it fails:** Same error as Row 2092. The iconic ACROBATIC Cahill WC goal was at the 2014 WC (volley vs Netherlands). His 2006 goals were headers (not typically "acrobatic volleys") and his 2010 goal was a header. The CSV explanation itself confirms: "Tim Cahill's acrobatic volley against the Netherlands at the 2014 World Cup."
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/tim-cahill-goal-australia-netherlands-2014
+**Remedy:** Change to "2006 and 2014" to correctly identify the WC editions where Cahill scored memorable goals, or specify the volley as a 2014 goal.
+
+### Row 2106 — Australia (easy) — FAIL: wrong year (Cahill's iconic volley was 2014, not 2006)
+**Q:** Which Australian player scored iconic goals like a 2006 World Cup volley?
+**Answer:** Tim Cahill
+**Why it fails:** Cahill did NOT score a "volley" at the 2006 WC. His 2006 goals vs Japan were diving headers in the 84th and 89th minutes. His iconic volley was scored at the 2014 WC vs Netherlands. Calling his 2006 goals a "volley" is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_Group_F
+**Remedy:** Change "2006 World Cup volley" to "2014 World Cup volley" — the iconic Cahill volley was at the 2014 WC.
+
+### Row 2120 — Australia (medium) — FAIL: misleading (Hrustic's was 4th of 5 penalties in shootout, not THE decisive one)
+**Q:** Which Australian player scored the penalty that secured their 2022 World Cup qualification?
+**Answer:** Ajdin Hrustic
+**Why it fails:** Australia qualified for the 2022 WC by beating Peru 5-4 on penalties after a 0-0 draw. Hrustic scored the FOURTH of Australia's five successful shootout penalties, making it 4-2. Australia's FIFTH penalty secured the win. The framing "the penalty that secured qualification" implies a decisive/final penalty, which was not Hrustic's. Multiple players scored penalties in the shootout.
+**Source:** https://abcnews.go.com/Sports/wireStory/australia-qualifies-world-cup-edging-peru-85369146
+**Remedy:** Change to "Which Australian player scored a direct free kick vs UAE to help secure 2022 WC qualification?" (Answer: Hrustic — his June 7, 2022 free kick vs UAE in the 2-1 win was the specific memorable Hrustic qualifying moment).
+
+### Row 2131 — Australia (easy) — FAIL: non-unique (three midfielders played at 2022 WC)
+**Q:** Which Australian player was a key midfielder at the 2022 World Cup in Qatar?
+**Answer:** Jackson Irvine
+**Why it fails:** Jackson Irvine, Aaron Mooy, AND Ajdin Hrustic all played as midfielders at the 2022 WC. All three are in the option set. Non-unique answer.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_squads
+**Remedy:** Distinguish by a specific attribute — e.g. "Which Australian midfielder started every group match at the 2022 World Cup?" (Answer: Aaron Mooy, uniquely).
+
+### Row 2133 — Australia (easy) — FAIL: non-unique (all four options were in the 2018 WC squad)
+**Q:** Which Australian player was in the 2018 FIFA World Cup squad?
+**Answer:** Mathew Leckie
+**Why it fails:** All four options (Leckie, Cahill, Jedinak, Mooy) were in Australia's 2018 WC squad. Non-unique answer.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_squads
+**Remedy:** The distractors should be players who were NOT in the 2018 WC squad. Replace Cahill/Jedinak/Mooy with players like Craig Goodwin, Jackson Irvine, or Harry Souttar (who were not in the 2018 squad).
+
+### Row 2144 — Australia (easy) — FAIL: wrong WC years (iconic acrobatic goals were 2006 headers and 2014 volley)
+**Q:** Which Australian player's acrobatic goals became iconic at the 2006 and 2010 World Cups?
+**Answer:** Tim Cahill
+**Why it fails:** Cahill's iconic acrobatic WC moments were: 2006 diving headers vs Japan, and the 2014 LEFT-FOOT VOLLEY vs Netherlands. The 2010 WC goal (header vs Serbia) is not typically cited as "acrobatic." The CSV explanation itself says "acrobatic volleys and bicycle kicks at the 2006 and 2014 World Cups" — confirming the correct years are 2006 and 2014, not 2006 and 2010.
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Change "2006 and 2010" to "2006 and 2014" (the correct WC years for Cahill's iconic/acrobatic goals).
+
+### Row 2147 — Australia (easy) — FAIL: wrong (Cahill's famous bicycle kick was in a friendly, not at a World Cup)
+**Q:** Which Australian player's bicycle kicks defined his World Cup legacy?
+**Answer:** Tim Cahill
+**Why it fails:** Cahill's famous BICYCLE KICK was scored in a friendly vs China on January 22, 2015 — NOT at a World Cup. His actual WC goals were: 2006 (diving headers vs Japan), 2010 (header vs Serbia), 2014 (left-foot volley vs Netherlands). None were bicycle kicks. The question conflates his friendly bicycle kick with his WC legacy.
+**Source:** https://en.wikipedia.org/wiki/Tim_Cahill
+**Remedy:** Change to "Which Australian player's acrobatic volley became his most iconic World Cup moment?" (Answer: Tim Cahill, 2014 vs Netherlands).
+
+### Row 2177 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar)
+**Q:** Which Australian stadium hosted the 2022 FIFA World Cup playoff due to its 83,500 capacity?
+**Answer:** Stadium Australia
+**Why it fails:** The Australia vs Peru 2022 WC intercontinental playoff (June 13, 2022) was played at Ahmad Bin Ali Stadium in Al Rayyan, Qatar — a neutral ground. Stadium Australia did not host this match. The 83,500 capacity claim is irrelevant since the game was not in Australia at all.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Change to reference a 2022 WC AFC qualifying group match (which WAS played in Australia at Stadium Australia) rather than the intercontinental playoff.
+
+### Row 2178 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar, not AAMI Park)
+**Q:** Which Australian stadium hosted the 2022 World Cup playoff against Peru?
+**Answer:** AAMI Park
+**Why it fails:** The Australia vs Peru 2022 WC inter-confederation playoff was held in Qatar (Ahmad Bin Ali Stadium), not in Australia. Neither AAMI Park nor any Australian stadium hosted this match.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Change to a genuine Australia home match — e.g. "Which Australian stadium hosted Australia's 2022 WC AFC qualifying match against Saudi Arabia?" (Answer: AAMI Park).
+
+### Row 2187 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar)
+**Q:** Which Australian stadium, capacity ~83,500, hosted the 2022 World Cup playoff vs Peru?
+**Answer:** Stadium Australia
+**Why it fails:** The 2022 WC inter-confederation playoff vs Peru was played at Ahmad Bin Ali Stadium, Qatar — not at Stadium Australia. No Australian stadium hosted this match.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Correct to "hosted the 2022 WC AFC qualifying playoff home leg" (which was a different match played in Australia).
+
+### Row 2191 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar)
+**Q:** Which Australian stadium, with an 83,500 capacity, hosted the 2022 FIFA World Cup qualifier playoff?
+**Answer:** Stadium Australia
+**Why it fails:** The 2022 WC inter-confederation playoff (vs Peru) was held in Qatar (Ahmad Bin Ali Stadium). Stadium Australia did not host the intercontinental playoff.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Reframe the question as "hosted a 2022 WC AFC group qualifying match" rather than the playoff.
+
+### Row 2193 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar)
+**Q:** Which Australian stadium's 83,500 capacity hosted the 2022 World Cup playoff?
+**Answer:** Stadium Australia
+**Why it fails:** The 2022 WC inter-confederation playoff vs Peru was hosted in Qatar (Ahmad Bin Ali Stadium, Al Rayyan). Not hosted at Stadium Australia.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Change to reference a genuine Australian-hosted qualifier. "Which Australian stadium's 83,500 capacity hosted a 2022 WC AFC qualifying match?" (Answer: Stadium Australia, correct).
+
+### Row 2195 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar)
+**Q:** Which Australian stadium's 83,500 capacity made it the 2022 FIFA World Cup playoff venue?
+**Answer:** Stadium Australia
+**Why it fails:** The 2022 WC inter-confederation playoff was played in Qatar, not Australia. Stadium Australia's capacity was not a factor in the neutral-venue playoff selection.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Remove "playoff venue" claim; rephrase to "Which Australian stadium's 83,500 capacity makes it the primary AFC qualifying venue?" (Answer: Stadium Australia, correct).
+
+### Row 2256 — Australia (easy) — FAIL: non-unique (all four options debuted at WC after Australia's 2006 debut)
+**Q:** Which nation debuted at a FIFA World Cup after Australia's 2006 debut?
+**Answer:** Iceland
+**Why it fails:** All four options debuted at the WC after 2006: Slovakia (2010), Bosnia (2014), Iceland (2018), Panama (2018). Any of the four is a valid answer, making the question non-unique.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup
+**Remedy:** Keep Iceland but replace the other three options with nations that debuted BEFORE 2006 (e.g. Czech Republic 1994, Paraguay 1930, Cameroon 1982) to make Iceland the only post-2006 debutant.
+
+### Row 2267 — Australia (medium) — FAIL: non-unique (multiple teams Australia didn't lose to in 2010 group stage)
+**Q:** Which nation did Australia NOT lose to in the 2010 World Cup group stage?
+**Answer:** Serbia
+**Why it fails:** Australia's 2010 WC Group D opponents were Germany, Serbia, Ghana. (1) Australia BEAT Serbia 2-1 ✓, (2) Australia DREW 1-1 with Ghana (did not lose) ✓, (3) Netherlands was NOT even in Australia's group, so Australia trivially "did not lose to" Netherlands either. Serbia, Ghana, and Netherlands are all valid answers → non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_Group_D
+**Remedy:** Change the distractors to teams Australia actually lost to or drew with — e.g. replace Ghana with Ivory Coast and Netherlands with Brazil (neither in Australia's 2010 group). "Serbia" remains the clean unique answer as the team they beat.
+
+### Row 2270 — Australia (easy) — FAIL: false premise (Australia only beat Denmark once at WC — 2022)
+**Q:** Which nation has Australia beaten at two different FIFA World Cups?
+**Answer:** Denmark
+**Why it fails:** Australia vs Denmark WC record: 2018 WC — 1-1 DRAW (not a win); 2022 WC — 1-0 WIN. Australia has beaten Denmark at exactly ONE World Cup (2022), not two. The premise "beaten at two WCs" is false for Denmark and for all the other options (Japan beaten once in 2006, South Korea and Saudi Arabia never met Australia at WC tournament).
+**Source:** https://en.wikipedia.org/wiki/Australia_v_Denmark_(2022_FIFA_World_Cup)
+**Remedy:** Remove the "two WCs" premise. A valid replacement: "Which nation did Australia beat to qualify for the 2022 WC knockout stage?" (Answer: Denmark — 1-0 win in group stage).
+
+### Row 2273 — Australia (easy) — FAIL: non-unique (all four options also qualified for 6 consecutive WCs 2006-2026)
+**Q:** Which nation matched Australia's six consecutive World Cups from 2006 to 2026?
+**Answer:** Brazil
+**Why it fails:** All four options (Brazil, Japan, South Korea, Mexico) qualified for the 2006, 2010, 2014, 2018, 2022, and 2026 World Cups. Mexico and USA/Canada are 2026 hosts (automatic). Japan and South Korea are consistent AFC qualifiers. Brazil has qualified for every WC. All four match or exceed Australia's six-consecutive streak — the question has no unique answer.
+**Source:** https://en.wikipedia.org/wiki/FIFA_World_Cup
+**Remedy:** Replace three options with nations that have NOT had six consecutive WC appearances since 2006 (e.g. Ecuador, Ivory Coast, Nigeria) so only Brazil remains as a valid match.
+
+### Row 2279 — Australia (easy) — FAIL: self-referential (answer is Australia, the subject of the question)
+**Q:** Which nation, like Australia in 2022, last reached a World Cup round of 16 16 years prior?
+**Answer:** Australia
+**Why it fails:** The question is self-referential — it describes Australia's own situation ("like Australia in 2022") and the answer is Australia itself. A question that defines a property unique to Australia and then asks "which nation has this property" is logically circular and provides no test of knowledge.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_football_team
+**Remedy:** Compare with a different nation — e.g. "Which Asian nation also reached the 2022 WC round of 16?" (Answer: South Korea or Japan) — to make it a genuine factual question.
+
+### Row 2303 — Australia (easy) — FAIL: wrong venue (2022 WC playoff was in Qatar)
+**Q:** Which stadium hosted Australia's 2022 World Cup playoff due to its primary venue status?
+**Answer:** Stadium Australia
+**Why it fails:** The 2022 WC inter-confederation playoff vs Peru was played at Ahmad Bin Ali Stadium in Qatar, not at Stadium Australia. The neutral venue in Qatar was chosen by FIFA, not based on Stadium Australia's "primary venue" status.
+**Source:** https://www.aljazeera.com/gallery/2022/6/14/photos-australia-won-playoff-againt-peru-in-doha
+**Remedy:** Change to ask about a qualifier actually hosted in Australia: "Which stadium hosted Australia's 2022 WC AFC qualifying match vs Vietnam?" (both Stadium Australia and AAMI Park could work depending on verification).
+
+### Row 2304 — Australia (easy) — FAIL: wrong venue (R16 vs Argentina was at Ahmad bin Ali Stadium, not Al Janoub)
+**Q:** Which stadium hosted Australia's 2022 World Cup round of 16 match?
+**Answer:** Al Janoub Stadium
+**Why it fails:** Australia's 2022 WC group stage matches (vs France, Tunisia, Denmark) were all at Al Janoub Stadium. However, the R16 match vs Argentina was played at Ahmad Bin Ali Stadium (Al Rayyan Stadium), not Al Janoub. Row 2302 in the same pool correctly states Ahmad Bin Ali Stadium for the same match.
+**Source:** https://en.wikipedia.org/wiki/Argentina_v_Australia_(2022_FIFA_World_Cup)
+**Remedy:** Change the answer to Ahmad Bin Ali Stadium (the actual R16 venue).
+
+### Row 2335 — Australia (medium) — FAIL: non-unique (2010 and 2014 both qualify as direct AFC entry)
+**Q:** Which World Cup did Australia qualify for via AFC direct entry?
+**Answer:** 2026 World Cup
+**Why it fails:** Among the options (2026, 2010, 2014, 2022): Australia qualified for 2010 via direct AFC (Group B 2nd place, automatic), for 2014 via direct AFC, and for 2026 via direct AFC. Only 2022 required an intercontinental playoff (vs UAE + Peru). The question therefore has three valid answers (2010, 2014, 2026) → non-unique.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_football_team
+**Remedy:** Change the question to specify the MOST RECENT or FIRST direct AFC qualification, or restrict options so only one represents direct AFC entry.
+
+### Row 2340 — Australia (medium) — FAIL: non-unique (2006, 2010, and 2014 all valid — Australia competed in all three)
+**Q:** Which year did Australia compete in the FIFA World Cup?
+**Answer:** 2006
+**Why it fails:** The options are 2006, 2002, 2010, 2014. Australia competed in the 2006, 2010, and 2014 WCs (all three are valid answers). Only 2002 is wrong (Australia didn't qualify for 2002). The question has three correct answers → non-unique.
+**Source:** https://en.wikipedia.org/wiki/Australia_national_football_team
+**Remedy:** Change the question to "Which year did Australia FIRST compete in the FIFA World Cup after re-joining in the modern era?" (Answer: 2006) and replace 2010 and 2014 with years Australia did NOT qualify (1998, 2002).
+
+### Row 2354 — Australia (easy) — FAIL: wrong answer (Álvarez scored the decisive/winning goal vs Australia, not Messi)
+**Q:** Who scored Argentina's winner against Australia in the 2022 World Cup round of 16?
+**Answer:** Lionel Messi
+**Why it fails:** In Argentina's 2-1 win over Australia (Dec 3, 2022): Messi scored the OPENER in the 35th minute, Julián Álvarez scored the SECOND goal in the 57th minute (which proved decisive as the winner), and Australia pulled one back via Goodwin in the 77th minute. In football terminology, the "winner" is the decisive goal — Álvarez's 57th-minute goal. Messi scored first but not the winning goal.
+**Source:** https://en.wikipedia.org/wiki/Argentina_v_Australia_(2022_FIFA_World_Cup)
+**Remedy:** Change answer to Julián Álvarez (and update question to "first goal" or "opening goal" if Messi is the intended answer).
+
+### Row 2359 — Australia (easy) — FAIL: wrong answer (Rabiot scored France's first goal vs Australia, not Giroud)
+**Q:** Who scored the first goal for France against Australia in the 2022 World Cup?
+**Answer:** Olivier Giroud
+**Why it fails:** In France 4-1 Australia (Nov 22, 2022): Australia led 1-0 via Goodwin (9'), then ADRIEN RABIOT scored France's first equaliser in the 27th minute. Giroud scored France's second goal (32') and fourth goal (71') — but NOT the first. Rabiot is the correct answer.
+**Source:** https://en.wikipedia.org/wiki/France_v_Australia_(2022_FIFA_World_Cup)
+**Remedy:** Change answer to Adrien Rabiot. Or change question to "Who scored the most goals for France against Australia in the 2022 WC?" (Answer: Giroud, with 2 goals).
+
+### Row 2360 — Australia (easy) — FAIL: stale (Graham Arnold was replaced by Tony Popovic in September 2024)
+**Q:** Who selects the A-League and European core of Australia's 2026 World Cup squad?
+**Answer:** Graham Arnold
+**Why it fails:** Graham Arnold left the Socceroos manager role after the 2022 WC cycle. Tony Popovic was appointed as Australia manager in September 2024 and is responsible for squad selection for the 2026 WC cycle. Arnold has no role in the 2026 squad.
+**Source:** https://en.wikipedia.org/wiki/Tony_Popovic
+**Remedy:** Change answer to Tony Popovic (the current 2026 WC cycle manager).
+
+---
+
+## Austria — Chunk 1 (rows 2402–2499)
+
+### Row 2404 — Austria (medium) — FAIL: false premise + wrong answer
+**Q:** After Austria's 2022 World Cup group stage win, which manager led them to 10th in FIFA rankings?
+**Answer:** Franz Koller
+**Why it fails:** Austria did NOT qualify for or participate in the 2022 FIFA World Cup — the question's premise is entirely false. Additionally, the answer "Franz Koller" is a non-existent person; the manager who led Austria to their peak FIFA ranking of 10th was **Marcel Koller** (served 2011–2017).
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Rewrite removing any 2022 WC reference. E.g. "Which manager led Austria to their all-time peak FIFA ranking of 10th?" Answer: Marcel Koller.
+
+### Row 2407 — Austria (hard) — FAIL: wrong count and wrong starting year
+**Q:** After which World Cup did Austria's four-tournament qualification failure streak begin?
+**Answer:** 2006
+**Why it fails:** Two errors. (1) Austria's qualification failure streak is SIX consecutive World Cups (2002, 2006, 2010, 2014, 2018, 2022), not four. (2) The streak began AFTER the **1998** World Cup (Austria's last appearance), not after 2006 — Austria did not compete at 2006 at all.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change to "After which World Cup did Austria's six-tournament qualification failure streak begin?" Answer: 1998.
+
+### Row 2418 — Austria (medium) — FAIL: wrong facts (Switzerland had 5 points at 2018 WC)
+**Q:** At the 2018 World Cup, Austria's Euro 2008 co-host had how many points?
+**Answer:** Zero points
+**Why it fails:** Austria's Euro 2008 co-host is Switzerland. At the 2018 FIFA World Cup, Switzerland finished with **5 points** in Group E — they drew Brazil 1-1, beat Serbia 2-1, and drew Costa Rica 2-2 (advancing to the Round of 16). "Zero points" is factually wrong.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_Group_E
+**Remedy:** Change answer to "Five points" (or "six points" if counting differently — confirmed 5 points by standard scoring: 1+3+1). Correct answer is Five points.
+
+### Row 2419 — Austria (easy) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** At the 2022 FIFA World Cup, Austria's squad featured several Bundesliga-based players. Which other UEFA nation's 2022 squad also had many Bundesliga players?
+**Answer:** Switzerland
+**Why it fails:** Austria did NOT qualify for or participate in the 2022 FIFA World Cup. There was no "Austria's 2022 World Cup squad." The entire question premise is false.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove 2022 WC reference. Use qualifying-squad context only: "During Austria's 2022 World Cup qualifying campaign, which other UEFA nation's squad also featured many Bundesliga players?"
+
+### Row 2422 — Austria (easy) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** At the 2022 World Cup, which Austrian attacker was a key offensive player?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria did not qualify for the 2022 FIFA World Cup. There was no Austria squad, no Austrian attacker, and no Austrian WC performance at Qatar 2022.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Reframe to a tournament Austria actually attended: "At Euro 2024, which Austrian attacker was a key offensive player?" — Baumgartner was prominent there.
+
+### Row 2423 — Austria (easy) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** At the 2022 World Cup, which Austrian club had the most players in its squad?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for or participate in the 2022 FIFA World Cup. There was no Austrian WC squad.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change to: "During Austria's 2022 World Cup qualifying campaign, which Austrian club provided the most players to the national squad?" — Red Bull Salzburg remains correct.
+
+### Row 2424 — Austria (easy) — FAIL: false premise + wrong club
+**Q:** At the 2022 World Cup, which Austrian midfielder played for Borussia Dortmund?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Two errors. (1) Austria did NOT qualify for the 2022 FIFA World Cup, so no Austrian midfielder played at Qatar 2022. (2) Marcel Sabitzer was at **Bayern Munich** in 2022 (joined Bayern in September 2021 on loan, then signed permanently), NOT Borussia Dortmund.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Remove 2022 WC reference entirely. If testing Sabitzer's club, use correct club: "Which Austrian midfielder moved from RB Leipzig to Bayern Munich in 2021?" Answer: Marcel Sabitzer.
+
+### Row 2425 — Austria (easy) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** At the 2022 World Cup, which coach transformed Austria into a pressing team at Euro 2024?
+**Answer:** Ralf Rangnick
+**Why it fails:** Austria was not at the 2022 World Cup. The question's 2022 WC premise is false. (Rangnick did transform Austria, but his work was showcased at Euro 2024, not the 2022 WC.)
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Remove the "2022 World Cup" framing: "Which coach transformed Austria into a high-pressing team that impressed at Euro 2024?" Answer: Ralf Rangnick.
+
+### Row 2426 — Austria (easy) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** At the 2022 World Cup, which manager later transformed Austria into a pressing team at Euro 2024?
+**Answer:** Ralf Rangnick
+**Why it fails:** Austria was not at the 2022 FIFA World Cup, so no Austrian manager worked there. Rangnick did manage Austria from January 2022 and led them at Euro 2024, but there was no 2022 WC connection.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Remove the 2022 WC anchor: "Which manager took over Austria in 2022 and later transformed them into a pressing team at Euro 2024?" Answer: Ralf Rangnick.
+
+### Row 2430 — Austria (easy) — FAIL: Excel date corruption
+**Q:** At the 2026 World Cup qualifiers, which score did Austria beat the Netherlands by at Euro 2024?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer "2026-02-03 00:00:00" is an Excel date-serial corruption of the scoreline **3-2** (February 3, 2026 in date format ≈ serial for 3-2). No user-facing question should display an ISO timestamp as the answer to a score question.
+**Source:** https://en.wikipedia.org/wiki/Austria_v_Netherlands_(UEFA_Euro_2024)
+**Remedy:** Replace answer with "3-2". All options need similar correction.
+
+### Row 2441 — Austria (easy) — FAIL: non-unique answer
+**Q:** Austria beat the Netherlands 3-2 at Euro 2024. Which nation also beat the Dutch in a major tournament?
+**Answer:** Czech Republic
+**Options:** Czech Republic | Italy | Portugal | Belgium
+**Why it fails:** Multiple options are correct, making the answer non-unique. **Italy** beat the Netherlands in the Euro 2000 semi-final (0-0 AET, 3-1 pens). **Portugal** beat the Netherlands 1-0 in the 2006 FIFA World Cup Round of 16 ("Battle of Nuremberg"). Both Italy and Portugal appear as distractors but are valid correct answers. Belgium has also beaten the Netherlands in various Nations League matches.
+**Source:** https://en.wikipedia.org/wiki/Italy_v_Netherlands_(UEFA_Euro_2000) ; https://en.wikipedia.org/wiki/Netherlands_v_Portugal_(2006_FIFA_World_Cup)
+**Remedy:** Tighten the question to a specific competition or timeframe, or replace distractors with nations that have NOT beaten the Netherlands at a major tournament.
+
+### Row 2442 — Austria (medium) — FAIL: Excel date corruption
+**Q:** Austria beat the Netherlands in a Euro 2024 group stage match. What was the final score?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** "2026-02-03 00:00:00" is an Excel date corruption of the scoreline **3-2**.
+**Source:** https://en.wikipedia.org/wiki/Austria_v_Netherlands_(UEFA_Euro_2024)
+**Remedy:** Replace answer and options with correct scorelines; correct answer is "3-2".
+
+### Row 2443 — Austria (medium) — FAIL: Excel date corruption
+**Q:** Austria beat the Netherlands in the Euro 2024 group stage by what score?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** "2026-02-03 00:00:00" is an Excel date corruption of the scoreline **3-2**.
+**Source:** https://en.wikipedia.org/wiki/Austria_v_Netherlands_(UEFA_Euro_2024)
+**Remedy:** Replace answer with "3-2".
+
+### Row 2444 — Austria (medium) — FAIL: Excel date corruption
+**Q:** Austria beat the Netherlands in the Euro 2024 group stage by what scoreline?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** "2026-02-03 00:00:00" is an Excel date corruption of the scoreline **3-2**.
+**Source:** https://en.wikipedia.org/wiki/Austria_v_Netherlands_(UEFA_Euro_2024)
+**Remedy:** Replace answer with "3-2".
+
+### Row 2450 — Austria (medium) — FAIL: wrong count
+**Q:** Austria failed to qualify for how many consecutive World Cups before 2026?
+**Answer:** Four
+**Why it fails:** Austria missed **SIX** consecutive World Cups before qualifying for 2026: 2002, 2006, 2010, 2014, 2018, and 2022. The answer "Four" understates the streak by two.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change answer to "Six". Also update distractors — "Five tournaments" should become a distractor and the options should reflect the corrected count.
+
+### Row 2451 — Austria (medium) — FAIL: false premise + wrong answer
+**Q:** Austria failed to reach four consecutive World Cups after which one?
+**Answer:** 2006
+**Why it fails:** Two errors. (1) Austria's last World Cup before 2026 was **1998** (France), not 2006 — Austria did not participate in the 2006 WC at all. The answer "2006" implies Austria was at the 2006 WC, which is false. (2) The streak is **six** consecutive misses (2002–2022), not four.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change to "Austria failed to reach six consecutive World Cups after which one?" Answer: 1998.
+
+### Row 2459 — Austria (easy) — FAIL: Excel date corruption
+**Q:** Austria lost to Türkiye by what scoreline in the Euro 2024 round of 16?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** "2026-01-02 00:00:00" is an Excel date corruption of the scoreline **2-1** (i.e. Austria lost 2-1 to Türkiye).
+**Source:** https://en.wikipedia.org/wiki/Austria_v_T%C3%BCrkiye_(UEFA_Euro_2024)
+**Remedy:** Replace answer with "2-1". Update all options accordingly.
+
+### Row 2462 — Austria (easy) — FAIL: wrong answer (Serbia topped the group, not Germany)
+**Q:** Austria missed the 2010 World Cup. Which nation topped their qualifying group?
+**Answer:** Germany
+**Why it fails:** Austria was in **UEFA 2010 WC Qualifying Group 7** (France, Romania, Serbia, Lithuania, Austria, Faroe Islands). **Serbia** topped the group and qualified directly; France was second and went to the playoffs. Germany was in a completely different qualifying group.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_7
+**Remedy:** Change answer to "Serbia". Update distractors — "Germany" should become a distractor and "Serbia" the correct answer.
+
+### Row 2466 — Austria (easy) — FAIL: non-unique answer
+**Q:** Austria qualified for Euro 2016 under Marcel Koller. Which manager did NOT guide them to a World Cup?
+**Answer:** Marcel Koller
+**Options:** Marcel Koller | Ralf Rangnick | Franco Foda | Dietmar Constantini
+**Why it fails:** Only Ralf Rangnick guided Austria to a World Cup (2026). Marcel Koller, Franco Foda, AND Dietmar Constantini all failed to qualify Austria for a World Cup. Three of the four options are valid correct answers, making the answer non-unique.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Reframe to identify the ONE manager who DID guide them: "Which manager finally guided Austria to a World Cup qualification?" Answer: Ralf Rangnick. Alternatively, specify a time period to make the answer unique.
+
+### Row 2467 — Austria (medium) — FAIL: wrong count
+**Q:** Austria qualified for the 2026 World Cup after missing how many consecutive tournaments?
+**Answer:** Seven tournaments
+**Why it fails:** Austria missed **six** consecutive World Cups (2002, 2006, 2010, 2014, 2018, 2022) before qualifying for 2026. "Seven tournaments" overstates the streak.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change answer to "Six tournaments".
+
+### Row 2471 — Austria (medium) — FAIL: false premise (Austria not at 2018 WC)
+**Q:** Austria's 2018 World Cup group stage match vs Brazil preceded which manager's Euro 2016 qualification?
+**Answer:** Marcel Koller
+**Why it fails:** Austria did NOT qualify for or participate in the 2018 FIFA World Cup. There was no "Austria's 2018 World Cup group stage match vs Brazil." The premise is entirely false. (Koller was Austria's manager for Euro 2016 qualifying but had no 2018 WC involvement.)
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove the 2018 WC premise. E.g. "Which manager qualified Austria for Euro 2016 for the first time since 2008?" Answer: Marcel Koller.
+
+### Row 2475 — Austria (easy) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** Austria's 2022 World Cup squad included players from which Bundesliga club?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did NOT qualify for the 2022 FIFA World Cup; there was no "Austria's 2022 World Cup squad." Red Bull Salzburg is actually the Austrian Bundesliga, not the German Bundesliga — so the question also conflates leagues.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change to Austria's qualifying squad context: "During Austria's 2022 World Cup qualifying campaign, which Austrian club provided the most players?" Answer: Red Bull Salzburg.
+
+### Row 2476 — Austria (hard) — FAIL: false premise (Austria not at 2022 WC)
+**Q:** Austria's 2024 Euro loss to Türkiye came after which World Cup group stage match?
+**Answer:** Austria vs France 2022
+**Why it fails:** Austria did NOT participate in the 2022 FIFA World Cup. There was no "Austria vs France 2022" World Cup group stage match. The entire premise is false.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove 2022 WC reference. E.g. "Austria's Euro 2024 loss to Türkiye in the Round of 16 followed a group-stage win over which nation?" Answer: the Netherlands.
+
+### Row 2480 — Austria (hard) — FAIL: wrong count
+**Q:** Austria's 2026 World Cup qualification under Rangnick ended a streak of how many consecutive failed campaigns?
+**Answer:** Four
+**Why it fails:** Austria missed **six** consecutive World Cup qualifying campaigns (for 2002, 2006, 2010, 2014, 2018, and 2022), not four. Rangnick's 2026 qualification ended a six-campaign streak.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change answer to "Six".
+
+### Row 2483 — Austria (medium) — FAIL: wrong answer (Austria never beat Costa Rica at a WC)
+**Q:** Austria's 3-2 win over the Netherlands at Euro 2024 was a group stage match. Which other nation did Austria beat in a World Cup group stage?
+**Answer:** Costa Rica
+**Why it fails:** Austria has never played Costa Rica at a FIFA World Cup. Austria's last WC was 1998 (Group B: Italy, Chile, Cameroon). Austria beat Chile 2-1 and drew with Cameroon in that tournament. Costa Rica were never Austria's World Cup group opponents.
+**Source:** https://en.wikipedia.org/wiki/Austria_at_the_1998_FIFA_World_Cup
+**Remedy:** Change answer to Chile (beat 2-1 at 1998 WC group stage) or Cameroon (drew 1-1 at 1998 WC). E.g. "Which other nation did Austria beat in a World Cup group stage?" Answer: Chile.
+
+### Row 2484 — Austria (hard) — FAIL: wrong year (peak ranking was 2016, not 2017)
+**Q:** Austria's best FIFA ranking of 10th under Koller was achieved in which 2018 qualifying year?
+**Answer:** 2017
+**Why it fails:** Austria's all-time peak FIFA ranking of 10th was reached in **2016**, not 2017. The web confirms "In 2016 the national team reached its highest position ever (10th) in the FIFA World Rankings" under Marcel Koller.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Koller
+**Remedy:** Change answer to "2016".
+
+### Row 2485 — Austria (easy) — FAIL: Excel date corruption
+**Q:** Austria's biggest Euro 2024 shock was beating the Netherlands by what score?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** "2026-02-03 00:00:00" is an Excel date corruption of the scoreline **3-2**.
+**Source:** https://en.wikipedia.org/wiki/Austria_v_Netherlands_(UEFA_Euro_2024)
+**Remedy:** Replace answer with "3-2".
+
+### Row 2487 — Austria (easy) — FAIL: Excel date corruption
+**Q:** Austria's Euro 2020 round of 16 loss to Italy finished with what score?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** "2026-01-02 00:00:00" is an Excel date corruption of the scoreline **2-1** (Italy won 2-1 AET).
+**Source:** https://en.wikipedia.org/wiki/Italy_v_Austria_(UEFA_Euro_2020)
+**Remedy:** Replace answer with "2-1". Update all options accordingly.
+
+### Row 2488 — Austria (medium) — FAIL: self-referential / circular
+**Q:** Austria's Euro 2024 group stage win over Netherlands was a shock. Which other team pulled a major upset?
+**Answer:** Austria beat Netherlands
+**Why it fails:** The answer ("Austria beat Netherlands") is identical to the scenario described in the question itself. This is self-referential — the question asks "which other team pulled an upset" but the answer is just restating the question's own premise. No factual knowledge is tested.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Replace with a genuine comparison upset from Euro 2024. E.g. Georgia beat Portugal 2-0 in the group stage, or Slovakia beat Belgium 1-0.
+
+### Row 2490 — Austria (easy) — FAIL: false premise (Austria not at 2018 WC in Russia)
+**Q:** Austria's Euro 2024 win over the Netherlands was more successful than their 2018 World Cup performance where?
+**Answer:** Russia
+**Why it fails:** Austria did NOT qualify for the 2018 FIFA World Cup, which was held in Russia. There was no "Austria's 2018 World Cup performance." The question's premise is entirely false.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove the 2018 WC comparison. E.g. "Austria's Euro 2024 win over the Netherlands was more impressive than their 2020 Euro exit to which nation?" Answer: Italy.
+
+### Row 2492 — Austria (medium) — FAIL: false premise (Austria not at 2018 WC)
+**Q:** Austria's Karim Onisiwo debuted at which FIFA World Cup after his Salzburg development?
+**Answer:** 2018 World Cup
+**Why it fails:** Austria did NOT qualify for the 2018 FIFA World Cup, so no Austrian player debuted at the 2018 WC. Karim Onisiwo could not have made his WC debut for Austria at a tournament Austria did not attend.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove WC reference. Reframe to tournaments Austria did attend: "Karim Onisiwo debuted for Austria at which UEFA European Championship?" — verify which Euro he first played at.
+
+### Row 2496 — Austria (hard) — FAIL: wrong timing (transformation began BEFORE the 2022 WC, not after)
+**Q:** Austria's praised transformation under Ralf Rangnick began after which World Cup?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** Ralf Rangnick was officially appointed Austria national team manager on **January 1, 2022** — approximately 11 months BEFORE the 2022 FIFA World Cup (November–December 2022). The transformation began in early 2022, not after the 2022 WC. The correct answer would be "after the 2022 WC qualifying campaign failed" or simply that Rangnick started in 2022 before the WC.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Reframe: "Austria's praised transformation under Ralf Rangnick bore fruit at which tournament?" Answer: UEFA Euro 2024. Or: "Ralf Rangnick succeeded which manager to begin Austria's transformation?" Answer: Franco Foda.
+
+---
+
+## Austria — Chunk 2 (rows 2500–2632)
+
+### Row 2499 — Austria (medium) — CORRECTION: moved from PASS to FAIL
+**Q:** Before the 2022 qualifiers, which Austrian striker had already become his nation's all-time top scorer?
+**Answer:** Marko Arnautović
+**Why it fails:** False premise — Arnautović did NOT become Austria's all-time top scorer before the 2022 qualifiers. He broke Thomas Polster's record of 44 goals in October 2025 (during 2026 WC qualifying, scoring 4 goals in a 10-0 win over San Marino). During the 2022 qualifying campaign he had around 30 goals, well short of the record.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change answer to "Thomas Polster" (who actually held the record before and during the 2022 qualifiers) or rewrite question to ask who was the all-time top scorer before Arnautović.
+
+### Row 2517 — Austria (hard) — FAIL: false premise / unverifiable claim
+**Q:** Which RB Salzburg product scored for Germany in the 2018 World Cup group stage, showcasing Red Bull's influence?
+**Answer:** Timo Werner
+**Why it fails:** Austria was not at the 2018 World Cup (false premise context). More critically, Timo Werner was NOT an RB Salzburg product — he came from Stuttgart/Leipzig (RB Leipzig). No player from RB Salzburg's youth academy scored for Germany in the 2018 WC group stage. Germany's 2018 WC group stage scorers were Müller, Goretzka, Kroos, Reus, Draxler.
+**Source:** https://en.wikipedia.org/wiki/Germany_at_the_2018_FIFA_World_Cup
+**Remedy:** Delete — premise is false. Timo Werner was an RB Leipzig player, not RB Salzburg product.
+
+### Row 2542 — Austria (medium) — FAIL: false premise
+**Q:** Which Austria attacker debuted at the 2022 World Cup?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria was NOT at the 2022 World Cup (false premise). Baumgartner debuted for Austria in September 2020, more than two years before the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Christoph_Baumgartner
+**Remedy:** Delete or rewrite — Austria was not at the 2022 WC.
+
+### Row 2543 — Austria (medium) — FAIL: wrong duration
+**Q:** Austria's 2026 World Cup qualification ended how many years of absence?
+**Answer:** 16 years
+**Why it fails:** Austria's last WC was France 1998. Their return at 2026 ends a 28-year absence (1998–2026), not 16 years.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change answer to "28 years".
+
+### Row 2553 — Austria (hard) — FAIL: unverifiable specific statistic
+**Q:** What was the average age of Austria's squad during their 2022 World Cup qualifiers?
+**Answer:** 26.8 years
+**Why it fails:** The specific average squad age figure of 26.8 years cannot be verified from available sources. This is a highly specific statistical claim with no reliable verifiable source.
+**Source:** N/A — unverifiable
+**Remedy:** Remove the specific figure or replace with a verifiable general claim about Austria's relatively young squad during the 2022 qualifiers.
+
+### Row 2555 — Austria (medium) — FAIL: Excel date corruption
+**Q:** What was the score in Austria's 2022 World Cup qualifying win against the Faroe Islands?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** Excel date corruption. "2026-02-03 00:00:00" represents the score "3-2" stored as a date timestamp.
+**Source:** N/A — data corruption
+**Remedy:** Fix data pipeline to prevent Excel auto-converting scorelines to dates. Correct answer should be "3-2".
+
+### Row 2558 — Austria (easy) — FAIL: Excel date corruption
+**Q:** What was the score in Austria's first Euro 2020 qualifying win?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** Excel date corruption. "2026-01-02 00:00:00" represents the score "2-1" stored as a date timestamp.
+**Source:** N/A — data corruption
+**Remedy:** Fix data pipeline. Correct answer should be "2-1".
+
+### Row 2564 — Austria (medium) — FAIL: Excel date corruption
+**Q:** On what date did Austria beat Denmark in their 2022 World Cup qualifier?
+**Answer:** 2021-03-01 00:00:00
+**Why it fails:** Excel date corruption — the date "2021-03-01 00:00:00" has been corrupted into a timestamp format during CSV processing. Even if the date were accurate, the question cannot be properly served with a corrupted answer.
+**Source:** N/A — data corruption
+**Remedy:** Fix data pipeline. Verify actual match date of Austria vs Denmark in 2022 WC qualifiers (Group F).
+
+### Row 2565 — Austria (hard) — FAIL: wrong factual claim
+**Q:** In their 2022 World Cup qualifying group, who did Austria host in Vienna to face the tournament favorites?
+**Answer:** France
+**Why it fails:** France was NOT in Austria's 2022 WC qualifying group. Austria were in Group F: Denmark, Scotland, Israel, Austria, Faroe Islands, Moldova. France were in Group D.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_UEFA_Group_F
+**Remedy:** Change the question/answer to reference a team actually in Group F, such as Denmark (who were the group favorites).
+
+### Row 2578 — Austria (medium) — FAIL: Excel date corruption
+**Q:** When did Austria play their most important 2018 World Cup qualifier?
+**Answer:** 2017-09-05 00:00:00
+**Why it fails:** Excel date corruption — "2017-09-05 00:00:00" is a date shown as a raw timestamp. Answer cannot be evaluated in this format.
+**Source:** N/A — data corruption
+**Remedy:** Fix data pipeline. Note also that if this refers to a specific match date, it needs to be formatted as a readable date.
+
+### Row 2583 — Austria (medium) — FAIL: wrong factual claim
+**Q:** When did the Austrian national team first reach the Euro group stage?
+**Answer:** Euro 2016
+**Why it fails:** Austria co-hosted Euro 2008 with Switzerland (automatic qualifier) and played in the group stage — that was their first Euro group stage appearance, not Euro 2016. Euro 2016 was their first *earned* qualification for a Euro group stage, but the question asks "first reach the Euro group stage" without that distinction.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2008
+**Remedy:** Rewrite as "When did Austria first qualify for a European Championship group stage (as non-host)?" Answer: Euro 2016. Or change answer to Euro 2008.
+
+### Row 2587 — Austria (hard) — FAIL: unverifiable specific claim
+**Q:** In 2017, which Austrian player became his country's all-time leading scorer in World Cup qualifiers?
+**Answer:** Marko Arnautović
+**Why it fails:** This is an unverifiable specific claim about being the all-time leading WC qualifier scorer specifically in 2017. Arnautović's overall all-time record (breaking Polster's 44-goal total record) wasn't achieved until October 2025. Whether he specifically topped the WC qualifier goals tally in 2017 cannot be independently verified.
+**Source:** N/A — unverifiable
+**Remedy:** Remove or replace with a verifiable claim about Arnautović's scoring achievements.
+
+### Row 2588 — Austria (medium) — FAIL: wrong year
+**Q:** When did Marko Arnautović become Austria's all-time leading scorer?
+**Answer:** 2022
+**Why it fails:** Arnautović broke Thomas Polster's all-time Austria scoring record (44 goals) in October 2025 when he scored 4 goals in a 10-0 victory over San Marino during 2026 WC qualifying — NOT in 2022.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change answer to "2025" (or more precisely "October 2025").
+
+### Row 2604 — Austria (hard) — FAIL: non-unique answer
+**Q:** Which country will co-host the 2026 FIFA World Cup with Canada and Mexico?
+**Answer:** USA
+**Why it fails:** The question has a non-unique answer structure issue — looking at the original pool options, the answer should be USA. However, this question is ambiguous since the 2026 WC is hosted by USA, Canada, AND Mexico (all three are hosts). The question implies only one more co-host beyond Canada and Mexico, but Canada and Mexico are both co-hosts alongside USA. The phrasing creates potential for non-unique answers if options include any combination of the three hosts.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup
+**Remedy:** Rewrite to avoid ambiguity — e.g., "Which three nations are co-hosting the 2026 FIFA World Cup?" or restructure so only one co-host relationship is tested.
+
+### Row 2606 — Austria (medium) — FAIL: false premise
+**Q:** Which Austria midfielder debuted for the national team just before the 2022 World Cup?
+**Answer:** Christoph Baumgartner
+**Why it fails:** False premise — Baumgartner debuted for Austria in September 2020, more than two years before the November 2022 World Cup. Also, Austria were not at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Christoph_Baumgartner
+**Remedy:** Delete — both the "just before" timing claim and the WC context are false.
+
+### Row 2607 — Austria (medium) — FAIL: false premise
+**Q:** Which Austria midfielder made his debut just before the 2022 World Cup qualifying campaign?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Baumgartner debuted for Austria in September 2020. The 2022 WC qualifying campaign began in March 2021, so his debut was about 6 months before qualifying started — not "just before." This is a borderline claim but "just before" is inaccurate given the time gap.
+**Source:** https://en.wikipedia.org/wiki/Christoph_Baumgartner
+**Remedy:** Rewrite — Baumgartner debuted in September 2020, about 6 months before the qualifying campaign opened.
+
+### Row 2609 — Austria (easy) — FAIL: false premise
+**Q:** Which Austria striker scored at the 2022 FIFA World Cup?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria was NOT at the 2022 FIFA World Cup (false premise). Austria failed to qualify — they lost their play-off to Wales in March 2022.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Delete entirely — Austria was not at the 2022 WC.
+
+### Row 2614 — Austria (easy) — FAIL: false premise
+**Q:** Which Austria attacker was in the 2022 World Cup squad?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria was NOT at the 2022 World Cup (false premise). Austria did not qualify; they lost to Wales in the play-off.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Delete entirely — Austria was not at the 2022 WC.
+
+### Row 2622 — Austria (hard) — FAIL: false premise
+**Q:** How did Austria defender David Alaba's club success shape their 2022 World Cup tactics?
+**Answer:** His Real Madrid experience improved Austria's defensive structure
+**Why it fails:** Austria was NOT at the 2022 World Cup (false premise). Austria failed to qualify for the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Delete — Austria was not at the 2022 WC.
+
+### Row 2624 — Austria (hard) — FAIL: false claim about record status
+**Q:** Which Austria striker, their all-time leading scorer, was selected for the Euro 2024 squad?
+**Answer:** Marko Arnautović
+**Why it fails:** While Arnautović was selected for Euro 2024 (held June–July 2024), he did NOT break Thomas Polster's all-time Austria scoring record until October 2025. At Euro 2024, Arnautović was NOT yet Austria's all-time leading scorer — Polster still held the record at the time.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change the description to "Austria's then-leading active scorer" or rewrite the question to be temporally accurate.
+
+### Row 2632 — Austria (medium) — FAIL: wrong duration
+**Q:** Austria's 2026 World Cup qualification ended how long a drought?
+**Answer:** 16-year World Cup drought
+**Why it fails:** Austria's last WC was France 1998. Their 2026 qualification ends a 28-year absence (1998–2026), not 16 years.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Change answer to "28-year World Cup drought".
+
+## Austria — Chunk 3 (rows 2633–3241)
+
+### Row 2660 — Austria (easy) — FAIL: false premise
+**Q:** Which Austria manager's praised transformation led to a 2022 World Cup qualifying campaign?
+**Answer:** Ralf Rangnick
+**Why it fails:** Rangnick was appointed January 2022, AFTER the 2022 WC qualifying campaign ended (November 2021). He had no role in any "2022 WC qualifying campaign."
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Change to "Which Austria manager's praised transformation led to a 2026 World Cup qualifying campaign?"
+
+### Row 2664 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austria midfielder debuted in the 2014 World Cup qualifiers?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Sabitzer's first cap was March 29, 2014 (a friendly). Austria's 2014 WC qualifying ran 2012–2013, before his debut.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Change to "Which Austria midfielder made his senior debut in 2014?"
+
+### Row 2675 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austria midfielder was key in 2022 WC qualifiers, but not in 2018?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Sabitzer was also a key player in the 2018 WC qualifying campaign (he debuted in 2014 and was a regular by 2016). He was prominent in both qualifying campaigns.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Remove this row or rephrase to reflect Sabitzer's consistent presence across multiple campaigns.
+
+### Row 2677 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austria player became their all-time leading scorer before Euro 2024?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović broke Anton Polster's all-time record in October 2025 (4 goals vs San Marino), which is AFTER Euro 2024 (June/July 2024).
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "Which Austria player became their all-time leading scorer in 2025?"
+
+### Row 2683 — Austria (easy) — FAIL: false premise
+**Q:** Which Austria player has the most FIFA World Cup goals?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria last appeared at a WC in 1998, before Arnautović's international career. He has zero WC goals. Hans Krankl (4 goals in 1978) holds the real record.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove or rewrite entirely around WC qualifying goals instead.
+
+### Row 2692 — Austria (easy) — FAIL: false premise
+**Q:** Which Austria player scored a Euro 2024 winner, unlike his World Cup goal?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Austria has not competed at a World Cup since 1998. Sabitzer has no World Cup goal to contrast with.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Remove the "unlike his World Cup goal" clause entirely.
+
+### Row 2712 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austria player was their all-time leading scorer at Euro 2024?
+**Answer:** Marko Arnautović
+**Why it fails:** At Euro 2024 (June/July 2024), Polster's 44-goal record still stood. Arnautović broke it in October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…at the 2026 World Cup" or "…in 2025."
+
+### Row 2713 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austria player was their all-time leading scorer for the 2022 World Cup qualifiers?
+**Answer:** Marko Arnautović
+**Why it fails:** During the 2022 WC qualifying (2020–21), Polster still held the record. Arnautović broke it in October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…during the 2026 World Cup qualifiers."
+
+### Row 2715 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player, a Champions League winner with Bayern and Real Madrid, played at the 2022 World Cup stadium in Qatar?
+**Answer:** David Alaba
+**Why it fails:** Austria did not qualify for the 2022 World Cup; no Austrian player played at a 2022 WC stadium for Austria.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite as "…won the Champions League with both Bayern Munich and Real Madrid."
+
+### Row 2728 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian striker led their 2022 World Cup qualifying campaign as all-time top scorer?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović was NOT Austria's all-time top scorer during the 2022 WC qualifying (2020–21). Polster's 44-goal record stood until October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…2026 World Cup qualifying campaign as all-time top scorer."
+
+### Row 2731 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian 2022 World Cup squad member previously played for Red Bull Salzburg?
+**Answer:** Karim Onisiwo
+**Why it fails:** Austria did not qualify for the 2022 World Cup. There is no "Austrian 2022 World Cup squad."
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup squad" or "2022 World Cup qualifying squad."
+
+### Row 2734 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austrian attacker debuted in the 2022 FIFA World Cup qualifiers?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Baumgartner's international debut was November 2019, before the 2022 WC qualifying started.
+**Source:** https://en.wikipedia.org/wiki/Christoph_Baumgartner
+**Remedy:** Change to "…debuted in the 2022 Nations League?" or adjust the date.
+
+### Row 2738 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian attacker made his World Cup debut in 2022?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite around the 2026 WC.
+
+### Row 2740 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian attacker scored at the 2022 FIFA World Cup?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite around the 2026 WC.
+
+### Row 2743 — Austria (medium) — FAIL: false premise
+**Q:** Which Austrian attacker started versus France in the 2022 World Cup group stage?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria was not in the 2022 World Cup group stage.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 2750 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian attacker was a key starter like Portugal's Ronaldo at the 2022 World Cup?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 2753 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian attacker was in the 2022 World Cup squad?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup squad."
+
+### Row 2760 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian became their all-time top scorer during the 2022 World Cup qualifiers?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović did not break Polster's record during the 2022 WC qualifying (2020–21); the record fell in October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…2026 World Cup qualifiers."
+
+### Row 2762 — Austria (easy) — FAIL: broken question
+**Q:** Which Austrian Bundesliga club did not co-host Euro 2008?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Clubs do not "co-host" national tournaments — nations do. Additionally, Salzburg's Wals-Siezenheim stadium WAS used at Euro 2008, making Red Bull Salzburg the wrong answer even under a charitable reading.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2008
+**Remedy:** Remove entirely — the question premise is incoherent.
+
+### Row 2766 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club had players in Austria's 2022 FIFA World Cup squad?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria had no 2022 FIFA World Cup squad — they did not qualify.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2022 World Cup qualifying squad" or "2026 World Cup squad."
+
+### Row 2772 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club produced the most players for the 2022 FIFA World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** In the Austria context, this implies Austria had players at the 2022 WC — they did not qualify.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Reframe to the 2026 WC or specify "for all national teams at the 2022 WC."
+
+### Row 2776 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club provided the most players to Austria's 2018 World Cup squad?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2018 World Cup qualifying squad."
+
+### Row 2777 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club saw its player debut at the 2022 FIFA World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite around 2026 WC.
+
+### Row 2781 — Austria (medium) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club's feeder nation reached the 2022 World Cup knockout stage?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria (the feeder nation) did not qualify for the 2022 WC, let alone reach the knockout stage.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 2782 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club's player debuted for Austria at the 2018 FIFA World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite around the 2026 WC.
+
+### Row 2784 — Austria (easy) — FAIL: unverifiable/false
+**Q:** Which Austrian Bundesliga club's player scored a goal for Germany at the 2014 World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** No known Red Bull Salzburg alumnus scored for Germany at the 2014 World Cup. Germany's scorers came predominantly from Bayern Munich, Borussia Dortmund, etc.
+**Source:** https://en.wikipedia.org/wiki/Germany_at_the_2014_FIFA_World_Cup
+**Remedy:** Remove — claim is not verifiable and appears false.
+
+### Row 2786 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club's players helped Austria qualify for the 2022 World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "…qualify for the 2026 World Cup."
+
+### Row 2787 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian Bundesliga club's players starred for Austria at the 2018 World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 2794 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian club had the most players at the 2022 FIFA World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** In the Austria context, this implies Austria participated in the 2022 WC — they did not qualify.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Reframe to 2026 WC or specify "among all nations at the 2022 WC."
+
+### Row 2804 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian club produced most players in Austria's 2022 World Cup squad?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup squad."
+
+### Row 2809 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian club's academy graduates helped Austria qualify for the 2022 World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup."
+
+### Row 2811 — Austria (easy) — FAIL: unverifiable/false
+**Q:** Which Austrian club's academy produced stars for Germany's 2014 World Cup team?
+**Answer:** Red Bull Salzburg
+**Why it fails:** No confirmed Red Bull Salzburg alumnus featured for Germany at the 2014 WC. The claim is unverifiable and appears false.
+**Source:** https://en.wikipedia.org/wiki/Germany_at_the_2014_FIFA_World_Cup
+**Remedy:** Remove — claim appears baseless.
+
+### Row 2814 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian club's players qualified for the 2022 FIFA World Cup?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 FIFA World Cup."
+
+### Row 2815 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian club's talent pipeline contributed players to Austria's 2022 FIFA World Cup squad?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 FIFA World Cup squad."
+
+### Row 2820 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian club's youth academy produced Erling Haaland before his 2022 World Cup debut?
+**Answer:** Red Bull Salzburg
+**Why it fails:** Norway did not qualify for the 2022 World Cup. Haaland did not have a "2022 World Cup debut."
+**Source:** https://en.wikipedia.org/wiki/Norway_at_the_2022_FIFA_World_Cup
+**Remedy:** Change to "…before his 2026 World Cup debut" or "…before his move to Borussia Dortmund."
+
+### Row 2828 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian defender at the 2022 World Cup had over 100 caps?
+**Answer:** David Alaba
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "at the 2022 World Cup" — Alaba does have 100+ caps, just not at that tournament.
+
+### Row 2829 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian defender at the 2022 World Cup has won the Champions League with Bayern Munich and Real Madrid?
+**Answer:** David Alaba
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "at the 2022 World Cup."
+
+### Row 2832 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian defender in the 2022 World Cup squad won the Champions League with both Bayern Munich and Real Madrid?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "2022 World Cup squad" framing.
+
+### Row 2833 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian defender was in the 2022 World Cup squad after winning the Champions League with Real Madrid?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "2022 World Cup squad" framing.
+
+### Row 2834 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian defender was selected for the 2022 World Cup squad due to his Champions League wins?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "2022 World Cup squad" framing.
+
+### Row 2838 — Austria (easy) — FAIL: wrong timeline
+**Q:** Which Austrian defender won the Champions League with Bayern and Real before EURO 2020?
+**Answer:** David Alaba
+**Why it fails:** Alaba won the UCL with Real Madrid in May 2022, which is AFTER Euro 2020 (held June–July 2021). He only won with Bayern (2013, 2020) before Euro 2020, not with Real.
+**Source:** https://en.wikipedia.org/wiki/David_Alaba
+**Remedy:** Change to "…won the Champions League with two different clubs?" or remove the "before EURO 2020" clause.
+
+### Row 2848 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian forward became their all-time top scorer during 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović broke Polster's record in October 2025, not during the 2022 WC qualifying (2020–21).
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…during 2026 World Cup qualifying."
+
+### Row 2851 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austrian forward, a Red Bull Salzburg product, started the 2022 World Cup qualifier against Scotland?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović is NOT a Red Bull Salzburg product. His career began at Floridsdorfer AC / Kapfenberger SV, then Twente (Netherlands) at age 16.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Remove "a Red Bull Salzburg product."
+
+### Row 2857 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austrian international moved from Red Bull Salzburg to Bayern Munich in 2012?
+**Answer:** David Alaba
+**Why it fails:** Alaba never played for Red Bull Salzburg. He joined Bayern Munich's youth academy from Vienna clubs (FK Austria Wien youth) in 2008.
+**Source:** https://en.wikipedia.org/wiki/David_Alaba
+**Remedy:** Remove "from Red Bull Salzburg" — Alaba moved from FK Austria Wien youth to Bayern Munich.
+
+### Row 2859 — Austria (easy) — FAIL: wrong club/era
+**Q:** Which Austrian key midfielder played for Borussia Dortmund during 2022 World Cup qualifiers?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Sabitzer was at Bayern Munich during the 2022 WC qualifying campaign (2020–21). He joined Borussia Dortmund in January 2024.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Change to "…during Euro 2024" (when he was indeed at Dortmund).
+
+### Row 2869 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian manager implemented gegenpressing after the 2022 World Cup?
+**Answer:** Ralf Rangnick
+**Why it fails:** Rangnick implemented his gegenpressing system from the start of his tenure (January 2022), well BEFORE the 2022 World Cup (November–December 2022), not after it.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Change to "…before the 2022 World Cup" or "…ahead of the 2026 World Cup."
+
+### Row 2871 — Austria (easy) — FAIL: wrong manager
+**Q:** Which Austrian manager implemented pressing football during 2022 World Cup qualifying?
+**Answer:** Ralf Rangnick
+**Why it fails:** The 2022 WC qualifying ran September 2020 – November 2021, entirely under Franco Foda. Rangnick was only appointed in January 2022, after qualifying ended.
+**Source:** https://en.wikipedia.org/wiki/Franco_Foda
+**Remedy:** Change answer to Franco Foda, or change the question to the 2026 WC qualifying campaign.
+
+### Row 2916 — Austria (easy) — FAIL: wrong club/era
+**Q:** Which Austrian midfielder at Borussia Dortmund played in 2022 World Cup qualifiers?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Sabitzer was at RB Leipzig (until August 2021) then Bayern Munich during the 2022 WC qualifying campaign. He joined Dortmund in January 2024.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Change Borussia Dortmund to Bayern Munich/RB Leipzig, or change the tournament to Euro 2024.
+
+### Row 2917 — Austria (easy) — FAIL: wrong club/era
+**Q:** Which Austrian midfielder at the 2022 World Cup qualifiers plays for Borussia Dortmund?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Same as row 2916 — Sabitzer was not at Dortmund during 2022 WC qualifying.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Change club to RB Leipzig / Bayern Munich for that period.
+
+### Row 2918 — Austria (easy) — FAIL: wrong year
+**Q:** Which Austrian midfielder debuted for the national team in 2012?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Sabitzer's first Austria cap was March 29, 2014 (friendly vs Slovakia), not 2012.
+**Source:** https://en.wikipedia.org/wiki/Marcel_Sabitzer
+**Remedy:** Change 2012 to 2014.
+
+### Row 2924 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian midfielder made his World Cup debut in 2022?
+**Answer:** Konrad Laimer
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely or rewrite for the 2026 WC.
+
+### Row 2931 — Austria (easy) — FAIL: wrong opponent
+**Q:** Which Austrian midfielder scored a crucial goal against Ukraine in 2022 World Cup qualifying?
+**Answer:** Konrad Laimer
+**Why it fails:** Ukraine was NOT in Austria's 2022 WC qualifying group (Group F: Denmark, Scotland, Israel, Faroe Islands, Moldova). Austria never played Ukraine in this campaign.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change Ukraine to Scotland, Denmark, or Israel (their actual group opponents).
+
+### Row 2935 — Austria (easy) — FAIL: false venue
+**Q:** Which Austrian midfielder started the 2022 World Cup qualifier at Wembley Stadium?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Austria never played a 2022 WC qualifier at Wembley. Wembley hosts England home games; Austria and England were in different qualifying groups.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Remove or change venue to Ernst-Happel-Stadion.
+
+### Row 2939 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian midfielder with over 70 caps was in the 2022 FIFA World Cup squad?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Austria had no 2022 FIFA World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2022 World Cup qualifying squad."
+
+### Row 2944 — Austria (easy) — FAIL: wrong club/false premise
+**Q:** Which Austrian midfielder's Bayern Munich faced Austria in 2022 World Cup qualifiers?
+**Answer:** Konrad Laimer
+**Why it fails:** Laimer was at RB Leipzig during the 2022 WC qualifying (he joined Bayern Munich in 2023). Additionally, clubs don't play national team qualifiers — the premise conflates club football with international football.
+**Source:** https://en.wikipedia.org/wiki/Konrad_Laimer
+**Remedy:** Remove entirely — the question is incoherent.
+
+### Row 2951 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player at the 2022 World Cup has Champions League titles with Bayern and Real?
+**Answer:** David Alaba
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "at the 2022 World Cup."
+
+### Row 2953 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player at the 2022 World Cup has won the Champions League with two clubs?
+**Answer:** David Alaba
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "at the 2022 World Cup."
+
+### Row 2954 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player at the 2022 World Cup was not based in the Bundesliga?
+**Answer:** David Alaba
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "at the 2022 World Cup."
+
+### Row 2955 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian player became his nation's all-time top scorer during 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović broke Polster's record in October 2025, not during 2022 WC qualifying (2020–21).
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…during 2026 World Cup qualifying."
+
+### Row 2956 — Austria (easy) — FAIL: wrong year
+**Q:** Which Austrian player became their all-time top scorer in 2023?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović broke Polster's record in October 2025, not in 2023.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change 2023 to 2025.
+
+### Row 2957 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player debuted after Austria co-hosted Euro 2008, at the 2014 World Cup?
+**Answer:** Kevin Wimmer
+**Why it fails:** Austria did not qualify for the 2014 World Cup. No Austrian player could have debuted "at the 2014 World Cup."
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "at the 2014 World Cup" framing.
+
+### Row 2958 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player developed at Red Bull Salzburg played at the 2018 FIFA World Cup?
+**Answer:** Konrad Laimer
+**Why it fails:** Austria did not qualify for the 2018 World Cup. Laimer played for RB Leipzig in 2018, not Salzburg.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely or rewrite around a friendly/qualifier.
+
+### Row 2960 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player from Red Bull Salzburg debuted at the 2018 FIFA World Cup?
+**Answer:** Xaver Schlager
+**Why it fails:** Austria did not qualify for the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 2961 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player from Red Bull Salzburg debuted at the 2022 FIFA World Cup?
+**Answer:** Nicolas Seiwald
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely or rewrite around the 2026 WC.
+
+### Row 2974 — Austria (easy) — FAIL: non-unique answer
+**Q:** Which Austrian player missed the 2010, 2014, 2018, and 2022 FIFA World Cups?
+**Answer:** Marko Arnautović
+**Why it fails:** Every Austrian player of that era (Alaba, Sabitzer, Baumgartlinger, etc.) missed those same four World Cups — Austria as a team did not qualify. The answer is not unique to Arnautović.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove or rewrite to name something distinctly Arnautović (e.g., record scorer, appearance milestones).
+
+### Row 2975 — Austria (easy) — FAIL: wrong player
+**Q:** Which Austrian player reached 100 caps during 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** It was David Alaba who earned his 100th cap in a 2022 WC qualifier (confirmed in pool row 2679 as a PASS). Arnautović's 100th cap timing needs separate verification.
+**Source:** https://en.wikipedia.org/wiki/David_Alaba
+**Remedy:** Change answer to David Alaba, or verify Arnautović's 100th cap date independently.
+
+### Row 2980 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player scored in a 2022 World Cup qualifier to extend his national team goal record?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović was NOT the all-time record holder during the 2022 WC qualifying — Polster held the record until October 2025. He could not "extend his record" since the record was not yet his.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…scored in a 2026 World Cup qualifier to extend his national team goal record."
+
+### Row 2981 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player scored in the 2014 World Cup to join his nation's scoring leaders?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria did not qualify for the 2014 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 2983 — Austria (easy) — FAIL: wrong match
+**Q:** Which Austrian player scored in their Euro 2008 opening match?
+**Answer:** Ivica Vastic
+**Why it fails:** Austria's opening match at Euro 2008 was June 8 vs Croatia (lost 0–1) — they scored ZERO goals. Vastic scored a penalty in Austria's SECOND group match vs Poland (June 12, 1–1 draw).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2008_Group_B
+**Remedy:** Change "opening match" to "second group match vs Poland."
+
+### Row 2988 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austrian player scored the winning goal against North Macedonia at Euro 2020?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović's goal vs North Macedonia was DISALLOWED for offside. Austria won 3–1 with goals from Lainer, Alaba, and Gregoritsch; Arnautović did not score the winner.
+**Source:** https://en.wikipedia.org/wiki/Austria_v_North_Macedonia_(UEFA_Euro_2020)
+**Remedy:** Change to Lainer (1st goal), Alaba (2nd), or Gregoritsch (3rd/winner). Remove Arnautović.
+
+### Row 2990 — Austria (easy) — FAIL: wrong scorer
+**Q:** Which Austrian player scored twice to beat Netherlands at Euro 2024?
+**Answer:** Marko Arnautovic
+**Why it fails:** It was Marcel Sabitzer who scored twice (including the winner). Arnautović scored once or not at all in that match.
+**Source:** https://en.wikipedia.org/wiki/Netherlands_v_Austria_(UEFA_Euro_2024)
+**Remedy:** Change answer to Marcel Sabitzer.
+
+### Row 2994 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian player was his nation's all-time top scorer at the 2022 World Cup qualifiers?
+**Answer:** Marko Arnautović
+**Why it fails:** Polster (44 goals) held the record throughout the 2022 WC qualifying. Arnautović broke it in October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…at the 2026 World Cup qualifiers."
+
+### Row 2997 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player was NOT their nation's top scorer at the 2022 FIFA World Cup?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria was not at the 2022 FIFA World Cup; the premise of any Austrian "top scorer at the 2022 WC" is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely.
+
+### Row 3000 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player was the team's all-time top scorer at the 2022 FIFA World Cup?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite around the 2026 WC.
+
+### Row 3001 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian player was the team's all-time top scorer during their 2022 World Cup qualifying campaign?
+**Answer:** Marko Arnautović
+**Why it fails:** Polster's record stood through the 2022 WC qualifying. Arnautović broke it in October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…2026 World Cup qualifying campaign."
+
+### Row 3007 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player, active in the 2014 World Cup, holds the national team's all-time scoring record?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria was not at the 2014 World Cup. No Austrian player was "active in the 2014 World Cup" for Austria.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "active in the 2014 World Cup" clause.
+
+### Row 3008 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player, from their 2022 World Cup squad, won the Champions League with Bayern Munich and Real Madrid?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "2022 World Cup squad" framing.
+
+### Row 3009 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian player, their all-time top scorer, scored in a 2022 World Cup qualifier?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović was NOT the all-time top scorer during 2022 WC qualifying — Polster held the record until October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…scored in a 2026 World Cup qualifier."
+
+### Row 3011 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player's Champions League success aided his 2022 World Cup selection?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup selection."
+
+### Row 3012 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player's Champions League wins enabled his 2022 World Cup squad selection?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 World Cup squad.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup squad selection."
+
+### Row 3013 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian player's elite club pedigree led to his 2022 World Cup tactical deployment as a midfielder?
+**Answer:** David Alaba
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove "2022 World Cup" framing.
+
+### Row 3015 — Austria (medium) — FAIL: false premise + wrong timing
+**Q:** Which Austrian player's scoring record was key to their 2022 World Cup qualification?
+**Answer:** Marko Arnautović
+**Why it fails:** (1) Austria did not qualify for the 2022 WC. (2) Arnautović was not the all-time scoring record holder during 2022 WC qualifying.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "2026 World Cup qualification."
+
+### Row 3016 — Austria (easy) — FAIL: non-unique/invalid answer
+**Q:** Which Austrian player's World Cup debut will end a 28-year absence in 2026?
+**Answer:** Any current Austrian player
+**Why it fails:** "Any current Austrian player" is not a specific, unique answer — it's a generic statement applicable to the entire squad.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Name a specific player (e.g., Christoph Baumgartner, Konrad Laimer) or remove.
+
+### Row 3028 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian stadium hosted the 2022 World Cup qualifying playoff final?
+**Answer:** Ernst-Happel-Stadion
+**Why it fails:** Austria was NOT in any 2022 WC qualifying playoff. They finished low in Group F and did not advance to the playoffs.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Remove entirely — the event described never happened.
+
+### Row 3047 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian striker became the nation's all-time top scorer during the 2018 World Cup qualifying cycle?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović did not break Polster's 44-goal record during the 2018 WC qualifying (2016–17). The record fell in October 2025.
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…during the 2026 World Cup qualifying cycle."
+
+### Row 3048 — Austria (easy) — FAIL: wrong fact
+**Q:** Which Austrian striker had more international goals than Sweden's Zlatan Ibrahimović by the 2022 World Cup?
+**Answer:** Marko Arnautović
+**Why it fails:** Ibrahimović finished with 62 goals for Sweden. By the 2022 WC (late 2022), Arnautović had approximately 32–34 goals. Arnautović had far FEWER, not more.
+**Source:** https://en.wikipedia.org/wiki/Zlatan_Ibrahimovi%C4%87
+**Remedy:** Remove entirely — the claim is factually false.
+
+### Row 3050 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian striker was in their 2018 World Cup squad?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria did not qualify for the 2018 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2018 World Cup qualifying squad."
+
+### Row 3051 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian striker was included in the 2022 FIFA World Cup squad?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria did not qualify for the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2022 World Cup qualifying squad" or "2026 World Cup squad."
+
+### Row 3052 — Austria (easy) — FAIL: wrong timing
+**Q:** Which Austrian striker, their all-time top scorer, played in 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** Arnautović was NOT the all-time top scorer during 2022 WC qualifying (Polster held the record until October 2025).
+**Source:** https://en.wikipedia.org/wiki/Marko_Arnautovi%C4%87
+**Remedy:** Change to "…their all-time top scorer, played in 2026 World Cup qualifying."
+
+### Row 3053 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian striker's goals secured their 2022 World Cup playoff spot?
+**Answer:** Marko Arnautović
+**Why it fails:** Austria did NOT reach a 2022 WC qualifying playoff. They finished 5th in Group F (below Denmark, Scotland, Israel, and Faroe Islands in the final standings), far below the playoff threshold.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Remove entirely — the event described never occurred.
+
+### Row 3064 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian World Cup 2022 player developed at Red Bull Salzburg?
+**Answer:** Karim Onisiwo
+**Why it fails:** Austria was not at the 2022 World Cup. There are no "Austrian World Cup 2022 players."
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 World Cup squad."
+
+### Row 3071 — Austria (easy) — FAIL: false premise
+**Q:** Which Austrian, a Red Bull Salzburg product, debuted in the 2022 FIFA World Cup?
+**Answer:** Konrad Laimer
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove entirely or rewrite for the 2026 WC.
+
+### Row 3081 — Austria (easy) — FAIL: false premise
+**Q:** Which key Austrian attacker debuted at the 2022 FIFA World Cup?
+**Answer:** Christoph Baumgartner
+**Why it fails:** Austria was not at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Remove or rewrite for the 2026 WC.
+
+### Row 3091 — Austria (medium) — FAIL: wrong name
+**Q:** Which manager led Austria to their highest FIFA ranking before the 2018 World Cup?
+**Answer:** Franz Koller
+**Why it fails:** No manager named "Franz Koller" has ever managed Austria. The correct answer is Marcel Koller (who managed Austria 2011–2017 and oversaw their peak ranking of 10th).
+**Source:** https://en.wikipedia.org/wiki/Marcel_Koller
+**Remedy:** Change answer to Marcel Koller.
+
+### Row 3150 — Austria (easy) — FAIL: false premise
+**Q:** Which stadium hosted Austria's 2022 World Cup qualifying playoff final?
+**Answer:** Ernst-Happel-Stadion
+**Why it fails:** Austria was not in any 2022 WC qualifying playoff. They finished low in Group F and did not reach the playoff stage.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Remove entirely.
+
+### Row 3181 — Austria (medium) — FAIL: self-referential answer
+**Q:** Which UEFA nation, like Austria, peaked at 10th in the FIFA rankings between 2006-2026?
+**Answer:** Austria
+**Why it fails:** The question asks which nation "like Austria" matches this achievement, but the answer is Austria itself — a self-referential, trivially wrong structure.
+**Source:** https://www.fifa.com/fifa-world-ranking/
+**Remedy:** Replace Austria in the answer with the actual other nation that peaked at 10th (e.g., Denmark, Switzerland), or rewrite the question.
+
+### Row 3199 — Austria (medium) — FAIL: false premise
+**Q:** Which World Cup did Austria qualify for after co-hosting Euro 2008?
+**Answer:** 2010 World Cup
+**Why it fails:** Austria did NOT qualify for the 2010 World Cup. They have not qualified for any WC since 1998 (France) — missing 2002, 2006, 2010, 2014, 2018, and 2022 before qualifying for 2026.
+**Source:** https://en.wikipedia.org/wiki/Austria_national_football_team
+**Remedy:** Remove entirely — the event described never occurred.
+
+### Row 3202 — Austria (hard) — FAIL: false premise
+**Q:** Which World Cup did Austria's David Alaba miss due to injury?
+**Answer:** 2022 FIFA World Cup
+**Why it fails:** Austria did not qualify for the 2022 World Cup. While Alaba was injured during the qualifying period, Austria's failure was a team qualification failure, not Alaba's personal injury absence from a tournament.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Rewrite as "Which World Cup qualifying campaign did Alaba miss key matches in due to injury?"
+
+### Row 3203 — Austria (hard) — FAIL: wrong World Cup cycle
+**Q:** Which World Cup qualifying cycle was concurrent with Austria's Euro 2016 qualification under Marcel Koller?
+**Answer:** 2014 World Cup cycle
+**Why it fails:** Austria's Euro 2016 qualifying ran September 2014 – November 2015. The 2014 WC qualifying cycle had already ended in 2013. The cycle concurrent with Euro 2016 qualifying was the early stages of the 2018 WC cycle (2014–2018 period).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016_qualifying
+**Remedy:** Change answer to "2018 World Cup cycle."
+
+### Row 3222 — Austria (easy) — FAIL: wrong timing
+**Q:** Who transformed Austrian football before their 2022 World Cup qualifiers?
+**Answer:** Ralf Rangnick
+**Why it fails:** Rangnick was appointed January 2022. The 2022 WC qualifying campaign ended November 2021 — he was not involved in any 2022 WC qualifier.
+**Source:** https://en.wikipedia.org/wiki/Ralf_Rangnick
+**Remedy:** Change to "…before their 2026 World Cup qualifiers."
+
+### Row 3224 — Austria (easy) — FAIL: false premise
+**Q:** Who was Austria's star defender selected for the 2022 FIFA World Cup squad?
+**Answer:** David Alaba
+**Why it fails:** Austria had no 2022 FIFA World Cup squad — they did not qualify.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 FIFA World Cup squad."
+
+### Row 3237 — Austria (easy) — FAIL: false premise
+**Q:** Why did Austria's 2022 FIFA World Cup squad have many overseas players?
+**Answer:** Austrian Bundesliga exports talent
+**Why it fails:** Austria had no 2022 FIFA World Cup squad — they did not qualify.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Change to "2026 FIFA World Cup squad."
+
+### Row 2934 — Austria (easy) — FAIL: wrong scorer
+**Q:** Which Austrian midfielder scored more goals in 2022 World Cup qualifying: Marcel Sabitzer or Christoph Baumgartner?
+**Answer:** Marcel Sabitzer
+**Why it fails:** Baumgartner scored 4 goals (Austria's top scorer in the 2022 WC qualifying campaign); Sabitzer scored 2. Baumgartner scored MORE, not Sabitzer.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change answer to Christoph Baumgartner.
+
+### Row 2986 — Austria (easy) — FAIL: wrong top scorer
+**Q:** Which Austrian player scored the most goals in 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** Christoph Baumgartner scored 4 goals in the 2022 WC qualifying campaign — the most of any Austrian player. Arnautović scored fewer than Baumgartner in that specific campaign.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change answer to Christoph Baumgartner. (For all-time WC qualifying goals across all campaigns, Arnautović leads — but the question asks about the 2022 campaign.)
+
+### Row 2996 — Austria (easy) — FAIL: wrong top scorer
+**Q:** Which Austrian player was his team's top scorer in 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** Baumgartner scored 4 goals in the 2022 WC qualifying campaign — more than Arnautović. Baumgartner was Austria's top scorer in that campaign.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change answer to Christoph Baumgartner.
+
+### Row 2998 — Austria (easy) — FAIL: wrong top scorer
+**Q:** Which Austrian player was the nation's top scorer during 2022 World Cup qualifying?
+**Answer:** Marko Arnautović
+**Why it fails:** Baumgartner (4 goals) was the top scorer, not Arnautović, in the 2022 WC qualifying campaign.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change answer to Christoph Baumgartner.
+
+### Row 3003 — Austria (easy) — FAIL: wrong top scorer
+**Q:** Which Austrian player was their top scorer during 2022 World Cup qualifiers?
+**Answer:** Marko Arnautović
+**Why it fails:** Same as rows 2986/2996/2998 — Baumgartner (4) outscored Arnautović in the 2022 campaign.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change answer to Christoph Baumgartner.
+
+### Row 3004 — Austria (easy) — FAIL: wrong top scorer
+**Q:** Which Austrian player was their top scorer in the 2022 World Cup qualifiers?
+**Answer:** Marko Arnautović
+**Why it fails:** Same — Baumgartner scored 4 goals (most) vs Arnautović's fewer goals in the 2022 WC qualifying campaign.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
+**Remedy:** Change answer to Christoph Baumgartner.
