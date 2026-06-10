@@ -214,7 +214,19 @@ so "scored a goal/penalty save/which player scored a penalty" rows fail or are n
 **0 in the QF**; Italy group goal was **Alcaraz** not Santa Cruz; Santa Cruz was at **Man City** in 2010 not
 Olimpia; Almirón now at **Atlanta United** not Newcastle; Gómez had **~60-65 caps in 2022** not 80+; many
 non-unique CONMEBOL "which other nation…" comparisons; 2011 final brace was **Forlán** not Suárez.)
-The remaining countries are **not started** (§4). Next sequential not-started country: **Cameroon** (rows 9574–10745).
+**✅ Senegal is COMPLETE** (rows 42928–43781): **596 ship-ready / 65 failed-liveness**. (Senegal **DID** qualify for
+2026 — top of CAF Group B, **sealed Oct 2025 under Pape Thiaw**, NOT Cissé and NOT in 2026 — so "Cissé secured 2026 /
+qualified in 2026" rows fail, and Morocco qualified before Senegal. Fail clusters: **Excel score-corruption** (`02-Jan`=2-1,
+`04-Feb`=4-2); the 2022 WC playoff v Egypt was **1-1 agg, won 3-1 on penalties** so "beat Egypt on aggregate" rows fail;
+**Mané missed WC 2022** (injury, then at Bayern; now Al-Nassr) so "Mané scored/starred for Liverpool at the 2022 WC" rows
+fail; **no CAF Awards in 2020/21** so Mendy's "CAF GK of the Year 2021 **and** 2022 / two-time" is wrong (only 2022 —
+he is uniquely the answer where the question just asks *which* GK, so those pass); **Sarr debuted 2016** (WC debut 2018,
+never Bundesliga/Wolfsburg); **Koulibaly debuted 2015** not 2013; **Ibrahima Konaté plays for France**, not Senegal;
+Mané did **not** win the 2023 AFCON Golden Boot; the **2023 AFCON was hosted by Côte d'Ivoire** (Senegal didn't host,
+Stade Abdoulaye Wade wasn't a venue); peak FIFA rank was **18th as of 2022** [later 17th, now 14th] so the time-bounded
+"18th" rows pass; many non-unique scorer/qualifier comparisons — **Wagué** also scored v Japan 2018, all four CAF
+distractors qualified for 2010/2018, Egypt also reached the 2017 QF, and Koulibaly also plays in Saudi Arabia.)
+**Batch 1 is now COMPLETE** — all 38 countries liveness-checked, including **Switzerland** (rows 43783–44755): 566 ship-ready / 266 failed-liveness (see §2/§4).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -250,24 +262,24 @@ The remaining countries are **not started** (§4). Next sequential not-started c
   `QA_TC06_LIVE.md`.
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
-- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **25227** ship-ready.
-- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3956** dangerous.
-- **Total ship-ready so far (both methods):** 25359 (132 backfill rows 2–230 + 25227 new method).
-- **🎯 GRAND TOTAL ship-ready (all three tracks):** **32414** =
-  batch 1 `QA_PASSED_ALL.md` **25359** + batch 2 `QA_PASSED_ALL_b2.md` **6696** +
-  cleaned `QA_PASSED_ALL_cleaned.md` **359**. *Batch-1 liveness: 34 countries complete (incl. Morocco, Netherlands,
-  Jamaica, New Zealand, Nigeria, Tunisia, USA). Batch-2 liveness IN PROGRESS: Algeria (269/159) + Argentina (662/167) +
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **27731** ship-ready.
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **4582** dangerous.
+- **Total ship-ready so far (both methods):** 27863 (132 backfill rows 2–230 + 27731 new method).
+- **🎯 GRAND TOTAL ship-ready (all three tracks):** **34918** =
+  batch 1 `QA_PASSED_ALL.md` **27863** + batch 2 `QA_PASSED_ALL_b2.md` **6696** +
+  cleaned `QA_PASSED_ALL_cleaned.md` **359**. *Batch-1 liveness: **38 countries complete — ALL batch-1 countries DONE** (incl. Switzerland, Senegal, Colombia, Paraguay, Morocco, Netherlands,
+  Jamaica, New Zealand, Nigeria, Tunisia, USA); **Switzerland COMPLETE** (rows 43783–44755): 566 ship-ready / 266 failed-liveness (Row 43875 moved PASS→FAIL). Batch-2 liveness IN PROGRESS: Algeria (269/159) + Argentina (662/167) +
   Belgium (618/170) + Bosnia and Herzegovina (948/125) + Canada (1060/69) + Colombia (607/168) + Costa Rica (792/139) + Czechia (468/234) + DR Congo (263/82) + Ecuador (481/143) + Egypt (528/155) = 6696 ship-ready / 1611 dangerous (11 of 48). Cleaned
   liveness **COMPLETE** (359 ship-ready / 34 dangerous of 393). Pools: batch-2 39,321; cleaned 393. Re-sum every
   session — count `### Row`/`- **Row` entries in each file.*
-- **34 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
+- **38 countries COMPLETE (all batch-1 countries)** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
   Algeria 554/176 · Argentina 562/110 · Australia 714/121 · Austria 626/135 · Belgium 1135/192 ·
-  Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 ·
+  Brazil 1346/218 · Cabo Verde 623/73 · Cameroon 681/57 · Canada 962/41 · Chile 769/191 · Colombia 986/146 ·
   Costa Rica 654/80 · Côte d'Ivoire 463/79 · Croatia 1034/154 · Denmark 859/182 · DR Congo 459/127 ·
   Ecuador 725/57 · Egypt 532/104 · England 1228/87 · France 1237/176 · Germany 1291/65 ·
   Ghana 783/72 · Iran 775/151 · Iraq 425/112 · Italy 1061/225 · Jamaica 381/43 · Japan 935/62 ·
   Jordan 691/159 · Mexico 901/173 · Morocco 460/98 · Netherlands 761/117 · New Zealand 398/166 ·
-  Nigeria 91/2 · Tunisia 500/73 · USA 611/78.
+  Nigeria 91/2 · Paraguay 356/149 · Senegal 596/65 · Switzerland 566/266 · Tunisia 500/73 · USA 611/78.
 
 ## 4. Batch-1 per-country status (THE batch-1 coordination table — batch 2 is in §9(d))
 
@@ -286,8 +298,6 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Cameroon | 9574–10745 | 1172 | 738 | ✅ **COMPLETE** (row 10745) — 681 PASS / 57 FAIL |
 | Canada | 10746–12428 | 1683 | 1003 | ✅ **COMPLETE** (row 12428) — 962 PASS / 41 FAIL |
 | Chile | 12429–13847 | 1419 | 960 | ✅ **COMPLETE** (row 13845) — 769 PASS / 191 FAIL |
-| Colombia | 13848–15527 | 1680 | 1132 | ⬜ not started |
-| Chile | 12429–13847 | 1419 | 960 | ✅ **COMPLETE** (row 13845) — 769 pass-all / 191 fail-liveness |
 | Colombia | 13848–15527 | 1680 | 1132 | ✅ **COMPLETE** (row 15527) — 986 pass-all / 146 fail-liveness |
 | Costa Rica | 15528–16571 | 1044 | 734 | ✅ **COMPLETE** (row 16571) — 654 PASS / 80 FAIL |
 | Côte d'Ivoire | 16572–17486 | 915 | 542 | ✅ **COMPLETE** (row 17485) — 463 PASS / 79 FAIL |
@@ -312,8 +322,8 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | New Zealand | 41274–42086 | 813 | 564 | ✅ **COMPLETE** (row 42086) — 398 PASS / 166 FAIL |
 | Nigeria | 42087–42203 | 117 | 93 | ✅ **COMPLETE** (row 42203) — 91 PASS / 2 FAIL |
 | Paraguay | 42204–42927 | 724 | 505 | ✅ **COMPLETE** (row 42923) — 356 pass-all / 149 fail-liveness |
-| Senegal | 42928–43782 | 855 | 661 | ⬜ not started |
-| Switzerland | 43783–44756 | 974 | 832 | ⬜ not started |
+| Senegal | 42928–43782 | 855 | 661 | ✅ **COMPLETE** (row 43781) — 596 PASS / 65 FAIL (key findings in §2) |
+| Switzerland | 43783–44756 | 974 | 832 | ✅ **COMPLETE** (row 44755) — 566 PASS / 266 FAIL (832 pool rows). Key findings: peak FIFA rank is 3rd (1993) not "4th in 2018"; Euro 2016 was a R16 run (not a group exit); 2022 was R16 (not a group exit / QF); Euro 2024 QF was 1-1 (England 5-3 pens) not "2-1"; Gavranović (not Seferović) scored the 90' France equaliser; recurring stale clubs/caps (Xhaka ~113 at 2022 not 120+, Arsenal not Leverkusen in 2022) and non-unique "qualified for 2026 / since 2014" questions |
 | Tunisia | 44757–45514 | 758 | 573 | ✅ **COMPLETE** (row 45514) — 500 PASS / 73 FAIL |
 | USA | 45515–46518 | 1004 | 689 | ✅ **COMPLETE** (row 46518) — 611 PASS / 78 FAIL |
 

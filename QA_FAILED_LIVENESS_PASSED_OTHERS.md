@@ -14,7 +14,7 @@ conservatively when a claim can't be confirmed from reliable sources.
 
 Cursor lives in `QA_TC06_LIVE.md`.
 
-Total failed-liveness-passed-others so far: **4251** (new method 231+, 36 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Colombia 146 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Jamaica 43 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117 · New Zealand 166 · Nigeria 2 · Paraguay 149 · Tunisia 73 · USA 78)
+Total failed-liveness-passed-others so far: **4582** (new method 231+, 38 COMPLETE countries — Algeria 176 · Argentina 110 · Australia 121 · Austria 135 · Belgium 192 · Brazil 218 · Cabo Verde 73 · Cameroon 57 · Canada 41 · Chile 191 · Colombia 146 · Costa Rica 80 · Côte d'Ivoire 79 · Croatia 154 · Denmark 182 · DR Congo 127 · Ecuador 57 · Egypt 104 · England 87 · France 176 · Germany 65 · Ghana 72 · Iran 151 · Iraq 112 · Italy 225 · Jamaica 43 · Japan 62 · Jordan 159 · Mexico 173 · Morocco 98 · Netherlands 117 · New Zealand 166 · Nigeria 2 · Paraguay 149 · Senegal 65 · Switzerland 266 · Tunisia 73 · USA 78). Switzerland COMPLETE (rows 43783–44755): 566 ship-ready / 266 failed-liveness.
 
 ---
 
@@ -25117,3 +25117,1709 @@ Recurring Iraq defect clusters (112 fails of 537 QA_PASSED candidates):
 - "Which player was in Nigeria's 2018 World Cup group-stage squad? → Ahmed Musa" lists **Ighalo, Iheanacho and Ndidi** as distractors, but **all three also made the final 23**. Three of the four options are correct.
 **Source:** https://en.wikipedia.org/wiki/Nigeria_at_the_2018_FIFA_World_Cup
 **Remedy:** Replace the distractors with players who were NOT in the 2018 squad.
+
+## Switzerland batch rows 43783–43830 — 22 FAIL
+
+### Row 43783 — Switzerland (hard) — FAIL: answer & explanation wrong — Switzerland's highest FIFA ranking is 3rd (Aug 1993), not 4th in 2018
+- Q claims Switzerland reached 4th in the FIFA rankings in 2018; their all-time peak is **3rd (Aug 1993)** under Hodgson — never 4th, and not a peak in 2018.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Rewrite to the real peak: 3rd, in 1993.
+
+### Row 43784 — Switzerland (hard) — FAIL: explanation wrong — Euro 2024 QF was 1-1 (England won 5-3 on pens), not 'lost 2-1'
+- Answer 'Euro 2024' is correct (they reached the QF), but the explanation says 'losing 2-1 to England'. The QF was **1-1 a.e.t.; England won 5-3 on penalties**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation score to 1-1 (England 5-3 pens).
+
+### Row 43785 — Switzerland (hard) — FAIL: false premise — Switzerland reached the R16 at Euro 2016, not a 'group stage exit'
+- Premised on a 'Euro 2016 group stage exit'. Switzerland **reached the Round of 16** (1-1 v Poland, lost 4-5 pens).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 'group stage exit' premise.
+
+### Row 43787 — Switzerland (hard) — FAIL: false premise — Switzerland reached the R16 at Euro 2016
+- Same false premise ('exiting the 2016 Euros in the group stage'). They reached the **R16** at Euro 2016.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 'group stage' premise.
+
+### Row 43790 — Switzerland (easy) — FAIL: answer wrong — Switzerland reached the Round of 16 at Euro 2016 (an option), not the group stage
+- 'At Euro 2016, which stage did Switzerland reach? → Group stage.' They reached the **Round of 16** (lost to Poland on pens) — itself an offered option.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Round of 16.
+
+### Row 43796 — Switzerland (easy) — FAIL: false premise — no Swiss stadium hosted a 2006 World Cup match (2006 WC was in Germany)
+- 'At the 2006 World Cup, which Swiss stadium hosted a match' is false — the **2006 WC was in Germany**. (St. Jakob-Park's ~38,512 capacity is real but it hosted Euro 2008.)
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to Euro 2008 or drop the WC framing.
+
+### Row 43797 — Switzerland (easy) — FAIL: unverifiable / likely false — that 2014 XI included players born outside Switzerland & Kosovo
+- Soft squad-composition claim; the multicultural 2014 XI included players born elsewhere (e.g. Johan Djourou, born in Côte d'Ivoire), so 'born in Switzerland and Kosovo' is not a clean two-way fact.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or rephrase the birth-nation split.
+
+### Row 43798 — Switzerland (hard) — FAIL: false premise — Switzerland reached the R16 at Euro 2016, not the group stage
+- Q frames Euro 2016 (two years after the 2014 WC) as a 'group stage' exit. They reached the **R16**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false group-stage premise.
+
+### Row 43800 — Switzerland (medium) — FAIL: non-unique — FC Basel (a distractor) reached the CL group stage far more often than Young Boys
+- 'which Swiss club reached the Champions League group stages multiple times? → BSC Young Boys.' **FC Basel** (an option) reached the CL group stage many times (2002, 2008, 2011–14, 2017…) and went further; Young Boys first reached it only in 2018-19.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove FC Basel as a distractor.
+
+### Row 43802 — Switzerland (easy) — FAIL: explanation wrong — Euro 2024 QF was 1-1 (England 5-3 pens), not 'lost 2-1'
+- Answer 'England' is correct, but the explanation says Switzerland 'lost 2-1 to England'. It was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation score.
+
+### Row 43803 — Switzerland (easy) — FAIL: non-unique — Serbia's 2022 squad was also predominantly top-European-league based
+- 'which nation's squad was predominantly based in top European leagues? → Switzerland.' **Serbia** (an option) also fielded a 2022 squad overwhelmingly from top European leagues. Trait not unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors whose squads were not Europe-based.
+
+### Row 43805 — Switzerland (easy) — FAIL: non-unique — France and Germany (distractors) also field many dual-nationality players
+- 'which nation's squad featured many players with dual nationalities? → Switzerland.' **France** and **Germany** (both options) likewise. Generic trait → non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace distractors or drop the generic framing.
+
+### Row 43806 — Switzerland (easy) — FAIL: unverifiable / non-unique — Switzerland has no single 'primary home venue'; St. Jakob-Park (an option) is larger/more-used
+- Switzerland rotates home matches (St. Jakob-Park Basel, Stade de Genève, Wankdorf Bern). Calling Stade de Suisse the 'primary' venue is unverifiable, and **St. Jakob-Park** (the biggest, an option) is at least as valid.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop 'primary' or pin to a specific match/venue.
+
+### Row 43807 — Switzerland (easy) — FAIL: non-unique — Manuel Akanji (a distractor) was equally a key Swiss centre-back at the 2022 WC
+- 'which Swiss centre-back was a key defensive figure? → Fabian Schär.' **Manuel Akanji** (an option) is also a first-choice Swiss centre-back. Two options correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Akanji as a distractor.
+
+### Row 43809 — Switzerland (easy) — FAIL: non-unique — Xherdan Shaqiri (a distractor) is also of Kosovar-Albanian origin
+- 'which Swiss player also holds Albanian nationality? → Granit Xhaka.' **Shaqiri** (an option) is likewise Kosovar-Albanian (the 'double-eagle' celebration). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Shaqiri as a distractor.
+
+### Row 43812 — Switzerland (easy) — FAIL: non-unique — Shaqiri and Ricardo Rodríguez (distractors) have also passed 120 caps
+- 'which Swiss player's career reached 120+ caps? → Granit Xhaka.' By 2026 **Shaqiri** and **Ricardo Rodríguez** (both options) have also surpassed 120 caps. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to the cap record-holder or remove the other 120+ cappers.
+
+### Row 43817 — Switzerland (hard) — FAIL: answer wrong + non-unique — Euro 2016 was an R16 run; Euro 2008 & Euro 2004 (distractors) were the real group-stage exits
+- 'At which Euros were Switzerland eliminated in the group stage? → Euro 2016.' They reached the **R16 at Euro 2016**; the genuine group-stage exits among the options are **Euro 2008** (co-host) and **Euro 2004**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change answer to a real group-stage exit and remove the duplicate correct option.
+
+### Row 43818 — Switzerland (easy) — FAIL: explanation wrong — Euro 2024 QF was 1-1 (England 5-3 pens), not 'lost 2-1'
+- Answer 'Germany' (Euro 2024 host) is correct, but the explanation says Switzerland 'lost 2-1 to England'. It was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation score.
+
+### Row 43819 — Switzerland (easy) — FAIL: answer wrong — Switzerland hosted Italy in 2022 WC qualifying at St. Jakob-Park (Basel), not Stade de Suisse
+- 'which Swiss stadium hosted Italy in a 2022 World Cup qualifier? → Stade de Suisse.' The home WC qualifier v Italy (0-0, 5 Sep 2021) was at **St. Jakob-Park, Basel** (an option).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to St. Jakob-Park.
+
+### Row 43822 — Switzerland (hard) — FAIL: answer wrong — Switzerland reached the R16 at Euro 2016; none of the offered tournaments was a group-stage exit
+- 'At which tournament was Switzerland eliminated in the group stage? → Euro 2016.' They reached the **R16**; Euro 2020/2024 were QF runs and they didn't qualify for Euro 2012.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace with a real group-stage exit (Euro 2008/2004 or WC 2010).
+
+### Row 43826 — Switzerland (medium) — FAIL: unverifiable / likely false — St. Jakob-Park (opened 2001) hosted Swiss WC qualifiers before the 2010 campaign
+- Claim that St. Jakob-Park 'first hosted a Swiss World Cup qualifier' in the 2010 campaign is unsupported and likely false — the ground opened in 2001 and was used through the **2006 WC qualifying** cycle.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or verify the 'first qualifier' date.
+
+### Row 43827 — Switzerland (hard) — FAIL: explanation wrong — 2022 was an R16 run, not a group-stage exit
+- Answer '2010' (last group-stage exit before 2022) is correct, but the explanation says Switzerland were 'eliminated in the group stage in 2010 and again in 2022'. In **2022 they reached the R16** (lost 6-1 Portugal).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation: 2022 was an R16 exit.
+
+
+### Row 42928 — Senegal (medium) — FAIL: answer wrong
+- 'After Senegal's 2021 AFCON win, when did nationwide celebrations occur? → 2021.' The win and the open-top celebrations were in **February 2022** (AFCON 2021 was played Jan–Feb 2022); **2022** is offered as an option.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to 2022.
+
+### Row 42944 — Senegal (easy) — FAIL: Excel date-corruption
+- 'Senegal beat Ecuador by what scoreline? → 02-Jan.' The answer cell is a mangled date; the real score was **2-1**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Restore the answer to 2-1 and sweep the dataset for date-corrupted scores.
+
+### Row 42971 — Senegal (easy) — FAIL: answer wrong / fabricated club
+- 'Which Senegal youth-academy export played for a Bundesliga club? → Ismaïla Sarr' with explanation 'VfL Wolfsburg.' Sarr has **never played in the Bundesliga / for Wolfsburg** (Metz→Rennes→Watford→Marseille→Crystal Palace).
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Remove the fabricated Wolfsburg/Bundesliga claim.
+
+### Row 42972 — Senegal (hard) — FAIL: answer wrong / timing
+- 'During which qualifying campaign did Mané become Senegal's all-time top scorer? → 2022 WC qualifiers.' He passed Henri Camara's record around **2019**, before the 2022 qualifiers began.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change to the 2018-cycle / ~2019, or drop the claim.
+
+### Row 42983 — Senegal (medium) — FAIL: answer wrong
+- 'How many times was Mendy named CAF Goalkeeper of the Year? → Two times.' He won it **once (CAF Awards 2022)**; no CAF Awards were held in 2020 or 2021 (COVID).
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Change the count to one.
+
+### Row 43003 — Senegal (medium) — FAIL: answer wrong
+- 'In which two years did Mendy win CAF Goalkeeper of the Year? → 2021 and 2022.' He won it **only in 2022**; there was no 2021 CAF Awards ceremony.
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Drop 2021; it was a single award (2022).
+
+### Row 43031 — Senegal (medium) — FAIL: answer wrong
+- 'In which year did Mendy win his first CAF Goalkeeper of the Year? → 2021.' His first/only CAF GK award was **2022**.
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Change the answer to 2022.
+
+### Row 43049 — Senegal (easy) — FAIL: non-unique
+- 'Senegal reached the 2017 AFCON QF. Which other CAF nation did the same in 2017? → Tunisia.' **Egypt** (an option) also reached the 2017 QF (as did Ghana, Morocco, Burkina Faso).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove Egypt as a distractor.
+
+### Row 43071 — Senegal (hard) — FAIL: Excel date-corruption
+- 'Senegal's exact scoreline v Ecuador (2022)? → 02-Jan.' Mangled date for **2-1**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Restore to 2-1.
+
+### Row 43072 — Senegal (hard) — FAIL: Excel date-corruption
+- 'Senegal's penalty-shootout score in the 2021 AFCON final? → 04-Feb.' Mangled date for **4-2**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Restore to 4-2.
+
+### Row 43092 — Senegal (medium) — FAIL: answer wrong
+- 'When did Senegal celebrate their first AFCON win? → 2021.' The win/celebrations were **February 2022**; 2022 is an option.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to 2022.
+
+### Row 43107 — Senegal (medium) — FAIL: answer wrong
+- 'When did Senegal secure their 2026 World Cup spot? → 2026.' They clinched CAF Group B in **October 2025**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to 2025.
+
+### Row 43122 — Senegal (medium) — FAIL: answer wrong
+- 'When did Koulibaly make his World Cup qualifying debut? → 2013.' Koulibaly's senior Senegal debut was **September 2015** (v Namibia).
+**Source:** https://en.wikipedia.org/wiki/Kalidou_Koulibaly
+**Remedy:** Change the answer to 2015.
+
+### Row 43130 — Senegal (easy) — FAIL: non-unique
+- 'Which CAF team matched Senegal's 2022 playoff path? → Egypt.' **Morocco, Nigeria and Tunisia** (all options) also reached the 2022 CAF playoff round.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Make the comparison unique or drop it.
+
+### Row 43137 — Senegal (easy) — FAIL: explanation wrong
+- Answer 'Al Janoub' (the stadium Senegal did NOT play) is correct, but the explanation misassigns venues — Senegal faced the **Netherlands at Al Thumama** (not Al Bayt) and **England at Al Bayt** (not Khalifa).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Fix the venue list in the explanation.
+
+### Row 43165 — Senegal (easy) — FAIL: non-unique
+- 'Which African rival qualified for 2010 while Senegal failed? → Nigeria.' **Nigeria, Ghana, Cameroon and Côte d'Ivoire** (all four options) qualified for the 2010 World Cup.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Replace the distractors with non-qualifiers.
+
+### Row 43180 — Senegal (easy) — FAIL: non-unique
+- 'Which CAF nation qualified for the 2018 World Cup with Senegal? → Egypt.' **Egypt, Nigeria, Tunisia and Morocco** (all options) qualified for 2018.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Replace the distractors with non-qualifiers.
+
+### Row 43181 — Senegal (easy) — FAIL: answer wrong / false premise
+- 'Which CAF nation qualified for 2026 before Senegal? → None (Senegal first).' **Morocco** qualified first (Sept 2025), ahead of Senegal (Oct 2025).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to Morocco.
+
+### Row 43186 — Senegal (easy) — FAIL: answer wrong
+- 'Which CAF rival did Senegal fail to qualify behind for 2010? → Côte d'Ivoire.' Senegal went out in the **2nd-round Group 6 behind Algeria (and Gambia)**, never reaching CIV's group.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to Algeria.
+
+### Row 43190 — Senegal (easy) — FAIL: non-unique / unverifiable ordering
+- 'Which CAF team qualified for 2018 after Senegal? → Tunisia.' Morocco and Tunisia clinched around the same Nov-2017 window — the ordering is not unique.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Drop the chronological ordering.
+
+### Row 43211 — Senegal (hard) — FAIL: false premise
+- 'Which nation did Senegal beat on aggregate in 2022 qualifying? → Egypt.' The tie was **1-1 on aggregate, decided 3-1 on penalties** — not won on aggregate.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Reword to 'on penalties'.
+
+### Row 43212 — Senegal (hard) — FAIL: false premise
+- 'Which nation did Senegal beat on aggregate in the 2022 CAF final playoff? → Egypt.' 1-1 aggregate, **won 3-1 on penalties**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Reword to 'on penalties'.
+
+### Row 43231 — Senegal (easy) — FAIL: self-referential / non-unique
+- 'Which nation reached the 2017 AFCON QF like Senegal? → Senegal.' The answer names the subject team itself; also **Egypt** (an option) reached the 2017 QF.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Rewrite to avoid the self-reference.
+
+### Row 43240 — Senegal (easy) — FAIL: non-unique / subjective
+- 'Which nation, like Senegal's Teranga Lions, is renowned for a passionate World Cup fanbase? → Argentina.' Germany, Brazil and Mexico (all options) qualify equally; subjective.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove or make objective.
+
+### Row 43241 — Senegal (easy) — FAIL: false premise
+- 'Which nation, unlike Senegal in 2022, failed to reach the World Cup QF? → Germany.' Senegal also **failed to reach the 2022 QF** (lost in the R16), so the 'unlike Senegal' framing is false.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Rewrite — Senegal did not reach the QF either.
+
+### Row 43243 — Senegal (easy) — FAIL: non-unique
+- 'Which nation's first AFCON title came before Senegal's 2021 win? → Egypt.' **Egypt, Algeria, Côte d'Ivoire and Nigeria** (all options) won their first AFCON before 2021.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 43263 — Senegal (hard) — FAIL: non-unique
+- 'Which Senegal achievement came after their 2018 WC? → Won AFCON 2021.' Both 'Won AFCON 2021' and 'Highest CAF rank 2022' (an option) came after 2018.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove the second post-2018 option.
+
+### Row 43269 — Senegal (medium) — FAIL: non-unique
+- 'Which Senegal AFCON exit preceded the 2021 title? → 2012 group stage.' The **2012, 2017 and 2019** exits (three options) all preceded 2021.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Leave only one pre-2021 exit.
+
+### Row 43271 — Senegal (medium) — FAIL: false / broken chronology
+- 'Which Senegal AFCON final loss preceded Algeria's 2014 WC R16 exit? → 2019 AFCON final.' The 2019 final came **after** 2014; the only AFCON final before 2014 was 2002 (not offered).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Rebuild the question around 2002.
+
+### Row 43315 — Senegal (easy) — FAIL: non-unique
+- 'Which Senegal GK was a hero at the 2021 AFCON? → Edouard Mendy.' Two options ('Edouard Mendy' and 'Édouard Mendy') are the **same player**.
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Replace the duplicate-name distractors.
+
+### Row 43326 — Senegal (easy) — FAIL: non-unique
+- 'Which Senegal GK was the 2021 AFCON hero? → Edouard Mendy.' 'Edouard Mendy' and 'Édouard Mendy' (two options) are the same player.
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Replace the duplicate-name distractor.
+
+### Row 43332 — Senegal (easy) — FAIL: non-unique / degenerate options
+- 'Which Senegal GK won the Champions League with Chelsea? → Edouard Mendy.' **All four options are the same player** (Mendy spelling variants).
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Provide three genuinely distinct distractors.
+
+### Row 43365 — Senegal (medium) — FAIL: answer wrong
+- 'Which Senegal manager secured 2026 qualification? → Aliou Cissé.' Qualification was sealed in **Oct 2025 under Pape Thiaw**; Cissé had left in 2024.
+**Source:** https://en.wikipedia.org/wiki/Pape_Thiaw
+**Remedy:** Change the answer to Pape Thiaw.
+
+### Row 43366 — Senegal (medium) — FAIL: answer wrong
+- 'Which manager secured Senegal's 2026 qualification? → Aliou Cissé.' It was **Pape Thiaw** (Oct 2025).
+**Source:** https://en.wikipedia.org/wiki/Pape_Thiaw
+**Remedy:** Change the answer to Pape Thiaw.
+
+### Row 43401 — Senegal (medium) — FAIL: answer wrong
+- 'Which Cissé milestone came first — 2021 AFCON win, 2022 R16, or 2019 AFCON final? → 2019 AFCON final.' The **2018 World Cup group stage** (an option, June 2018) was earlier.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to the 2018 group stage.
+
+### Row 43404 — Senegal (hard) — FAIL: false premise
+- 'Which nation lost the 2022 CAF final playoff on aggregate? → Egypt.' Egypt lost **1-1 agg, 3-1 on penalties** — not on aggregate.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Reword to 'on penalties'.
+
+### Row 43411 — Senegal (easy) — FAIL: answer wrong
+- 'Which Senegal player debuted at the 2022 World Cup after a Bundesliga academy? → Ismaïla Sarr.' Sarr's **WC debut was 2018**, and his Génération Foot pathway was to Ligue 1 (Metz), not the Bundesliga.
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Fix the debut year (2018) and the league claim.
+
+### Row 43413 — Senegal (easy) — FAIL: answer wrong
+- 'Which Senegal player debuted in the 2018 WC qualifier v Egypt? → Ismaïla Sarr.' Sarr debuted in **2016 (v Namibia)**, not a 2018 qualifier v Egypt.
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Correct the debut details.
+
+### Row 43448 — Senegal (easy) — FAIL: non-unique
+- 'Which Senegal player scored v Japan (2018)? → Sadio Mané.' **Moussa Wagué** (an option) also scored in that 2-2.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove Wagué as a distractor.
+
+### Row 43450 — Senegal (easy) — FAIL: non-unique
+- 'Which Senegal player scored at the 2018 WC? → Sadio Mané.' **M'Baye Niang** (an option, v Poland) also scored.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove the other 2018 scorer.
+
+### Row 43453 — Senegal (easy) — FAIL: non-unique
+- 'Which Senegal player scored in the 2-2 v Japan? → Sadio Mané.' **Moussa Wagué** (an option) also scored.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove Wagué as a distractor.
+
+### Row 43455 — Senegal (medium) — FAIL: non-unique
+- 'Which Senegal player scored v Japan (2018)? → Sadio Mané.' **Moussa Wagué** (an option) also scored.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove Wagué as a distractor.
+
+### Row 43459 — Senegal (easy) — FAIL: non-unique / explanation wrong
+- 'Which Senegal player scored in their 2022 win [v Ecuador]? → Ismaïla Sarr.' **Koulibaly** (an option) also scored; the explanation wrongly calls Sarr's goal 'their second goal' (Koulibaly scored the winner).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove Koulibaly as a distractor and fix the explanation.
+
+### Row 43485 — Senegal (easy) — FAIL: false / stale
+- 'Which Senegal player starred for Liverpool in the 2022 World Cup? → Sadio Mané.' Mané had moved to **Bayern Munich** and **missed the 2022 WC** (injury).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Reword — he was at Bayern and did not play in 2022.
+
+### Row 43495 — Senegal (easy) — FAIL: answer wrong / false premise
+- 'Which Senegal player was NOT in the 2022 WC squad? → Krépin Diatta.' Diatta **was** in the 2022 squad (as were Sarr, Dia and Diallo) — no valid answer.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Replace with a genuine non-selection.
+
+### Row 43501 — Senegal (easy) — FAIL: answer wrong
+- 'Which Senegal player won CAF Goalkeeper of the Year in 2021? → Edouard Mendy' (explanation '2021 and 2022'). Mendy's CAF GK award was **2022 only**.
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Change to 2022; drop the 2021 claim.
+
+### Row 43505 — Senegal (easy) — FAIL: answer wrong
+- 'Which Senegal player debuted for the national team in 2018? → Ismaïla Sarr.' Sarr debuted in **2016**.
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Change the debut year to 2016.
+
+### Row 43519 — Senegal (easy) — FAIL: false premise
+- 'Which Senegal rival at the 2022 WC was also a top-ranked CAF nation? → Morocco' (explanation 'faced Morocco in a group match'). Senegal (Group A) and Morocco (Group F) **never met** at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove the false 'faced Morocco' premise.
+
+### Row 43564 — Senegal (easy) — FAIL: false premise
+- 'Which Senegal stadium's 50k capacity made it their 2023 AFCON venue? → Stade Abdoulaye Wade.' The **2023 AFCON was hosted by Côte d'Ivoire**; Stade Abdoulaye Wade was not a tournament venue.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Drop the false 2023-AFCON-venue claim.
+
+### Row 43577 — Senegal (easy) — FAIL: unverifiable speculation
+- 'Which Senegal star may be ending his international career in 2026? → Sadio Mané.' Speculative and unverifiable.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove or rephrase as a verifiable fact.
+
+### Row 43586 — Senegal (easy) — FAIL: false
+- 'Which Senegal star scored more WC goals across 2018 and 2022 combined? → Sadio Mané' (explanation 'his first goal at 2022'). Mané **missed the 2022 WC** (injury) and scored none there.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Restrict the claim to 2018.
+
+### Row 43589 — Senegal (easy) — FAIL: false
+- 'Which Senegal star set their 2022 World Cup scoring record? → Sadio Mané' (explanation 'scored Senegal's only goals in 2022'). Mané **did not play** at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove — Mané was injured and absent.
+
+### Row 43607 — Senegal (easy) — FAIL: answer wrong
+- 'Which Senegal winger debuted at the 2022 FIFA World Cup? → Ismaïla Sarr.' Sarr's **World Cup debut was 2018**.
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Change the answer to a genuine 2022 debutant (e.g. Pape Matar Sarr).
+
+### Row 43628 — Senegal (easy) — FAIL: answer wrong
+- 'Which youth-academy product debuted in the 2022 WC for a PL club? → Ismaïla Sarr.' Sarr's **WC debut was 2018**; in 2022 Watford were a Championship club.
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Fix the debut year / club tier.
+
+### Row 43629 — Senegal (easy) — FAIL: non-unique
+- 'Which 2026 Senegal player does NOT feature in a top European league? → Sadio Mané (Al-Nassr).' **Koulibaly** (an option) also plays outside Europe (Al-Hilal, Saudi Arabia).
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove Koulibaly as a distractor.
+
+### Row 43637 — Senegal (easy) — FAIL: answer wrong
+- 'Which Senegal GK won CAF Goalkeeper of the Year in 2021? → Edouard Mendy.' His CAF GK award was **2022** (no 2021 ceremony).
+**Source:** https://en.wikipedia.org/wiki/%C3%89douard_Mendy
+**Remedy:** Change the year to 2022.
+
+### Row 43638 — Senegal (easy) — FAIL: false premise
+- 'Which league was top-flight for players in Senegal's 2006 World Cup squad? → Senegalese Premier League.' Senegal **did not qualify for the 2006 World Cup**, so there was no 2006 squad.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove the false 2006-squad premise.
+
+### Row 43647 — Senegal (medium) — FAIL: false
+- 'Which Senegalese player won the 2023 AFCON Golden Boot while at Bayern? → Sadio Mané.' Mané did **not** win it — **Emilio Nsue** (Equatorial Guinea) was top scorer; Senegal went out in the R16.
+**Source:** https://en.wikipedia.org/wiki/2023_Africa_Cup_of_Nations
+**Remedy:** Remove the fabricated Golden Boot claim.
+
+### Row 43667 — Senegal (easy) — FAIL: false / wrong nationality
+- 'Which Senegalese academy product debuted for Liverpool at the 2022 WC? → Ibrahima Konaté.' Konaté represents **France**, not Senegal, and is not a Génération Foot product.
+**Source:** https://en.wikipedia.org/wiki/Ibrahima_Konat%C3%A9
+**Remedy:** Replace with an actual Senegal player.
+
+### Row 43668 — Senegal (easy) — FAIL: answer wrong / fabricated league
+- 'Which Senegalese academy product played in the 2022 WC after developing in the Bundesliga? → Ismaïla Sarr.' Sarr **never developed or played in the Bundesliga** (Génération Foot → Metz/Ligue 1 → Watford).
+**Source:** https://en.wikipedia.org/wiki/Isma%C3%AFla_Sarr
+**Remedy:** Remove the false Bundesliga claim.
+
+### Row 43681 — Senegal (easy) — FAIL: answer wrong / fabricated playoff
+- 'Which team beat Senegal in the 2010 CAF qualifiers? → Algeria' (explanation 'in a playoff'). Senegal's 2010 exit was in **2nd-round Group 6** (behind Algeria and Gambia) — there was no Senegal–Algeria playoff; Gambia also finished above them.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Remove the fabricated 'playoff'; note both Algeria and Gambia finished above Senegal.
+
+### Row 43693 — Senegal (hard) — FAIL: false premise
+- 'Which nation did Senegal beat on aggregate to qualify for 2022? → Egypt.' 1-1 aggregate, **won 3-1 on penalties**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Reword to 'on penalties'.
+
+### Row 43740 — Senegal (hard) — FAIL: answer wrong
+- 'Which World Cup was Senegal's first CAF qualification? → 2018' (explanation 'qualified for the first time'). Senegal's first WC — also via CAF — was **2002**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to 2002.
+
+### Row 43742 — Senegal (medium) — FAIL: non-unique
+- 'Which World Cups did Senegal miss before qualifying for 2018? → 2010 and 2014.' Senegal **also missed 2006**, so '2006 and 2010' (an option) is equally correct.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Make the answer unique (they missed 2006, 2010 and 2014).
+
+### Row 43747 — Senegal (medium) — FAIL: answer wrong
+- 'Which year did Senegal qualify for the 2026 World Cup? → 2026.' They clinched in **October 2025**.
+**Source:** https://en.wikipedia.org/wiki/Senegal_national_football_team
+**Remedy:** Change the answer to 2025.
+
+
+## Switzerland batch rows 43831–43885 — 15 FAIL
+
+### Row 43834 — Switzerland (easy) — FAIL: answer wrong — Switzerland's 2022 WC-qualifier home venues were St. Jakob-Park (Basel) & Kybunpark (St. Gallen), not Stade de Suisse
+- Switzerland has no single 'primary home venue'; their **2022 WC qualifiers** were hosted in **Basel and St. Gallen** (and Geneva), not Bern's Stade de Suisse.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to Basel/St. Gallen, or drop 'primary'.
+
+### Row 43836 — Switzerland (easy) — FAIL: false premise — Bern was not a 2022 World Cup qualifier match venue
+- The question conflates the SFV's HQ city (Bern) with a match venue. Switzerland's 2022 home qualifiers were played in **Basel & St. Gallen** (and Geneva); Bern was not used.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to an actual host city (Basel/St. Gallen).
+
+### Row 43843 — Switzerland (easy) — FAIL: non-unique — Switzerland qualified for 2026 as UEFA group winners, so two options are correct
+- Answer 'Through UEFA qualification' is correct, but **Switzerland won UEFA Group B** to qualify directly, so the distractor 'As UEFA group winners' is equally correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the 'group winners' option.
+
+### Row 43849 — Switzerland (hard) — FAIL: answer wrong — Switzerland reached the WC R16 four times since 2006 (2006, 2014, 2018, 2022), not three
+- The explanation lists 2006/2014/2018 but omits **2022** (R16, lost 6-1 to Portugal). That's **four** knockout appearances since 2006 — and 'Four times' is an option.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to four (or scope the years to exclude one).
+
+### Row 43850 — Switzerland (medium) — FAIL: answer wrong — from 2006 to 2022 Switzerland reached the R16 four times, not three
+- The explanation lists 2006/2014/2022 but omits **2018** (R16 v Sweden). Four R16 runs in 2006–2022; 'Four' is an option.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to four.
+
+### Row 43851 — Switzerland (hard) — FAIL: answer wrong — Switzerland's highest-ever FIFA ranking is 3rd (Aug 1993), not 4th in 2018
+- Peak ranking is **3rd (Aug 1993)** under Hodgson — and '3rd' is one of the offered options.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 3rd (1993).
+
+### Row 43852 — Switzerland (easy) — FAIL: answer wrong — peak FIFA ranking is 3rd (1993), not 4th in 2018
+- Switzerland's highest-ever ranking is **3rd (Aug 1993)**, not a 4th place in 2018.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to 3rd.
+
+### Row 43853 — Switzerland (hard) — FAIL: false premise — Switzerland never peaked at 4th; their highest was 3rd (1993)
+- The question presumes a 'highest of 4th'; their record peak is **3rd (Aug 1993)**, so the premise is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to 3rd in 1993.
+
+### Row 43856 — Switzerland (easy) — FAIL: non-unique / mislogic — Manuel Akanji was born in Switzerland, which is itself the basis for his Swiss eligibility
+- 'why was Akanji eligible to represent Switzerland? → He has dual nationality.' Akanji was **born in Switzerland** (Wiesendangen); the distractor 'He was born in Switzerland' is at least as correct (dual nationality explains his Nigeria option, not his Swiss eligibility).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Rephrase so only one option is correct.
+
+### Row 43859 — Switzerland (medium) — FAIL: unverifiable — no authoritative source pins Young Boys as the Swiss-Super-League club with the most players in the 2022 squad
+- Obscure squad-composition count; not reliably verifiable.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source the claim.
+
+### Row 43864 — Switzerland (hard) — FAIL: false premise — the 3-3 v France was the Euro 2020 Round of 16, not a 'group stage' match
+- The score (3-3) is correct, but the France shootout came in the **Round of 16**, not the group stage as the question states.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change 'group stage' to 'round of 16'.
+
+### Row 43865 — Switzerland (easy) — FAIL: non-unique — Serbia's 2022 squad was also predominantly top-European-league based
+- 'which nation's players mostly came from top European leagues? → Switzerland.' **Serbia** (an option) likewise. Generic trait → non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the distractors.
+
+### Row 43867 — Switzerland (easy) — FAIL: non-unique — Akanji started several 2022 matches, so more than one option is correct
+- 'In which 2022 WC match did Akanji start? → Group G opener.' He started the opener, the group finale **and** the R16 — multiple options correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to a specific, unique match.
+
+### Row 43869 — Switzerland (easy) — FAIL: false score — the Euro 2024 QF was 1-1 (England 5-3 pens), not 2-1
+- The stage (quarter-finals) is correct, but Switzerland did not 'lose 2-1' — the QF was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the score in the question and explanation.
+
+### Row 43878 — Switzerland (hard) — FAIL: answer wrong — Switzerland did not exit in the group stage in 2022 (they reached the R16)
+- 'In which two World Cups did Switzerland exit in the group stage? → 2010 and 2022.' In **2022 they reached the Round of 16** (lost 6-1 to Portugal); only 2010 was a group-stage exit.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pair 2010 with an actual group-stage exit (e.g. an older edition).
+
+
+## Switzerland batch rows 43886–43940 — 22 FAIL
+
+### Row 43887 — Switzerland (hard) — FAIL: non-unique — Sommer was also the starting GK in the 2018 qualifying campaign
+- 'In which WC qualification campaign was Sommer Switzerland's starting GK? → 2022 qualification.' Sommer has been the No. 1 since 2014, so he was also first choice during **2018 qualifying** (an option). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to a campaign unique to Sommer, or remove 2018.
+
+### Row 43889 — Switzerland (medium) — FAIL: answer wrong — Xhaka became permanent Switzerland captain in Sept 2020, not 2017 (and 2020 isn't an option)
+- Xhaka was a **temporary** captain at the 2018 WC (in Lichtsteiner's absence) and became **permanent captain in September 2020**. The keyed '2017' is wrong, and the correct 2020 isn't even offered.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2020 and add it as an option.
+
+### Row 43890 — Switzerland (medium) — FAIL: answer wrong — Akanji made his World Cup debut in 2018, not 2022
+- Akanji was in Switzerland's 2018 WC squad and **started all four matches** in Russia, so his WC debut was **2018** (an option), not 2022.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2018.
+
+### Row 43893 — Switzerland (hard) — FAIL: false premise — Switzerland's highest FIFA ranking is 3rd (1993), not 4th
+- The question presumes a 'highest FIFA ranking of 4th'; their record peak is **3rd (Aug 1993)** and they did not reach 4th in 2018 (~6th that year).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to the real peak (3rd, 1993).
+
+### Row 43898 — Switzerland (medium) — FAIL: explanation wrong — the 15 Nov 2021 Bulgaria qualifier was in Lucerne, not St. Jakob-Park
+- Answer '2021' is fine (Switzerland did host 2022 qualifiers at St. Jakob-Park in 2021, e.g. the 0-0 v Italy), but the explanation's example — the 4-0 v Bulgaria — was played at **Swissporarena, Lucerne**, not Basel.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation to cite the Italy qualifier (the Bulgaria game was in Lucerne).
+
+### Row 43899 — Switzerland (medium) — FAIL: answer wrong — Switzerland qualified for the 2022 World Cup in November 2021, not 2022
+- They clinched the 2022 WC by beating Bulgaria 4-0 on **15 Nov 2021**; qualifying did not run into 2022. The correct year (2021) is not even offered.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2021.
+
+### Row 43900 — Switzerland (hard) — FAIL: false premise — peak FIFA ranking is 3rd (1993), not 4th in 2018
+- Same systematic error: Switzerland never reached 4th; their highest is **3rd (Aug 1993)**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to 3rd (1993).
+
+### Row 43901 — Switzerland (hard) — FAIL: answer wrong — Switzerland's WC group-stage exit was 2010, not 2022 (they reached the R16 in 2022)
+- 'In which year were Switzerland eliminated in the WC group stage? → 2022.' In 2022 they reached the **Round of 16**; the real group-stage exit among the options is **2010**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2010.
+
+### Row 43902 — Switzerland (easy) — FAIL: non-unique — Portugal, Belgium and Croatia (distractors) also qualified for every major tournament since 2014
+- Switzerland's perfect record since 2014 is not unique: **Portugal, Belgium and Croatia** (all options) also reached every WC/Euro from 2014.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the distractors with teams that missed a tournament.
+
+### Row 43903 — Switzerland (easy) — FAIL: non-unique — Germany, France and Belgium (distractors) also qualified for every WC since 2014
+- **Germany, France and Belgium** (all options) likewise qualified for every WC/Euro since 2014. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the distractors.
+
+### Row 43904 — Switzerland (easy) — FAIL: non-unique — Germany, France and Portugal (distractors) also qualified for every major tournament since 2014
+- **Germany, France and Portugal** (all options) also have a perfect record since 2014. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the distractors.
+
+### Row 43911 — Switzerland (easy) — FAIL: false score — Switzerland did not 'lose 2-1 to England' at Euro 2024 (it was 1-1, 5-3 pens)
+- The asked answer (Argentina, 2014 R16) is correct, but the question's lead-in 'lost 2-1 to England in the Euro 2024 quarter-final' is false — it was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the false 2-1 lead-in.
+
+### Row 43912 — Switzerland (medium) — FAIL: answer wrong — Switzerland's most recent WC knockout loss was 2022 (Portugal), not 2014
+- 'When did they last lose a WC knockout match? → 2014.' They also lost WC knockouts in **2018 (Sweden) and 2022 (Portugal)** — the most recent is **2022** (an option).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2022.
+
+### Row 43916 — Switzerland (medium) — FAIL: non-unique — Switzerland qualified directly for 2010 and 2026 too (both options)
+- 'qualified directly for 2014; which other WC also directly? → 2022.' Switzerland also qualified **directly for 2010 and 2026** (both offered), so more than one option is correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the other direct-qualification years.
+
+### Row 43917 — Switzerland (medium) — FAIL: non-unique — Switzerland qualified directly for 2010 and 2014 too (both options)
+- 'qualified for 2026; which earlier WC also directly? → 2022.' They qualified **directly for 2010 and 2014** as well (both options); only 2018 was via playoff. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Leave only 2018 (playoff) and one direct year.
+
+### Row 43920 — Switzerland (hard) — FAIL: false premise / non-unique — there was no 2020 World Cup, and Switzerland reached the WC knockout stage in 2014 & 2018 too
+- 'reached the WC knockout stage in 2020 and which earlier year?' — **no World Cup was held in 2020** (that was Euro 2020). Switzerland reached WC knockouts in 2006, 2014 and 2018, so '2006' is not the unique earlier year either.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the non-existent '2020 World Cup' and make the answer unique.
+
+### Row 43923 — Switzerland (hard) — FAIL: false premise — Switzerland's peak ranking is 3rd (1993); their 2018 best was ~6th, not 4th
+- Their record-high is **3rd (Aug 1993)**; in 2018 their best was around 6th. '4th in 2018' is the dataset's systematic error.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure (3rd, 1993; ~6th in 2018).
+
+### Row 43925 — Switzerland (easy) — FAIL: explanation wrong — Switzerland beat Portugal 2-0 in Basel; there was no '1-2 loss'
+- The stadium answer (St. Jakob-Park) is fine, but the explanation invents a '1-2 loss to Portugal'. The Basel match v Portugal (Sep 2016) was a **2-0 Switzerland win**; the 0-2 defeat was away in Lisbon.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation: 2-0 home win (Basel), 0-2 away loss (Lisbon).
+
+### Row 43927 — Switzerland (easy) — FAIL: false premise — Switzerland had no 2022 World Cup playoff (they qualified directly as group winners)
+- 'Switzerland's 2022 World Cup playoff win was staged at...' — there was **no 2022 playoff**; they qualified directly by winning UEFA Group C.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 'playoff' premise (the 2018 playoff was the real one).
+
+### Row 43931 — Switzerland (easy) — FAIL: non-unique — St. Jakob-Park also hosts UEFA Nations League matches and staged Euro 2008
+- 'St. Jakob-Park hosts which tournament's matches? → FIFA World Cup qualifiers.' It also regularly hosts **UEFA Nations League** games and hosted **Euro 2008** (UEFA European Championship) — multiple options are correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the tournament uniquely identifiable.
+
+### Row 43933 — Switzerland (medium) — FAIL: broken answer — Excel date-corruption: the score is rendered '01-Jan' instead of 1-1
+- Switzerland drew Germany **1-1** at Euro 2024 (Ndoye 92'), but the answer cell shows the spreadsheet-mangled **'01-Jan'**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Restore the answer to 1-1 and sweep the dataset for date-corrupted scores.
+
+### Row 43934 — Switzerland (medium) — FAIL: answer wrong — peak FIFA ranking is 3rd (1993); 2018 best was ~6th, not 4th
+- Switzerland's highest-ever is **3rd (Aug 1993)**; their 2018 best was ~6th. '4th' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+
+## Switzerland batch rows 43941–43995 — 11 FAIL
+
+### Row 43948 — Switzerland (medium) — FAIL: answer wrong — peak FIFA ranking is 3rd (1993); 2018 best was ~6th, not 4th
+- Switzerland's highest-ever is **3rd (Aug 1993)**; in 2018 their best was ~6th. '4th' is the dataset's recurring error.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 43949 — Switzerland (easy) — FAIL: false score — the Euro 2024 QF was 1-1 (England 5-3 pens), not 'Lost 2-1'
+- Switzerland did not lose 2-1; the QF was **1-1 a.e.t.; England won 5-3 on penalties**. None of the offered scorelines is correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to the shootout result (1-1, England 5-3 pens).
+
+### Row 43952 — Switzerland (easy) — FAIL: broken answer — Excel date-corruption: '06-Jan' instead of 6-1
+- Portugal won **6-1** (2022 R16), but the answer cell shows the mangled **'06-Jan'**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Restore to 6-1; sweep for date-corrupted scores.
+
+### Row 43956 — Switzerland (easy) — FAIL: false score — Switzerland lost to England 1-1 (5-3 pens), not 2-1
+- 'lost to England at Euro 2024 → 2-1 to England.' The QF was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the score.
+
+### Row 43961 — Switzerland (medium) — FAIL: broken answer + false score — '02-Jan' is corruption for 2-1, but the actual score was 1-1 (England 5-3 pens)
+- The answer cell is the mangled **'02-Jan'** (=2-1), and even decoded it's wrong: the QF was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Restore to the real shootout result and fix the corruption.
+
+### Row 43982 — Switzerland (medium) — FAIL: false premise — Switzerland did not beat Italy in 2022 qualifying (two draws)
+- 'beat Italy to directly qualify for a World Cup → 2022.' Switzerland **drew Italy twice** (0-0 Basel, 1-1 Rome) and won the group on goal difference; they did not beat Italy.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Reword to 'finished above Italy' (no win occurred).
+
+### Row 43983 — Switzerland (medium) — FAIL: false premise — Switzerland drew Italy twice in 2022 qualifying, they didn't beat them
+- Same error: Switzerland **did not beat Italy** to win the group (0-0 and 1-1); they topped Group C on GD after beating Bulgaria 4-0.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Reword to 'finished above Italy'.
+
+### Row 43988 — Switzerland (medium) — FAIL: unverifiable / false premise — no Swiss WC qualifier was played in 2006, and 'Stade de Suisse primary venue' is dubious
+- The 2006 WC qualifiers were played in 2004-05 (none in 2006), Stade de Suisse only opened in 2005, and it was never the team's sole 'primary home venue' (St. Jakob-Park is larger/more used).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or re-anchor the venue-first claim.
+
+### Row 43989 — Switzerland (medium) — FAIL: false premise — Switzerland did not reach a WC quarter-final in 2022 (they lost the R16)
+- 'first WC quarter-final in the 21st century → 2022.' In 2022 they reached only the **Round of 16** (lost 6-1 to Portugal); their last WC QF was 1954.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false QF premise.
+
+### Row 43990 — Switzerland (medium) — FAIL: answer wrong — 2010 was a group-stage exit; Switzerland's last R16 before 2014 was 2006
+- 'last reach the WC round of 16 before 2014 → 2010.' In **2010 they exited in the group stage**; their previous R16 was **2006** (an option).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2006.
+
+### Row 43992 — Switzerland (medium) — FAIL: false score — the Euro 2024 QF was 1-1 (England 5-3 pens), not 2-1
+- The tournament (Euro 2024) is right, but 'lost 2-1 to England' is false — it was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the false 2-1 in the question/explanation.
+
+
+## Switzerland batch rows 43996–44055 — 12 FAIL
+
+### Row 44002 — Switzerland (hard) — FAIL: non-unique — all of Switzerland's qualifications were 'through UEFA qualification'
+- 'When did Switzerland qualify through UEFA qualification? → 2010.' As a UEFA nation, 2006, 2014 and 2018 (all options) were also via UEFA — the trait is non-discriminating.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the qualifying route/year unique.
+
+### Row 44003 — Switzerland (hard) — FAIL: false premise — Switzerland never reached 4th; their peak is 3rd (1993)
+- Recurring error: highest FIFA ranking is **3rd (Aug 1993)**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to 3rd (1993).
+
+### Row 44005 — Switzerland (medium) — FAIL: explanation wrong — the Euro 2024 QF was 1-1 (England 5-3 pens), not 'losing 2-1'
+- Answer '2024' is correct, but the explanation says they lost '2-1 to England'. It was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation score.
+
+### Row 44007 — Switzerland (hard) — FAIL: false premise — peak ranking is 3rd (1993), not 4th in 2018
+- Same systematic error.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to 3rd (1993).
+
+### Row 44015 — Switzerland (easy) — FAIL: answer wrong — Switzerland reached the Round of 16 in 2022, not a group-stage exit
+- 'When was Switzerland eliminated from the 2022 WC? → Group stage.' They reached the **Round of 16** (lost 6-1 to Portugal) — itself an option.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Round of 16.
+
+### Row 44016 — Switzerland (hard) — FAIL: answer wrong + non-unique — Euro 2016 was an R16 run; Switzerland's last Euro group exit was 2008 (and 2004)
+- 'last eliminated in a Euro group stage before Euro 2024? → Euro 2016.' They reached the **R16 at Euro 2016**; the real group-stage exits among the options are **Euro 2008** (most recent) and **Euro 2004**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Euro 2008.
+
+### Row 44029 — Switzerland (easy) — FAIL: false premise — Shaqiri was born in Kosovo, not Bosnia
+- 'which 2022 Swiss player chose the NT over his birth country Bosnia? → Xherdan Shaqiri.' Shaqiri was **born in Kosovo** (the explanation even says so) — his birth country is not Bosnia.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the birth-country premise (or choose a player actually born in Bosnia).
+
+### Row 44037 — Switzerland (easy) — FAIL: answer wrong + non-unique — Shaqiri debuted at the 2010 WC, and Xhaka/Rodríguez (distractors) also debuted in 2014
+- 'which dual-nationality Swiss player debuted at the 2014 WC? → Shaqiri.' Shaqiri's WC **debut was 2010** (he played as a sub); and **Xhaka and Rodríguez** (both dual-national, both options) made their WC debuts in 2014.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pick a player whose 2014 debut is unique.
+
+### Row 44039 — Switzerland (easy) — FAIL: non-unique — Germany and Spain (distractors) also qualified for every major tournament since 2014
+- 'the only nation among these to qualify for every WC/Euro since 2014 → Switzerland.' **Germany and Spain** (both options) also have perfect records since 2014; only Italy missed (2018/2022/2026 WCs).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Keep only Italy-type distractors that actually missed a tournament.
+
+### Row 44044 — Switzerland (medium) — FAIL: non-unique — Petković (appointed Aug 2014) also did not manage the 2010 or 2014 World Cups
+- 'Which WC did Petković NOT manage Switzerland at? → 2022.' He took over in **August 2014, after the 2014 WC**, so he also did not manage the **2014 or 2010** WCs (both options). His only WC was 2018.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Leave only 2018 as the managed tournament.
+
+### Row 44049 — Switzerland (medium) — FAIL: false premise — the 6-1 v Portugal was the 2022 Round of 16, not a group-stage exit
+- 'Which heavy defeat caused Switzerland's 2022 group stage exit? → Lost to Portugal.' Switzerland **advanced from their group**; the 6-1 to Portugal was in the **Round of 16**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 'group stage exit' framing.
+
+### Row 44050 — Switzerland (hard) — FAIL: answer wrong — Switzerland reached the R16 at Euro 2016, not a group-stage exit
+- 'Which major tournament saw Switzerland eliminated in the group stage? → Euro 2016.' They reached the **R16** at Euro 2016; none of the offered editions was a group exit (2012 they didn't qualify; 2020/2024 were QF runs).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace with a real group-stage exit (Euro 2008/2004 or WC 2010).
+
+
+## Switzerland batch rows 44056–44115 — 14 FAIL
+
+### Row 44067 — Switzerland (medium) — FAIL: false premise — neither Switzerland nor Belgium peaked at 4th in 2018 (Belgium were world #1)
+- 'Which nation also peaked at 4th in 2018? → Belgium.' Switzerland never reached 4th (peak 3rd, 1993), and **Belgium were ranked #1** in 2018, not 4th.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 4th-place premise.
+
+### Row 44069 — Switzerland (easy) — FAIL: false score — the Euro 2024 QF was 1-1 (England 5-3 pens), not 2-1
+- Answer 'England' is correct, but 'beat Switzerland 2-1' is false — the QF was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the score.
+
+### Row 44092 — Switzerland (hard) — FAIL: false premise — Switzerland have never won a World Cup penalty shootout
+- 'which nation did Switzerland NOT beat in a WC shootout? → Argentina.' The explanation's premises are all wrong: the France shootout was **Euro 2020** (not a WC), and at the 2006 WC Switzerland **lost** their shootout to Ukraine (no WC shootout win, ever).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Rebuild around real shootouts (Switzerland have no WC shootout win).
+
+### Row 44093 — Switzerland (easy) — FAIL: non-unique — Switzerland also did NOT eliminate Spain in a knockout (the 2010 win was a group game)
+- 'which nation did Switzerland NOT eliminate in a major-tournament knockout? → England.' They also never eliminated **Spain** in a knockout — the 2010 1-0 was a **group** match (Spain went on to win the WC). Two options are correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Spain (it wasn't a knockout).
+
+### Row 44094 — Switzerland (easy) — FAIL: non-unique — Switzerland's only 2022 knockout match was v Portugal, so they didn't face France or Italy either
+- 'which nation did Switzerland NOT face in a 2022 WC knockout? → Spain.' Their sole 2022 KO match was v Portugal, so **France and Italy** (both options) are equally correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44095 — Switzerland (easy) — FAIL: non-unique — Switzerland's only 2022 KO loss was to Portugal, so 'did NOT lose to' is true for France, Spain and Italy
+- 'which nation did Switzerland NOT lose to in a 2022 WC knockout? → France.' **Spain and Italy** (both options) are equally correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44104 — Switzerland (easy) — FAIL: explanation wrong — the Euro 2024 QF was 1-1 (England 5-3 pens), not 'lost 2-1'
+- The answer (England) is correct, but the explanation says Switzerland 'lost 2-1'. It was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation score.
+
+### Row 44106 — Switzerland (medium) — FAIL: false premise — Switzerland reached the R16 at Euro 2016, not a group-stage exit
+- Answer 'France' (Euro 2016 host) is correct, but the question/explanation claim Switzerland 'were eliminated in the group stage' — they reached the **Round of 16**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false group-stage claim.
+
+### Row 44108 — Switzerland (medium) — FAIL: answer wrong — Switzerland's peak ranking is 3rd (1993), not 4th in 2018
+- Recurring error: their highest FIFA ranking is **3rd (Aug 1993)**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44109 — Switzerland (easy) — FAIL: non-unique — Germany, France and Spain (distractors) also qualified for every major tournament since 2014
+- Switzerland's perfect record since 2014 is shared by **Germany, France and Spain** (all options).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors that missed a tournament.
+
+### Row 44110 — Switzerland (medium) — FAIL: answer wrong — peak ranking is 3rd (1993), not 4th in 2018
+- Same systematic error.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44112 — Switzerland (easy) — FAIL: non-unique — England and Germany (distractors) also topped their 2022 qualifying groups
+- 'which nation topped their 2022 WC qualifying group? → Switzerland.' **England** (Group I) and **Germany** (Group J) also won their groups; only Italy (the other option) did not.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to Group C, or drop the other group winners.
+
+### Row 44114 — Switzerland (easy) — FAIL: self-referential — the answer (Switzerland) is the subject of the question
+- 'which nation, like Switzerland, combines neutral tradition with modern competitiveness? → Switzerland.' The answer names the subject team itself.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the answer with a genuinely comparable nation.
+
+### Row 44115 — Switzerland (easy) — FAIL: non-unique — Germany, Italy, Spain and Netherlands (all options) qualified for the 2010 World Cup via UEFA
+- 'which nation, like Switzerland, qualified for 2010 via UEFA? → Germany.' **Italy, Spain and Netherlands** (all options) also qualified for 2010 through UEFA.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors from outside UEFA / non-qualifiers.
+
+
+## Switzerland batch rows 44116–44175 — 18 FAIL
+
+### Row 44118 — Switzerland (easy) — FAIL: false premise — Switzerland did not reach the 2022 World Cup quarter-finals (they lost the R16)
+- 'which neutral European nation reached the 2022 WC quarter-finals? → Switzerland.' Switzerland reached only the **Round of 16** (lost 6-1 to Portugal).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to 'round of 16'.
+
+### Row 44119 — Switzerland (medium) — FAIL: false premise — Switzerland reached the R16 at Euro 2016, not a group-stage exit
+- 'which other UEFA team was eliminated in the group stage at Euro 2016 like Switzerland? → Ukraine.' Ukraine did exit in the group, but **Switzerland reached the R16** — the 'like Switzerland' premise is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop the false comparison to Switzerland.
+
+### Row 44130 — Switzerland (easy) — FAIL: answer wrong — Switzerland's 2018 qualifier v Portugal was at St. Jakob-Park (Basel), not Stade de Suisse
+- The home qualifier v Portugal (2-0, Sep 2016) was at **St. Jakob-Park, Basel** (an option), not Stade de Suisse.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to St. Jakob-Park.
+
+### Row 44131 — Switzerland (easy) — FAIL: false premise — Switzerland had no 2022 World Cup playoff (they qualified directly)
+- There was **no 2022 playoff** — Switzerland qualified directly as Group C winners.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 'playoff' premise.
+
+### Row 44133 — Switzerland (easy) — FAIL: non-unique — 'Stade de Suisse' and 'Wankdorf Stadium' (both options) are the same stadium
+- Stade de Suisse is the sponsored name of the **Wankdorf** in Bern — two options refer to the identical venue.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the duplicate option.
+
+### Row 44141 — Switzerland (easy) — FAIL: unverifiable / likely false — Breel Embolo holds no established Ivorian nationality
+- Embolo was **born in Cameroon** (and scored v Cameroon in 2022); no Swiss source establishes Ivorian citizenship.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the nationality (Cameroon), or pick a player with a verified second nationality.
+
+### Row 44143 — Switzerland (easy) — FAIL: non-unique — Xherdan Shaqiri (a distractor) was also eligible for Albania
+- 'which 2022 player was also eligible for Albania? → Xhaka.' **Shaqiri** (an option) is likewise of Kosovar-Albanian origin and eligible for Albania.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Shaqiri.
+
+### Row 44144 — Switzerland (easy) — FAIL: non-unique — Shaqiri (a distractor) was born in Kosovo and is equally eligible for Kosovo
+- 'which 2022 player was eligible to play for Kosovo? → Xhaka.' **Shaqiri** (an option) was **born in Kosovo** — at least as eligible.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Shaqiri.
+
+### Row 44146 — Switzerland (easy) — FAIL: answer wrong — at the 2022 World Cup Yann Sommer played for Borussia Mönchengladbach (Germany), not Italy
+- 'which 2022 squad player was based in Italy? → Yann Sommer.' Sommer was at **Mönchengladbach** during the 2022 WC; he only joined Inter Milan in August 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the club/country (Gladbach, Germany).
+
+### Row 44148 — Switzerland (easy) — FAIL: answer wrong / non-unique — Xhaka had ~113 caps at the 2022 WC (not 120+), and Shaqiri/Rodríguez were similar
+- 'which Swiss captain had over 120 caps by the 2022 WC? → Xhaka.' Xhaka reached his 100th cap only in 2021 (~113 by Nov 2022); the 120-cap threshold isn't met and isn't unique (Shaqiri/Rodríguez were in the same range).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use a verifiable, unique cap figure.
+
+### Row 44149 — Switzerland (easy) — FAIL: non-unique — Shaqiri and Ricardo Rodríguez (distractors) had also passed 120 caps by 2023
+- 'which Swiss captain had over 120 caps in 2023? → Xhaka.' By 2023 **Shaqiri and Rodríguez** (both options) had also surpassed 120 caps.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to the captain/record-holder uniquely.
+
+### Row 44156 — Switzerland (easy) — FAIL: false premise — at the 2022 World Cup Xhaka played for Arsenal, not Bayer Leverkusen
+- 'which Swiss captain, at the 2022 WC, played for Bayer Leverkusen? → Xhaka.' Xhaka was at **Arsenal** during the 2022 WC; he joined Leverkusen in summer 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the club (Arsenal in 2022).
+
+### Row 44164 — Switzerland (easy) — FAIL: non-unique — Manuel Akanji (a distractor) was also a key centre-back at Euro 2024
+- 'which Swiss CB was a key player at Euro 2024? → Schär.' **Akanji** (an option) started Euro 2024 and was equally key. Two options correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Add a discriminator (e.g. cap count) or remove Akanji.
+
+### Row 44165 — Switzerland (easy) — FAIL: non-unique / mis-keyed — Akanji (a distractor) was the key Swiss CB starter at the 2022 World Cup
+- 'which Swiss CB was a key starter at the 2022 WC? → Schär.' **Akanji** (an option) started all four 2022 matches and was the key CB.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44167 — Switzerland (easy) — FAIL: non-unique — Akanji (a distractor) was also key to Switzerland's Euro 2024 defence
+- Both Schär and **Akanji** (an option) anchored the Euro 2024 defence.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Add a discriminator or remove Akanji.
+
+### Row 44168 — Switzerland (easy) — FAIL: non-unique — Akanji (a distractor) was also key to the Euro 2024 defence
+- Same: Schär and **Akanji** were both key CBs at Euro 2024.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Add a discriminator or remove Akanji.
+
+### Row 44169 — Switzerland (medium) — FAIL: non-unique — Akanji (a distractor) was equally key to the Euro 2024 group-stage defence
+- Both Schär and **Akanji** (an option) started the Euro 2024 group games.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Add a discriminator or remove Akanji.
+
+### Row 44170 — Switzerland (easy) — FAIL: answer wrong — Manuel Akanji DID play at Euro 2024 (he started the opener v Hungary)
+- 'which Swiss CB was NOT at Euro 2024? → Akanji.' Akanji was **named in the Euro 2024 squad and started** — the claim is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pick a CB who actually missed Euro 2024.
+
+
+## Switzerland batch rows 44176–44228 — 19 FAIL
+
+### Row 44179 — Switzerland (medium) — FAIL: non-unique — FC Basel and FC Lugano (distractors) also did NOT reach the 2018-19 CL group stage
+- 'which Swiss club did NOT reach the CL group stage in 2018-19? → FC Zürich.' Only **Young Boys** reached it that season — so Zürich, **Basel and Lugano** all 'did not'. Three options are correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique (only Young Boys reached it).
+
+### Row 44181 — Switzerland (easy) — FAIL: non-unique — Young Boys, Basel, Zürich and Lugano (all options) are Swiss Super League clubs
+- 'which Swiss club is a member of the Swiss Super League? → Young Boys.' All four options are top-flight Swiss clubs.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors from outside the Super League.
+
+### Row 44184 — Switzerland (medium) — FAIL: answer wrong — Young Boys' first CL group stage was 2018-19; FC Basel (an option) reached it before 2010
+- 'which Swiss club reached the CL group stage before the 2010 World Cup? → Young Boys.' Young Boys' debut there was **2018-19**; **FC Basel** reached the CL group stage pre-2010 (e.g. 2002-03, 2008-09).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to FC Basel.
+
+### Row 44186 — Switzerland (medium) — FAIL: non-unique — FC Basel (an option) reached the CL group stage far more often than Young Boys
+- 'which Swiss club reached the CL group stages multiple times? → Young Boys.' **FC Basel** reached it many times (2002, 2008, 2011-14, 2017) — at least as much.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove FC Basel as a distractor.
+
+### Row 44189 — Switzerland (medium) — FAIL: false premise — Young Boys' CL group-stage runs came AFTER the 2018 World Cup qualification
+- Young Boys' first CL group stage (2018-19) was after Switzerland's 2018 WC qualifying ended (Nov 2017); their CL runs did not 'precede' it. **FC Basel** is the club with pre-2018 CL runs.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the timeline / use FC Basel.
+
+### Row 44190 — Switzerland (medium) — FAIL: unverifiable / non-unique — no source pins Young Boys as the CL club that supplied the 2022 WC squad
+- Soft narrative; the 2022 squad was overwhelmingly foreign-based, and FC Basel equally developed Swiss internationals.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source the claim.
+
+### Row 44191 — Switzerland (medium) — FAIL: unverifiable / non-unique — FC Basel contributed more UEFA coefficient than Young Boys
+- Soft 'coefficient points' narrative; not a clean unique fact, and Basel's CL record outweighs Young Boys'.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source.
+
+### Row 44192 — Switzerland (easy) — FAIL: false premise — Young Boys' CL group-stage runs came after the 2018 World Cup qualification
+- Young Boys first reached the CL group stage in **2018-19**, after the 2018 WC qualifying; they could not have 'helped its players qualify for 2018'.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the timeline / use FC Basel.
+
+### Row 44193 — Switzerland (easy) — FAIL: false premise — Young Boys' CL runs (from 2018-19) post-date the 2018 World Cup squad
+- Same timeline error: their CL group-stage debut was 2018-19.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the timeline / use FC Basel.
+
+### Row 44194 — Switzerland (medium) — FAIL: unverifiable / non-unique — vague 'European success mirrored qualification' narrative
+- Soft, non-discriminating claim; FC Basel's European record is greater.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source the claim.
+
+### Row 44197 — Switzerland (easy) — FAIL: answer wrong — the Euro 2024 QF run was under Murat Yakín, not Petković
+- 'which coach's tactics led to consistent Euro QFs? → Petković.' Petković managed the **Euro 2020** QF, but **Yakín** (appointed 2021) managed the **Euro 2024** QF. No single coach oversaw both.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Split by tournament or name Yakín for 2024.
+
+### Row 44208 — Switzerland (easy) — FAIL: answer wrong — Akanji made his World Cup debut in 2018, not 2022
+- Akanji was in the 2018 WC squad and **started all four** matches; his WC debut was **2018**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to a defender who actually debuted in 2022.
+
+### Row 44209 — Switzerland (easy) — FAIL: non-unique — Rodríguez and Schär (distractors) also have 60+ caps and played the 2022 WC
+- 'which Swiss defender with over 60 caps played at the 2022 WC? → Akanji.' **Ricardo Rodríguez (120+)** and **Fabian Schär (80+)** also qualify.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Add a discriminator (e.g. club).
+
+### Row 44211 — Switzerland (easy) — FAIL: answer wrong — Dan Ndoye did not debut at Euro 2024 (he was already capped, incl. the 2022 WC squad)
+- 'which Swiss emerging talent debuted at Euro 2024? → Ndoye.' Ndoye was capped before Euro 2024 (he was in the 2022 WC squad).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use 'shone at' rather than 'debuted', or pick an actual 2024 debutant.
+
+### Row 44212 — Switzerland (easy) — FAIL: answer wrong — Ndoye did not debut at Euro 2024 (already capped before then)
+- Same: Ndoye's senior debut pre-dates Euro 2024.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pick an actual Euro 2024 debutant.
+
+### Row 44215 — Switzerland (easy) — FAIL: answer wrong — Breel Embolo made his World Cup debut in 2018, not 2022
+- Embolo was in the 2018 WC squad; his WC debut was **2018** (2022 was his first WC goal, not his debut).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to a forward who debuted in 2022, or reword to 'first goal'.
+
+### Row 44217 — Switzerland (easy) — FAIL: answer wrong — the 90th-minute equaliser v France (Euro 2020) was scored by Mario Gavranović, not Seferović
+- Seferović scored at 15' and 81' (the 81' made it 2-3); **Gavranović scored the 90' equaliser (3-3)**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Mario Gavranović.
+
+### Row 44219 — Switzerland (easy) — FAIL: answer wrong — the late equaliser v France (Euro 2020) was Gavranović's 90' goal, not Seferović
+- The 3-3 equaliser was **Gavranović (90')**; Seferović's 81' goal made it 2-3.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44225 — Switzerland (easy) — FAIL: answer wrong — Switzerland's Euro 2020 equaliser v France was scored by Gavranović, not Seferović
+- The 90' equaliser (3-3) was **Mario Gavranović**; Seferović scored at 15' and 81'.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+> **CORRECTION — Row 43875** (currently in QA_PASSED_ALL.md, mis-passed earlier): the question credits **Seferović** with a 'late equaliser against France at Euro 2020', but the 90' equaliser (3-3) was **Mario Gavranović** (Seferović scored 15' & 81'). Row 43875 should be **moved to FAIL**. Source: https://en.wikipedia.org/wiki/Switzerland_national_football_team
+
+
+## Switzerland batch rows 44231–44285 — 7 FAIL
+
+### Row 44232 — Switzerland (easy) — FAIL: answer wrong — Sommer was backup at the 2014 WC; his World Cup debut was 2018
+- 'which GK debuted at the 2014 WC before joining Inter? → Sommer.' At the 2014 WC Sommer was **backup to Diego Benaglio** and did not play; his WC debut was **2018**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix to 2018 (or name Benaglio for 2014).
+
+### Row 44233 — Switzerland (easy) — FAIL: explanation wrong — Sommer's 2012 debut was a friendly v Romania, not Argentina
+- The answer (Sommer, debut 2012) is right, but the explanation says 'friendly against Argentina'; his debut (30 May 2012, Lucerne) was **v Romania**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation opponent (Romania).
+
+### Row 44234 — Switzerland (easy) — FAIL: answer wrong — Sommer's debut was a 2012 friendly (v Romania), not a 2014 World Cup qualifier
+- Sommer debuted on **30 May 2012 in a friendly**, before the 2014 qualifiers began (and he was backup, not a qualifier starter).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix to 'a 2012 friendly'.
+
+### Row 44236 — Switzerland (easy) — FAIL: false premise — during 2022 qualifying Sommer played for Borussia Mönchengladbach, not Inter Milan
+- Sommer was at **Mönchengladbach** during 2022 qualifying (2021); he only joined Inter in August 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the club (Gladbach).
+
+### Row 44240 — Switzerland (easy) — FAIL: answer wrong — Sommer started more (2018 + 2022 = 8) than Benaglio (2014 = 4); not 'equal'
+- 'who started more WC matches 2014–2022: Sommer or Benaglio? → Benaglio.' Sommer started all of **2018 and 2022** (8), Benaglio only 2014 (4) — the explanation's 'equal' is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Sommer.
+
+### Row 44248 — Switzerland (easy) — FAIL: false premise — Switzerland did not face Italy at the 2022 World Cup (the 0-0 v Italy was a 2021 qualifier)
+- 'Sommer's saves secured a 0-0 v Italy at the 2022 WC.' Switzerland's 2022 group was Brazil/Serbia/Cameroon; the 0-0 v Italy was a **2022 WC qualifier (Sep 2021)**, not at the finals.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to the qualifier (not the WC).
+
+### Row 44284 — Switzerland (easy) — FAIL: false detail — 2026 is Switzerland's sixth successive World Cup, not their 'third consecutive'
+- The manager (Yakín) is correct, but Switzerland have qualified for 2006–2026 (**six in a row**); '2026 = third consecutive' is false, and Yakín's WCs are only 2022 & 2026.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the 'third consecutive' figure (sixth successive).
+
+
+## Switzerland batch rows 44286–44345 — 26 FAIL
+
+### Row 44289 — Switzerland (easy) — FAIL: false premise — at the 2022 World Cup Zakaria was at Chelsea (loan), not Monaco
+- Zakaria was on loan at **Chelsea** during the 2022 WC; he joined Monaco only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the club (Chelsea in 2022).
+
+### Row 44290 — Switzerland (medium) — FAIL: answer wrong / non-unique — Xhaka had ~113 caps during 2022 qualifying, and Shaqiri/Rodríguez are comparable
+- Xhaka reached his 100th cap only in 2021, so ~113 by the 2022 WC — under 120 during qualifying; and Shaqiri/Rodríguez are in the same range.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use a verifiable, unique cap figure.
+
+### Row 44291 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps before the 2022 World Cup, not 120+
+- He crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44292 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps at the 2022 World Cup, not 120+
+- ~113 by Nov 2022.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44293 — Switzerland (easy) — FAIL: non-unique — Shaqiri and Rodríguez (distractors) have also earned 120+ caps
+- Present-tense '120+ caps' is true of **Xhaka, Shaqiri and Rodríguez** alike.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin to the record-holder uniquely.
+
+### Row 44294 — Switzerland (easy) — FAIL: false premise — Zakaria played for Chelsea (loan) at the 2022 World Cup, not Monaco
+- Zakaria was a **Chelsea** loanee during the 2022 WC; Monaco came in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the club.
+
+### Row 44296 — Switzerland (easy) — FAIL: unverifiable / likely false — Zakaria did not start Switzerland's 2022 opener v Cameroon
+- Switzerland's midfield v Cameroon was Xhaka–Freuler–Sow; Zakaria (just back from injury, barely playing at Chelsea) was not a starter.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Verify the starting XI or change the player.
+
+### Row 44297 — Switzerland (easy) — FAIL: unverifiable / likely false — Zakaria was not a starter v Serbia at the 2022 World Cup
+- Zakaria had limited 2022 WC minutes (fitness/form); the starting midfield was Xhaka–Freuler–Sow.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Verify the starting XI or change the player.
+
+### Row 44311 — Switzerland (easy) — FAIL: unverifiable / likely false — Steven Zuber holds no established French nationality
+- No reliable source gives Zuber (born in Winterthur) dual French citizenship.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Verify the nationality or pick a player with a confirmed second nationality.
+
+### Row 44312 — Switzerland (easy) — FAIL: non-unique — Akanji and Embolo (distractors) also have dual nationality
+- 'which Euro 2024 player has dual nationality? → Xhaka.' **Akanji** (Nigerian) and **Embolo** (Cameroonian) also do.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the trait unique.
+
+### Row 44314 — Switzerland (easy) — FAIL: non-unique — Shaqiri (a distractor) was born in Kosovo and is equally eligible for Kosovo
+- Both Xhaka and **Shaqiri** are eligible for Kosovo.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Shaqiri.
+
+### Row 44315 — Switzerland (easy) — FAIL: non-unique — Akanji and Shaqiri (distractors) were also eligible via dual nationality
+- Generic dual-nationality trait shared by Xhaka, **Akanji and Shaqiri**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the trait unique.
+
+### Row 44321 — Switzerland (easy) — FAIL: answer wrong — Ndoye did not debut at a major tournament in 2024 (he was in the 2022 WC squad)
+- Ndoye's major-tournament debut was the **2022 World Cup**, not Euro 2024.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use 'emerged at' rather than 'debuted', or pick a 2024 debutant.
+
+### Row 44324 — Switzerland (easy) — FAIL: answer wrong / unverifiable — Fabian Rieder was not in the 2022 World Cup squad, and 'Canadian nationality' is unsupported
+- Rieder did not feature at the 2022 WC, and no source gives him Swiss-Canadian dual nationality.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pick an actual 2022 debutant with a verified second nationality.
+
+### Row 44326 — Switzerland (easy) — FAIL: answer wrong — Xhaka's senior debut was 2011, not during the 2010 World Cup qualifiers
+- The 2010 WC qualifiers ran 2008-09; Xhaka first played for Switzerland in **2011**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the debut campaign.
+
+### Row 44328 — Switzerland (medium) — FAIL: non-unique — Ricardo Rodríguez also did not score in the 3-3 v France (his goal was a shootout penalty)
+- 'which player did NOT score in the 3-3 draw? → Shaqiri.' In the **3-3 itself** only Seferović and Gavranović scored — **Rodríguez** (an option) also didn't score in the draw (his was a shootout penalty).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Scope the question to the shootout, or make the non-scorer unique.
+
+### Row 44329 — Switzerland (medium) — FAIL: non-unique — Shaqiri and Rodríguez (distractors) also have 120+ caps
+- '120+ caps through WC qualification campaigns → Xhaka.' Non-unique (Shaqiri, Rodríguez).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin uniquely.
+
+### Row 44330 — Switzerland (easy) — FAIL: non-unique — Shaqiri and Rodríguez (distractors) also passed 120 caps by 2024
+- Non-unique 120+ threshold.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin uniquely.
+
+### Row 44331 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps by the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44334 — Switzerland (easy) — FAIL: answer wrong — the late equaliser v France (Euro 2020) was Gavranović's 90' goal, not Seferović
+- Seferović scored 15' & 81'; **Gavranović** scored the 90' equaliser (3-3).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44335 — Switzerland (easy) — FAIL: answer wrong — Switzerland's late equaliser v France (Euro 2020) was Gavranović, not Seferović
+- The 90' equaliser was **Gavranović**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44338 — Switzerland (easy) — FAIL: false premise — Switzerland never reached 4th in the FIFA rankings (peak 3rd, 1993)
+- The player (Xhaka) did feature in 2018 qualifying, but the 'reached 4th' premise is false — their peak is **3rd (1993)**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false ranking premise.
+
+### Row 44340 — Switzerland (easy) — FAIL: false premise — during the 2022 qualifiers Akanji was at Borussia Dortmund, not Manchester City
+- Akanji joined **Man City on 1 Sep 2022**; the 2022 qualifiers (2021) were while he was at **Dortmund**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the club (Dortmund during qualifying).
+
+### Row 44343 — Switzerland (medium) — FAIL: answer wrong — Fabian Rieder was not in the 2022 World Cup squad
+- Rieder did not feature at the 2022 WC; the Young Boys 2022 squad player was **Christian Fassnacht**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the player (e.g. Fassnacht).
+
+### Row 44344 — Switzerland (easy) — FAIL: answer wrong — the 2022 WC squad's Young Boys player was Christian Fassnacht, not Rieder
+- Rieder was not in the 2022 squad; **Fassnacht** (Young Boys) was.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Fassnacht.
+
+### Row 44345 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps before the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+
+## Switzerland batch rows 44347–44409 — 12 FAIL
+
+### Row 44347 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps by the 2022 World Cup, not 120+
+- He crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44348 — Switzerland (easy) — FAIL: answer wrong / non-unique — Xhaka had ~113 caps during 2022 qualifying (and Shaqiri/Rodríguez are comparable)
+- Under 120 during qualifying; threshold non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use a verifiable unique figure.
+
+### Row 44349 — Switzerland (easy) — FAIL: non-unique — Akanji, Shaqiri and Embolo (distractors) also have dual nationality
+- Generic dual-nationality trait shared by all four options.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the trait unique.
+
+### Row 44352 — Switzerland (easy) — FAIL: answer wrong — Manuel Akanji's senior debut was 2017 (v Faroe Islands), not 2018
+- Akanji debuted on 9 June 2017; and the 'reached 4th in 2018' aside is also false (peak 3rd, 1993).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the debut year (2017).
+
+### Row 44354 — Switzerland (easy) — FAIL: answer wrong — Gavranović scored vs Spain; the Euro 2020 QF shootout missers were Schär, Akanji and Vargas
+- 'which Swiss player missed a penalty v Spain? → Gavranović.' Gavranović **scored** Switzerland's only pen; the three misses were **Schär, Akanji, Vargas** (none of which are options).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to a real misser.
+
+### Row 44357 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps before the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44362 — Switzerland (easy) — FAIL: answer wrong — Xhaka did not score at the 2022 World Cup (Switzerland's Serbia scorers were Shaqiri, Embolo, Freuler), and he had ~113 caps
+- 'scored a 2022 WC goal and has 120+ caps → Xhaka.' Xhaka **did not score** at the 2022 WC, and had ~113 caps.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pick an actual 2022 scorer (Embolo/Shaqiri/Freuler).
+
+### Row 44371 — Switzerland (easy) — FAIL: answer wrong — the late equaliser v France (Euro 2020) was Gavranović's 90' goal, not Seferović
+- Seferović scored 15' & 81'; **Gavranović** scored the 90' equaliser.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44377 — Switzerland (easy) — FAIL: answer wrong — Akanji scored a real goal (not an own goal) in the 1-6 v Portugal
+- Akanji scored Switzerland's legitimate goal in the 6-1 defeat; it was **not** an own goal.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove 'own goal' (it was a regular goal).
+
+### Row 44383 — Switzerland (easy) — FAIL: answer wrong — Shaqiri's WC goals came in wins, not the 2014/2022 defeats; he didn't score in either loss
+- Shaqiri scored v Honduras (2014 win) and v Serbia (2022 win); he did **not** score in the 2-5 loss to France (2014) or the 1-6 loss to Portugal (2022, which was Akanji).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the matches (his goals were in wins).
+
+### Row 44398 — Switzerland (easy) — FAIL: answer wrong — Switzerland's 90th-minute equalizer v France (Euro 2020) was Gavranović, not Seferović
+- The 90' equaliser was **Gavranović**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44407 — Switzerland (easy) — FAIL: false score — the Euro 2024 QF v England was 1-1 (England 5-3 pens), not a '2-1 loss'
+- Embolo did score Switzerland's goal, but it was **1-1 a.e.t.; England won 5-3 on pens**, not 2-1.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the score (1-1, England on pens).
+
+
+## Switzerland batch rows 44411–44480 — 14 FAIL
+
+### Row 44419 — Switzerland (medium) — FAIL: false premise — Switzerland never reached 4th in the FIFA rankings (peak 3rd, 1993)
+- The 2018 captain (Lichtsteiner) is right, but the 'reached 4th in 2018' premise is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false ranking premise.
+
+### Row 44420 — Switzerland (medium) — FAIL: false premise — Euro 2016 was a Round-of-16 run for Switzerland, not a group-stage exit
+- Shaqiri featured at both Euros, but Switzerland reached the **R16 at Euro 2016**, not a group-stage exit.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the Euro 2016 framing (R16).
+
+### Row 44423 — Switzerland (easy) — FAIL: non-unique — Sommer, Akanji and Embolo (all options) were each 'not both a captain and a Bundesliga player' in 2023
+- Only Xhaka was both; so **Sommer, Akanji and Embolo** all satisfy 'NOT both' — three correct answers.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44426 — Switzerland (easy) — FAIL: unverifiable / likely false — no record of Remo Freuler being sent off in the 1-6 v Portugal (2022 R16)
+- No reliable source shows a Swiss red card in that match.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Verify; remove if no red card occurred.
+
+### Row 44431 — Switzerland (easy) — FAIL: false premise — Switzerland did not face Argentina at the 2022 World Cup (and Xhaka had ~113 caps)
+- Switzerland's 2022 opponents were Brazil/Serbia/Cameroon + Portugal; **Argentina was 2014**. Also Xhaka had ~113 caps, not 120+.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the opponent (2014, not 2022) and the cap figure.
+
+### Row 44432 — Switzerland (medium) — FAIL: answer wrong / non-unique — Xhaka had ~113 caps in 2022 qualifying (Shaqiri/Rodríguez comparable)
+- Under 120 during qualifying; threshold non-unique.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use a verifiable unique figure.
+
+### Row 44433 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps at the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44436 — Switzerland (medium) — FAIL: false premise — no Swiss player scored in the 2014 knockout stage (they lost 0-1 to Argentina)
+- 'Shaqiri scored v Argentina in the 2014 R16.' Switzerland were **scoreless** in that 0-1 loss; Shaqiri's 2014 goals were the group-stage Honduras hat-trick.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix to the group stage (no Swiss KO goal in 2014).
+
+### Row 44445 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps at the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44466 — Switzerland (medium) — FAIL: answer wrong — the late equaliser that forced ET v France (Euro 2020) was Gavranović, not Seferović
+- The 90' equaliser (3-3) was **Gavranović**; Seferović scored 15' & 81'.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44467 — Switzerland (easy) — FAIL: answer wrong — the late Euro 2020 equaliser v France was Gavranović, not Seferović
+- **Gavranović** scored the 90' equaliser that forced the shootout.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44474 — Switzerland (easy) — FAIL: non-unique — 'Stade de Suisse' and 'Wankdorf Stadium' (both options) are the same ~31,783-capacity venue
+- Stade de Suisse is the sponsored name of the **Wankdorf**; two options refer to the identical stadium.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the duplicate option.
+
+### Row 44478 — Switzerland (easy) — FAIL: false premise — no Swiss stadium hosted a 2006 World Cup match (2006 WC was in Germany)
+- Switzerland's 2006 R16 v Ukraine was in **Cologne, Germany**; St. Jakob-Park hosted no 2006 WC match.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false 2006-WC-in-Switzerland premise.
+
+### Row 44479 — Switzerland (easy) — FAIL: answer wrong — the 2018 qualifier v Portugal was at St. Jakob-Park (Basel), not Stade de Suisse
+- The home 2-0 v Portugal (Sep 2016) was at **St. Jakob-Park** (an option), not Stade de Suisse.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to St. Jakob-Park.
+
+
+## Switzerland batch rows 44481–44560 — 29 FAIL
+
+### Row 44481 — Switzerland (easy) — FAIL: answer wrong — the 2018 qualifier v Portugal was at St. Jakob-Park (Basel), not Stade de Suisse
+- The 2-0 v Portugal (Sep 2016) was at **St. Jakob-Park** (an option).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to St. Jakob-Park.
+
+### Row 44483 — Switzerland (easy) — FAIL: answer wrong — the 2022 qualifier v Italy was at St. Jakob-Park (Basel), not Stade de Suisse
+- The 0-0 v Italy (Sep 2021) was at **St. Jakob-Park** (an option).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to St. Jakob-Park.
+
+### Row 44486 — Switzerland (easy) — FAIL: answer wrong — Switzerland's 2022 home qualifiers were at St. Jakob-Park & Kybunpark, not Stade de Suisse
+- Stade de Suisse is not the qualifier venue; **St. Jakob-Park** (an option) is.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to St. Jakob-Park.
+
+### Row 44487 — Switzerland (easy) — FAIL: unverifiable / likely wrong — 'Stade de Suisse, primary home venue' is contestable and the Slovenia-qualifier venue is unconfirmed
+- St. Jakob-Park (an option) is the larger/main venue; the specific Slovenia-qualifier location isn't verified as Stade de Suisse.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Verify the venue or use St. Jakob-Park.
+
+### Row 44488 — Switzerland (easy) — FAIL: answer wrong / contestable — St. Jakob-Park, not Stade de Suisse, is Switzerland's main qualifier venue
+- Calling Stade de Suisse the 'primary' 2026-qualifier venue is unsupported; **St. Jakob-Park** is the main one.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to St. Jakob-Park or drop 'primary'.
+
+### Row 44490 — Switzerland (easy) — FAIL: contestable — Stade de Suisse was not the established 'primary' venue for 2010 home qualifiers
+- St. Jakob-Park (an option) is the larger/main venue.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change to St. Jakob-Park or drop 'primary'.
+
+### Row 44494 — Switzerland (easy) — FAIL: false premise — Stade de Suisse was a Euro 2008 venue, not 'a 2016 Euro venue' (Euro 2016 was in France)
+- Switzerland co-hosted **Euro 2008**; Euro 2016 was in France. The ~31,783 capacity is right but the '2016 Euro venue' framing is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to Euro 2008.
+
+### Row 44495 — Switzerland (easy) — FAIL: non-unique — 'Stade de Suisse' and 'Wankdorf Stadium' (both options) are the same ~31,783 venue
+- Two options refer to the identical Bern stadium.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the duplicate option.
+
+### Row 44499 — Switzerland (easy) — FAIL: non-unique — 'Stade de Suisse' and 'Wankdorf Stadium' (both options) are the same venue
+- Duplicate Bern stadium; also it wasn't the 2022 qualifier venue (St. Jakob-Park was).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the duplicate option.
+
+### Row 44502 — Switzerland (easy) — FAIL: answer wrong — Embolo did not score at the 2018 World Cup (his first WC goal was 2022)
+- 'scored at both 2022 and 2018 → Embolo.' Embolo scored at the 2022 WC only; he did not score in 2018.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix to 2022 only.
+
+### Row 44503 — Switzerland (easy) — FAIL: answer wrong — Embolo did not score at the 2018 World Cup
+- Embolo's first (and 2018-absent) WC goal was at the **2022** tournament.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix to 2022 only.
+
+### Row 44506 — Switzerland (easy) — FAIL: non-unique — FC Lugano (a distractor) also had no player in the 2022 squad
+- 'which Swiss-SL club had NO 2022 squad player? → FC Zürich.' **Lugano** (an option) likewise had none — more than one correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44509 — Switzerland (easy) — FAIL: false/garbled premise — no FC Basel players featured on both sides of the 2014 Brazil-Chile match
+- The explanation even names Granit Xhaka (a Swiss player) for a Brazil-Chile fixture; Aránguiz was at Internacional in 2014, not Basel.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false premise.
+
+### Row 44511 — Switzerland (easy) — FAIL: explanation wrong / non-unique — Basel and Zürich are Swiss Super League clubs too (not 'foreign')
+- 'which Swiss-SL club had players in the 2022 squad? → Young Boys.' The explanation calls Basel/Zürich 'foreign', which is false; Basel is also a Swiss SL club.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use genuinely foreign distractors.
+
+### Row 44512 — Switzerland (easy) — FAIL: unverifiable — no source confirms Young Boys supplied the MOST players to the 2022 squad
+- Obscure squad-composition count.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source.
+
+### Row 44514 — Switzerland (easy) — FAIL: unverifiable / non-unique — Young Boys as the 2018 squad supplier isn't established (and Basel also supplied players)
+- Soft squad-supply claim.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source.
+
+### Row 44515 — Switzerland (easy) — FAIL: unverifiable — no evidence two Young Boys players faced each other for different nations at the 2022 WC
+- Obscure, unsupported claim.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Drop or source.
+
+### Row 44516 — Switzerland (easy) — FAIL: answer wrong — Ndoye's senior debut was Sep 2022 (NL v Spain), not Euro 2024; and Embolo debuted in 2015, not 2022
+- Both halves are off: Ndoye debuted in **September 2022**, and **Embolo's** senior debut was **2015** (WC debut 2018), not 2022.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix both debut facts.
+
+### Row 44518 — Switzerland (hard) — FAIL: answer wrong — Euro 2016 was a Round-of-16 run, not a 2010s group-stage exit
+- Switzerland reached the **R16 at Euro 2016**; none of the offered events was a 2010s group-stage exit (2014/18 were R16, they didn't qualify for Euro 2012).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use a real group-stage exit.
+
+### Row 44521 — Switzerland (hard) — FAIL: false premise — Euro 2016 was an R16 run, not a group-stage exit
+- The 'Euro 2016 group stage exit' premise is false (they reached the R16).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false premise.
+
+### Row 44522 — Switzerland (medium) — FAIL: non-unique / mislabeled — 2018 was also a Last-16 finish (and '2014 Group Stage' is wrong; 2014 was the R16)
+- 'best reflects competitiveness → 2022 Last 16.' **2018 Last 16** (an option) is an equal achievement, and the '2014 Group Stage' option is mislabeled (2014 was the R16).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique and fix the 2014 label.
+
+### Row 44523 — Switzerland (easy) — FAIL: explanation wrong — the Euro 2024 QF was 1-1 (England 5-3 pens), not a '2-1 loss'
+- The answer (6-1 v Portugal) is right, but the explanation compares it to a false '2-1 loss to England' — the QF was 1-1, England on pens.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the England score in the explanation.
+
+### Row 44524 — Switzerland (easy) — FAIL: unverifiable / contestable — 'Stade de Suisse' as Köbi Kuhn's 2008-friendly venue is unsupported
+- Soft venue claim resting on the contestable 'primary home venue' designation (St. Jakob-Park is the main venue).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Verify or use St. Jakob-Park.
+
+### Row 44527 — Switzerland (easy) — FAIL: answer wrong — Switzerland played only ~8 matches in 2022 qualifying, so 'over 15 caps' in that campaign is impossible
+- Group C had 8 qualifiers; a player cannot earn 15+ caps in a single campaign.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the cap figure (≤8 in the campaign).
+
+### Row 44528 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps at the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44529 — Switzerland (easy) — FAIL: answer wrong — Xhaka was not captain at the 2018 World Cup (Stephan Lichtsteiner was)
+- Xhaka captained from 2020/2022; the **2018 captain was Lichtsteiner** (an option).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the 2018 captain.
+
+### Row 44544 — Switzerland (easy) — FAIL: answer wrong — Switzerland's 2022 knockout goal (1-6 v Portugal) was scored by Akanji, not Embolo
+- Embolo scored in the group stage; the R16 goal was **Akanji's**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Akanji (or scope to the group stage).
+
+### Row 44559 — Switzerland (medium) — FAIL: false premise — Switzerland never peaked at 4th (record is 3rd, 1993); 2018 was not a ranking 'peak'
+- Petković was the 2018 coach, but the 'reached 4th / peak in 2018' premise is false.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false ranking premise.
+
+### Row 44560 — Switzerland (medium) — FAIL: false premise — Switzerland beat France in the Euro 2020 Round of 16, not the group stage
+- The coach (Petković) is right, but it was a **R16** win over France, not a group-stage win.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change 'group stage' to 'round of 16'.
+
+
+## Switzerland batch rows 44561–44660 — 21 FAIL
+
+### Row 44565 — Switzerland (easy) — FAIL: answer wrong — Murat Yakín (not Petković) was in charge when Switzerland topped the group to qualify for 2022
+- Petković left in mid-2021; **Yakín** managed the decisive Sep–Nov 2021 qualifiers and clinched the group ahead of Italy.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Yakín.
+
+### Row 44566 — Switzerland (easy) — FAIL: answer wrong — the St. Jakob-Park 2022 qualifier (v Italy, Sep 2021) was under Yakín, not Petković (and managers don't pick venues)
+- The decisive 2022 home qualifiers were under **Yakín**; the premise also wrongly treats venue selection as the manager's.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the manager/period (Yakín).
+
+### Row 44567 — Switzerland (easy) — FAIL: explanation wrong — Euro 2016 was a Round-of-16 run, not a group-stage exit
+- Petković was the Euro 2016 manager, but Switzerland reached the **R16**, not a group exit.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation (R16).
+
+### Row 44570 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps by the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44578 — Switzerland (medium) — FAIL: answer wrong — Xhaka had ~113 caps at the 2022 World Cup; he did not reach his 120th cap there
+- He hit 120 in 2023, not during the 2022 group stage.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the cap milestone.
+
+### Row 44579 — Switzerland (easy) — FAIL: non-unique — Shaqiri and Rodríguez (distractors) also had 120+ caps by Euro 2024
+- By Euro 2024, Xhaka, **Shaqiri and Rodríguez** all exceeded 120 caps.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin uniquely.
+
+### Row 44581 — Switzerland (easy) — FAIL: non-unique — Shaqiri and Rodríguez (distractors) also have 120+ caps
+- Present-tense '120+' is true of Xhaka, **Shaqiri and Rodríguez**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pin uniquely.
+
+### Row 44582 — Switzerland (easy) — FAIL: answer wrong — the Euro 2020 QF (v Spain) missers were Schär, Akanji and Vargas, not Gavranović
+- Gavranović scored Switzerland's only pen v Spain; the three misses were **Schär/Akanji/Vargas** (none of which are options).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to a real misser.
+
+### Row 44584 — Switzerland (easy) — FAIL: answer wrong — Xhaka had ~113 caps by the 2022 World Cup, not 120+
+- Crossed 120 only in 2023.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use the real figure.
+
+### Row 44585 — Switzerland (easy) — FAIL: answer wrong — the 90th-minute equaliser v France (Euro 2020) was Gavranović, not Seferović
+- Seferović scored 15' & 81'; **Gavranović** scored the 90' equaliser.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44588 — Switzerland (easy) — FAIL: answer wrong — the late equaliser v France (Euro 2020) was Gavranović, not Seferović
+- The 90' equaliser (3-3) was **Gavranović**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44593 — Switzerland (easy) — FAIL: answer wrong — Shaqiri scored v Serbia in Kaliningrad in 2018; the Rostov match was v Brazil (Zuber scored)
+- 'scored at the 2018 WC in Rostov → Shaqiri.' Shaqiri's 2018 goal was v **Serbia in Kaliningrad**; **Rostov** hosted Switzerland 1-1 Brazil (Zuber).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the venue/match (Kaliningrad v Serbia).
+
+### Row 44596 — Switzerland (easy) — FAIL: false score — the Euro 2024 QF was 1-1 (England 5-3 pens), not a '2-1 loss'
+- Embolo did score, but it was **1-1 a.e.t.; England won 5-3 on pens**, not 2-1.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the score.
+
+### Row 44602 — Switzerland (easy) — FAIL: answer wrong — the late equaliser v France (Euro 2020) was Gavranović, not Seferović
+- The 90' equaliser was **Gavranović**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Gavranović.
+
+### Row 44618 — Switzerland (easy) — FAIL: false score — England beat Switzerland 1-1 (5-3 pens) in the Euro 2024 QF, not 2-1
+- England (the answer) is right, but the QF was **1-1 a.e.t.; England won 5-3 on pens**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the score.
+
+### Row 44619 — Switzerland (easy) — FAIL: explanation wrong — the 6-1 v Portugal was the 2022 Round of 16, not the group stage
+- Answer/score (Portugal, 6-1) is right, but it was the **R16**, not the group stage.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation (R16).
+
+### Row 44652 — Switzerland (medium) — FAIL: non-unique — Switzerland also did not beat Honduras (0-0 draw) in the 2010 group; Ecuador wasn't even in the group
+- 'which did Switzerland NOT beat in the 2010 group? → Chile.' They also didn't beat **Honduras** (drew 0-0), and **Ecuador** (an option) wasn't in their group.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44653 — Switzerland (easy) — FAIL: answer wrong — Portugal was not in Switzerland's 2022 group (it was the R16); the group team they didn't beat was Brazil
+- 'which did Switzerland NOT beat in their 2022 group? → Portugal.' Portugal was the **R16** opponent; in the group Switzerland didn't beat **Brazil** (lost 0-1).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to Brazil (and fix the group/R16 mix-up).
+
+### Row 44654 — Switzerland (medium) — FAIL: non-unique — Switzerland also did not face Portugal in a Euro 2024 knockout (only Italy and England)
+- 'which did Switzerland NOT face in a Euro 2024 KO? → Spain.' They also did not face **Portugal** at Euro 2024 (that was the 2022 WC) — two correct answers.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44655 — Switzerland (medium) — FAIL: false premise — Switzerland reached the R16 at Euro 2016; the Romania draw did not cause a 'group stage exit'
+- Switzerland did draw Romania 1-1, but they **advanced to the R16**, so it didn't 'contribute to a group-stage exit'.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false group-exit premise.
+
+### Row 44660 — Switzerland (easy) — FAIL: explanation wrong — the Euro 2024 QF was 1-1 (England 5-3 pens), not 'lost 2-1'
+- England (the answer) is right, but the explanation's '2-1' is false — it was 1-1, England on pens.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the explanation score.
+
+
+## Switzerland batch rows 44661–44755 — 23 FAIL
+
+### Row 44669 — Switzerland (medium) — FAIL: false premise — the 2010 win over Spain was a group-stage match, not a knockout
+- 'two nations beat in 2010 and 2024 knockout matches → Spain and Italy.' The Spain 1-0 (2010) was a **group-stage** game; only the Italy 2-0 (Euro 2024) was a knockout.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the 2010 stage (group, not knockout).
+
+### Row 44674 — Switzerland (medium) — FAIL: non-unique — Switzerland also won their group for 2010 and 2014 (so '2010 and 2014' is equally correct)
+- 'two WCs qualified via group wins → 2022 and 2026.' Switzerland won their group for **2010, 2014, 2022 and 2026** (only 2018 was a playoff), so '2010 and 2014' (an option) is also correct.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44675 — Switzerland (hard) — FAIL: answer wrong — 2022 was an R16 run, not a group-stage exit; only 2010 was a group exit
+- 'two WCs eliminated in the group stage → 2010 and 2022.' In **2022 they reached the R16**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pair 2010 with an actual group-stage exit.
+
+### Row 44676 — Switzerland (medium) — FAIL: non-unique — Switzerland also reached the R16 in 2022, so '2018 and 2022' (an option) is equally correct
+- 'two WCs reached the R16 → 2014 and 2018.' They reached the R16 in **2014, 2018 and 2022** — multiple valid pairs.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44682 — Switzerland (easy) — FAIL: answer wrong / category error — Costa Rica is not a UEFA nation; the UEFA team Switzerland didn't beat in 2018 was Sweden
+- 'which UEFA nation did Switzerland NOT beat at 2018? → Costa Rica.' Costa Rica is **CONCACAF**; among the UEFA options they lost to **Sweden** (and drew Brazil/CONMEBOL).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Fix the category/answer (Sweden).
+
+### Row 44687 — Switzerland (medium) — FAIL: false premise — Switzerland never peaked at 4th (record is 3rd, 1993)
+- Recurring error: their highest FIFA ranking is **3rd (Aug 1993)**.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to 3rd (1993).
+
+### Row 44688 — Switzerland (easy) — FAIL: non-unique — Portugal and Belgium (distractors) also qualified for every major tournament 2014-2022
+- **Portugal and Belgium** (both options) also qualified for every WC/Euro in that span; only Netherlands missed.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors that missed a tournament.
+
+### Row 44690 — Switzerland (medium) — FAIL: non-unique — Germany, Spain and Netherlands (all options) also qualified for the 2026 World Cup
+- All four options are among the 12 direct UEFA group winners for 2026.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors that failed to qualify.
+
+### Row 44691 — Switzerland (medium) — FAIL: false premise — Switzerland never reached 4th (peak 3rd, 1993)
+- Same systematic ranking error.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Re-anchor to 3rd (1993).
+
+### Row 44692 — Switzerland (easy) — FAIL: answer wrong — Switzerland reached the R16 in 2022, not a group-stage exit
+- 'which UEFA nation was eliminated in the 2022 group stage → Switzerland.' They reached the **Round of 16** (lost 6-1 to Portugal).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Pick a team actually eliminated in the 2022 group stage.
+
+### Row 44693 — Switzerland (easy) — FAIL: self-referential — the answer (Switzerland) is the subject of the question (and Germany/Spain/Netherlands also qualified directly for 2014)
+- 'which nation, like Switzerland in 2010, qualified directly for 2014? → Switzerland.' The answer names the subject team, and the distractors also qualified directly.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the answer with a genuine comparator.
+
+### Row 44694 — Switzerland (easy) — FAIL: self-referential + non-unique — answer is Switzerland itself, and Germany/France/Portugal also qualified for every tournament since 2014
+- 'which nation, like Switzerland, qualified for every major tournament since 2014? → Switzerland.' Self-referential, and the trait is shared by the distractors.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Replace the answer with a real comparator and fix the 'only one' claim.
+
+### Row 44695 — Switzerland (easy) — FAIL: non-unique — Spain (a distractor) also reached the Euro QF in both 2020 and 2024
+- 'which nation, like Switzerland, reached the Euro QF in both 2020 and 2024? → England.' **Spain** (an option) also did (2020 semis, 2024 winners); France/Italy did not.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove Spain or make the answer unique.
+
+### Row 44697 — Switzerland (easy) — FAIL: non-unique — Portugal, Netherlands and Croatia (all options) also qualified for the 2026 World Cup
+- All four options are among the 12 direct UEFA qualifiers for 2026.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Use distractors that failed to qualify.
+
+### Row 44708 — Switzerland (medium) — FAIL: answer wrong — Yakín started managing for the 2022 campaign (appointed Aug 2021), not 2026
+- Yakín took over in Aug 2021 and led the **2022** WC; his first campaign was 2022, not 2026.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to the 2022 campaign.
+
+### Row 44712 — Switzerland (hard) — FAIL: non-unique — Switzerland also qualified by winning their UEFA group for 2010 and 2014
+- 'which WC did they qualify for by winning their UEFA group → 2022.' They also won their group for **2010 and 2014** (both options).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44713 — Switzerland (hard) — FAIL: non-unique — Switzerland also qualified directly for 2022 and 2026 (both options)
+- 'which WC did they qualify for directly, unlike the others → 2014.' **2022 and 2026** (both options) were also direct; only 2018 was a playoff.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Leave only one direct year and the 2018 playoff.
+
+### Row 44714 — Switzerland (hard) — FAIL: non-unique — Switzerland also qualified directly (group win) for 2010 and 2022 (both options)
+- 2014, 2010 and 2022 were all direct group qualifications; only 2018 was a playoff.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44715 — Switzerland (medium) — FAIL: non-unique — Switzerland also qualified directly for 2010 and 2022 (both options), not just 2014
+- 'qualified directly, unlike in 2018 → 2014.' **2010 and 2022** were also direct (2006 & 2018 were playoffs).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 44718 — Switzerland (hard) — FAIL: answer wrong + explanation wrong — 2022 was an R16 run, and 2010 was the group-stage exit (not an R16)
+- 'eliminated in the group stage → 2022, reached R16 in 2010/2014/2018.' Reversed: **2010 was the group exit**; 2014/2018/2022 were R16 runs.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the answer to 2010 and fix the explanation.
+
+### Row 44720 — Switzerland (medium) — FAIL: ambiguous / non-unique — the Euro 2020 France shootout was played in 2021 (an option), not 2020
+- 'which year did Switzerland beat France on pens at Euro 2020? → 2020.' The match was **June 2021**; '2021' is offered, so '2020' (the tournament label) is not uniquely the year.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Disambiguate (the calendar year was 2021).
+
+### Row 44749 — Switzerland (medium) — FAIL: false premise — Switzerland never reached 4th in the FIFA rankings (peak 3rd, 1993)
+- 'Why did Switzerland reach 4th in 2018?' presumes a 4th-place ranking that never happened.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Remove the false premise.
+
+### Row 44751 — Switzerland (easy) — FAIL: non-unique — 'Largest Swiss stadium' (a distractor) is also true of St. Jakob-Park
+- 'Why use St. Jakob-Park for a 2018 qualifier? → Hosts home matches.' **'Largest Swiss stadium'** (an option) is also correct (and the actual capacity reason).
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Make only one option correct.
+
+
+## Switzerland correction — Row 43875 (moved from PASS)
+
+### Row 43875 — Switzerland (medium) — FAIL: answer wrong — the late equaliser v France (Euro 2020) was Gavranović, not Seferović
+- 'In which tournament did Haris Seferović score a late equaliser for Switzerland against France? → UEFA Euro 2020.' The 90' equaliser (3-3) was **Mario Gavranović**; Seferović scored at 15' & 81' (his 81' made it 2-3, not an equaliser). This row was mis-passed in an earlier chunk and is now corrected to FAIL.
+**Source:** https://en.wikipedia.org/wiki/Switzerland_national_football_team
+**Remedy:** Change the scorer to Gavranović (or reframe — Seferović's goals were not the equaliser).
+
