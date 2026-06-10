@@ -4,7 +4,7 @@
 > factual fact-check. Driven off `QA_PASSED_b2.md`; explanations from `Pre-worldcup2.csv`.
 > See HANDOFF.md §5/§6/§7.
 
-**Total ship-ready: 5965** (Algeria 269, rows 2–513; Argentina 662, rows 514–1543; Belgium 618, rows 3242–4191; Bosnia and Herzegovina 948, rows 4192–5804; Canada 1060, rows 7821–9330; Colombia 607, rows 10796–11736; Costa Rica 792, rows 11737–12858; Ecuador 481, rows 17346–18086; Egypt 528, rows 18087–18876)
+**Total ship-ready: 6696** (Algeria 269, rows 2–513; Argentina 662, rows 514–1543; Belgium 618, rows 3242–4191; Bosnia and Herzegovina 948, rows 4192–5804; Canada 1060, rows 7821–9330; Colombia 607, rows 10796–11736; Costa Rica 792, rows 11737–12858; Czechia 468, rows 16004–16893; DR Congo 263, rows 16894–17345; Ecuador 481, rows 17346–18086; Egypt 528, rows 18087–18876)
 
 ---
 
@@ -14671,6 +14671,374 @@ Verified against a Bosnia and Herzegovina fact base: **1 World Cup before 2026 (
 **Q:** Why was Edin DÅ¾eko's goal for Bosnia and Herzegovina vs Nigeria in 2014 disallowed?
 **Answer:** Incorrectly ruled out
 **Verdict:** Passed mechanical/heuristic (QA_PASSED_b2.md) + TC-06 liveness verified against the Bosnia and Herzegovina fact base (Dzekos goal was wrongly ruled out (offside)). Source: https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina_national_football_team
+---
+
+## Czechia (batch-2 rows 16004–16893)
+
+**Fact base (sourced):** Czechia's **only World Cup tournament played** as an independent nation = **2006** (Group E: beat USA 3-0, lost 0-2 Ghana, lost 0-2 Italy; 3rd, group stage exit; venues Gelsenkirchen/Cologne/Hamburg). They did **NOT** play at 2010/2014/2018/2022 WCs. **They DID qualify for the 2026 World Cup** (2nd in UEFA Group L behind Croatia → play-offs; beat Ireland in the SF, beat Denmark 2-2 (3-1 pens) in the final, 31 Mar 2026 → Group A with Mexico, South Africa, South Korea). Euro meetings vs Netherlands: **lost 0-1 (Euro 2000)**, won 3-2 (Euro 2004), won 2-0 (Euro 2020/R16) → record is **2-1, not perfect/2-0**. Schick's 49.7-yd goal v Scotland (Euro 2020, played 2021) is the Euro distance record. Beat Germany **3-0 in Munich, 17 Oct 2007** (Euro 2008 qualifying). Lost 2022 WC play-off SF 0-1 aet to Sweden (Mar 2022). Relegated from Nations League A finishing last in 2022-23 Group 2 (Spain/Portugal/Switzerland; relegation determined Sep 2022). Finished 2nd behind **Albania** in Euro 2024 qualifying. FIFA ranking fell well below 40 after 2010 (lowest ~67). Sources: UEFA.com, Wikipedia (2006 WC, Euro 2000/2004/2020, 2026 UEFA Group L & play-offs), ESPN.
+
+**Chunk 16004–16039 (17 ship-ready):**
+- **Row 16004 / 16035** — Ghana and Italy beat Czechia 2-0 (2006 group). ✓
+- **Row 16010** — 3-0 away win v **Germany** in Munich, 2007. ✓
+- **Row 16011** — Schick scored from ~50 yds (49.7) v Scotland, Euro 2020. ✓
+- **Row 16012** — 3rd in Group E behind **Italy and Ghana** (2006). ✓
+- **Row 16013** — **Italy** the only UEFA nation in their 2006 group. ✓
+- **Row 16015** — The two 2-0 losses came in the **group stage** (2006). ✓
+- **Row 16023** — **2006** = debut/only WC as independent nation. ✓ (debut is correct.)
+- **Row 16024** — **2006 in Germany** = only WC *appearance played* (2026 not yet played). ✓
+- **Row 16027** — **Rosický** brace v USA at **2006** WC. ✓
+- **Row 16029** — Finished behind **Albania** in Euro 2024 qualifying. ✓
+- **Row 16031** — **Schick** scored in the 2-0 v NL (Euro 2020); Czechia lead Euro H2H 2-1. ✓
+- **Row 16032** — Other 2-0 defeat (2006) was to **Italy**. ✓
+- **Row 16034** — Lost 2022 WC play-off to Sweden in extra time, **2022**. ✓
+- **Row 16036** — 2006 core from **Sparta and Slavia Prague** (European experience). ✓
+- **Row 16038** — 3-0 win over USA was at the **2006** WC. ✓
+- **Row 16039** — Slovakia rivalry = **The Federal Derby**. ✓
+
+**Chunk 16040–16075 (9 ship-ready):**
+- **Row 16043** — WC win over **United States** (3-0, 2006); unique (didn't beat NL/Portugal/Mexico at a WC). ✓
+- **Row 16057** — Failed to qualify for **four** consecutive WCs after 2006 (2010/14/18/22). ✓
+- **Row 16061** — **Jaroslav Šilhavý** ran the 2022 qualifying campaign. ✓
+- **Row 16065 / 16066 / 16069** — Schick ~**50 yds** v Scotland, Euro 2020 (49.7 rounds to 50). ✓
+- **Row 16070** — Schick's record goal officially **49.7 yards**. ✓
+- **Row 16071** — **Rosický** earned **105** caps. ✓
+- **Row 16073** — **Two** scorers (Holeš & Schick) in the Euro 2020 win over NL. ✓
+
+**Chunk 16076–16139 (28 ship-ready):**
+- **Row 16079** — Rosický scored **two** in the 2006 opener v USA. ✓
+- **Row 16080** — **Baroš** finished with **41** international goals. ✓
+- **Row 16082 / 16084** — Slovakia is Czechia's regional rival (Federal Derby). ✓ (rivalry identity)
+- **Row 16083 / 16102 / 16110 / 16124** — Italy and Ghana (above them / beat them 2-0, 2006). ✓
+- **Row 16085 / 16087 / 16088 / 16092 / 16109** — Finished 3rd behind **Belgium and Wales** (2022 WCQ Group E). ✓
+- **Row 16086 / 16120** — Lost 1-0 aet to **Sweden** (2022 WCQ play-off SF). ✓
+- **Row 16094** — **Jankulovski** was the 2006 left-back. ✓
+- **Row 16106 / 16108** — **Schick** the attacking focal point (2022 qualifiers). ✓
+- **Row 16111** — **Ghana** finished 2nd in the 2006 group. ✓
+- **Row 16112** — **Italy** won the 2006 tournament. ✓
+- **Row 16115** — Clinched Euro 2024 with a final-matchday **3-0 v Moldova** (20 Nov 2023). ✓
+- **Row 16117** — Czechia has **participated** in **one** WC (2006); 2026 not yet played. ✓
+- **Row 16126 / 16127** — Beat **Netherlands 2-0** in the Euro 2020 R16. ✓
+- **Row 16129** — **Čech** clean sheet in the 3-0 v USA (2006). ✓
+- **Row 16133** — Finished **2nd in Euro 2024 qualifying** (vs 3rd in 2022 WCQ). ✓
+- **Row 16134** — Eliminated NL at Euro 2020 in **Budapest** (Puskás Aréna). ✓
+- **Row 16139** — 2006 = only WC **appearance played** as independent nation. ✓
+
+**Chunk 16141–16200 (40 ship-ready):**
+- **Row 16141 / 16143 / 16144 / 16176 / 16197** — Euro 2020: Schick's long-range goal / GoT award / eliminated 10-man NL in Budapest. ✓
+- **Row 16145** — Finished 3rd in **Group E** (2022 WCQ). ✓
+- **Row 16146 / 16178 / 16196** — Competed in **NL A in the 2022-23 cycle**, relegated to **League B**. ✓
+- **Row 16148** — Last group-stage WC exit = **2006** (their only WC). ✓
+- **Row 16149** — 2006 = only WC **appearance** as independent nation. ✓
+- **Row 16150 / 16187 / 16195** — Opened 2006 with **3-0 v USA**. ✓
+- **Row 16151** — Rosický scored twice in the 2006 opener. ✓
+- **Row 16153** — 2022 cycle: domestic core + Bundesliga (Schick/Hložek at Leverkusen). ✓
+- **Row 16154 / 16162 / 16198 / 16199 / 16200** — Finished 3rd behind **Belgium & Wales**, 2022 WCQ. ✓
+- **Row 16155** — Souček captained during the 2022 qualifying campaign. ✓
+- **Row 16156 / 16158 / 16192** — **Koller** scored Czechia's first independent WC goal (v USA, 2006). ✓
+- **Row 16157** — **Čech**'s WC debut = 2006 (only WC). ✓
+- **Row 16159 / 16160 / 16161** — Beat England **2-1** in **2019** (Euro 2020 Q). ✓
+- **Row 16163** — Slavia's stadium first hosted a Czech WC qualifier in **2021**. ✓
+- **Row 16166** — Lost 2-0 to Ghana & Italy in **2006**. ✓
+- **Row 16167 / 16168** — Lost the WC play-off to **Sweden** in **2022**. ✓
+- **Row 16170 / 16171** — Reached the Euro QF in **2012** (under Bílek; lost to Portugal). ✓
+- **Row 16174** — Schick won Euro 2020 Goal of the Tournament. ✓ (no ambiguous-year distractor)
+- **Row 16175** — **Ivan Hašek** appointed manager in **early 2024**. ✓
+- **Row 16186** — Decisive Euro 2024 qualifier v Moldova = **3-0**. ✓
+- **Row 16189 / 16190** — Beat NL **2-0** in the Euro 2020 R16. ✓
+
+**Chunk 16201–16260 (36 ship-ready):**
+- **Row 16201 / 16247** — 3rd in their 2006 WC group / eliminated 2006 group stage. ✓
+- **Row 16202** — First faced USA at a WC in **2006**. ✓
+- **Row 16204** — Hosted Italy in a 2014 WC qualifier in **2013**. ✓ (year)
+- **Row 16205** — Last WC finals appearance = **2006** (2026 not yet played). ✓
+- **Row 16207 / 16245** — Last in NL A = **2022-23 cycle** (then relegated). ✓
+- **Row 16210** — Lost 2-0 to Ghana & Italy in **2006**. ✓
+- **Row 16211 / 16213 / 16249** — 3rd behind Belgium & Wales (2022); play-off SF loss 2022. ✓
+- **Row 16212** — Šilhavý stepped down after securing Euro 2024 qualification (Hašek then led the Euros). ✓
+- **Row 16215 / 16216 / 16241** — Reached the **Euro 2012** QF under Bílek. ✓
+- **Row 16218** — Reached the Euro 2020 QF in **2021** (tournament played 2021). ✓
+- **Row 16219** — Euro 2020 QF run after beating NL. ✓
+- **Row 16220 / 16221 / 16222 / 16223** — Secured Euro 2024 on the **final matchday** (3-0 Moldova). ✓
+- **Row 16226** — First reached a WC in **2006**. ✓
+- **Row 16227 / 16243** — Souček first captained in the 2022 qualifying campaign (began 2021). ✓
+- **Row 16232 / 16233 / 16234** — Schick's Euro 2020 long-range goal / GoT award. ✓
+- **Row 16236** — **Čech** retired from internationals in **2016**. ✓
+- **Row 16237** — **Koller** (91 caps) — last major tournament Euro 2008. ✓
+- **Row 16239** — Koller's first independent WC goal = 2006. ✓
+- **Row 16246** — **Hašek** appointed **early 2024** for the 2026 cycle. ✓
+- **Row 16248** — Finished **2nd** in the Euro 2020 qualifying group. ✓
+- **Row 16251** — **Portugal** was NOT in Czechia's 2006 group (Italy/Ghana/USA were). ✓
+- **Row 16252** — 2022-cycle squad = Prague core + Bundesliga. ✓
+- **Row 16258** — **Sparta Prague** a traditional domestic power (Slavia not offered). ✓
+- **Row 16259** — **Baník Ostrava** is NOT a traditional dominant force. ✓
+
+**Chunk 16261–16330 (16 ship-ready):**
+- **Row 16262 / 16266** — **Sparta & Slavia Prague** are the clubs that most often reach UEFA group stages / supply the national core. ✓
+- **Row 16268** — **Dušan Uhrin** reached the Euro 1996 final (before Brückner's 2004 SF). ✓
+- **Row 16269** — **Souček** captained the 2022 qualifying campaign. ✓
+- **Row 16270 / 16277** — **Rosický** scored a brace in the 2006 opener v USA. ✓
+- **Row 16275** — **Koller** scored Czechia's first WC goal (2006). ✓
+- **Row 16282** — Rosický the attacking-mid focus in the 2006 opener. ✓
+- **Row 16284** — **Schick**'s Euro 2020 award (longest-distance goal). ✓
+- **Row 16287** — **Schick** scored in the Euro 2020 R16 win over NL. ✓
+- **Row 16288** — **Koller** (2.02m) the archetypal aerial striker at 2006. ✓
+- **Row 16300** — Norway 2018 qualifier at **Fortuna Arena** (=Eden, Prague); Letná/Doosan/Andrův are genuinely different. ✓
+- **Row 16325** — Koller scored in the 3-0 win over USA (2006). ✓
+- **Row 16328** — **United States** is the 2006 group opponent Czechia beat (3-0), not lost 2-0 to. ✓
+- **Row 16329** — **Italy** (Czechia's 2006 group) won the tournament. ✓
+- **Row 16330** — Domestic-based core supplemented by Bundesliga stars (2022). ✓
+
+**Chunk 16331–16400 (51 ship-ready):**
+- **Row 16331** — **Holeš** (Slavia) the 2022-squad member at Slavia in 2021. ✓
+- **Row 16332** — **Schick** (Leverkusen) the Bundesliga star. ✓
+- **Row 16333** — 2026 squad = domestic + Bundesliga mix (like 2006). ✓
+- **Row 16335 / 16336 / 16338 / 16339 / 16340 / 16343 / 16346** — **Souček** (West Ham) captained the 2022 qualifying campaign. ✓
+- **Row 16337** — **Galásek** captained Czechia at the **2006 WC** (under Brückner). ✓
+- **Row 16344** — **Nedvěd** led the iconic mid-2000s golden generation. ✓
+- **Row 16345** — **Rosický** captained through the post-2006 WC drought. ✓
+- **Row 16348 / 16349 / 16350 / 16352** — Sparta/Slavia/Plzeň the traditional Czech powers; 2022 core from Slavia & Sparta. ✓
+- **Row 16351** — Sparta a core-feeding club. ✓
+- **Row 16353–16358** — **Brückner** was Czechia's 2006-era coach (incl. the 2007 3-0 v Germany). ✓
+- **Row 16359** — **Šilhavý** coached the 2022 play-off loss to Sweden. ✓
+- **Row 16360** — **Jankulovski** the 2000s defender with 75+ caps. ✓
+- **Row 16363** — The 2-1 win over England (Euro 2020 Q) was the **home** match (Prague). ✓
+- **Row 16364** — Schick the 2022-qualifying attacking focal point. ✓
+- **Row 16368 / 16370 / 16371 / 16372 / 16374 / 16375 / 16376 / 16377 / 16379** — **Čech** holds Czechia's caps (124) & clean-sheet records; in the 2006 squad. ✓
+- **Row 16384 / 16385** — Čech started all three 2006 WC matches. ✓
+- **Row 16389–16397** — **Jankulovski** the versatile 2006/2000s left-back (started all three 2006 group games). ✓
+- **Row 16398 / 16399** — **Šilhavý** built the 2022-cycle squad around Slavia/Sparta + Bundesliga. ✓
+- **Row 16400** — **Bílek** led Czechia to the Euro 2012 QF. ✓
+
+**Chunk 16401–16470 (55 ship-ready):**
+- **Row 16402 / 16407 / 16415 / 16416 / 16417 / 16418** — **Bílek** reached the Euro 2012 QF (amid criticism). ✓
+- **Row 16403 / 16404 / 16405 / 16428 / 16429 / 16430 / 16444 / 16445** — **Brückner** (2001-08) ran the 2006 WC era / 4-4-2 diamond. ✓
+- **Row 16406 / 16411** — **Šilhavý** ran the 2022 WC qualifying campaign. ✓
+- **Row 16408 / 16409 / 16414 / 16419** — Šilhavý (appointed 2018): Euro 2020 QF & the 2019 win over England. ✓
+- **Row 16410 / 16432 / 16433 / 16435 / 16436 / 16437 / 16438 / 16439 / 16440 / 16441 / 16442 / 16447** — **Hašek** appointed early 2024 (Euro 2024 + 2026 WCQ). ✓
+- **Row 16412 / 16413** — **Dušan Uhrin** reached the Euro 1996 final (pre-Brückner). ✓
+- **Row 16420 / 16423 / 16424 / 16425 / 16427 / 16448** — Šilhavý secured Euro 2024 then stepped down. ✓
+- **Row 16431** — Bílek coached the 2014 WC qualifiers. ✓
+- **Row 16443** — Šilhavý was in charge during the 2022-23 NL relegation. ✓
+- **Row 16449→fixed**: see fail; **16450 / 16451 / 16470** — **Souček** captained the 2022 qualifying campaign. ✓
+- **Row 16452 / 16453 / 16466** — Souček the aerial-threat captain of the modern squad. ✓
+- **Row 16454** — Beat **Moldova 3-0** to clinch Euro 2024. ✓
+- **Row 16455** — **Sweden** eliminated them in 2022 WC qualifying. ✓
+- **Row 16457** — **Italy** (Czechia's 2006 group) won the WC. ✓
+- **Row 16459** — **Čech** the 124-cap record holder. ✓
+- **Row 16462 / 16464** — **Schick** (Bayer Leverkusen) the Bundesliga star at Euro 2024 / 2022 qualifiers. ✓
+- **Row 16463** — **Koller** the archetypal aerial striker at 2006. ✓
+
+**Chunk 16471–16550 (51 ship-ready):**
+- **Row 16471 / 16473 / 16475 / 16498** — **Souček** captained the 2022 qualifying campaign. ✓
+- **Row 16472 / 16476 / 16477 / 16493 / 16499** — Souček captains the modern/2026 squad. ✓
+- **Row 16478 / 16505 / 16507 / 16509 / 16510 / 16511 / 16520 / 16522 / 16523 / 16524 / 16536 / 16537 / 16538 / 16540** — **Schick**'s 49.7-yd/50-yd record goal & Euro 2020 GoT v Scotland. ✓
+- **Row 16480** — **Rosický** earned 105 caps. ✓
+- **Row 16481** — Schick (Bundesliga) in the 2026 core. ✓
+- **Row 16486 / 16544** — **Koller** headed Czechia's first independent WC goal (v USA, 2006). ✓
+- **Row 16487 / 16488** — **Čech** the 124-cap record holder. ✓
+- **Row 16491 / 16492 / 16494 / 16500 / 16501** — **Koller** the all-time top scorer (55). ✓
+- **Row 16495 / 16496** — Souček the aerial/veteran 2022-qualifying leader. ✓
+- **Row 16497** — **Čvančara** debuted in Sept 2022 (NL v Portugal, Fortuna Arena). ✓
+- **Row 16502 / 16503** — Schick scored v Estonia in 2022 WC qualifying. ✓
+- **Row 16515–16519 / 16547–16550** — **Rosický** scored a brace v USA (2006 opener). ✓
+- **Row 16526 / 16541** — **Ondrášek** scored the 85th-min winner v England (2019). ✓
+- **Row 16531** — Czechia lost the 2022 play-off **1-0** to Sweden — **no Czech scorer**. ✓
+- **Row 16539→see fail; 16540** — Schick won Euro 2020 Goal of the Tournament. ✓
+
+**Chunk 16551–16640 (30 ship-ready):**
+- **Row 16551 / 16552 / 16553 / 16576** — **Rosický** brace v USA (2006 opener). ✓
+- **Row 16554** — **Jankulovski** versatile 2000s left-back. ✓
+- **Row 16555** — **Čech** active during the 2006 #2 FIFA ranking peak. ✓
+- **Row 16556 / 16557** — **Souček** captained the 2022 qualifying campaign. ✓
+- **Row 16558** — **Nedvěd** (Ballon d'Or 2003) in the 2006 squad. ✓
+- **Row 16559 / 16564** — **Schick** joint top scorer (5) / Golden Boot at Euro 2020. ✓
+- **Row 16562** — Schick the 2022-qualifying main striker. ✓
+- **Row 16568 / 16574 / 16579** — Schick won Euro 2020 Goal of the Tournament. ✓
+- **Row 16571** — **Hložek** (Sparta academy product) emerged in the 2022 cycle. ✓
+- **Row 16572 / 16577 / 16590 / 16591 / 16592** — **Rosický** 'Little Mozart', 105 caps, orchestrated the 2006 attack. ✓
+- **Row 16580** — Souček the aerial/veteran 2022-qualifying leader. ✓
+- **Row 16584** — 2026 squad built on a domestic Slavia/Sparta core. ✓
+- **Row 16587** — Sparta & Slavia the UEFA-group-stage clubs. ✓
+- **Row 16593** — Qualified for **Euro 2020 before Euro 2024**. ✓
+- **Row 16595** — **Coufal** the regular 2022-qualifying right-back. ✓
+- **Row 16601** — **Brückner**'s squad at the 2006 WC. ✓
+- **Row 16617** — Euro 2024 qualifier at **fortuna Arena** (19,370; distractors are genuinely distinct venues). ✓
+- **Row 16635** — **Doosan Arena** is the **Plzeň** stadium (unique non-Prague option). ✓
+- **Row 16640** — **Rosický** a key 2006 player (era of the #2 FIFA ranking). ✓
+
+**Chunk 16641–16740 (63 ship-ready):**
+- **Row 16641** — Nedvěd's Ballon d'Or (2003) preceded 2006 qualification. ✓
+- **Row 16642 / 16644 / 16662 / 16664 / 16666 / 16669 / 16684** — **Schick** the attacking focal point (qualifiers/Euro 2024); Černý a support winger. ✓
+- **Row 16645 / 16647 / 16648 / 16649 / 16650 / 16656 / 16665 / 16676** — **Koller** all-time top scorer (55 in 91 caps); his sole WC goal was 2006. ✓
+- **Row 16651–16655 / 16674** — Schick's 50-yd / 49.7-yd Euro 2020 goal & GoT v Scotland. ✓
+- **Row 16657 / 16660 / 16678** — Schick **joint-top scorer (5)** at Euro 2020. ✓
+- **Row 16658 / 16673 / 16675** — Koller Czechia's top scorer in 2006 WC qualifying. ✓
+- **Row 16679 / 16691** — In **NL A** during the **2022-23 cycle**. ✓
+- **Row 16680** — Euro 2012 QF: eliminated by Ronaldo's late header. ✓
+- **Row 16682 / 16702 / 16705** — **3-0 v Moldova** clinched Euro 2024. ✓
+- **Row 16688 / 16714** — Inherited **Czechoslovakia**'s WC-finals records (1934 & 1962). ✓
+- **Row 16689** — Schick's Euro 2020 Goal of the Tournament. ✓
+- **Row 16690** — Qualified for **Euro 2016** (between missing the 2014 & 2018 WCs). ✓
+- **Row 16696 / 16697 / 16719 / 16720 / 16721 / 16723** — **Sweden** eliminated them (1-0 aet, 2022 play-off SF). ✓
+- **Row 16699 / 16718** — **Denmark** beat them 2-1 in the Euro 2020 QF. ✓
+- **Row 16703** — Beat **Netherlands** 2-0 in the Euro 2020 R16. ✓
+- **Row 16704** — Czechia **beat no one** in the 2022 play-offs (lost to Sweden). ✓
+- **Row 16711** — Faced **Portugal** in the Euro 2012 QF. ✓
+- **Row 16713 / 16730** — Finished behind **Albania** in Euro 2024 qualifying. ✓
+- **Row 16715** — Did NOT face the **Netherlands** in 2022-23 NL A (group = Spain/Portugal/Switzerland). ✓
+- **Row 16717 / 16725 / 16738 / 16740** — **Slovakia** = the Federal Derby rival (met in 2010 WCQ). ✓
+- **Row 16727 / 16728 / 16729 / 16731** — Belgium/Wales (2022) & Italy/Ghana (2006) finished above them. ✓
+- **Row 16733 / 16736 / 16737** — Czechia finished 2nd (Euro 2020 Q) / 3rd (2022 WCQ) in their own group. ✓
+
+**Chunk 16741–16893 (72 ship-ready) — completes Czechia:**
+- **Row 16741 / 16749** — **Slovakia** = the Federal Derby rival. ✓
+- **Row 16746 / 16755 / 16770 / 16790 / 16791 / 16793 / 16829 / 16878** — Finished 2nd behind **England** (Euro 2020 Q); beat England 2-1 at home. ✓
+- **Row 16751 / 16798 / 16852** — Inherited Czechoslovakia's records; 2006 = only WC appearance played. ✓
+- **Row 16752 / 16877 / 16880 / 16881** — **3-0 v Moldova** clinched Euro 2024. ✓
+- **Row 16753** — **Robin Quaison** scored Sweden's ET winner (2022 play-off SF). ✓
+- **Row 16754 / 16815 / 16728** — 3rd in the 2006 group (behind Italy & Ghana). ✓
+- **Row 16757** — 2006 win over USA at **FIFA WM-Stadion Gelsenkirchen**. ✓
+- **Row 16762** — Euro 2012 QF v Portugal at the **National Stadium, Warsaw**. ✓
+- **Row 16764 / 16765 / 16767 / 16769 / 16782 / 16783 / 16786 / 16857 / 16876** — **Sweden** eliminated them (1-0 aet, 2022 play-off SF). ✓
+- **Row 16768 / 16787 / 16861** — **Denmark** beat them 2-1 in the Euro 2020 QF (Dolberg scored). ✓
+- **Row 16771** — Beat **Germany** 3-0 in Munich (2007). ✓
+- **Row 16774 / 16796** — Beat **Netherlands** (Euro 2020 R16; twice at Euros: 2004 & 2021). ✓
+- **Row 16775 / 16780 / 16781** — Beat **USA 3-0** (the team they didn't lose to in 2006). ✓
+- **Row 16779 / 16789 / 16792 / 16816 / 16826 / 16827** — Belgium & Wales finished above them (2022 WCQ). ✓
+- **Row 16817 / 16818 / 16819 / 16822 / 16823** — **Ghana & Italy** beat them 2-0 (2006). ✓
+- **Row 16788** — Czechia's Euro qualification record is unbroken (no team ended it). ✓
+- **Row 16795** — Czechia finished 2nd behind Albania (Euro 2024 Q). ✓
+- **Row 16801** — Sparta & Slavia supply the squad core. ✓
+- **Row 16828 / 16884** — Czech footballing identity = technically sound midfielders / physical strikers. ✓
+- **Row 16841→see fail; 16843** — Slovakia (like Czechia) has one independent WC appearance (2010). ✓
+- **Row 16846** — In **League A** (2022-23 NL cycle). ✓
+- **Row 16854 / 16856 / 16866→see fail; 16859** — **Souček** captains the modern/2026 squad; **Schick** the 2026 striker. ✓
+- **Row 16858** — **Čech** the clean-sheet record holder. ✓
+- **Row 16862 / 16863 / 16864 / 16865** — **Hašek** appointed early 2024 (Euro 2024 + 2026 WCQ). ✓
+- **Row 16867** — The 3-0 v Germany (2007) was a stunning competitive win. ✓
+- **Row 16870 / 16873 / 16888 / 16891** — Eden/Fortuna the primary national venue; Doosan hosts mid-tier matches. ✓
+- **Row 16875** — Missed automatic 2022 qualification by **finishing 3rd**. ✓
+
+---
+
+## DR Congo (batch-2 rows 16894–17345)
+
+**Fact base (sourced):** **DR Congo QUALIFIED for the 2026 World Cup** — their **first WC since 1974** (when they played as **Zaire**, the first Sub-Saharan African team at a WC). Path: 2nd in **CAF Group B** (behind Senegal) → African play-off (beat **Cameroon**, then **Nigeria** in the final) → **intercontinental play-off final, beat Jamaica 1-0 aet** (Axel Tuanzebe, 31 Mar 2026). 2026 group: Portugal, Colombia, Uzbekistan. So 2026 is their first *as DR Congo* but their **2nd appearance overall** ("first ever WC" framings are wrong). Failed to qualify 2006/2010/2014/2018/2022. **AFCON titles: 2** (1968 as Congo-Kinshasa, 1974 as Zaire). 2015 AFCON: SF (lost 3-1 to Ivory Coast), 3rd. 2023 AFCON: SF, 4th (lost 3rd-place SO to South Africa). 2018 WCQ group: Tunisia/Libya/Guinea (no Nigeria/Zambia). Stade des Martyrs (Kinshasa) ~80,000. TP Mazembe = first African club in a CWC final (2010). Sources: Al Jazeera/ESPN/Wikipedia (2026 qualification), Wikipedia (DRC NT history, 2018 CAF third round).
+
+**Chunk 16894–16940 (27 ship-ready):**
+- **Row 16895 / 16922 / 16928** — 2026 = first WC **as DR Congo** (qualified for the tournament). ✓
+- **Row 16898** — **Mbemba**'s experience anchors the defence. ✓
+- **Row 16901** — **Stade des Martyrs** (~80,000). ✓
+- **Row 16904** — **Ligue 1** the top squad-supplying league. ✓
+- **Row 16905 / 16921 / 16935** — Reached the **2015 AFCON semi-finals**. ✓
+- **Row 16906 / 16907 / 16940** — Failed to qualify for 2018 & 2022 (and all of 2006-2022). ✓
+- **Row 16908 / 16909 / 16915 / 16916 / 16917** — Ended a **52-year** drought, qualifying for **2026** via CAF. ✓
+- **Row 16919** — Lost the 2015 AFCON SF **3-1 to Ivory Coast**. ✓
+- **Row 16920 / 16924** — 2023 AFCON deep run; previous deep run was **2015**. ✓
+- **Row 16927** — **Egypt** qualified in CAF for 2018 (DRC didn't). ✓
+- **Row 16929** — **TP Mazembe** first African club in a CWC final (2010). ✓
+- **Row 16931** — **Yoane Wissa** (Brentford) the key attacker. ✓
+- **Row 16934** — 2026 = historic qualification. ✓
+- **Row 16936** — Entered all 10 AFCON cycles since 2006. ✓
+- **Row 16938** — Large European-based talent pool. ✓
+- **Row 16939** — As Zaire, qualified for **one** WC (1974). ✓
+
+**Chunk 16941–17010 (31 ship-ready):**
+- **Row 16941 / 16942 / 16957 / 16969 / 16970** — As **Zaire**, one WC (1974, 1970s). ✓
+- **Row 16944 / 16971 / 16982 / 16991** — **Stade des Martyrs** (~80,000) the primary venue. ✓
+- **Row 16945** — 2015 AFCON SF v **Ivory Coast**. ✓
+- **Row 16948** — **Wissa** (Brentford). ✓
+- **Row 16949** — **Mbemba** (Marseille CB, 60+ caps). ✓
+- **Row 16951** — Faced **Morocco** in the 2023 AFCON group. ✓
+- **Row 16952 / 16978** — **Silas Katompa** an emerging talent (debuted ~2021). ✓
+- **Row 16954** — Squad across multiple European leagues. ✓
+- **Row 16956 / 16964 / 16974 / 16975 / 16977 / 16979** — Qualified for **2026**. ✓
+- **Row 16961 / 16968** — Masuaku / Wissa WCQ debuts (~2016 / ~2021). ✓
+- **Row 16963** — Hosted **Guinea** (2018 WCQ) at Stade des Martyrs, Sept 2016. ✓
+- **Row 16966** — Reached the AFCON **SF in 2015**. ✓
+- **Row 16967** — Mbemba's WCQ debut (~2012, 2014 cycle). ✓
+- **Row 16983** — **TP Mazembe** the 2010 CWC finalist. ✓
+- **Row 16984** — **South Africa** = the 2010 WC host (Soccer City ~94k closest to 80k). ✓
+- **Row 17005** — **Egypt** a regular AFCON participant like DRC. ✓
+- **Row 17007** — **DR Congo** qualified for its first WC under that name (2026). ✓
+
+**Chunk 17015–17090 (49 ship-ready):**
+- **Row 17024** — TP Mazembe beat **Internacional 2-0** in the 2010 CWC SF. ✓
+- **Row 17025 / 17026 / 17036 / 17037 / 17041 / 17042 / 17049 / 17050 / 17051 / 17053 / 17054 / 17056 / 17059 / 17060** — **Yoane Wissa** (Brentford/PL) the key attacker. ✓
+- **Row 17028 / 17029 / 17031** — 2026 qualification = historic first (preceded by the 2023 AFCON SF run). ✓
+- **Row 17034** — **Ivory Coast** the West African AFCON rival. ✓
+- **Row 17035** — Beat **Republic of Congo 4-2** in the 2015 AFCON QF. ✓
+- **Row 17038** — Wissa debuted for DRC in 2019. ✓
+- **Row 17043** — Wissa scored in the 2026 WC qualifiers. ✓
+- **Row 17061 / 17063 / 17064 / 17065 / 17066 / 17067 / 17068 / 17086 / 17087 / 17088** — **Chancel Mbemba** (Marseille CB, 60+ caps) the experienced anchor. ✓
+- **Row 17069** — **TP Mazembe** has more CAF CL titles than AS Vita. ✓
+- **Row 17070 / 17073 / 17074 / 17075 / 17076 / 17077 / 17078 / 17080** — **TP Mazembe** (Linafoot) reached the 2010 CWC final / first African club; CAF CL 2009/10/15. ✓
+- **Row 17071 / 17079** — **Lamine N'Diaye** coached TP Mazembe to the 2010 CWC final. ✓
+- **Row 17072** — TP Mazembe supplies NT players. ✓
+- **Row 17081 / 17082 / 17083** — **Sébastien Desabre** led the 2026 qualification & 2023 AFCON run. ✓
+- **Row 17084** — **Héctor Cúper** coached the failed 2022 campaign. ✓
+- **Row 17085** — **Claude Le Roy** coached the failed 2014 campaign. ✓
+
+**Chunk 17091–17177 (65 ship-ready):**
+- **Row 17091 / 17099 / 17106 / 17110 / 17111 / 17113 / 17115 / 17119** — **Arthur Masuaku** (LB/LWB, West Ham then abroad) a key defender. ✓
+- **Row 17092 / 17093 / 17096 / 17101–17105 / 17107 / 17108 / 17112 / 17114 / 17116 / 17122–17130 / 17165 / 17170** — **Chancel Mbemba** (Marseille CB, 60-70+ caps) the experienced anchor across 2018/2022/2026 qualifiers & 2023 AFCON. ✓
+- **Row 17126** — Mbemba played both the **2018 & 2026 qualifying** cycles. ✓
+- **Row 17131 / 17134 / 17156** — **TP Mazembe** / **Linafoot** the domestic club/league. ✓
+- **Row 17135 / 17136 / 17138 / 17142** — **Silas Katompa** the emerging talent. ✓
+- **Row 17143→see fail; 17144–17153 / 17155 / 17166 / 17167 / 17168 / 17175 / 17177** — **Yoane Wissa** (Brentford/PL) the key forward. ✓
+- **Row 17154** — **Trésor Mputu** played for TP Mazembe in the 2010 CWC final. ✓
+- **Row 17157 / 17158 / 17160** — **Florent Ibengé** managed the failed 2018 campaign & 2015 AFCON SF. ✓
+- **Row 17159 / 17161** — **Desabre** ran the 2026 qualifying & 2023 AFCON. ✓
+- **Row 17163** — 2026 milestone = qualified for the tournament. ✓
+- **Row 17171** — **Mbemba** captained the 1-1 v Morocco (2023 AFCON). ✓
+- **Row 17172** — **Jonathan Bolingi** debuted ~2018. ✓
+- **Row 17176** — **Cédric Bakambu** (Galatasaray) a DRC forward. ✓
+
+**Chunk 17179–17258 (53 ship-ready):**
+- **Row 17179 / 17198 / 17256** — **Wissa** (Brentford/PL) the PL-based attacker. ✓
+- **Row 17184** — **Simon Banza** debuted at Stade des Martyrs (2022 qualifiers). ✓
+- **Row 17186 / 17187** — **Mbemba** the defensive experience. ✓
+- **Row 17188** — **No DRC player scored at the 2022 WC** (they didn't qualify). ✓
+- **Row 17189 / 17205 / 17209 / 17241 / 17248** — **Bakambu** scored in the 2022/2026 qualifiers. ✓
+- **Row 17190** — **Silas** scored v Senegal (1-1, Nov 2023, 2026 WCQ). ✓
+- **Row 17191 / 17192 / 17194 / 17208 / 17210** — **Mbokani** scored in the 2015 AFCON (SF v Ivory Coast, QF v Congo); top scorer of that run. ✓
+- **Row 17197** — **Silas** the emerging talent (2023 AFCON). ✓
+- **Row 17200 / 17201 / 17202** — Mbokani (2015 SF) / Mbemba (2023 AFCON) / Mputu (TP Mazembe 2010) in those squads. ✓
+- **Row 17204** — **Chadrac Akolo** the Serie A-based DRC player. ✓
+- **Row 17206** — Team achievement (no single player). ✓
+- **Row 17207** — **Youssouf Mulumbu** the 2010s midfield mainstay. ✓
+- **Row 17212 / 17213 / 17214 / 17217** — Faced **Tunisia** (2018 WCQ), **Congo** (2015 QF), **Egypt** (2019 AFCON), **Côte d'Ivoire** (2015 SF). ✓
+- **Row 17218 / 17220** — **Ghana** the West African AFCON opponent. ✓
+- **Row 17219** — **Ivory Coast** a regular AFCON participant. ✓
+- **Row 17223** — The 2026 qualifying squad ended the 52-year absence. ✓
+- **Row 17226** — The 2024-25 squad (Ligue 1 + PL). ✓
+- **Row 17227–17240 (stadiums)** — **Stade des Martyrs** (Kinshasa, ~80,000) the primary venue for 2014/2018/2022/2026 home qualifiers. ✓
+- **Row 17242→see fail; 17243 / 17244 / 17245 / 17247 / 17251 / 17253 / 17254 / 17258** — **Cédric Bakambu** the 40+-cap key striker. ✓
+
+**Chunk 17259–17345 (39 ship-ready) — completes DR Congo:**
+- **Row 17261** — Only WC appearance as **Zaire** (1974). ✓
+- **Row 17262 / 17266 / 17268 / 17322 / 17323** — 2026 = **second-ever** appearance, ending a 52-year drought. ✓
+- **Row 17263 / 17290→see fail** — DRC reached the 2015 AFCON SF. ✓
+- **Row 17265 / 17287** — First WC qualification **as DR Congo** (2026). ✓
+- **Row 17269 / 17318** — **Lamine N'Diaye** / Zayed Sports City — TP Mazembe's 2010 CWC final. ✓
+- **Row 17270→see fail; 17320** — TP Mazembe beat **Internacional 2-0** in the 2010 SF. ✓
+- **Row 17271** — Ligue 1 the top 2023 AFCON squad supplier. ✓
+- **Row 17272 / 17273** — 2022-qualifying squad: Ligue 1 + PL, not Serie A. ✓
+- **Row 17275 / 17277 / 17327** — **Desabre** the 2026 qualification manager. ✓
+- **Row 17278** — **Ibengé** the 2015 AFCON SF manager. ✓
+- **Row 17282 / 17306** — **Morocco** eliminated DRC in 2022 WC qualifying. ✓
+- **Row 17284** — 2010 CWC hosted by the **UAE**. ✓
+- **Row 17293** — **Canada** ended a 36-year WC drought (2022). ✓
+- **Row 17295** — **Ghana** also reached the 2015 AFCON SF. ✓
+- **Row 17299 / 17308** — **Morocco** the North African AFCON rival. ✓
+- **Row 17300 / 17304** — Faced **Egypt** at the 2019 AFCON (R16). ✓
+- **Row 17301** — Faced **Morocco** in 2022 WC qualifying. ✓
+- **Row 17310 / 17311** — **Ivory Coast / Egypt** regular AFCON participants. ✓
+- **Row 17314 / 17315** — **Stade des Martyrs** hosted home 2026 qualifiers. ✓
+- **Row 17319** — Beat **Guinea 3-1** in the 2023 AFCON QF. ✓
+- **Row 17328** — **Mbemba** captained at the 2023 AFCON. ✓
+- **Row 17333** — Failed 2018 qualification losing to **Tunisia** (group winner). ✓
+- **Row 17339 / 17340 / 17341** — Qualified via the CAF campaign; strong European-based pool. ✓
 
 ## Ecuador — rows 17346–18086 (liveness on QA_PASSED_b2.md rows) — 481 PASS
 

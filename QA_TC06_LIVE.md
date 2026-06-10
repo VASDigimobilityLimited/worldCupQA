@@ -10,9 +10,23 @@ dataset order; **resumable** — the "Last verified row" marker below is the cur
 - **UNVERIFIED** = could not confirm from reliable sources → treated as FAIL
   (conservative; a competitive quiz must not ship unverified facts).
 
-**Sequentially verified through row 13847 (Algeria→Chile contiguous COMPLETE). Next sequential gap: Colombia (13848–15527). Jamaica, New Zealand & Nigeria also COMPLETE (verified by a separate contributor — see their fact bases below).**
-**ALL COMPLETE countries (30): Algeria · Argentina · Australia · Austria · Belgium · Brazil · Cabo Verde · Cameroon · Canada · Chile · Costa Rica · Côte d'Ivoire · Croatia · Denmark · DR Congo · Ecuador · Egypt · England · France · Germany · Ghana · Iran · Iraq · Italy · Jamaica · Japan · Jordan · Mexico · New Zealand · Nigeria. Per-country fact bases + per-batch tables are below. (Iran/Iraq/Jordan/Mexico completed by separate contributor azibabari; Jamaica/New Zealand/Nigeria by another contributor.)**
-**NOT STARTED (8): Colombia · Morocco · Netherlands · Paraguay · Senegal · Switzerland · Tunisia · USA. Ask the user before beginning a new country (see §4 in HANDOFF.md).**
+**Sequentially verified through row 13847 (Algeria→Chile contiguous COMPLETE). Next sequential gap: Colombia (13848–15527) — now COMPLETE (see below). Jamaica, New Zealand & Nigeria also COMPLETE (verified by a separate contributor — see their fact bases below).**
+**ALL COMPLETE countries (32): Algeria · Argentina · Australia · Austria · Belgium · Brazil · Cabo Verde · Cameroon · Canada · Chile · Colombia · Costa Rica · Côte d'Ivoire · Croatia · Denmark · DR Congo · Ecuador · Egypt · England · France · Germany · Ghana · Iran · Iraq · Italy · Jamaica · Japan · Jordan · Mexico · New Zealand · Nigeria · Paraguay. Per-country fact bases + per-batch tables are below. (Iran/Iraq/Jordan/Mexico completed by separate contributor azibabari; Jamaica/New Zealand/Nigeria by another contributor.)**
+**NOT STARTED (6): Morocco · Netherlands · Senegal · Switzerland · Tunisia · USA. Ask the user before beginning a new country (see §4 in HANDOFF.md).**
+**Last verified row: 30309 — all claimed countries through Ghana verified (plus out-of-sequence completes below).**
+**Algeria (2–1228) COMPLETE. Argentina (1229–2160) COMPLETE. Australia (2161–3241) COMPLETE. Austria (3242–4282) COMPLETE. Belgium (4283–6096) COMPLETE. Cabo Verde (8183–9573) COMPLETE. Canada (10746–12428) COMPLETE. Chile (12429–13845) COMPLETE. Colombia (13848–15527) COMPLETE. Costa Rica (15528–16571) COMPLETE. Côte d'Ivoire (16572–17486) COMPLETE. Croatia (17487–19101) COMPLETE. Denmark (19102–20581) COMPLETE. DR Congo (20582–21579) COMPLETE. Egypt (22766–23686) COMPLETE. England (23687–25401) COMPLETE. Germany (27325–29161) COMPLETE. Ghana (29166–30309) COMPLETE. Italy (32568–34327) COMPLETE. Paraguay (42204–42927) COMPLETE.**
+**BRAZIL in progress (rows 6097–8182), separate contributor — verified to 6760, resume 6761. Brazil sub-cursor at bottom of file.**
+**✅ BELGIUM COMPLETE (rows 4283–6096): 1135 ship-ready / 192 failed-liveness — see bottom of file.**
+**✅ CHILE COMPLETE (rows 12429–13845): 769 ship-ready / 191 failed-liveness — see bottom of file.**
+**✅ COLOMBIA COMPLETE (rows 13848–15527): 986 ship-ready / 146 failed-liveness — see bottom of file.**
+**✅ EGYPT COMPLETE (rows 22766–23686): 532 ship-ready / 104 failed-liveness — see bottom of file.**
+**✅ GERMANY COMPLETE (rows 27325–29161): 1291 ship-ready / 65 failed-liveness — see bottom of file.**
+**✅ ITALY COMPLETE (rows 32568–34327): 1061 ship-ready / 225 failed-liveness — see bottom of file.**
+**✅ PARAGUAY COMPLETE (rows 42204–42927): 356 ship-ready / 149 failed-liveness — see bottom of file.**
+**✅ JAMAICA COMPLETE (rows 34328–34953): 381 ship-ready / 43 failed-liveness — see bottom of file.**
+**✅ NEW ZEALAND COMPLETE (rows 41274–42086): 398 ship-ready / 166 failed-liveness — see bottom of file.**
+**✅ NIGERIA COMPLETE (rows 42087–42203): 91 ship-ready / 2 failed-liveness — see bottom of file.**
+**Skipped/not started: Morocco, Netherlands, Senegal, Switzerland, Tunisia, USA. Next unclaimed country: ask the user before beginning a new country.**
 
 Running totals (rows 2–230, old method — every row checked): **181 PASS / 48 FAIL**.
 
@@ -2928,6 +2942,116 @@ PASS → QA_PASSED_ALL.md, FAIL → QA_FAILED_LIVENESS_PASSED_OTHERS.md.
 | **Wrong club/venue** | "Van Dijk played for Feyenoord" (→ **Groningen**); "Advocaat never led NL at a WC" (he led them at **1994**); De Kuip "hosted the 2022 Turkey 6-1" (it was the **Johan Cruyff Arena, Amsterdam**); "Euro 2020 loss in 2020" (played **2021**). |
 | **Non-unique "which/NOT" traps** | "won UEFA group" (2006/2010/2014/2022 all wins); "played/key/scored at both 2010 & 2014" (Robben, Sneijder, Van Persie all fit); "De Toekomst graduate" (Sneijder & Van der Vaart; Bergkamp & Sneijder); "WC debut 2022" (Aké/De Ligt/Van Dijk/Dumfries all); "over 45 goals" (Depay & Van Persie); "played both 2014 & 2022" (Blind & De Vrij); "NOT brought on for the shootout" (3 keepers); "first knockout loss to Argentina" (1978, not 2014); "did NOT beat NL in a WC SF" (Spain & Portugal, and Brazil DID in 1998). |
 | **Soft/unverified** | "KNVB Campus first base before 2010"; "four top leagues in the 2022 squad" (undercount). |
+## ✅ PARAGUAY COMPLETE (rows 42204–42927) — 356 ship-ready / 149 failed-liveness
+
+**Paraguay sub-cursor: COMPLETE at row 42923.** (Paraguay's QA_PASSED rows = 505, spanning 42208–42923; all **505 checked** = **356 pass-all / 149 fail-liveness**.) Method: drove off `QA_PASSED.md`, looked up each `explanation` in `Pre-worldcup-clean.csv`, web-verified answer + explanation.
+
+### Paraguay fact base (as of June 2026)
+- **2026 WC: QUALIFIED.** Gustavo Alfaro (appointed Aug 2024) led Paraguay to **6th in CONMEBOL** (automatic) — first World Cup since 2010. Six CONMEBOL direct qualifiers: Argentina, Brazil, Ecuador, Uruguay, **Paraguay**, Colombia (Bolivia → playoff).
+- **The dataset's "Alfaro Moreno" is a FABRICATED NAME** for Gustavo Alfaro → every "Alfaro Moreno" answer FAILS (where "Gustavo Alfaro" is itself an option, it is the correct, unchosen choice).
+- **Highest-ever FIFA ranking = 8th (2001)**, NOT 15th. The 2010 run set no ranking record.
+- **WC appearances: 8 through 2010** (1930, 1950, 1958, 1986, 1998, 2002, 2006, 2010); 2026 = 9th. Four straight 1998–2010; then missed **2014, 2018, 2022** (three) before 2026.
+- **2010 run:** topped group (1-1 Italy [Alcaraz scored], 2-0 Slovakia [Vera & Riveros], 0-0 NZ). **R16 0-0 Japan, won 5-3 on penalties at Loftus Versfeld, Pretoria** — all five Paraguay takers (Barreto, Barrios, Riveros, Valdez, **Cardozo** decisive) scored; Japan's Komano hit the bar (no Villar save). **QF lost 1-0 to Spain (Villa 82') at Ellis Park, Johannesburg** — Cardozo's pen saved by Casillas; Paraguay scored 0. Best-ever result.
+- **Managers:** Martino (2006/07–2011: 2010 WC QF, 2011 Copa runner-up, then left → instability). Caretakers/instability (Arce, Pelusso, Genes, R. Díaz, Berizzo, Barros Schelotto). **Garnero** (2023–Aug 2024) → **Gustavo Alfaro** (2024–, qualified 2026). Garnero coached Olimpia & Libertad (not Cerro Porteño).
+- **Captains:** **Denis Caniza** (2010 WC/qualifiers), **Justo Villar** (2011 Copa final), **Gustavo Gómez** (CB, since ~2016; debut 7 Sept 2013; ~88 caps by 2026, so ~60-65 in 2022 — NOT 80+ yet).
+- **Key players:** Roque Santa Cruz (top scorer, ~32 goals, ~112 caps; at **Man City** in 2010, not Olimpia). Miguel Almirón (debut Sept 2015; **Atlanta United since Jan 2025**, not Newcastle; Copa debut 2016; no WC before 2026). Óscar Cardozo, Nelson Valdez (both 2006 & 2010 WCs).
+- **Copa América:** 2 titles (1953, 1979); runners-up **2011** (lost final 3-0 to Uruguay — **Forlán scored twice**, Suárez once; beat Venezuela on pens in SF). Played every Copa 2007-2024 = **7** editions (not 6).
+- **Stadium:** Estadio Defensores del Chaco, Asunción (~42,354). Olimpia won the **2002 Copa Libertadores** (WC year Korea/Japan).
+
+### Per-batch tally
+| Batch | Rows | PASS | FAIL |
+|------|------|-----:|-----:|
+| 1–2 | 42208–42300 | 58 | 12 |
+| 3 | 42301–42345 | 20 | 18 |
+| 4 | 42347–42400 | 31 | 7 |
+| 5 | 42401–42510 | 20 | 18 |
+| 6 | 42521–42584 | 21 | 19 |
+| 7 | 42585–42636 | 28 | 12 |
+| 8 | 42637–42681 | 32 | 8 |
+| 9 | 42682–42733 | 27 | 13 |
+| 10 | 42734–42779 | 24 | 15 |
+| 11 | 42780–42822 | 26 | 14 |
+| 12 | 42823–42871 | 33 | 7 |
+| 13 | 42873–42923 | 36 | 6 |
+| **Total** | **42208–42923** | **356** | **149** |
+
+### Paraguay fail clusters (149 total) — full per-row entries in QA_FAILED_LIVENESS_PASSED_OTHERS.md
+| Cluster | Note |
+|---|------|
+| **"Alfaro Moreno" fabricated manager** | The 2026 manager is **Gustavo Alfaro**; every "Alfaro Moreno" answer fails. Where "Gustavo Alfaro" is also an option it is the correct unchosen answer. |
+| **Highest FIFA ranking "15th"** | Actual record **8th (2001)**; 2010 set no ranking record. |
+| **Stale "not qualified since 2010"** | Paraguay **qualified for 2026** (6th, CONMEBOL) — "last qualified 2010 / zero since 2010" rows now false. |
+| **False premise "at the 2022 World Cup"** | Paraguay **failed to qualify for 2022**, so "captained/played at the 2022 WC" rows are false (only qualifying applies). |
+| **Non-unique CONMEBOL comparisons** | Single all-play-all group ⇒ "which other nation qualified (2010/2026)", "regular Copa participant", "group rivals", "hosted at home", "more World Cups than" are satisfied by multiple options. |
+| **2010 venue/scorer errors** | QF was at **Ellis Park** (Loftus Versfeld was the R16); R16 was **0-0 on pens** (no goal, no Villar save — Komano hit the bar; all 5 takers scored ⇒ "scored a penalty" non-unique); Paraguay scored **0 in the QF**; Italy group goal = **Alcaraz** (not Santa Cruz/Valdez); Slovakia scorers = **Vera & Riveros**. |
+| **Player club/debut errors** | Santa Cruz at **Man City** in 2010 (not Olimpia); Almirón at **Atlanta United** (not Newcastle), Copa debut **2016** (not 2019), no WC before 2026; Gómez debut **2013** & **~60-65 caps in 2022** (not 80+); Júnior Alonso debut **2013** (not 2022); Gamarra retired **2006**; Garnero coached **Olimpia/Libertad** (not Cerro Porteño). |
+| **Other factual** | 2011 final brace = **Forlán** (not Suárez); Ecuador's best WC = **R16** (not QF); Copa editions 2007-2024 = **7** (not 6); Brazil beat Paraguay **2-0** (not 4-0); 2015 Copa was in **Chile** (not at Defensores); Mané Garrincha ~**69k** (not 42,500). |
+| **Excel date-corruption** | "05-Mar" answer = the 5-3 shootout score (broken cell). |
+| **Unverified → FAIL** | squad-average-age figures, cap-milestone claims, "younger-generation transition" narratives, Óscar-Romero "key attacker" (Almirón equally valid), obscure squad-composition counts. |
+
+---
+
+## ✅ COLOMBIA COMPLETE — rows 13848–15527 (986 ship-ready / 146 failed-liveness)
+
+Liveness run on the 1132 Colombia rows in `QA_PASSED.md` (processed in 21 batches).
+**Key finding: Colombia DID qualify for 2026** (3rd in CONMEBOL, 28 pts, under **Néstor Lorenzo**,
+appointed June 2022), so "qualified for / will feature at 2026" rows pass. Manager timeline
+(Pékerman 2012–2018 → Queiroz 2019–2020 → Rueda 2021–2022 → Lorenzo 2022–) all verified.
+
+### Colombia per-batch tally
+| Batch | Rows | PASS | FAIL |
+|---|---|---:|---:|
+| 1 | 13848–13913 | 44 | 6 |
+| 2 | 13914–13982 | 48 | 7 |
+| 3 | 13983–14061 | 49 | 6 |
+| 4 | 14062–14123 | 49 | 6 |
+| 5 | 14124–14189 | 52 | 3 |
+| 6 | 14190–14262 | 46 | 9 |
+| 7 | 14263–14326 | 49 | 6 |
+| 8 | 14328–14401 | 50 | 5 |
+| 9 | 14402–14476 | 41 | 14 |
+| 10 | 14477–14550 | 51 | 4 |
+| 11 | 14551–14628 | 38 | 17 |
+| 12 | 14629–14709 | 53 | 2 |
+| 13 | 14710–14778 | 49 | 6 |
+| 14 | 14779–14858 | 36 | 19 |
+| 15 | 14859–14942 | 45 | 10 |
+| 16 | 14943–15034 | 50 | 5 |
+| 17 | 15035–15110 | 50 | 5 |
+| 18 | 15111–15289 | 48 | 7 |
+| 19 | 15290–15381 | 55 | 0 |
+| 20 | 15382–15482 | 54 | 6 |
+| 21 | 15483–15527 | 29 | 3 |
+| **Total** | **13848–15527** | **986** | **146** |
+
+### Colombia fact base (verified this session)
+- **2026: QUALIFIED** (3rd CONMEBOL, 28 pts) under Néstor Lorenzo. WC appearances: 1962, 1990, 1994, 1998, **2014, 2018**, (2026); **missed 2010 (7th) and 2022 (6th)**.
+- **2014:** best-ever run (QF, lost 2-1 to host Brazil); beat Japan **4-1** (not 1-0), Greece 3-0, Côte d'Ivoire 2-1, Uruguay 2-0 (R16); 12 goals (3rd-most). **James Rodríguez** Golden Boot (6 goals) + Puskás (volley v Uruguay). Falcao **missed 2014** (knee injury).
+- **2018:** R16, lost to England on penalties (1-1, 4-3 pens; Mina 93' equaliser; Bacca's pen saved by Pickford); Carlos Sánchez 3rd-min red v Japan (lost 2-1). Yerry Mina 3 goals total.
+- **Copa América:** 2001 champions (only title); **2016 Centenario 3rd** (beat USA 1-0, Bacca); **2021 3rd** (beat Peru **3-2**, Luis Díaz); lost 2015 QF to Argentina (5-4 pens) & 2019 QF to Chile (pens); beat Argentina 2-0 (2019 group); **2024 runner-up** (lost 1-0 AET to Argentina, Lautaro; James Best Player, record **6 assists**).
+- **28-match unbeaten run** under Lorenzo **Feb 2022 – Jul 2024** (ended by the 2024 final).
+- **Falcao** all-time top scorer **36 goals in 105 caps** (NOT 97); **Ospina** most caps (130), GK at 2014 & 2018; highest FIFA rank **3rd (2013)** under Pékerman.
+- **Clubs (as of 2026):** Luis Díaz → **Bayern Munich** (left Liverpool Jul 2025); James → Mexico/León (was São Paulo, Olympiacos); Cuadrado → Pisa; **Daniel Muñoz** → Crystal Palace; **Richard Ríos** → **Benfica** (from Palmeiras, Jul 2025); **Yerry Mina** → **Cagliari** (NOT Fiorentina); Camilo Vargas first-choice GK from 2022.
+- Atlético Nacional won **2016 Copa Libertadores**. Qualifier home = **Estadio Metropolitano** (Barranquilla, ~46,788). FCF HQ = Bogotá.
+
+### Colombia fail clusters (146 total) — full per-row entries in QA_FAILED_LIVENESS_PASSED_OTHERS.md
+| Cluster | Note |
+|---|------|
+| **Fabricated "Argentina 3-0 / Messi at the 2014 World Cup"** | Colombia & Argentina have NEVER met at a World Cup; the 3-0 was a **2016 CONMEBOL qualifier**. All "lost 3-0 to Argentina at a WC" rows fail. |
+| **"Beat Japan 1-0 in 2014"** | The score was **4-1**; rows asserting/explaining "1-0" fail (answer, margin, clean-sheet, and explanation variants). |
+| **"Lost the 2021 / 2016 third-place match"** | Colombia **WON** both — 3-2 v Peru (2021) and 1-0 v USA (2016). "Lost to Peru/USA" and "finished fourth" rows fail. |
+| **Falcao "36 goals in 97 caps"** | Actual **105 caps**; the 97-cap figure is wrong. |
+| **Non-unique "scored at the 2024 Copa América"** | Luis Díaz, James AND Jhon Córdoba (and Lerma, semi v Uruguay) all scored ⇒ "which attacker/player scored" non-unique. |
+| **Non-unique "featured in both 2014 & 2018 / key scorer in qualifying"** | James, Cuadrado, Ospina all played both WCs; Falcao was also a top qualifying scorer ⇒ those rows non-unique. |
+| **Non-unique league names** | Categoría Primera A = Liga BetPlay Dimayor = Liga Águila = Liga Postobón = Copa Mustang (one competition); rows with several as options fail. (Foreign-league distractors pass.) |
+| **Non-unique altitude** | Ecuador's Quito (~2,850 m) is also higher than Bogotá (2,640 m); "which is higher/above 2,500 m → Bolivia" non-unique. Also "which is lower than Bogotá" (all of Brazil/Arg/Chile/Peru). |
+| **Non-unique squad roles** | "key forward option → Córdoba" (Díaz also), "experienced defender → Mina" (Davinson Sánchez also), "key/which midfielder at 2024 Copa → Lerma/Ríos" (both). |
+| **Stale clubs** | Yerry Mina "at Fiorentina" (now **Cagliari**); Luis Díaz "Liverpool / EPL / England" (now **Bayern Munich**); Richard Ríos now Europe-based (Benfica) breaks "based in Europe" uniqueness. |
+| **Medellín "hosted a 2014/2018/2022 qualifier"** | Colombia's modern home qualifiers are in **Barranquilla**; Atanasio Girardot rows for specific cycles fail (a general "has hosted qualifiers" passes). |
+| **"Mina scored all 2018 knockout goals / in every knockout match"** | Colombia had **one** 2018 knockout match (R16); his 3 goals were mostly group-stage. |
+| **Misc wrong facts** | "unbeaten run began 2023" (began **2022**); "Bacca scored at 2015 Copa" (was **2016 Centenario**); "missed 2022 by 1 pt behind 4th" (1 pt behind **5th** Peru; 3 behind 4th); 2018 group "vs England" (was **R16**); Queiroz "tenure ended before 2022 qualifiers" (he ran the **first 4**); Muñoz "debuted at 2024 Copa" (debuted **2021**). |
+| **Excel date-corruption** | "01-Jan" answers = mangled **1-1** (2018 R16 v England, after 90/ET). |
+
 ---
 
 # ✅ JAMAICA (rows 34328–34953) — COMPLETE

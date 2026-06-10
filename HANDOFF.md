@@ -170,7 +170,51 @@ now COMPLETE in total** (full table in §4; running counts in §3). Key findings
   was 4th in 2006; the post-2018 drop was ~32nd not 34th), "Pulisic youngest American to score at a WC" (Julian
   Green, 2014), and "Berhalter fired in 2023" (it was July 2024).
 
-The remaining 4 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
+The remaining 9 countries are **not started** (§4). Next sequential not-started country: **Colombia** (rows 13848–15527).
+**✅ Algeria** (rows 2–1228), **✅ Argentina** (rows 1229–2160), **✅ Australia** (rows 2161–3241),
+**✅ Austria** (rows 3242–4282), **✅ Cabo Verde** (rows 8183–9573), **✅ Canada** (rows 10746–12428),
+**✅ Colombia** (rows 13848–15527), **✅ Costa Rica** (rows 15528–16571), **✅ Côte d'Ivoire** (rows 16572–17486), **✅ Croatia** (rows 17487–19101),
+**✅ Denmark** (rows 19102–20581), **✅ DR Congo** (rows 20582–21579), **✅ England** (rows 23687–25401)
+and **✅ Ghana** (rows 29166–30309) are complete.
+**🟨 Brazil is IN PROGRESS** (separate contributor): rows 6097–8182, verified through **row 6760**,
+resume at **6761** — its sub-cursor + per-batch tables live at the bottom of `QA_TC06_LIVE.md`.
+**✅ Belgium is COMPLETE** (rows 4283–6096): **1135 ship-ready / 192 failed-liveness** — per-batch
+tables live at the bottom of `QA_TC06_LIVE.md`.
+**✅ Chile is COMPLETE** (rows 12429–13845): **769 ship-ready / 191 failed-liveness** — fact base +
+fail-cluster table at the bottom of `QA_TC06_LIVE.md`. (Key finding: Chile **failed to qualify for
+2026** — finished last in CONMEBOL, Gareca resigned — so all "qualified for / will feature at the 2026
+World Cup" rows are false; also the dataset wrongly credits Reinaldo Rueda with the failed 2018
+qualifying, which was actually Pizzi.)
+**✅ Egypt is COMPLETE** (rows 22766–23686): **532 ship-ready / 104 failed-liveness** — fact base +
+fail-cluster table at the bottom of `QA_TC06_LIVE.md`. (Egypt **DID** qualify for 2026, so its 2026 rows
+pass; main fails were the 2010 AFCON final wrongly called "on penalties" (it was 1-0 v Ghana), "Egypt
+hosted the 2021 AFCON" (they hosted 2019; Cameroon hosted 2021), Salah's Golden Boot count ("twice" → he
+has 4), and Al Ahly "12 CAF CL titles by 2022/2023" (the 12th came only in 2024).)
+**✅ Germany is COMPLETE** (rows 27325–29161): **1291 ship-ready / 65 failed-liveness** — fact base +
+fail-cluster table at the bottom of `QA_TC06_LIVE.md`. (Germany **DID** qualify for 2026, so its 2026 rows
+pass; the data is very accurate so the fail rate is low (~5%). Main fails: Excel score-corruption answers;
+the Euro 2024 QF wrongly crediting Füllkrug with the equaliser / Oyarzabal with the winner (it was **Wirtz**
+89' and **Merino** 119'); "Kroos recalled for 2026" (he retired after Euro 2024); and non-unique "which did
+NOT…" questions.)
+**✅ Italy is COMPLETE** (rows 32568–34327): **1061 ship-ready / 225 failed-liveness** — fact base +
+fail-cluster table at the bottom of `QA_TC06_LIVE.md`. (Key finding: Italy **FAILED to qualify for 2026** — runner-up
+in Group I behind Norway, lost the playoff final to **Bosnia** 1-1 / 4-1 pens (Mar 2026), Spalletti sacked June 2025
+and **Gattuso** ran the failed campaign — so all "Italy qualified for / Spalletti led 2026" rows are false, and it's
+Italy's **3rd straight WC miss** (2018, 2022, 2026) so open-ended "two consecutive" answers also fail. Other big
+clusters: Euro 2020 "3 clean sheets / 4 goals" are swapped (actual 3 CS / 4 conceded); FIFA rank "7th after Euro 2020"
+(actual 5th); fabricated 2026 venues (actual: Reggio Emilia, Bergamo, Udine, San Siro); Jorginho/Chiesa goal-and-penalty
+myths; Team-of-the-Tournament non-uniqueness; Bonucci's last cap was 2023; Donnarumma→Man City & Chiesa→Liverpool.)
+**✅ Paraguay is COMPLETE** (rows 42204–42927): **356 ship-ready / 149 failed-liveness** — fact base +
+fail-cluster table at the bottom of `QA_TC06_LIVE.md`. (Key finding: Paraguay **DID qualify for 2026** —
+6th in CONMEBOL under **Gustavo Alfaro**, first WC since 2010 — so "qualified for 2026" rows pass, but
+"last qualified 2010 / none since 2010" rows now fail. The dataset's **"Alfaro Moreno" is a fabricated name**
+for Gustavo Alfaro (biggest fail cluster). Other clusters: highest FIFA rank is **8th (2001)** not 15th;
+2010 QF was at **Ellis Park** not Loftus Versfeld (that was the Japan R16); the R16 was **0-0 on penalties**
+so "scored a goal/penalty save/which player scored a penalty" rows fail or are non-unique; Paraguay scored
+**0 in the QF**; Italy group goal was **Alcaraz** not Santa Cruz; Santa Cruz was at **Man City** in 2010 not
+Olimpia; Almirón now at **Atlanta United** not Newcastle; Gómez had **~60-65 caps in 2022** not 80+; many
+non-unique CONMEBOL "which other nation…" comparisons; 2011 final brace was **Forlán** not Suárez.)
+The remaining countries are **not started** (§4). Next sequential not-started country: **Cameroon** (rows 9574–10745).
 
 > Note on rows 2–230 (Algeria only): these were done under an older method that checked *every*
 > row (not just `QA_PASSED.md`). Their record lives in
@@ -181,16 +225,39 @@ The remaining 4 countries are **not started** (§4). Next sequential not-started
 ## 3. Running totals (update these every session)
 
 **Batch 1** (batch-2 totals are in §9(e), cleaned in §9(f); the grand-total line below spans all three):
+- **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
+- **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **16105** ship-ready
+  (Algeria 554 + Argentina 562 + Australia 714 + Austria 626 + Belgium 1135 + Brazil 454 so far + Cabo Verde 623 + Canada 962 + Chile 769 + Colombia 986 + Costa Rica 654 + Côte d'Ivoire 463 + Croatia 1034 + Denmark 859 + DR Congo 459 + Egypt 532 + England 1228 + Germany 1291 + Ghana 783 + Italy 1061 + Paraguay 356).
+- **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **2582** dangerous
+  (Algeria 176 + Argentina 110 + Australia 121 + Austria 135 + Belgium 192 + Brazil 73 so far + Cabo Verde 73 + Canada 41 + Chile 191 + Colombia 146 + Costa Rica 80 + Côte d'Ivoire 79 + Croatia 154 + Denmark 182 + DR Congo 127 + Egypt 104 + England 87 + Germany 65 + Ghana 72 + Italy 225 + Paraguay 149).
+- **Total ship-ready so far (both methods):** 16237 (132 backfill rows 2–230 + 16105 new method).
+- **Algeria total ship-ready (both methods):** 686.
+- **Austria complete:** rows 3242–4282 done → 626 PASS / 135 FAIL.
+- **Cabo Verde complete:** rows 8183–9573 done → 623 PASS / 73 FAIL.
+- **Canada complete:** rows 10746–12428 done → 962 PASS / 41 FAIL.
+- **Costa Rica complete:** rows 15528–16571 done → 654 PASS / 80 FAIL. Two systematic dataset errors: "highest FIFA ranking = 15th" (actual peak 13th, Feb 2015) and "qualified for 2026 World Cup" (eliminated 19 Nov 2025).
+- **England complete:** rows 23687–25401 done → 1228 PASS / 87 FAIL (1315 candidates). Verified errors: "fell to 17th in 2014" (actual 20th); "all 26 of 2022 squad England-based" (Bellingham at Dortmund); "Bellingham = Euro 2024 Young Player" (Yamal); "Pickford in Euro 2020 Team of the Tournament" (Donnarumma — 10 rows caught mid-run & pulled from PASS_ALL). Web-verified TRUE: 2026 perfect 8-win qualification, highest ranking 3rd (2012 & 2018), Saka 2022 Kopa nominee.
+- **Ghana complete:** rows 29166–30309 done → 783 PASS / 72 FAIL (855 candidates). Verified errors: "lost to USA and Germany in 2014" (drew Germany 2-2, lost Portugal); "2010 AFCON semi-finals" (reached the final); "Kudus at West Ham" (Ajax in 2022, Tottenham since July 2025 — 4 rows pulled from PASS_ALL); two ~40k stadiums (Accra Sports & Baba Yara) make "which ~40k stadium" non-unique (2 rows pulled); "Costa Rica qualified for 2010" (it didn't). Web-verified TRUE: 2026 CAF qualification (Otto Addo's 2nd), Gyan 51 goals. Note: Partey-Arsenal rows PASS (Arsenal correct for the 2022 WC; he moved to Villarreal Aug 2025).
+- **Belgium complete:** rows 4283–6096 done → 1135 PASS / 192 FAIL.
+- **Chile complete:** rows 12429–13845 done → 769 PASS / 191 FAIL. Chile **failed to qualify for 2026** (last in CONMEBOL, Gareca resigned); dataset wrongly credits Reinaldo Rueda with the failed 2018 qualifying (actually Pizzi).
+- **Colombia complete:** rows 13848–15527 done → 986 PASS / 146 FAIL (1132 candidates). Colombia **DID qualify for 2026** (3rd in CONMEBOL, 28 pts, under **Néstor Lorenzo**), so 2026 rows pass. Biggest fail clusters: fabricated **"Argentina 3-0 / Messi at the 2014 World Cup"** (the nations never met at a WC — it was a 2016 qualifier); **"beat Japan 1-0 in 2014"** (was **4-1**); **"lost the 2021/2016 third-place match"** (Colombia **won** both — 3-2 v Peru, 1-0 v USA); **Falcao "36 goals in 97 caps"** (actual **105**); non-unique league names (Categoría Primera A = Liga BetPlay Dimayor = Liga Águila = Liga Postobón = Copa Mustang) and non-unique squad-role/scorer/altitude questions (Ecuador's Quito also > Bogotá); stale clubs (**Mina → Cagliari** not Fiorentina; **Luis Díaz → Bayern** not Liverpool/EPL; **Ríos → Benfica**); "Medellín hosted a 2014/2018/2022 qualifier" (Colombia plays qualifiers in **Barranquilla**); "Mina scored in every 2018 knockout match" (only one knockout match); Excel "01-Jan" = 1-1.
+- **Egypt complete:** rows 22766–23686 done → 532 PASS / 104 FAIL. Egypt **DID** qualify for 2026; main fails: 2010 AFCON final wrongly "on penalties" (1-0 v Ghana), "hosted 2021 AFCON" (hosted 2019; Cameroon hosted 2021), Salah Golden Boot "twice" (4), Al Ahly "12 CAF CL titles by 2022/2023" (12th came 2024).
+- **Germany complete:** rows 27325–29161 done → 1291 PASS / 65 FAIL. Germany **DID** qualify for 2026; very accurate data (~5% fail). Main fails: Excel score-corruption; Euro 2024 QF crediting Füllkrug/Oyarzabal (actually Wirtz 89' & Merino 119'); "Kroos recalled for 2026" (retired after Euro 2024); non-unique "which did NOT…".
+- **Italy complete:** rows 32568–34327 done → 1061 PASS / 225 FAIL. Italy **FAILED to qualify for 2026** (runner-up Group I behind Norway, lost playoff final to Bosnia 1-1/4-1 pens Mar 2026, Spalletti sacked June 2025, Gattuso ran the failed campaign — 3rd straight WC miss). Other clusters: Euro 2020 "3 clean sheets / 4 goals" swapped; FIFA rank "7th after Euro 2020" (5th); fabricated 2026 venues; Jorginho/Chiesa myths; Bonucci last cap 2023; Donnarumma→Man City & Chiesa→Liverpool.
+- **Paraguay complete:** rows 42204–42927 done → 356 PASS / 149 FAIL (505 candidates). Paraguay **DID qualify for 2026** (6th in CONMEBOL under **Gustavo Alfaro**, first WC since 2010). Biggest fail cluster: the dataset's **"Alfaro Moreno" is a fabricated name** for Gustavo Alfaro. Other clusters: highest FIFA rank **8th (2001)** not 15th; "not qualified since 2010" now false; 2010 QF at **Ellis Park** not Loftus Versfeld; R16 v Japan **0-0 on pens** (no goal/no Villar save — Komano hit the bar; all 5 takers scored ⇒ non-unique); Paraguay scored **0 in the QF**; Italy group goal = **Alcaraz**; Santa Cruz at **Man City** in 2010; Almirón at **Atlanta United** (not Newcastle); Gómez **~60-65 caps in 2022** (not 80+); 2011 final brace = **Forlán** not Suárez; "at the 2022 World Cup" false (Paraguay missed it); many non-unique CONMEBOL "which other nation…" comparisons.
+- **Brazil is IN PROGRESS** (separate contributor): verified through **row 6760**, resume at 6761
+  (last Brazil CSV row = 8182). Brazil sub-cursor + per-batch tables live at the bottom of
+  `QA_TC06_LIVE.md`.
 
 - **Rows 2–230 (Algeria, old method):** 181 PASS / 48 FAIL.
 - **New method (231+, all countries) — `QA_PASSED_ALL.md`:** **25227** ship-ready.
 - **New method (231+, all countries) — `QA_FAILED_LIVENESS_PASSED_OTHERS.md`:** **3956** dangerous.
 - **Total ship-ready so far (both methods):** 25359 (132 backfill rows 2–230 + 25227 new method).
-- **🎯 GRAND TOTAL ship-ready (all three tracks):** **31683** =
-  batch 1 `QA_PASSED_ALL.md` **25359** + batch 2 `QA_PASSED_ALL_b2.md` **5965** +
+- **🎯 GRAND TOTAL ship-ready (all three tracks):** **32414** =
+  batch 1 `QA_PASSED_ALL.md` **25359** + batch 2 `QA_PASSED_ALL_b2.md` **6696** +
   cleaned `QA_PASSED_ALL_cleaned.md` **359**. *Batch-1 liveness: 34 countries complete (incl. Morocco, Netherlands,
   Jamaica, New Zealand, Nigeria, Tunisia, USA). Batch-2 liveness IN PROGRESS: Algeria (269/159) + Argentina (662/167) +
-  Belgium (618/170) + Bosnia and Herzegovina (948/125) + Canada (1060/69) + Colombia (607/168) + Costa Rica (792/139) + Ecuador (481/143) + Egypt (528/155) = 5965 ship-ready / 1295 dangerous (9 of 48). Cleaned
+  Belgium (618/170) + Bosnia and Herzegovina (948/125) + Canada (1060/69) + Colombia (607/168) + Costa Rica (792/139) + Czechia (468/234) + DR Congo (263/82) + Ecuador (481/143) + Egypt (528/155) = 6696 ship-ready / 1611 dangerous (11 of 48). Cleaned
   liveness **COMPLETE** (359 ship-ready / 34 dangerous of 393). Pools: batch-2 39,321; cleaned 393. Re-sum every
   session — count `### Row`/`- **Row` entries in each file.*
 - **34 countries COMPLETE** — per-country **pass-all / fail-liveness** (detailed key findings are in §2):
@@ -220,6 +287,8 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Canada | 10746–12428 | 1683 | 1003 | ✅ **COMPLETE** (row 12428) — 962 PASS / 41 FAIL |
 | Chile | 12429–13847 | 1419 | 960 | ✅ **COMPLETE** (row 13845) — 769 PASS / 191 FAIL |
 | Colombia | 13848–15527 | 1680 | 1132 | ⬜ not started |
+| Chile | 12429–13847 | 1419 | 960 | ✅ **COMPLETE** (row 13845) — 769 pass-all / 191 fail-liveness |
+| Colombia | 13848–15527 | 1680 | 1132 | ✅ **COMPLETE** (row 15527) — 986 pass-all / 146 fail-liveness |
 | Costa Rica | 15528–16571 | 1044 | 734 | ✅ **COMPLETE** (row 16571) — 654 PASS / 80 FAIL |
 | Côte d'Ivoire | 16572–17486 | 915 | 542 | ✅ **COMPLETE** (row 17485) — 463 PASS / 79 FAIL |
 | Croatia | 17487–19101 | 1615 | 1188 | ✅ **COMPLETE** (row 19100) — 1034 PASS / 154 FAIL |
@@ -242,7 +311,7 @@ Claim a country, set Status to your name + "in progress", and fill in the last v
 | Netherlands | 40187–41273 | 1087 | 878 | ✅ **COMPLETE** (row 41273) — 761 pass-all / 117 fail-liveness |
 | New Zealand | 41274–42086 | 813 | 564 | ✅ **COMPLETE** (row 42086) — 398 PASS / 166 FAIL |
 | Nigeria | 42087–42203 | 117 | 93 | ✅ **COMPLETE** (row 42203) — 91 PASS / 2 FAIL |
-| Paraguay | 42204–42927 | 724 | 505 | ⬜ not started |
+| Paraguay | 42204–42927 | 724 | 505 | ✅ **COMPLETE** (row 42923) — 356 pass-all / 149 fail-liveness |
 | Senegal | 42928–43782 | 855 | 661 | ⬜ not started |
 | Switzerland | 43783–44756 | 974 | 832 | ⬜ not started |
 | Tunisia | 44757–45514 | 758 | 573 | ✅ **COMPLETE** (row 45514) — 500 PASS / 73 FAIL |
@@ -407,8 +476,8 @@ Row numbers are **lines in `Pre-worldcup2.csv`** (header = line 1) and match `QA
 | Costa Rica | 11737–12858 | 1122 | 931 | ✅ **COMPLETE** (row 12858) — 792 PASS / 139 FAIL |
 | Croatia | 12859–14120 | 1262 | 1029 | ⬜ not started |
 | Curaçao | 14121–16003 | 1883 | 1159 | ⬜ not started |
-| Czechia | 16004–16893 | 890 | 702 | ⬜ not started |
-| DR Congo | 16894–17345 | 452 | 345 | ⬜ not started |
+| Czechia | 16004–16893 | 890 | 702 | ✅ **COMPLETE** (row 16893) — 468 PASS / 234 FAIL |
+| DR Congo | 16894–17345 | 452 | 345 | ✅ **COMPLETE** (row 17345) — 263 PASS / 82 FAIL |
 | Ecuador | 17346–18086 | 741 | 624 | ✅ **COMPLETE** (row 18086) — 481 PASS / 143 FAIL |
 | Egypt | 18087–18876 | 790 | 683 | ✅ **COMPLETE** (row 18876) — 528 PASS / 155 FAIL |
 | England | 18877–20254 | 1378 | 1175 | ⬜ not started |
@@ -442,9 +511,9 @@ Row numbers are **lines in `Pre-worldcup2.csv`** (header = line 1) and match `QA
 | Uzbekistan | 50154–51062 | 909 | 622 | ⬜ not started |
 
 ### (e) Batch-2 running totals (update every session)
-- **`QA_PASSED_ALL_b2.md` (ship-ready):** 5965 *(Algeria 269 + Argentina 662 + Belgium 618 + Bosnia and Herzegovina 948 + Canada 1060 + Colombia 607 + Costa Rica 792 + Ecuador 481 + Egypt 528; pool = 39,321 across 48 countries)*
-- **`QA_FAILED_LIVENESS_b2.md` (dangerous):** 1295 *(Algeria 159 + Argentina 167 + Belgium 170 + Bosnia and Herzegovina 125 + Canada 69 + Colombia 168 + Costa Rica 139 + Ecuador 143 + Egypt 155)*
-- **Countries COMPLETE (batch 2):** 9 of 48 (Algeria 269/159, Argentina 662/167, Belgium 618/170, Bosnia and Herzegovina 948/125, Canada 1060/69, Colombia 607/168, Costa Rica 792/139, Ecuador 481/143, Egypt 528/155). Next sequential not-started: **Australia** (rows 1544–2400).
+- **`QA_PASSED_ALL_b2.md` (ship-ready):** 6696 *(Algeria 269 + Argentina 662 + Belgium 618 + Bosnia and Herzegovina 948 + Canada 1060 + Colombia 607 + Costa Rica 792 + Czechia 468 + DR Congo 263 + Ecuador 481 + Egypt 528; pool = 39,321 across 48 countries)*
+- **`QA_FAILED_LIVENESS_b2.md` (dangerous):** 1611 *(Algeria 159 + Argentina 167 + Belgium 170 + Bosnia and Herzegovina 125 + Canada 69 + Colombia 168 + Costa Rica 139 + Czechia 234 + DR Congo 82 + Ecuador 143 + Egypt 155)*
+- **Countries COMPLETE (batch 2):** 11 of 48 (Algeria 269/159, Argentina 662/167, Belgium 618/170, Bosnia and Herzegovina 948/125, Canada 1060/69, Colombia 607/168, Costa Rica 792/139, Czechia 468/234, DR Congo 263/82, **Ecuador 481/143, Egypt 528/155**). Next sequential not-started: **Australia** (rows 1544–2400).
 
 ### (f) Cleaned-track status — ✅ LIVENESS COMPLETE
 All 393 rows in `QA_PASSED_cleaned.md` (36 countries) have been TC-06 liveness-checked.

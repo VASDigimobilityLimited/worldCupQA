@@ -3,7 +3,7 @@
 > Rows that cleared `QA_PASSED_b2.md` mechanically but are **factually wrong** on the live
 > TC-06 check. Each entry: reason + source + concrete remedy. See HANDOFF.md §6/§7.
 
-**Total dangerous: 1295** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876)
+**Total dangerous: 1611** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876)
 
 ---
 
@@ -3217,6 +3217,283 @@
 **Why it fails:** Bosnia's 2014 qualifier vs Greece (3-1) was played at Bilino Polje in Zenica, NOT the Koševo Stadium in Sarajevo. The premise that it was held at Koševo for capacity is false.
 **Source:** https://athlet.org/football/world-cup/2014/qualifiers/uefa/group-g/2013-03-22-bosniaandherzegovina-greece.html
 **Remedy:** The Greece qualifier was at Bilino Polje (Zenica).
+---
+
+## Czechia (batch-2 rows 16004–16893)
+
+**Fact base (sourced):** Czechia's **only WC played** = **2006** (group-stage exit). They did **NOT** play at 2010/2014/2018/2022 — so "At the 2014/2022 World Cup, which Czech…" questions carry a **false premise**. They **DID qualify for 2026** (UEFA play-off win over Denmark, 31 Mar 2026) — so "2006 = only independent *qualification*" is now **false**. Euro record vs Netherlands is **2-1 (lost 0-1 at Euro 2000)** — **not** perfect/2-0. FIFA ranking dropped below 40 after 2010 (lowest ~67). They did **not** play Germany in 2022 WC qualifying (different groups). Sources: UEFA.com, Wikipedia, ESPN.
+
+**Chunk 16004–16039 (13 dangerous):**
+- **Row 16005** — "next automatic Euro qualification after beating England 2019 = **2023**" — FALSE: they clinched **Euro 2020 automatic qualification on 14 Nov 2019** (after the 11 Oct 2019 England win). *Remedy:* answer is 2019/Euro 2020, or reword.
+- **Row 16006** — "maintained world's **top 40** since 2010" — FALSE: ranking fell well below 40 (lowest ~67). *Remedy:* drop the claim.
+- **Row 16007** — "relegated from Nations League A in **2023**" — FALSE: relegation was determined finishing last in the 2022-23 League A group, matches ending **Sep 2022**. *Remedy:* answer 2022.
+- **Row 16008** — "hold a **2-0** Euro finals record v Netherlands" — FALSE: Euro meetings were L 0-1 (2000), W 3-2 (2004), W 2-0 (2020). *Remedy:* drop "2-0 record" premise.
+- **Row 16009** — "**perfect** Euro finals record v Netherlands" — FALSE: lost 0-1 at **Euro 2000**. *Remedy:* drop "perfect" premise.
+- **Row 16016** — "**At the 2014 FIFA World Cup**, Czechia's fiercest regional rival…" — false premise: Czechia did **not** play at the 2014 WC. *Remedy:* drop the WC framing (rivalry fact = Slovakia/Federal Derby).
+- **Row 16017** — "**At the 2022 World Cup**, which Czech First League club had most players…" — false premise: Czechia did **not** qualify for 2022 (explanation itself says "qualifiers"). *Remedy:* reframe to qualifiers.
+- **Row 16018** — "**At the 2022 World Cup**, which Czech striker led the attack" — false premise (not at 2022 WC). *Remedy:* reframe.
+- **Row 16019** — "**At the 2022 World Cup**, which Czechia player held the Euro distance goal record" — false premise (not at 2022 WC; Schick's record is real but not "at" a tournament they didn't play). *Remedy:* reframe.
+- **Row 16022** — "2006 stadium where Czechia did **not** play = Signal Iduna Park" — broken: Czechia played at **Gelsenkirchen, Cologne, Hamburg**, none of the four options; explanation's stadium list (AWD-Arena/Commerzbank-Arena/Gottlieb-Daimler-Stadion) is wrong and all four options are non-played → **non-unique**. *Remedy:* rebuild with the correct venues.
+- **Row 16025** — "Czechia's **only independent qualification** was for 2006" — FALSE now: they **qualified for 2026**. *Remedy:* update (debut = 2006, but not "only").
+- **Row 16030** — "Czechia hosted **Germany** in **2022 World Cup qualifying** at epet ARENA" — false premise: Czechia & Germany were in different 2022 WC qualifying groups; no such fixture. *Remedy:* remove/replace opponent.
+- **Row 16037** — "2018 World Cup qualification relied heavily on **aerially dominant strikers**" — unverifiable soft narrative; Czechia also **failed** to qualify for 2018. UNVERIFIED→FAIL. *Remedy:* drop.
+
+**Chunk 16040–16075 (11 dangerous):**
+- **Row 16041 / 16047 / 16048** — "top-40 ranking through the 2010s/2020s (incl. 2018 & 2022 cycles)" — FALSE: ranking fell well below 40 (lowest ~67), and they failed the 2018/2022 cycles. *Remedy:* drop the top-40 premise.
+- **Row 16049** — "2022 WC qualifier hosted outside Prague at Doosan Arena" — unverified/likely-fabricated: Czechia's 2022 home qualifiers were in Prague; no confirmed Plzeň qualifier. UNVERIFIED→FAIL. *Remedy:* verify venue or drop.
+- **Row 16050** — "2022 qualifier v Belgium at fortuna Arena (cap 19,370)" — **non-unique**: option **epet ARENA = fortuna Arena** (same Slavia stadium, just a later sponsor name). *Remedy:* remove the duplicate-name distractor.
+- **Row 16053** — "Prague stadium cap 19,370 = fortuna Arena" — **non-unique**: option **Eden Arena = fortuna Arena** (same stadium). *Remedy:* remove duplicate.
+- **Row 16056** — "league that does NOT supply a core of the 2024 squad = Premier League" — FALSE: **Souček & Coufal (West Ham)** are core Premier League players. *Remedy:* pick a league that truly doesn't (e.g. Serie A/La Liga, but check uniqueness).
+- **Row 16062** — "2022 qualifiers league NOT relied on = Serie A" — **non-unique** (La Liga also not relied on) and PL *was* relied on. *Remedy:* rebuild.
+- **Row 16063** — "WC Czechia qualified for in the 21st century = 2006 (only one)" — FALSE now: they **also qualified for 2026**. *Remedy:* note 2026.
+- **Row 16067** — "most 2006 WC squad players from Sparta Prague" — unverifiable obscure squad-composition count. UNVERIFIED→FAIL. *Remedy:* drop or verify.
+- **Row 16075** — "Euro **knockout** matches v Portugal by 2012 = Three (1996, 2008, 2012)" — FALSE: only **two** were knockout (1996 QF, 2012 QF); **2008 was a group game**. *Remedy:* answer Two.
+
+**Chunk 16076–16139 (29 dangerous):**
+- **Row 16076 / 16077 / 16116** — "Euro **knockout** matches v Portugal = Three (1996/2008/2012)" — FALSE: only **two** knockout (1996 QF, 2012 QF); **2008 was a group game**. *Remedy:* answer Two.
+- **Row 16078** — "WCs Czechia **qualified for** as independent nation = One" — FALSE now: also **qualified for 2026**. *Remedy:* update.
+- **Row 16089 / 16131 / 16135** — "Doosan Arena/Plzeň hosted a 2022 WC qualifier (v Estonia)" — FALSE: Czechia's 2022 home qualifiers were at **Sinobo Stadium & Letná (Prague) and Ostrava**; the Estonia game was at **Stadion Letná, Prague** (no Plzeň qualifier). *Remedy:* Prague.
+- **Row 16090 / 16099** — "Prague stadium cap 19,370 = fortuna Arena" — **non-unique**: option **Eden Arena = fortuna Arena** (same Slavia ground). *Remedy:* drop duplicate.
+- **Row 16091** — "2022 play-off v Sweden hosted at epet ARENA (Letná)" — FALSE: the play-off SF was played **in Sweden** (Solna), not Prague; also "epet ARENA (Letná)" conflates Slavia's Eden ground with Sparta's Letná. *Remedy:* rebuild.
+- **Row 16093** — "Koller scored **two** headers v USA (2006)" — FALSE: Koller scored **one**; Rosický scored the brace. *Remedy:* fix.
+- **Row 16096** — "Slovakia faced Slovenia while Czechia played Belgium (Sep 2021)" — obscure unverified cross-fixture. UNVERIFIED→FAIL.
+- **Row 16097** — "2022 World Cup **group stage** match…" — false premise: Czechia did **not** play the 2022 WC. *Remedy:* drop.
+- **Row 16098** — "2022 WC qualifier: Czechia hosted **England**" — false premise: England was **not** in Czechia's 2022 WCQ group (that was Euro 2020 qualifying). *Remedy:* reframe to Euro 2020 Q.
+- **Row 16100** — "stadium cap **18,887** = epet ARENA" — FALSE capacity (it's **19,370**) and **non-unique** (epet = fortuna option). *Remedy:* fix.
+- **Row 16101** — "2024 World Cup qualifier" — no such tournament (WCs are 2022/2026). False premise. *Remedy:* reframe.
+- **Row 16103** — "Rosický = most-capped in the 2006 opener XI" — FALSE: 105 was his career total; in 2006 **Nedvěd/Šmicer** had more caps. *Remedy:* fix.
+- **Row 16104** — "Brückner's 2006 formation = 4-4-2 diamond" — unverifiable/non-unique (explanation hedges 4-2-3-1). UNVERIFIED→FAIL.
+- **Row 16107** — "creative winger supporting Schick (2022 Q) = Václav Černý" — unverifiable/non-unique soft claim (Provod also fits). UNVERIFIED→FAIL.
+- **Row 16113** — "finished above **Scotland** in Euro 2012 qualifying" — **non-unique**: Czechia (2nd) also finished above **Lithuania** (an option). *Remedy:* fix.
+- **Row 16114** — "nation that finished **second** in Czechia's Euro 2020 qualifying group = England" — FALSE: **England finished 1st**, Czechia 2nd. *Remedy:* answer Czechia / reword.
+- **Row 16118** — "2006 starting midfielder who played for **Sparta Prague** = Galásek" — FALSE: Galásek was at **Nürnberg** in 2006 (ex-Ajax). *Remedy:* fix.
+- **Row 16119** — "2022 WC cycle ranking = world's top 40" — FALSE: below 40 (lowest ~67). *Remedy:* drop.
+- **Row 16122 / 16125** — "historically produces aerially dominant strikers / winning-header striker" — unverifiable soft narrative (and no decisive "winning header" in the 3-0 v USA). UNVERIFIED→FAIL.
+- **Row 16123** — "In the **2026 World Cup qualifiers**, when did Czechia secure **Euro 2024** automatic qualification?" — incoherent: conflates two different campaigns. *Remedy:* reframe to Euro 2024 Q.
+- **Row 16130** — "faced **Slovakia** in 2018 WCQ Group C" — FALSE: Slovakia was in **Group F**; not in Czechia's group. *Remedy:* fix.
+- **Row 16132** — "**2023-24** Nations League B" — no 2023-24 senior NL edition exists (editions: 2022-23, 2024-25). *Remedy:* fix edition.
+- **Row 16138** — "beat England 2-1 (Euro 2020 Q) at Sinobo Stadium" — **non-unique**: option **Eden Arena = Sinobo Stadium** (same ground, former name). *Remedy:* drop duplicate.
+
+**Chunk 16141–16200 (6 dangerous):**
+- **Row 16164** — "relegated from Nations League A in **2023**" — FALSE: the 2022-23 League A group stage ended **Sep 2022**, when relegation was determined. *Remedy:* answer 2022. (cf. 16007)
+- **Row 16169** — "played **Turkey** in a 2022 WC qualifier on 16 Nov 2021" — FALSE: that fixture was v **Estonia** (Stadion Letná); Turkey was not in Czechia's group. *Remedy:* fix opponent.
+- **Row 16172 / 16173** — "In which **year** did Schick score his Euro goal? **2020**" — the goal was scored **14 June 2021**; **2021** is offered as a distractor → answer should be 2021. *Remedy:* answer 2021.
+- **Row 16177** — "Since which **World Cup finals** has Czechia been captained by Souček? 2022" — false premise: Czechia did **not** play the 2022 WC finals. *Remedy:* reframe to the 2022 qualifying campaign.
+- **Row 16191** — "When did a Bundesliga-supplemented Czechia squad **last qualify** for the WC? 2006" — FALSE now: they **last qualified for 2026**. *Remedy:* update.
+
+**Chunk 16201–16260 (14 dangerous):**
+- **Row 16203** — "first met Slovakia in WC qualifying = 2006" — FALSE: their only WCQ meeting was **2010** (Group 3, drew 2-2). *Remedy:* 2010.
+- **Row 16208** — "last faced Slovakia in a WC qualifier = 2022" — FALSE: they were **not** in the same 2022 group; last (only) WCQ meeting was **2010**. *Remedy:* 2010.
+- **Row 16209** — "last faced Slovakia in WCQ = 2018 qualifiers" — FALSE: not in the same 2018 group; last was **2010**. *Remedy:* 2010.
+- **Row 16214** — "qualify for its **only** FIFA World Cup = 2006" — FALSE now: also **qualified for 2026**. *Remedy:* update.
+- **Row 16225** — "Bundesliga-supplemented core **qualify for the WC** = 2022 qualifiers" — FALSE: Czechia **failed** to qualify for 2022 (3rd, lost play-off). *Remedy:* fix.
+- **Row 16230** — "Schick's **World Cup debut** = 2022" — FALSE: Czechia did **not** play the 2022 WC; Schick has **never** played a WC. *Remedy:* remove.
+- **Row 16235** — "Čech set his clean-sheet record **during 2006 qualifiers**" — FALSE/unverifiable: the record accrued across his 2002-2016 career, not "during 2006 qualifiers." UNVERIFIED→FAIL.
+- **Row 16242** — "Souček first captained Czechia **at a FIFA World Cup** = 2022" — false premise: Czechia did **not** play the 2022 WC. *Remedy:* reframe to qualifiers.
+- **Row 16250** — "hosted 2022 qualifier v Belgium at epet ARENA" — **non-unique**: option **Fortuna Arena = epet ARENA** (same Sinobo/Slavia ground). *Remedy:* drop duplicate.
+- **Row 16254** — "Czech city whose stadium hosted a 2022 WC qualifier = Plzeň" — FALSE: 2022 home qualifiers were in **Prague & Ostrava**, not Plzeň. *Remedy:* Prague/Ostrava.
+- **Row 16255** — "Slavia Prague contributed **more** players to the 2022 squad" — unverifiable exact squad count. UNVERIFIED→FAIL.
+- **Row 16256** — "Czech club in the **2022 UCL group stage** = Sparta Prague" — FALSE: it was **Viktoria Plzeň** (Group C with Bayern/Barça/Inter). *Remedy:* Viktoria Plzeň.
+- **Row 16257** — "Czech club with players in the 2022 squad = Slavia Prague" — **non-unique**: Sparta Prague (an option) also had squad players. *Remedy:* rebuild.
+- **Row 16260** — "Czech club in the **2023/24 UCL group stage** = Sparta Prague" — FALSE: Sparta were eliminated in UCL Q3 (Copenhagen) and played the **Europa League**; no Czech club was in the 2023-24 UCL group stage. *Remedy:* fix.
+
+**Chunk 16261–16330 (39 dangerous):**
+*Stadium-name facts: Slavia's ground = Eden = Sinobo = Fortuna Arena = epet ARENA (one stadium, cap 19,370). Sparta's Letná = Generali Arena is a DIFFERENT stadium. Doosan Arena = Plzeň, Andrův Stadion = Olomouc. Confirmed: Czechia's 2018 & 2022 home qualifiers were at Eden/Sinobo & Letná (Prague), Ostrava, never Plzeň.*
+- **Row 16291 / 16294 / 16295 / 16304** — answer "**epet ARENA (Letná)**" — FALSE conflation: epet ARENA **is** Slavia's Eden ground, **not** Sparta's Letná; capacity given (18,887) is Letná's. Also options repeat the same stadium (Eden/Fortuna) → non-unique. *Remedy:* rebuild.
+- **Row 16302 / 16305 / 16306 / 16307 / 16308** — **non-unique**: options pair **Fortuna Arena + epet ARENA** (same stadium). *Remedy:* drop duplicate-name distractor.
+- **Row 16292 (San Marino) / 16293 (Norway)** — "hosted at **Doosan Arena/Plzeň**" — FALSE: both 2018 qualifiers were at **Eden Arena, Prague**. *Remedy:* Eden/Prague.
+- **Row 16296 (Belarus) / 16297 (Estonia) / 16298 (Wales) / 16299** — wrong 2022 venues: Belarus was at **Ostrava**, Estonia at **Letná (Prague)**, Wales at **Sinobo (Prague)** — none at Doosan/Andrův. *Remedy:* fix venues.
+- **Row 16310** — "Doosan & Andrův host 2026 qualifiers" — unverified venue claim. UNVERIFIED→FAIL.
+- **Row 16261** — "**Sparta**'s frequent UCL group play fed the 2022 squad" — misleading: the 2022-cycle UCL club was **Viktoria Plzeň**; Sparta were not UCL regulars. *Remedy:* fix.
+- **Row 16263 / 16264** — "Slavia/Sparta supplied the **most** players (2022/2006)" — unverifiable exact squad counts. UNVERIFIED→FAIL.
+- **Row 16272** — "Rosický scored in Czechia's **2-0 win over Ghana** (2006)" — FALSE: Czechia **lost 0-2** to Ghana and scored nothing. *Remedy:* remove.
+- **Row 16273** — "**Schick** scored in the 2-1 v England (2019)" — FALSE: scorers were **Brabec & Ondrášek**. *Remedy:* fix.
+- **Row 16276** — "**Ondrášek scored both** goals v England (2019)" — FALSE: **Brabec & Ondrášek** scored one each. *Remedy:* fix.
+- **Row 16280** — "2020 Euro **quarter-final** goal" — explanation describes the **R16 v Netherlands** (wrong match) + soft "aerial striker" archetype. *Remedy:* rebuild.
+- **Row 16283** — "won the Ballon d'Or in a **World Cup year** = Nedvěd" — FALSE: Nedvěd won **2003**, which is **not** a WC year (explanation admits it). *Remedy:* remove.
+- **Row 16285** — "**Sparta Prague** midfielder = Masopust" — FALSE: Masopust plays for **Slavia**. *Remedy:* fix.
+- **Row 16286** — "features for **Sparta Prague** in UCL = Holeš" — FALSE: Holeš is a **Slavia** player. *Remedy:* fix.
+- **Row 16289** — "Schick header v Netherlands in **2022 WC qualifiers**" — false premise: Czechia didn't play NL in 2022 WCQ (that header was Euro 2020). *Remedy:* reframe.
+- **Row 16314** — "which striker **debuted** at the 2006 WC" — **non-unique**: the entire squad (incl. Baroš) debuted there (Czechia's only WC). *Remedy:* rebuild.
+- **Row 16315 / 16322** — "Czech striker **at the 2018/2022 World Cup**" — false premise: Czechia missed both tournaments. *Remedy:* remove.
+- **Row 16316 / 16318** — "Koller scored **3 / two headed** goals at 2006 WC" — FALSE: Koller scored **one** (v USA). *Remedy:* fix.
+- **Row 16317** — "Schick scored **4 goals** in 2022 WCQ" — unverified goal tally. UNVERIFIED→FAIL.
+- **Row 16319 / 16320** — "aerially dominant strikers powered 2006/2018 qualification" — unverifiable soft narrative. UNVERIFIED→FAIL.
+- **Row 16323** — "aerially dominant striker who led the line at 2006 = **Baroš**" — FALSE: that archetype is **Koller**; Baroš was a pacey forward. *Remedy:* Koller.
+- **Row 16324** — "Koller scored **against Ghana** (2006)" — FALSE: Czechia lost 0-2 to Ghana; Koller scored v USA. *Remedy:* fix.
+- **Row 16326** — "Škoda's aerial headers key in 2018 WCQ" — unverifiable soft claim. UNVERIFIED→FAIL.
+- **Row 16327** — "which 2022 squad fed by Sparta/Slavia = the 2022 squad" — circular + self-referential explanation + Czechia had no 2022 WC squad. *Remedy:* remove.
+
+**Chunk 16331–16400 (11 dangerous):**
+- **Row 16341** — "captain of the **failed 2006** WC qualification = Nedvěd" — FALSE premise: Czechia **qualified** for 2006. *Remedy:* remove.
+- **Row 16342** — "captain at the **2006 World Cup** = Nedvěd" — FALSE: **Galásek** captained at 2006 (Nedvěd had retired after Euro 2004). *Remedy:* Galásek.
+- **Row 16367** — "attacking focal point **at the 2022 FIFA World Cup** = Schick" — false premise: Czechia didn't play the 2022 WC. *Remedy:* reframe to qualifiers.
+- **Row 16369** — "Čech had 124 caps **for the 2014 World Cup squad**" — false premise: Czechia missed the 2014 WC. *Remedy:* remove.
+- **Row 16380** — "Čech kept the **most clean sheets in 2018 WC qualifying**" — unverifiable/likely wrong (Čech retired in 2016, mid-cycle). UNVERIFIED→FAIL.
+- **Row 16381 / 16382 / 16383** — "Čech **set** his clean-sheet record **during the 2014/2018 WC qualifiers**" — FALSE: the career record wasn't established in a single campaign. UNVERIFIED→FAIL. (cf. 16235)
+- **Row 16386** — "Čech's **2018 World Cup** performances built his record" — false premise: Czechia missed the 2018 WC. *Remedy:* remove.
+- **Row 16387** — "2022 home qualifier at epet ARENA = vs Estonia" — FALSE: Estonia was at **Stadion Letná**; the epet/Sinobo (Eden) games were Belgium & Wales. *Remedy:* fix.
+- **Row 16388** — "2018 WC qualifiers home stadium = Fortuna Arena" — **non-unique**: option **epet ARENA = Fortuna Arena** (same Eden ground). *Remedy:* drop duplicate.
+
+**Chunk 16401–16470 (10 dangerous):**
+- **Row 16401** — "manager ensured consistent **top-40** ranks through the 2010s = Jarolím" — FALSE: ranking dropped below 40 (lowest ~67); Jarolím only coached 2016-18. *Remedy:* remove.
+- **Row 16426** — "manager started a **Sparta Prague striker** at 2006 = Brückner" — false premise: the 2006 strikers (**Koller**=Dortmund/Monaco, **Baroš**=Villa/Lyon) were **not** at Sparta. *Remedy:* rebuild.
+- **Row 16449 / 16468 / 16469** — "captained **at the 2022 FIFA World Cup** = Souček" — false premise: Czechia did **not** play the 2022 WC. *Remedy:* reframe to qualifiers.
+- **Row 16456** — "which **Czechia opponent** lost a Euro final to Germany via golden goal? **Czechia**" — incoherent/self-referential (Czechia isn't its own opponent; the fact is real but the framing is broken). *Remedy:* reword.
+- **Row 16458** — "opponents who beat Czechia 2-0 (2006) = Ghana and Italy" — **non-unique**: options include both "**Ghana and Italy**" and "**Italy and Ghana**" (same pair). *Remedy:* drop the duplicate.
+- **Row 16460** — "player archetype that starred at 2006 = tactically intelligent midfielder" — **non-unique/soft**: a "technically sound midfielder" (option) and "aerially dominant striker" also starred. *Remedy:* rebuild.
+- **Row 16461** — "Euro 2020 player from **Sparta Prague** = Souček" — FALSE: Souček came from **Slavia** and was a **West Ham** player by Euro 2020. *Remedy:* fix.
+- **Row 16467** — "captained the 2022 WCQ **against Slovakia** = Souček" — false premise: Czechia & Slovakia were **not** in the same 2022 WCQ group (no such match). *Remedy:* remove.
+
+**Chunk 16471–16550 (17 dangerous):**
+- **Row 16474** — "captained **at the 2022 FIFA World Cup** = Souček" — false premise (Czechia missed the 2022 WC). *Remedy:* qualifiers.
+- **Row 16479** — "Souček rose through **Sparta Prague's** academy" — FALSE: he's a **Slavia** youth product. *Remedy:* fix.
+- **Row 16482** — "2022-squad player who played for **Sparta Prague** = Holeš" — FALSE: Holeš is a **Slavia** player. *Remedy:* fix.
+- **Row 16483 / 16484** — "from **Sparta Prague's 2023-24 UCL squad** at the 2022 WC = Čvančara" — FALSE: Sparta did **not** reach the 2023-24 UCL group stage (Europa League), and Czechia didn't play the 2022 WC. *Remedy:* rebuild.
+- **Row 16485** — "Souček played UCL for **Sparta Prague** before the 2022 WC" — FALSE: he was at **West Ham** (ex-Slavia), never Sparta; no 2022 WC. *Remedy:* rebuild.
+- **Row 16489** — "record for **most World Cup goals** = Koller" — FALSE: **Rosický** scored 2 at 2006, Koller 1. *Remedy:* Rosický.
+- **Row 16490** — "main striker at the **2024 FIFA World Cup** qualifiers" — no such tournament. *Remedy:* reframe (Euro 2024 / 2026 WCQ).
+- **Row 16513** — "Schick's 50-yard goal in a **2022 WC qualifier** v Scotland" — FALSE: that goal was at **Euro 2020**; Czechia didn't play Scotland in 2022 WCQ. *Remedy:* fix competition.
+- **Row 16525 / 16528** — "Euro 2020 R16 win over NL = **3-2**" — FALSE: it was **2-0**. *Remedy:* fix score.
+- **Row 16529** — "which player scored in the 2-0 v NL (Euro 2020) = Holeš" — **non-unique** (Holeš **and** Schick both scored; Holeš scored 1st, not "the second goal"). *Remedy:* rebuild.
+- **Row 16527 / 16530** — "**Jankto** scored in the 2-1 v England (2019)" — FALSE: scorers were **Brabec & Ondrášek**. *Remedy:* fix.
+- **Row 16532** — "Koller scored the first goal in the 3-0 v Germany (2007)" — FALSE: scorers were **Sionko, Matějovský & Plašil** (and it was a Euro 2008 **qualifier**, not a friendly). *Remedy:* rebuild.
+- **Row 16539** — "Rosický scored the **opening** goal v USA (2006)" — FALSE: **Koller** opened (5'); Rosický scored 36' & 76'. *Remedy:* fix.
+- **Row 16546** — "Jiráček scored in the 2012 Euro **QF** (1-1 v Portugal)" — FALSE: the QF was a **1-0 loss** to Portugal; Czechia didn't score. *Remedy:* fix.
+
+**Chunk 16551–16640 (42 dangerous):**
+- **Row 16560** — "attacking focal point **at the 2022 FIFA World Cup**" — false premise (missed the WC). *Remedy:* qualifiers.
+- **Row 16563** — "**top scorer at 2006 WC** = Koller (2 of 3)" — FALSE: **Rosický** scored 2, Koller 1. *Remedy:* Rosický.
+- **Row 16573** — "2006 WC goal not from a nation that reached a final = Koller" — incoherent (all four options are Czech players; explanation nonsensical). *Remedy:* remove.
+- **Row 16575 / 16583** — "Souček/squad from **Sparta** UEFA runs **helped qualify for the 2022 WC**" — FALSE: Souček is Slavia/West Ham, and Czechia **failed** to qualify for 2022. *Remedy:* rebuild.
+- **Row 16582 / 16594 / 16604** — "ranked in the **top 40** (2010s-2020s streak)" — FALSE: ranking fell below 40. *Remedy:* drop.
+- **Row 16588 / 16589** — "**Rosický** captained at the 2006 WC" — FALSE: **Galásek** captained 2006. *Remedy:* Galásek.
+- **Row 16599** — "rival faced in a **2022 WC qualifier** = Slovakia" — false premise: not in the same 2022 WCQ group. *Remedy:* remove.
+- **Stadium cluster (Rows 16605, 16606, 16607, 16610, 16614, 16622, 16628, 16629, 16630, 16633, 16634, 16639)** — **non-unique**: options pair **Fortuna Arena + epet ARENA** (or Eden), all the same Slavia ground. *Remedy:* drop duplicate-name distractor.
+- **Rows 16608, 16609, 16618, 16636, 16637, 16638** — answer "**epet ARENA (Letná)**" / cap 18,887 attributed to epet — FALSE conflation: epet ARENA **is** Slavia's Eden (19,370), not Sparta's Letná (18,887). *Remedy:* rebuild.
+- **Rows 16612 / 16616 / 16632 (Estonia), 16613 (Belarus), 16626 (Norway)** — wrong venue: Estonia was at **Letná**, Belarus at **Ostrava**, Norway (2016) at **Eden** — none at Doosan/Plzeň. *Remedy:* fix.
+- **Row 16611** — "Doosan hosted a WCQ first (2011)" — unverified/likely-fabricated venue history. UNVERIFIED→FAIL.
+- **Rows 16620 / 16621 / 16627** — 2018 WCQ (Germany/Norway) "= epet ARENA" — wrong club ("fortress of Sparta") + non-unique (epet=fortuna); the games were at **Eden, Prague**. *Remedy:* fix.
+- **Row 16619** — "**2010 World Cup playoff vs Montenegro**" — false premise: that was the **Euro 2012** play-off; Czechia didn't reach the 2010 WC play-offs. *Remedy:* rebuild.
+- **Row 16624** — "2022 WCQ vs **Albania**" — false premise: Albania wasn't in Czechia's 2022 WCQ group (that was Euro 2024 Q). *Remedy:* fix.
+- **Row 16625** — "2-1 v England (Euro 2020 Q) = Sinobo Stadium" — **non-unique**: option **Eden Arena = Sinobo Stadium** (same ground). *Remedy:* drop duplicate.
+- **Row 16631** — "2022 WCQ home game vs **Sweden** = fortuna Arena" — false premise: the Sweden play-off SF was **away (in Sweden)**; no home WCQ v Sweden. *Remedy:* remove.
+
+**Chunk 16641–16740 (17 dangerous):**
+- **Row 16643 / 16663 / 16671 / 16672** — "focal point/top scorer **at the 2022 FIFA World Cup**" — false premise (Czechia missed it). *Remedy:* qualifiers.
+- **Row 16646** — "Schick scored **4 goals** at Euro 2020" — FALSE: he scored **5** (joint Golden Boot). *Remedy:* 5.
+- **Row 16677** — "Škoda's aerial dominance secured a 2018 WCQ win" — unverifiable soft claim. UNVERIFIED→FAIL.
+- **Row 16681** — "3-0 v Germany (Munich) = **2007 friendly**" — FALSE: it was a **Euro 2008 qualifier**. *Remedy:* fix.
+- **Row 16686** — "WC squad with highest average age since 2006" — false premise: Czechia had **no** 2010/2014/2018 WC squads (missed all). *Remedy:* remove.
+- **Row 16692** — "WC Czechia **qualified for** as an independent nation = 2006 (only one)" — FALSE now: also **qualified for 2026**. *Remedy:* update.
+- **Row 16695** — "first captained **at the 2022 FIFA World Cup** = Souček" — false premise (no 2022 WC). *Remedy:* reframe.
+- **Row 16707 / 16708 / 16709 / 16710 / 16724** — "faced Portugal in a **Euro 2008 quarter-final/knockout**" — FALSE: Czechia were **eliminated in the Euro 2008 group** (the 1-3 loss to Portugal was a group game); their only Portugal Euro knockouts were 1996 & 2012. *Remedy:* fix.
+- **Row 16716** — "nation Czechia did NOT finish behind (Euro 2020 Q) = Albania" — **non-unique**: they only finished behind **England**, so Croatia & Slovakia (options) also qualify. *Remedy:* rebuild.
+- **Row 16734** — "finished **second** in Czechia's Euro 2024 group = Albania" — FALSE: **Albania finished 1st**, Czechia 2nd. *Remedy:* Czechia.
+
+**Chunk 16741–16893 (25 dangerous) — completes Czechia:**
+- **Row 16745** — "nation that qualified for 2014 (that Czechia missed) = Ghana" — **non-unique**: **Italy & USA** (options) also qualified for 2014. *Remedy:* rebuild.
+- **Row 16756** — "rival faced in **2006 WC qualifiers** = Slovakia" — false premise: not in the same 2006 WCQ group (first met in 2010). *Remedy:* fix.
+- **Row 16758 / 16760** — "= **epet ARENA (Letná)**" — conflation (epet = Slavia's Eden, not Letná) + non-unique (Eden/Fortuna option). *Remedy:* rebuild.
+- **Row 16759** — "2018 WCQ v Norway = epet ARENA or Fortuna Arena" — **non-unique**: both are the same Eden ground. *Remedy:* drop duplicate.
+- **Row 16761** — "decisive 2022 WCQ v **Sweden** = epet ARENA" — false premise: the Sweden play-off was **away (Sweden)**. *Remedy:* remove.
+- **Row 16763** — "Plzeň stadium hosted **2022 WC qualifiers** = Doosan" — false premise: no 2022 qualifier in Plzeň. *Remedy:* fix.
+- **Row 16776 / 16777 / 16778** — "faced Portugal in a **Euro 2008 quarter-final**" — FALSE: that was a **group** game (Czechia exited the Euro 2008 group). *Remedy:* fix.
+- **Row 16810** — "two stadiums hosting 2018 WCQ = Doosan & Andrův" — FALSE: 2018 home qualifiers were at **Eden, Prague**. *Remedy:* fix.
+- **Row 16841** — "UEFA nation that lost a play-off SF 1-0 aet (like Czechia) = **Sweden**" — FALSE: Sweden **won** that SF (then lost the final). *Remedy:* rebuild.
+- **Row 16842 / 16844 / 16893** — "top-40 (2010s-2020s) mainstay" — FALSE: Czechia's ranking fell below 40. *Remedy:* drop. (16844 also self-referential.)
+- **Row 16850** — "WC Czechia **qualified for** as independent = 2006 (only)" — FALSE now: also **qualified for 2026**. *Remedy:* update.
+- **Row 16853 / 16855** — "captained at the **2006 WC** = Nedvěd" — FALSE: **Galásek** captained 2006. *Remedy:* Galásek.
+- **Row 16860** — "led the team for the **2024 World Cup** qualifiers" — no such tournament. *Remedy:* reframe.
+- **Row 16866** — "captain **at the 2022 FIFA World Cup** = Souček" — false premise (missed the WC). *Remedy:* qualifiers.
+- **Row 16871 / 16872 / 16889** — "hosted 2022 WCQ at **Doosan/Plzeň/Andrův**" — false premise: 2022 home games were Prague & Ostrava. *Remedy:* fix.
+- **Row 16879** — "qualified for the 2022 play-off due to a **strong European club core**" — misleading: they reached the play-off via **UEFA Nations League ranking** (finished 3rd in group). *Remedy:* fix.
+- **Row 16890** — "host some 2026 WCQ in Plzeň & Olomouc" — unverified venue claim. UNVERIFIED→FAIL.
+
+---
+
+## DR Congo (batch-2 rows 16894–17345)
+
+**Fact base (sourced):** DR Congo **qualified for the 2026 WC** (1st since 1974/Zaire), via **2nd in CAF Group B → African play-off (beat Cameroon, then Nigeria) → beat Jamaica** in the intercontinental final. 2026 is their first *as DR Congo* but **2nd overall** (1974 as Zaire) — so "first ever WC" is wrong. 2018 WCQ group: **Tunisia/Libya/Guinea** (no Nigeria/Zambia). AFCON: 2 titles (1968, 1974); 2015 & 2023 = SF. Sources: Al Jazeera/ESPN/Wikipedia.
+
+**Chunk 16894–16940 (12 dangerous):**
+- **Row 16894** — "**after beating Senegal**, DR Congo qualified for 2026" — FALSE: Senegal **won** the group; DRC qualified via the play-offs (beat Cameroon, Nigeria, Jamaica). *Remedy:* reframe.
+- **Row 16896** — "**At the 2014 World Cup**, which DRC club developed players" — false premise: DRC didn't play the 2014 WC. *Remedy:* drop the WC framing.
+- **Row 16899** — "At the 2026 WCQ, reached the 2023 AFCON QF in which year? 2023" — incoherent (mixes two competitions) and the 2023 AFCON was **played in 2024**. *Remedy:* rebuild.
+- **Row 16902** — "DRC players compete in which European league? Premier League" — **non-unique**: they have players in **all four** offered leagues. *Remedy:* rebuild.
+- **Row 16912** — "finished **third** in CAF Group B" — FALSE: DRC finished **2nd** (runner-up, went to play-offs). *Remedy:* second.
+- **Row 16913 / 16918** — "2026 = DRC's **first ever** WC appearance" — FALSE: their first was **1974 (as Zaire)**; 2026 is the first *under the DR Congo name*. *Remedy:* qualify "as DR Congo".
+- **Row 16914 / 16926** — "which **other** nation also qualified after a 50-yr gap / under its current name = **DR Congo**" — self-referential (answer is the subject nation). *Remedy:* rebuild.
+- **Row 16923** — "2018 WCQ **vs Nigeria** at Stade des Martyrs" — false premise: DRC's 2018 group was **Tunisia/Libya/Guinea** (no Nigeria). *Remedy:* fix opponent.
+- **Row 16932** — "2018 WCQ hosting **Zambia**" + answer "**2016-09-01 00:00:00**" — false fixture (Zambia not in DRC's group) **and** Excel date-corruption in the answer. *Remedy:* rebuild.
+- **Row 16937** — "qualified for **nine** AFCONs (2006-2023)" — FALSE: DRC reached ~**7** AFCON finals in that span (missed 2008/2010/2012). *Remedy:* fix count.
+
+**Chunk 16941–17010 (11 dangerous):**
+- **Row 16943** — "2015 AFCON **host nation** DR Congo beat in the QF = Congo" — FALSE: the **host was Equatorial Guinea**; Congo (Brazzaville) wasn't the host. *Remedy:* drop "host nation".
+- **Row 16947** — "2026 group stage, North African rival DR Congo would likely face = Morocco" — speculative & false: their 2026 group is **Portugal/Colombia/Uzbekistan** (no Morocco). *Remedy:* remove.
+- **Row 16955** — "AFCON tournaments since 2006 = **seven** (list includes 2010)" — FALSE: **six** (2006/2013/2015/2017/2019/2023); they missed 2010. *Remedy:* six.
+- **Row 16958** — "first faced **Tunisia** in WCQ = 2006" — unverified specific "first meeting" claim. UNVERIFIED→FAIL.
+- **Row 16960** — "Mbemba's **World Cup debut** = 2014" — false premise: DRC didn't play the 2014 WC; Mbemba has never played a WC. *Remedy:* remove.
+- **Row 16962** — "faced **Morocco** in a WC qualifier in **2021**" — FALSE: that was the **2022 WCQ play-off in March 2022**, not 2021. *Remedy:* 2022.
+- **Row 16965** — "reached the AFCON **QF** in which year? 2023" — **non-unique**: **2015** (an option) also reached the QF/SF. *Remedy:* rebuild.
+- **Row 16980** — "hosted Senegal (2026 WCQ), when? **2024-11-01 00:00:00**" — Excel date-corruption in the answer. *Remedy:* rebuild.
+- **Row 16981** — "hosted **Morocco** in a **2018** WC qualifier" — false premise: DRC's 2018 group was Tunisia/Libya/Guinea; they met Morocco in **2022 WCQ**. *Remedy:* fix.
+- **Row 17009** — "CAF nation that (unlike DRC) qualified for 2018 = Senegal" — **non-unique**: **Nigeria & Morocco** (options) also qualified for 2018 (and explanation wrongly includes Ghana). *Remedy:* rebuild.
+- **Row 17010** — "CAF nation whose 2026 qualification ended a **longer** absence than DRC = **DR Congo**" — self-referential/incoherent (a team can't exceed its own absence). *Remedy:* remove.
+
+**Chunk 17015–17090 (9 dangerous):**
+- **Row 17015** — "CAF club that reached a CWC final = **Wydad Casablanca** (2022)" — FALSE: Wydad never reached a CWC final (the African finalists were TP Mazembe 2010 & **Raja Casablanca** 2013; none of the options qualify). *Remedy:* rebuild.
+- **Row 17020** — "CAF team that qualified for 2018 (unlike DRC) = Tunisia" — **non-unique**: **Nigeria, Senegal, Egypt** (all options) also qualified for 2018. *Remedy:* rebuild.
+- **Row 17023 / 17027** — "which team/squad **like DR Congo** … = **DR Congo**" — self-referential (the question implies a peer but answers the subject). *Remedy:* rebuild.
+- **Row 17030** — "AFCON streak 2015 to 2023" — FALSE: DRC **missed 2021**, so there was no continuous 2015-2023 streak. *Remedy:* fix.
+- **Row 17033** — "AFCON rival that is **North African** = Morocco" — **non-unique**: Egypt, Tunisia, Algeria (all options) are North African too. *Remedy:* rebuild.
+- **Row 17044** — "Wissa scored **3 goals in 2023 World Cup qualifiers**" — muddled framing (no 2023 WC) + unverified specific tally. UNVERIFIED→FAIL.
+- **Row 17089 / 17090** — "Mbemba **debuted in a FIFA World Cup** (2014/2018)" — false premise: DRC didn't play 2014/2018; Mbemba has **never** played a WC. *Remedy:* remove.
+
+**Chunk 17091–17177 (12 dangerous):**
+- **Row 17098 / 17100 / 17120 / 17121** — "Mbemba's **World Cup debut** (2022) / played at the **2018 WC** / 2026 WC **knockout stage** / selected for **2018 WC**" — false premise: DRC has **not played a WC** (1974→2026), and the 2026 tournament hasn't been played yet. *Remedy:* reframe to qualifiers.
+- **Row 17117** — "Masuaku in their **2018 World Cup squad**" — false premise (no 2018 WC for DRC). *Remedy:* reframe.
+- **Row 17118 / 17148** — "**2023 World Cup squad** / **World Cup debut in 2024**" — no such tournaments. *Remedy:* fix.
+- **Row 17143** — "forward who **debuted in the 2026 qualifying cycle** = Wissa" — FALSE: Wissa debuted earlier (2019). *Remedy:* pick a genuine new cap.
+- **Row 17164** — "DR Congo name **never used** for a WC qualification = DR Congo" — FALSE now: they **qualified as DR Congo** for 2026. *Remedy:* update.
+- **Row 17169** — "DRC player at Napoli = **André-Frank Zambo Anguissa**" — FALSE: Anguissa is a **Cameroon** international. *Remedy:* remove.
+- **Row 17173** — "DRC player who **debuted in 2023** after four European leagues = Wissa" — inconsistent (Wissa debuted earlier) + unverified. UNVERIFIED→FAIL.
+- **Row 17174** — "player who **debuted in the 2026 qualifiers** = Silas Katompa" — inconsistent with his earlier (~2021) debut. UNVERIFIED→FAIL.
+
+**Chunk 17179–17258 (15 dangerous):**
+- **Row 17181** — "player in their **2023 World Cup squad**" — no such tournament. *Remedy:* fix.
+- **Row 17185** — "player who **missed** the 2014 WCQ = Mbokani" — contradicts its own explanation (Mbokani was a key striker **in** that campaign). *Remedy:* rebuild.
+- **Row 17193** — "scored in the 2023 AFCON opener **after 2026 WC qualification**" — chronologically false: the 2023 AFCON (early 2024) preceded the **March 2026** qualification. *Remedy:* fix order.
+- **Row 17195** — "DRC player who starred for **Bayern Munich** = Choupo-Moting" — FALSE: Choupo-Moting is a **Cameroon** international. *Remedy:* remove.
+- **Row 17199** — "in European leagues **for the 2022 World Cup**" — false premise (DRC didn't play the 2022 WC). *Remedy:* reframe to qualifiers.
+- **Row 17215** — "2026 qualifying rival who also faced them at AFCON = Mauritania" — unverified/likely-false (no DRC-Mauritania AFCON meeting). UNVERIFIED→FAIL.
+- **Row 17216** — "West African rival in the 2018 WCQ = Ghana" — FALSE: Ghana wasn't in DRC's group; the West African opponent was **Guinea**. *Remedy:* Guinea.
+- **Row 17221** — "rival that is **also a regular AFCON participant** = Nigeria" — **non-unique**: Morocco & Egypt (options) are regulars too. *Remedy:* rebuild.
+- **Row 17222** — "rival that is North African, not West African = Morocco" — **non-unique**: Algeria, Tunisia, Egypt (all options) are North African. *Remedy:* rebuild.
+- **Row 17224** — "squad era following TP Mazembe's 2010 landmark = **2018** WCQ" — FALSE: the **2014 WCQ** (an option) was the next campaign. *Remedy:* 2014.
+- **Row 17230** — "2022 WCQ vs **Senegal** at Stade des Martyrs" — false premise: Senegal wasn't in DRC's 2022 WCQ group (that was 2026). *Remedy:* fix opponent.
+- **Row 17231** — "Stade des Martyrs hosted the **2024 AFCON final**" — FALSE: the 2023 AFCON (early 2024) was hosted by **Côte d'Ivoire** (final in Abidjan). *Remedy:* remove.
+- **Row 17236** — "2026 qualification **decider** at Stade des Martyrs" — FALSE: the decider was the intercontinental play-off **v Jamaica in Mexico** (neutral venue). *Remedy:* fix.
+- **Row 17242** — "DRC star who played for **Inter Milan** = Tisserand" — unverified/likely-false club history. UNVERIFIED→FAIL.
+- **Row 17249** — "Bakambu played at the **2018 World Cup** venue in Saransk" — false premise: DRC didn't play the 2018 WC. *Remedy:* remove.
+
+**Chunk 17259–17345 (23 dangerous) — completes DR Congo:**
+- **Row 17264** — "2026 WCQ opponent that is North African = Egypt" — false premise: Egypt wasn't in DRC's 2026 group (Senegal/Sudan/Togo/Mauritania/South Sudan). *Remedy:* fix.
+- **Row 17267 / 17345** — "their **first** World Cup (2026)" / "first time for country" — FALSE: 1974 (as Zaire) was their first; 2026 is the second / first *as DR Congo*. *Remedy:* qualify the claim.
+- **Row 17270** — "TP Mazembe **beat Internazionale** in the 2010 SF" — FALSE: the SF was v **Internacional (Brazil)**; **Inter Milan beat** TP Mazembe 3-0 in the **final**. *Remedy:* rebuild.
+- **Row 17276** — "league not represented **at the 2022 World Cup**" — false premise (DRC didn't play the 2022 WC). *Remedy:* reframe to qualifiers.
+- **Row 17279 / 17286 / 17290 / 17294** — "which **other** nation [did X] = **DR Congo**" — self-referential (and 17279/17290 non-unique: Ivory Coast/Senegal/Ghana also qualified-2026 / reached the 2015 SF). *Remedy:* rebuild.
+- **Row 17292** — "nation hosting DRC's 2026 WC = United States" — **non-unique**: USA, **Canada & Mexico** all co-host. *Remedy:* rebuild.
+- **Row 17298** — "North African AFCON rival = Morocco" — **non-unique**: Egypt/Tunisia/Algeria (all options) are North African. *Remedy:* rebuild.
+- **Row 17303 / 17307** — "2017 AFCON QF opponent = Tunisia / Egypt" — FALSE: DRC lost the 2017 QF to **Ghana** (1-2). *Remedy:* Ghana.
+- **Row 17305** — "2023 AFCON **QF** opponent = Egypt" — FALSE: the QF was v **Guinea** (3-1); Egypt was the **R16**. *Remedy:* Guinea.
+- **Row 17312** — "rival that qualified ahead of DRC for 2014 = Ivory Coast (same group)" — FALSE: DRC's 2014 group was won by **Cameroon**; IC was in a different group. *Remedy:* Cameroon.
+- **Row 17313** — "round DRC reached at the 2023 AFCON = the **quarter-finals**" — understated: they reached the **semi-finals** (4th). *Remedy:* semi-finals.
+- **Row 17316 / 17317** — "**decisive/clinching** 2026 qualifier at Stade des Martyrs" — FALSE: the deciders (African play-off, then v Jamaica) were at **neutral venues** (Morocco / Mexico). *Remedy:* fix.
+- **Row 17321 / 17324** — "which WC did DRC **fail to qualify for** = 2014 / 2022" — **non-unique**: they failed **all** of 2010/2014/2018/2022 (all options). *Remedy:* rebuild.
+- **Row 17329** — "why DRC faced **Morocco** in the 2019 AFCON group" — false premise: Morocco was in **Group D**, DRC in **Group A** (they didn't meet). *Remedy:* remove.
+- **Row 17331** — "why DRC faced North Africans in **2018 WC qualifiers** = AFCON group draws" — wrong mechanism (it was the **CAF WC-qualifying** draw, not AFCON). *Remedy:* fix.
+- **Row 17336** — "hosted **Senegal** at Stade des Martyrs for 2022 WCQ" — false premise: Senegal wasn't in DRC's 2022 WCQ group (that was 2026). *Remedy:* fix.
 
 ## Ecuador — rows 17346–18086 (liveness on QA_PASSED_b2.md rows) — 143 FAIL
 
