@@ -3,7 +3,7 @@
 > Rows that cleared `QA_PASSED_b2.md` mechanically but are **factually wrong** on the live
 > TC-06 check. Each entry: reason + source + concrete remedy. See HANDOFF.md §6/§7.
 
-**Total dangerous: 1895** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Australia 123, rows 1544–2396; Austria 161, rows 2401–3241; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876)
+**Total dangerous: 2509** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Australia 123, rows 1544–2396; Austria 161, rows 2401–3241; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876; Haiti 236, rows 21195–22697; Qatar 144, rows 33742–34843; Scotland 234, rows 36342–38412)
 
 ---
 
@@ -7598,3 +7598,4307 @@
 **Why it fails:** Same — Baumgartner scored 4 goals (most) vs Arnautović's fewer goals in the 2022 WC qualifying campaign.
 **Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_–_UEFA_Group_F
 **Remedy:** Change answer to Christoph Baumgartner.
+
+## Qatar (batch-2 rows 33742–34843)
+
+
+### Row 33742 — Qatar (hard) — FAIL: wrong year embedded in answer
+**Q:** After a 2022 World Cup group stage match, Qatar became the first Asian Cup champions since which nation to win consecutive titles?
+**Answer:** Japan (2011)
+**Why it fails:** Answer 'Japan (2011)' is wrong on the year. Japan's back-to-back Asian Cup titles were 2000 & 2004 — that is why Qatar (2019 & 2023) were 'the first to retain the trophy since Japan in 2004'. Japan's 2011 win was a single title (they lost the 2015 QF and 2019 final). The nation Japan is right, but '(2011)' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Change answer to 'Japan (2004)'.
+
+### Row 33745 — Qatar (medium) — FAIL: explanation states wrong Japan years
+**Q:** After Japan in 2011, when did Qatar next win consecutive Asian Cups?
+**Answer:** 2019 and 2023
+**Why it fails:** Answer '2019 and 2023' is correct, but the explanation says 'following Japan's back-to-back wins in 2004 and 2011' — Japan's consecutive titles were 2000 & 2004, not 2004 & 2011 (2011 was a standalone title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Fix the explanation to 'Japan's back-to-back wins in 2000 and 2004'.
+
+### Row 33748 — Qatar (easy) — FAIL: Qatar lost all THREE group games, not 'both'
+**Q:** After Qatar beat Jordan in 2023, how did they finish at the 2022 World Cup?
+**Answer:** Lost both games
+**Why it fails:** As 2022 hosts Qatar lost all three group games (0-2 Ecuador, 1-3 Senegal, 0-2 Netherlands) and were the first host eliminated. 'Lost both games' is wrong (they played three); the more accurate option 'Lost group stage' is offered as a distractor.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to 'Lost group stage' (lost all three) and remove the ambiguous 'Lost both games'.
+
+### Row 33749 — Qatar (easy) — FAIL: false premise — no host had lost its opener before Qatar
+**Q:** After Qatar lost their 2022 opener, which other host nation last did so?
+**Answer:** South Africa
+**Why it fails:** Qatar were the FIRST host nation ever to lose their opening World Cup match. South Africa (2010) drew their opener 1-1 with Mexico — they did not lose it. The premise 'which other host last lost their opener' is false.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the question — there is no valid prior host (Qatar was the first).
+
+### Row 33754 — Qatar (easy) — FAIL: false premise — Marquez López did not succeed Sánchez
+**Q:** After Qatar's 2022 World Cup, which manager succeeded Félix Sánchez and won the 2023 Asian Cup?
+**Answer:** Marquez López
+**Why it fails:** Carlos Queiroz (not Marquez López) succeeded Félix Sánchez (Feb 2023). Marquez López succeeded Queiroz (Dec 2023) and won the 2023 Asian Cup. No single manager both 'succeeded Sánchez' and 'won the 2023 Asian Cup'.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Rewrite: Queiroz succeeded Sánchez; Marquez López won the 2023 Asian Cup after succeeding Queiroz.
+
+### Row 33758 — Qatar (easy) — FAIL: wrong predecessor — it was Queiroz, not Sánchez
+**Q:** After which Qatar manager did Marquez López win the 2023 Asian Cup?
+**Answer:** Félix Sánchez
+**Why it fails:** Marquez López's immediate predecessor was Carlos Queiroz (sacked 6 Dec 2023), not Félix Sánchez. Queiroz is offered as a distractor, so the correct unique answer is Queiroz.
+**Source:** https://www.aljazeera.com/sports/2023/12/6/qatar-football-team-qfa-coach-carlos-queiroz-terminate-contract-mutual-agreement-asian-cup-2023-marques-lopez-hired
+**Remedy:** Change answer to 'Carlos Queiroz'.
+
+### Row 33777 — Qatar (medium) — FAIL: wrong year — Japan's back-to-back was 2000/2004
+**Q:** At the 2022 World Cup, which nation's Asian Cup record did Qatar match by winning back-to-back titles?
+**Answer:** Japan in 2011
+**Why it fails:** Answer 'Japan in 2011' is wrong on the year. Japan's consecutive Asian Cup titles were 2000 & 2004; that is the record Qatar matched. The explanation repeats the 2011 error.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change answer to 'Japan in 2004' and fix the explanation.
+
+### Row 33779 — Qatar (easy) — FAIL: answer doesn't fit 'manager whose successor won'
+**Q:** At the 2022 World Cup, which Qatar manager's successor won the 2023 Asian Cup?
+**Answer:** Marquez López
+**Why it fails:** The question asks which manager's SUCCESSOR won the 2023 Asian Cup. The successor who won it was Marquez López, so the manager being asked for is his predecessor, Carlos Queiroz. Answer 'Marquez López' names the winner himself, not the predecessor.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Change answer to 'Carlos Queiroz' (whose successor Marquez López won the title), or reword the question.
+
+### Row 33784 — Qatar (easy) — FAIL: wrong stadium — Muntari scored at Al Thumama
+**Q:** At which 2022 World Cup stadium did Qatar's Mohammed Muntari score their first-ever goal?
+**Answer:** Al Bayt Stadium
+**Why it fails:** Muntari's goal came against Senegal, a match played at Al Thumama Stadium, not Al Bayt. (Row 33783 in the same dataset correctly places Qatar-Senegal at Al Thumama.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to 'Al Thumama Stadium'.
+
+### Row 33787 — Qatar (medium) — FAIL: false premise — Qatar scored in match 2
+**Q:** At which World Cup did Qatar fail to score in their first two matches?
+**Answer:** 2022 World Cup
+**Why it fails:** Qatar did NOT fail to score in their first two 2022 matches: they scored in the second match (Muntari, 78', in the 1-3 loss to Senegal). They failed to score only in the opener vs Ecuador. The explanation's claim 'without scoring in those first two matches' is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false premise; Qatar scored once (vs Senegal) across the group stage.
+
+### Row 33794 — Qatar (medium) — FAIL: confused premise — back-to-back not tied to one WC cycle
+**Q:** During which World Cup qualifying cycle did Qatar win their first back-to-back Asian Cup?
+**Answer:** 2022 qualifying cycle
+**Why it fails:** Qatar's 2019 win was a FIRST title, not 'back-to-back'; the back-to-back was only completed by winning 2023 (final Feb 2024), which fell in the 2026 WC qualifying cycle. The answer/explanation conflate the single 2019 title with 'first back-to-back'.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Reword: the back-to-back was completed in 2023 (2026 cycle); 2019 alone was their first title.
+
+### Row 33821 — Qatar (medium) — FAIL: answer wrong — Qatar scored in match 2 (Senegal)
+**Q:** In how many of their first two 2022 World Cup matches did Qatar score a goal?
+**Answer:** Zero
+**Why it fails:** Qatar scored in 1 of their first two matches (Muntari vs Senegal, 78', the 2nd match). Answer 'Zero' is wrong, and the explanation wrongly names 'Ecuador and the Netherlands' as the first two opponents — the Netherlands was Qatar's THIRD match.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to 'One' and fix the opponents (first two were Ecuador and Senegal).
+
+### Row 33808 — Qatar (medium) — FAIL: answer wrong — Qatar scored in their 2nd match
+**Q:** How many goals did Qatar score in their first two 2022 World Cup matches?
+**Answer:** Zero
+**Why it fails:** Qatar's only group-stage goal (Muntari) came in their SECOND match vs Senegal, not the third. They scored 1 goal in their first two matches, not zero; the explanation's 'first goal only in the third match' is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to 'One'; Muntari scored in the 2nd match (Senegal).
+
+### Row 33833 — Qatar (easy) — FAIL: false — Al-Rayyan WAS represented in the squad
+**Q:** In Qatar's 2022 World Cup group, which Qatari Stars League club was NOT represented by a player?
+**Answer:** Al-Rayyan
+**Why it fails:** Qatar's 2022 squad included Al-Rayyan players (Abdulaziz Hatem, Nayef Al-Hadrami), so Al-Rayyan was represented. The claim that Al-Rayyan was the unrepresented club is false.
+**Source:** https://www.aljazeera.com/sports/2022/11/12/a-mix-of-youth-and-experience-in-qatar-world-cup-squad
+**Remedy:** Remove/replace — all four listed clubs (Al-Sadd, Al-Duhail, Al-Rayyan, Al-Gharafa) had squad players.
+
+### Row 33837 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** In Qatar's two Asian Cup final wins, what was the total combined scoreline?
+**Answer:** 2026-02-06 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-02-06 00:00:00') instead of a scoreline. The correct combined total of the two final wins (3-1 + 3-1) is 6-2, which is not even offered among the options.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '6-2' and add it as an option (Excel mangled the scoreline into a date).
+
+### Row 33838 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** In the 2019 Asian Cup final, Qatar beat Japan by what score?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1'. The correct 2019 final score (Qatar 3-1 Japan) is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33840 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** In the 2023 Asian Cup final, what was Qatar's winning scoreline against Jordan?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1'. The correct 2023 final score (Qatar 3-1 Jordan) is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33845 — Qatar (easy) — FAIL: explanation wrong — Senegal was the 2nd match, not 3rd
+**Q:** In which 2022 match did Qatar finally score their first World Cup goal?
+**Answer:** Against Senegal
+**Why it fails:** Answer 'Against Senegal' is correct (Qatar scored vs Senegal), but the explanation calls it 'their third group match' — Senegal was Qatar's SECOND match (the third was the Netherlands).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Fix the explanation: Qatar scored in their second group match (vs Senegal).
+
+### Row 33849 — Qatar (easy) — FAIL: explanation wrong — Senegal was the 2nd match, not 3rd
+**Q:** In which 2022 World Cup match did Qatar finally score?
+**Answer:** Against Senegal
+**Why it fails:** Answer 'Against Senegal' is correct, but the explanation says 'their third match, a 3-1 loss to Senegal' — Senegal was Qatar's SECOND match.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Fix the explanation to 'second match (vs Senegal)'.
+
+### Row 33878 — Qatar (medium) — FAIL: false premise — back-to-back came AFTER 2022, not before
+**Q:** In which year did Qatar host the World Cup after their first back-to-back Asian Cup win?
+**Answer:** 2022
+**Why it fails:** Qatar hosted the WC in 2022; their back-to-back Asian Cup was only completed in 2023 (after the WC). 2019 alone was a single first title, not 'back-to-back'. The premise 'hosted after their first back-to-back win' is false.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Remove the false ordering — 2019 was a single title; the back-to-back was 2023, after the 2022 WC.
+
+### Row 33902 — Qatar (easy) — FAIL: false — South Africa drew their 2010 opener, didn't lose it
+**Q:** Qatar in 2022 joined which host nation that lost its opening World Cup match?
+**Answer:** South Africa
+**Why it fails:** South Africa drew their 2010 opener 1-1 with Mexico (Tshabalala scored). They did NOT lose it. Qatar was the FIRST host ever to lose its opening match, so there is no prior host that 'lost its opener'.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove — no host had lost an opener before Qatar.
+
+### Row 33903 — Qatar (easy) — FAIL: false — South Africa drew their 2010 opener
+**Q:** Qatar lost 3-1 to Senegal at the 2022 World Cup. Which other host nation lost their opening match?
+**Answer:** South Africa
+**Why it fails:** South Africa drew 1-1 with Mexico in the 2010 opener; they did not lose it. Qatar was the first host to lose its opener. The explanation also references a self-referential 'fact 6' artifact.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false premise and the 'fact 6' artifact.
+
+### Row 33905 — Qatar (medium) — FAIL: non-unique — Senegal also beat Qatar
+**Q:** Qatar lost its 2022 World Cup opener 2-0 to Ecuador. Which other group stage opponent also beat Qatar?
+**Answer:** Netherlands
+**Why it fails:** After the Ecuador loss, BOTH Senegal (3-1) and the Netherlands (2-0) beat Qatar. 'Which other opponent also beat Qatar' has two correct answers (Senegal is also an option), so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Reword to specify the 2-0 scoreline or the third match to make the answer unique.
+
+### Row 33906 — Qatar (easy) — FAIL: answer wrong — Netherlands DID beat Qatar 2-0
+**Q:** Qatar lost its 2022 World Cup opener 2-0. Which team did NOT beat Qatar 2-0 in that tournament?
+**Answer:** The Netherlands
+**Why it fails:** The question asks which team did NOT beat Qatar 2-0. The Netherlands DID beat Qatar 2-0, so it cannot be the answer; its own explanation confirms this. The team that didn't beat Qatar 2-0 is Senegal (3-1) or England (didn't play).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Senegal or England; the question is also non-unique.
+
+### Row 33908 — Qatar (easy) — FAIL: false — South Africa drew their 2010 opener
+**Q:** Qatar lost their 2022 World Cup opener; which host nation last did that before them?
+**Answer:** South Africa
+**Why it fails:** South Africa drew 1-1 with Mexico in the 2010 opener (did not lose). Qatar was the first host to lose its opener, so no prior host fits.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false premise.
+
+### Row 33909 — Qatar (easy) — FAIL: false — South Africa drew their 2010 opener
+**Q:** Qatar lost their 2022 World Cup opener. Which host last did this before them?
+**Answer:** South Africa
+**Why it fails:** South Africa's 2010 opener was a 1-1 draw with Mexico, not a loss. Qatar was the first host to lose its opener.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false premise.
+
+### Row 33910 — Qatar (easy) — FAIL: false — South Africa scored in their 2010 opener
+**Q:** Qatar lost their first two 2022 World Cup matches. Which nation also failed to score in their first two matches?
+**Answer:** South Africa
+**Why it fails:** South Africa scored in their 2010 opener (Tshabalala vs Mexico, 1-1), so they did NOT 'fail to score in their first two matches'. (Qatar also scored in their 2nd match, vs Senegal.) The comparison is false on both sides.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove — neither nation failed to score in their first two matches.
+
+### Row 33911 — Qatar (medium) — FAIL: non-unique — all hosts auto-qualify
+**Q:** Qatar lost to Ecuador in their 2022 group stage. Which other host nation automatically qualified for their World Cup?
+**Answer:** South Africa
+**Why it fails:** Every World Cup host auto-qualifies, so Germany 2006, Brazil 2014 and Russia 2018 (all offered as distractors) also auto-qualified. The answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Reword — auto-qualification is not unique to South Africa.
+
+### Row 33914 — Qatar (easy) — FAIL: non-unique — Japan was also a region-first host
+**Q:** Qatar was the first Middle East host of a World Cup. Which other nation was first for its region?
+**Answer:** South Africa
+**Why it fails:** Japan (a distractor) co-hosted the first World Cup in Asia in 2002, so it too was 'first for its region'. With both South Africa (first African) and Japan (first Asian) qualifying, the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2002_FIFA_World_Cup
+**Remedy:** Reword to ask specifically about the first African host.
+
+### Row 33917 — Qatar (medium) — FAIL: false — multiple nations have won back-to-back Asian Cups
+**Q:** Qatar won back-to-back Asian Cups in 2019 and 2023. How many nations have done this?
+**Answer:** Only Qatar
+**Why it fails:** 'Only Qatar' is false. South Korea (1956,1960), Iran (1968-72-76), Saudi Arabia (1984,1988) and Japan (2000,2004) all won consecutive Asian Cups — and Japan's 2000/2004 was in the 21st century, contradicting the explanation's hedge.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change answer to 'Japan and Qatar' (and note earlier multi-winners), or reword.
+
+### Row 33922 — Qatar (medium) — FAIL: explanation states wrong Japan year (2011)
+**Q:** Qatar, after a 2022 World Cup group stage loss to Senegal, matched which nation's back-to-back Asian Cup feat?
+**Answer:** Japan
+**Why it fails:** Answer 'Japan' (the nation) is correct, but the explanation says 'since Japan in 2011' — Japan's consecutive titles were 2000 & 2004, not 2011 (a single title). The matched record was Japan's 2000/2004 back-to-back.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Fix explanation to 'Japan in 2004' (their last back-to-back).
+
+### Row 33923 — Qatar (easy) — FAIL: false — Qatar is not the 'second' back-to-back nation
+**Q:** Qatar, in 2023, became the second nation after Japan to achieve what Asian Cup feat?
+**Answer:** Win back-to-back titles
+**Why it fails:** Qatar is NOT the second nation to win back-to-back Asian Cups — South Korea, Iran, Saudi Arabia and Japan all did so before. The explanation's 'Japan (2011)' is also wrong (Japan's back-to-back was 2000/2004).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Remove the 'second nation' claim and fix the Japan year.
+
+### Row 33924 — Qatar (medium) — FAIL: non-unique — Qatar outspent ALL listed hosts
+**Q:** Qatar's $200+ billion 2022 World Cup spend exceeded which other host's total?
+**Answer:** Brazil 2014
+**Why it fails:** Qatar's $200bn+ exceeded the spend of every host offered (Brazil ~$15bn, Russia ~$11-14bn, Germany ~$6bn, South Africa ~$3-4bn). All four distractors are correct, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Reword to a single comparison or remove.
+
+### Row 33928 — Qatar (easy) — FAIL: false — South Africa drew their 2010 opener
+**Q:** Qatar's 2022 opening loss made them the first host since which nation in 2010?
+**Answer:** South Africa
+**Why it fails:** South Africa drew their 2010 opener 1-1 with Mexico, not a loss. Qatar was the first host to lose its opener.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false premise.
+
+### Row 33931 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** Qatar's 2023 Asian Cup final win was 3-1. What was their 2019 final score?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1'. The correct 2019 final score (Qatar 3-1 Japan) is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33932 — Qatar (easy) — FAIL: false premise — Japan's back-to-back was 2004, not 2011
+**Q:** Qatar's 2023 Asian Cup win made them the first back-to-back champions since which nation in 2011?
+**Answer:** Japan
+**Why it fails:** The question asserts Qatar was the first back-to-back champion 'since which nation in 2011' — Japan did not win consecutive titles in 2011 (2011 was a single title; their back-to-back was 2000 & 2004). The '2011' premise is false.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change '2011' to '2004'.
+
+### Row 33934 — Qatar (easy) — FAIL: false premise — Japan's back-to-back was 2004, not 2011
+**Q:** Qatar's 2023 Asian Cup win matched which 2011 champion's feat of consecutive titles?
+**Answer:** Japan
+**Why it fails:** Japan's consecutive Asian Cup titles were 2000 & 2004; 2011 was a single title. 'Matched which 2011 champion's feat of consecutive titles' is a false premise.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change '2011' to '2004'.
+
+### Row 33952 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** What was Qatar's winning scoreline against Japan in the 2019 Asian Cup final?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1' (Qatar 3-1 Japan, 2019 final). The correct score is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33954 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** What was Qatar's winning scoreline as hosts of the 2023 Asian Cup final?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1' (Qatar 3-1 Jordan, 2023 final). The correct score is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33958 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** What was the final score when Qatar beat Japan in the 2019 Asian Cup final?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1' (Qatar 3-1 Japan, 2019). The correct score is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33959 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** What was the final score when Qatar beat Jordan as hosts in the 2023 Asian Cup final?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1' (Qatar 3-1 Jordan, 2023). The correct score is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33963 — Qatar (easy) — FAIL: Excel date-corruption in answer
+**Q:** What was the final score when Qatar lost to Senegal at the 2022 World Cup?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1' (Qatar lost 3-1 to Senegal). The correct score is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33970 — Qatar (medium) — FAIL: Excel date-corruption in answer
+**Q:** What was the score when Qatar lost to Senegal in 2022?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** Answer is a corrupted date ('2026-01-03 00:00:00') instead of '3-1' (Qatar lost 3-1 to Senegal). The correct score is not among the options.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Fix the answer to '3-1' and add it as an option.
+
+### Row 33986 — Qatar (medium) — FAIL: false premise — Japan's back-to-back was 2004, not 2011
+**Q:** When did Qatar become the first AFC nation since Japan (2011) to win consecutive Asian Cups?
+**Answer:** 2023
+**Why it fails:** Answer 2023 is when Qatar completed back-to-back, but the question/explanation say 'since Japan (2011)'. Japan's consecutive titles were 2000 & 2004; 2011 was a single title.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change '(2011)' to '(2004)'.
+
+### Row 33988 — Qatar (medium) — FAIL: false premise — Japan's back-to-back was 2004, not 2011
+**Q:** When did Qatar become the first Asian Cup champions since 2011 to win back-to-back titles?
+**Answer:** 2023
+**Why it fails:** Explanation says 'first team to do so since Japan in 2011' — Japan's back-to-back was 2000 & 2004 (2011 was a single title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change '2011' to '2004'.
+
+### Row 33992 — Qatar (medium) — FAIL: false — South Africa didn't lose their 2010 opener
+**Q:** When did Qatar become the first host to lose their opening match since 2010?
+**Answer:** 2022
+**Why it fails:** The premise 'first host to lose their opener since 2010' is false: South Africa drew their 2010 opener 1-1. Qatar was the FIRST host ever to lose its opener.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the 'since 2010' premise — Qatar was the first.
+
+### Row 33993 — Qatar (medium) — FAIL: false — South Africa didn't lose their 2010 opener
+**Q:** When did Qatar become the first host to lose their World Cup opener since 2010?
+**Answer:** 2022
+**Why it fails:** South Africa drew their 2010 opener; they did not lose it. Qatar was the first host to lose its opener.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false premise.
+
+### Row 33996 — Qatar (medium) — FAIL: false premise — Japan's back-to-back was 2004, not 2011
+**Q:** When did Qatar become the first team since Japan to win consecutive Asian Cups?
+**Answer:** 2023
+**Why it fails:** Explanation says 'first back-to-back champions since Japan in 2011' — Japan's consecutive titles were 2000 & 2004 (2011 was a single title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change '2011' to '2004'.
+
+### Row 34006 — Qatar (medium) — FAIL: false — Qatar scored in match 2 (Senegal), not after two scoreless games
+**Q:** When did Qatar first score a World Cup goal after two scoreless matches?
+**Answer:** 2022 World Cup
+**Why it fails:** Qatar's first WC goal (Muntari) came in their SECOND match vs Senegal, not 'after two scoreless matches'. They were scoreless only in the opener vs Ecuador.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Fix: the goal came in the 2nd match (Senegal), not after two scoreless games.
+
+### Row 34021 — Qatar (medium) — FAIL: false — South Africa didn't lose their 2010 opener
+**Q:** When did Qatar match South Africa's record of losing their World Cup opening match as host?
+**Answer:** 2022
+**Why it fails:** There is no 'South Africa record' of losing a host opener — South Africa drew their 2010 opener 1-1. Qatar was the first host to lose its opener.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false 'matching South Africa' premise.
+
+### Row 34069 — Qatar (easy) — FAIL: false premise — South Korea was not a 2019 finalist
+**Q:** Which 2019 Asian Cup finalist did Qatar not defeat in a final?
+**Answer:** South Korea
+**Why it fails:** The 2019 Asian Cup final was Qatar v Japan; South Korea was NOT a finalist (Qatar beat them 1-0 in the QF). Calling South Korea a '2019 finalist' is false, and none of the other distractors (Saudi Arabia, Jordan as a 2019 entity) were 2019 finalists either — the answer is arbitrary.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup
+**Remedy:** Reword — only Qatar and Japan were 2019 finalists.
+
+### Row 34115 — Qatar (easy) — FAIL: false — Japan has won MORE Asian Cups than Qatar
+**Q:** Which AFC nation had won more Asian Cups by 2023: Qatar or Japan?
+**Answer:** Qatar
+**Why it fails:** Japan has won the Asian Cup four times (1992, 2000, 2004, 2011); Qatar twice (2019, 2023). By 2023 Japan had won more, not Qatar. The answer is backwards.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change answer to Japan (4 titles vs Qatar's 2).
+
+### Row 34153 — Qatar (medium) — FAIL: wrong year — Japan's back-to-back was 2004, not 2011
+**Q:** Which AFC nation won back-to-back Asian Cups before Qatar's 2023 win?
+**Answer:** Japan (2011)
+**Why it fails:** Answer 'Japan (2011)' embeds the wrong year — Japan's consecutive Asian Cup titles were 2000 & 2004 (2011 was a single title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change answer to 'Japan (2004)'.
+
+### Row 34179 — Qatar (easy) — FAIL: explanation states wrong Japan year (2011)
+**Q:** Which AFC team did Qatar emulate by winning consecutive Asian Cups?
+**Answer:** Japan
+**Why it fails:** Answer 'Japan' is correct, but the explanation says 'first since Japan in 2011' — Japan's consecutive titles were 2000 & 2004 (2011 was a single title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Fix the explanation to Japan 2000 & 2004.
+
+### Row 34188 — Qatar (easy) — FAIL: explanation states wrong Japan year (2011)
+**Q:** Which Asian Cup champion did Qatar emulate by winning back-to-back titles in 2023?
+**Answer:** Japan
+**Why it fails:** Explanation 'first since Japan in 2011' is wrong — Japan's back-to-back was 2000 & 2004.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Fix the explanation to 2000 & 2004.
+
+### Row 34189 — Qatar (medium) — FAIL: wrong year in answer 'Japan (2011)'
+**Q:** Which Asian Cup champion did Qatar emulate by winning back-to-back titles?
+**Answer:** Japan (2011)
+**Why it fails:** Japan's consecutive titles were 2000 & 2004; '(2011)' is wrong (single title). The explanation repeats the error.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change answer to 'Japan (2004)'.
+
+### Row 34190 — Qatar (medium) — FAIL: wrong year in answer 'Japan (2011)'
+**Q:** Which Asian Cup champion did Qatar match by winning back-to-back titles in 2023?
+**Answer:** Japan (2011)
+**Why it fails:** Japan's back-to-back was 2000 & 2004, not 2011 (a single title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change answer to 'Japan (2004)'.
+
+### Row 34193 — Qatar (medium) — FAIL: non-unique — both finals were 3-1
+**Q:** Which Asian Cup final did Qatar win 3-1?
+**Answer:** 2023 final
+**Why it fails:** Qatar won BOTH the 2019 (3-1 v Japan) AND 2023 (3-1 v Jordan) finals by 3-1. With '2019 final' also offered, the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Specify the opponent to disambiguate.
+
+### Row 34199 — Qatar (easy) — FAIL: explanation states wrong Japan year (2011)
+**Q:** Which Asian team did Qatar emulate by winning back-to-back Asian Cups?
+**Answer:** Japan
+**Why it fails:** Answer 'Japan' is correct, but 'since Japan in 2011' is wrong — Japan's back-to-back was 2000 & 2004.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Fix the explanation year.
+
+### Row 34202 — Qatar (easy) — FAIL: non-unique — de Jong also scored
+**Q:** Which Dutch player scored against Qatar at the 2022 World Cup?
+**Answer:** Cody Gakpo
+**Why it fails:** Both Gakpo (26') and Frenkie de Jong (49') scored in the Netherlands' 2-0 win. With de Jong also offered, 'which Dutch player scored' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Ask for the first/opening goal to make it unique (Gakpo).
+
+### Row 34203 — Qatar (easy) — FAIL: non-unique — de Jong also scored
+**Q:** Which Dutch player scored as the Netherlands beat Qatar 2.0 in 2022?
+**Answer:** Cody Gakpo
+**Why it fails:** Gakpo (26') and de Jong (49') both scored in the 2-0 win; de Jong is also an option, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Specify the opening goal (Gakpo).
+
+### Row 34221 — Qatar (easy) — FAIL: false — South Africa didn't lose their 2010 opener
+**Q:** Which host nation lost its opening match before Qatar did in 2022?
+**Answer:** South Africa
+**Why it fails:** South Africa drew their 2010 opener 1-1 with Mexico. Qatar was the first host ever to lose its opener, so no prior host fits.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false premise.
+
+### Row 34226 — Qatar (easy) — FAIL: false — South Africa did NOT lose all three in 2010
+**Q:** Which host nation, like Qatar in 2022, lost all three group matches?
+**Answer:** South Africa
+**Why it fails:** South Africa beat France 2-1 and drew Mexico 1-1 in 2010; they did not lose all three group matches. Qatar (2022) was the first host to lose all three.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove — no prior host lost all three group games.
+
+### Row 34246 — Qatar (easy) — FAIL: wrong — Queiroz directly succeeded Sánchez, not López
+**Q:** Which manager succeeded Félix Sánchez as Qatar's coach in 2023?
+**Answer:** Marquez López
+**Why it fails:** Carlos Queiroz (an option here) succeeded Sánchez in Feb 2023; Marquez López succeeded Queiroz in Dec 2023. The direct successor was Queiroz, so 'Marquez López' is wrong.
+**Source:** https://www.aljazeera.com/sports/2023/12/6/qatar-football-team-qfa-coach-carlos-queiroz-terminate-contract-mutual-agreement-asian-cup-2023-marques-lopez-hired
+**Remedy:** Change answer to Carlos Queiroz.
+
+### Row 34247 — Qatar (easy) — FAIL: wrong — Queiroz directly succeeded Sánchez, not López
+**Q:** Which manager succeeded Félix Sánchez to lead Qatar in 2023?
+**Answer:** Marquez López
+**Why it fails:** The manager who succeeded Sánchez in 2023 was Carlos Queiroz (offered as an option); López succeeded Queiroz. Answer is wrong.
+**Source:** https://www.aljazeera.com/sports/2023/12/6/qatar-football-team-qfa-coach-carlos-queiroz-terminate-contract-mutual-agreement-asian-cup-2023-marques-lopez-hired
+**Remedy:** Change answer to Carlos Queiroz.
+
+### Row 34272 — Qatar (medium) — FAIL: false — Qatar DID lose to Senegal
+**Q:** Which nation did Qatar not lose to in the 2022 World Cup group stage?
+**Answer:** Senegal
+**Why it fails:** Qatar lost all three group games, including 3-1 to Senegal. So Senegal is not a team Qatar 'did not lose to'. The only option Qatar didn't lose to is England (didn't play them).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to England (Qatar lost to Ecuador, Senegal AND the Netherlands).
+
+### Row 34273 — Qatar (easy) — FAIL: wrong venue — opener was at Al Bayt, not Lusail
+**Q:** Which nation faced Qatar at Lusail Stadium in the 2022 World Cup opener?
+**Answer:** Ecuador
+**Why it fails:** Qatar's opener vs Ecuador was played at Al Bayt Stadium, not Lusail. No nation faced Qatar at Lusail in the opener, so the premise is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change the venue to Al Bayt Stadium.
+
+### Row 34304 — Qatar (easy) — FAIL: non-unique — de Jong also scored
+**Q:** Which Netherlands player scored against Qatar at the 2022 World Cup?
+**Answer:** Cody Gakpo
+**Why it fails:** Both Gakpo and Frenkie de Jong (an option) scored in the Netherlands' 2-0 win, so 'which Netherlands player scored' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Ask for the opening goal (Gakpo).
+
+### Row 34312 — Qatar (easy) — FAIL: false — South Africa did NOT lose their 2010 opener
+**Q:** Which Qatar 2022 host feat was matched by South Africa in 2010?
+**Answer:** Lost opening match
+**Why it fails:** South Africa drew their 2010 opener 1-1 with Mexico. The 'feat' of losing the host opener was NOT matched by South Africa — Qatar was the first host to lose its opener.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Remove the false South Africa comparison.
+
+### Row 34325 — Qatar (easy) — FAIL: non-unique — Al-Haydos & Khoukhi also play for Al-Sadd
+**Q:** Which Qatar 2022 World Cup player was a member of Al-Sadd?
+**Answer:** Akram Afif
+**Why it fails:** Akram Afif, Hassan Al-Haydos AND Boualem Khoukhi all played for Al-Sadd, so 'which 2022 player was a member of Al-Sadd' has multiple correct answers among the options.
+**Source:** https://en.wikipedia.org/wiki/Al_Sadd_SC
+**Remedy:** Use a club represented by only one option.
+
+### Row 34333 — Qatar (easy) — FAIL: false premise — Japan's 2011 win was not back-to-back
+**Q:** Which Qatar achievement at the 2023 Asian Cup matched Japan's 2011 feat?
+**Answer:** Winning consecutive titles
+**Why it fails:** The 'Japan 2011 feat' was a single title, not consecutive — Japan's back-to-back was 2000 & 2004. Qatar matched Japan's 2000/2004 achievement, not a 2011 one.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Reference Japan 2000 & 2004, not 2011.
+
+### Row 34334 — Qatar (medium) — FAIL: false — both finals had the SAME margin (3-1)
+**Q:** Which Qatar Asian Cup final win had a bigger goal margin?
+**Answer:** 2023 vs Jordan
+**Why it fails:** Both Qatar finals were 3-1 (2019 v Japan, 2023 v Jordan) — equal 2-goal margins, as the explanation itself admits. Neither had a 'bigger' margin, so the answer is wrong/non-unique.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Remove — the margins are identical.
+
+### Row 34338 — Qatar (medium) — FAIL: wrong scorer — Muntari scored vs Senegal, not Afif
+**Q:** Which Qatar attacker scored against Senegal in the 2022 World Cup group stage?
+**Answer:** Akram Afif
+**Why it fails:** Qatar's goal in the 3-1 loss to Senegal was scored by Mohammed Muntari (78'), not Akram Afif. The answer is wrong (and Muntari, the real scorer, is not offered).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Mohammed Muntari.
+
+### Row 34339 — Qatar (medium) — FAIL: wrong scorer — Muntari scored vs Senegal, not Afif
+**Q:** Which Qatar attacker scored in their 2022 World Cup group stage match against Senegal?
+**Answer:** Akram Afif
+**Why it fails:** Qatar's only 2022 goal (vs Senegal) was Mohammed Muntari's, not Afif's.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Mohammed Muntari.
+
+### Row 34349 — Qatar (easy) — FAIL: false — Qatar/Afif did NOT play at Lusail in 2022
+**Q:** Which Qatar attacker, the 2023 AFC Player of the Year, played at Lusail Stadium in the 2022 World Cup?
+**Answer:** Akram Afif
+**Why it fails:** Qatar's three 2022 group matches were at Al Bayt, Al Thumama and Al Bayt — they never played at Lusail. So Afif did not play at Lusail during the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false Lusail claim.
+
+### Row 34356 — Qatar (easy) — FAIL: false — Sánchez won only 2019; López won 2023
+**Q:** Which Qatar coach led the team to back-to-back Asian Cup titles?
+**Answer:** Félix Sánchez
+**Why it fails:** Sánchez won the 2019 Asian Cup but left in 2023; the 2023 Asian Cup was won by Marquez López. No single coach led Qatar to BOTH titles.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Split: Sánchez 2019, López 2023.
+
+### Row 34357 — Qatar (easy) — FAIL: false — Sánchez won only 2019; López won 2023
+**Q:** Which Qatar coach led them to win the 2019 and 2023 Asian Cups?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** Sánchez did not win both: he won 2019, while Marquez López won 2023.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Split the two titles between Sánchez (2019) and López (2023).
+
+### Row 34366 — Qatar (easy) — FAIL: false — Sánchez won only 2019; López won 2023
+**Q:** Which Qatar coach's tactical decisions led to their 2019 and 2023 Asian Cup wins?
+**Answer:** Félix Sánchez
+**Why it fails:** Sánchez's tactics did not produce BOTH titles — he won 2019, López won 2023.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Split the titles: Sánchez 2019, López 2023.
+
+### Row 34370 — Qatar (easy) — FAIL: false — Hassan debuted Nov 2010, AFTER the June 2010 WC
+**Q:** Which Qatar defender debuted internationally before the 2010 World Cup?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Abdelkarim Hassan made his senior debut on 18 Nov 2010 (vs Haiti) — after the June 2010 World Cup, not before it.
+**Source:** https://en.wikipedia.org/wiki/Abdelkarim_Hassan
+**Remedy:** Remove 'before the 2010 World Cup' (his debut was late 2010).
+
+### Row 34373 — Qatar (easy) — FAIL: non-unique — all options are defenders who played
+**Q:** Which Qatar defender played at the 2022 FIFA World Cup?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Pedro Miguel all also played for Qatar at the 2022 WC, so 'which defender played' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors to make Abdelkarim Hassan unique.
+
+### Row 34376 — Qatar (easy) — FAIL: non-unique — all options are defenders who featured
+**Q:** Which Qatar defender started against the Netherlands in the 2022 World Cup?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Homam Ahmed are all defenders who featured; multiple started in the back line vs the Netherlands, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34377 — Qatar (easy) — FAIL: non-unique/unverifiable — multiple defenders started
+**Q:** Which Qatar defender started all three matches at the 2022 World Cup?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** With Bassam Al-Rawi, Boualem Khoukhi and Homam Ahmed all defenders, several started all three games; 'which defender started all three' is not uniquely Abdelkarim Hassan.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34378 — Qatar (easy) — FAIL: non-unique — all options are defenders who started
+**Q:** Which Qatar defender started in their 2022 FIFA World Cup matches?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Pedro Miguel all started 2022 matches, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34379 — Qatar (easy) — FAIL: non-unique — all options are defenders
+**Q:** Which Qatar defender started in their 2022 World Cup opener?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Homam Ahmed are all defenders who featured; the back line that started the opener had several of them.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34380 — Qatar (easy) — FAIL: non-unique — all options are defenders
+**Q:** Which Qatar defender started the 2022 World Cup group match against Senegal?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Homam Ahmed and Boualem Khoukhi are all defenders who featured vs Senegal, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34381 — Qatar (easy) — FAIL: non-unique — all options are defenders
+**Q:** Which Qatar defender started their 2022 World Cup matches?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Pedro Miguel all started 2022 matches, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34385 — Qatar (medium) — FAIL: non-unique — Khoukhi & Salman are also defenders
+**Q:** Which Qatar defender was a key player during 2022 World Cup qualification?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Boualem Khoukhi and Tarek Salman (both options) are defenders who featured in 2022 qualifying, so 'which defender' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34395 — Qatar (medium) — FAIL: wrong scorer — Muntari, not Almoez, scored vs Senegal
+**Q:** Which Qatar forward scored in the 2022 FIFA World Cup group stage?
+**Answer:** Almoez Ali
+**Why it fails:** Qatar's only 2022 goal (vs Senegal) was scored by Mohammed Muntari, not Almoez Ali. Almoez did not score at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Mohammed Muntari.
+
+### Row 34396 — Qatar (easy) — FAIL: false — Qatar didn't score in the opener; Almoez didn't score
+**Q:** Which Qatar forward scored in the 2022 FIFA World Cup opener?
+**Answer:** Almoez Ali
+**Why it fails:** Qatar lost the opener 2-0 to Ecuador (no goal). Their only 2022 goal came vs Senegal (Muntari). Almoez Ali did not score at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove — Qatar didn't score in the opener; the lone goal was Muntari's vs Senegal.
+
+### Row 34397 — Qatar (easy) — FAIL: false — Qatar's first goal was Muntari's vs Senegal
+**Q:** Which Qatar forward scored in their 2022 World Cup opener?
+**Answer:** Almoez Ali
+**Why it fails:** Qatar did not score in the opener, and their first-ever WC goal was Mohammed Muntari's vs Senegal, not Almoez Ali in the opener.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change scorer to Muntari and match to the Senegal game.
+
+### Row 34398 — Qatar (easy) — FAIL: wrong — Muntari (an option) scored Qatar's only goal
+**Q:** Which Qatar forward scored more goals at the 2022 FIFA World Cup than Almoez Ali?
+**Answer:** Akram Afif
+**Why it fails:** Qatar's only 2022 goal was Mohammed Muntari's (an option here), not Akram Afif's. Neither Afif nor Almoez scored, so 'Afif scored more than Almoez' is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Mohammed Muntari.
+
+### Row 34427 — Qatar (medium) — FAIL: false — Lopetegui led the 2026 qualification, not Queiroz
+**Q:** Which Qatar manager led their 2026 World Cup qualification campaign?
+**Answer:** Carlos Queiroz
+**Why it fails:** Qatar's 2026 qualification was clinched in Oct 2025 under Julen Lopetegui (appointed May 2025). Carlos Queiroz was sacked in Dec 2023, long before. Queiroz did not lead the 2026 campaign.
+**Source:** https://www.fourfourtwo.com/team/qatar-world-cup-2026-squad
+**Remedy:** Change answer to Julen Lopetegui.
+
+### Row 34429 — Qatar (easy) — FAIL: false — Sánchez won only 2019; López won 2023
+**Q:** Which Qatar manager led them to back-to-back Asian Cup titles in 2019 and 2023?
+**Answer:** Félix Sánchez
+**Why it fails:** Sánchez did not lead Qatar to both titles: he won 2019, while Marquez López won 2023.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Split the titles between Sánchez (2019) and López (2023).
+
+### Row 34431 — Qatar (easy) — FAIL: false — Sánchez won only 2019; López won 2023
+**Q:** Which Qatar manager led them to back-to-back Asian Cup wins?
+**Answer:** Félix Sánchez Bas
+**Why it fails:** No single manager led Qatar to 'back-to-back' Asian Cups: Sánchez won 2019, Marquez López won 2023.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Split: Sánchez 2019, López 2023.
+
+### Row 34438 — Qatar (easy) — FAIL: wrong — Queiroz directly succeeded Sánchez, not López
+**Q:** Which Qatar manager succeeded Félix Sánchez in 2023?
+**Answer:** Marquez López
+**Why it fails:** Carlos Queiroz (an option) succeeded Sánchez in Feb 2023; Marquez López succeeded Queiroz in Dec 2023. The direct successor was Queiroz.
+**Source:** https://www.aljazeera.com/sports/2023/12/6/qatar-football-team-qfa-coach-carlos-queiroz-terminate-contract-mutual-agreement-asian-cup-2023-marques-lopez-hired
+**Remedy:** Change answer to Carlos Queiroz.
+
+### Row 34441 — Qatar (easy) — FAIL: false — Sánchez came via Aspire youth, not an Al-Sadd title
+**Q:** Which Qatar manager was appointed after leading Al-Sadd to a domestic title?
+**Answer:** Félix Sánchez
+**Why it fails:** Félix Sánchez rose through Aspire Academy and Qatar's youth teams before the 2017 senior appointment; he did not manage Al-Sadd to a Qatar Stars League title.
+**Source:** https://en.wikipedia.org/wiki/F%C3%A9lix_S%C3%A1nchez_Bas
+**Remedy:** Fix the premise — he was promoted from Aspire/youth coaching, not from an Al-Sadd title.
+
+### Row 34443 — Qatar (easy) — FAIL: false — Sánchez didn't win back-to-back; timing wrong
+**Q:** Which Qatar manager won back-to-back Asian Cups before the 2022 World Cup?
+**Answer:** Félix Sánchez
+**Why it fails:** Sánchez won only 2019 (López won 2023), and the back-to-back was completed in 2023, AFTER the 2022 WC — not 'before'.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Remove — the back-to-back was López's 2023 win, after 2022.
+
+### Row 34444 — Qatar (easy) — FAIL: false — López, not Sánchez, won 2023
+**Q:** Which Qatar manager won the 2019 and 2023 Asian Cups?
+**Answer:** Félix Sánchez
+**Why it fails:** Sánchez won the 2019 Asian Cup; the 2023 title was won by Marquez López.
+**Source:** https://en.wikipedia.org/wiki/Tint%C3%ADn_M%C3%A1rquez
+**Remedy:** Split: Sánchez 2019, López 2023.
+
+### Row 34464 — Qatar (medium) — FAIL: non-unique — Ecuador also scored twice
+**Q:** Which Qatar opponent scored twice in their 2022 World Cup group stage win?
+**Answer:** the Netherlands
+**Why it fails:** Both the Netherlands (2-0) and Ecuador (2-0) scored twice in their wins over Qatar; Ecuador is also an option, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Specify the opponent/match to disambiguate.
+
+### Row 34466 — Qatar (easy) — FAIL: non-unique — multiple Al-Sadd players in the options
+**Q:** Which Qatar player at the 2022 World Cup played for Al-Sadd?
+**Answer:** Akram Afif
+**Why it fails:** Akram Afif, Hassan Al-Haydos and Boualem Khoukhi all played for Al-Sadd, so 'which 2022 player played for Al-Sadd' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Al_Sadd_SC
+**Remedy:** Use a club represented by only one option.
+
+### Row 34479 — Qatar (easy) — FAIL: non-unique — the whole squad debuted at the 2022 WC
+**Q:** Which Qatar player debuted at the 2022 FIFA World Cup?
+**Answer:** Mohammed Muntari
+**Why it fails:** 2022 was Qatar's first World Cup, so every option (Afif, Al-Haydos, Almoez as well as Muntari) made their WC debut there. The answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Add a distinguishing qualifier (e.g. 'scored on debut').
+
+### Row 34480 — Qatar (easy) — FAIL: unverified — 'Ahmad Al-Rawi' 2026 debut not confirmable
+**Q:** Which Qatar player debuted in their 2026 World Cup qualifying campaign?
+**Answer:** Ahmad Al-Rawi
+**Why it fails:** The other options (Al-Haydos, Afif, Khoukhi) are long-established veterans, but 'Ahmad Al-Rawi' making his debut in the 2026 qualifying campaign cannot be verified (possible confusion with Bassam Al-Rawi, an established player).
+**Source:** https://en.wikipedia.org/wiki/Qatar_national_football_team
+**Remedy:** Verify the actual 2026-cycle debutant's name.
+
+### Row 34481 — Qatar (easy) — FAIL: explanation false — Qatar scored in match 2, not after two scoreless
+**Q:** Which Qatar player ended their 2022 World Cup scoring drought?
+**Answer:** Mohammed Muntari
+**Why it fails:** Answer (Muntari) is right, but the explanation says he scored 'after they failed to score in their first two matches' — Muntari's goal came IN the second match (vs Senegal). Qatar did not fail to score in their first two matches.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Fix the explanation: the goal came in the 2nd match (Senegal).
+
+### Row 34483 — Qatar (easy) — FAIL: non-unique — multiple Al-Sadd players in the options
+**Q:** Which Qatar player from Al-Sadd was in the 2022 World Cup squad?
+**Answer:** Hassan Al-Haydos
+**Why it fails:** Hassan Al-Haydos, Akram Afif and Boualem Khoukhi all played for Al-Sadd, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Al_Sadd_SC
+**Remedy:** Use a club represented by only one option.
+
+### Row 34489 — Qatar (easy) — FAIL: non-unique — entire 2022 squad was QSL-based
+**Q:** Which Qatar player in the 2022 World Cup squad was based in the Qatar Stars League?
+**Answer:** Akram Afif
+**Why it fails:** All four options (Afif, Al-Haydos, Khoukhi, Pedro Miguel) were Qatar Stars League players — the whole squad was, so the answer is not unique.
+**Source:** https://www.aljazeera.com/sports/2022/11/12/a-mix-of-youth-and-experience-in-qatar-world-cup-squad
+**Remedy:** Use non-QSL distractors.
+
+### Row 34492 — Qatar (easy) — FAIL: non-unique — whole squad QSL-based and all debuted 2022
+**Q:** Which Qatar player made his 2022 World Cup debut while playing in the Qatar Stars League?
+**Answer:** Akram Afif
+**Why it fails:** Every option (Afif, Almoez, Al-Haydos, Khoukhi) was a QSL player making their WC debut in 2022, so the answer is not unique.
+**Source:** https://www.aljazeera.com/sports/2022/11/12/a-mix-of-youth-and-experience-in-qatar-world-cup-squad
+**Remedy:** Add a distinguishing qualifier.
+
+### Row 34498 — Qatar (easy) — FAIL: false — Al-Haydos did NOT retire after 2022
+**Q:** Which Qatar player retired after the 2022 World Cup loss to the Netherlands?
+**Answer:** Hassan Al-Haydos
+**Why it fails:** Hassan Al-Haydos continued after the 2022 World Cup, captaining Qatar to the 2023 Asian Cup title (and beyond). He did not retire after the Netherlands loss.
+**Source:** https://en.wikipedia.org/wiki/Hassan_Al-Haydos
+**Remedy:** Remove the false retirement claim.
+
+### Row 34505 — Qatar (easy) — FAIL: wrong scorer — Muntari, not Almoez, scored
+**Q:** Which Qatar player scored at the 2022 FIFA World Cup?
+**Answer:** Almoez Ali
+**Why it fails:** Qatar's only 2022 goal (vs Senegal) was Mohammed Muntari's, not Almoez Ali's. Almoez did not score at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Mohammed Muntari.
+
+### Row 34524 — Qatar (easy) — FAIL: wrong stadium — Qatar-Senegal was at Al Thumama, not Al Janoub
+**Q:** Which Qatar player scored their first World Cup goal at Al Janoub Stadium in 2022?
+**Answer:** Mohammed Muntari
+**Why it fails:** Muntari's goal came vs Senegal at Al Thumama Stadium, not Al Janoub. (Row 34504 in the same set correctly places it at Al Thumama.)
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change venue to Al Thumama Stadium.
+
+### Row 34535 — Qatar (easy) — FAIL: false — Almoez scored ONCE in the 2019 final, not twice
+**Q:** Which Qatar player scored twice in the 2019 Asian Cup final?
+**Answer:** Almoez Ali
+**Why it fails:** In the 3-1 2019 final win, Almoez Ali scored once (the 12' opener); the other goals were Abdelaziz Hatem (27') and Akram Afif (83' pen). He did not score twice.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Remove — Almoez scored one goal in that final.
+
+### Row 34536 — Qatar (easy) — FAIL: false — Afif scored THREE penalties (hat-trick), not two
+**Q:** Which Qatar player scored twice in the 2023 Asian Cup final?
+**Answer:** Akram Afif
+**Why it fails:** Akram Afif scored a hat-trick of penalties (all three Qatar goals) in the 3-1 2023 final. The 'twice/two penalties' claim understates it.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Change to a hat-trick (three penalties).
+
+### Row 34551 — Qatar (easy) — FAIL: non-unique — many regulars started both 2-0 defeats
+**Q:** Which Qatar player started both their 2022 World Cup defeats?
+**Answer:** Bassam Al-Rawi
+**Why it fails:** Afif, Al-Haydos and Almoez (all options) also started both the Ecuador and Netherlands matches, so 'which player started both defeats' is not unique (and Qatar actually had three defeats).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Make the criterion specific to one player.
+
+### Row 34575 — Qatar (easy) — FAIL: false — Afif did NOT score at the 2022 World Cup
+**Q:** Which Qatar player, developed at Aspire Academy, scored at the 2022 FIFA World Cup?
+**Answer:** Akram Afif
+**Why it fails:** Qatar's only 2022 goal was Mohammed Muntari's (vs Senegal). Akram Afif did not score at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer/scorer to Mohammed Muntari.
+
+### Row 34607 — Qatar (easy) — FAIL: non-unique — Almoez didn't play Al-Rayyan OR Al-Arabi
+**Q:** Which Qatar Stars League club did Qatar's 2022 World Cup goal scorer Almoez Ali NOT play for?
+**Answer:** Al-Rayyan
+**Why it fails:** Almoez Ali's club career is essentially Al-Duhail; among the options he did not play for Al-Rayyan, Al-Sadd OR Al-Arabi, so 'which did he NOT play for' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Almoez_Ali
+**Remedy:** Use clubs he actually played for as distractors.
+
+### Row 34614 — Qatar (easy) — FAIL: false — Xavi did NOT score at the 2010 World Cup
+**Q:** Which Qatar Stars League player scored for Spain at the 2010 World Cup?
+**Answer:** Xavi
+**Why it fails:** Xavi did not score at the 2010 World Cup; Spain's goals vs Honduras were both David Villa's (an option). Xavi recorded no goals in the tournament.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup
+**Remedy:** Change answer to David Villa (but he wasn't a QSL player — reword the premise).
+
+### Row 34618 — Qatar (easy) — FAIL: false — Muntari, not Almoez, scored at the 2022 WC
+**Q:** Which Qatar striker scored in the 2022 FIFA World Cup?
+**Answer:** Almoez Ali
+**Why it fails:** Qatar's only 2022 goal was Mohammed Muntari's (an option). Almoez Ali did not score at the 2022 World Cup.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change answer to Mohammed Muntari.
+
+### Row 34619 — Qatar (easy) — FAIL: false — Qatar scored only ONE goal in 2022
+**Q:** Which Qatar striker scored two goals at the 2022 FIFA World Cup?
+**Answer:** Almoez Ali
+**Why it fails:** Qatar scored just one goal at the 2022 World Cup (Muntari vs Senegal). No Qatar player scored two; the claim that Almoez scored 'both' goals is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove — Qatar's lone goal was Muntari's.
+
+### Row 34621 — Qatar (medium) — FAIL: explanation states wrong Japan year (2011)
+**Q:** Which Qatar team in 2023 became the first Asian Cup champions since Japan to win consecutive titles?
+**Answer:** Qatar in 2023
+**Why it fails:** Answer 'Qatar in 2023' is correct, but the explanation says 'since Japan in 2011' — Japan's back-to-back was 2000 & 2004.
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Fix the explanation year to 2004.
+
+### Row 34622 — Qatar (easy) — FAIL: false premise — Japan's back-to-back was 2004, not 2011
+**Q:** Which Qatar team was the first since Japan (2011) to win consecutive Asian Cups?
+**Answer:** Qatar
+**Why it fails:** The question/explanation say 'since Japan (2011)' — Japan's consecutive titles were 2000 & 2004 (2011 was a single title).
+**Source:** https://en.wikipedia.org/wiki/AFC_Asian_Cup
+**Remedy:** Change '2011' to '2004'.
+
+### Row 34641 — Qatar (easy) — FAIL: non-unique — multiple clubs supplied 2022 qualifying players
+**Q:** Which Qatari club side supplied players for the 2022 World Cup qualifying campaign?
+**Answer:** Al-Sadd
+**Why it fails:** Al-Sadd, Al-Duhail and Al-Rayyan all supplied players to the 2022 qualifying squad, so 'which club supplied players' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Qatar_national_football_team
+**Remedy:** Ask which club supplied the MOST players (Al-Sadd).
+
+### Row 34642 — Qatar (easy) — FAIL: non-unique — multiple clubs' players debuted in 2022
+**Q:** Which Qatari club's player debuted at the 2022 FIFA World Cup?
+**Answer:** Al-Sadd
+**Why it fails:** Players from Al-Sadd, Al-Duhail and Al-Rayyan all debuted at the 2022 WC (Qatar's first), so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Specify 'most players' or a single-player fact.
+
+### Row 34643 — Qatar (easy) — FAIL: non-unique — multiple clubs' players debuted in 2022
+**Q:** Which Qatari club's player made his World Cup debut in 2022?
+**Answer:** Al-Sadd
+**Why it fails:** Al-Sadd, Al-Duhail and Al-Rayyan all had players make their WC debut in 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Make the criterion club-specific.
+
+### Row 34644 — Qatar (easy) — FAIL: false — Almoez didn't score; Muntari did
+**Q:** Which Qatari club's player scored in the 2022 World Cup?
+**Answer:** Al-Duhail
+**Why it fails:** The explanation credits Almoez Ali (Al-Duhail) with scoring, but Qatar's only 2022 goal was Mohammed Muntari's. The 'Al-Duhail scorer' premise is wrong.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use the actual scorer (Muntari) and his club.
+
+### Row 34647 — Qatar (easy) — FAIL: non-unique — all options are 2022 defenders
+**Q:** Which Qatari defender anchored their 2022 World Cup backline?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Tarek Salman are all defenders who featured in 2022, so 'which defender anchored the backline' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34649 — Qatar (easy) — FAIL: non-unique — all options are 2022 defenders
+**Q:** Which Qatari defender was a key tactical starter in the 2022 World Cup?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Bassam Al-Rawi, Boualem Khoukhi and Homam Ahmed are all defenders who featured, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34650 — Qatar (easy) — FAIL: false — Abdelkarim Hassan WAS in the 2019 squad
+**Q:** Which Qatari defender was not in their 2019 Asian Cup-winning squad?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Abdelkarim Hassan was part of Qatar's 2019 Asian Cup-winning squad (a regular left-back). The claim he was suspended/absent is false — and the other options (Al-Haydos, Al-Sheeb, Afif) were all in the 2019 squad too, so the question has no valid answer.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup
+**Remedy:** Remove — all four were in the 2019 squad.
+
+### Row 34651 — Qatar (easy) — FAIL: non-unique — multiple defenders selected for 2022
+**Q:** Which Qatari defender was selected for the 2022 World Cup squad?
+**Answer:** Abdelkarim Hassan
+**Why it fails:** Abdelkarim Hassan, Bassam Al-Rawi and Boualem Khoukhi were all defenders selected for the 2022 squad, so the answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Use non-defender distractors.
+
+### Row 34655 — Qatar (easy) — FAIL: false — Qatar didn't play at Lusail in 2022
+**Q:** Which Qatari goalkeeper started at Lusail Stadium in the 2022 World Cup?
+**Answer:** Saad Al-Sheeb
+**Why it fails:** Qatar's three 2022 matches were at Al Bayt, Al Thumama and Al Bayt — never Lusail. So Al-Sheeb did not start a Qatar match at Lusail.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false Lusail venue.
+
+### Row 34667 — Qatar (easy) — FAIL: false — Qatar didn't play at Lusail in 2022
+**Q:** Which Qatari player captained the team at Lusail Stadium in the 2022 World Cup?
+**Answer:** Hassan Al-Haydos
+**Why it fails:** Qatar's 2022 matches were at Al Bayt, Al Thumama and Al Bayt — never Lusail. Al-Haydos did not captain a Qatar match at Lusail.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false Lusail venue.
+
+### Row 34671 — Qatar (easy) — FAIL: non-unique — multiple players featured vs Netherlands
+**Q:** Which Qatari player featured in the 2022 World Cup loss to the Netherlands?
+**Answer:** Almoez Ali
+**Why it fails:** Almoez Ali, Akram Afif, Bassam Al-Rawi and Karim Boudiaf all featured in the 2-0 loss to the Netherlands, so 'which player featured' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Make the criterion specific to one player.
+
+### Row 34673 — Qatar (easy) — FAIL: unverified — 'Ahmed Al-Rawi' 2026 debut not confirmable
+**Q:** Which Qatari player made his national team debut during the 2026 World Cup qualifiers?
+**Answer:** Ahmed Al-Rawi
+**Why it fails:** The other options are long-established veterans, but a player 'Ahmed Al-Rawi' debuting in the 2026 qualifiers cannot be verified (possible confusion with Bassam Al-Rawi).
+**Source:** https://en.wikipedia.org/wiki/Qatar_national_football_team
+**Remedy:** Verify the actual 2026-cycle debutant.
+
+### Row 34689 — Qatar (easy) — FAIL: false — Almoez scored ONCE in the 2019 final, not twice
+**Q:** Which Qatari player scored twice in the 2019 Asian Cup final?
+**Answer:** Almoez Ali
+**Why it fails:** Almoez Ali scored once (12') in the 3-1 2019 final; Hatem (27') and Afif (83' pen) scored the others. The 'two of three goals' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Remove — Almoez scored one goal in that final.
+
+### Row 34694 — Qatar (easy) — FAIL: non-unique — multiple players started the opener
+**Q:** Which Qatari player started in their 2-0 loss to Ecuador in the 2022 World Cup opener?
+**Answer:** Almoez Ali
+**Why it fails:** Almoez Ali, Akram Afif, Hassan Al-Haydos and Boualem Khoukhi all started the 2-0 loss to Ecuador, so 'which player started' is not unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Make the criterion specific to one player.
+
+### Row 34703 — Qatar (easy) — FAIL: false — 9 goals did NOT match Qatar's WC total of 1
+**Q:** Which Qatari player's 2019 Asian Cup goal haul matched the total goals scored by the entire national team in their first World Cup?
+**Answer:** Almoez Ali
+**Why it fails:** Almoez scored 9 at the 2019 Asian Cup, but Qatar scored only 1 goal at the 2022 WC (Muntari). 9 does not 'match' 1 — the premise is false (the explanation even states both figures).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove the false 'matched the WC total' premise.
+
+### Row 34706 — Qatar (easy) — FAIL: false — the 2019 Asian Cup was in the UAE, not Al Janoub/Qatar
+**Q:** Which Qatari player's 2019 Asian Cup record was set at Al Janoub Stadium?
+**Answer:** Almoez Ali
+**Why it fails:** The 2019 Asian Cup was hosted by the United Arab Emirates; Almoez set his record there, not at Al Janoub Stadium (which is in Qatar and was a 2022 WC venue).
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup
+**Remedy:** Remove the Al Janoub Stadium claim (2019 was in the UAE).
+
+### Row 34720 — Qatar (easy) — FAIL: non-unique — Lampard also never played in Qatar's league
+**Q:** Which retired European star did NOT join Qatar's league before 2022?
+**Answer:** Andrea Pirlo
+**Why it fails:** The explanation claims Lampard played in Qatar's league — he never did (Chelsea, Man City, NYCFC). So both Pirlo AND Lampard did not join Qatar's league, making 'which did NOT join' non-unique.
+**Source:** https://en.wikipedia.org/wiki/Frank_Lampard
+**Remedy:** Replace Lampard with a player who actually played in Qatar.
+
+### Row 34722 — Qatar (easy) — FAIL: false — Xavi did not play for Al-Sadd in 2022
+**Q:** Which retired European star played for Qatar's Al-Sadd in 2022?
+**Answer:** Xavi
+**Why it fails:** Xavi retired as a player in 2019 and left Al-Sadd (as manager) in Nov 2021 for Barcelona. He did not play for Al-Sadd in 2022.
+**Source:** https://en.wikipedia.org/wiki/Xavi
+**Remedy:** Fix the year — Xavi played for Al-Sadd 2015–2019.
+
+### Row 34728 — Qatar (easy) — FAIL: false — no Senegal player scored a brace; 3 different scorers
+**Q:** Which Senegal player scored a brace against Qatar in the 2022 World Cup?
+**Answer:** Boulaye Dia
+**Why it fails:** Senegal's three goals in the 3-1 win came from three different players: Boulaye Dia (41'), Famara Diédhiou (48') and Bamba Dieng (84'). Dia scored once, not a brace.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Remove — no Senegal player scored twice in that match.
+
+### Row 34747 — Qatar (easy) — FAIL: false — Netherlands was Qatar's 3rd match, not 2nd
+**Q:** Which team beat Qatar 2-0 in their second 2022 World Cup match?
+**Answer:** The Netherlands
+**Why it fails:** Qatar's second match was the 3-1 loss to Senegal. The Netherlands (2-0) was the THIRD match. No team beat Qatar 2-0 in their second match.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Change to the third match (or the second match was Senegal 3-1).
+
+### Row 34753 — Qatar (easy) — FAIL: non-unique/garbled — all opponents beat Qatar
+**Q:** Which team did NOT lose to Qatar in their opening match of the 2022 World Cup?
+**Answer:** Ecuador
+**Why it fails:** Ecuador, Senegal AND the Netherlands all beat Qatar (none lost to Qatar), and Portugal didn't play them — so 'which team did NOT lose to Qatar' has multiple correct answers and the framing is incoherent.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Reword — Qatar lost all three group games.
+
+### Row 34763 — Qatar (easy) — FAIL: non-unique — Ecuador also wasn't beaten in a final
+**Q:** Which team did Qatar NOT beat in a major final?
+**Answer:** Netherlands
+**Why it fails:** Qatar beat Japan (2019) and Jordan (2023) in finals; they beat neither the Netherlands NOR Ecuador in a final. With both offered, 'which did Qatar NOT beat in a major final' has two correct answers.
+**Source:** https://en.wikipedia.org/wiki/2023_AFC_Asian_Cup_final
+**Remedy:** Use distractors Qatar actually beat in finals.
+
+### Row 34775 — Qatar (medium) — FAIL: false — THREE teams beat Qatar, not two
+**Q:** Which two teams beat Qatar in the 2022 World Cup group stage?
+**Answer:** Senegal and Netherlands
+**Why it fails:** All three group opponents (Ecuador, Senegal, Netherlands) beat Qatar, so 'which two teams beat Qatar' is wrong/non-unique — any pair is incomplete, and three of the four options are valid pairs.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Ask for all three teams.
+
+### Row 34802 — Qatar (easy) — FAIL: false — Almoez scored ONCE in the 2019 final, not twice
+**Q:** Who scored twice for Qatar in the 2019 Asian Cup final?
+**Answer:** Almoez Ali
+**Why it fails:** Almoez scored once (12') in the 3-1 2019 final; Hatem (27') and Afif (83' pen) scored the others.
+**Source:** https://en.wikipedia.org/wiki/2019_AFC_Asian_Cup_final
+**Remedy:** Remove — Almoez scored one goal in that final.
+
+### Row 34832 — Qatar (easy) — FAIL: non-unique — first Arab AND first winter host also true
+**Q:** Why was Qatar's 2022 World Cup hosting historic?
+**Answer:** First Middle Eastern host
+**Why it fails:** Qatar 2022 was also the first Arab host AND the first winter (Nov–Dec) World Cup, so 'First Arab host' and 'First winter host' are also correct answers to 'why was it historic'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup
+**Remedy:** Scope the question to one 'first' to make it unique.
+
+### Row 21195 — Haiti (hard) — FAIL: wrong year
+**Q:** After 2006, when did Haiti reach their highest FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21197 — Haiti (hard) — FAIL: wrong year
+**Q:** After a 2014 World Cup qualifier win, Haiti reached their peak FIFA ranking in which year?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21201 — Haiti (hard) — FAIL: wrong year
+**Q:** After a strong Caribbean Cup run, when did Haiti reach their peak FIFA ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21203 — Haiti (medium) — FAIL: unverified
+**Q:** After Haiti's 2019 Gold Cup run, which Caribbean rival did their FIFA ranking surpass?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21204 — Haiti (easy) — FAIL: false-premise
+**Q:** After Haiti's 2019 Gold Cup semi-final, which CONCACAF nation finished third?
+**Answer:** Haiti
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21207 — Haiti (easy) — FAIL: unverified
+**Q:** Against which Caribbean rival did Haiti score a crucial 2018 World Cup qualifying goal?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21215 — Haiti (easy) — FAIL: false-premise
+**Q:** At the 2018 FIFA World Cup, which nation matched Haiti's 2019 Gold Cup third-place finish?
+**Answer:** Belgium
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21218 — Haiti (easy) — FAIL: fabricated
+**Q:** At the 2019 CONCACAF Gold Cup, which Haiti forward was named to the Best XI?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21220 — Haiti (easy) — FAIL: false-premise
+**Q:** At the 2019 CONCACAF Gold Cup, why did Haiti finish third?
+**Answer:** Reached the semi-finals
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21227 — Haiti (easy) — FAIL: unverified
+**Q:** At the 2026 qualifiers, why did Haiti's team overcome significant adversity?
+**Answer:** Immense resilience and versatility
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21229 — Haiti (easy) — FAIL: unverified
+**Q:** At the 2026 World Cup qualifiers, which two teams are Haiti's modern Caribbean rivals?
+**Answer:** Jamaica and Trinidad
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21230 — Haiti (easy) — FAIL: unverified
+**Q:** At which 2026 World Cup qualifying stadium did Haiti demonstrate tactical versatility?
+**Answer:** Hasely Crawford Stadium
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21231 — Haiti (easy) — FAIL: false
+**Q:** At which stadium did Haiti play their 2009 Gold Cup quarterfinal?
+**Answer:** Reliant Stadium
+**Why it fails:** Haiti's 2009 Gold Cup QF (0-4 v Mexico) was not at Reliant Stadium; that venue is wrong.
+**Source:** https://en.wikipedia.org/wiki/Haiti_at_the_CONCACAF_Gold_Cup
+**Remedy:** Remove/replace the false claim.
+
+### Row 21234 — Haiti (easy) — FAIL: unverified
+**Q:** During 2018 FIFA World Cup qualifying, Haiti faced which Caribbean rival?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21235 — Haiti (easy) — FAIL: false
+**Q:** During 2022 World Cup qualifying, where did Haiti host its home matches?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21236 — Haiti (easy) — FAIL: false-premise
+**Q:** During 2022 World Cup qualifying, which CONCACAF nation played a 'home' match at Haiti's frequent neutral venue, DR's Estadio Cibao?
+**Answer:** Haiti
+**Why it fails:** Haiti's 2022 home leg vs Canada was at Stade Sylvio Cator, Port-au-Prince (June 2021), so the '2022 home match at DR's Estadio Cibao' premise is false.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Fix the false premise.
+
+### Row 21241 — Haiti (easy) — FAIL: false
+**Q:** During Haiti's 2022 World Cup qualifying campaign, where did they play home matches?
+**Answer:** Neutral venues
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21250 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** For 2026 World Cup qualifiers, where did Haiti host its home match against Jamaica?
+**Answer:** Dominican Republic
+**Why it fails:** Haiti never faced Jamaica in 2026 WCQ (Round 2 vs Curacao/St Lucia/Aruba/Barbados, Round 3 vs Honduras/Costa Rica/Nicaragua; Canada was a co-host that played no qualifiers).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21256 — Haiti (easy) — FAIL: false
+**Q:** For 2026 World Cup qualifying, Haiti's roster relies more on European-based players than which other CONCACAF nation?
+**Answer:** Canada
+**Why it fails:** Canada is NOT domestic-heavy - its squad (Davies, David, Buchanan) is heavily Europe-based, so 'Haiti relies on Europeans more than Canada' is wrong.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/haiti-qualify
+**Remedy:** Remove/replace the false claim.
+
+### Row 21274 — Haiti (medium) — FAIL: false
+**Q:** For which FIFA World Cup qualifiers did Haiti first play home matches in the Dominican Republic?
+**Answer:** The 2014 qualifiers
+**Why it fails:** Haiti's security-driven move to neutral home venues belongs to the 2024-26 cycle (they hosted Canada in Port-au-Prince in June 2021), not the 2014 qualifiers.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21276 — Haiti (hard) — FAIL: false
+**Q:** For which World Cup qualifiers has Haiti played home games in the Dominican Republic and US?
+**Answer:** 2018 and 2022 cycles
+**Why it fails:** For the 2022 cycle Haiti hosted its Canada leg in Port-au-Prince (June 2021); the routine neutral-venue relocation is 2024-26, not 2018/2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21280 — Haiti (medium) — FAIL: false-premise
+**Q:** Haiti faced Canada in the 2019 Gold Cup semi-finals. When did Haiti finish third?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21286 — Haiti (easy) — FAIL: false
+**Q:** Haiti played 2022 World Cup home qualifiers in which neutral country?
+**Answer:** Dominican Republic
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21289 — Haiti (easy) — FAIL: false-premise
+**Q:** Haiti reached the 2019 Gold Cup semi-finals. Which nation finished third?
+**Answer:** Haiti
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21293 — Haiti (medium) — FAIL: date-corruption
+**Q:** Haiti won the 2007 Caribbean Cup final by what exact scoreline?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21296 — Haiti (easy) — FAIL: false
+**Q:** Haiti's 2018 World Cup qualifier vs Costa Rica was at Stade Sylvio Cator, but where was their 2022 qualifier?
+**Answer:** Neutral venue (USA)
+**Why it fails:** Haiti's 2022 home leg vs Canada was at Stade Sylvio Cator, Port-au-Prince (June 2021), not a neutral US venue.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21306 — Haiti (easy) — FAIL: false
+**Q:** Haiti's 2022 World Cup qualifiers were often held in which two neutral countries?
+**Answer:** Dominican Republic and US
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21307 — Haiti (hard) — FAIL: date-corruption
+**Q:** Haiti's 2022 World Cup qualifying aggregate loss to Canada was 4-0; what was Costa Rica's 2022 qualifying aggregate loss to Canada?
+**Answer:** 2026-01-04 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21311 — Haiti (medium) — FAIL: wrong figure
+**Q:** Haiti's 2022-23 Nations League B record was 5 wins and how many losses?
+**Answer:** One loss
+**Why it fails:** Haiti went 5W-1D-0L in 2022-23 NL B - ZERO losses (one draw), not a loss.
+**Source:** https://en.wikipedia.org/wiki/2022%E2%80%9323_CONCACAF_Nations_League_B
+**Remedy:** Use the correct figure.
+
+### Row 21329 — Haiti (medium) — FAIL: unverified/contradictory
+**Q:** Haiti's historic island rival, the Dominican Republic, last met them in a FIFA World Cup qualifier in which year?
+**Answer:** 2021
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21337 — Haiti (medium) — FAIL: false
+**Q:** How many goals did Haiti concede before the 2019 Gold Cup semi-final?
+**Answer:** Zero
+**Why it fails:** Haiti conceded before the 2019 SF (1 v Costa Rica, 2 v Canada in the QF).
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Remove/replace the false claim.
+
+### Row 21348 — Haiti (medium) — FAIL: stale
+**Q:** How many times has Haiti qualified for the FIFA World Cup?
+**Answer:** Once
+**Why it fails:** Stale: Haiti have now qualified for the World Cup TWICE (1974 and 2026), not once.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/haiti-qualify
+**Remedy:** Update: Haiti qualified for the 2026 World Cup (2nd ever).
+
+### Row 21351 — Haiti (medium) — FAIL: wrong figure
+**Q:** How many wins did Haiti get in the 2022-23 Nations League B?
+**Answer:** Six wins
+**Why it fails:** Haiti won 5 of 6 in 2022-23 NL B (5W-1D-0L), not all six.
+**Source:** https://en.wikipedia.org/wiki/2022%E2%80%9323_CONCACAF_Nations_League_B
+**Remedy:** Use the correct figure.
+
+### Row 21353 — Haiti (easy) — FAIL: false
+**Q:** In 2018 World Cup qualifying, Haiti played home matches where instead of Port-au-Prince?
+**Answer:** Dominican Republic and US
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21355 — Haiti (easy) — FAIL: false-premise
+**Q:** In 2019, Haiti finished third after reaching what Gold Cup stage?
+**Answer:** The semi-finals
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21357 — Haiti (easy) — FAIL: false
+**Q:** In 2022 FIFA World Cup qualifying, where did Haiti play its home matches?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21358 — Haiti (easy) — FAIL: unverified
+**Q:** In 2022 FIFA World Cup qualifying, which Caribbean rival did Haiti defeat?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21368 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** In 2022 World Cup qualifying, Haiti's rival Jamaica drew with which other Caribbean rival?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti never faced Jamaica in 2022 WCQ (their tie was a two-legged second round vs Canada; Jamaica/T&T were not Haiti's opponents - Jamaica was in the Octagon).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21370 — Haiti (easy) — FAIL: false
+**Q:** In 2022 World Cup qualifying, where did Haiti play most home matches?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21372 — Haiti (easy) — FAIL: false
+**Q:** In 2022 World Cup qualifying, which nation hosted Haiti's neutral home matches?
+**Answer:** Dominican Republic
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21375 — Haiti (easy) — FAIL: unverified
+**Q:** In 2023 World Cup qualifying, which team did Haiti tie 1-1?
+**Answer:** Jamaica
+**Why it fails:** Soft, unsupported 'modern rivalry with Jamaica/Trinidad' framing (Haiti's real rivalry is with the Dominican Republic).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21376 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** In 2026 qualifying, Haiti played a home match against Canada in which neutral country?
+**Answer:** Dominican Republic
+**Why it fails:** Haiti never faced Canada in 2026 WCQ (Round 2 vs Curacao/St Lucia/Aruba/Barbados, Round 3 vs Honduras/Costa Rica/Nicaragua; Canada was a co-host that played no qualifiers).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21378 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** In 2026 WC qualifiers, Haiti's home match vs Canada was played in which neutral nation?
+**Answer:** Dominican Republic
+**Why it fails:** Haiti never faced Canada in 2026 WCQ (Round 2 vs Curacao/St Lucia/Aruba/Barbados, Round 3 vs Honduras/Costa Rica/Nicaragua; Canada was a co-host that played no qualifiers).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21379 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** In 2026 WC qualifying, Haiti's 'home' match vs Jamaica was played where?
+**Answer:** Dominican Republic
+**Why it fails:** Haiti never faced Jamaica in 2026 WCQ (Round 2 vs Curacao/St Lucia/Aruba/Barbados, Round 3 vs Honduras/Costa Rica/Nicaragua; Canada was a co-host that played no qualifiers).
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21390 — Haiti (medium) — FAIL: false-premise
+**Q:** In a 2014 World Cup group stage match, Haiti's national team was called by which nickname?
+**Answer:** Les Grenadiers
+**Why it fails:** Haiti did not play the 2014 World Cup finals (only 1974 & 2026); there is no 2014 WC group-stage match.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Fix the false premise.
+
+### Row 21396 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** In a 2023 World Cup qualifier, which Haiti player was a French-born dual-national competing in Ligue 1?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 21399 — Haiti (easy) — FAIL: unverified
+**Q:** In Haiti's 2019 Gold Cup campaign, which midfielder earned tournament-wide acclaim?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21402 — Haiti (easy) — FAIL: unverified
+**Q:** In Haiti's 2022 World Cup qualifiers, which midfielder became the team's heartbeat?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21416 — Haiti (easy) — FAIL: date-corruption
+**Q:** In the 2019 Gold Cup quarter-final, Haiti trailed Canada 2-0 at halftime but won by what final score?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21417 — Haiti (easy) — FAIL: date-corruption
+**Q:** In the 2019 Gold Cup quarter-final, what was Haiti's final score after trailing Canada 2-0?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21426 — Haiti (easy) — FAIL: false
+**Q:** In the 2022 World Cup qualifiers, where did Haiti play its 'home' matches?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21427 — Haiti (easy) — FAIL: false
+**Q:** In the 2022 World Cup qualifiers, where did Haiti play its designated home matches?
+**Answer:** Neutral venues
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21428 — Haiti (easy) — FAIL: non-unique/unverifiable
+**Q:** In the 2022 World Cup qualifiers, which nation's squad had more overseas-based players than Haiti?
+**Answer:** Canada
+**Why it fails:** Both Canada and Haiti field near-entirely overseas-based squads, so 'which had MORE overseas players than Haiti' is not a verifiable, unique distinction.
+**Source:** https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/haiti-qualify
+**Remedy:** Make the answer unique/verifiable.
+
+### Row 21437 — Haiti (medium) — FAIL: unverified
+**Q:** In the 2023 Gold Cup group stage, Haiti faced which of these Caribbean rivals?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21440 — Haiti (easy) — FAIL: unverified
+**Q:** In the 2026 World Cup qualifiers, Haiti faced which Caribbean rival?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21442 — Haiti (easy) — FAIL: false
+**Q:** In their 2022 World Cup qualifying group, Haiti's tactical versatility secured a crucial away draw against which nation?
+**Answer:** Canada
+**Why it fails:** Haiti never drew Canada 0-0 in 2022 WCQ; Canada won both legs (1-0, 0-3) for 4-0 aggregate.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21445 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** In their 2026 World Cup qualifying squad, which Haitian player is a French-born dual-national competing in Ligue 1?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 21446 — Haiti (hard) — FAIL: wrong year
+**Q:** In what year did Haiti achieve its highest-ever FIFA ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21447 — Haiti (medium) — FAIL: false-premise
+**Q:** In what year did Haiti finish third at the CONCACAF Gold Cup?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21450 — Haiti (hard) — FAIL: wrong year
+**Q:** In what year did Haiti reach their highest FIFA ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21451 — Haiti (medium) — FAIL: unverified
+**Q:** In what year did Haiti's Frantzdy Pierrot make his senior international debut?
+**Answer:** 2018
+**Why it fails:** Specific debut-year claim is unverifiable and the dataset is internally contradictory on these dates (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21456 — Haiti (easy) — FAIL: false
+**Q:** In which 2022 World Cup qualifier did Haiti's resilience secure a crucial away draw?
+**Answer:** Canada vs Haiti
+**Why it fails:** Haiti never drew Canada 0-0 in 2022 WCQ; Canada won both legs (1-0, 0-3) for 4-0 aggregate.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21462 — Haiti (hard) — FAIL: false-premise
+**Q:** In which CONCACAF Gold Cup did Haiti finish third, behind only Mexico and the USA?
+**Answer:** 2019 CONCACAF Gold Cup
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21470 — Haiti (hard) — FAIL: unverified/contradictory
+**Q:** In which FIFA World Cup qualifier did Haiti last face the Dominican Republic?
+**Answer:** 2018 World Cup qualifier
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21471 — Haiti (hard) — FAIL: unverified/contradictory
+**Q:** In which FIFA World Cup qualifying cycle did Haiti last face the Dominican Republic?
+**Answer:** 2006 World Cup qualifiers
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21472 — Haiti (medium) — FAIL: unverified
+**Q:** In which Gold Cup did Haiti's Steeven Saba earn tournament-wide acclaim?
+**Answer:** 2019 Gold Cup
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21478 — Haiti (medium) — FAIL: false
+**Q:** In which World Cup cycle did Haiti last use Stade Sylvio Cator for a home qualifier?
+**Answer:** 2014 qualifiers
+**Why it fails:** Haiti used Stade Sylvio Cator as late as June 2021 (Canada leg), not 2014 qualifiers.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21480 — Haiti (hard) — FAIL: unverified
+**Q:** In which World Cup qualifier did Haiti's Duckens Nazon score his first goal?
+**Answer:** 2018 World Cup qualifier
+**Why it fails:** Nazon's 'first WCQ goal in the 2018 cycle' is an unverifiable specific claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21483 — Haiti (hard) — FAIL: false
+**Q:** In which World Cup qualifying cycle did Haiti first frequently play home matches in the US and Dominican Republic?
+**Answer:** 2018 World Cup qualifiers
+**Why it fails:** Haiti only began routinely playing home qualifiers abroad in 2024-26 (they hosted Canada in Port-au-Prince in 2021), not the 2018 cycle.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21487 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti achieve its highest modern FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21488 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti achieve their highest FIFA ranking during 2010s World Cup cycles?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21489 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti achieve their highest-ever FIFA ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21490 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti achieve their highest-ever FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21494 — Haiti (medium) — FAIL: false-premise
+**Q:** In which year did Haiti finish third at the CONCACAF Gold Cup?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21495 — Haiti (medium) — FAIL: false
+**Q:** In which year did Haiti last host a FIFA World Cup qualifier at Stade Sylvio Cator?
+**Answer:** 2012
+**Why it fails:** Haiti used Stade Sylvio Cator as late as June 2021 (Canada leg), not 2012.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21496 — Haiti (medium) — FAIL: unverified/contradictory
+**Q:** In which year did Haiti last host Dominican Republic in World Cup qualifying?
+**Answer:** 2011
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21497 — Haiti (medium) — FAIL: unverified/contradictory
+**Q:** In which year did Haiti last play the Dominican Republic in a World Cup qualifier?
+**Answer:** 2008
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21503 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti reach its highest FIFA ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21504 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti reach its highest FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21509 — Haiti (hard) — FAIL: wrong year
+**Q:** In which year did Haiti reach their highest modern FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21529 — Haiti (medium) — FAIL: fabricated
+**Q:** In which year was Haiti's Duckens Nazon named to the CONCACAF Gold Cup Best XI?
+**Answer:** 2019
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21554 — Haiti (easy) — FAIL: false-premise
+**Q:** What position did Haiti finish in at the 2019 CONCACAF Gold Cup?
+**Answer:** Third place
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21558 — Haiti (easy) — FAIL: date-corruption
+**Q:** What was Haiti's final score in their 2019 Gold Cup comeback win over Canada?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21559 — Haiti (easy) — FAIL: date-corruption
+**Q:** What was Haiti's final score in their 2019 Gold Cup quarter-final comeback win?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21564 — Haiti (easy) — FAIL: date-corruption
+**Q:** What was Haiti's winning score in the 2007 Caribbean Cup final?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21567 — Haiti (easy) — FAIL: date-corruption
+**Q:** What was the final score when Haiti won the 2007 Caribbean Cup?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** Answer is a spreadsheet-mangled date (a scoreline such as 2-1/3-2/4-1 stored as a date) - broken cell.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Restore the real scoreline (de-corrupt the Excel date cell).
+
+### Row 21572 — Haiti (easy) — FAIL: false
+**Q:** When did Haiti begin playing home World Cup qualifiers at neutral venues?
+**Answer:** In the 2010s
+**Why it fails:** Haiti only began routinely playing home qualifiers abroad in the 2024-26 cycle (they hosted Canada in Port-au-Prince in June 2021).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21574 — Haiti (hard) — FAIL: false
+**Q:** When did Haiti finish second in their CONCACAF World Cup qualification group?
+**Answer:** In 2013
+**Why it fails:** Haiti did NOT finish 2nd in their 2014 third-round group (they were eliminated, not advancing to the Hex).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove/replace the false claim.
+
+### Row 21575 — Haiti (medium) — FAIL: false-premise
+**Q:** When did Haiti finish third after reaching the CONCACAF Gold Cup semi-finals?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21576 — Haiti (medium) — FAIL: false-premise
+**Q:** When did Haiti finish third at the CONCACAF Gold Cup?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21577 — Haiti (easy) — FAIL: false
+**Q:** When did Haiti host a 2022 World Cup qualifier at Stade Sylvio Cator?
+**Answer:** Never
+**Why it fails:** Haiti DID host a 2022 qualifier at Stade Sylvio Cator - the June 2021 second-round leg vs Canada.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21578 — Haiti (medium) — FAIL: unverified/contradictory
+**Q:** When did Haiti last face Dominican Republic in a FIFA World Cup qualifier?
+**Answer:** 2008
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21582 — Haiti (medium) — FAIL: unverified/contradictory
+**Q:** When did Haiti last play the Dominican Republic in a FIFA World Cup qualifier?
+**Answer:** 2010
+**Why it fails:** The dataset gives 5 different years (2006/2008/2010/2011/2018/2021) for Haiti's last WCQ meeting with the Dominican Republic - an internally contradictory, unverifiable claim.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 21583 — Haiti (medium) — FAIL: wrong year
+**Q:** When did Haiti lose their 2022 World Cup qualifier to Canada?
+**Answer:** 2022
+**Why it fails:** Haiti lost the 2022 second round to Canada in June 2021, not 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Use the correct year.
+
+### Row 21584 — Haiti (medium) — FAIL: wrong year
+**Q:** When did Haiti narrowly miss the 2022 World Cup final qualifying round?
+**Answer:** 2022
+**Why it fails:** Haiti's 2022 second-round exit happened in June 2021, not 2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Use the correct year.
+
+### Row 21589 — Haiti (hard) — FAIL: wrong year
+**Q:** When did Haiti reach their highest modern FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21591 — Haiti (medium) — FAIL: wrong year
+**Q:** When did Haiti reach their highest-ever FIFA world ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21603 — Haiti (medium) — FAIL: false
+**Q:** When did Haiti's 2026 World Cup campaign begin using a European and MLS roster?
+**Answer:** 2023
+**Why it fails:** Haiti's 2026 qualifiers (and Migne's appointment) began in 2024, not 2023.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification
+**Remedy:** Remove/replace the false claim.
+
+### Row 21604 — Haiti (hard) — FAIL: false
+**Q:** When did Haiti's 2026 World Cup qualification campaign begin?
+**Answer:** 2023
+**Why it fails:** Haiti's 2026 qualifying began in 2024 (Migne appointed early 2024), not 2023.
+**Source:** https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification
+**Remedy:** Remove/replace the false claim.
+
+### Row 21605 — Haiti (easy) — FAIL: unverified
+**Q:** When did Haiti's Caribbean rivalry with Jamaica intensify in World Cup qualifying?
+**Answer:** The 2010s
+**Why it fails:** Soft, unsupported 'modern rivalry with Jamaica/Trinidad' framing (Haiti's real rivalry is with the Dominican Republic).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21606 — Haiti (medium) — FAIL: unverified
+**Q:** When did Haiti's forward Duckens Nazon debut in a FIFA World Cup qualifier?
+**Answer:** 2015
+**Why it fails:** Specific debut-year claim is unverifiable and the dataset is internally contradictory on these dates (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21607 — Haiti (medium) — FAIL: unverified
+**Q:** When did Haiti's Frantzdy Pierrot make his senior international debut?
+**Answer:** 2019
+**Why it fails:** Specific debut-year claim is unverifiable and the dataset is internally contradictory on these dates (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21613 — Haiti (medium) — FAIL: unverified
+**Q:** When did Haiti's modern rivalry with Jamaica and Trinidad begin?
+**Answer:** After 2006
+**Why it fails:** Soft, unsupported 'modern rivalry with Jamaica/Trinidad' framing (Haiti's real rivalry is with the Dominican Republic).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21614 — Haiti (easy) — FAIL: unverified
+**Q:** When did Haiti's modern rivalry with Jamaica and Trinidad intensify?
+**Answer:** The 2010s
+**Why it fails:** Soft, unsupported 'modern rivalry with Jamaica/Trinidad' framing (Haiti's real rivalry is with the Dominican Republic).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21622 — Haiti (medium) — FAIL: unverified
+**Q:** When did Haiti's resilience secure a key World Cup qualifying draw?
+**Answer:** In 2021
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21628 — Haiti (medium) — FAIL: unverified
+**Q:** When did Haitian forward Derrick Etienne debut in World Cup qualifying?
+**Answer:** 2015
+**Why it fails:** Specific debut-year claim is unverifiable and the dataset is internally contradictory on these dates (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21634 — Haiti (medium) — FAIL: false-premise
+**Q:** When did Marc Collat's Haiti first reach a World Cup qualifying final round?
+**Answer:** 2018 qualification cycle
+**Why it fails:** Haiti never reached a World Cup qualifying 'final round' (the Octagon/Hex) in those cycles.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Fix the false premise.
+
+### Row 21635 — Haiti (medium) — FAIL: false-premise
+**Q:** When did the Haiti national team finish third at the CONCACAF Gold Cup?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21636 — Haiti (hard) — FAIL: wrong year
+**Q:** When did the Haiti national team reach its highest FIFA ranking of 38th?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21637 — Haiti (medium) — FAIL: false-premise
+**Q:** When did the Haitian national team last reach a CONCACAF Gold Cup semi-final?
+**Answer:** 2019
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21638 — Haiti (hard) — FAIL: wrong year
+**Q:** When did the Haitian national team reach its highest FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21639 — Haiti (hard) — FAIL: wrong year
+**Q:** When did the Haitian team reach its highest FIFA ranking of 38th?
+**Answer:** In 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not In 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 21640 — Haiti (medium) — FAIL: fabricated
+**Q:** When was Haiti's Duckens Nazon named to the CONCACAF Gold Cup Best XI?
+**Answer:** 2019
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21641 — Haiti (medium) — FAIL: fabricated
+**Q:** When was Haitian forward Duckens Nazon named to the CONCACAF Gold Cup Best XI?
+**Answer:** 2019
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21645 — Haiti (easy) — FAIL: false-premise
+**Q:** Where did Haiti finish at the 2019 CONCACAF Gold Cup?
+**Answer:** Third place
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21647 — Haiti (easy) — FAIL: false
+**Q:** Where did Haiti host its 2022 World Cup home qualifiers?
+**Answer:** Dominican Republic and US
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21648 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** Where did Haiti host its 2022 World Cup qualifier against Canada?
+**Answer:** United States
+**Why it fails:** Haiti never faced Canada in 2022 WCQ (their tie was a two-legged second round vs Canada; Jamaica/T&T were not Haiti's opponents - Jamaica was in the Octagon).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21651 — Haiti (easy) — FAIL: false
+**Q:** Where did Haiti play its 2022 World Cup qualifiers due to home venue issues?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21653 — Haiti (easy) — FAIL: false
+**Q:** Where did Haiti play many home World Cup qualifiers since 2010?
+**Answer:** Dominican Republic and USA
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21654 — Haiti (easy) — FAIL: false
+**Q:** Where did Haiti play most home qualifiers for the 2022 FIFA World Cup?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21655 — Haiti (easy) — FAIL: false
+**Q:** Where did Haiti play their 2022 World Cup home qualifiers?
+**Answer:** Neutral venues
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21657 — Haiti (easy) — FAIL: false
+**Q:** Where has Haiti often played its FIFA World Cup qualifiers since 2010?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti only routinely moved home qualifiers abroad in 2024-26 (they hosted Canada in Port-au-Prince in 2021), not 'since 2010'.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21658 — Haiti (easy) — FAIL: false
+**Q:** Where has Haiti played its home FIFA World Cup qualifiers since 2022?
+**Answer:** Neutral venues
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21659 — Haiti (easy) — FAIL: false
+**Q:** Where has Haiti played many home World Cup qualifiers since 2006?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21660 — Haiti (easy) — FAIL: false
+**Q:** Where have Haiti often played their home World Cup qualifiers since 2010?
+**Answer:** Neutral venues abroad
+**Why it fails:** Haiti hosted its June 2021 second-round leg vs Canada at Stade Sylvio Cator, Port-au-Prince; the security-driven move to neutral venues abroad belongs to the 2024-26 cycle, not 2006-2022.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Remove/replace the false claim.
+
+### Row 21685 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean nation is a modern rival of Haiti?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21693 — Haiti (medium) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti edge out in 2018 World Cup qualifying group stage?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21694 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti face in 2014 World Cup qualifying?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21695 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti face in 2018 World Cup CONCACAF qualifying?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21697 — Haiti (medium) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti face in a 2018 World Cup qualifier group stage?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21698 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti face in a recent FIFA World Cup qualifier?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21699 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti face in the 2018 FIFA World Cup qualifiers?
+**Answer:** Jamaica
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21700 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean rival did Haiti face in the 2022 World Cup qualifiers?
+**Answer:** Jamaica
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21701 — Haiti (easy) — FAIL: unverified
+**Q:** Which Caribbean rival was in Haiti's 2022 FIFA World Cup qualifying group?
+**Answer:** Jamaica
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21738 — Haiti (easy) — FAIL: false-premise
+**Q:** Which CONCACAF nation matched Haiti's third-place finish at the 2019 Gold Cup?
+**Answer:** Jamaica
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21801 — Haiti (easy) — FAIL: unverified
+**Q:** Which CONCACAF rival did Haiti's resilience NOT overcome in 2022 World Cup qualifying?
+**Answer:** Canada
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21847 — Haiti (easy) — FAIL: unverified
+**Q:** Which CONCACAF team, like Haiti, displayed resilience in 2022 World Cup qualifying?
+**Answer:** Haiti
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21853 — Haiti (easy) — FAIL: unverified
+**Q:** Which CONCACAF team's 2023 Gold Cup run best mirrored Haiti's renowned resilience?
+**Answer:** Haiti
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21857 — Haiti (easy) — FAIL: unverified
+**Q:** Which CONCACAF team's World Cup record best matches Haiti's famed resilience?
+**Answer:** Costa Rica
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 21876 — Haiti (easy) — FAIL: false
+**Q:** Which Haiti captain led the squad at the 2022 FIFA World Cup qualifiers?
+**Answer:** Duckens Nazon
+**Why it fails:** Nazon (a forward) was not Haiti's captain; the long-serving captain/keeper was Johny Placide.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove/replace the false claim.
+
+### Row 21907 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward earned a 2019 Gold Cup Best XI award?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21908 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward earned a 2019 Gold Cup Best XI spot?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21909 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward joined Weston McKennie in the 2019 CONCACAF Gold Cup Best XI?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21912 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward made the CONCACAF Gold Cup Best XI in 2019?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21915 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward starred in their 2019 Gold Cup semi-final run?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21918 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward was included in the 2019 CONCACAF Gold Cup Best XI?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21921 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward was selected for the 2019 CONCACAF Gold Cup Best XI?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21925 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward's 2019 Gold Cup displays earned a Best XI spot?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21926 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward's 2019 Gold Cup form earned him a Best XI place?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21927 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti forward's 2019 Gold Cup form earned him Best XI honors?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 21952 — Haiti (easy) — FAIL: false-premise
+**Q:** Which Haiti manager led the team to third place at the 2019 CONCACAF Gold Cup?
+**Answer:** Marc Collat
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 21959 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** Which Haiti manager led them in their 2022 FIFA World Cup qualifier against Canada?
+**Answer:** Jean-Jacques Pierre
+**Why it fails:** Haiti never faced Canada in 2022 WCQ (their tie was a two-legged second round vs Canada; Jamaica/T&T were not Haiti's opponents - Jamaica was in the Octagon).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 21971 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti manager oversaw their 2022â€“23 Nations League B unbeaten promotion campaign?
+**Answer:** Gabriel Calderón Pellegrino
+**Why it fails:** Wrong: Haiti's 2022-23 NL B promotion was under Jean-Jacques Pierre (2021-2023), not Gabriel Calderon.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove - not supported by sources.
+
+### Row 22005 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti midfielder earned 2019 Gold Cup tournament-wide acclaim?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22006 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti midfielder earned tournament-wide acclaim at the 2019 CONCACAF Gold Cup?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22008 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti midfielder established himself in Europe's top flights and became the team's heartbeat during 2022 World Cup qualifying?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22014 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti midfielder's European club success made him the tactical heartbeat for 2026 World Cup qualifiers?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22022 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** Which Haiti player competes in Ligue 1 or Ligue 2?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 22023 — Haiti (easy) — FAIL: false
+**Q:** Which Haiti player conceded a 93rd-minute penalty vs Mexico in 2019?
+**Answer:** Dany Jean
+**Why it fails:** The 2019 SF penalty foul was committed by Herve Bazile, not Dany Jean.
+**Source:** https://www.concacaf.com/gold-cup/article/jimenez-goal-sends-mexico-past-haiti-and-into-final
+**Remedy:** Remove/replace the false claim.
+
+### Row 22024 — Haiti (easy) — FAIL: false
+**Q:** Which Haiti player conceded a late penalty vs Mexico in 2019 Gold Cup?
+**Answer:** Duckens Nazon
+**Why it fails:** The 2019 SF penalty foul was committed by Herve Bazile, not Duckens Nazon.
+**Source:** https://www.concacaf.com/gold-cup/article/jimenez-goal-sends-mexico-past-haiti-and-into-final
+**Remedy:** Remove/replace the false claim.
+
+### Row 22025 — Haiti (easy) — FAIL: false
+**Q:** Which Haiti player conceded the controversial penalty against Mexico in the 2019 Gold Cup semi-final?
+**Answer:** Duckens Nazon
+**Why it fails:** The 2019 SF penalty foul was committed by Herve Bazile, not Duckens Nazon.
+**Source:** https://www.concacaf.com/gold-cup/article/jimenez-goal-sends-mexico-past-haiti-and-into-final
+**Remedy:** Remove/replace the false claim.
+
+### Row 22028 — Haiti (easy) — FAIL: false-premise (opponent)
+**Q:** Which Haiti player debuted in a 2022 World Cup qualifier against Jamaica?
+**Answer:** Dany Jean
+**Why it fails:** Haiti never faced Jamaica in 2022 WCQ (their tie was a two-legged second round vs Canada; Jamaica/T&T were not Haiti's opponents - Jamaica was in the Octagon).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Use an opponent Haiti actually faced.
+
+### Row 22030 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti player earned tournament-wide acclaim at the 2019 Gold Cup?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22031 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti player exemplified immense resilience during 2022 World Cup qualifying?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22032 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti player exemplified their team's renowned resilience in 2026 World Cup qualifying?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22040 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** Which Haiti player in 2023 was a French-born dual-national playing in Ligue 1?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 22041 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** Which Haiti player in 2026 qualifying competes in France's Ligue 1?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 22042 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** Which Haiti player in 2026 WCQs is a French-born Ligue 1 dual-national?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 22043 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** Which Haiti player in the 2023 Gold Cup was a French-born Ligue 1 dual-national?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 22049 — Haiti (easy) — FAIL: false
+**Q:** Which Haiti player made his international debut during 2022 FIFA World Cup qualifying?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot debuted around 2018-19, not during the 2022 cycle.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove/replace the false claim.
+
+### Row 22092 — Haiti (easy) — FAIL: unverified/contradictory
+**Q:** Which Haiti player starred for French club Nantes in the 2020s?
+**Answer:** Duckens Nazon
+**Why it fails:** The dataset names both Nazon and Guerrier as 'starring for Nantes'; the Nazon-Nantes claim is unverified/contradictory.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 22093 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti player starred in their 2019 CONCACAF Gold Cup semi-final campaign?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22098 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti player was named in the 2023 Gold Cup Best XI?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22106 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haiti player's 2019 Gold Cup performances earned a Best XI spot?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22109 — Haiti (medium) — FAIL: wrong figure
+**Q:** Which Haiti result in 2023 Nations League B secured their promotion?
+**Answer:** Winning 5 of 6
+**Why it fails:** Haiti won 5 of 6 in 2022-23 NL B (5W-1D-0L), not all six.
+**Source:** https://en.wikipedia.org/wiki/2022%E2%80%9323_CONCACAF_Nations_League_B
+**Remedy:** Use the correct figure.
+
+### Row 22110 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti rival conceded a crucial 2018 World Cup qualifying goal to them?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22112 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti rival did not face them in 2026 World Cup qualifying?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22113 — Haiti (easy) — FAIL: false-premise
+**Q:** Which Haiti rival was in Jamaica's 2014 FIFA World Cup squad?
+**Answer:** Rodolph Austin
+**Why it fails:** Jamaica did NOT play the 2014 World Cup (their only WC is 1998), so there was no 'Jamaica 2014 World Cup squad'.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Fix the false premise.
+
+### Row 22116 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haiti squad trait was highlighted during their 2023 World Cup qualifiers?
+**Answer:** Resilience and tactical versatility
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22152 — Haiti (easy) — FAIL: false
+**Q:** Which Haitian 2022 World Cup qualifier developed in the Ligue Haïtienne?
+**Answer:** Duckens Nazon
+**Why it fails:** Nazon was born/raised in France, not a Ligue Haitienne product.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove/replace the false claim.
+
+### Row 22218 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward made the CONCACAF Gold Cup Best XI in 2019?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22223 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward was in the 2019 CONCACAF Gold Cup Best XI?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22225 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward's 2019 Gold Cup displays earned a CONCACAF Best XI spot?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22226 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward's 2019 Gold Cup form boosted their 2022 World Cup qualifying campaign?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22227 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward's 2019 Gold Cup performances earned a Best XI spot?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22228 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward's 2019 Gold Cup performances helped them reach the semi-finals?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22229 — Haiti (easy) — FAIL: fabricated
+**Q:** Which Haitian forward's 2019 Gold Cup performances led to their semi-final finish?
+**Answer:** Duckens Nazon
+**Why it fails:** Fabricated: the 2019 Gold Cup Best XI had no Haitian players (7 Mexico, 3 USA, 1 Canada). Nazon was not selected.
+**Source:** https://en.wikipedia.org/wiki/CONCACAF_Gold_Cup_awards
+**Remedy:** Remove - not supported by sources.
+
+### Row 22250 — Haiti (easy) — FAIL: anachronistic
+**Q:** Which Haitian manager's team achieved their first FIFA World Cup ranking peak?
+**Answer:** Antoine Tassy
+**Why it fails:** FIFA rankings did not exist in 1974; Haiti's 38th-place ranking peak came in 2013, not under Tassy.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove the anachronism.
+
+### Row 22252 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder became the heartbeat of his national team in the 2020s?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22253 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder became the national team's heartbeat after 2020?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22255 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder became the national team's heartbeat during the 2022 FIFA World Cup qualifiers?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22257 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder became the team's heartbeat after succeeding in Europe?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22259 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder became the team's heartbeat in the 2020s?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22260 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder earned acclaim at the 2019 Gold Cup?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22261 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder earned acclaim during the 2019 Gold Cup?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22262 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder earned tournament-wide acclaim at the 2019 Gold Cup?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22263 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder earned tournament-wide acclaim during the 2019 Gold Cup?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22268 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder was the heartbeat of their 2022 FIFA World Cup qualifying campaign?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22269 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder was the team's European-based heartbeat for 2026 World Cup qualifiers?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22270 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder was the team's heartbeat in 2026 World Cup qualifiers?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22274 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian midfielder's 2019 Gold Cup performances earned him tournament-wide acclaim?
+**Answer:** Steeven Saba
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22283 — Haiti (easy) — FAIL: false
+**Q:** Which Haitian player captained the 2022 World Cup qualifying squad?
+**Answer:** Duckens Nazon
+**Why it fails:** Nazon (a forward) was not Haiti's captain; the long-serving captain/keeper was Johny Placide.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove/replace the false claim.
+
+### Row 22294 — Haiti (easy) — FAIL: stale/wrong club
+**Q:** Which Haitian player for the 2026 qualifiers competes in France's Ligue 1 or Ligue 2?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Pierrot does not play in Ligue 1: in 2025-26 he is at Caykur Rizespor (Turkey), on loan from AEK Athens; the cited French club is wrong.
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Update to the correct current club.
+
+### Row 22296 — Haiti (easy) — FAIL: non-unique
+**Q:** Which Haitian player in the 2026 qualifiers was born in France?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Distractor Duckens Nazon was also born in France (Paris), so 'which 2026 player was born in France' is non-unique; Pierrot's birthplace is also disputed (US/Guadeloupe).
+**Source:** https://en.wikipedia.org/wiki/Frantzdy_Pierrot
+**Remedy:** Make the answer unique.
+
+### Row 22306 — Haiti (easy) — FAIL: unverified/contradictory
+**Q:** Which Haitian player starred for Nantes in France's Ligue 1 during the 2022 World Cup cycle?
+**Answer:** Duckens Nazon
+**Why it fails:** Both Nazon and Guerrier are claimed to 'star for Nantes'; the Nazon-Nantes claim is unverified/contradictory.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 22307 — Haiti (easy) — FAIL: unverified/contradictory
+**Q:** Which Haitian player starred for Nantes in France's Ligue 1?
+**Answer:** Wilde-Donald Guerrier
+**Why it fails:** The dataset names both Guerrier and Nazon as Nantes players; unverified/contradictory.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop the unverifiable/contradictory claim.
+
+### Row 22312 — Haiti (easy) — FAIL: non-unique
+**Q:** Which Haitian player was NOT the team's captain during a 2022 World Cup qualifier?
+**Answer:** Frantzdy Pierrot
+**Why it fails:** Three of the four options (Pierrot, Jerome, Guerrier) were not the captain, so 'which was NOT the captain' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 22317 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian rival did Duckens Nazon score against in a 2018 World Cup qualifier?
+**Answer:** Jamaica
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22319 — Haiti (easy) — FAIL: unverified
+**Q:** Which Haitian squad trait was crucial in their 2022 World Cup qualifiers?
+**Answer:** Immense resilience
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22320 — Haiti (medium) — FAIL: unverified
+**Q:** Which Haitian squad was praised for its resilience in 2022 World Cup qualifying?
+**Answer:** The 2022 squad
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22368 — Haiti (easy) — FAIL: false
+**Q:** Which Haitian World Cup 2022 qualifier played for a Ligue Haïtienne club?
+**Answer:** Steeven Saba
+**Why it fails:** Steeven Saba is a France-based player, not a Ligue Haitienne / Violette AC player.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Remove/replace the false claim.
+
+### Row 22412 — Haiti (easy) — FAIL: non-unique
+**Q:** Which nation did NOT win the CONCACAF Championship in the same year as Haiti?
+**Answer:** United States
+**Why it fails:** Haiti won the 1973 CONCACAF Championship; Mexico, Costa Rica and Canada also did NOT win in 1973, so 'which did not win the same year' has multiple correct answers.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Make the answer unique.
+
+### Row 22434 — Haiti (easy) — FAIL: unverified
+**Q:** Which nation is a modern Caribbean rival of Haiti in CONCACAF?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22463 — Haiti (easy) — FAIL: false-premise
+**Q:** Which stadium hosted Haiti's 2019 Gold Cup match against Jamaica?
+**Answer:** NRG Stadium
+**Why it fails:** Haiti did not play Jamaica at the 2019 Gold Cup (their group was Costa Rica, Bermuda, Nicaragua).
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 22465 — Haiti (easy) — FAIL: false
+**Q:** Which stadium hosted Haiti's 2019 Gold Cup semi-final vs Mexico?
+**Answer:** NRG Stadium
+**Why it fails:** The 2019 SF v Mexico was at State Farm Stadium in Glendale, Arizona, not NRG Stadium (Houston).
+**Source:** https://www.si.com/soccer/2019/07/03/mexico-haiti-gold-cup-semifinal-penalty-kick-raul-jimenez
+**Remedy:** Remove/replace the false claim.
+
+### Row 22466 — Haiti (easy) — FAIL: false
+**Q:** Which stadium hosted Haiti's 2019 Gold Cup semi-final?
+**Answer:** NRG Stadium
+**Why it fails:** The 2019 SF was in Glendale, AZ (State Farm Stadium), not NRG Stadium - State Farm is even offered as a distractor.
+**Source:** https://www.si.com/soccer/2019/07/03/mexico-haiti-gold-cup-semifinal-penalty-kick-raul-jimenez
+**Remedy:** Remove/replace the false claim.
+
+### Row 22470 — Haiti (easy) — FAIL: false
+**Q:** Which stadium hosted Haiti's narrow 2019 Gold Cup semi-final loss to Mexico?
+**Answer:** NRG Stadium
+**Why it fails:** The 2019 SF loss to Mexico was in Glendale, AZ, not NRG Stadium, Houston.
+**Source:** https://www.si.com/soccer/2019/07/03/mexico-haiti-gold-cup-semifinal-penalty-kick-raul-jimenez
+**Remedy:** Remove/replace the false claim.
+
+### Row 22514 — Haiti (easy) — FAIL: unverified
+**Q:** Which team is one of Haiti's main modern Caribbean rivals?
+**Answer:** Trinidad and Tobago
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22520 — Haiti (easy) — FAIL: unverified
+**Q:** Which two Caribbean rivals did Haiti defeat in 2019 Gold Cup group play?
+**Answer:** Jamaica and Trinidad
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22521 — Haiti (easy) — FAIL: unverified
+**Q:** Which two Caribbean rivals did Haiti face in 2022 FIFA World Cup qualifying?
+**Answer:** Jamaica and Trinidad
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22522 — Haiti (easy) — FAIL: unverified
+**Q:** Which two Caribbean rivals did Haiti's 2026 World Cup qualifying squad feature many players competing against?
+**Answer:** Jamaica and Trinidad
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22523 — Haiti (easy) — FAIL: unverified
+**Q:** Which two Caribbean rivals does Haiti compete with in modern FIFA World Cup qualifiers?
+**Answer:** Jamaica and Trinidad
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22549 — Haiti (easy) — FAIL: unverified
+**Q:** Which two nations are Haiti's modern Caribbean rivals in World Cup qualifiers?
+**Answer:** Jamaica and Trinidad
+**Why it fails:** Haiti's genuine rivalry is the island derby with the Dominican Republic; a 'modern rivalry with Trinidad/Jamaica' is an unsupported, soft framing.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22584 — Haiti (hard) — FAIL: wrong year
+**Q:** Which year did Haiti's national team reach its highest FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 22588 — Haiti (hard) — FAIL: wrong year
+**Q:** Which year did the Haiti national team reach its highest FIFA ranking?
+**Answer:** 2012
+**Why it fails:** Haiti's record FIFA ranking (38th) came in January 2013, not 2012; 2013 is not offered.
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Use the correct year.
+
+### Row 22614 — Haiti (easy) — FAIL: unverified
+**Q:** Who was the heartbeat of Haiti's national team midfield in the 2020s?
+**Answer:** Danley Jean Jacques
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22619 — Haiti (easy) — FAIL: false-premise
+**Q:** Why did Haiti finish third at the 2019 CONCACAF Gold Cup?
+**Answer:** They reached the semi-finals
+**Why it fails:** The 2019 Gold Cup had no third-place match; Haiti reached the semifinals (lost 1-0 to Mexico) but did not officially 'finish third'.
+**Source:** https://en.wikipedia.org/wiki/2019_CONCACAF_Gold_Cup
+**Remedy:** Fix the false premise.
+
+### Row 22632 — Haiti (easy) — FAIL: false-premise
+**Q:** Why did Haiti play its 2022 World Cup qualifiers at neutral venues?
+**Answer:** Security challenges and upgrades
+**Why it fails:** Haiti's 2022 home leg vs Canada was at Stade Sylvio Cator, Port-au-Prince (June 2021), so '2022 qualifiers at neutral venues' is a false premise.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_%E2%80%93_CONCACAF_second_round
+**Remedy:** Fix the false premise.
+
+### Row 22635 — Haiti (easy) — FAIL: false
+**Q:** Why did Haiti play their 2023 Gold Cup qualifiers away from Stade Sylvio Cator?
+**Answer:** Infrastructure upgrades needed
+**Why it fails:** Haiti used Stade Sylvio Cator for 2022-23 home games; the '2023 Gold Cup qualifiers away from Sylvio Cator' premise is confused/contradictory.
+**Source:** https://en.wikipedia.org/wiki/2022%E2%80%9323_CONCACAF_Nations_League_B
+**Remedy:** Remove/replace the false claim.
+
+### Row 22638 — Haiti (easy) — FAIL: false
+**Q:** Why did Haiti reach the 2015 CONCACAF Gold Cup quarter-finals?
+**Answer:** They won their group.
+**Why it fails:** Haiti did NOT win their 2015 Gold Cup group (they finished 3rd and advanced as a best third-placed team).
+**Source:** https://en.wikipedia.org/wiki/Haiti_at_the_CONCACAF_Gold_Cup
+**Remedy:** Remove/replace the false claim.
+
+### Row 22639 — Haiti (easy) — FAIL: unverified
+**Q:** Why did Haiti reach the 2023 Gold Cup quarter-finals?
+**Answer:** Resilience and tactical versatility
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22641 — Haiti (easy) — FAIL: unverified
+**Q:** Why did Haiti rise in the 2022 FIFA World Cup rankings?
+**Answer:** Resilience and tactical versatility
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22646 — Haiti (easy) — FAIL: unverified
+**Q:** Why did Haiti's 2022 World Cup qualifying team show such resilience?
+**Answer:** Tactical versatility under pressure
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22663 — Haiti (easy) — FAIL: unverified
+**Q:** Why did Haiti's Caribbean rivalry with Jamaica intensify in the 2010s?
+**Answer:** Gold Cup meetings
+**Why it fails:** Soft, unsupported 'modern rivalry with Jamaica/Trinidad' framing (Haiti's real rivalry is with the Dominican Republic).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22665 — Haiti (medium) — FAIL: unverified
+**Q:** Why did Haiti's FIFA ranking rise significantly in the 2020s?
+**Answer:** Resilience in challenging circumstances
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+### Row 22670 — Haiti (easy) — FAIL: unverified
+**Q:** Why did Haiti's team succeed at the 2023 Gold Cup?
+**Answer:** Resilience and tactical versatility
+**Why it fails:** Soft, unverifiable narrative claim with no authoritative source (UNVERIFIED->FAIL).
+**Source:** https://en.wikipedia.org/wiki/Haiti_national_football_team
+**Remedy:** Drop or substantiate the claim.
+
+
+## Scotland (batch-2 rows 36342–38412)
+
+### Row 36343 — Scotland (easy) — FAIL
+**Q:** After failing to reach the 2022 World Cup, which nation did Scotland defeat to qualify for Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36348 — Scotland (easy) — FAIL
+**Q:** After losing to Germany in 2024, how did Scotland qualify for Euro 2024?
+**Answer:** Playoff win over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36353 — Scotland (medium) — FAIL
+**Q:** After Scotland's 2010-2022 qualification failures, which nation also missed four straight World Cups?
+**Answer:** Wales
+**Why it fails:** False — Wales did NOT miss four straight World Cups: they qualified for 2022 (their first since 1958).
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36355 — Scotland (medium) — FAIL
+**Q:** After Scotland's 2026 qualification ended a 28-year absence, which other UEFA nation ended a 20-year World Cup drought in 2022?
+**Answer:** Wales
+**Why it fails:** False — Wales' 2022 qualification ended a 64-year drought (since 1958), not a '20-year' absence.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36356 — Scotland (medium) — FAIL
+**Q:** After Scotland's 2026 qualification, which nation ended a longer World Cup absence?
+**Answer:** Scotland
+**Why it fails:** Self-referential answer — the question's subject (Scotland) is given as the answer (GEN defect, §7.7).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36364 — Scotland (hard) — FAIL
+**Q:** After which World Cup did Scotland qualify for Euro 2024?
+**Answer:** The 2022 World Cup
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36367 — Scotland (easy) — FAIL
+**Q:** Against which nation did Scotland secure their Euro 2024 playoff win?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36392 — Scotland (easy) — FAIL
+**Q:** At Euro 2024, Scotland lost their opener to Germany by what score?
+**Answer:** 2026-01-05 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36393 — Scotland (easy) — FAIL
+**Q:** At Euro 2024, what was Scotland's scoreline in their opening loss to Germany?
+**Answer:** 2026-01-05 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36406 — Scotland (easy) — FAIL
+**Q:** At the 2022 World Cup, Scotland's national team first played an international match against which opponent in 1872?
+**Answer:** England
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36407 — Scotland (easy) — FAIL
+**Q:** At the 2022 World Cup, Scotland's oldest football rivalry is with which nation?
+**Answer:** England
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36410 — Scotland (easy) — FAIL
+**Q:** At the 2022 World Cup, which nation's squad had players from the Premier League, Serie A, and the Scottish Premiership?
+**Answer:** Scotland
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36418 — Scotland (easy) — FAIL
+**Q:** At the 2026 World Cup, which nation ended a drought as long as Scotland's?
+**Answer:** Scotland
+**Why it fails:** Self-referential answer — the question's subject (Scotland) is given as the answer (GEN defect, §7.7).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36423 — Scotland (medium) — FAIL
+**Q:** At which FIFA World Cup did Scotland first field players from the Premier League, Serie A, and Scottish Premiership?
+**Answer:** 2022 World Cup
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36443 — Scotland (medium) — FAIL
+**Q:** For Euro 2024, which team did Scotland defeat in a qualification playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36485 — Scotland (easy) — FAIL
+**Q:** How did Scotland qualify for the Euro 2024 finals?
+**Answer:** Playoff win over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36498 — Scotland (medium) — FAIL
+**Q:** How many Old Firm players were in Scotland's 2022 World Cup squad?
+**Answer:** Four players
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36528 — Scotland (easy) — FAIL
+**Q:** In 2014 World Cup qualifiers, which old stadium hosted Scotland's 2-1 win over Croatia?
+**Answer:** Hampden Park
+**Why it fails:** Wrong score — Scotland beat Croatia 2-0 at Hampden (Oct 2013), not 2-1.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36534 — Scotland (easy) — FAIL
+**Q:** In 2022 WC qualifying, Scotland faced which intense rival nation?
+**Answer:** England
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36538 — Scotland (easy) — FAIL
+**Q:** In 2022, which Scotland player debuted at the world's oldest international venue?
+**Answer:** Nathan Patterson
+**Why it fails:** Non-unique/wrong year — many Scotland players debuted at Hampden; Patterson debuted in 2021, not 2022.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36539 — Scotland (easy) — FAIL
+**Q:** In 2023 World Cup qualifying, which Scotland midfielder scored first, McTominay or McGinn?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36545 — Scotland (easy) — FAIL
+**Q:** In a 2026 World Cup qualifier, which Scotland midfielder's late goal secured a crucial 2-1 win?
+**Answer:** Scott McTominay
+**Why it fails:** Unverifiable specific — no documented McTominay late winner secured a 2-1 win in 2026 WCQ (he scored twice in the campaign, incl. the Denmark overhead).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36550 — Scotland (medium) — FAIL
+**Q:** In Scotland's 2022 World Cup group stage match against Denmark, who was their captain?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36551 — Scotland (medium) — FAIL
+**Q:** In Scotland's 2022 World Cup group stage match, which defender played for Arsenal?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36552 — Scotland (medium) — FAIL
+**Q:** In Scotland's 2022 World Cup group stage, which midfielder scored over 15 international goals?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36553 — Scotland (easy) — FAIL
+**Q:** In Scotland's 2022 World Cup group, which captain also played for Liverpool?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36554 — Scotland (easy) — FAIL
+**Q:** In Scotland's 2022 World Cup group, which creative midfielder started against Croatia?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36561 — Scotland (medium) — FAIL
+**Q:** In Scotland's 2022 World Cup squad, how many major leagues were represented?
+**Answer:** Three
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36563 — Scotland (easy) — FAIL
+**Q:** In Scotland's 2026 World Cup cycle, which key midfielder plays for Brighton?
+**Answer:** Billy Gilmour
+**Why it fails:** Stale club — Billy Gilmour moved from Brighton to Napoli in 2024; for the 2026 cycle he plays for Napoli, not Brighton.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36565 — Scotland (easy) — FAIL
+**Q:** In Scotland's 2026 World Cup qualifier, which Arsenal left-back provided crucial defensive cover?
+**Answer:** Kieran Tierney
+**Why it fails:** Stale club — for the 2026 cycle Kieran Tierney plays for Celtic (returned 2025), not Arsenal.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36567 — Scotland (easy) — FAIL
+**Q:** In the 2018 FIFA World Cup qualifiers, which team did Scotland draw with twice?
+**Answer:** England
+**Why it fails:** False — Scotland did not draw England twice in 2018 WC qualifying: a 3-0 loss at Wembley and a 2-2 draw at Hampden.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36568 — Scotland (easy) — FAIL
+**Q:** In the 2018 qualifiers, which UEFA team did Scotland fail to reach the World Cup with?
+**Answer:** Italy
+**Why it fails:** Non-unique — the Netherlands also failed to qualify for the 2018 World Cup, so 'Italy' is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36569 — Scotland (medium) — FAIL
+**Q:** In the 2018 World Cup group stage, Scotland's oldest rival, England, faced which team?
+**Answer:** Belgium
+**Why it fails:** Non-unique — England also faced Panama and Tunisia in the 2018 World Cup group, not only Belgium.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36572 — Scotland (easy) — FAIL
+**Q:** In the 2022 World Cup, which Scotland player was a product of the Old Firm derby's Celtic academy?
+**Answer:** Callum McGregor
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36577 — Scotland (easy) — FAIL
+**Q:** In their 0-0 Euro 2020 draw with England, which Scotland player's key defensive action secured the point?
+**Answer:** Stephen O'Donnell
+**Why it fails:** Fabricated/contradictory narrative — no documented goal-line clearance/last-ditch block secured the 0-0 v England; rows credit different players (O'Donnell/Hanley) for the same fictional act.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36582 — Scotland (easy) — FAIL
+**Q:** In their Euro 2024 opener, Scotland lost by what scoreline to Germany?
+**Answer:** 2026-01-05 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36595 — Scotland (medium) — FAIL
+**Q:** In which 2026 World Cup qualifier did Scotland's Kieran Tierney face England?
+**Answer:** 2024-11-01 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36597 — Scotland (easy) — FAIL
+**Q:** In which 2026 World Cup qualifier did Scotland's Scott McTominay first score?
+**Answer:** vs Spain
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36628 — Scotland (medium) — FAIL
+**Q:** In which year did Scotland qualify for Euro 2024 by beating Norway?
+**Answer:** 2023
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36629 — Scotland (medium) — FAIL
+**Q:** In which year did Scotland qualify for Euro 2024?
+**Answer:** 2023
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36632 — Scotland (medium) — FAIL
+**Q:** In which year did Scotland select their squad for the 2022 FIFA World Cup?
+**Answer:** 2022
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36635 — Scotland (medium) — FAIL
+**Q:** In which year did Scotland's Callum McGregor make his World Cup debut?
+**Answer:** 2022
+**Why it fails:** False — Callum McGregor never played a World Cup before 2026 (Scotland missed 2018 & 2022); he has no pre-2026 'World Cup debut'.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36636 — Scotland (medium) — FAIL
+**Q:** In which year did Scotland's John McGinn make his FIFA World Cup debut?
+**Answer:** 2018
+**Why it fails:** False — McGinn never played a World Cup before 2026 (Scotland missed 2018); he has no 2018 World Cup debut.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36653 — Scotland (easy) — FAIL
+**Q:** Scotland ended a 23-year major tournament absence at Euro 2020. Which nation had a longer World Cup absence in the 2000s?
+**Answer:** Greece
+**Why it fails:** False — Greece did not have a 1994-2018 World Cup absence; they qualified for 2010 and 2014.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36658 — Scotland (easy) — FAIL
+**Q:** Scotland ended a 28-year FIFA World Cup absence in 2026. Which other UEFA team ended a 28-year gap earlier?
+**Answer:** Republic of Ireland
+**Why it fails:** False — the Republic of Ireland's 1990 World Cup was their first ever; it did not end a '28-year absence'.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36663 — Scotland (easy) — FAIL
+**Q:** Scotland ended a 28-year World Cup absence in 2026. Which nation ended a 23-year absence in 2020?
+**Answer:** Scotland
+**Why it fails:** Self-referential answer — the question's subject (Scotland) is given as the answer (GEN defect, §7.7).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36683 — Scotland (easy) — FAIL
+**Q:** Scotland lost 5-1 to Germany in 2024; what was the 2008 score?
+**Answer:** Germany 2-0 Scotland
+**Why it fails:** Fabricated — Scotland did not lose 2-0 to Germany in a 2008 qualifier; Germany was not in Scotland's Euro 2008 qualifying group (they met in Euro 2016 qualifying: 2-1 and 3-2).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36686 — Scotland (easy) — FAIL
+**Q:** Scotland lost by what score to Germany in their Euro 2024 opener?
+**Answer:** 2026-01-05 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36690 — Scotland (easy) — FAIL
+**Q:** Scotland qualified for Euro 2024 by beating which nation in a playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36691 — Scotland (hard) — FAIL
+**Q:** Scotland qualified for Euro 2024 via a playoff win over Norway. Which earlier Euro did they end a major tournament drought to reach?
+**Answer:** Euro 2020
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36692 — Scotland (hard) — FAIL
+**Q:** Scotland qualified for Euro 2024 via a playoff, but which year did they last qualify for a major tournament before that?
+**Answer:** 2020
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36693 — Scotland (medium) — FAIL
+**Q:** Scotland qualified for the 2026 FIFA World Cup after missing how many consecutive editions?
+**Answer:** 7 consecutive tournaments
+**Why it fails:** Wrong count — Scotland missed six consecutive World Cups (2002-2022), not seven.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36708 — Scotland (medium) — FAIL
+**Q:** Scotland's 2026 World Cup qualification ended a longer absence than which other UEFA nation's?
+**Answer:** Poland
+**Why it fails:** False — Poland played at the 2018 and 2022 World Cups, so their last appearance was not 2006.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36709 — Scotland (easy) — FAIL
+**Q:** Scotland's 2026 World Cup qualifier vs. Norway was at which historic UEFA stadium?
+**Answer:** Hampden Park
+**Why it fails:** False — Norway was NOT in Scotland's 2026 WC qualifying group (Group C = Denmark, Greece, Belarus); they did not meet in 2026 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36717 — Scotland (hard) — FAIL
+**Q:** Scotland's Euro 2024 playoff win over Norway contrasts which earlier qualification path?
+**Answer:** 2020 Nations League playoff
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36749 — Scotland (easy) — FAIL
+**Q:** What was the final score when Scotland lost to Germany in the Euro 2024 opener?
+**Answer:** 2026-01-05 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36757 — Scotland (medium) — FAIL
+**Q:** What was the score when Scotland lost their Euro 2024 opener?
+**Answer:** 2026-01-05 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36786 — Scotland (medium) — FAIL
+**Q:** When did Scotland first face England in a FIFA World Cup qualifying group?
+**Answer:** 2022 qualifiers
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36788 — Scotland (medium) — FAIL
+**Q:** When did Scotland forward Che Adams make his World Cup qualifying debut?
+**Answer:** 2021-03-01 00:00:00
+**Why it fails:** Excel date-corruption: the answer cell renders a mangled date instead of the intended scoreline/date (e.g. '2026-01-05' = the 5-1 loss to Germany; '2024-11-01' = November 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36805 — Scotland (medium) — FAIL
+**Q:** When did Scotland qualify for Euro 2024 by beating Norway?
+**Answer:** 2023
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36806 — Scotland (medium) — FAIL
+**Q:** When did Scotland qualify for Euro 2024 via a playoff win?
+**Answer:** 2023
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36815 — Scotland (medium) — FAIL
+**Q:** When did Scotland's captain Andy Robertson first lead his nation at a FIFA World Cup?
+**Answer:** 2022 World Cup
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36820 — Scotland (medium) — FAIL
+**Q:** When did Scotland's John McGinn earn his 70th international cap?
+**Answer:** In 2023
+**Why it fails:** Cap-timing wrong — McGinn (debut 2016) did not reach 70 caps in 2023; he passed 70 around 2024-25.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36827 — Scotland (easy) — FAIL
+**Q:** When did Scotland's oldest rivalry with England begin in World Cup history?
+**Answer:** The 1960s
+**Why it fails:** Wrong — Scotland first met England in World Cup qualifying for the 1950 World Cup (Home Championship), not the 1960s.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36843 — Scotland (easy) — FAIL
+**Q:** Where did Scotland finish in their Euro 2020 group?
+**Answer:** Third place
+**Why it fails:** Wrong — Scotland finished 4th (bottom) of Euro 2020 Group D with 1 point, not third.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36860 — Scotland (easy) — FAIL
+**Q:** Which derby's intensity is not compared to Scotland's Old Firm in world football?
+**Answer:** Portugal vs Spain
+**Why it fails:** Subjective/unverifiable — 'which derby is NOT compared to the Old Firm' has no authoritative basis (Argentina-Brazil is widely compared).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36881 — Scotland (easy) — FAIL
+**Q:** Which German player scored a hat-trick against Scotland in Euro 2024?
+**Answer:** Jamal Musiala
+**Why it fails:** Fabricated — no German scored a hat-trick in the 5-1 win; the goals were shared (Wirtz, Havertz pen, Füllkrug, Rüdiger OG-for-Scotland context, Emre Can).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36910 — Scotland (medium) — FAIL
+**Q:** Which major tournament was NOT Scotland's return after a 20+ year absence?
+**Answer:** Euro 2024
+**Why it fails:** Non-unique/muddled — Scotland also did not 'return after 20+ years' for WC 2022 or WC 2018 (they missed both), so Euro 2024 is not the unique answer.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36961 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat in a 2023 playoff to reach Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36962 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat in a 2024 Euro playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36963 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat in a 2024 Euros playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36964 — Scotland (medium) — FAIL
+**Q:** Which nation did Scotland beat in a playoff for Euro 2024 qualification?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36965 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat in a playoff to qualify for Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36969 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat in the Euro 2024 qualifying playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36971 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat in their Euro 2024 qualifying playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36972 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland beat to qualify for Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36974 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland defeat in a 2024 Euro playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36975 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland defeat in a playoff to reach Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36976 — Scotland (easy) — FAIL
+**Q:** Which nation did Scotland defeat in the Euro 2024 qualifying playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 36979 — Scotland (medium) — FAIL
+**Q:** Which nation did Scotland defeat in their Euro 2024 qualification playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37034 — Scotland (easy) — FAIL
+**Q:** Which nation hosted Scotland's first World Cup match vs England?
+**Answer:** Italy
+**Why it fails:** False — Scotland and England have never met at a World Cup finals; there was no such match in Italy 1990.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37045 — Scotland (easy) — FAIL
+**Q:** Which nation last qualified for a FIFA World Cup before 2006: Scotland, Greece, Turkey, or Wales?
+**Answer:** Scotland
+**Why it fails:** Non-unique — Turkey (last WC 2002) and Wales (1958) also last qualified before 2006, not only Scotland.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37075 — Scotland (easy) — FAIL
+**Q:** Which nation, like Scotland in 2026, qualified under their manager Clarke?
+**Answer:** Scotland
+**Why it fails:** Self-referential answer — the question's subject (Scotland) is given as the answer (GEN defect, §7.7).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37076 — Scotland (easy) — FAIL
+**Q:** Which nation, like Scotland with its Old Firm derby, qualified for the 2022 FIFA World Cup?
+**Answer:** Wales
+**Why it fails:** Non-unique — England, Germany and Spain also qualified for the 2022 World Cup, not only Wales.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37078 — Scotland (easy) — FAIL
+**Q:** Which nation, like Scotland, qualified for both Euro 2020 and Euro 2024?
+**Answer:** Scotland
+**Why it fails:** Self-referential answer — the question's subject (Scotland) is given as the answer (GEN defect, §7.7).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37080 — Scotland (medium) — FAIL
+**Q:** Which nation's 2026 World Cup qualification ended a 28-year absence like Scotland's?
+**Answer:** Scotland
+**Why it fails:** Self-referential answer — the question's subject (Scotland) is given as the answer (GEN defect, §7.7).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37089 — Scotland (easy) — FAIL
+**Q:** Which nation's four consecutive World Cup absences matched Scotland's from 2010 to 2022?
+**Answer:** Republic of Ireland
+**Why it fails:** Non-unique — Northern Ireland and Norway also missed all four of 2010/14/18/22, not only the Republic of Ireland.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37095 — Scotland (easy) — FAIL
+**Q:** Which of Scotland's Euro 2024 playoff rivals also qualified for the 2026 World Cup?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37107 — Scotland (easy) — FAIL
+**Q:** Which rival did Scotland face in their 2022 FIFA World Cup qualifying group?
+**Answer:** England
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37108 — Scotland (easy) — FAIL
+**Q:** Which rival nation did Scotland face at both Euro 2020 and Euro 2024?
+**Answer:** England
+**Why it fails:** False — Scotland did not face England at Euro 2024 (their group was Germany, Switzerland, Hungary); only Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37117 — Scotland (easy) — FAIL
+**Q:** Which Scotland 2022 World Cup squad member played for Celtic or Rangers?
+**Answer:** Callum McGregor
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37118 — Scotland (easy) — FAIL
+**Q:** Which Scotland 2022 World Cup squad member plays in Serie A?
+**Answer:** Scott McTominay
+**Why it fails:** False x2 — Scotland were not at the 2022 World Cup, and McTominay was at Manchester United (not Napoli/Serie A) in 2022; he joined Napoli in 2024.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37131 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain at the 2022 FIFA World Cup also plays for Liverpool?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37132 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain at the 2022 World Cup is also Liverpool's talisman?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37133 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain at the 2022 World Cup played for Liverpool?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37135 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain at the 2022 World Cup was also a Liverpool defender?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37144 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain faced Croatia at the 2022 World Cup?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37145 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain faced England at the 2026 FIFA World Cup?
+**Answer:** Andy Robertson
+**Why it fails:** Fabricated/unverified — no confirmed Scotland-England fixture at the 2026 World Cup (they were not drawn together; group games had only just begun).
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37154 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain had over 70 caps for the 2022 World Cup cycle?
+**Answer:** Andy Robertson
+**Why it fails:** Cap-timing wrong — Robertson had ~55-60 caps by the end of the 2022 cycle, not 70+ (he reached 70 around 2024).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37199 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain played at the 2022 World Cup host nation?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37209 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain starred at Wembley during 2022 World Cup qualifying?
+**Answer:** Andy Robertson
+**Why it fails:** False — Scotland did not play at Wembley in 2022 WC qualifying (England was in a different group); the Wembley 0-0 was Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37221 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain was a top Premier League left-back at the 2022 World Cup?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37225 — Scotland (easy) — FAIL
+**Q:** Which Scotland captain was selected for the 2022 FIFA World Cup squad?
+**Answer:** Andy Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37243 — Scotland (easy) — FAIL
+**Q:** Which Scotland coach opted for a defensive 5-4-1 formation against England in a 2021 World Cup qualifier?
+**Answer:** Steve Clarke
+**Why it fails:** False — the 0-0 v England at Wembley (2021) was a Euro 2020 group game, not a 2022 WC qualifier; Scotland & England were in different WCQ groups.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37249 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder assisted the winner against Spain in 2023 World Cup qualifying?
+**Answer:** John McGinn
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37250 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder at the 2022 World Cup played for Aston Villa?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37252 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder made his FIFA World Cup debut in 2022?
+**Answer:** John McGinn
+**Why it fails:** False — McGinn made no World Cup finals debut in 2022 (Scotland did not qualify).
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37254 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder played at the 2022 World Cup venue Al Thumama Stadium?
+**Answer:** John McGinn
+**Why it fails:** Fabricated venue — the 2022 WC playoff v Ukraine was at Hampden Park, not Al Thumama Stadium (Qatar); Scotland never played at Al Thumama.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37258 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder started against England in the 2022 FIFA World Cup qualifiers?
+**Answer:** John McGinn
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37259 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder started all 8 qualifiers for the 2022 FIFA World Cup?
+**Answer:** John McGinn
+**Why it fails:** Unverifiable/wrong count — Scotland's 2022 WCQ group had 10 matches, not 8.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37261 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder started the 2022 World Cup qualifier vs England?
+**Answer:** John McGinn
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37262 — Scotland (easy) — FAIL
+**Q:** Which Scotland creative midfielder started their 2022 World Cup playoff final?
+**Answer:** John McGinn
+**Why it fails:** False — Scotland lost the 2022 WC playoff SEMI-final to Ukraine and never reached the playoff final (that was Wales v Ukraine).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37263 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender at the 2022 FIFA World Cup plays for Arsenal?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37265 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender at the 2026 World Cup plays for Arsenal?
+**Answer:** Kieran Tierney
+**Why it fails:** Stale club — for the 2026 cycle Kieran Tierney plays for Celtic (returned 2025), not Arsenal.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37266 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender debuted at the 2022 FIFA World Cup?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37269 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender for the 2026 cycle plays for Arsenal?
+**Answer:** Kieran Tierney
+**Why it fails:** Stale club — for the 2026 cycle Kieran Tierney plays for Celtic (returned 2025), not Arsenal.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37270 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender for the 2026 cycle plays in the English Premier League?
+**Answer:** Kieran Tierney
+**Why it fails:** Stale club — Tierney plays for Celtic (Scottish Premiership) in the 2026 cycle, not the English Premier League/Arsenal.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37271 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender made a crucial block at Euro 2020 to secure the 0-0 draw with England at Wembley?
+**Answer:** Grant Hanley
+**Why it fails:** Fabricated/contradictory narrative — no documented goal-line clearance/last-ditch block secured the 0-0 v England; rows credit different players (O'Donnell/Hanley) for the same fictional act.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37272 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender made a crucial goal-line clearance against England at Euro 2020?
+**Answer:** Stephen O'Donnell
+**Why it fails:** Fabricated/contradictory narrative — no documented goal-line clearance/last-ditch block secured the 0-0 v England; rows credit different players (O'Donnell/Hanley) for the same fictional act.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37273 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender made a crucial last-ditch tackle to preserve the 0-0 Euro 2020 draw at Wembley?
+**Answer:** Stephen O'Donnell
+**Why it fails:** Fabricated/contradictory narrative — no documented goal-line clearance/last-ditch block secured the 0-0 v England; rows credit different players (O'Donnell/Hanley) for the same fictional act.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37280 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender started in their 0-0 Euro 2020 draw with England?
+**Answer:** Liam Cooper
+**Why it fails:** Unverified/likely false — Liam Cooper did not start the 0-0 v England at Euro 2020 (the back three was Hanley/McTominay/Tierney).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37287 — Scotland (easy) — FAIL
+**Q:** Which Scotland defender, playing left-back for Arsenal in 2024, featured in World Cup qualifiers?
+**Answer:** Kieran Tierney
+**Why it fails:** Anachronism — Tierney was on loan at Real Sociedad in early 2024, and there were no Scotland WC qualifiers in 2024 (2026 WCQ began 2025).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37302 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward debuted at the 2022 FIFA World Cup?
+**Answer:** Che Adams
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37313 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward made his FIFA World Cup debut in 2022?
+**Answer:** Che Adams
+**Why it fails:** False — Che Adams debuted for Scotland in March 2021, not 2022, and Scotland had no 2022 World Cup finals appearance.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37316 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward played for Torino at the 2024 European Championship?
+**Answer:** Che Adams
+**Why it fails:** Anachronism — Che Adams was at Southampton through 2022 WCQ and Euro 2024 qualifying; he only joined Torino in Aug 2024.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37317 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward played for Torino during Euro 2024 qualifiers?
+**Answer:** Che Adams
+**Why it fails:** Anachronism — Che Adams was at Southampton through 2022 WCQ and Euro 2024 qualifying; he only joined Torino in Aug 2024.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37318 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward played for Torino during the 2022 World Cup qualifiers?
+**Answer:** Che Adams
+**Why it fails:** Anachronism — Che Adams was at Southampton through 2022 WCQ and Euro 2024 qualifying; he only joined Torino in Aug 2024.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37329 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward was in the 2022 FIFA World Cup squad?
+**Answer:** Che Adams
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37331 — Scotland (easy) — FAIL
+**Q:** Which Scotland forward was selected for the 2022 FIFA World Cup squad?
+**Answer:** Che Adams
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37346 — Scotland (easy) — FAIL
+**Q:** Which Scotland left-back/centre-back for the 2026 cycle plays for Arsenal?
+**Answer:** Kieran Tierney
+**Why it fails:** Stale club — for the 2026 cycle Kieran Tierney plays for Celtic (returned 2025), not Arsenal.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37407 — Scotland (easy) — FAIL
+**Q:** Which Scotland manager led the Euro 2024 playoff win over Norway?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37413 — Scotland (easy) — FAIL
+**Q:** Which Scotland manager led the team to Euro 2024 via a playoff win over Norway?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37419 — Scotland (medium) — FAIL
+**Q:** Which Scotland manager led them to Euro 2024 qualification?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37433 — Scotland (easy) — FAIL
+**Q:** Which Scotland manager oversaw the playoff win over Norway for Euro 2024?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37444 — Scotland (easy) — FAIL
+**Q:** Which Scotland manager qualified for Euro 2024 by beating Norway in a playoff?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37462 — Scotland (medium) — FAIL
+**Q:** Which Scotland manager secured Euro 2024 qualification by beating Norway?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37463 — Scotland (medium) — FAIL
+**Q:** Which Scotland manager secured Euro 2024 qualification in a playoff?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37464 — Scotland (medium) — FAIL
+**Q:** Which Scotland manager secured Euro 2024 qualification with a playoff win over Norway?
+**Answer:** Steve Clarke
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37484 — Scotland (medium) — FAIL
+**Q:** Which Scotland manager was appointed in 2018 to lead World Cup qualification?
+**Answer:** Alex McLeish
+**Why it fails:** False — Alex McLeish (appointed Feb 2018) led the Euro 2020 qualifying/Nations League campaign, not the 2022 World Cup qualifiers (run by Steve Clarke).
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37511 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder at the 2022 World Cup played for Napoli?
+**Answer:** Scott McTominay
+**Why it fails:** False x2 — Scotland were not at the 2022 World Cup, and McTominay played for Manchester United (not Napoli) in 2022.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37512 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder at the 2022 World Cup was a key creative player?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37522 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder captains Celtic and was a key player in 2026 World Cup qualifying?
+**Answer:** Callum McGregor
+**Why it fails:** False — Callum McGregor retired from international football after Euro 2024; he was not a Scotland player in the 2026 WC qualifying cycle.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37536 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder earned his 50th cap during the 2026 World Cup qualifiers?
+**Answer:** Scott McTominay
+**Why it fails:** Cap-timing wrong — McTominay (debut 2018) passed 50 caps before the 2026 WCQ, not during it.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37542 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder for the 2026 World Cup cycle plays for Brighton?
+**Answer:** Billy Gilmour
+**Why it fails:** Stale club — Billy Gilmour moved from Brighton to Napoli in 2024; for the 2026 cycle he plays for Napoli, not Brighton.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37563 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder made his debut during 2022 World Cup qualifying?
+**Answer:** Billy Gilmour
+**Why it fails:** Wrong — Billy Gilmour debuted for Scotland on 2 Jun 2021 (friendly v Netherlands); the 0-0 v England at Euro 2020 was his first start, not his debut (and not 2019/a 2022 WCQ v Faroe).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37564 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder made his FIFA World Cup debut in the 2022 qualifiers?
+**Answer:** Callum McGregor
+**Why it fails:** False — Callum McGregor never played a World Cup before 2026 (Scotland missed 2018 & 2022); he has no pre-2026 'World Cup debut'.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37566 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder made his international debut in 2019?
+**Answer:** Billy Gilmour
+**Why it fails:** Wrong — Billy Gilmour debuted for Scotland on 2 Jun 2021 (friendly v Netherlands); the 0-0 v England at Euro 2020 was his first start, not his debut (and not 2019/a 2022 WCQ v Faroe).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37589 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder reached 70 caps before the 2022 World Cup?
+**Answer:** John McGinn
+**Why it fails:** Cap-timing wrong — McGinn had ~45-50 caps by 2022, not 70 (reached ~2024-25).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37594 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored 7 goals in 2022 World Cup qualifying?
+**Answer:** John McGinn
+**Why it fails:** Wrong — nobody scored 7 goals in Scotland's 2022 WC qualifying; the famous 7-goal haul was McTominay's in EURO 2024 qualifying. McGinn scored ~3, Dykes led the campaign.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37596 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored 7 goals in the 2026 FIFA World Cup qualifiers?
+**Answer:** Scott McTominay
+**Why it fails:** Wrong — McTominay scored twice in 2026 WC qualifying, not 7 (his 7 were in Euro 2024 qualifying).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37598 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored a crucial brace in a 2022 World Cup qualifier?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37601 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored a goal against Spain in a 2024 World Cup qualifier?
+**Answer:** John McGinn
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37602 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored a hat-trick in a key 2022 World Cup qualifier?
+**Answer:** John McGinn
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37603 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored a key goal against Spain in 2023 World Cup qualifying?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37604 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored a late brace in a 2023 World Cup qualifier?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37605 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored against Spain in 2023 World Cup qualifying?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37606 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored at the 2026 World Cup's Al Bayt Stadium?
+**Answer:** Scott McTominay
+**Why it fails:** Fabricated — Al Bayt is a Qatar 2022 stadium; the 2026 World Cup is in USA/Canada/Mexico, so 'the 2026 World Cup's Al Bayt Stadium' does not exist.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37610 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored crucial World Cup qualifiers in 2023?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37614 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored in the 2024 World Cup qualifier against Spain?
+**Answer:** John McGinn
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37616 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored in their 2022 World Cup qualifier against Spain?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37626 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored seven goals in 2022 World Cup qualifying?
+**Answer:** Scott McTominay
+**Why it fails:** Wrong — nobody scored 7 goals in Scotland's 2022 WC qualifying; the famous 7-goal haul was McTominay's in EURO 2024 qualifying. McGinn scored ~3, Dykes led the campaign.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37627 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored twice against England in the 2022 FIFA World Cup qualifiers?
+**Answer:** Scott McTominay
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37628 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored twice in a 2022 World Cup qualifier against Ukraine?
+**Answer:** Scott McTominay
+**Why it fails:** False — the 1-3 loss to Ukraine: McGregor scored Scotland's lone goal; McTominay did not score twice.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37629 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder scored twice in a 2022 World Cup qualifier?
+**Answer:** Scott McTominay
+**Why it fails:** Unverified/likely false — McTominay did not score twice v Denmark in the 2-0 Nov 2021 qualifier.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37656 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder with 70+ caps was in their 2022 World Cup squad?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37657 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder with over 50 caps played for Napoli at the 2024 Euros?
+**Answer:** Scott McTominay
+**Why it fails:** False — at Euro 2024 (Jun 2024) McTominay was still at Manchester United; he joined Napoli in Aug 2024.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37659 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder, a key creative force for Aston Villa, was selected for the 2022 FIFA World Cup squad?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37676 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder, playing for Napoli, scored crucial goals in 2024 World Cup qualifying?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37683 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder, with over 50 caps, played for Manchester United until 2026?
+**Answer:** Scott McTominay
+**Why it fails:** False — McTominay left Manchester United for Napoli in 2024, not 2026.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37689 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder, with over 70 caps, was in the 2022 World Cup squad?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37693 — Scotland (easy) — FAIL
+**Q:** Which Scotland midfielder's goals were crucial in 2023 FIFA World Cup qualifying?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37703 — Scotland (easy) — FAIL
+**Q:** Which Scotland player at the 2018 World Cup had played in the Old Firm derby?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37704 — Scotland (easy) — FAIL
+**Q:** Which Scotland player at the 2018 World Cup was a Celtic player?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37706 — Scotland (easy) — FAIL
+**Q:** Which Scotland player at the 2022 World Cup was a key creative midfielder for Aston Villa?
+**Answer:** John McGinn
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37712 — Scotland (easy) — FAIL
+**Q:** Which Scotland player captained Celtic at the 2022 FIFA World Cup?
+**Answer:** Callum McGregor
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37751 — Scotland (easy) — FAIL
+**Q:** Which Scotland player debuted in the 2006 FIFA World Cup qualifiers against England?
+**Answer:** Darren Fletcher
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37753 — Scotland (easy) — FAIL
+**Q:** Which Scotland player debuted in the 2020 Euro qualifiers?
+**Answer:** John McGinn
+**Why it fails:** Wrong — McGinn debuted in 2016, not in the Euro 2020 qualifiers.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37754 — Scotland (easy) — FAIL
+**Q:** Which Scotland player debuted in the 2026 World Cup qualifying campaign?
+**Answer:** Lewis Ferguson
+**Why it fails:** Mislabeled — Lewis Ferguson's debut (Sep 2023) was in Euro 2024 qualifying; the 2026 WC qualifiers ran in 2025.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37755 — Scotland (easy) — FAIL
+**Q:** Which Scotland player debuted in the Euro 2020 match against England?
+**Answer:** Billy Gilmour
+**Why it fails:** Wrong — Billy Gilmour debuted for Scotland on 2 Jun 2021 (friendly v Netherlands); the 0-0 v England at Euro 2020 was his first start, not his debut (and not 2019/a 2022 WCQ v Faroe).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37759 — Scotland (easy) — FAIL
+**Q:** Which Scotland player earned his first cap during 2026 World Cup qualifying?
+**Answer:** Lewis Ferguson
+**Why it fails:** Mislabeled — Lewis Ferguson's debut (Sep 2023) was in Euro 2024 qualifying; the 2026 WC qualifiers ran in 2025.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37775 — Scotland (easy) — FAIL
+**Q:** Which Scotland player from Serie A faced Italy in the 2026 qualifiers?
+**Answer:** Scott McTominay
+**Why it fails:** False — Italy was not in Scotland's 2026 WC qualifying group (Group C = Denmark, Greece, Belarus).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37785 — Scotland (easy) — FAIL
+**Q:** Which Scotland player has NOT scored a World Cup goal against England?
+**Answer:** Kenny Dalglish
+**Why it fails:** Non-unique — none of the four players scored a WC goal v England (Scotland never met England at a World Cup), so 'Kenny Dalglish' is not unique.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37802 — Scotland (easy) — FAIL
+**Q:** Which Scotland player made his senior debut in the 0-0 Euro 2020 draw with England?
+**Answer:** Billy Gilmour
+**Why it fails:** Wrong — Billy Gilmour debuted for Scotland on 2 Jun 2021 (friendly v Netherlands); the 0-0 v England at Euro 2020 was his first start, not his debut (and not 2019/a 2022 WCQ v Faroe).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37803 — Scotland (easy) — FAIL
+**Q:** Which Scotland player missed a key penalty in the 2022 World Cup playoff?
+**Answer:** Lyndon Dykes
+**Why it fails:** Fabricated — the 1-3 loss to Ukraine was decided in normal time; there was no penalty for Dykes to miss.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37811 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored 7 goals in the 2022 FIFA World Cup qualifiers?
+**Answer:** John McGinn
+**Why it fails:** Wrong — nobody scored 7 goals in Scotland's 2022 WC qualifying; the famous 7-goal haul was McTominay's in EURO 2024 qualifying. McGinn scored ~3, Dykes led the campaign.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37817 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored against England in the 2022 World Cup qualifiers?
+**Answer:** Lyndon Dykes
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37819 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored against Spain in 2023 World Cup qualifying?
+**Answer:** Scott McTominay
+**Why it fails:** Mislabeled competition — the Scotland-Spain game (McTominay's brace, Mar 2023) was EURO 2024 qualifying, NOT 'World Cup qualifying'; also Spain was never in a Scotland World Cup qualifying group.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37824 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored in a 2022 World Cup qualifier at Celtic Park?
+**Answer:** John McGinn
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37826 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored in the 2022 World Cup qualifier against England?
+**Answer:** Lyndon Dykes
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37827 — Scotland (hard) — FAIL
+**Q:** Which Scotland player scored in the 2022 World Cup qualifiers penalty shootout?
+**Answer:** Lyndon Dykes
+**Why it fails:** Fabricated — the 2022 WC playoff semi-final v Ukraine was lost 1-3 in normal time; there was no penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37829 — Scotland (hard) — FAIL
+**Q:** Which Scotland player scored in their 2022 World Cup qualifying penalty shootout?
+**Answer:** John McGinn
+**Why it fails:** Fabricated — the 2022 WC playoff semi-final v Ukraine was lost 1-3 in normal time; there was no penalty shootout.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37830 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored in their 2024 Euro playoff victory over Norway?
+**Answer:** Scott McTominay
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37836 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored the decisive penalty in the Euro 2020 qualifying playoff final?
+**Answer:** David Marshall
+**Why it fails:** Wrong — David Marshall is the goalkeeper who SAVED the decisive penalty (v Serbia/Mitrović); he did not SCORE a penalty.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37837 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored the decisive penalty to qualify for Euro 2020?
+**Answer:** David Marshall
+**Why it fails:** Wrong — David Marshall is the goalkeeper who SAVED the decisive penalty (v Serbia/Mitrović); he did not SCORE a penalty.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37838 — Scotland (medium) — FAIL
+**Q:** Which Scotland player scored the decisive penalty to secure 2026 World Cup qualification?
+**Answer:** Scott McTominay
+**Why it fails:** False — Scotland qualified for the 2026 World Cup by winning UEFA Group C directly (beat Denmark 4-2 at Hampden, Nov 2025); there was no 2026 playoff/shootout.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37842 — Scotland (easy) — FAIL
+**Q:** Which Scotland player scored the penalty against Serbia to qualify for Euro 2020?
+**Answer:** Ryan Christie
+**Why it fails:** Misleading/false — Ryan Christie's goal v Serbia (52') was equalised; qualification was secured via the penalty shootout (Marshall's save), not Christie's strike.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37843 — Scotland (medium) — FAIL
+**Q:** Which Scotland player scored the penalty in the Euro 2020 qualification playoff final?
+**Answer:** David Marshall
+**Why it fails:** Wrong — David Marshall is the goalkeeper who SAVED the decisive penalty (v Serbia/Mitrović); he did not SCORE a penalty.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37844 — Scotland (medium) — FAIL
+**Q:** Which Scotland player scored the penalty that secured Euro 2020 qualification?
+**Answer:** Ryan Christie
+**Why it fails:** Misleading/false — Ryan Christie's goal v Serbia (52') was equalised; qualification was secured via the penalty shootout (Marshall's save), not Christie's strike.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37845 — Scotland (medium) — FAIL
+**Q:** Which Scotland player scored the penalty to secure Euro 2020 qualification?
+**Answer:** David Marshall
+**Why it fails:** Wrong — David Marshall is the goalkeeper who SAVED the decisive penalty (v Serbia/Mitrović); he did not SCORE a penalty.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37900 — Scotland (medium) — FAIL
+**Q:** Which Scotland player's goal secured their watershed Euro 2020 qualification?
+**Answer:** Ryan Christie
+**Why it fails:** Misleading/false — Ryan Christie's goal v Serbia (52') was equalised; qualification was secured via the penalty shootout (Marshall's save), not Christie's strike.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37906 — Scotland (easy) — FAIL
+**Q:** Which Scotland playoff opponent did they beat to qualify for Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37908 — Scotland (medium) — FAIL
+**Q:** Which Scotland playoff win secured Euro 2024 qualification in 2023?
+**Answer:** Over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37909 — Scotland (medium) — FAIL
+**Q:** Which Scotland playoff win secured their Euro 2024 qualification?
+**Answer:** Victory over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37910 — Scotland (easy) — FAIL
+**Q:** Which Scotland playoff win secured their place at Euro 2024?
+**Answer:** Win over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37947 — Scotland (hard) — FAIL
+**Q:** Which Scotland squad qualified for Euro 2024 by beating Norway in a playoff?
+**Answer:** Steve Clarke's 2023 squad
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 37981 — Scotland (easy) — FAIL
+**Q:** Which Scotland stadium hosted their rivalry match versus England in 2023?
+**Answer:** Hampden Park
+**Why it fails:** Mislabeled — the Sep 2023 Scotland-England match at Hampden was the 150th-anniversary friendly, not a Euro 2024 qualifier (they were in different qualifying groups).
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38018 — Scotland (easy) — FAIL
+**Q:** Which Scotland team qualified for Euro 2024 by beating Norway in a playoff?
+**Answer:** Steve Clarke's team
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38037 — Scotland (hard) — FAIL
+**Q:** Which Scotland World Cup qualification campaign mirrored their Euro 2020 Nations League playoff path?
+**Answer:** 2026 FIFA World Cup
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38059 — Scotland (easy) — FAIL
+**Q:** Which Scottish defender at Arsenal played at the 2022 World Cup?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38060 — Scotland (easy) — FAIL
+**Q:** Which Scottish defender at Arsenal was in the 2022 World Cup squad?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38061 — Scotland (easy) — FAIL
+**Q:** Which Scottish defender blocked a key England chance in the 0-0 Euro 2020 draw?
+**Answer:** Grant Hanley
+**Why it fails:** Fabricated/contradictory narrative — no documented goal-line clearance/last-ditch block secured the 0-0 v England; rows credit different players (O'Donnell/Hanley) for the same fictional act.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38063 — Scotland (easy) — FAIL
+**Q:** Which Scottish defender played left-back for Arsenal at the 2022 World Cup?
+**Answer:** Kieran Tierney
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38064 — Scotland (easy) — FAIL
+**Q:** Which Scottish defender started at left-back in their 2022 FIFA World Cup qualifier against England?
+**Answer:** Kieran Tierney
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38068 — Scotland (easy) — FAIL
+**Q:** Which Scottish left-back, who also plays centre-back for Arsenal, faced England in 2022?
+**Answer:** Kieran Tierney
+**Why it fails:** False — this opponent was NOT in Scotland's 2022 WC qualifying group (Denmark, Austria, Israel, Faroe Islands, Moldova); they did not meet in 2022 WCQ.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38104 — Scotland (easy) — FAIL
+**Q:** Which Scottish Premiership star captained Scotland at the 2022 FIFA World Cup?
+**Answer:** Andrew Robertson
+**Why it fails:** False premise — Scotland did NOT play at the 2022 World Cup (lost the playoff semi-final 1-3 to Ukraine, Jun 2022); there was no 2022 WC squad / group stage / finals match.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38128 — Scotland (easy) — FAIL
+**Q:** Which Scottish venue hosted their 2026 World Cup qualifying playoff?
+**Answer:** Hampden Park
+**Why it fails:** False — Scotland qualified for the 2026 World Cup by winning UEFA Group C directly (beat Denmark 4-2 at Hampden, Nov 2025); there was no 2026 playoff/shootout.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38141 — Scotland (easy) — FAIL
+**Q:** Which stadium hosted Scotland's 2026 World Cup qualifying playoff?
+**Answer:** Hampden Park
+**Why it fails:** False — Scotland qualified for the 2026 World Cup by winning UEFA Group C directly (beat Denmark 4-2 at Hampden, Nov 2025); there was no 2026 playoff/shootout.
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38163 — Scotland (easy) — FAIL
+**Q:** Which team did Scotland beat in a 2024 Euro playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38164 — Scotland (easy) — FAIL
+**Q:** Which team did Scotland beat in a 2024 Euros playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38167 — Scotland (easy) — FAIL
+**Q:** Which team did Scotland beat in the Euro 2024 playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38168 — Scotland (easy) — FAIL
+**Q:** Which team did Scotland beat in their Euro 2024 playoff?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38169 — Scotland (easy) — FAIL
+**Q:** Which team did Scotland beat to qualify for Euro 2024?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38179 — Scotland (medium) — FAIL
+**Q:** Which team did Scotland NOT face in the Euro 2024 group stage?
+**Answer:** Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38180 — Scotland (easy) — FAIL
+**Q:** Which team did Scotland not lose to at Euro 2024?
+**Answer:** England
+**Why it fails:** Non-unique/wrong — Scotland DREW Switzerland 1-1 (did not lose), so both England and Switzerland fit 'did not lose to'; the explanation wrongly says they lost to Switzerland.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38194 — Scotland (easy) — FAIL
+**Q:** Which team's Euro 2020 path matched Scotland's via a Nations League playoff?
+**Answer:** North Macedonia
+**Why it fails:** Non-unique — North Macedonia, Hungary and Slovakia all reached Euro 2020 via the Nations League playoff path, not only one.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38208 — Scotland (medium) — FAIL
+**Q:** Which tournament did Scotland qualify for first: Euro 2024 or the 2026 World Cup?
+**Answer:** Euro 2024
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38228 — Scotland (easy) — FAIL
+**Q:** Which two teams did Scotland fail to beat at Euro 2024?
+**Answer:** Switzerland and Hungary
+**Why it fails:** Non-unique — Scotland also failed to beat Germany (lost 5-1) at Euro 2024, so 'Switzerland and Hungary' is not the unique pair.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38262 — Scotland (easy) — FAIL
+**Q:** Which UEFA nation, like Scotland, also had its longest World Cup drought end in 2026?
+**Answer:** Romania
+**Why it fails:** False — Romania did NOT qualify for the 2026 World Cup (lost the playoff semi-final to Türkiye).
+**Source:** https://en.wikipedia.org/wiki/Scotland_at_the_FIFA_World_Cup
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38270 — Scotland (easy) — FAIL
+**Q:** Which UEFA nation's national stadium, like Scotland's Hampden Park, is also among the world's oldest international venues?
+**Answer:** England (Wembley)
+**Why it fails:** Wrong/non-unique — the current Wembley opened in 2007 (not among the world's oldest); Olympiastadion Berlin (1936) and Stadio Olimpico are older.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38354 — Scotland (easy) — FAIL
+**Q:** Why did Scotland end a 28-year World Cup absence in 2026?
+**Answer:** Qualified for the tournament
+**Why it fails:** Non-unique — 'won their qualifying group' is also correct (Scotland won Group C), so the generic 'qualified' answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38356 — Scotland (easy) — FAIL
+**Q:** Why did Scotland end their 28-year World Cup absence in 2026?
+**Answer:** Qualified for the tournament
+**Why it fails:** Non-unique — 'won their qualifying group' is also correct (Scotland won Group C), so the generic 'qualified' answer is not unique.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38360 — Scotland (medium) — FAIL
+**Q:** Why did Scotland exit Euro 2024 after the group stage?
+**Answer:** Lost to Hungary
+**Why it fails:** Non-unique — Scotland also lost to Germany (5-1) at Euro 2024, so 'lost to Hungary' is not the unique reason.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38381 — Scotland (easy) — FAIL
+**Q:** Why did Scotland qualify for Euro 2024 after their World Cup group?
+**Answer:** Playoff win over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+### Row 38382 — Scotland (easy) — FAIL
+**Q:** Why did Scotland qualify for Euro 2024?
+**Answer:** Playoff win over Norway
+**Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
+**Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
+**Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
