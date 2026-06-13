@@ -3,7 +3,7 @@
 > Rows that cleared `QA_PASSED_b2.md` mechanically but are **factually wrong** on the live
 > TC-06 check. Each entry: reason + source + concrete remedy. See HANDOFF.md §6/§7.
 
-**Total dangerous: 2509** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Australia 123, rows 1544–2396; Austria 161, rows 2401–3241; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876; Haiti 236, rows 21195–22697; Qatar 144, rows 33742–34843; Scotland 234, rows 36342–38412)
+**Total dangerous: 2746** (Algeria 159, rows 2–513; Argentina 167, rows 514–1543; Australia 123, rows 1544–2396; Austria 161, rows 2401–3241; Belgium 170, rows 3242–4191; Bosnia and Herzegovina 125, rows 4192–5804; Canada 69, rows 7821–9330; Colombia 168, rows 10796–11736; Costa Rica 139, rows 11737–12858; Czechia 234, rows 16004–16893; DR Congo 82, rows 16894–17345; Ecuador 143, rows 17346–18086; Egypt 155, rows 18087–18876; Haiti 236, rows 21195–22697; Qatar 144, rows 33742–34843; Scotland 234, rows 36342–38412; England 148, rows 18877–20254; France 89, rows 20255–21124)
 
 ---
 
@@ -11902,3 +11902,1670 @@
 **Why it fails:** False premise — Scotland qualified for Euro 2024 DIRECTLY as Group A runners-up (won 5 of 6, incl. beating Spain 2-0 & Norway 2-1 in the GROUP); there was NO Euro 2024 playoff over Norway.
 **Source:** https://en.wikipedia.org/wiki/Scotland_national_football_team
 **Remedy:** Correct the answer/explanation to the verified fact; or replace the question.
+
+## England — rows 18877–20254 (liveness on QA_PASSED_b2.md rows) — 148 FAIL
+
+**Fact base (sourced):** England **conceded ~8** goals at the 2018 WC (one clean sheet), NOT 2 — so all "conceded only 2 in 7 / 5 clean sheets" claims fail. **Pickford was NOT in the Euro 2020 Team of the Tournament** (Donnarumma was the GK). **Bellingham did NOT win Euro 2024 Young Player** (Lamine Yamal did). The **England-Scotland Euro 2020 game was 0-0**, not 2-2. **Man City** had only **two** straight titles by the 2022 WC (the fourth came 2023-24). **Kane scored 2** at the 2022 WC (Saka/Rashford 3 each) and did NOT win the 2022 Golden Boot (Mbappé did); he broke the record in **March 2023** (a Euro 2024 qualifier, not 2026), with ~66 goals/~98 caps by 2024. **Tuchel WAS appointed** (so "not appointed" is wrong). England **beat** Germany (Euro 2020) and Hungary (4-0, 2022 qual). Recurring flaws: **Stones/Maguire/Walker** "which centre-back/who debuted" rows are non-unique; many **Excel date-corruption** answer cells. Sources: Wikipedia (England NT, 2018/2022 WC, Euro 2020/2024, Premier League, player pages).
+
+### Row 18888 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** After Sam Allardyce's 2016 departure, when was Gareth Southgate made England manager?
+**Answer:** 2016-11-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2016-11-01 00:00:00' instead of a clean date. Southgate was appointed (interim) in November 2016.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore the answer to 'November 2016'.
+
+### Row 18889 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** After Sam Allardyce's 2016 sacking, when was Gareth Southgate appointed England manager?
+**Answer:** 2016-11-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2016-11-01 00:00:00' instead of 'November 2016'.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore the answer to 'November 2016'.
+
+### Row 18892 — England (easy) — FAIL: false (Tuchel WAS appointed England manager)
+**Q:** After the 2018 World Cup, which manager was NOT appointed England manager?
+**Answer:** Thomas Tuchel
+**Why it fails:** Thomas Tuchel WAS appointed England manager (Oct 2024, started Jan 2025) — so he is the wrong answer to 'which was NOT appointed'. Klopp, Ancelotti and Pochettino were never England managers; the answer should be one of them.
+**Source:** https://en.wikipedia.org/wiki/Thomas_Tuchel
+**Remedy:** Tuchel was appointed; pick a non-appointee.
+
+### Row 18921 — England (medium) — FAIL: false (only ~4-5 English CL titles, not 6)
+**Q:** At the 2022 World Cup, English clubs had won how many Champions League titles since 2008?
+**Answer:** Six
+**Why it fails:** English clubs won FIVE Champions League titles from 2008-2023 (Man Utd 2008, Chelsea 2012, Liverpool 2019, Chelsea 2021, Man City 2023) — and only FOUR had been won by the time of the 2022 World Cup (Man City's came in 2023). Not six.
+**Source:** https://en.wikipedia.org/wiki/List_of_European_Cup_and_UEFA_Champions_League_finals
+**Remedy:** It was 4 by the 2022 WC (5 through 2023).
+
+### Row 18931 — England (easy) — FAIL: stale/false (England faced Spain in the Euro 2024 final)
+**Q:** At the 2022 World Cup, which team did England NOT face in a major tournament final?
+**Answer:** Spain
+**Why it fails:** England DID face Spain in a major final — they lost the Euro 2024 final 2-1 to Spain. So 'Spain' is the wrong answer; the teams England never met in a final are Croatia and France.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_final
+**Remedy:** England lost the Euro 2024 final to Spain.
+
+### Row 18943 — England (medium) — FAIL: non-unique (Euro 2024 also more recent) + garbled option
+**Q:** At which Euros did England suffer a more recent knockout than their 2016 Iceland loss?
+**Answer:** Euro 2020
+**Why it fails:** Both Euro 2020 AND Euro 2024 (a listed option) were knockouts more recent than the 2016 Iceland loss, so the answer is non-unique. One option ('Euro rate') is also garbled.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Euro 2024 is also more recent; fix the garbled option.
+
+### Row 18944 — England (medium) — FAIL: false (England conceded ~8 in 2018, not 2)
+**Q:** At which FIFA World Cup did England concede only 2 goals in 7 matches?
+**Answer:** 2018 World Cup
+**Why it fails:** England conceded about EIGHT goals across their seven 2018 World Cup matches (Tunisia 1, Panama 1, Belgium 1, Colombia 1, Sweden 0, Croatia 2, Belgium 2) — not two.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** They conceded ~8, not 2.
+
+### Row 18955 — England (hard) — FAIL: false (England conceded ~8 in 2018, not 2)
+**Q:** At which World Cup did England concede only two goals in regular and extra time?
+**Answer:** 2018 World Cup
+**Why it fails:** England conceded roughly eight goals across their seven 2018 World Cup matches, not two.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** They conceded ~8, not 2.
+
+### Row 18964 — England (easy) — FAIL: false (Man City had 2 straight by the 2022 WC, not 4)
+**Q:** Before England's 2022 World Cup squad, which English club had just won its fourth straight league title?
+**Answer:** Manchester City
+**Why it fails:** By England's 2022 World Cup squad (Nov 2022), Man City had won only TWO consecutive titles (2020-21, 2021-22). Their fourth straight came in 2023-24, AFTER the 2022 WC — so they had not 'just won their fourth straight'.
+**Source:** https://en.wikipedia.org/wiki/Manchester_City_F.C.
+**Remedy:** They had 2 straight by the 2022 WC.
+
+### Row 18980 — England (easy) — FAIL: non-unique (none of the four was beaten by 10+)
+**Q:** England beat San Marino 10-0 in 2022 World Cup qualifying. Which other nation did they not beat by 10+ goals?
+**Answer:** Poland
+**Why it fails:** England's only 10+ win was over San Marino — they did NOT beat Poland, Andorra, Albania OR Hungary (all four options) by 10+ goals, as the explanation itself states. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** All four options weren't beaten by 10+.
+
+### Row 18988 — England (easy) — FAIL: self-referential (answer is England itself)
+**Q:** England fell to 17th in 2014. Which nation also fell to 17th after a World Cup?
+**Answer:** England
+**Why it fails:** The question states England fell to 17th, then asks which nation 'also' fell to 17th and answers England — the answer is the subject itself (self-referential/circular).
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Name a genuinely different nation, or rephrase.
+
+### Row 18998 — England (easy) — FAIL: false (Argentina lost 4-0 = by four goals, not three)
+**Q:** England lost 4-1 to Germany in the 2010 World Cup. Which other nation lost a 2010 knockout match by three goals?
+**Answer:** Argentina
+**Why it fails:** Argentina lost their 2010 quarter-final 4-0 to Germany — a FOUR-goal margin, not three. England's 4-1 loss was a three-goal margin, so the two don't match.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Argentina lost by 4; pick a 3-goal-margin loss.
+
+### Row 19002 — England (easy) — FAIL: false (Iceland beat England 2-1, not on penalties)
+**Q:** England lost on penalties to Italy at Euro 2012. Which team eliminated them on penalties in 2016?
+**Answer:** Iceland
+**Why it fails:** England lost to Iceland 2-1 in normal time in the Euro 2016 round of 16 — NOT on penalties (the explanation itself says so). The 'on penalties' premise is false.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** It was a 2-1 defeat, not a shootout.
+
+### Row 19004 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** England lost the Euro 2020 final on penalties to Italy. What was the shootout score?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-03 00:00:00' instead of the shootout score. Italy beat England 3-2 on penalties.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore the score (3-2 to Italy).
+
+### Row 19015 — England (easy) — FAIL: self-referential (answer is England itself)
+**Q:** England topped their 2018 qualifying group. Which 2026 qualifier also had a perfect group record?
+**Answer:** England
+**Why it fails:** The question notes England topped their 2018 group, then asks which 2026 qualifier 'also' had a perfect record and answers England — the answer is the same team (self-referential).
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Name a different nation, or rephrase.
+
+### Row 19016 — England (medium) — FAIL: non-unique (England used Wembley for 2010 & 2018 qualifiers)
+**Q:** England used Wembley for home qualifiers for which FIFA World Cup tournament?
+**Answer:** 2018 World Cup
+**Why it fails:** England played home qualifiers at Wembley for the 2010, 2014, 2018 AND 2022 World Cups — so both 2018 and 2010 (listed options) fit. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Wembley_Stadium
+**Remedy:** Multiple cycles used Wembley.
+
+### Row 19022 — England (medium) — FAIL: self-referential (the answer is the same match)
+**Q:** England's 2022 World Cup draw with USA was statistically identical to which earlier World Cup head-to-head?
+**Answer:** 2022 vs USA
+**Why it fails:** '2022 vs USA' is the very match named in the question — a self-referential answer. The genuinely identical 0-0 head-to-head is 2010 vs Algeria (also 0-0).
+**Source:** https://en.wikipedia.org/wiki/England_at_the_FIFA_World_Cup
+**Remedy:** The matching 0-0 was 2010 v Algeria.
+
+### Row 19023 — England (hard) — FAIL: false (Man City had 2 straight by the 2022 WC, not 4)
+**Q:** England's 2022 World Cup group stage draw with USA followed a domestic league streak of how many consecutive titles?
+**Answer:** Four consecutive titles
+**Why it fails:** By England's 2022 World Cup (Nov 2022), Man City had won only two consecutive titles — their fourth straight came in 2023-24. So the draw with USA did not follow a four-title streak.
+**Source:** https://en.wikipedia.org/wiki/Manchester_City_F.C.
+**Remedy:** It was 2 straight by Nov 2022.
+
+### Row 19030 — England (easy) — FAIL: non-unique (all four FAs are younger than 1863)
+**Q:** England's FA, founded in 1863, is older than which other nation's football association?
+**Answer:** The German FA
+**Why it fails:** England's FA (1863) is the oldest, so the German, Italian, Spanish AND French FAs (all options) are younger. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/The_Football_Association
+**Remedy:** All four are younger than England's FA.
+
+### Row 19039 — England (easy) — FAIL: false (Ligue 1 IS a top-5 (big-five) league)
+**Q:** England's Premier League is the world's richest. Which league is NOT among the top 5 richest?
+**Answer:** Ligue 1
+**Why it fails:** Ligue 1 is one of Europe's 'big five' leagues — it ranks among the top five richest (roughly 5th, behind the PL, La Liga, Bundesliga, Serie A). So 'not among the top 5' is wrong.
+**Source:** https://en.wikipedia.org/wiki/Big_Five_(association_football)
+**Remedy:** Ligue 1 is in the big-five top 5.
+
+### Row 19041 — England (medium) — FAIL: false (Wembley hosted 5 Euro 2020 knockout matches, not 3)
+**Q:** England's Wembley hosted how many Euro 2020 knockout matches?
+**Answer:** Three
+**Why it fails:** Wembley hosted FIVE Euro 2020 knockout matches — two round-of-16 ties (incl. England-Germany), both semi-finals AND the final — not three.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** It was 5 knockout matches (incl. 2 R16).
+
+### Row 19059 — England (medium) — FAIL: false (Euro 2008 wasnt the first full-Wembley cycle)
+**Q:** For which tournament did England first play all home qualifiers at the reopened Wembley?
+**Answer:** Euro 2008
+**Why it fails:** Euro 2008 home qualifiers were SPLIT — the 2006 games were at Old Trafford and only the 2007 games at the new Wembley. The first qualifying cycle conducted entirely at the reopened Wembley was the 2010 World Cup (as row 19053 states). The two rows contradict.
+**Source:** https://en.wikipedia.org/wiki/Wembley_Stadium
+**Remedy:** The first full cycle at Wembley was the 2010 WC.
+
+### Row 19076 — England (medium) — FAIL: false (Bellingham was at Borussia Dortmund, not a PL club)
+**Q:** How many England players at the 2022 World Cup were based at Premier League clubs?
+**Answer:** 26 players
+**Why it fails:** England's 2022 squad was NOT entirely Premier League-based — Jude Bellingham played for Borussia Dortmund (Bundesliga) at the time. So not all 26 were at PL clubs.
+**Source:** https://en.wikipedia.org/wiki/Jude_Bellingham
+**Remedy:** Bellingham was at Dortmund in 2022.
+
+### Row 19077 — England (medium) — FAIL: false (Wembley hosted 5 Euro 2020 knockout games, not 3)
+**Q:** How many Euro 2020 knockout games did England's Wembley host?
+**Answer:** Three
+**Why it fails:** Wembley hosted FIVE Euro 2020 knockout matches — two round-of-16 ties, both semi-finals and the final — not three.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** It was 5 knockout games (incl. 2 R16).
+
+### Row 19093 — England (easy) — FAIL: non-unique (Netherlands also had a perfect 2010 record)
+**Q:** In 2010 World Cup qualifying, which UEFA nation had a perfect record unlike England's 9 wins and 1 draw?
+**Answer:** Spain
+**Why it fails:** Both Spain (10/10) AND the Netherlands (8/8, a listed option) had perfect 2010 World Cup qualifying records. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** The Netherlands were also perfect.
+
+### Row 19104 — England (medium) — FAIL: non-unique (ghost goal only v Germany)
+**Q:** In England's 2010 World Cup group stage match, which nation did Frank Lampard NOT score a ghost goal against?
+**Answer:** Argentina
+**Why it fails:** Lampard's 2010 'ghost goal' was scored against Germany — so he did NOT score it against Argentina, Portugal OR the Netherlands (three options). The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Three options are equally valid 'not against'.
+
+### Row 19115 — England (medium) — FAIL: false (Bellingham was at Dortmund, outside the PL)
+**Q:** In England's 2022 FIFA World Cup squad, how many players were based outside the Premier League?
+**Answer:** Zero
+**Why it fails:** Not all of England's 2022 squad was Premier League-based — Jude Bellingham was at Borussia Dortmund. So at least one player was based outside the PL, not zero.
+**Source:** https://en.wikipedia.org/wiki/Jude_Bellingham
+**Remedy:** Bellingham (Dortmund) was outside the PL.
+
+### Row 19126 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** In the 2010 World Cup, England lost to Germany by what three-goal margin?
+**Answer:** 2026-01-04 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-04 00:00:00' instead of the score. England lost 4-1 to Germany.
+**Source:** https://en.wikipedia.org/wiki/2010_FIFA_World_Cup_knockout_stage
+**Remedy:** Restore the score (4-1).
+
+### Row 19129 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** In the 2016 Euros, England lost to Iceland by what score?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. England lost 2-1 to Iceland.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Restore the score (2-1).
+
+### Row 19139 — England (hard) — FAIL: Excel date-corruption in the answer cell
+**Q:** In the Euro 2020 final, what was the penalty shootout score England lost to Italy?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-03 00:00:00' instead of the shootout score. Italy beat England 3-2 on penalties.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore the score (3-2 to Italy).
+
+### Row 19142 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** In the Euro 2020 semi-final, England beat Denmark by what exact score?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. England beat Denmark 2-1 (AET).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore the score (2-1).
+
+### Row 19157 — England (medium) — FAIL: false (England DID win 2-1 matches at Euro 2024)
+**Q:** In which continental championship did England NOT win a match 2-1?
+**Answer:** Euro 2024
+**Why it fails:** England won 2-1 at Euro 2024 — beating Slovakia 2-1 (AET, R16) and the Netherlands 2-1 (SF). So they DID win a 2-1 match there; the answer is wrong (and they also won Denmark 2-1 at Euro 2020).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** England won 2-1 v Slovakia and Netherlands at Euro 2024.
+
+### Row 19169 — England (medium) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** In which tournament did England's Jude Bellingham win Young Player of the Tournament?
+**Answer:** Euro 2024
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — that award went to Spain's Lamine Yamal. Bellingham has not won a major-tournament Young Player award.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19219 — England (hard) — FAIL: false (England were ~17th in 2014; 27th was ~2016)
+**Q:** In which year did England's FIFA ranking fall to 27th after St George's Park opened?
+**Answer:** 2014
+**Why it fails:** England dropped to 17th after their 2014 group exit (as the dataset's many other rows state) — NOT 27th in 2014. Their record-low ~27th came later (around 2016, after the Euro 2016 Iceland loss). The '27th in 2014' claim contradicts the 17th rows.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** They were ~17th in 2014.
+
+### Row 19230 — England (medium) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** In which year was England's Jordan Pickford named to the Euro Team of the Tournament?
+**Answer:** 2020
+**Why it fails:** Pickford was NOT named in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper selected was Gianluigi Donnarumma (Italy), who was also Player of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19252 — England (medium) — FAIL: false (England-Scotland Euro 2020 was 0-0, not 2-2)
+**Q:** What was England's Euro 2020 group stage result against Scotland?
+**Answer:** Drew 2-2
+**Why it fails:** England drew 0-0 with Scotland in the Euro 2020 group stage at Wembley — NOT 2-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+### Row 19255 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was England's losing scoreline against France in the 2022 World Cup quarter-finals?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. England lost 2-1 to France.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore the score (2-1).
+
+### Row 19256 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was England's losing scoreline versus Iceland at Euro 2016?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. England lost 2-1 to Iceland.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Restore the score (2-1).
+
+### Row 19260 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was England's scoreline against Iran in their 2022 World Cup opener?
+**Answer:** 2026-02-06 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-06 00:00:00' instead of the score. England beat Iran 6-2.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore the score (6-2).
+
+### Row 19262 — England (hard) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was Italy's penalty shootout score against England in the Euro 2020 final?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-03 00:00:00' instead of the shootout score. Italy won 3-2 on penalties.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Restore the score (3-2).
+
+### Row 19267 — England (medium) — FAIL: false (England-Scotland Euro 2020 was 0-0, not 2-2)
+**Q:** What was the score when England faced Scotland at Euro 2020?
+**Answer:** 2-2 draw
+**Why it fails:** The England-Scotland Euro 2020 group game finished 0-0, not 2-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+### Row 19268 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was the score when England lost to France in the 2022 World Cup quarter-finals?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. England lost 2-1 to France.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore the score (2-1).
+
+### Row 19269 — England (medium) — FAIL: date-corruption + wrong score (Scotland was 0-0)
+**Q:** What was the score when England played Scotland at Euro 2020?
+**Answer:** 2026-02-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-02 00:00:00', and the intended '2-2' is also wrong — the England-Scotland Euro 2020 game was 0-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+### Row 19298 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did England manager Fabio Capello resign after the 2010 World Cup?
+**Answer:** 2012-02-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2012-02-01 00:00:00' instead of a clean date. Capello resigned in February 2012.
+**Source:** https://en.wikipedia.org/wiki/Fabio_Capello
+**Remedy:** Restore to "February 2012".
+
+### Row 19299 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did England manager Gareth Southgate resign after losing a final?
+**Answer:** 2024-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2024-07-01 00:00:00' instead of a clean date. Southgate resigned in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "July 2024".
+
+### Row 19300 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did England manager Gareth Southgate resign after losing Euro 2024?
+**Answer:** 2024-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2024-07-01 00:00:00' instead of a clean date. Southgate resigned in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "July 2024".
+
+### Row 19327 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Fabio Capello resign as England manager?
+**Answer:** 2012-02-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2012-02-01 00:00:00' instead of a clean date. Capello resigned in February 2012.
+**Source:** https://en.wikipedia.org/wiki/Fabio_Capello
+**Remedy:** Restore to "February 2012".
+
+### Row 19328 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Gareth Southgate complete his 102-match tenure as England manager?
+**Answer:** 2024-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2024-07-01 00:00:00' instead of a clean date. Southgate finished in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "July 2024".
+
+### Row 19329 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Gareth Southgate first take charge of England after Sam Allardyce's departure?
+**Answer:** 2016-11-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2016-11-01 00:00:00' instead of a clean date. Southgate took charge (interim) in November 2016.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "November 2016".
+
+### Row 19330 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Gareth Southgate manage his 102nd and final England match?
+**Answer:** 2024-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2024-07-01 00:00:00' instead of a clean date. Southgates final match was the July 2024 Euro final.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "July 2024".
+
+### Row 19331 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Gareth Southgate's tenure as England manager end?
+**Answer:** 2024-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2024-07-01 00:00:00' instead of a clean date. Southgates tenure ended in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "July 2024".
+
+### Row 19340 — England (medium) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** When was England's Jordan Pickford selected for the Euro Team of the Tournament?
+**Answer:** 2020
+**Why it fails:** Pickford was NOT in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper named was Gianluigi Donnarumma (Italy), who was also Player of the Tournament.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19341 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When was Gareth Southgate appointed as England manager?
+**Answer:** 2016-11-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2016-11-01 00:00:00' instead of a clean date. Southgate was appointed in November 2016.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "November 2016".
+
+### Row 19342 — England (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When was Gareth Southgate first appointed England manager?
+**Answer:** 2016-11-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2016-11-01 00:00:00' instead of a clean date. Southgate was first appointed in November 2016.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** Restore to "November 2016".
+
+### Row 19376 — England (easy) — FAIL: non-unique (Saka, Foden & Bellingham also played 2022 qualifiers)
+**Q:** Which England academy product played in the 2022 World Cup qualifiers?
+**Answer:** Harry Kane
+**Why it fails:** All four options — Kane, Saka, Foden AND Bellingham — are England academy products who played in the 2022 World Cup qualifiers. 'Which played' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** All four played in the 2022 qualifiers.
+
+### Row 19378 — England (easy) — FAIL: false (Saka did not score in the 2022 QF)
+**Q:** Which England academy product scored in the 2022 FIFA World Cup quarter-final?
+**Answer:** Bukayo Saka
+**Why it fails:** Saka did NOT score in England's 2022 quarter-final v France — England's only goal was Harry Kane's penalty (a 2-1 loss). Saka's 2022 goals were v Iran (2) and v Senegal (1).
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Kane scored England's only QF goal.
+
+### Row 19380 — England (easy) — FAIL: false (Saka scored 3 at 2022, more than Kanes 2)
+**Q:** Which England academy product scored the most goals at the 2022 World Cup?
+**Answer:** Harry Kane
+**Why it fails:** Among the options, Saka scored THREE at the 2022 WC (2 v Iran, 1 v Senegal) — more than Kane's two. So Kane was not the top scorer of the listed academy products.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Saka scored 3, more than Kane.
+
+### Row 19381 — England (easy) — FAIL: false (Bellinghams first WC goal was v Iran, not the QF)
+**Q:** Which England academy product scored their first World Cup goal in the 2022 quarter-final?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham scored his first World Cup goal in England's 2022 group-stage OPENER against Iran — not the quarter-final. He did not score in the QF v France.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** His first WC goal was v Iran.
+
+### Row 19382 — England (easy) — FAIL: non-unique (Bellingham & Kane also started the QF)
+**Q:** Which England academy product started the 2022 World Cup quarter-final?
+**Answer:** Bukayo Saka
+**Why it fails:** Saka, Bellingham, Foden AND Kane all started England's 2022 quarter-final v France — so 'which academy product started' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Several options started the QF.
+
+### Row 19384 — England (easy) — FAIL: false (Kane did NOT win the 2022 Golden Boot)
+**Q:** Which England academy product was top scorer at the 2022 FIFA World Cup?
+**Answer:** Harry Kane
+**Why it fails:** Kane did not win the 2022 World Cup Golden Boot — Kylian Mbappé did (8 goals). Kane scored only 2, and was not even England's top scorer (Saka and Rashford had 3 each).
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_awards
+**Remedy:** Mbappe won the 2022 Golden Boot.
+
+### Row 19385 — England (easy) — FAIL: false (the 2022 QF had no shootout)
+**Q:** Which England academy star scored a penalty in the 2022 World Cup quarter-final?
+**Answer:** Bukayo Saka
+**Why it fails:** England's 2022 quarter-final v France did NOT go to a penalty shootout — France won 2-1 in normal time. So Saka did not score 'a penalty in the shootout'. (Kane missed an open-play penalty.)
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** There was no QF shootout.
+
+### Row 19394 — England (easy) — FAIL: non-unique (Rashford also in both 2018 & 2022 squads)
+**Q:** Which England attacker was selected for both the 2018 and 2022 World Cup squads?
+**Answer:** Raheem Sterling
+**Why it fails:** Both Sterling AND Rashford (a listed option) were selected for England's 2018 AND 2022 World Cup squads. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Rashford was also in both squads.
+
+### Row 19397 — England (easy) — FAIL: false (Kane had ~66 goals/~98 caps by 2024, not 78/112)
+**Q:** Which England captain had 78 goals in 112 caps by 2024?
+**Answer:** Harry Kane
+**Why it fails:** By 2024 (e.g. after Euro 2024) Kane had roughly 66 goals in ~98 caps — not '78 goals in 112 caps'. Those higher figures came in 2025-26, not by 2024.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** His 2024 totals were ~66 goals / ~98 caps.
+
+### Row 19404 — England (easy) — FAIL: false premise (England-Scotland Euro 2020 was 0-0)
+**Q:** Which England captain started the 2-2 Euro 2020 draw with Scotland?
+**Answer:** Harry Kane
+**Why it fails:** The England-Scotland Euro 2020 game was 0-0, not 2-2 — so the '2-2 draw' premise is false (Kane did captain it).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+### Row 19405 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back debuted at the 2018 World Cup, then started in 2022?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19409 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back started at the 2018 and 2022 World Cups?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19410 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back started at the 2018 World Cup, Euro 2020, and 2022 World Cup?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19411 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back started at the 2022 World Cup?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19412 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back was a key starter in the 2018 and 2022 World Cup campaigns?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19413 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back was first a key player in the 2018 World Cup campaign?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19414 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back was in the 2018 World Cup squad?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19415 — England (easy) — FAIL: non-unique (Stones AND Maguire both qualify)
+**Q:** Which England centre-back was key at the 2018, 2020, and 2022 tournaments?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's established centre-back PAIR — both started the 2018 WC, Euro 2020 and 2022 WC. So 'which centre-back' is non-unique between the two listed options.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally satisfies the criterion.
+
+### Row 19428 — England (easy) — FAIL: non-unique (Stones, Maguire & Walker all WC-debuted in 2018)
+**Q:** Which England defender made his World Cup debut in 2018?
+**Answer:** John Stones
+**Why it fails:** Stones, Maguire AND Walker all made their World Cup debut at the 2018 tournament — so 'which defender made his WC debut in 2018' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** Several defenders debuted at the 2018 WC.
+
+### Row 19429 — England (easy) — FAIL: non-unique (Stones, Maguire & Walker all played all three)
+**Q:** Which England defender played at the 2018, 2022 World Cups and Euro 2020?
+**Answer:** John Stones
+**Why it fails:** Stones, Maguire AND Walker all played the 2018 WC, Euro 2020 and 2022 WC. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Several defenders played all three.
+
+### Row 19430 — England (easy) — FAIL: non-unique (Stones, Maguire & Walker all played all three)
+**Q:** Which England defender played at the 2018, 2022, and Euro 2020 tournaments?
+**Answer:** John Stones
+**Why it fails:** Stones, Maguire AND Walker all played the 2018 WC, Euro 2020 and 2022 WC. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Several defenders played all three.
+
+### Row 19436 — England (easy) — FAIL: non-unique (Stones AND Maguire were both key CBs)
+**Q:** Which England defender was a key centre-back at the 2018 and 2022 World Cups?
+**Answer:** John Stones
+**Why it fails:** Stones and Maguire were England's centre-back pair at both the 2018 and 2022 World Cups — 'which CB was key' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Maguire equally qualifies.
+
+### Row 19438 — England (easy) — FAIL: non-unique (Trippier also wasnt first-choice RB)
+**Q:** Which England defender was NOT first-choice right-back at the 2022 World Cup?
+**Answer:** Trent Alexander-Arnold
+**Why it fails:** Walker was the first-choice RB at 2022, so both TAA AND Trippier (squad options) were 'not first-choice'. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** More than one option wasn't first-choice.
+
+### Row 19445 — England (easy) — FAIL: false (Pickford kept ~1 clean sheet at 2018, not 5)
+**Q:** Which England goalkeeper kept five clean sheets at the 2018 World Cup?
+**Answer:** Jordan Pickford
+**Why it fails:** England kept only ONE clean sheet at the 2018 World Cup (v Sweden) and conceded ~8 goals across 7 games — Pickford did not keep five clean sheets.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** England kept 1 clean sheet (v Sweden).
+
+### Row 19454 — England (easy) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** Which England goalkeeper was included in Euro 2020's Team of the Tournament?
+**Answer:** Jordan Pickford
+**Why it fails:** Pickford was NOT in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper was Gianluigi Donnarumma (also Player of the Tournament). The three English players named were Walker, Maguire and Sterling.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19455 — England (easy) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** Which England goalkeeper was named to the Euro 2020 Team of the Tournament?
+**Answer:** Jordan Pickford
+**Why it fails:** Pickford was NOT in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper was Gianluigi Donnarumma (also Player of the Tournament). The three English players named were Walker, Maguire and Sterling.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19457 — England (easy) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** Which England goalkeeper's Euro 2020 displays earned him a Team of the Tournament spot?
+**Answer:** Jordan Pickford
+**Why it fails:** Pickford was NOT in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper was Gianluigi Donnarumma (also Player of the Tournament). The three English players named were Walker, Maguire and Sterling.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19463 — England (easy) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** Which England keeper made the Euro 2020 Team before the 2022 World Cup?
+**Answer:** Jordan Pickford
+**Why it fails:** Pickford was NOT in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper was Gianluigi Donnarumma (also Player of the Tournament). The three English players named were Walker, Maguire and Sterling.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19464 — England (easy) — FAIL: false (Donnarumma was the Euro 2020 TotT keeper, not Pickford)
+**Q:** Which England keeper's Euro 2020 performance earned him Team of the Tournament honors?
+**Answer:** Jordan Pickford
+**Why it fails:** Pickford was NOT in the official UEFA Euro 2020 Team of the Tournament — the goalkeeper was Gianluigi Donnarumma (also Player of the Tournament). The three English players named were Walker, Maguire and Sterling.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Donnarumma was the Euro 2020 TotT keeper.
+
+### Row 19480 — England (easy) — FAIL: false (Capello had a higher win rate than Southgate)
+**Q:** Which England manager had the highest win rate from 2006 to 2024?
+**Answer:** Gareth Southgate
+**Why it fails:** Southgate did NOT have the highest win rate from 2006-2024 — Fabio Capello won ~66.7% (28 of 42) vs Southgate's 59.8% (61 of 102). Capello's rate was higher.
+**Source:** https://en.wikipedia.org/wiki/Fabio_Capello
+**Remedy:** Capello had the higher win rate.
+
+### Row 19524 — England (easy) — FAIL: false (the SF was 2018, the OBE 2019 - different years)
+**Q:** Which England manager received his OBE in the same year he led the team to a World Cup semi-final?
+**Answer:** Gareth Southgate
+**Why it fails:** Southgate led England to the World Cup SEMI-FINAL in 2018 but received his OBE in 2019 — NOT the same year (the explanation itself says 'the year after').
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** The OBE (2019) was the year after the 2018 SF.
+
+### Row 19536 — England (easy) — FAIL: false (England played 3-5-2 at the 2018 WC, not 4-3-3)
+**Q:** Which England manager used a Premier League-based 4-3-3 in the 2018 World Cup?
+**Answer:** Gareth Southgate
+**Why it fails:** Southgate used a 3-5-2/3-4-3 (wing-backs) at the 2018 World Cup, NOT a 4-3-3 — he switched to a back four/4-3-3 later (around 2021). (Row 19535 even says his early system was 3-4-3.)
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** England played a 3-5-2 at 2018.
+
+### Row 19537 — England (easy) — FAIL: false (Hodgson was appointed before SGP opened)
+**Q:** Which England manager was appointed after St George's Park opened in 2012?
+**Answer:** Roy Hodgson
+**Why it fails:** Hodgson was appointed in May 2012, but St George's Park opened in October 2012 — so he was appointed BEFORE it opened, not after. (The explanation is self-contradictory.)
+**Source:** https://en.wikipedia.org/wiki/St_George%27s_Park_National_Football_Centre
+**Remedy:** He was appointed ~5 months before SGP opened.
+
+### Row 19560 — England (easy) — FAIL: false (England conceded ~8 at 2018, not 2)
+**Q:** Which England manager's tactics led to conceding only 2 goals in 7 matches at the 2018 World Cup?
+**Answer:** Gareth Southgate
+**Why it fails:** England conceded roughly EIGHT goals across their seven 2018 World Cup matches, not two.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** They conceded ~8, not 2.
+
+### Row 19580 — England (easy) — FAIL: false (Henderson DID play at the 2014 WC)
+**Q:** Which England midfielder did not play at the 2014 World Cup?
+**Answer:** Jordan Henderson
+**Why it fails:** Jordan Henderson WAS in England's 2014 World Cup squad and played (he started group games) — so 'did not play at 2014' is false. (Gerrard, Lampard and Rooney all played 2014 too.)
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2014_FIFA_World_Cup
+**Remedy:** Henderson featured at the 2014 WC.
+
+### Row 19585 — England (easy) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** Which England midfielder won the Euro 2024 Young Player award?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — Spain's Lamine Yamal did.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19586 — England (easy) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** Which England midfielder won Young Player of the Tournament at Euro 2024?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — Spain's Lamine Yamal did.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19598 — England (easy) — FAIL: false (de Ligt scored once in the 2019 NL SF, not twice)
+**Q:** Which England opponent scored twice in the 2019 UEFA Nations League semi-final?
+**Answer:** Matthijs de Ligt
+**Why it fails:** Matthijs de Ligt scored just ONE of the Netherlands' goals in the 2019 Nations League SF (73') — the other two came in extra time (a Walker own goal and a Promes goal), not from de Ligt.
+**Source:** https://en.wikipedia.org/wiki/2019_UEFA_Nations_League_Finals
+**Remedy:** de Ligt scored once.
+
+### Row 19607 — England (easy) — FAIL: false (Kane surpassed Rooney in March 2023, not by 2022)
+**Q:** Which England player became the team's all-time top scorer by 2022?
+**Answer:** Harry Kane
+**Why it fails:** By the end of 2022 Kane had only EQUALLED Rooney's record (53) — he surpassed it (54) in March 2023. So he was not yet the sole all-time top scorer 'by 2022'.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** He became the record holder in March 2023.
+
+### Row 19614 — England (easy) — FAIL: false (Kane broke the record in 2023, not the 2022 WC year)
+**Q:** Which England player broke the national goals record in the year of the 2022 World Cup?
+**Answer:** Harry Kane
+**Why it fails:** Kane broke Rooney's record in March 2023 — NOT 'in the year of the 2022 World Cup' (2022). The explanation itself says 'in 2023, the year following the 2022 WC'.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** He broke it in 2023.
+
+### Row 19615 — England (easy) — FAIL: false (March 2023 was Euro 2024 qualifying, not 2026)
+**Q:** Which England player broke Wayne Rooney's goal record during 2026 World Cup qualifying?
+**Answer:** Harry Kane
+**Why it fails:** Kane broke the record vs Italy in March 2023 — that was a EURO 2024 qualifier. The 2026 World Cup qualifying cycle did not begin until 2025.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024_qualifying
+**Remedy:** It was during Euro 2024 qualifying.
+
+### Row 19643 — England (easy) — FAIL: false (Kane had ~66 goals/~98 caps by 2024, not 78/112)
+**Q:** Which England player had 78 goals in 112 caps by 2024?
+**Answer:** Harry Kane
+**Why it fails:** By 2024 Kane had roughly 66 goals in ~98 caps — not '78 goals in 112 caps'. Those higher figures came in 2025-26.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** His 2024 totals were ~66 goals / ~98 caps.
+
+### Row 19669 — England (easy) — FAIL: false (England kept ~1 clean sheet at 2018, not 5)
+**Q:** Which England player kept 5 clean sheets at the 2018 World Cup?
+**Answer:** Jordan Pickford
+**Why it fails:** England kept only ONE clean sheet at the 2018 World Cup (v Sweden), conceding ~8 goals over 7 games — not five.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** England kept 1 clean sheet (v Sweden).
+
+### Row 19685 — England (easy) — FAIL: non-unique (Saka also scored 3 at 2022)
+**Q:** Which England player scored 3 goals at the 2022 World Cup?
+**Answer:** Marcus Rashford
+**Why it fails:** Both Rashford (1 v Iran, 2 v Wales) AND Saka (2 v Iran, 1 v Senegal) scored THREE at the 2022 WC. Saka is a listed option, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Saka also scored 3.
+
+### Row 19710 — England (easy) — FAIL: false (Saka did NOT score at Euro 2020)
+**Q:** Which England player scored at the 2022 World Cup and Euro 2020?
+**Answer:** Bukayo Saka
+**Why it fails:** Saka scored at the 2022 WC but did NOT score at Euro 2020 (he played but is best remembered for missing the final penalty). Sterling and Kane scored at both — Saka did not.
+**Source:** https://en.wikipedia.org/wiki/Bukayo_Saka
+**Remedy:** Saka didn't score at Euro 2020.
+
+### Row 19711 — England (easy) — FAIL: non-unique (Kane also scored in the 2-0 v Germany)
+**Q:** Which England player scored at Wembley in their 2-0 Euro 2020 win over Germany?
+**Answer:** Raheem Sterling
+**Why it fails:** Both Sterling (75') AND Kane (86', a listed option) scored in England's 2-0 Euro 2020 win over Germany. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_knockout_phase
+**Remedy:** Kane also scored v Germany.
+
+### Row 19722 — England (hard) — FAIL: non-unique (Kane also scored in the shootout)
+**Q:** Which England player scored in the Euro 2020 final penalty shootout?
+**Answer:** Harry Maguire
+**Why it fails:** Both Kane AND Maguire scored their penalties in the Euro 2020 final shootout (the misses were Rashford, Sancho, Saka). Kane is a listed option, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_final
+**Remedy:** Kane also scored a shootout penalty.
+
+### Row 19727 — England (easy) — FAIL: non-unique (Trippier also scored in the Colombia shootout)
+**Q:** Which England player scored in their 2018 World Cup shootout win over Colombia?
+**Answer:** Eric Dier
+**Why it fails:** Dier scored the winner, but Trippier (a listed option) also scored a penalty in the 2018 shootout v Colombia — so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** Trippier also scored.
+
+### Row 19728 — England (easy) — FAIL: non-unique (Kane also scored v Germany)
+**Q:** Which England player scored in their Euro 2020 knockout win over Germany?
+**Answer:** Raheem Sterling
+**Why it fails:** Both Sterling (75') AND Kane (86', a listed option) scored in England's 2-0 Euro 2020 win over Germany. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_knockout_phase
+**Remedy:** Kane also scored.
+
+### Row 19729 — England (easy) — FAIL: non-unique (Saka also scored more than Kane)
+**Q:** Which England player scored more goals at the 2022 World Cup than Harry Kane?
+**Answer:** Marcus Rashford
+**Why it fails:** Both Rashford AND Saka (a listed option) scored 3 at the 2022 WC — more than Kane's 2. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Saka also outscored Kane.
+
+### Row 19761 — England (easy) — FAIL: non-unique (Saka, Rice & Walker also in multiple squads)
+**Q:** Which England player was in multiple squads from 2022 to 2024?
+**Answer:** Phil Foden
+**Why it fails:** All four options — Foden, Saka, Rice and Walker — were in multiple England squads from 2022-2024. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Several options were in multiple squads.
+
+### Row 19763 — England (easy) — FAIL: non-unique (Bellingham, Saka & Rice were also in the 2022 squad)
+**Q:** Which England player was in the 2022 FIFA World Cup squad?
+**Answer:** Phil Foden
+**Why it fails:** All four options — Foden, Bellingham, Saka and Rice — were in England's 2022 World Cup squad. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Several options were in the 2022 squad.
+
+### Row 19768 — England (easy) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** Which England player was named Young Player at Euro 2024?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — Spain's Lamine Yamal did.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19771 — England (easy) — FAIL: non-unique (Saka & Foden also not in the 2016 squad)
+**Q:** Which England player was not in the 2016 squad when Leicester won the title?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham, Saka AND Foden (three options) were all too young for the Euro 2016 squad — only Kane was in it. So 'not in the 2016 squad' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_national_football_team
+**Remedy:** Several options weren't in the 2016 squad.
+
+### Row 19776 — England (easy) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** Which England player was the 2024 Euros Young Player of the Tournament?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — Spain's Lamine Yamal did.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19781 — England (easy) — FAIL: false (Kane had ~53 goals by the 2022 WC, not 78)
+**Q:** Which England player was their all-time leading scorer at the 2022 World Cup?
+**Answer:** Harry Kane
+**Why it fails:** By the 2022 World Cup Kane had ~53 goals (he equalled Rooney's record there) — not 78. He didn't even hold the sole record until March 2023.
+**Source:** https://en.wikipedia.org/wiki/Harry_Kane
+**Remedy:** He had ~53 by 2022.
+
+### Row 19789 — England (easy) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** Which England player won Young Player of the Tournament at Euro 2024, mirroring a 2006 World Cup winner?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — Spain's Lamine Yamal did.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19792 — England (easy) — FAIL: false (Saka did NOT score at Euro 2020)
+**Q:** Which England player, developed in the English academy system, scored at UEFA Euro 2020?
+**Answer:** Bukayo Saka
+**Why it fails:** Saka played at Euro 2020 but did NOT score (he is remembered for missing the final penalty). None of the listed academy products scored at Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/Bukayo_Saka
+**Remedy:** Saka didn't score at Euro 2020.
+
+### Row 19793 — England (easy) — FAIL: non-unique (Kane, Pickford & Stones also started the 2022 WC)
+**Q:** Which England player, like Kyle Walker, started at the 2022 World Cup?
+**Answer:** Declan Rice
+**Why it fails:** All four options — Rice, Kane, Pickford and Stones — started England's 2022 World Cup matches. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Several options started at 2022.
+
+### Row 19794 — England (easy) — FAIL: false (Foden was left OUT of the 2026 squad)
+**Q:** Which England player, named PFA Young Player in 2021, was in squads for the 2022 and 2026 World Cups?
+**Answer:** Phil Foden
+**Why it fails:** Foden was NOT in England's 2026 World Cup squad — Tuchel omitted him (along with Palmer). So he was not in 'both the 2022 AND 2026' squads.
+**Source:** https://www.englandfootball.com/articles/2026/May/22/england-mens-world-cup-2026-squad-named-by-thomas-tuchel-20262205
+**Remedy:** Foden missed the 2026 squad.
+
+### Row 19818 — England (easy) — FAIL: false (Man City had 2 straight by the 2022 WC, not 4)
+**Q:** Which England player's club won four straight league titles before the 2022 World Cup?
+**Answer:** Phil Foden
+**Why it fails:** Man City's four-in-a-row was completed in 2023-24, AFTER the 2022 World Cup — by Nov 2022 they had won only two consecutive titles.
+**Source:** https://en.wikipedia.org/wiki/Manchester_City_F.C.
+**Remedy:** It was 2 straight by the 2022 WC.
+
+### Row 19824 — England (easy) — FAIL: false (Saka scored a brace v Iran, not a hat-trick)
+**Q:** Which England player's hat-trick fueled their 6-2 win over Iran in 2022?
+**Answer:** Bukayo Saka
+**Why it fails:** Saka scored TWO goals (a brace) in the 6-2 win over Iran — not a hat-trick.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Saka scored 2 v Iran.
+
+### Row 19833 — England (easy) — FAIL: false (England-Scotland Euro 2020 was 0-0)
+**Q:** Which England players scored in the 2-2 Euro 2020 draw with Scotland?
+**Answer:** Kane and Sterling
+**Why it fails:** The England-Scotland Euro 2020 game finished 0-0 — neither Kane nor Sterling scored, and there was no '2-2 draw'.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw with no scorers.
+
+### Row 19842 — England (easy) — FAIL: non-unique (Trippier also WC-debuted in 2018)
+**Q:** Which England right-back debuted at the 2018 FIFA World Cup?
+**Answer:** Kyle Walker
+**Why it fails:** Both Walker AND Trippier (a listed option) made their World Cup debut at the 2018 tournament — so 'which right-back debuted at 2018' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** Trippier also debuted at 2018.
+
+### Row 19857 — England (hard) — FAIL: false (England conceded ~8 at 2018, not 2)
+**Q:** Which England squad conceded just two goals in seven 2018 World Cup matches?
+**Answer:** 2018 World Cup squad
+**Why it fails:** England conceded roughly EIGHT goals across their seven 2018 World Cup matches (Tunisia 1, Panama 1, Belgium 1, Colombia 1, Sweden 0, Croatia 2, Belgium 2) — not two.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** They conceded ~8, not 2.
+
+### Row 19858 — England (medium) — FAIL: false (England conceded ~8 at 2018, not 2)
+**Q:** Which England squad conceded only two goals at the 2018 World Cup?
+**Answer:** The 2018 squad
+**Why it fails:** England conceded roughly EIGHT goals across their seven 2018 World Cup matches (Tunisia 1, Panama 1, Belgium 1, Colombia 1, Sweden 0, Croatia 2, Belgium 2) — not two.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** They conceded ~8, not 2.
+
+### Row 19859 — England (easy) — FAIL: false (Bellingham was at Dortmund, not a PL club)
+**Q:** Which England squad in 2022 featured only Premier League-based players?
+**Answer:** World Cup squad
+**Why it fails:** England's 2022 squad was NOT all Premier League-based — Jude Bellingham played for Borussia Dortmund. So it was not 'only PL-based players'.
+**Source:** https://en.wikipedia.org/wiki/Jude_Bellingham
+**Remedy:** Bellingham was at Dortmund.
+
+### Row 19871 — England (easy) — FAIL: false (Euro 2024 Young Player was Lamine Yamal, not Bellingham)
+**Q:** Which England star's Young Player award at Euro 2024 came after Saka's 2022 Kopa nomination?
+**Answer:** Jude Bellingham
+**Why it fails:** Bellingham did NOT win Young Player of the Tournament at Euro 2024 — Spain's Lamine Yamal did.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Lamine Yamal won Euro 2024 Young Player.
+
+### Row 19889 — England (medium) — FAIL: false (England conceded ~8 at 2018, not 2)
+**Q:** Which England team conceded only 2 goals in 7 matches at the 2018 World Cup?
+**Answer:** England 2018 team
+**Why it fails:** England conceded roughly EIGHT goals across their seven 2018 World Cup matches (Tunisia 1, Panama 1, Belgium 1, Colombia 1, Sweden 0, Croatia 2, Belgium 2) — not two.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** They conceded ~8, not 2.
+
+### Row 19931 — England (easy) — FAIL: false (Saka was Englands joint-top 2022 scorer, not Kane)
+**Q:** Which English academy product was England's top scorer at the 2022 World Cup?
+**Answer:** Harry Kane
+**Why it fails:** Kane scored only 2 at the 2022 WC — Saka (a listed option) scored 3. So Kane was not England's top scorer there.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Saka (3) outscored Kane (2).
+
+### Row 19936 — England (easy) — FAIL: non-unique (Chelsea & Arsenal also didnt win 2020-24)
+**Q:** Which English club did NOT win the Premier League from 2020-21 to 2023-24?
+**Answer:** Liverpool
+**Why it fails:** Man City won all four titles 2020-21 to 2023-24, so Liverpool, Chelsea AND Arsenal (three options) all 'did NOT win'. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Premier_League
+**Remedy:** Three options didn't win.
+
+### Row 19937 — England (easy) — FAIL: non-unique (Liverpool & Man Utd also didnt win 2021 CL)
+**Q:** Which English club did NOT win the UEFA Champions League in 2021?
+**Answer:** Manchester City
+**Why it fails:** Chelsea won the 2021 Champions League, so Man City, Liverpool AND Man Utd (three options) all 'did NOT win it in 2021'. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Champions_League_final
+**Remedy:** Three options didn't win 2021.
+
+### Row 19948 — England (easy) — FAIL: false (2008 was NOT a World Cup year)
+**Q:** Which English club won the Champions League in a World Cup year?
+**Answer:** Manchester United
+**Why it fails:** Man Utd won the Champions League in 2008 — but 2008 was a EURO year, NOT a World Cup year (WCs: 2006, 2010, 2014...). No recent English CL win falls in a WC year.
+**Source:** https://en.wikipedia.org/wiki/2008_UEFA_Champions_League_final
+**Remedy:** 2008 wasn't a WC year.
+
+### Row 19950 — England (easy) — FAIL: false (no 2012-Chelsea player was in the 2022 England squad)
+**Q:** Which English club's 2012 Champions League win featured players who later starred for England at the 2022 World Cup?
+**Answer:** Chelsea
+**Why it fails:** Chelsea won the 2012 CL, but none of that squad's English players (Terry, Lampard, Cole, Cahill) were in England's 2022 World Cup squad — they had all retired. The 'players from that era in 2022' claim is false.
+**Source:** https://en.wikipedia.org/wiki/2012_UEFA_Champions_League_final
+**Remedy:** No 2012-Chelsea player featured at 2022.
+
+### Row 19953 — England (easy) — FAIL: false (Man City had 2 straight by the 2022 WC, not 4)
+**Q:** Which English club's manager won four straight league titles before the 2022 World Cup?
+**Answer:** Manchester City's Pep Guardiola
+**Why it fails:** Man City's four-in-a-row was completed in 2023-24, AFTER the 2022 World Cup — only two by Nov 2022.
+**Source:** https://en.wikipedia.org/wiki/Manchester_City_F.C.
+**Remedy:** It was 2 straight by the 2022 WC.
+
+### Row 19964 — England (easy) — FAIL: non-unique (Maguire, Rashford & Henderson also in the 2022 squad)
+**Q:** Which English player was in the 2022 World Cup squad?
+**Answer:** Jude Bellingham
+**Why it fails:** All four options — Bellingham, Maguire, Rashford and Henderson — were in England's 2022 World Cup squad. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** All four were in the 2022 squad.
+
+### Row 19973 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** Which formation did England manager Gareth Southgate NOT use at Euro 2020?
+**Answer:** 2002-04-04 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2002-04-04 00:00:00' instead of a clean date. Southgate did not use a 4-4-2 at Euro 2020.
+**Source:** https://en.wikipedia.org/wiki/England_at_UEFA_Euro_2020
+**Remedy:** Restore to "4-4-2".
+
+### Row 19975 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** Which formation did England use at the 2018 FIFA World Cup under Gareth Southgate?
+**Answer:** 2002-05-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2002-05-03 00:00:00' instead of a clean date. Southgate used a 3-4-3/3-5-2 at the 2018 WC.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** Restore to a formation (3-5-2).
+
+### Row 19978 — England (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** Which formation did England use in their 2018 World Cup semi-final?
+**Answer:** 2002-05-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2002-05-03 00:00:00' instead of a clean date. Southgate used a 3-5-2 in the 2018 SF.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** Restore to "3-5-2".
+
+### Row 19987 — England (easy) — FAIL: false (Sigthorsson scored once v England, not twice)
+**Q:** Which Iceland player scored twice against England in Euro 2016?
+**Answer:** Kolbeinn Sigþórsson
+**Why it fails:** Iceland's two goals in their 2-1 Euro 2016 win over England were Sigurdsson (penalty, 6') and Sigthorsson (18') — Sigthorsson scored just ONE (the eventual winner), not twice.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** He scored once; Sigurdsson scored the other.
+
+### Row 20007 — England (easy) — FAIL: false (Man City had 2 straight by the 2022 WC, not 4)
+**Q:** Which manager led Manchester City to four straight Premier League titles before England's 2022 World Cup?
+**Answer:** Pep Guardiola
+**Why it fails:** Man City's four-in-a-row was completed in 2023-24, AFTER the 2022 World Cup — only two straight by Nov 2022.
+**Source:** https://en.wikipedia.org/wiki/Manchester_City_F.C.
+**Remedy:** It was 2 straight by the 2022 WC.
+
+### Row 20037 — England (easy) — FAIL: non-unique (Albania & Hungary also not beaten by 10+)
+**Q:** Which nation did England NOT beat by 10+ goals in 2022 World Cup qualifying?
+**Answer:** Poland
+**Why it fails:** England's only 10+ win was over San Marino — Poland, Albania AND Hungary (three options) were all NOT beaten by 10+. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Three options weren't beaten by 10+.
+
+### Row 20039 — England (easy) — FAIL: non-unique (Croatia & Italy also not lost to)
+**Q:** Which nation did England NOT lose to in a knockout match at Euro 2016?
+**Answer:** Germany
+**Why it fails:** England's only Euro 2016 knockout match was the R16 loss to Iceland — they did NOT play Germany, Croatia or Italy in knockouts. So 'did NOT lose to' is vacuously true for all three (non-unique).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** Three options weren't faced in 2016 knockouts.
+
+### Row 20041 — England (easy) — FAIL: false (England-Scotland Euro 2020 was 0-0, not 2-2)
+**Q:** Which nation drew 2-2 with England at Euro 2020?
+**Answer:** Scotland
+**Why it fails:** England drew 0-0 with Scotland in the Euro 2020 group stage — not 2-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+### Row 20068 — England (easy) — FAIL: self-referential (answer is England itself)
+**Q:** Which nation's national training centre opened in 2012 like England's St George's Park?
+**Answer:** England
+**Why it fails:** The question asks which nation's centre opened in 2012 'like England's St George's Park' and answers England — the answer is the subject itself (self-referential/circular).
+**Source:** https://en.wikipedia.org/wiki/St_George%27s_Park_National_Football_Centre
+**Remedy:** Name a different nation, or rephrase.
+
+### Row 20094 — England (medium) — FAIL: false premise (England-Scotland Euro 2020 was 0-0)
+**Q:** Which stadium hosted England's 2-2 Euro 2020 group stage draw with Scotland?
+**Answer:** Wembley Stadium
+**Why it fails:** The match was at Wembley (answer correct), but the question's '2-2 draw' is false — England drew 0-0 with Scotland.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+### Row 20104 — England (easy) — FAIL: false (England conceded ~8 at 2018, not 2)
+**Q:** Which team conceded fewer goals than England at the 2018 World Cup?
+**Answer:** France
+**Why it fails:** The premise is wrong — England conceded ~8 goals at the 2018 WC (not 2), and France conceded ~6 (not 1). The dataset's figures for both are false.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2018_FIFA_World_Cup
+**Remedy:** England conceded ~8, France ~6.
+
+### Row 20118 — England (easy) — FAIL: false (England beat Hungary 4-0; also drew Poland)
+**Q:** Which team did England NOT beat in their 2022 World Cup qualifying group?
+**Answer:** Hungary
+**Why it fails:** England DID beat Hungary (4-0 away) in 2022 qualifying — they only drew the home game. And they also dropped points to Poland (a 1-1 draw), so 'which did England NOT beat' is both false for Hungary and non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** England beat Hungary 4-0; also drew Poland.
+
+### Row 20120 — England (medium) — FAIL: non-unique (Portugal & Belgium also not faced in knockouts)
+**Q:** Which team did England NOT face in the 2022 World Cup knockout stage?
+**Answer:** Germany
+**Why it fails:** England's 2022 knockout opponents were Senegal and France — they did NOT face Germany, Portugal OR Belgium (three options). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/England_at_the_2022_FIFA_World_Cup
+**Remedy:** Three options weren't faced in knockouts.
+
+### Row 20121 — England (easy) — FAIL: false (England BEAT Germany in a knockout, not lost)
+**Q:** Which team did England NOT lose to in a knockout match?
+**Answer:** Colombia
+**Why it fails:** England did NOT lose to Germany in a knockout — they BEAT Germany 2-0 in the Euro 2020 R16. So 'not lost to' is true for both Colombia AND Germany (non-unique), and the explanation's 'lost to Germany' is false.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_knockout_phase
+**Remedy:** England beat Germany at Euro 2020.
+
+### Row 20130 — England (medium) — FAIL: non-unique (Southgate also reached no final at the 2022 WC)
+**Q:** Which tournament did England's Gareth Southgate not reach a final in?
+**Answer:** 2018 World Cup
+**Why it fails:** Southgate reached finals at Euro 2020 and Euro 2024 — he did NOT reach a final at the 2018 WC (SF) OR the 2022 WC (QF). Both are listed options, so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Gareth_Southgate
+**Remedy:** He reached no final at 2018 AND 2022.
+
+### Row 20151 — England (easy) — FAIL: non-unique/garbled (England also faced Russia & Wales at Euro 2016)
+**Q:** Which UEFA nation did England face in the 2016 Euros, unlike Leicester's title rivals?
+**Answer:** Iceland
+**Why it fails:** England faced Iceland, Russia AND Wales at Euro 2016 (group + R16) — so 'which did England face' is non-unique. The explanation ('the others are Premier League clubs') is also nonsense (they're nations).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** England also faced Russia and Wales; fix the explanation.
+
+### Row 20160 — England (easy) — FAIL: non-unique (Spain & France also won their 2018 groups)
+**Q:** Which UEFA team besides England also finished 1st in their 2018 World Cup qualifying group?
+**Answer:** Germany
+**Why it fails:** Germany, Spain AND France all finished 1st in their 2018 World Cup qualifying groups (Italy, the 4th option, did NOT — they finished 2nd and lost the playoff). So the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** Spain and France also topped their groups.
+
+### Row 20162 — England (medium) — FAIL: false (England-Scotland Euro 2020 was 0-0, not 2-2)
+**Q:** Which UEFA team drew 2-2 with England in the Euro 2020 group stage?
+**Answer:** Scotland
+**Why it fails:** England drew 0-0 with Scotland at Wembley in the Euro 2020 group stage — not 2-2.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_D
+**Remedy:** It was a 0-0 draw.
+
+## France — rows 20255–21124 (liveness on QA_PASSED_b2.md rows) — 89 FAIL
+
+**Fact base (sourced):** France did **NOT** win all 10 Euro 2020 qualifiers (**W8 D1 L1**, lost to Turkey) — Italy & Belgium were the perfect sides. France **BEAT** Spain 2-1 in the **2021** Nations League final (they didn't lose a 2022 NL final to Spain). **Mbappé scored a hat-trick (3), not 4**, in the 2022 final, and **8** (not 4) across the tournament; he scored **once** in the 2018 final; **Kolo Muani did NOT score** the 2022 final (Mbappé scored all 3); the 2018 final opener was a **Mandžukić own goal**, not a Griezmann goal. **Umtiti** (not Mbappé) scored the 2018 SF. The Euro 2016 SF was **2-0** (not 1-0). **Griezmann won the Bronze Ball** at 2018 (not Silver). **Benzema, Pogba & Kanté all missed 2022 injured** (non-unique). **Lloris was not the 2018 All-Star GK** (Courtois). **James Rodríguez** won the 2014 Golden Boot with **6**, not 8. The Euro 2016 **England-Wales** game was at **Lens**, not the Vélodrome. Recurring flaws: **Clairefontaine** rows non-unique (Henry & Mbappé), several **self-referential / Excel date-corruption** rows. Sources: Wikipedia (France NT, 1998/2018 finals, 2022 final, Euro 2016/2020/2024, UEFA Euro 2020 qualifying, player/award pages).
+
+### Row 20264 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** At Euro 2020, France led Switzerland by what score before collapsing?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-03 00:00:00' instead of the score. France led Switzerland 3-1 before losing on penalties.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore to "3-1".
+
+### Row 20269 — France (easy) — FAIL: dubious (Courtois, not Lloris, was the 2018 standout GK)
+**Q:** At the 2018 World Cup, which French player was selected for the All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** Lloris was not the 2018 World Cup's All-Star/best goalkeeper — the Golden Glove (best GK) went to Thibaut Courtois (Belgium), who would be any team-of-the-tournament keeper. France's likelier All-Star picks were Mbappé, Griezmann or Varane.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Courtois was the 2018 Golden Glove keeper.
+
+### Row 20288 — France (medium) — FAIL: false (France did NOT win all 10 Euro 2020 qualifiers)
+**Q:** Before which World Cup did France win all 10 Euro qualifiers?
+**Answer:** 2022 World Cup
+**Why it fails:** France went W8 D1 L1 in Euro 2020 qualifying — they LOST 0-2 to Turkey. They did not have a perfect 10-win record (Italy did).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8, not 10.
+
+### Row 20291 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** By what margin did France lose to Spain in the Euro 2024 semi-final?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. France lost 2-1 to Spain in the Euro 2024 SF.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2024
+**Remedy:** Restore to "2-1".
+
+### Row 20294 — France (easy) — FAIL: false premise (France did NOT win all 10 Euro 2020 qualifiers)
+**Q:** For Euro 2020, which nation besides France won all 10 qualifying matches?
+**Answer:** Italy
+**Why it fails:** The premise that France won all 10 Euro 2020 qualifiers is false (France went W8 D1 L1, losing to Turkey). Italy did win all 10, but the 'besides France' framing is wrong.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France weren't perfect; only Italy was.
+
+### Row 20318 — France (easy) — FAIL: false (Germany, not Portugal, finished 2nd in Group F)
+**Q:** France topped Euro 2020's 'Group of Death'. Which team finished second?
+**Answer:** Portugal
+**Why it fails:** In Euro 2020 Group F, France finished 1st (5 pts) and GERMANY 2nd (4 pts) — Portugal finished 3rd (4 pts) and advanced as one of the best third-placed teams, not as runners-up.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_Group_F
+**Remedy:** Germany finished 2nd; Portugal 3rd.
+
+### Row 20319 — France (medium) — FAIL: false premise + self-referential (France won 8, not 10)
+**Q:** France won all 10 Euro 2020 qualifiers. Which World Cup qualifying campaign also had a perfect record?
+**Answer:** Euro 2020 qualifying
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers (W8 D1 L1), and the question asks for a WORLD CUP campaign with a perfect record but answers 'Euro 2020 qualifying' (the same Euro campaign) — both false and self-referential.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8; and it's a Euro, not a WC, campaign.
+
+### Row 20321 — France (easy) — FAIL: non-unique (Spain, Portugal & Belgium also won their 2018 groups)
+**Q:** France won their 2018 World Cup qualifying group. Which other UEFA nation also won its 2018 qualifying group?
+**Answer:** Germany
+**Why it fails:** All four options — Germany, Spain, Portugal and Belgium — won their UEFA qualifying groups for the 2018 World Cup. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_qualification_(UEFA)
+**Remedy:** All four won their groups.
+
+### Row 20347 — France (medium) — FAIL: false (France won 8, not 10, Euro 2020 qualifiers)
+**Q:** How many games did France win in their perfect Euro 2020 qualifying campaign?
+**Answer:** 10
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers — they went W8 D1 L1 (lost 0-2 to Turkey). Italy were the only side with a perfect 10-win record.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8 of 10.
+
+### Row 20367 — France (easy) — FAIL: false (France HAD Serie A players in 2022)
+**Q:** In 2022, which league did French players like Mbappé and Tchouaméni NOT represent?
+**Answer:** Italy's Serie A
+**Why it fails:** France's 2022 squad DID have Serie A players — Giroud, Theo Hernández and Maignan all played for AC Milan. So 'not Italy's Serie A' is false (row 20395 even confirms Italy was represented).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Giroud/Theo/Maignan were at AC Milan.
+
+### Row 20368 — France (easy) — FAIL: false (France BEAT Spain in the 2021 NL final)
+**Q:** In 2022, which nation beat France in the Nations League final?
+**Answer:** Spain
+**Why it fails:** France did not lose a 'Nations League final to Spain' — France BEAT Spain 2-1 in the 2020-21 Nations League final (Oct 2021). France did not reach the 2022-23 final (won by Spain over Croatia).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** France beat Spain 2-1 in the 2021 NL final.
+
+### Row 20382 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** In the 2021 Nations League semi-final, France beat Belgium by what scoreline?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-03 00:00:00' instead of the score. France came back from 2-0 down to win 3-2.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Restore to "3-2".
+
+### Row 20384 — France (easy) — FAIL: non-unique (Tchouameni also missed in the shootout)
+**Q:** In the 2022 World Cup final, which French player missed a crucial penalty against Argentina?
+**Answer:** Kingsley Coman
+**Why it fails:** Both Coman AND Tchouaméni (a listed option) missed their penalties in the 2022 final shootout — Coman's was saved, Tchouaméni's went wide. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Tchouameni also missed.
+
+### Row 20386 — France (medium) — FAIL: false (the Euro 2016 SF was 2-0, not 1-0)
+**Q:** In the Euro 2016 semi-final, what was France's exact scoreline against Germany?
+**Answer:** 1-0
+**Why it fails:** France beat Germany 2-0 in the Euro 2016 semi-final (Griezmann scored both — a penalty and an open-play goal), not 1-0.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** It was 2-0 (Griezmann 2).
+
+### Row 20400 — France (medium) — FAIL: false (the Euro 2016 SF was 2-0, not 1-0)
+**Q:** In which tournament's semi-final did France beat Germany 1-0?
+**Answer:** Euro 2016
+**Why it fails:** France beat Germany 2-0 in the Euro 2016 semi-final (Griezmann scored both) — not 1-0. The tournament is right but the score is wrong.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016
+**Remedy:** It was 2-0.
+
+### Row 20417 — France (medium) — FAIL: false (Mbappe scored all 3; Kolo Muani didnt score the final)
+**Q:** In which World Cup final did Randal Kolo Muani score for France?
+**Answer:** 2022 World Cup
+**Why it fails:** Kolo Muani did NOT score in the 2022 final — France's three goals were all Mbappé (a hat-trick). Kolo Muani had a late chance saved by Martínez.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Mbappe scored all 3 of France's goals.
+
+### Row 20425 — France (medium) — FAIL: dubious (Courtois, not Lloris, was the 2018 standout GK)
+**Q:** In which World Cup was France's Hugo Lloris named to the All-Star Team?
+**Answer:** 2018 World Cup
+**Why it fails:** Lloris was not the 2018 World Cup's best/All-Star goalkeeper — the Golden Glove went to Thibaut Courtois (Belgium), who is the natural team-of-the-tournament keeper. France's likelier All-Star picks were Mbappé, Griezmann or Varane.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Courtois was the 2018 Golden Glove keeper.
+
+### Row 20426 — France (medium) — FAIL: dubious (Courtois, not Lloris, was the 2018 standout GK)
+**Q:** In which World Cup was French keeper Hugo Lloris named to the All-Star Team?
+**Answer:** 2018 World Cup
+**Why it fails:** Lloris was not the 2018 World Cup's best/All-Star goalkeeper — the Golden Glove went to Thibaut Courtois (Belgium), who is the natural team-of-the-tournament keeper. France's likelier All-Star picks were Mbappé, Griezmann or Varane.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Courtois was the 2018 Golden Glove keeper.
+
+### Row 20448 — France (medium) — FAIL: false (France BEAT Spain in the 2021 NL final)
+**Q:** In which year did France lose the UEFA Nations League final to Spain?
+**Answer:** 2022
+**Why it fails:** France did not lose a Nations League final to Spain — they BEAT Spain 2-1 in the 2020-21 NL final (Oct 2021). They did not reach the 2022-23 final.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** France beat Spain 2-1 in the 2021 NL final.
+
+### Row 20473 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was France's final score after trailing 2-0 against Belgium in the 2020-21 Nations League semi-final?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-03 00:00:00' instead of the score. France came back from 2-0 down to win 3-2.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Restore to "3-2".
+
+### Row 20474 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was France's final score after trailing 2-0 to Belgium in the 2021 Nations League semi-final?
+**Answer:** 2026-02-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-03 00:00:00' instead of the score. France came back from 2-0 down to win 3-2.
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** Restore to "3-2".
+
+### Row 20476 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was France's lead in the 80th minute of their Euro 2020 round of 16 loss?
+**Answer:** 2026-01-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-03 00:00:00' instead of the score. France led Switzerland 3-1 in the 80th minute.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020
+**Remedy:** Restore to "3-1".
+
+### Row 20477 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was France's score against England in the 2022 World Cup quarter-final?
+**Answer:** 2026-01-02 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-01-02 00:00:00' instead of the score. France beat England 2-1.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore to "2-1".
+
+### Row 20480 — France (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was the final score after extra time in France's 2022 World Cup final?
+**Answer:** 2026-03-03 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-03-03 00:00:00' instead of the score. The 2022 final ended 3-3 after extra time.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Restore to "3-3".
+
+### Row 20481 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was the final score when France beat Argentina in the 2018 World Cup round of 16?
+**Answer:** 2026-03-04 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-03-04 00:00:00' instead of the score. France beat Argentina 4-3 in the 2018 R16.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2018_FIFA_World_Cup
+**Remedy:** Restore to "4-3".
+
+### Row 20484 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** What was the final score when France won the 2018 World Cup?
+**Answer:** 2026-02-04 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2026-02-04 00:00:00' instead of the score. France beat Croatia 4-2 in the 2018 final.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** Restore to "4-2".
+
+### Row 20488 — France (medium) — FAIL: false (France won 8, not 10, Euro 2020 qualifiers)
+**Q:** When did France achieve a perfect 10-win qualifying campaign?
+**Answer:** For Euro 2020
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers — they went W8 D1 L1 (lost 0-2 to Turkey). Italy were the only side with a perfect 10-win record.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8 of 10.
+
+### Row 20489 — France (medium) — FAIL: false (France won 8, not 10, Euro 2020 qualifiers)
+**Q:** When did France achieve a perfect 10-win record in a major tournament qualifying campaign?
+**Answer:** Euro 2020 qualifiers
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers — they went W8 D1 L1 (lost 0-2 to Turkey). Italy were the only side with a perfect 10-win record.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8 of 10.
+
+### Row 20496 — France (medium) — FAIL: false (Stade de France hosted WC qualifiers long before 2018)
+**Q:** When did France first host a World Cup qualifier at Stade de France?
+**Answer:** 2018 qualifiers
+**Why it fails:** The Stade de France opened in 1998 and hosted France's home WC qualifiers from then on (for 2002, 2006, 2010, 2014, etc.) — so the 2018 cycle was NOT the first.
+**Source:** https://en.wikipedia.org/wiki/Stade_de_France
+**Remedy:** It hosted qualifiers from ~1998 onward.
+
+### Row 20502 — France (medium) — FAIL: false (France won 8, not 10, Euro 2020 qualifiers)
+**Q:** When did France win all 10 of their Euro qualifying matches?
+**Answer:** Euro 2020 qualifiers
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers — they went W8 D1 L1 (lost 0-2 to Turkey). Italy were the only side with a perfect 10-win record.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8 of 10.
+
+### Row 20505 — France (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did France's all-time top scorer Olivier Giroud retire internationally?
+**Answer:** 2024-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2024-07-01 00:00:00' instead of the score. Giroud retired internationally in July 2024.
+**Source:** https://en.wikipedia.org/wiki/Olivier_Giroud
+**Remedy:** Restore to "July 2024".
+
+### Row 20515 — France (medium) — FAIL: false (France won 8, not 10, Euro 2020 qualifiers)
+**Q:** When did France's men's team achieve a perfect 10-win qualifying campaign?
+**Answer:** For Euro 2020
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers — they went W8 D1 L1 (lost 0-2 to Turkey). Italy were the only side with a perfect 10-win record.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8 of 10.
+
+### Row 20525 — France (medium) — FAIL: Excel date-corruption in the answer cell
+**Q:** When did Guy Stéphan become Didier Deschamps' assistant for France?
+**Answer:** 2012-07-01 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2012-07-01 00:00:00' instead of the score. Stephan became Deschamps assistant in July 2012.
+**Source:** https://en.wikipedia.org/wiki/Didier_Deschamps
+**Remedy:** Restore to "July 2012".
+
+### Row 20537 — France (easy) — FAIL: false (the 2018 Fair Play Award went to Spain)
+**Q:** Which award did France win at the 2018 World Cup in Russia?
+**Answer:** FIFA Fair Play Award
+**Why it fails:** France did NOT win the 2018 FIFA Fair Play Award — it went to SPAIN. France won the trophy itself, but no French player won an individual award here (Golden Boot Kane, Golden Ball Modric, Golden Glove Courtois).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Spain won the 2018 Fair Play Award.
+
+### Row 20544 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** Which formation did France use in 2022 World Cup qualifying under Deschamps?
+**Answer:** 2003-03-04 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2003-03-04 00:00:00' instead of the score. Deschamps used a 4-3-3 in 2022 qualifying.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore to "4-3-3".
+
+### Row 20546 — France (easy) — FAIL: Excel date-corruption in the answer cell
+**Q:** Which formation did France's Deschamps use to maximize Mbappé's pace at the 2022 World Cup?
+**Answer:** 2003-03-04 00:00:00
+**Why it fails:** The answer is mangled to a datetime '2003-03-04 00:00:00' instead of the score. Deschamps used a 4-3-3 at the 2022 WC.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Restore to "4-3-3".
+
+### Row 20562 — France (easy) — FAIL: non-unique (Kolo Muani also had his WC debut at 2022)
+**Q:** Which France forward debuted at the 2022 FIFA World Cup?
+**Answer:** Marcus Thuram
+**Why it fails:** Both Thuram AND Kolo Muani (a listed option) made their World Cup debut at the 2022 tournament — so 'which forward debuted at 2022' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Kolo Muani also debuted at 2022.
+
+### Row 20569 — France (easy) — FAIL: non-unique (Mbappe also trained at Clairefontaine)
+**Q:** Which France forward was a product of the Clairefontaine academy?
+**Answer:** Thierry Henry
+**Why it fails:** Both Henry AND Mbappé (a listed option) are products of the INF Clairefontaine academy — so 'which forward was a Clairefontaine product' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Mbappe also trained at Clairefontaine.
+
+### Row 20578 — France (easy) — FAIL: dubious (Courtois, not Lloris, was the 2018 standout GK)
+**Q:** Which France goalkeeper was named to the 2018 World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** Lloris was not the 2018 World Cup's best/All-Star goalkeeper — the Golden Glove went to Thibaut Courtois (Belgium), who is the natural team-of-the-tournament keeper. France's likelier All-Star picks were Mbappé, Griezmann or Varane.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Courtois was the 2018 Golden Glove keeper.
+
+### Row 20619 — France (easy) — FAIL: false (Henry was not at the 2018 WC; Mbappe was)
+**Q:** Which France player at the 2018 World Cup was a Clairefontaine graduate?
+**Answer:** Thierry Henry
+**Why it fails:** Thierry Henry retired in 2010 and was NOT a player at the 2018 World Cup. The Clairefontaine graduate who actually played at 2018 was Kylian Mbappé (a listed option).
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Mbappe was the 2018 Clairefontaine graduate.
+
+### Row 20625 — France (easy) — FAIL: false (Giroud broke the record vs Poland at Al Thumama, not Al Bayt)
+**Q:** Which France player broke the national scoring record at Al Bayt Stadium in 2022?
+**Answer:** Olivier Giroud
+**Why it fails:** Giroud equalled Henry (51) vs Australia, then BROKE the record (52nd) in the R16 v Poland — played at Al Thumama Stadium, not Al Bayt.
+**Source:** https://en.wikipedia.org/wiki/Olivier_Giroud
+**Remedy:** He broke it at Al Thumama (v Poland).
+
+### Row 20631 — France (easy) — FAIL: false (Griezmann won the Bronze Ball, finished 3rd)
+**Q:** Which France player finished second in the 2018 World Cup's best player voting?
+**Answer:** Antoine Griezmann
+**Why it fails:** Griezmann finished THIRD in the 2018 Golden Ball voting (Bronze Ball) — the Silver Ball (2nd) went to Eden Hazard, behind Modric (Golden Ball).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Griezmann won the Bronze Ball (3rd); Hazard was 2nd.
+
+### Row 20646 — France (easy) — FAIL: false (Mbappe scored a hat-trick, 3 not 4, in the 2022 final)
+**Q:** Which France player scored 4 goals in the 2022 FIFA World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored a HAT-TRICK (three goals) in the 2022 World Cup final — not four. He scored 8 across the whole tournament, but 3 in the final.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** He scored 3 in the final.
+
+### Row 20647 — France (easy) — FAIL: false (Mbappe scored a hat-trick, 3 not 4, in the 2022 final)
+**Q:** Which France player scored 4 goals in the final to help reach 16 goals in 2022?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored a HAT-TRICK (three goals) in the 2022 World Cup final — not four. He scored 8 across the whole tournament, but 3 in the final.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** He scored 3 in the final.
+
+### Row 20653 — France (easy) — FAIL: false (Mbappe scored all 3; Kolo Muani didnt score the final)
+**Q:** Which France player scored his team's third goal in the 2022 World Cup final?
+**Answer:** Randal Kolo Muani
+**Why it fails:** France's three goals in the 2022 final were all Mbappé (a hat-trick) — Kolo Muani did NOT score; his late shot was saved.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Mbappe scored all 3.
+
+### Row 20682 — France (easy) — FAIL: dubious (Courtois, not Lloris, was the 2018 standout GK)
+**Q:** Which France player was named in the 2018 FIFA World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** Lloris was not the 2018 World Cup's best/All-Star goalkeeper — the Golden Glove went to Thibaut Courtois (Belgium), who is the natural team-of-the-tournament keeper. France's likelier All-Star picks were Mbappé, Griezmann or Varane.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Courtois was the 2018 Golden Glove keeper.
+
+### Row 20688 — France (easy) — FAIL: false (Griezmann won the Bronze Ball, not the Silver)
+**Q:** Which France player won the 2018 World Cup Silver Ball after being Euro 2016's top scorer?
+**Answer:** Antoine Griezmann
+**Why it fails:** Griezmann won the BRONZE Ball at the 2018 World Cup (3rd-best player) — the Silver Ball (2nd) went to Eden Hazard, behind Modric's Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Griezmann won the Bronze Ball; Hazard the Silver.
+
+### Row 20692 — France (easy) — FAIL: false (Griezmann won the Bronze Ball, not the Silver)
+**Q:** Which France player's 2018 World Cup performances earned him the Silver Ball award?
+**Answer:** Antoine Griezmann
+**Why it fails:** Griezmann won the BRONZE Ball at the 2018 World Cup (3rd-best player) — the Silver Ball (2nd) went to Eden Hazard, behind Modric's Golden Ball.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Griezmann won the Bronze Ball; Hazard the Silver.
+
+### Row 20693 — France (easy) — FAIL: false (Mbappe scored a hat-trick, 3 not 4, in the 2022 final)
+**Q:** Which France player's 4 goals in the final boosted their 2022 total above 2018's 14?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored a HAT-TRICK (three goals) in the 2022 World Cup final — not four. He scored 8 across the whole tournament, but 3 in the final.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** He scored 3 in the final.
+
+### Row 20697 — France (hard) — FAIL: false (France won 8, not 10, Euro 2020 qualifiers)
+**Q:** Which France qualification campaign featured a perfect 10-win record: Euro 2020 or 2018 World Cup?
+**Answer:** Euro 2020 qualifiers
+**Why it fails:** France did NOT win all 10 Euro 2020 qualifiers — they went W8 D1 L1 (lost 0-2 to Turkey). Italy were the only side with a perfect 10-win record.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8 of 10.
+
+### Row 20707 — France (easy) — FAIL: false (Mbappe, also Clairefontaine, has more WC goals than Henry)
+**Q:** Which France striker, a Clairefontaine graduate, scored the most World Cup goals?
+**Answer:** Thierry Henry
+**Why it fails:** Among Clairefontaine graduates, Mbappé (a listed option) has scored far MORE World Cup goals (12) than Henry's 6 — so Henry is not the Clairefontaine graduate with the most WC goals.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Mbappe has 12 WC goals.
+
+### Row 20715 — France (easy) — FAIL: non-unique (Griezmann also debuted at the 2014 WC)
+**Q:** Which French academy graduate debuted first at a FIFA World Cup?
+**Answer:** Paul Pogba
+**Why it fails:** Both Pogba AND Griezmann made their World Cup debut at the 2014 tournament — so 'who debuted first' is a tie. (The explanation wrongly says Griezmann debuted in 2018.)
+**Source:** https://en.wikipedia.org/wiki/Antoine_Griezmann
+**Remedy:** Griezmann also debuted at 2014.
+
+### Row 20718 — France (easy) — FAIL: false (Anelka wasnt at the 2006 WC) + duplicate options
+**Q:** Which French academy produced 2006 World Cup finalists Henry and Anelka?
+**Answer:** Clairefontaine
+**Why it fails:** Anelka was NOT in France's 2006 World Cup squad (he was left out, returning later) — so 'Henry and Anelka, 2006 finalists' is wrong. Also, 'Clairefontaine' and 'INF Clairefontaine' are duplicate options.
+**Source:** https://en.wikipedia.org/wiki/Nicolas_Anelka
+**Remedy:** Anelka wasn't a 2006 finalist; dedupe options.
+
+### Row 20719 — France (easy) — FAIL: duplicate options (Clairefontaine = INF Clairefontaine)
+**Q:** Which French academy produced Thierry Henry before his 2010 World Cup qualifiers?
+**Answer:** Clairefontaine
+**Why it fails:** Two options refer to the same place — 'Clairefontaine' and 'INF Clairefontaine' are the same academy (the INF youth academy at Clairefontaine). Duplicate distractor.
+**Source:** https://en.wikipedia.org/wiki/Clairefontaine_(football_academy)
+**Remedy:** Remove the duplicate Clairefontaine option.
+
+### Row 20720 — France (easy) — FAIL: non-unique (Pogba also debuted at the 2014 WC)
+**Q:** Which French academy product debuted at the 2014 World Cup?
+**Answer:** Antoine Griezmann
+**Why it fails:** Both Griezmann AND Pogba (a listed option) made their World Cup debut at the 2014 tournament. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Paul_Pogba
+**Remedy:** Pogba also debuted at 2014.
+
+### Row 20721 — France (easy) — FAIL: non-unique (Kante also debuted at the 2018 WC)
+**Q:** Which French academy product debuted at the 2018 FIFA World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** Both Mbappé AND Kanté (a listed option) made their World Cup debut at the 2018 tournament. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/N%27Golo_Kant%C3%A9
+**Remedy:** Kante also debuted at 2018.
+
+### Row 20723 — France (easy) — FAIL: non-unique (Griezmann also debuted at 2014)
+**Q:** Which French academy product made his World Cup debut in 2014?
+**Answer:** Paul Pogba
+**Why it fails:** Both Pogba AND Griezmann (a listed option) made their World Cup debut at the 2014 tournament. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Antoine_Griezmann
+**Remedy:** Griezmann also debuted at 2014.
+
+### Row 20724 — France (easy) — FAIL: false (Mbappe scored 8 at the 2022 WC, not 4)
+**Q:** Which French academy product scored 4 goals at the 2022 World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored EIGHT goals at the 2022 World Cup (winning the Golden Boot) — not four.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** He scored 8 at the 2022 WC.
+
+### Row 20727 — France (easy) — FAIL: false (Mbappe scored 8 at the 2022 WC, not 4)
+**Q:** Which French academy product scored four goals at the 2022 World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored EIGHT goals at the 2022 World Cup (winning the Golden Boot) — not four.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** He scored 8 at the 2022 WC.
+
+### Row 20729 — France (easy) — FAIL: tied (Griezmann also scored 4 at 2018)
+**Q:** Which French academy product scored the most goals at the 2018 World Cup?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé and Griezmann BOTH scored 4 at the 2018 World Cup (joint-top among the squad) — so 'scored the most' is non-unique with Griezmann (a listed option).
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2018_FIFA_World_Cup
+**Remedy:** Griezmann also scored 4.
+
+### Row 20730 — France (easy) — FAIL: false (Mbappe scored a hat-trick, 3 not 2, in the final)
+**Q:** Which French academy product scored twice at the 2022 World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored THREE (a hat-trick) in the 2022 final — not 'twice'. The explanation itself says hat-trick.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** He scored 3 (a hat-trick).
+
+### Row 20731 — France (easy) — FAIL: false (Mbappe scored once in the 2018 final, not twice)
+**Q:** Which French academy product scored twice in the 2018 World Cup final?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored only ONE goal in the 2018 final (France's 4th, a 65th-min strike) — not twice. France's other goals were a Mandzukic own goal, a Griezmann penalty and a Pogba strike.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** He scored once in the 2018 final.
+
+### Row 20734 — France (easy) — FAIL: duplicate options (Clairefontaine = INF Clairefontaine)
+**Q:** Which French academy's graduates helped France win the 2018 FIFA World Cup?
+**Answer:** Clairefontaine academy
+**Why it fails:** Two options refer to the same place — 'Clairefontaine' and 'INF Clairefontaine' are the same academy (the INF youth academy at Clairefontaine). Duplicate distractor.
+**Source:** https://en.wikipedia.org/wiki/Clairefontaine_(football_academy)
+**Remedy:** Remove the duplicate Clairefontaine option.
+
+### Row 20796 — France (easy) — FAIL: false (Benzema MISSED the 2022 WC, didnt start the opener)
+**Q:** Which French forward, recalled in May 2021 after five years out, started their 2022 World Cup opener?
+**Answer:** Karim Benzema
+**Why it fails:** Benzema was recalled in 2021, but he withdrew INJURED before the 2022 World Cup began — so he did not start (or play) France's 2022 opener.
+**Source:** https://en.wikipedia.org/wiki/Karim_Benzema
+**Remedy:** Benzema missed the 2022 WC injured.
+
+### Row 20802 — France (easy) — FAIL: dubious (Courtois, not Lloris, was the 2018 standout GK)
+**Q:** Which French goalkeeper was in the 2018 FIFA World Cup All-Star Team?
+**Answer:** Hugo Lloris
+**Why it fails:** Lloris was not the 2018 World Cup's best/All-Star goalkeeper — the Golden Glove went to Thibaut Courtois (Belgium), who is the natural team-of-the-tournament keeper. France's likelier All-Star picks were Mbappé, Griezmann or Varane.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Courtois was the 2018 Golden Glove keeper.
+
+### Row 20804 — France (medium) — FAIL: non-unique (Monaco & Lyon also not in WC-host years)
+**Q:** Which French Ligue 1 champion did NOT win their title in a FIFA World Cup host year?
+**Answer:** Lille (2020-21)
+**Why it fails:** Only PSG's 2013-14 title fell in a World Cup year (2014). Lille (2020-21), Monaco (2016-17) AND Lyon (2007-08) were all NOT in WC-host years — so 'which did NOT' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Ligue_1
+**Remedy:** Three options weren't in WC years.
+
+### Row 20820 — France (easy) — FAIL: false (Camavinga debuted internationally in 2020, not after 2022)
+**Q:** Which French midfielder debuted internationally after the 2022 World Cup cycle?
+**Answer:** Eduardo Camavinga
+**Why it fails:** Camavinga made his France debut in September 2020 — BEFORE the 2022 World Cup cycle, not after it.
+**Source:** https://en.wikipedia.org/wiki/Eduardo_Camavinga
+**Remedy:** He debuted in 2020.
+
+### Row 20827 — France (easy) — FAIL: false (Kante MISSED the 2022 WC injured)
+**Q:** Which French midfielder started in both the 2018 and 2022 World Cups?
+**Answer:** N'Golo Kanté
+**Why it fails:** Kanté did NOT play the 2022 World Cup — he (and Pogba) missed it through injury, with Tchouaméni taking the anchor role. So he didn't start both the 2018 and 2022 World Cups.
+**Source:** https://en.wikipedia.org/wiki/N%27Golo_Kant%C3%A9
+**Remedy:** Kante missed 2022 injured.
+
+### Row 20844 — France (medium) — FAIL: false (France did NOT have perfect Euro 2020 qualification)
+**Q:** Which French player debuted for the national team in 2020, the year of their perfect Euro qualification?
+**Answer:** Eduardo Camavinga
+**Why it fails:** Camavinga did debut in 2020, but France's Euro 2020 qualifying was NOT perfect (W8 D1 L1, lost to Turkey) — so 'the year of their perfect Euro qualification' is false.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8, not 10.
+
+### Row 20858 — France (easy) — FAIL: non-unique (Pogba & Kante also missed 2022 injured)
+**Q:** Which French player missed the 2022 FIFA World Cup through injury?
+**Answer:** Karim Benzema
+**Why it fails:** Benzema, Pogba AND Kanté (three options) all missed the 2022 World Cup through injury — only Varane played. The answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Pogba and Kante also missed injured.
+
+### Row 20875 — France (easy) — FAIL: tied (Mbappe & Griezmann both scored 4 at 2018)
+**Q:** Which French player scored more 2018 World Cup goals: Mbappé or Griezmann?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé and Griezmann BOTH scored 4 at the 2018 World Cup — so neither scored 'more'. The explanation itself says both scored 4.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2018_FIFA_World_Cup
+**Remedy:** They tied on 4 goals each.
+
+### Row 20876 — France (easy) — FAIL: false (the 2018 final opener was a Mandzukic own goal)
+**Q:** Which French player scored the opening goal against Croatia in the 2018 World Cup final?
+**Answer:** Antoine Griezmann
+**Why it fails:** France's first goal in the 2018 final was a Mandzukic OWN GOAL (off Griezmann's free kick), not a goal scored by Griezmann. Griezmann scored France's second (a penalty).
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_final
+**Remedy:** The opener was an own goal.
+
+### Row 20880 — France (easy) — FAIL: false (Mbappe scored all 3; Kolo Muani didnt score)
+**Q:** Which French player scored third in the 2022 World Cup final?
+**Answer:** Randal Kolo Muani
+**Why it fails:** France's three goals in the 2022 final were all Mbappé (a hat-trick) — Kolo Muani did not score.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** Mbappe scored all 3.
+
+### Row 20903 — France (medium) — FAIL: false (Griezmanns 2018 award was the Bronze Ball, not Silver)
+**Q:** Which French player, after Mbappé's 2022 Golden Boot, also won a major individual World Cup award?
+**Answer:** Antoine Griezmann
+**Why it fails:** Griezmann won the BRONZE Ball at the 2018 World Cup, not the Silver Ball (Hazard won the Silver). The answer's premise/explanation is wrong on the award.
+**Source:** https://en.wikipedia.org/wiki/2018_FIFA_World_Cup_awards
+**Remedy:** Griezmann won the Bronze Ball.
+
+### Row 20907 — France (easy) — FAIL: false (Mbappe scored a hat-trick, 3 not 4, in the 2022 final)
+**Q:** Which French player's 2022 World Cup final goals helped keep France in the FIFA top 5?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé scored a HAT-TRICK (three goals) in the 2022 World Cup final — not four. He scored 8 across the whole tournament, but 3 in the final.
+**Source:** https://en.wikipedia.org/wiki/2022_FIFA_World_Cup_final
+**Remedy:** He scored 3 in the final.
+
+### Row 20910 — France (medium) — FAIL: false (James Rodriguez won the 2014 Golden Boot with 6, not 8)
+**Q:** Which French player's 8 goals in 2022 matched the Golden Boot tally from 2014?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé's 8 goals do NOT match the 2014 Golden Boot tally — James Rodríguez won the 2014 Golden Boot with SIX goals, not eight.
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_awards
+**Remedy:** James scored 6 in 2014.
+
+### Row 20923 — France (easy) — FAIL: non-unique (Pavard was also a RB in the 2022 squad)
+**Q:** Which French right-back was part of their 2022 World Cup squad?
+**Answer:** Jules Koundé
+**Why it fails:** Both Koundé AND Pavard (a listed option) were right-backs in France's 2022 squad — so 'which RB was part of the squad' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2022_FIFA_World_Cup
+**Remedy:** Pavard was also a 2022 RB.
+
+### Row 20931 — France (easy) — FAIL: false (England-Wales Euro 2016 was at Lens, not the Velodrome)
+**Q:** Which French stadium hosted the Euro 2016 Wales vs England match?
+**Answer:** Stade Vélodrome
+**Why it fails:** The Euro 2016 England v Wales match (16 June 2016) was played at the Stade Bollaert-Delelis in LENS — not the Stade Vélodrome in Marseille (which hosted England v Russia).
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2016_Group_B
+**Remedy:** It was at Lens.
+
+### Row 20933 — France (easy) — FAIL: non-unique (all four are match stadiums, none a training base)
+**Q:** Which French stadium was not a training base for France's 2018 World Cup squad?
+**Answer:** Stade de France
+**Why it fails:** France's training base is Clairefontaine — all four listed venues (Stade de France, Vélodrome, Parc des Princes, Groupama) are MATCH stadiums, none a training base. So 'which was NOT a training base' is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Clairefontaine
+**Remedy:** None of the four is a training base.
+
+### Row 20966 — France (easy) — FAIL: false (Umtiti, not Mbappe, scored the 2018 SF)
+**Q:** Which French World Cup 2018 star's Clairefontaine training enabled his crucial semi-final goal?
+**Answer:** Kylian Mbappé
+**Why it fails:** Mbappé did NOT score in the 2018 semi-final — Samuel Umtiti scored the only goal in the 1-0 win over Belgium.
+**Source:** https://en.wikipedia.org/wiki/France_at_the_2018_FIFA_World_Cup
+**Remedy:** Umtiti scored the SF goal.
+
+### Row 20970 — France (easy) — FAIL: non-unique (Mbappe is also a Clairefontaine graduate)
+**Q:** Which French World Cup star is a famous graduate of the Clairefontaine academy?
+**Answer:** Thierry Henry
+**Why it fails:** Both Henry AND Mbappé (a listed option) are Clairefontaine graduates — so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Mbappe also trained at Clairefontaine.
+
+### Row 20972 — France (easy) — FAIL: non-unique (Mbappe is also a Clairefontaine graduate)
+**Q:** Which French World Cup winner was produced by Clairefontaine?
+**Answer:** Thierry Henry
+**Why it fails:** Both Henry AND Mbappé (a listed option) are Clairefontaine graduates — so the answer is non-unique.
+**Source:** https://en.wikipedia.org/wiki/Kylian_Mbapp%C3%A9
+**Remedy:** Mbappe also trained at Clairefontaine.
+
+### Row 20980 — France (easy) — FAIL: non-unique (Domenech & Stephan also not longest-serving)
+**Q:** Which manager is NOT France's longest-serving manager?
+**Answer:** Laurent Blanc
+**Why it fails:** Deschamps is France's longest-serving manager, so Blanc, Domenech AND Guy Stéphan (three options) are all 'NOT the longest-serving'. Non-unique.
+**Source:** https://en.wikipedia.org/wiki/Didier_Deschamps
+**Remedy:** Three options aren't the longest-serving.
+
+### Row 21006 — France (easy) — FAIL: false (France did NOT have a perfect Euro 2020 record)
+**Q:** Which nation matched France's perfect 10-win Euro 2020 qualifying record?
+**Answer:** Belgium
+**Why it fails:** The premise is false — France did NOT win all 10 Euro 2020 qualifiers (W8 D1 L1). Italy and Belgium were the perfect-record sides, but 'matched France's perfect record' is wrong because France wasn't perfect.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8; Italy/Belgium were perfect.
+
+### Row 21010 — France (easy) — FAIL: non-unique (Brazil & England were also top-5 in 2022)
+**Q:** Which nation was in the FIFA top 5 in 2022: France, Brazil, England, or Germany?
+**Answer:** France
+**Why it fails:** In 2022 the FIFA top 5 included France, Brazil AND England (three options). Non-unique.
+**Source:** https://en.wikipedia.org/wiki/FIFA_Men%27s_World_Ranking
+**Remedy:** Brazil and England were also top-5.
+
+### Row 21015 — France (easy) — FAIL: non-unique (Argentina also lost a final after 2010)
+**Q:** Which nation, like France in 2022, also lost a World Cup final after 2010?
+**Answer:** Croatia
+**Why it fails:** Argentina (a listed option) also LOST a World Cup final after 2010 — the 2014 final to Germany — so 'like France, also lost a final' is non-unique with Croatia (2018).
+**Source:** https://en.wikipedia.org/wiki/2014_FIFA_World_Cup_Final
+**Remedy:** Argentina lost the 2014 final.
+
+### Row 21018 — France (easy) — FAIL: self-referential (answer is France itself)
+**Q:** Which nation's 2022 World Cup qualifying group win matched France's 18 points?
+**Answer:** France
+**Why it fails:** The question asks which nation 'matched France's 18 points' and answers France — the answer is the subject itself (self-referential/circular).
+**Source:** https://en.wikipedia.org/wiki/France_national_football_team
+**Remedy:** Name a different nation, or rephrase.
+
+### Row 21083 — France (medium) — FAIL: false (France BEAT Spain in the 2021 NL final)
+**Q:** Which year did France lose the Nations League final to Spain?
+**Answer:** 2022
+**Why it fails:** France did not lose a Nations League final to Spain — they BEAT Spain 2-1 in the 2020-21 NL final (Oct 2021).
+**Source:** https://en.wikipedia.org/wiki/2021_UEFA_Nations_League_Finals
+**Remedy:** France beat Spain 2-1 in the 2021 NL final.
+
+### Row 21100 — France (easy) — FAIL: false premise (France did NOT have a perfect Euro 2020 run)
+**Q:** Who was France's manager during their perfect Euro 2020 qualifying run?
+**Answer:** Didier Deschamps
+**Why it fails:** France's Euro 2020 qualifying was NOT perfect (W8 D1 L1, lost to Turkey). Deschamps was the manager, but there was no 'perfect 10-win run'.
+**Source:** https://en.wikipedia.org/wiki/UEFA_Euro_2020_qualifying_Group_H
+**Remedy:** France won 8, not 10.
